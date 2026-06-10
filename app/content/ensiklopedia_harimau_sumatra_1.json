@@ -1,0 +1,69 @@
+{
+  "id": "ensiklopedia_harimau_sumatra_1",
+  "title_id": "Harimau Sumatra",
+  "title_en": "Sumatran Tiger",
+  "subtitle_id": "Kucing besar penjaga hutan Pulau Sumatra",
+  "subtitle_en": "The big cat guarding Sumatra's forests",
+  "sections": [
+    {
+      "icon": "pets",
+      "h_id": "Apa Itu Harimau Sumatra?",
+      "h_en": "What Is the Sumatran Tiger?",
+      "body_id": "Harimau sumatra adalah kucing besar yang hanya hidup di Pulau Sumatra, Indonesia. Ia adalah harimau paling kecil di antara semua jenis harimau di dunia. Tubuhnya yang mungil membuatnya gesit menjelajahi hutan. Ia satu-satunya harimau sunda yang masih hidup sampai sekarang.",
+      "body_en": "The Sumatran tiger is a big cat that lives only on the island of Sumatra, Indonesia. It is the smallest of all tiger types in the world. Its small body makes it quick and nimble in the forest. It is the only Sunda tiger still alive today."
+    },
+    {
+      "icon": "forest",
+      "h_id": "Di Mana Hidupnya?",
+      "h_en": "Where Does It Live?",
+      "body_id": "Harimau sumatra tinggal di hutan-hutan Pulau Sumatra. Ia bisa hidup di hutan dataran rendah sampai hutan di pegunungan. Banyak yang tinggal di taman nasional dan cagar alam yang dilindungi. Di jari-jarinya ada selaput, jadi ia juga pandai berenang!",
+      "body_en": "The Sumatran tiger lives in the forests of Sumatra island. It can live in lowland forests all the way up to mountain forests. Many live in protected national parks and nature reserves. It has webbing between its toes, so it is also a great swimmer!"
+    },
+    {
+      "icon": "visibility",
+      "h_id": "Tubuh & Ciri Khas",
+      "h_en": "Body & Features",
+      "body_id": "Bulu harimau sumatra berwarna oranye tua dengan garis hitam yang lebar dan rapat. Warnanya paling gelap di antara semua harimau. Harimau jantan punya lebih banyak janggut dan surai di wajahnya. Loreng ini membantunya bersembunyi di balik bayang-bayang hutan.",
+      "body_en": "The Sumatran tiger's fur is deep orange with wide, close-set black stripes. Its color is the darkest of all tigers. Males have more beard and mane around the face. These stripes help it hide among the forest shadows."
+    },
+    {
+      "icon": "restaurant",
+      "h_id": "Makanan & Kebiasaan",
+      "h_en": "Food & Habits",
+      "body_id": "Harimau sumatra adalah pemburu yang sabar dan pandai. Ia memakan babi hutan, rusa, unggas, dan kadang ikan. Karena ia berburu, jumlah hewan lain di hutan tetap seimbang. Induk harimau biasanya melahirkan 2 atau 3 anak yang sangat lucu.",
+      "body_en": "The Sumatran tiger is a patient and clever hunter. It eats wild boar, deer, birds, and sometimes fish. Because it hunts, the number of other animals in the forest stays balanced. A mother tiger usually has 2 or 3 adorable cubs."
+    },
+    {
+      "icon": "shield",
+      "h_id": "Ayo Lindungi!",
+      "h_en": "Let's Protect It!",
+      "body_id": "Harimau sumatra sangat langka, hanya tersisa sekitar 400-500 ekor di alam liar. Hutannya makin sempit karena ditebang, dan ini membuatnya sulit mencari rumah. Kita bisa membantu dengan menjaga hutan tetap lestari. Dengan kerja sama, harimau gagah ini bisa terus hidup bahagia!",
+      "body_en": "The Sumatran tiger is very rare, with only about 400-500 left in the wild. Its forest is shrinking because of logging, making it hard to find a home. We can help by keeping forests healthy and green. Working together, this brave tiger can keep living happily!"
+    }
+  ],
+  "facts": [
+    { "id": "Harimau sumatra adalah harimau terkecil di dunia!", "en": "The Sumatran tiger is the smallest tiger in the world!" },
+    { "id": "Warna bulunya paling gelap di antara semua harimau.", "en": "Its fur is the darkest of all tigers." },
+    { "id": "Ada selaput di jari kakinya supaya bisa berenang cepat.", "en": "It has webbed toes so it can swim fast." },
+    { "id": "Loreng setiap harimau berbeda, seperti sidik jari manusia.", "en": "Every tiger's stripes are unique, like a human fingerprint." },
+    { "id": "Di alam liar, harimau sumatra bisa hidup sampai 15 tahun.", "en": "In the wild, a Sumatran tiger can live up to 15 years." },
+    { "id": "Anak harimau membuka matanya pada hari kesepuluh.", "en": "Tiger cubs open their eyes on the tenth day." }
+  ],
+  "gallery": [
+    "app/assets/img/wiki/5e0df62e7237ee3e.jpg",
+    "app/assets/img/wiki/2ea82aae5a4338e2.jpg",
+    "app/assets/img/wiki/3deabfd4d2601a73.jpg",
+    "app/assets/img/wiki/f914dca6ad1808d1.jpg",
+    "app/assets/img/wiki/5c5afa2d73eaab29.jpg",
+    "app/assets/img/wiki/78f7dbbcfec56188.jpg"
+  ],
+  "credits": [
+    { "src": "app/assets/img/wiki/5e0df62e7237ee3e.jpg", "credit": "Captain Herbert", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/f914dca6ad1808d1.jpg", "credit": "Unknown authorUnknown author", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/2ea82aae5a4338e2.jpg", "credit": "Nichollas Harrison", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/78f7dbbcfec56188.jpg", "credit": "J.T. (Jan Theodoor) Ponse (Fotograaf/photographer).", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/5c5afa2d73eaab29.jpg", "credit": "Official Website of Ministry of Environment and Forestry Indonesia", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/3deabfd4d2601a73.jpg", "credit": "Moonlight0551 from Australia", "license": "CC BY 2.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Harimau_sumatra"
+}

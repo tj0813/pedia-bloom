@@ -1,0 +1,68 @@
+{
+  "id": "ensiklopedia_penyu_hijau_1",
+  "title_id": "Penyu Hijau",
+  "title_en": "Green Sea Turtle",
+  "subtitle_id": "Penyu laut besar yang jelajahi samudra hangat",
+  "subtitle_en": "A big sea turtle roaming warm oceans",
+  "sections": [
+    {
+      "icon": "pets",
+      "h_id": "Apa Itu Penyu Hijau?",
+      "h_en": "What Is a Green Sea Turtle?",
+      "body_id": "Penyu hijau adalah penyu laut yang besar. Ia hidup di laut dan membawa rumahnya sendiri, yaitu cangkang yang kuat. Namanya 'hijau' karena ada lemak berwarna hijau di bawah cangkangnya, bukan karena cangkangnya hijau!",
+      "body_en": "The green sea turtle is a large sea turtle. It lives in the ocean and carries its own home, a strong shell. It is called 'green' because of the green fat under its shell, not because the shell is green!"
+    },
+    {
+      "icon": "public",
+      "h_id": "Di Mana Hidupnya?",
+      "h_en": "Where Does It Live?",
+      "body_id": "Penyu hijau berenang di laut hangat di seluruh dunia, terutama di Samudra Atlantik dan Samudra Pasifik. Ia suka air tropis dan subtropis yang hangat. Di Indonesia, penyu ini dirawat dan ditangkarkan di Ujung Genteng, Sukabumi.",
+      "body_en": "Green sea turtles swim in warm oceans all around the world, especially the Atlantic and Pacific Oceans. They love warm tropical and subtropical waters. In Indonesia, they are cared for and bred at Ujung Genteng in Sukabumi."
+    },
+    {
+      "icon": "shield",
+      "h_id": "Tubuh & Ciri Khas",
+      "h_en": "Body & Features",
+      "body_id": "Penyu hijau punya cangkang keras di atas tubuhnya untuk melindungi diri. Kaki-kakinya berbentuk seperti dayung supaya bisa berenang cepat di air. Ia bernapas dengan paru-paru, jadi harus naik ke permukaan untuk menghirup udara.",
+      "body_en": "The green sea turtle has a hard shell on top of its body for protection. Its legs are shaped like paddles so it can swim quickly through the water. It breathes with lungs, so it must come up to the surface for air."
+    },
+    {
+      "icon": "eco",
+      "h_id": "Makanan & Kebiasaan",
+      "h_en": "Food & Habits",
+      "body_id": "Penyu hijau dewasa suka makan tumbuhan laut, seperti rumput laut dan lamun. Itulah sebabnya ia sering disebut penyu pemakan tumbuhan. Induk penyu kembali ke pantai untuk bertelur di pasir, lalu bayi-bayi kecilnya menetas dan bergegas menuju laut.",
+      "body_en": "Adult green sea turtles love eating sea plants, such as seaweed and seagrass. That is why they are known as plant-eating turtles. Mother turtles return to the beach to lay eggs in the sand, then the tiny babies hatch and hurry to the sea."
+    },
+    {
+      "icon": "volunteer_activism",
+      "h_id": "Ayo Lindungi!",
+      "h_en": "Let's Protect It!",
+      "body_id": "Jumlah penyu hijau makin sedikit karena diburu untuk cangkang, telur, dan dagingnya. Kita bisa membantu dengan menjaga laut dan pantai tetap bersih. Jika kita semua peduli, penyu hijau bisa terus berenang bahagia di laut.",
+      "body_en": "Green sea turtles are becoming fewer because they are hunted for their shells, eggs, and meat. We can help by keeping the sea and beaches clean. If we all care, green sea turtles can keep swimming happily in the ocean."
+    }
+  ],
+  "facts": [
+    { "id": "Namanya 'hijau' karena lemak hijau di bawah cangkangnya!", "en": "It is called 'green' because of the green fat under its shell!" },
+    { "id": "Penyu hijau adalah satu-satunya spesies dalam golongan Chelonia.", "en": "The green sea turtle is the only species in the Chelonia group." },
+    { "id": "Kakinya seperti dayung untuk berenang di laut.", "en": "Its legs are like paddles for swimming in the sea." },
+    { "id": "Induk penyu kembali ke pantai untuk bertelur di pasir.", "en": "Mother turtles return to the beach to lay eggs in the sand." },
+    { "id": "Penyu hijau dewasa suka makan rumput laut dan lamun.", "en": "Adult green sea turtles love to eat seaweed and seagrass." }
+  ],
+  "gallery": [
+    "app/assets/img/wiki/a0443bdd8b758053.jpg",
+    "app/assets/img/wiki/8665f0e91260185d.jpg",
+    "app/assets/img/wiki/55b6d280e713b6d1.jpg",
+    "app/assets/img/wiki/e3dc74e7f0e3cb54.jpg",
+    "app/assets/img/wiki/3f165b798896b430.jpg",
+    "app/assets/img/wiki/68d165ddba524d71.jpg"
+  ],
+  "credits": [
+    { "src": "app/assets/img/wiki/a0443bdd8b758053.jpg", "credit": "Brocken Inaglory", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/68d165ddba524d71.jpg", "credit": "David Monniaux", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/55b6d280e713b6d1.jpg", "credit": "Brocken Inaglory", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/e3dc74e7f0e3cb54.jpg", "credit": "Tokugawapants at English Wikipedia + PiccoloNamek (Modifie version)", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/8665f0e91260185d.jpg", "credit": "E bailey", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/3f165b798896b430.jpg", "credit": "P.Lindgren", "license": "CC BY-SA 3.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Penyu_hijau"
+}

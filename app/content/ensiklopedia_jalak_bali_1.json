@@ -1,0 +1,67 @@
+{
+  "id": "ensiklopedia_jalak_bali_1",
+  "title_id": "Jalak Bali",
+  "title_en": "Bali Myna",
+  "subtitle_id": "Burung putih cantik kebanggaan Pulau Bali",
+  "subtitle_en": "Bali's beautiful white pride bird",
+  "sections": [
+    {
+      "icon": "pets",
+      "h_id": "Apa Itu Jalak Bali?",
+      "h_en": "What Is the Bali Myna?",
+      "body_id": "Jalak bali adalah burung pengicau cantik berukuran sedang, panjangnya sekitar 25 cm. Burung ini hanya ditemukan di hutan bagian barat Pulau Bali. Ia satu-satunya hewan asli khas Bali, jadi sangat istimewa. Pada tahun 1991, jalak bali dipilih menjadi lambang fauna Provinsi Bali.",
+      "body_en": "The Bali myna is a beautiful medium-sized songbird, about 25 cm long. This bird is found only in the forests of western Bali. It is the only animal native to Bali, so it is very special. In 1991, the Bali myna was chosen as the official animal symbol of Bali Province."
+    },
+    {
+      "icon": "visibility",
+      "h_id": "Tubuh & Ciri Khas",
+      "h_en": "Body & Features",
+      "body_id": "Bulu jalak bali hampir seluruhnya berwarna putih bersih. Hanya ujung sayap dan ekornya yang berwarna hitam. Di sekeliling matanya ada pelupuk berwarna biru tua yang sangat cantik. Burung jantan punya jambul indah di kepalanya.",
+      "body_en": "The Bali myna's feathers are almost entirely pure white. Only the tips of its wings and tail are black. Around its eyes is a lovely deep-blue patch. The male has a beautiful crest on its head."
+    },
+    {
+      "icon": "forest",
+      "h_id": "Di Mana Hidupnya?",
+      "h_en": "Where Does It Live?",
+      "body_id": "Jalak bali suka tinggal di hutan mangrove, hutan rawa, dan daerah savana. Rumah aslinya ada di Taman Nasional Bali Barat. Ia membuat sarang di dalam lubang pohon, cukup tinggi dari tanah. Burung ini suka terbang berombongan bersama teman-temannya.",
+      "body_en": "The Bali myna loves to live in mangrove forests, swamp forests, and savanna areas. Its natural home is in West Bali National Park. It builds its nest inside tree holes, fairly high off the ground. This bird loves to fly in flocks with its friends."
+    },
+    {
+      "icon": "favorite",
+      "h_id": "Kebiasaan Lucu",
+      "h_en": "Fun Habits",
+      "body_id": "Jalak bali punya kicauan khas berupa siulan dan lengkingan yang nyaring. Ia bahkan pandai menirukan suara burung lain! Burung ini sangat suka kebersihan dan senang bermain air untuk mandi. Setelah mandi, ia berjemur di bawah sinar matahari agar bulunya kering dan berkilau.",
+      "body_en": "The Bali myna has a special song of whistles and bright, ringing calls. It is even good at copying the sounds of other birds! This bird loves cleanliness and enjoys splashing in water to bathe. After bathing, it suns itself so its feathers dry and shine."
+    },
+    {
+      "icon": "shield",
+      "h_id": "Ayo Lindungi!",
+      "h_en": "Let's Protect It!",
+      "body_id": "Jalak bali termasuk burung yang sangat langka di alam liar. Jumlahnya pernah menurun sampai tinggal sedikit sekali. Untungnya, banyak orang baik bekerja keras menjaga dan menangkarkannya. Yuk, kita sayangi jalak bali agar burung cantik ini terus berkicau di Bali!",
+      "body_en": "The Bali myna is a very rare bird in the wild. Its numbers once dropped down to very few. Luckily, many kind people work hard to protect and breed them. Let's care for the Bali myna so this beautiful bird keeps singing in Bali!"
+    }
+  ],
+  "facts": [
+    { "id": "Jalak bali adalah satu-satunya hewan khas asli Bali!", "en": "The Bali myna is the only animal native to Bali!" },
+    { "id": "Bulunya hampir 90 persen berwarna putih bersih.", "en": "About 90 percent of its feathers are pure white." },
+    { "id": "Ia menjadi lambang fauna Provinsi Bali sejak 1991.", "en": "It has been Bali Province's animal symbol since 1991." },
+    { "id": "Jalak bali pandai menirukan suara burung lain.", "en": "The Bali myna is good at copying other birds' sounds." },
+    { "id": "Ia membuat sarang di dalam lubang pohon.", "en": "It builds its nest inside tree holes." },
+    { "id": "Burung ini sangat suka mandi dan menjaga kebersihan.", "en": "This bird loves bathing and staying clean." }
+  ],
+  "gallery": [
+    "app/assets/img/wiki/a6fa2ef43c702575.jpg",
+    "app/assets/img/wiki/000c823cf42ebd18.jpg",
+    "app/assets/img/wiki/8e23caa6af095eb7.jpg",
+    "app/assets/img/wiki/1e55d1be9f083cac.jpg",
+    "app/assets/img/wiki/a1f732fe3d3dd789.jpg"
+  ],
+  "credits": [
+    { "src": "app/assets/img/wiki/a6fa2ef43c702575.jpg", "credit": "JJ Harrison", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/000c823cf42ebd18.jpg", "credit": "No machine-readable author provided. Stavenn assumed (based on copyright claims)", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/1e55d1be9f083cac.jpg", "credit": "en:User:Cburnett", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/8e23caa6af095eb7.jpg", "credit": "Ady Kristanto", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/a1f732fe3d3dd789.jpg", "credit": "en:User:Cburnett", "license": "CC BY-SA 3.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Jalak_bali"
+}

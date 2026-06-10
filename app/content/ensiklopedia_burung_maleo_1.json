@@ -1,0 +1,68 @@
+{
+  "id": "ensiklopedia_burung_maleo_1",
+  "title_id": "Burung Maleo",
+  "title_en": "Maleo Bird",
+  "subtitle_id": "Burung unik yang menetaskan telur dari panas bumi!",
+  "subtitle_en": "A unique bird that hatches eggs with earth's heat!",
+  "sections": [
+    {
+      "icon": "pets",
+      "h_id": "Apa Itu Burung Maleo?",
+      "h_en": "What Is the Maleo Bird?",
+      "body_id": "Maleo (Macrocephalon maleo) adalah burung istimewa yang juga disebut kalkun sikat. Ia termasuk kelompok burung megapoda. Maleo senkawor hanya hidup di Pulau Sulawesi, Indonesia, dan tidak ada di tempat lain di dunia.",
+      "body_en": "The maleo (Macrocephalon maleo) is a special bird also called the brush-turkey. It belongs to a group of birds called megapodes. The maleo lives only on the island of Sulawesi, Indonesia, and nowhere else in the world."
+    },
+    {
+      "icon": "forest",
+      "h_id": "Di Mana Hidupnya?",
+      "h_en": "Where Does It Live?",
+      "body_id": "Maleo tinggal di hutan tropis Sulawesi. Mereka suka pergi ke pantai berpasir atau tanah hangat dekat sumber panas bumi. Tempat hangat ini sangat penting untuk telur-telur mereka.",
+      "body_en": "The maleo lives in the tropical forests of Sulawesi. They like to go to sandy beaches or warm ground near volcanic hot spots. These warm places are very important for their eggs."
+    },
+    {
+      "icon": "visibility",
+      "h_id": "Tubuh & Ciri Khas",
+      "h_en": "Body & Features",
+      "body_id": "Maleo punya bulu hitam, dada putih kemerahan, dan ciri khas berupa benjolan keras di kepalanya. Benjolan ini membuatnya terlihat seperti memakai topi! Kakinya kuat untuk menggali tanah dan pasir.",
+      "body_en": "The maleo has black feathers, a pinkish-white chest, and a special hard bump on its head. This bump makes it look like it is wearing a hat! Its legs are strong for digging in soil and sand."
+    },
+    {
+      "icon": "egg",
+      "h_id": "Telur Ajaib",
+      "h_en": "Magic Eggs",
+      "body_id": "Maleo tidak mengerami telurnya sendiri. Ia mengubur telur di pasir hangat atau tanah dekat panas bumi, lalu panas alam itu yang menetaskannya! Telur maleo sangat besar, jauh lebih besar dari telur ayam.",
+      "body_en": "The maleo does not sit on its eggs. It buries them in warm sand or soil near volcanic heat, and nature's warmth hatches them! Maleo eggs are very big, much larger than chicken eggs."
+    },
+    {
+      "icon": "shield",
+      "h_id": "Ayo Lindungi!",
+      "h_en": "Let's Protect It!",
+      "body_id": "Burung maleo terancam karena telurnya sering diambil dan hutannya berkurang. Anak maleo harus mandiri sejak menetas. Dengan menjaga sarang dan hutan Sulawesi, kita bisa membantu burung unik ini tetap ada.",
+      "body_en": "The maleo bird is threatened because its eggs are often taken and its forests are shrinking. Baby maleos must take care of themselves from the moment they hatch. By protecting their nests and Sulawesi's forests, we can help this unique bird survive."
+    }
+  ],
+  "facts": [
+    { "id": "Maleo hanya hidup di Pulau Sulawesi, Indonesia!", "en": "The maleo lives only on Sulawesi Island, Indonesia!" },
+    { "id": "Mereka menetaskan telur memakai panas bumi dan matahari.", "en": "They hatch eggs using the heat of the earth and sun." },
+    { "id": "Telur maleo jauh lebih besar daripada telur ayam.", "en": "Maleo eggs are much bigger than chicken eggs." },
+    { "id": "Anak maleo bisa langsung terbang dan mencari makan sendiri.", "en": "Baby maleos can fly and find food on their own right away." },
+    { "id": "Maleo punya benjolan keras seperti topi di kepalanya.", "en": "The maleo has a hard, hat-like bump on its head." }
+  ],
+  "gallery": [
+    "app/assets/img/wiki/fddc7ccf6df38c39.jpg",
+    "app/assets/img/wiki/1c5a3301bc8d33af.jpg",
+    "app/assets/img/wiki/9896525663b797d0.jpg",
+    "app/assets/img/wiki/abe550888eb52d60.jpg",
+    "app/assets/img/wiki/9d7670cdac1a56df.jpg",
+    "app/assets/img/wiki/f1e18ca111aca999.jpg"
+  ],
+  "credits": [
+    { "src": "app/assets/img/wiki/9d7670cdac1a56df.jpg", "credit": "Bernard DUPONT from FRANCE", "license": "CC BY-SA 2.0" },
+    { "src": "app/assets/img/wiki/f1e18ca111aca999.jpg", "credit": "JJ Harrison (https://www.jjharrison.com.au/)", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/fddc7ccf6df38c39.jpg", "credit": "Jean-Paul Boerekamps", "license": "CC0" },
+    { "src": "app/assets/img/wiki/1c5a3301bc8d33af.jpg", "credit": "Ariefrahman", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/9896525663b797d0.jpg", "credit": "Ariefrahman", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/abe550888eb52d60.jpg", "credit": "Ariefrahman", "license": "CC BY-SA 4.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Maleo"
+}

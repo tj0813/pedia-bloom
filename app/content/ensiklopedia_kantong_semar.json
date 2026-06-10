@@ -1,0 +1,69 @@
+{
+  "id": "ensiklopedia_kantong_semar",
+  "title_id": "Kantong Semar",
+  "title_en": "Pitcher Plant",
+  "subtitle_id": "Tumbuhan ajaib pemakan serangga!",
+  "subtitle_en": "A magical insect-eating plant!",
+  "sections": [
+    {
+      "icon": "eco",
+      "h_id": "Apa Itu Kantong Semar?",
+      "h_en": "What Is the Pitcher Plant?",
+      "body_id": "Kantong semar adalah tumbuhan yang memakan serangga! Para ilmuwan menyebut kelompoknya Nepenthes. Tumbuhan ini punya kantong berisi cairan khusus yang bisa melarutkan serangga kecil. Dari serangga itulah ia mendapat makanan tambahan.",
+      "body_en": "The pitcher plant is a plant that eats insects! Scientists call its group Nepenthes. It has a pouch filled with a special liquid that can dissolve tiny insects. That is how it gets extra food."
+    },
+    {
+      "icon": "forest",
+      "h_id": "Di Mana Hidupnya?",
+      "h_en": "Where Does It Live?",
+      "body_id": "Kantong semar suka tempat lembap seperti rawa-rawa. Ia tumbuh di Indonesia, terutama di pulau Kalimantan dan Sumatra. Di Kalimantan Barat, orang menyebutnya entuyut. Ada yang hidup di pantai, ada pula yang tinggi di pegunungan.",
+      "body_en": "Pitcher plants love damp places like swamps. They grow in Indonesia, especially on the islands of Borneo and Sumatra. In West Kalimantan, people call it entuyut. Some live near the beach, and others live high in the mountains."
+    },
+    {
+      "icon": "height",
+      "h_id": "Tubuh & Ciri Khas",
+      "h_en": "Body & Features",
+      "body_id": "Kantong semar memanjat tanaman lain dan bisa tumbuh sangat tinggi. Di ujung daunnya ada sulur yang berubah menjadi kantong perangkap. Ada kantong atas yang tinggi untuk menangkap nyamuk dan lalat. Ada juga kantong bawah dekat tanah untuk menjebak semut.",
+      "body_en": "Pitcher plants climb other plants and can grow very tall. At the tip of each leaf is a tendril that turns into a trap-pouch. The upper pouch hangs high to catch mosquitoes and flies. The lower pouch sits near the ground to trap ants."
+    },
+    {
+      "icon": "water_drop",
+      "h_id": "Cara Lembut Menangkap Serangga",
+      "h_en": "How It Gently Traps Insects",
+      "body_id": "Bibir kantong licin dan harum, jadi serangga datang untuk mencicipi. Saat menginjak tepi yang licin, serangga tergelincir masuk ke dalam kantong. Di dalam ada cairan berenzim yang perlahan mengubah serangga menjadi makanan. Begitulah tumbuhan ini mendapat nutrisi tanpa harus berburu.",
+      "body_en": "The rim of the pouch is slippery and sweet-smelling, so insects come for a taste. When they step on the slick edge, they slide down into the pouch. Inside is a special liquid that slowly turns the insect into food. That is how the plant gets nutrients without hunting."
+    },
+    {
+      "icon": "shield",
+      "h_id": "Kenapa Istimewa & Ayo Lindungi!",
+      "h_en": "Why It's Special & Let's Protect It",
+      "body_id": "Kantong semar tumbuh di tanah miskin makanan, jadi ia pintar mencari nutrisi sendiri. Bahkan kelelawar kecil suka tidur di dalam kantongnya yang aman! Karena unik, kita harus menjaga rawa dan hutan tempatnya hidup. Dengan melindungi rumahnya, tumbuhan ajaib ini bisa terus tumbuh.",
+      "body_en": "Pitcher plants grow in soil that is poor in food, so they cleverly find their own nutrients. Tiny bats even like to sleep safely inside their pouches! Because they are so unique, we must protect the swamps and forests where they live. By saving their home, this magical plant can keep growing."
+    }
+  ],
+  "facts": [
+    { "id": "Kantong semar memakan serangga, bukan dimakan serangga!", "en": "The pitcher plant eats insects instead of being eaten by them!" },
+    { "id": "Ada lebih dari 100 jenis kantong semar di dunia.", "en": "There are more than 100 kinds of pitcher plants in the world." },
+    { "id": "Kelelawar berbulu wol suka tidur aman di dalam kantongnya.", "en": "Woolly bats like to sleep safely inside the pouch." },
+    { "id": "Cairan di dalam kantong bisa melarutkan serangga kecil.", "en": "The liquid inside the pouch can dissolve tiny insects." },
+    { "id": "Di Kalimantan, kantongnya dipakai sebagai wadah membuat kue!", "en": "In Borneo, the pouch is used as a container for making cakes!" },
+    { "id": "Ada kantong semar yang tumbuh tinggi di gunung, lebih dari 3.000 meter!", "en": "Some pitcher plants grow high on mountains, over 3,000 meters up!" }
+  ],
+  "gallery": [
+    "app/assets/img/wiki/3c337722596ebff7.jpg",
+    "app/assets/img/wiki/e2749697e68a1792.jpg",
+    "app/assets/img/wiki/4ebbe0488c825f13.jpg",
+    "app/assets/img/wiki/0beaf77174ac2dc2.jpg",
+    "app/assets/img/wiki/d13d9119b96f364a.jpg",
+    "app/assets/img/wiki/9bdd040f0158e1fb.jpg"
+  ],
+  "credits": [
+    { "src": "app/assets/img/wiki/3c337722596ebff7.jpg", "credit": "Kleo Marlo Sialongo", "license": "CC BY 2.0" },
+    { "src": "app/assets/img/wiki/e2749697e68a1792.jpg", "credit": "en:User:Rbrtjong", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/d13d9119b96f364a.jpg", "credit": "Ariefrahman", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/9bdd040f0158e1fb.jpg", "credit": "Ariefrahman", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/4ebbe0488c825f13.jpg", "credit": "Pavel Kirillov from St.Petersburg, Russia", "license": "CC BY-SA 2.0" },
+    { "src": "app/assets/img/wiki/0beaf77174ac2dc2.jpg", "credit": "NoverKelana", "license": "CC BY-SA 4.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Kantong_semar"
+}

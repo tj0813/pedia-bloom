@@ -1,0 +1,67 @@
+{
+  "id": "ensiklopedia_anggrek_macan",
+  "title_id": "Anggrek Tebu",
+  "title_en": "Giant Orchid",
+  "subtitle_id": "Anggrek terbesar di dunia, berat dan tinggi!",
+  "subtitle_en": "The biggest orchid in the whole world!",
+  "sections": [
+    {
+      "icon": "eco",
+      "h_id": "Apa Itu Anggrek Tebu?",
+      "h_en": "What Is the Giant Orchid?",
+      "body_id": "Anggrek tebu adalah anggrek terbesar di dunia. Orang juga memanggilnya Anggrek Raksasa, Anggrek Harimau, atau Ratu Anggrek. Tanaman ini bisa tumbuh sangat besar dan berat sekali. Bayangkan, ada yang beratnya lebih dari satu ton!",
+      "body_en": "The giant orchid is the biggest orchid in the world. People also call it the Giant Orchid, Tiger Orchid, or Queen of Orchids. This plant can grow huge and very heavy. Imagine, some weigh more than one ton!"
+    },
+    {
+      "icon": "public",
+      "h_id": "Di Mana Hidupnya?",
+      "h_en": "Where Does It Live?",
+      "body_id": "Anggrek tebu tumbuh di hutan-hutan Asia Tenggara. Kamu bisa menemukannya di Indonesia, seperti di Sumatra, Jawa, Sulawesi, dan Kalimantan. Tanaman ini juga ada di Thailand, Myanmar, Vietnam, dan Malaysia. Ia suka tempat yang hangat dan terkena cahaya matahari.",
+      "body_en": "The giant orchid grows in the forests of Southeast Asia. You can find it in Indonesia, like in Sumatra, Java, Sulawesi, and Borneo. It also lives in Thailand, Myanmar, Vietnam, and Malaysia. It loves warm spots with plenty of sunshine."
+    },
+    {
+      "icon": "height",
+      "h_id": "Tubuh & Ciri Khas",
+      "h_en": "Body & Special Features",
+      "body_id": "Anggrek ini bisa tumbuh setinggi rumah! Pernah ada yang mencapai lebih dari 7 meter. Batangnya yang tebal disebut pseudobulb dan bisa sepanjang 2,5 meter. Akarnya tumbuh seperti ikatan tebal yang menempel di pohon atau batu.",
+      "body_en": "This orchid can grow as tall as a house! One was even taller than 7 meters. Its thick stems are called pseudobulbs and can be 2.5 meters long. Its roots grow in thick bundles that cling to trees or rocks."
+    },
+    {
+      "icon": "local_florist",
+      "h_id": "Bunga yang Istimewa",
+      "h_en": "Its Amazing Flowers",
+      "body_id": "Bunganya berwarna kuning cerah dengan bintik-bintik merah tua. Satu tangkai bisa punya hingga 80 bunga, dan satu tanaman bisa berbunga ribuan! Anggrek ini hanya mekar sekali setiap dua sampai empat tahun. Tapi saat mekar, bunganya tetap segar dan indah sampai berminggu-minggu.",
+      "body_en": "Its flowers are bright yellow with dark red spots. One stalk can have up to 80 flowers, and one plant can bloom thousands! This orchid blooms only once every two to four years. But when it blooms, the flowers stay fresh and pretty for weeks."
+    },
+    {
+      "icon": "volunteer_activism",
+      "h_id": "Ayo Kita Jaga!",
+      "h_en": "Let's Take Care of It!",
+      "body_id": "Anggrek tebu adalah harta alam Indonesia yang langka dan istimewa. Tanaman ini tumbuh lambat dan butuh hutan yang sehat untuk hidup. Kita bisa membantu dengan menjaga hutan tetap hijau. Dengan begitu, anak-anak masa depan juga bisa melihat raksasa cantik ini!",
+      "body_en": "The giant orchid is a rare and special treasure of Indonesia's nature. This plant grows slowly and needs healthy forests to live. We can help by keeping forests green. That way, future children can also see this beautiful giant!"
+    }
+  ],
+  "facts": [
+    { "id": "Anggrek tebu adalah anggrek terbesar di dunia!", "en": "The giant orchid is the biggest orchid in the world!" },
+    { "id": "Pernah ada yang tingginya lebih dari 7 meter, setinggi rumah.", "en": "One was over 7 meters tall, as tall as a house." },
+    { "id": "Beratnya bisa lebih dari satu ton, seperti seekor sapi besar.", "en": "It can weigh over one ton, like a big cow." },
+    { "id": "Satu tanaman pernah berbunga sampai ribuan kuntum sekaligus!", "en": "One plant once bloomed with thousands of flowers at once!" },
+    { "id": "Anggrek ini hanya mekar sekali setiap 2 sampai 4 tahun.", "en": "This orchid blooms only once every 2 to 4 years." },
+    { "id": "Ada satu yang ditanam tahun 1861 dan masih hidup hingga kini!", "en": "One planted in 1861 is still alive today!" }
+  ],
+  "gallery": [
+    "app/assets/img/wiki/63ce9b63483762b3.jpg",
+    "app/assets/img/wiki/0660c966a101239b.jpg",
+    "app/assets/img/wiki/12eb3e4b61ec0623.jpg",
+    "app/assets/img/wiki/4b5c177f2c83e0c2.jpg",
+    "app/assets/img/wiki/17f94004bd703c64.jpg"
+  ],
+  "credits": [
+    { "src": "app/assets/img/wiki/63ce9b63483762b3.jpg", "credit": "Meneerke bloem", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/0660c966a101239b.jpg", "credit": "Brutusaurus", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/12eb3e4b61ec0623.jpg", "credit": "Brutusaurus", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/4b5c177f2c83e0c2.jpg", "credit": "Wikimedia Commons", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/17f94004bd703c64.jpg", "credit": "Die_Gartenlaube_(1897)_211.jpg: Ernst Keil's Nachfolger\nderivative work: Frédéri", "license": "Public domain" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Anggrek_tebu"
+}

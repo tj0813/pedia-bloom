@@ -9,7 +9,9 @@
     "build:icons": "node tests/gen-icons.mjs",
     "build:fonts": "python build_assets.py",
     "build:bundle": "python build.py",
-    "build": "npm run build:bundle && npm run build:fonts && npm run build:css && npm run build:icons",
+    "fetch:content": "python build_content.py",
+    "build:content": "node scripts/build-content.mjs",
+    "build": "npm run build:bundle && npm run build:content && npm run build:fonts && npm run build:css && npm run build:icons",
     "test": "node tests/run-e2e.mjs",
     "test:py": "pytest -q"
   },

@@ -1,0 +1,69 @@
+{
+  "id": "ensiklopedia_hutan_mangrove",
+  "title_id": "Hutan Mangrove",
+  "title_en": "Mangrove Forest",
+  "subtitle_id": "Hutan ajaib penjaga pantai dan rumah satwa",
+  "subtitle_en": "Magical coastal forest, home to wildlife",
+  "sections": [
+    {
+      "icon": "forest",
+      "h_id": "Apa Itu Hutan Mangrove?",
+      "h_en": "What Is a Mangrove Forest?",
+      "body_id": "Hutan mangrove, atau hutan bakau, adalah hutan istimewa yang tumbuh di tepi laut. Pohon-pohonnya berdiri di tanah berlumpur yang sering tergenang air pasang. Hanya tumbuhan khusus yang bisa hidup di sini karena airnya asin. Hutan ini sering tumbuh di teluk yang tenang dan di muara sungai.",
+      "body_en": "A mangrove forest is a special forest that grows along the seashore. Its trees stand in muddy soil that is often flooded by the tide. Only special plants can live here because the water is salty. These forests often grow in calm bays and at river mouths."
+    },
+    {
+      "icon": "public",
+      "h_id": "Di Mana Tumbuhnya?",
+      "h_en": "Where Does It Grow?",
+      "body_id": "Hutan mangrove tumbuh di tempat-tempat yang hangat di dekat garis khatulistiwa. Indonesia punya hutan mangrove terluas di seluruh dunia! Hutan ini banyak ditemukan di pantai timur Sumatra, Kalimantan, dan Papua. Seperempat hutan mangrove dunia ada di negara kita.",
+      "body_en": "Mangrove forests grow in warm places near the equator. Indonesia has the largest mangrove forests in the whole world! They are found along the east coast of Sumatra, in Kalimantan, and in Papua. A quarter of the world's mangroves are in our country."
+    },
+    {
+      "icon": "eco",
+      "h_id": "Pohon yang Hebat",
+      "h_en": "Amazing Trees",
+      "body_id": "Pohon bakau punya akar khusus yang menjulur seperti kaki-kaki yang kokoh. Akar ini membantunya berdiri kuat di lumpur yang lembek. Ada banyak jenis pohon mangrove, dan sekitar 39 jenis tumbuh di Indonesia. Pohon-pohon ini tumbuh berlapis-lapis, dari tepi laut sampai ke daratan.",
+      "body_en": "Mangrove trees have special roots that stretch out like sturdy legs. These roots help them stand strong in the soft mud. There are many kinds of mangrove trees, and about 39 kinds grow in Indonesia. They grow in layers, from the seashore all the way inland."
+    },
+    {
+      "icon": "pets",
+      "h_id": "Rumah Banyak Hewan",
+      "h_en": "Home to Many Animals",
+      "body_id": "Hutan mangrove adalah rumah yang nyaman bagi banyak hewan. Ikan kecil, kepiting, dan udang bersembunyi di antara akar-akarnya. Burung-burung indah, seperti jalak bali, juga suka tinggal di sini. Tempat ini seperti taman bermain yang penuh kehidupan!",
+      "body_en": "The mangrove forest is a cozy home for many animals. Small fish, crabs, and shrimp hide among its roots. Beautiful birds, like the Bali myna, also love to live here. This place is like a playground full of life!"
+    },
+    {
+      "icon": "shield",
+      "h_id": "Pelindung Pantai",
+      "h_en": "Guardian of the Coast",
+      "body_id": "Hutan mangrove adalah perisai alami yang melindungi pantai. Akar-akarnya yang rapat menahan ombak besar agar tidak merusak daratan. Hutan ini juga mencegah tanah pantai terkikis air laut. Yuk, kita jaga hutan mangrove agar pantai dan hewan-hewannya tetap aman!",
+      "body_en": "The mangrove forest is a natural shield that protects the coast. Its thick roots hold back big waves so they cannot harm the land. The forest also stops the shore from being washed away by the sea. Let's protect mangrove forests so our coasts and animals stay safe!"
+    }
+  ],
+  "facts": [
+    { "id": "Indonesia punya hutan mangrove terluas di dunia!", "en": "Indonesia has the largest mangrove forest in the world!" },
+    { "id": "Seperempat mangrove dunia ada di Indonesia.", "en": "A quarter of the world's mangroves are in Indonesia." },
+    { "id": "Akar bakau menahan ombak besar agar pantai aman.", "en": "Mangrove roots hold back big waves to keep the coast safe." },
+    { "id": "Sekitar 39 jenis pohon bakau tumbuh di Indonesia.", "en": "About 39 kinds of mangrove trees grow in Indonesia." },
+    { "id": "Ikan, kepiting, dan burung tinggal di antara akarnya.", "en": "Fish, crabs, and birds live among its roots." },
+    { "id": "Pohon bakau bisa hidup di air laut yang asin.", "en": "Mangrove trees can live in salty seawater." }
+  ],
+  "gallery": [
+    "app/assets/img/wiki/6ff699218b04654d.jpg",
+    "app/assets/img/wiki/c211ef295f34d967.jpg",
+    "app/assets/img/wiki/9e46ea2e529bcdeb.jpg",
+    "app/assets/img/wiki/b4e2647dc204423d.jpg",
+    "app/assets/img/wiki/d5e6a33f64a65b39.jpg",
+    "app/assets/img/wiki/570c9435a9932759.jpg"
+  ],
+  "credits": [
+    { "src": "app/assets/img/wiki/9e46ea2e529bcdeb.jpg", "credit": "Ron from Nieuwegein / South Moreton Oxfordshire, Netherlands / UK", "license": "CC BY-SA 2.0" },
+    { "src": "app/assets/img/wiki/570c9435a9932759.jpg", "credit": "Ulf Mehlig", "license": "CC BY-SA 2.5" },
+    { "src": "app/assets/img/wiki/b4e2647dc204423d.jpg", "credit": "Wikimedia Commons", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/d5e6a33f64a65b39.jpg", "credit": "Wie146", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/6ff699218b04654d.jpg", "credit": "CEphoto, Uwe Aranas", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/c211ef295f34d967.jpg", "credit": "CEphoto, Uwe Aranas", "license": "CC BY-SA 3.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Hutan_mangrove"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "ensiklopedia_rafflesia_arnoldii",
+  "title_id": "Rafflesia Arnoldii (Padma Raksasa)",
+  "title_en": "Rafflesia Arnoldii",
+  "subtitle_id": "Bunga terbesar di dunia dari hutan Indonesia",
+  "subtitle_en": "The world's biggest flower from Indonesia's forests",
+  "sections": [
+    {
+      "icon": "local_florist",
+      "h_id": "Apa Itu Rafflesia?",
+      "h_en": "What Is Rafflesia?",
+      "body_id": "Rafflesia arnoldii adalah bunga terbesar di dunia! Saat mekar, lebarnya bisa mencapai sekitar 70 sampai 110 sentimeter, kira-kira selebar ban mobil. Bunga raksasa ini juga salah satu bunga nasional kebanggaan Indonesia.",
+      "body_en": "Rafflesia arnoldii is the biggest flower in the world! When it blooms, it can grow about 70 to 110 centimeters wide, roughly as wide as a car tire. This giant flower is also one of Indonesia's proud national flowers."
+    },
+    {
+      "icon": "forest",
+      "h_id": "Di Mana Hidupnya?",
+      "h_en": "Where Does It Live?",
+      "body_id": "Rafflesia tumbuh di hutan hujan yang lembap di Pulau Sumatra dan Kalimantan. Daerah Bengkulu dikenal sebagai 'Bumi Rafflesia' karena bunga ini pertama ditemukan di sana. Taman Nasional Kerinci Seblat adalah tempat penting untuk menjaganya.",
+      "body_en": "Rafflesia grows in the damp rainforests of Sumatra and Borneo. The Bengkulu area is known as the 'Land of Rafflesia' because the flower was first found there. Kerinci Seblat National Park is an important place that protects it."
+    },
+    {
+      "icon": "spa",
+      "h_id": "Bunga Tanpa Daun & Akar",
+      "h_en": "A Flower With No Leaves or Roots",
+      "body_id": "Rafflesia sangat unik karena tidak punya daun, akar, atau batang, hanya bunganya saja! Karena tak punya daun, ia tidak bisa membuat makanan sendiri. Jadi ia hidup menempel pada tumbuhan merambat bernama Tetrastigma dan mengambil makanan dari sana, seperti tamu yang menumpang.",
+      "body_en": "Rafflesia is very unusual because it has no leaves, roots, or stem, just the flower! Because it has no leaves, it cannot make its own food. So it lives attached to a climbing vine called Tetrastigma and takes food from it, like a guest borrowing a meal."
+    },
+    {
+      "icon": "schedule",
+      "h_id": "Mekar & Baunya",
+      "h_en": "Blooming & Its Smell",
+      "body_id": "Rafflesia punya lima kelopak besar berwarna merah dengan bintik-bintik putih. Bunga ini hanya mekar sekitar satu minggu, lalu layu. Baunya kuat seperti bau busuk, jadi orang menyebutnya 'bunga bangkai'. Bau itu memanggil lalat untuk membantu menyebarkan benih bunga.",
+      "body_en": "Rafflesia has five big red petals with white spots. The flower blooms for only about one week, then it wilts. It smells strong like something rotten, so people call it the 'corpse flower'. That smell calls flies to help the flower make seeds."
+    },
+    {
+      "icon": "volunteer_activism",
+      "h_id": "Ayo Lindungi!",
+      "h_en": "Let's Protect It!",
+      "body_id": "Rafflesia sangat langka dan terancam punah karena hutan tempatnya hidup banyak ditebang. Sejak tahun 1993, bunga ini dilindungi sebagai puspa langka Indonesia. Kita bisa membantu dengan menjaga hutan tetap utuh agar bunga raksasa ini terus mekar.",
+      "body_en": "Rafflesia is very rare and endangered because the forests where it lives are being cut down. Since 1993, this flower has been protected as a rare flower of Indonesia. We can help by keeping forests safe so this giant flower can keep blooming."
+    }
+  ],
+  "facts": [
+    { "id": "Rafflesia arnoldii adalah bunga terbesar di dunia!", "en": "Rafflesia arnoldii is the biggest flower in the world!" },
+    { "id": "Saat mekar, lebarnya bisa sampai 70-110 cm dan beratnya sekitar 11 kilogram.", "en": "When open it can be 70-110 cm wide and weigh about 11 kilograms." },
+    { "id": "Bunganya hanya mekar sekitar satu minggu lalu layu.", "en": "The flower blooms for only about one week, then wilts." },
+    { "id": "Baunya seperti bangkai, itu sebabnya disebut 'bunga bangkai'.", "en": "It smells rotten, which is why it's called the 'corpse flower'." },
+    { "id": "Rafflesia tidak punya daun, akar, atau batang, hanya bunga!", "en": "Rafflesia has no leaves, roots, or stem, just the flower!" },
+    { "id": "Namanya dari Thomas Stamford Raffles dan Dr. Joseph Arnold.", "en": "It is named after Thomas Stamford Raffles and Dr. Joseph Arnold." }
+  ],
+  "gallery": [
+    "app/assets/img/wiki/385c30fce59c6dae.jpg",
+    "app/assets/img/wiki/5bdda5cecc92b796.jpg",
+    "app/assets/img/wiki/968a36f5e2a1bef9.jpg",
+    "app/assets/img/wiki/df932888e453e9ab.jpg",
+    "app/assets/img/wiki/3f06e227b7900dd1.jpg",
+    "app/assets/img/wiki/512eff53f752a947.jpg"
+  ],
+  "credits": [
+    { "src": "app/assets/img/wiki/385c30fce59c6dae.jpg", "credit": "Maizal Chaniago", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/5bdda5cecc92b796.jpg", "credit": "SofianRafflesia", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/968a36f5e2a1bef9.jpg", "credit": "PlusMinus", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/df932888e453e9ab.jpg", "credit": "ma_suska", "license": "CC BY 2.0" },
+    { "src": "app/assets/img/wiki/3f06e227b7900dd1.jpg", "credit": "Moheen Reeyad", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/512eff53f752a947.jpg", "credit": "Moheen Reeyad", "license": "CC BY-SA 4.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Padma_raksasa"
+}

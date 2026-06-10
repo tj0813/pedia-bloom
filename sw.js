@@ -2,7 +2,7 @@
  * Precaches the full app shell (now fully self-hosted: no CDN). Local images are
  * cached at runtime (stale-while-revalidate). Navigations fall back to the cached
  * shell when offline so the app always boots. */
-var VERSION = "pedia-bloom-v6";
+var VERSION = "pedia-bloom-v7";
 var SHELL = VERSION + "-shell";
 var RUNTIME = VERSION + "-runtime";
 
@@ -13,6 +13,7 @@ var SHELL_ASSETS = [
   "./app/app.js",
   "./app/screens-data.js",
   "./app/i18n/topics.js",
+  "./app/content.js",
   "./app/assets/styles.css",
   "./app/assets/fonts/fonts.css",
   "./app/assets/fonts/quicksand-0.woff2",
@@ -69,7 +70,7 @@ self.addEventListener("fetch", function (e) {
   var isShell = sameOrigin && (
     url.pathname.endsWith("/") ||
     /\/(index\.html|manifest\.webmanifest)$/.test(url.pathname) ||
-    /\/app\/(app|screens-data)\.js$/.test(url.pathname) ||
+    /\/app\/(app|screens-data|content)\.js$/.test(url.pathname) ||
     /\/app\/i18n\/topics\.js$/.test(url.pathname) ||
     /\/app\/assets\/styles\.css$/.test(url.pathname) ||
     /\/app\/assets\/fonts\//.test(url.pathname) ||

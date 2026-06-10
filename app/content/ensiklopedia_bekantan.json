@@ -1,0 +1,69 @@
+{
+  "id": "ensiklopedia_bekantan",
+  "title_id": "Bekantan",
+  "title_en": "Proboscis Monkey",
+  "subtitle_id": "Monyet berhidung panjang khas Pulau Kalimantan.",
+  "subtitle_en": "The long-nosed monkey of Borneo.",
+  "sections": [
+    {
+      "icon": "pets",
+      "h_id": "Apa Itu Bekantan?",
+      "h_en": "What Is the Proboscis Monkey?",
+      "body_id": "Bekantan adalah monyet berhidung panjang dengan rambut hitam kemerahan. Hidung yang besar dan panjang hanya dimiliki bekantan jantan. Orang juga memanggilnya kera belanda atau monyet belanda. Hewan ini hanya hidup di Pulau Kalimantan, jadi disebut hewan endemik.",
+      "body_en": "The proboscis monkey is a long-nosed monkey with reddish-black fur. Only the male proboscis monkeys have the big, long nose. People also call it the Dutch monkey or long-nosed monkey. This animal lives only on Borneo, so it is called an endemic animal."
+    },
+    {
+      "icon": "forest",
+      "h_id": "Di Mana Hidupnya?",
+      "h_en": "Where Does It Live?",
+      "body_id": "Bekantan tinggal di hutan, rawa, dan hutan dekat pantai di Kalimantan. Kamu bisa menemukannya di Kalimantan Selatan, Timur, dan Utara. Bekantan adalah hewan kebanggaan Provinsi Kalimantan Selatan. Ia berbagi rumah dengan teman-temannya seperti orangutan dan lutung kelabu.",
+      "body_en": "The proboscis monkey lives in forests, swamps, and coastal forests in Borneo. You can find it in South, East, and North Kalimantan. The proboscis monkey is the pride animal of South Kalimantan Province. It shares its home with friends like orangutans and gray langurs."
+    },
+    {
+      "icon": "restaurant",
+      "h_id": "Makanan & Perut Buncit",
+      "h_en": "Food & Its Big Belly",
+      "body_id": "Bekantan suka makan buah, biji-bijian, dan aneka daun. Daun yang dimakannya menghasilkan banyak gas saat dicerna. Itulah kenapa perut bekantan terlihat buncit dan besar. Jadi, perut buncit itu adalah ciri khas yang lucu dari bekantan!",
+      "body_en": "The proboscis monkey loves to eat fruits, seeds, and many kinds of leaves. The leaves it eats make lots of gas when digested. That is why the proboscis monkey has a round, big belly. So its big belly is a funny special feature of the proboscis monkey!"
+    },
+    {
+      "icon": "water_drop",
+      "h_id": "Perenang yang Hebat",
+      "h_en": "A Great Swimmer",
+      "body_id": "Bekantan hidup berkelompok, biasanya 10 sampai 32 monyet bersama. Mereka juga jago berenang, bahkan menyeberang dari satu pulau ke pulau lain! Di sela jari kakinya ada selaput tipis yang membantunya berenang. Hidungnya punya semacam katup, jadi ia bisa menyelam beberapa detik.",
+      "body_en": "The proboscis monkey lives in groups, usually 10 to 32 monkeys together. They are also great swimmers, even crossing from one island to another! Between their toes is a thin web that helps them swim. Their nose has a kind of valve, so they can dive for a few seconds."
+    },
+    {
+      "icon": "shield",
+      "h_id": "Ayo Lindungi!",
+      "h_en": "Let's Protect It!",
+      "body_id": "Bekantan perlu kita lindungi karena hutannya semakin berkurang. Kabar baiknya, di Kalimantan Selatan jumlah bekantan naik dari sekitar 3.000 menjadi 4.000 ekor. Ini terjadi karena banyak orang ikut menjaga mereka. Kalau kita menjaga hutan, bekantan bisa terus berenang dan bermain dengan bahagia.",
+      "body_en": "The proboscis monkey needs our protection because its forests are shrinking. The good news is that in South Kalimantan their number rose from about 3,000 to 4,000. This happened because many people helped protect them. If we protect the forests, proboscis monkeys can keep swimming and playing happily."
+    }
+  ],
+  "facts": [
+    { "id": "Hanya bekantan jantan yang punya hidung panjang dan besar!", "en": "Only male proboscis monkeys have the long, big nose!" },
+    { "id": "Bekantan hanya hidup di Pulau Kalimantan.", "en": "The proboscis monkey lives only on Borneo." },
+    { "id": "Perutnya buncit karena banyak makan daun yang menghasilkan gas.", "en": "Its belly is big from eating many gassy leaves." },
+    { "id": "Bekantan jago berenang dan punya selaput di sela jari kaki.", "en": "The proboscis monkey is a great swimmer with webbed toes." },
+    { "id": "Bekantan adalah hewan kebanggaan Kalimantan Selatan.", "en": "The proboscis monkey is the pride animal of South Kalimantan." },
+    { "id": "Jumlahnya di Kalimantan Selatan naik menjadi sekitar 4.000 ekor!", "en": "Their number in South Kalimantan rose to about 4,000!" }
+  ],
+  "gallery": [
+    "app/assets/img/wiki/e136b48c3214f29a.jpg",
+    "app/assets/img/wiki/49ea08d34756f739.jpg",
+    "app/assets/img/wiki/9361a077e9d3bc15.jpg",
+    "app/assets/img/wiki/91931c7b866f4c18.jpg",
+    "app/assets/img/wiki/574c0804ed7e522c.jpg",
+    "app/assets/img/wiki/585d5d0fc86c23e0.jpg"
+  ],
+  "credits": [
+    { "src": "app/assets/img/wiki/e136b48c3214f29a.jpg", "credit": "Agoes Suwondo", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/49ea08d34756f739.jpg", "credit": "Wikimedia Commons", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/9361a077e9d3bc15.jpg", "credit": "Agoes Suwondo", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/91931c7b866f4c18.jpg", "credit": "Agoes Suwondo", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/574c0804ed7e522c.jpg", "credit": "Ade Putri Amelia Az-Zahra", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/585d5d0fc86c23e0.jpg", "credit": "Agoes Suwondo", "license": "CC BY-SA 4.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Bekantan"
+}

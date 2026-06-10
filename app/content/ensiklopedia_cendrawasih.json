@@ -1,0 +1,68 @@
+{
+  "id": "ensiklopedia_cendrawasih",
+  "title_id": "Cendrawasih",
+  "title_en": "Bird-of-Paradise",
+  "subtitle_id": "Burung surga cantik dari tanah Papua!",
+  "subtitle_en": "The beautiful bird of paradise from Papua!",
+  "sections": [
+    {
+      "icon": "pets",
+      "h_id": "Apa Itu Cendrawasih?",
+      "h_en": "What Is the Bird-of-Paradise?",
+      "body_id": "Cendrawasih adalah burung pengicau cantik dari keluarga Paradisaeidae. Banyak orang menyebutnya 'burung surga' karena bulunya yang indah dan berwarna-warni. Ada banyak jenisnya, seperti cendrawasih merah, kuning, raja, dan kaisar.",
+      "body_en": "The bird-of-paradise is a beautiful songbird from the Paradisaeidae family. Many people call it the 'bird of heaven' because of its lovely, colorful feathers. There are many kinds, like the red, yellow, king, and emperor birds-of-paradise."
+    },
+    {
+      "icon": "public",
+      "h_id": "Di Mana Hidupnya?",
+      "h_en": "Where Does It Live?",
+      "body_id": "Cendrawasih hidup di hutan-hutan lebat di Papua, Indonesia, dan pulau-pulau di sekitarnya. Mereka suka tinggal tinggi di atas pepohonan hutan hujan tropis. Karena keindahannya, burung ini menjadi kebanggaan tanah Papua.",
+      "body_en": "Birds-of-paradise live in the thick forests of Papua, Indonesia, and nearby islands. They like to stay high up in the trees of the tropical rainforest. Because of their beauty, these birds are the pride of Papua."
+    },
+    {
+      "icon": "visibility",
+      "h_id": "Tubuh & Ciri Khas",
+      "h_en": "Body & Features",
+      "body_id": "Cendrawasih jantan memiliki bulu yang sangat indah dengan warna-warna cerah seperti merah, kuning, dan hijau. Beberapa punya bulu panjang yang menjuntai seperti pita atau kawat. Bulu cantik ini hanya dimiliki oleh burung jantan.",
+      "body_en": "Male birds-of-paradise have very beautiful feathers in bright colors like red, yellow, and green. Some have long feathers that flow like ribbons or wires. These lovely feathers belong only to the male birds."
+    },
+    {
+      "icon": "favorite",
+      "h_id": "Kebiasaan Menari",
+      "h_en": "Their Dancing Habit",
+      "body_id": "Cendrawasih jantan suka menari untuk menarik perhatian betina! Mereka memamerkan bulu indahnya sambil bergoyang di atas dahan. Mereka memakan buah-buahan dan serangga kecil di hutan.",
+      "body_en": "Male birds-of-paradise love to dance to attract the females! They show off their beautiful feathers while swaying on the branches. They eat fruits and small insects in the forest."
+    },
+    {
+      "icon": "shield",
+      "h_id": "Ayo Lindungi!",
+      "h_en": "Let's Protect It!",
+      "body_id": "Cendrawasih harus kita jaga agar tidak punah. Mereka terancam karena hutan tempat tinggalnya berkurang dan perburuan bulunya. Dengan menjaga hutan Papua, kita membantu burung surga ini terus terbang bebas dan menari.",
+      "body_en": "We must protect birds-of-paradise so they do not disappear. They are threatened because their forest homes are shrinking and people hunt them for their feathers. By protecting Papua's forests, we help these heavenly birds keep flying free and dancing."
+    }
+  ],
+  "facts": [
+    { "id": "Cendrawasih dijuluki 'burung surga' karena keindahannya.", "en": "The bird-of-paradise is nicknamed the 'bird of heaven' for its beauty." },
+    { "id": "Burung jantan menari untuk memikat pasangannya.", "en": "Male birds dance to win a partner." },
+    { "id": "Hanya burung jantan yang punya bulu hias super cantik.", "en": "Only the male birds have super pretty show feathers." },
+    { "id": "Cendrawasih adalah lambang kebanggaan tanah Papua.", "en": "The bird-of-paradise is a symbol of pride for Papua." },
+    { "id": "Ada belasan jenis cendrawasih di Indonesia.", "en": "There are over a dozen kinds of birds-of-paradise in Indonesia." }
+  ],
+  "gallery": [
+    "app/assets/img/wiki/47ba731e94dfca1a.jpg",
+    "app/assets/img/wiki/1a13738e3075d8d5.jpg",
+    "app/assets/img/wiki/b137ef678195257f.jpg",
+    "app/assets/img/wiki/892238c9389bd6e6.jpg",
+    "app/assets/img/wiki/92e7f1db2270f296.png",
+    "app/assets/img/wiki/b545725c50aa8cab.jpg"
+  ],
+  "credits": [
+    { "src": "app/assets/img/wiki/1a13738e3075d8d5.jpg", "credit": "Albertus Seba (1665 - 1736) – Artist (German) Born in Etzel, Germany. Died in Am", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/47ba731e94dfca1a.jpg", "credit": "Philip Nalangan", "license": "CC BY 4.0" },
+    { "src": "app/assets/img/wiki/b137ef678195257f.jpg", "credit": "Ulisse Aldrovandi", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/92e7f1db2270f296.png", "credit": "Houseplants Nook", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/892238c9389bd6e6.jpg", "credit": "Author unknown", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/b545725c50aa8cab.jpg", "credit": "H. Zell", "license": "CC BY-SA 3.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Cenderawasih_%28disambiguasi%29"
+}

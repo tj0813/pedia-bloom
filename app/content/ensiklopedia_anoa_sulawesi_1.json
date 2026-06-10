@@ -1,0 +1,69 @@
+{
+  "id": "ensiklopedia_anoa_sulawesi_1",
+  "title_id": "Anoa",
+  "title_en": "Anoa",
+  "subtitle_id": "Kerbau kerdil istimewa khas Pulau Sulawesi.",
+  "subtitle_en": "The special dwarf buffalo of Sulawesi.",
+  "sections": [
+    {
+      "icon": "pets",
+      "h_id": "Apa Itu Anoa?",
+      "h_en": "What Is an Anoa?",
+      "body_id": "Anoa adalah kerbau mungil yang sering disebut kerbau kerdil. Bentuk tubuhnya mirip kerbau, tapi ukurannya jauh lebih kecil. Hewan ini hanya hidup di Pulau Sulawesi dan Pulau Buton di Indonesia. Karena hanya ada di sana, anoa disebut hewan endemik.",
+      "body_en": "The anoa is a tiny buffalo often called the dwarf buffalo. Its body looks like a buffalo, but it is much smaller. This animal lives only on Sulawesi Island and Buton Island in Indonesia. Because it lives only there, the anoa is called an endemic animal."
+    },
+    {
+      "icon": "forest",
+      "h_id": "Di Mana Hidupnya?",
+      "h_en": "Where Does It Live?",
+      "body_id": "Anoa tinggal di dalam hutan hujan yang masih lebat dan jarang dilewati manusia. Pulau Sulawesi adalah rumah istimewa bagi banyak hewan yang hanya ada di sana. Salah satu kebiasaan favorit anoa adalah berkubang di lumpur. Berkubang membantu tubuhnya tetap sejuk dan bersih.",
+      "body_en": "The anoa lives deep in thick rainforests that people rarely visit. Sulawesi Island is a special home for many animals found nowhere else. One of the anoa's favorite habits is wallowing in mud. Wallowing helps keep its body cool and clean."
+    },
+    {
+      "icon": "height",
+      "h_id": "Tubuh & Ciri Khas",
+      "h_en": "Body & Special Features",
+      "body_id": "Anoa punya tanduk yang mengarah ke belakang dan dasarnya berbentuk seperti segitiga. Kepalanya mirip sapi, dan kakinya mirip banteng. Ada dua jenis anoa: anoa dataran rendah yang lebih besar, dan anoa pegunungan yang lebih kecil. Anoa pegunungan punya tanduk melingkar dan ekor pendek yang lembut.",
+      "body_en": "The anoa has horns that point backward with a triangle-shaped base. Its head looks like a cow's, and its legs look like a wild ox's. There are two kinds: the bigger lowland anoa and the smaller mountain anoa. The mountain anoa has curved horns and a short, soft tail."
+    },
+    {
+      "icon": "favorite",
+      "h_id": "Kenapa Istimewa?",
+      "h_en": "Why Is It Special?",
+      "body_id": "Anoa adalah kebanggaan dan ciri khas Pulau Sulawesi. Ia tinggal di Wallacea, daerah unik yang penuh hewan dan tumbuhan yang hanya ada di sana. Anoa termasuk hewan yang pemalu dan suka menyendiri. Para ilmuwan menyayangi anoa karena ia sangat penting bagi alam Indonesia.",
+      "body_en": "The anoa is the pride and symbol of Sulawesi Island. It lives in Wallacea, a unique area full of animals and plants found only there. The anoa is a shy creature that likes to be alone. Scientists love the anoa because it is so important to Indonesia's nature."
+    },
+    {
+      "icon": "shield",
+      "h_id": "Ayo Lindungi!",
+      "h_en": "Let's Protect It!",
+      "body_id": "Sekarang jumlah anoa semakin sedikit, jadi ia perlu kita lindungi. Hewan ini sudah dijaga oleh hukum Indonesia sejak tahun 1931. Anoa butuh hutan yang aman dan sehat untuk hidup. Dengan menjaga hutan, kita membantu anoa terus berkembang biak dengan bahagia.",
+      "body_en": "Today there are fewer anoa, so we need to protect it. This animal has been guarded by Indonesian law since 1931. The anoa needs safe and healthy forests to live. By protecting forests, we help the anoa keep growing happily."
+    }
+  ],
+  "facts": [
+    { "id": "Anoa adalah kerbau terkecil di dunia, disebut kerbau kerdil!", "en": "The anoa is the smallest wild buffalo in the world, the dwarf buffalo!" },
+    { "id": "Anoa hanya hidup di Pulau Sulawesi dan Pulau Buton.", "en": "The anoa lives only on Sulawesi and Buton Islands." },
+    { "id": "Ada dua jenis: anoa pegunungan dan anoa dataran rendah.", "en": "There are two kinds: the mountain anoa and the lowland anoa." },
+    { "id": "Anoa suka berkubang di lumpur agar tubuhnya tetap sejuk.", "en": "The anoa loves to wallow in mud to keep its body cool." },
+    { "id": "Tanduk anoa berbentuk segitiga di bagian dasarnya.", "en": "The anoa's horns have a triangle shape at their base." },
+    { "id": "Anoa sudah dilindungi hukum Indonesia sejak tahun 1931.", "en": "The anoa has been protected by Indonesian law since 1931." }
+  ],
+  "gallery": [
+    "app/assets/img/wiki/9aadc51ed284047d.jpg",
+    "app/assets/img/wiki/db38c2979418f98f.jpg",
+    "app/assets/img/wiki/cc575629ae3b55cf.jpg",
+    "app/assets/img/wiki/b769606dc03bc3bc.jpg",
+    "app/assets/img/wiki/344b440b71935f33.jpg",
+    "app/assets/img/wiki/659071a2263b3ae8.jpg"
+  ],
+  "credits": [
+    { "src": "app/assets/img/wiki/9aadc51ed284047d.jpg", "credit": "RianHS", "license": "CC BY 4.0" },
+    { "src": "app/assets/img/wiki/db38c2979418f98f.jpg", "credit": "Sakurai Midori", "license": "CC BY 3.0" },
+    { "src": "app/assets/img/wiki/cc575629ae3b55cf.jpg", "credit": "JERRYE AND ROY KLOTZ MD", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/b769606dc03bc3bc.jpg", "credit": "Bluemoose at English Wikipedia", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/344b440b71935f33.jpg", "credit": "PenaTulip", "license": "CC0" },
+    { "src": "app/assets/img/wiki/659071a2263b3ae8.jpg", "credit": "Farrel Nandito", "license": "CC BY-SA 4.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Anoa"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "ensiklopedia_gajah_sumatra",
+  "title_id": "Gajah Sumatra",
+  "title_en": "Sumatran Elephant",
+  "subtitle_id": "Mamalia terbesar dan tercerdas di Indonesia!",
+  "subtitle_en": "Indonesia's biggest and smartest mammal!",
+  "sections": [
+    {
+      "icon": "pets",
+      "h_id": "Apa Itu Gajah Sumatra?",
+      "h_en": "What Is the Sumatran Elephant?",
+      "body_id": "Gajah sumatra (Elephas maximus sumatranus) adalah jenis gajah Asia yang hanya hidup di Pulau Sumatra. Ia adalah mamalia terbesar di Indonesia! Tubuhnya sedikit lebih kecil daripada gajah dari India.",
+      "body_en": "The Sumatran elephant (Elephas maximus sumatranus) is a kind of Asian elephant that lives only on the island of Sumatra. It is the biggest mammal in Indonesia! Its body is a little smaller than the elephant from India."
+    },
+    {
+      "icon": "forest",
+      "h_id": "Di Mana Hidupnya?",
+      "h_en": "Where Does It Live?",
+      "body_id": "Gajah sumatra hidup di hutan-hutan luas, seperti hutan rawa, hutan gambut, dan hutan hujan dataran rendah. Mereka butuh wilayah jelajah yang sangat luas untuk berkeliling. Mereka juga suka tempat yang dekat dengan sumber air.",
+      "body_en": "The Sumatran elephant lives in wide forests, like swamp forests, peat forests, and lowland rainforests. They need a very large area to roam around. They also like places close to water."
+    },
+    {
+      "icon": "height",
+      "h_id": "Tubuh & Ciri Khas",
+      "h_en": "Body & Features",
+      "body_id": "Gajah sumatra bisa setinggi 3,5 meter di bahu dan beratnya mencapai beberapa ton! Telinganya yang besar membantunya mendengar dan menjaga tubuh tetap sejuk. Belalainya yang panjang dipakai untuk meraih makanan dan air seperti tangan.",
+      "body_en": "The Sumatran elephant can be 3.5 meters tall at the shoulder and weigh several tons! Its big ears help it hear well and keep its body cool. Its long trunk is used to grab food and water like a hand."
+    },
+    {
+      "icon": "restaurant",
+      "h_id": "Makanan & Kebiasaan",
+      "h_en": "Food & Habits",
+      "body_id": "Gajah sumatra adalah herbivora, jadi ia hanya makan tumbuhan! Ia suka rumput, semak muda, daun, dan kulit kayu yang lembut. Gajah sangat cerdas dan punya otak besar. Bayi gajah dikandung selama 22 bulan sebelum lahir.",
+      "body_en": "The Sumatran elephant is a herbivore, so it eats only plants! It likes grass, young shrubs, leaves, and soft bark. Elephants are very smart and have a big brain. A baby elephant grows for 22 months before it is born."
+    },
+    {
+      "icon": "volunteer_activism",
+      "h_id": "Ayo Lindungi!",
+      "h_en": "Let's Protect It!",
+      "body_id": "Gajah sumatra sangat terancam punah karena hutannya banyak berubah menjadi perkebunan. Gajah penting sekali karena membantu menyebarkan biji tanaman di hutan. Dengan menjaga hutan dan hidup damai bersama gajah, kita bisa menyelamatkan sahabat raksasa ini.",
+      "body_en": "The Sumatran elephant is highly endangered because much of its forest has been turned into plantations. Elephants are very important because they help spread plant seeds in the forest. By protecting the forest and living peacefully with elephants, we can save this giant friend."
+    }
+  ],
+  "facts": [
+    { "id": "Gajah sumatra adalah mamalia terbesar di Indonesia!", "en": "The Sumatran elephant is the biggest mammal in Indonesia!" },
+    { "id": "Otaknya lebih besar dari mamalia darat lainnya.", "en": "Its brain is bigger than other land mammals'." },
+    { "id": "Bayi gajah dikandung selama 22 bulan, hampir 2 tahun!", "en": "A baby elephant grows for 22 months, almost 2 years!" },
+    { "id": "Gajah bisa hidup sampai sekitar 70 tahun.", "en": "Elephants can live up to about 70 years." },
+    { "id": "Gajah membantu menanam hutan dengan menyebar biji.", "en": "Elephants help grow forests by spreading seeds." },
+    { "id": "Belalai gajah dipakai seperti tangan untuk meraup makanan.", "en": "An elephant's trunk works like a hand to scoop up food." }
+  ],
+  "gallery": [
+    "app/assets/img/wiki/990889d90c287246.jpg",
+    "app/assets/img/wiki/22f9acabeae4d8b6.jpg",
+    "app/assets/img/wiki/46667cb5f2bff657.jpg",
+    "app/assets/img/wiki/88199b85ba995c0c.jpg"
+  ],
+  "credits": [
+    { "src": "app/assets/img/wiki/990889d90c287246.jpg", "credit": "Léodras", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/22f9acabeae4d8b6.jpg", "credit": "Afrianto silalahi", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/46667cb5f2bff657.jpg", "credit": "Panyahatan Siregar", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/88199b85ba995c0c.jpg", "credit": "kusuma wijaya", "license": "CC BY-SA 4.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Gajah_sumatra"
+}

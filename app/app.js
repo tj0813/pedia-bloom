@@ -6,6 +6,16 @@
 
   var SCREENS = window.PEDIA_SCREENS || {};
   var I18N = window.PEDIA_I18N_TOPICS || {}; // curated ID->EN topic titles/subtitles
+  var CONTENT = window.PEDIA_CONTENT || {};  // rich encyclopedia entries (Wikipedia/Commons)
+
+  // Variant duplicates hidden from category/library listings — one canonical card per
+  // subject (e.g. keep anoa_1, hide anoa_2; keep cendrawasih, hide burung_cendrawasih).
+  var HIDDEN_DUPLICATES = {
+    "ensiklopedia_anoa_sulawesi_2": 1, "ensiklopedia_burung_maleo_2": 1,
+    "ensiklopedia_gajah_sumatra_beranimasi": 1, "ensiklopedia_harimau_sumatra_2": 1,
+    "ensiklopedia_jalak_bali_2": 1, "ensiklopedia_penyu_hijau_2": 1,
+    "ensiklopedia_burung_cendrawasih": 1, "ensiklopedia_candi_borobudur_1": 1
+  };
   var geval = eval; // indirect eval -> runs screen scripts in global scope
 
   /* Bilingual heading helper (DESIGN.md: Indonesian primary + English subtitle in
@@ -109,18 +119,25 @@
   function card(id) {
     var s = SCREENS[id]; if (!s) return "";
     var d = deriveTitle(id), c = colorOf(s.category);
-    var variantLabel = d.variant ? d.variant + (d.variantEn ? " · " + d.variantEn : "") : "";
+    var rich = CONTENT[id];
+    // Enriched topics show their real photo + curated title; others use the Stitch thumb.
+    var name = rich ? rich.title_id : d.name;
+    var en = rich ? rich.title_en : d.en;
+    var sub = rich ? rich.subtitle_id : d.sub;
+    var thumb = (rich && rich.gallery && rich.gallery[0]) ? rich.gallery[0] : s.thumb;
+    var variantLabel = (!rich && d.variant) ? d.variant + (d.variantEn ? " · " + d.variantEn : "") : "";
+    var badge = rich ? '<span class="absolute top-2 right-2 bg-primary text-on-primary text-[10px] font-label-md font-bold px-2 py-0.5 rounded-md shadow flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px]">menu_book</span>Lengkap</span>' :
+      (variantLabel ? '<span class="absolute top-2 right-2 bg-tertiary-container text-on-tertiary-container text-[11px] font-label-md font-bold px-2 py-0.5 rounded-md shadow">' + esc(variantLabel) + "</span>" : "");
     return (
       '<a href="#/screen/' + id + '" class="group block story-card overflow-hidden hover:-translate-y-1 transition-transform pop-in">' +
         '<div class="relative h-32 overflow-hidden rounded-t-xl">' +
-          '<img src="' + esc(s.thumb) + '" alt="' + esc(d.name) + '" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />' +
-          (variantLabel ? '<span class="absolute top-2 right-2 bg-tertiary-container text-on-tertiary-container text-[11px] font-label-md font-bold px-2 py-0.5 rounded-md shadow">' + esc(variantLabel) + "</span>" : "") +
+          '<img src="' + esc(thumb) + '" alt="' + esc(name) + '" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />' + badge +
         "</div>" +
         '<div class="p-3">' +
           '<span class="inline-flex items-center gap-1 text-[11px] font-label-md font-bold text-' + c + ' mb-1"><span class="material-symbols-outlined text-[14px]">' + iconOf(s.category) + "</span>" + esc(s.category) + "</span>" +
-          '<h3 class="font-headline-lg-mobile text-[15px] leading-tight font-bold text-on-surface line-clamp-2">' + esc(d.name) +
-            (d.en ? '<span class="bi-en">' + esc(d.en) + "</span>" : "") + "</h3>" +
-          (d.sub ? '<p class="text-[11px] text-on-surface-variant mt-0.5 line-clamp-1">' + esc(d.sub) + "</p>" : "") +
+          '<h3 class="font-headline-lg-mobile text-[15px] leading-tight font-bold text-on-surface line-clamp-2">' + esc(name) +
+            (en ? '<span class="bi-en">' + esc(en) + "</span>" : "") + "</h3>" +
+          (sub ? '<p class="text-[11px] text-on-surface-variant mt-0.5 line-clamp-1">' + esc(sub) + "</p>" : "") +
         "</div>" +
       "</a>"
     );
@@ -129,7 +146,7 @@
   function screensByCategory() {
     var map = {};
     Object.keys(SCREENS).forEach(function (id) {
-      if (id === "tanya_bimobot_ai_chat" || id === "dashboard_petualang_utama" || id.indexOf("beranda_") === 0 || id === "peta_jelajah_nusantara" || id === "dashboard_orang_tua" || id === "gerbang_orang_tua" || id === "galeri_lencana_kebanggaan") {
+      if (HIDDEN_DUPLICATES[id] || id === "tanya_bimobot_ai_chat" || id === "dashboard_petualang_utama" || id.indexOf("beranda_") === 0 || id === "peta_jelajah_nusantara" || id === "dashboard_orang_tua" || id === "gerbang_orang_tua" || id === "galeri_lencana_kebanggaan") {
         return;
       }
       var c = SCREENS[id].category;
@@ -333,7 +350,7 @@
   /* Library (all) + category filter */
   function viewLibrary(cat) {
     var ids = Object.keys(SCREENS).filter(function (i) {
-      if (i === "tanya_bimobot_ai_chat" || i === "dashboard_petualang_utama" || i.indexOf("beranda_") === 0 || i === "peta_jelajah_nusantara" || i === "dashboard_orang_tua" || i === "gerbang_orang_tua" || i === "galeri_lencana_kebanggaan") {
+      if (HIDDEN_DUPLICATES[i] || i === "tanya_bimobot_ai_chat" || i === "dashboard_petualang_utama" || i.indexOf("beranda_") === 0 || i === "peta_jelajah_nusantara" || i === "dashboard_orang_tua" || i === "gerbang_orang_tua" || i === "galeri_lencana_kebanggaan") {
         return false;
       }
       return !cat || SCREENS[i].category === cat;
@@ -373,7 +390,16 @@
   }
 
   /* Stitch fragment renderer */
+  function floatingAi(name) {
+    return '<div class="fixed bottom-24 right-6 z-40">' +
+      '<a href="#/ai?topic=' + encodeURIComponent(name) + '" class="squishy-button flex items-center gap-2 bg-primary text-on-primary border-on-primary-container px-4 py-3 rounded-full shadow-[0_4px_16px_rgba(0,110,28,0.4)] hover:bg-on-primary-container hover:scale-105 transition-all duration-300">' +
+        '<span class="material-symbols-outlined text-[20px]" style="font-variation-settings:\'FILL\' 1;">smart_toy</span>' +
+        '<span class="font-label-md font-bold text-sm">Tanya Bloom AI</span>' +
+      '</a></div>';
+  }
+
   function viewScreen(id) {
+    if (CONTENT[id]) return viewRichScreen(id); // enriched encyclopedia page
     var s = SCREENS[id];
     if (!s) { view.innerHTML = notFound(); return; }
     var d = deriveTitle(id);
@@ -381,17 +407,8 @@
     topbar(d.name, true);
     setActiveNav("explore");
 
-    var floatingAiBtn = "";
     var isUtility = id === "tanya_bimobot_ai_chat" || id === "dashboard_petualang_utama" || id.indexOf("beranda_") === 0 || id === "peta_jelajah_nusantara" || id === "dashboard_orang_tua" || id === "gerbang_orang_tua";
-    if (!isUtility) {
-      floatingAiBtn = 
-        '<div class="fixed bottom-24 right-6 z-40">' +
-          '<a href="#/ai?topic=' + encodeURIComponent(d.name) + '" class="squishy-button flex items-center gap-2 bg-primary text-on-primary border-on-primary-container px-4 py-3 rounded-full shadow-[0_4px_16px_rgba(0,110,28,0.4)] hover:bg-on-primary-container hover:scale-105 transition-all duration-300">' +
-            '<span class="material-symbols-outlined text-[20px]" style="font-variation-settings:\'FILL\' 1;">smart_toy</span>' +
-            '<span class="font-label-md font-bold text-sm">Tanya Bloom AI</span>' +
-          '</a>' +
-        '</div>';
-    }
+    var floatingAiBtn = isUtility ? "" : floatingAi(d.name);
 
     // Bilingual context banner (DESIGN.md): English name + simple subtitle above the fragment.
     var biBanner = d.en ? '<div class="flex items-start gap-2 bg-surface-container-low border-l-4 border-fresh-teal rounded-md px-4 py-2.5">' +
@@ -414,6 +431,86 @@
     var rel = Object.keys(SCREENS).filter(function (i) { return i !== id && SCREENS[i].category === cat; }).slice(0, 4);
     if (!rel.length) return "";
     return '<section class="space-y-3 pt-2"><h3 class="font-headline-lg-mobile text-[20px] font-bold text-primary flex items-center gap-2"><span class="material-symbols-outlined">recommend</span><span>Topik Terkait<span class="bi-en">Related Topics</span></span></h3><div class="grid grid-cols-2 gap-3">' + rel.map(card).join("") + "</div></section>";
+  }
+
+  /* Rich encyclopedia page — bilingual sections, photo gallery, facts, credits.
+   * Rendered for any topic that has a curated entry in window.PEDIA_CONTENT. */
+  function viewRichScreen(id) {
+    var c = CONTENT[id];
+    var d = deriveTitle(id);
+    store.visit(id, (SCREENS[id] || {}).category || "Alam & Hewan Indonesia");
+    topbar(c.title_id, true);
+    setActiveNav("explore");
+
+    var gallery = (c.gallery || []).filter(Boolean);
+    var hero = gallery[0] || "app/assets/placeholder.svg";
+
+    var strip = gallery.map(function (src, i) {
+      return '<button type="button" data-zoom="' + esc(src) + '" aria-label="Perbesar foto ' + (i + 1) + '" class="snap-start shrink-0 rounded-xl overflow-hidden border-2 border-surface-variant">' +
+        '<img src="' + esc(src) + '" alt="' + esc(c.title_id) + " " + (i + 1) + '" loading="lazy" class="w-[240px] h-[160px] object-cover" /></button>';
+    }).join("");
+
+    var sections = (c.sections || []).map(function (s) {
+      return '<section class="story-card p-5 space-y-2">' +
+        '<h3 class="font-headline-lg-mobile text-[18px] font-bold text-primary flex items-center gap-2"><span class="material-symbols-outlined">' + esc(s.icon || "info") + '</span><span>' + esc(s.h_id) + '<span class="bi-en">' + esc(s.h_en) + "</span></span></h3>" +
+        '<p class="font-body-md text-[15px] text-on-surface leading-relaxed">' + esc(s.body_id) + "</p>" +
+        '<p class="font-body-md text-[14px] text-fresh-teal leading-relaxed">' + esc(s.body_en) + "</p>" +
+      "</section>";
+    }).join("");
+
+    var facts = (c.facts || []).map(function (f) {
+      return '<div class="bg-secondary-fixed rounded-xl p-3 flex gap-2">' +
+        '<span class="material-symbols-outlined text-secondary text-[20px] shrink-0" style="font-variation-settings:\'FILL\' 1;">lightbulb</span>' +
+        '<p class="text-[13px] text-on-secondary-fixed leading-snug font-medium">' + esc(f.id) + '<span class="block text-on-secondary-fixed-variant font-normal mt-0.5">' + esc(f.en) + "</span></p></div>";
+    }).join("");
+
+    var names = {};
+    (c.credits || []).forEach(function (cr) { if (cr && cr.credit) names[cr.credit + (cr.license ? " (" + cr.license + ")" : "")] = 1; });
+    var credit = '<div class="text-[11px] text-on-surface-variant pt-3 border-t border-surface-variant leading-relaxed">' +
+      'Sumber teks · Text source: <a href="' + esc(c.source || "#") + '" target="_blank" rel="noopener" class="text-secondary underline">Wikipedia</a>. Foto · Photos: Wikimedia Commons.' +
+      (Object.keys(names).length ? '<span class="block mt-0.5">Kredit foto: ' + esc(Object.keys(names).slice(0, 8).join(" · ")) + "</span>" : "") +
+      "</div>";
+
+    view.innerHTML =
+      '<div class="px-margin-mobile max-w-container-max mx-auto pt-2 pb-16 pop-in space-y-6">' +
+        '<div class="relative rounded-2xl overflow-hidden shadow-storybook-lg">' +
+          '<img src="' + esc(hero) + '" alt="' + esc(c.title_id) + '" class="w-full h-60 object-cover" />' +
+          '<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent p-4 pt-12">' +
+            '<h1 class="font-headline-lg text-[26px] font-bold text-white leading-tight">' + esc(c.title_id) + '<span class="block font-display-en text-[15px] font-medium text-white/85 mt-0.5">' + esc(c.title_en) + "</span></h1>" +
+            (c.subtitle_id ? '<p class="text-white/90 text-[13px] mt-1">' + esc(c.subtitle_id) + (c.subtitle_en ? ' <span class="text-white/65">· ' + esc(c.subtitle_en) + "</span>" : "") + "</p>" : "") +
+          "</div>" +
+        "</div>" +
+        (gallery.length > 1 ?
+          '<section class="space-y-2">' +
+            '<h3 class="font-headline-lg-mobile text-[16px] font-bold text-on-background flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">photo_library</span><span>Galeri Foto<span class="bi-en">Photo Gallery</span></span></h3>' +
+            '<div class="flex gap-3 overflow-x-auto no-scrollbar snap-x pb-1 -mx-1 px-1">' + strip + "</div>" +
+            '<p class="text-[11px] text-on-surface-variant">Ketuk foto untuk memperbesar · Tap a photo to zoom</p>' +
+          "</section>" : "") +
+        '<div class="space-y-4">' + sections + "</div>" +
+        (c.facts && c.facts.length ?
+          '<section class="space-y-3">' +
+            '<h3 class="font-headline-lg-mobile text-[18px] font-bold text-secondary flex items-center gap-2"><span class="material-symbols-outlined">auto_awesome</span><span>Tahukah Kamu?<span class="bi-en">Did You Know?</span></span></h3>' +
+            '<div class="grid grid-cols-1 sm:grid-cols-2 gap-2">' + facts + "</div>" +
+          "</section>" : "") +
+        credit +
+        relatedHtml(id) +
+      "</div>" +
+      floatingAi(c.title_id);
+
+    view.querySelectorAll("[data-zoom]").forEach(function (btn) {
+      btn.addEventListener("click", function () { openLightbox(btn.getAttribute("data-zoom")); });
+    });
+    updateProfileChip();
+    view.scrollTop = 0; window.scrollTo(0, 0);
+  }
+
+  function openLightbox(src) {
+    var ov = document.createElement("div");
+    ov.className = "fixed inset-0 z-[60] bg-black/85 flex items-center justify-center p-4";
+    ov.innerHTML = '<img src="' + esc(src) + '" alt="" class="max-w-full max-h-full rounded-xl shadow-2xl" />' +
+      '<button aria-label="Tutup" class="absolute top-4 right-4 w-11 h-11 rounded-full bg-white/90 text-on-surface grid place-items-center shadow"><span class="material-symbols-outlined">close</span></button>';
+    ov.addEventListener("click", function () { ov.remove(); });
+    document.body.appendChild(ov);
   }
 
   /* Games */

@@ -1,0 +1,68 @@
+{
+  "id": "ensiklopedia_tarsius",
+  "title_id": "Tarsius",
+  "title_en": "Tarsier",
+  "subtitle_id": "Primata mungil bermata besar dari Sulawesi",
+  "subtitle_en": "A tiny big-eyed primate from Sulawesi",
+  "sections": [
+    {
+      "icon": "pets",
+      "h_id": "Apa Itu Tarsius?",
+      "h_en": "What Is a Tarsier?",
+      "body_id": "Tarsius adalah primata yang sangat kecil, kerabat jauh dari monyet dan manusia. Tubuhnya mungil dan bisa muat di telapak tangan orang dewasa. Walau kecil, tarsius punya mata yang sangat besar dan menggemaskan!",
+      "body_en": "The tarsier is a very small primate, a distant relative of monkeys and humans. Its tiny body can fit in an adult's palm. Even though it is small, the tarsier has huge, adorable eyes!"
+    },
+    {
+      "icon": "public",
+      "h_id": "Di Mana Hidupnya?",
+      "h_en": "Where Does It Live?",
+      "body_id": "Tarsius berasal dari pulau-pulau di Asia Tenggara. Genus Tarsius ini ditemukan di Pulau Sulawesi, Indonesia. Mereka tinggal di pohon-pohon dalam hutan yang rimbun.",
+      "body_en": "Tarsiers come from islands in Southeast Asia. The genus Tarsius is found on the island of Sulawesi, Indonesia. They live up in the trees of leafy forests."
+    },
+    {
+      "icon": "visibility",
+      "h_id": "Mata Raksasa & Tubuh",
+      "h_en": "Giant Eyes & Body",
+      "body_id": "Mata tarsius sangat besar dibanding tubuhnya, membantunya melihat dalam gelap. Ia punya jari-jari panjang untuk berpegangan erat di dahan pohon. Tarsius juga bisa memutar kepalanya jauh ke belakang untuk melihat sekeliling.",
+      "body_en": "A tarsier's eyes are huge compared to its body, helping it see in the dark. It has long fingers for gripping tree branches tightly. A tarsier can also turn its head far around to look behind itself."
+    },
+    {
+      "icon": "dark_mode",
+      "h_id": "Makanan & Kebiasaan Malam",
+      "h_en": "Food & Night Habits",
+      "body_id": "Tarsius aktif di malam hari dan tidur saat siang. Dengan mata besarnya, ia berburu serangga seperti jangkrik dan belalang. Ia melompat dengan lincah dari satu dahan ke dahan lain untuk menangkap makanan.",
+      "body_en": "Tarsiers are active at night and sleep during the day. With their big eyes, they hunt insects like crickets and grasshoppers. They leap nimbly from branch to branch to catch their food."
+    },
+    {
+      "icon": "volunteer_activism",
+      "h_id": "Ayo Lindungi!",
+      "h_en": "Let's Protect It!",
+      "body_id": "Tarsius adalah hewan istimewa yang hanya hidup di tempat tertentu, jadi kita harus menjaganya. Hutan tempat tinggalnya perlu dilindungi agar tarsius punya rumah yang aman. Dengan menjaga hutan, kita membantu tarsius tetap melompat bahagia.",
+      "body_en": "The tarsier is a special animal that lives only in certain places, so we must take care of it. The forests it lives in need protection so the tarsier has a safe home. By protecting forests, we help tarsiers keep leaping happily."
+    }
+  ],
+  "facts": [
+    { "id": "Tarsius adalah primata yang sangat kecil, bisa muat di telapak tangan.", "en": "The tarsier is a tiny primate that can fit in your palm." },
+    { "id": "Matanya sangat besar untuk melihat dalam gelap.", "en": "Its eyes are very big for seeing in the dark." },
+    { "id": "Tarsius aktif di malam hari dan tidur saat siang.", "en": "Tarsiers are active at night and sleep during the day." },
+    { "id": "Ia bisa memutar kepalanya jauh ke belakang.", "en": "It can turn its head far around to look behind." },
+    { "id": "Semua tarsius dari genus ini ditemukan di Pulau Sulawesi.", "en": "All tarsiers of this genus are found on the island of Sulawesi." }
+  ],
+  "gallery": [
+    "app/assets/img/wiki/5cc5af4876e10978.jpg",
+    "app/assets/img/wiki/bf0952f593d2b213.jpg",
+    "app/assets/img/wiki/b236a82bf73fa6db.jpg",
+    "app/assets/img/wiki/9445c5b2e40f3505.png",
+    "app/assets/img/wiki/899e3a6d844737cd.png",
+    "app/assets/img/wiki/bfcbe53d56dabc6d.png"
+  ],
+  "credits": [
+    { "src": "app/assets/img/wiki/5cc5af4876e10978.jpg", "credit": "Lip Kee Yap", "license": "CC BY-SA 2.0" },
+    { "src": "app/assets/img/wiki/9445c5b2e40f3505.png", "credit": "Chermundy", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/bf0952f593d2b213.jpg", "credit": "Meldy Tamenge", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/899e3a6d844737cd.png", "credit": "Chermundy", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/b236a82bf73fa6db.jpg", "credit": "Illustratedjc", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/bfcbe53d56dabc6d.png", "credit": "Chermundy", "license": "CC BY-SA 3.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Tarsius_%28genus%29"
+}

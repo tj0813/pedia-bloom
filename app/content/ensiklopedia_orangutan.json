@@ -1,0 +1,69 @@
+{
+  "id": "ensiklopedia_orangutan",
+  "title_id": "Orang Utan",
+  "title_en": "Orangutan",
+  "subtitle_id": "Kera cerdas penghuni pohon hutan hujan!",
+  "subtitle_en": "The clever ape of the rainforest trees!",
+  "sections": [
+    {
+      "icon": "pets",
+      "h_id": "Apa Itu Orang Utan?",
+      "h_en": "What Is the Orangutan?",
+      "body_id": "Orang utan adalah kera besar berbulu cokelat kemerahan. Namanya berasal dari bahasa Melayu yang berarti orang hutan. Ada tiga jenis orang utan: Kalimantan, Sumatra, dan Tapanuli. Mereka adalah saudara jauh kita yang sangat pintar.",
+      "body_en": "The orangutan is a great ape with reddish-brown hair. Its name comes from the Malay words meaning person of the forest. There are three kinds of orangutan: Bornean, Sumatran, and Tapanuli. They are our clever distant cousins."
+    },
+    {
+      "icon": "forest",
+      "h_id": "Di Mana Hidupnya?",
+      "h_en": "Where Does It Live?",
+      "body_id": "Orang utan hidup di hutan hujan Indonesia dan Malaysia. Sekarang mereka hanya ditemukan di pulau Kalimantan dan Sumatra. Mereka adalah kera besar yang paling suka tinggal di atas pohon. Hampir sepanjang hari dihabiskan di antara dahan-dahan yang tinggi.",
+      "body_en": "Orangutans live in the rainforests of Indonesia and Malaysia. Today they are found only on the islands of Borneo and Sumatra. They are the great apes that love living in trees the most. Almost all day is spent high among the branches."
+    },
+    {
+      "icon": "height",
+      "h_id": "Tubuh & Ciri Khas",
+      "h_en": "Body & Features",
+      "body_id": "Orang utan punya lengan yang sangat panjang dan kaki yang pendek, sempurna untuk berayun di pohon. Tubuhnya tertutup rambut cokelat kemerahan. Orang utan jantan dewasa lebih besar dan punya bantalan lebar di kedua pipinya. Jantan juga sering berteriak panjang yang terdengar dari jauh.",
+      "body_en": "Orangutans have very long arms and short legs, perfect for swinging through trees. Their bodies are covered in reddish-brown hair. Adult males are bigger and have wide pads on their cheeks. Males also make long calls that can be heard from far away."
+    },
+    {
+      "icon": "restaurant",
+      "h_id": "Makanan & Kebiasaan",
+      "h_en": "Food & Habits",
+      "body_id": "Makanan kesukaan orang utan adalah buah-buahan. Mereka juga makan daun, kulit kayu, madu, serangga, dan telur burung. Orang utan sangat pintar dan bisa memakai alat untuk membantu mencari makan. Setiap malam mereka membuat sarang baru dari ranting dan daun untuk tidur.",
+      "body_en": "The orangutan's favorite food is fruit. They also eat leaves, tree bark, honey, insects, and bird eggs. Orangutans are very smart and can use tools to help find food. Every night they build a new nest from twigs and leaves to sleep in."
+    },
+    {
+      "icon": "volunteer_activism",
+      "h_id": "Kenapa Istimewa & Ayo Lindungi!",
+      "h_en": "Why It's Special & Let's Protect It",
+      "body_id": "Orang utan adalah salah satu primata paling cerdas di dunia. Sayangnya ketiga jenisnya kini sangat terancam punah. Hutan tempat tinggalnya banyak ditebang, dan itu membuat mereka kehilangan rumah. Dengan menjaga hutan, kita membantu orang utan tetap hidup bebas dan bahagia.",
+      "body_en": "Orangutans are among the smartest primates in the world. Sadly, all three kinds are now in great danger of disappearing. Many of their forests have been cut down, leaving them without a home. By protecting the forests, we help orangutans stay free and happy."
+    }
+  ],
+  "facts": [
+    { "id": "Orang utan berarti orang hutan dalam bahasa Melayu.", "en": "Orangutan means person of the forest in Malay." },
+    { "id": "Mereka kera besar yang paling suka tinggal di atas pohon.", "en": "They are the great apes that love living in trees the most." },
+    { "id": "Orang utan membuat sarang baru dari ranting setiap malam.", "en": "Orangutans build a new nest from twigs every night." },
+    { "id": "Mereka sangat pintar dan bisa memakai alat untuk mencari makan.", "en": "They are very clever and can use tools to find food." },
+    { "id": "Orang utan bisa hidup lebih dari 30 tahun.", "en": "Orangutans can live more than 30 years." },
+    { "id": "Lengan orang utan lebih panjang daripada kakinya untuk berayun.", "en": "An orangutan's arms are longer than its legs for swinging." }
+  ],
+  "gallery": [
+    "app/assets/img/wiki/b30a1e77d5d9e4fc.jpg",
+    "app/assets/img/wiki/c430a7d4906c53b7.jpg",
+    "app/assets/img/wiki/63fb91ec52199d0b.jpg",
+    "app/assets/img/wiki/479e288fefe8bc8c.jpg",
+    "app/assets/img/wiki/53d9f15b8104e8b9.jpg",
+    "app/assets/img/wiki/6a5563ea6efb2051.jpg"
+  ],
+  "credits": [
+    { "src": "app/assets/img/wiki/b30a1e77d5d9e4fc.jpg", "credit": "Eleifert", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/53d9f15b8104e8b9.jpg", "credit": "George Edwards", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/c430a7d4906c53b7.jpg", "credit": "Eric Kilby, Aiwok, Tim Laman", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/6a5563ea6efb2051.jpg", "credit": "Ghedoghedo", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/63fb91ec52199d0b.jpg", "credit": "Tim Laman", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/479e288fefe8bc8c.jpg", "credit": "Michel wal", "license": "CC BY-SA 3.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Orang_utan"
+}

@@ -60,7 +60,18 @@ CSSURL_RE = re.compile(r'''url\(\s*["']?(https://[^)"']+)["']?\s*\)''')
 EXTERNAL_RE = re.compile(r'https://(?:[a-z0-9-]+\.)*(?:googleusercontent|gstatic|googleapis)\.com/[^"\')\s]+')
 
 
+# Per-topic category fixes — the prefix heuristic miscategorises some screens (e.g. the
+# "ensiklopedia_" prefix dumps temples/houses into Alam & Hewan). Content audit, 2026-06-11.
+CATEGORY_OVERRIDE = {
+    "ensiklopedia_candi_borobudur_1": ("Budaya Nusantara", "account_balance"),
+    "ensiklopedia_candi_borobudur_2": ("Budaya Nusantara", "account_balance"),
+    "ensiklopedia_rumah_gadang":      ("Budaya Nusantara", "festival"),
+}
+
+
 def category_for(folder: str):
+    if folder in CATEGORY_OVERRIDE:
+        return CATEGORY_OVERRIDE[folder]
     prefix = folder.split("_", 1)[0]
     return CATEGORY_MAP.get(prefix, ("Lainnya", "auto_stories"))
 
@@ -144,7 +155,7 @@ THUMB_OVERRIDE = {
     # The full body-image curation lives in the bundle; these keep the cards correct on rebuild.
     "ensiklopedia_bunga_bangkai":      "app/assets/img/illus-bunga-bangkai.svg",
     "jelajah_sumatra_barat":           "app/assets/img/illus-rumah-gadang.svg",
-    "pahlawan_ki_hajar_dewantara_1":   "app/assets/img/illus-ki-hajar-dewantara.svg",
+    "pahlawan_ki_hajar_dewantara_1":   "app/assets/img/wiki/22d3507f2d88dc56.jpg",  # real public-domain portrait
     "sains_dunia_robotik":             "app/assets/img/illus-robotik.svg",
     "sains_rahasia_kekuatan_magnet":   "app/assets/img/illus-magnet.svg",
     "hub_luar_angkasa":                "app/assets/img/illus-luar-angkasa.svg",
