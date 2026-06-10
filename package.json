@@ -1,0 +1,26 @@
+{
+  "name": "stitch_pedia_bloom",
+  "version": "1.0.0",
+  "description": "Installable, offline-capable, bilingual PWA encyclopedia about Indonesia for children (ages 5-13), assembled from Google Stitch screens into one navigable app.",
+  "main": "sw.js",
+  "scripts": {
+    "build:css": "tailwindcss -i src/styles.src.css -o app/assets/styles.css --minify",
+    "watch:css": "tailwindcss -i src/styles.src.css -o app/assets/styles.css --watch",
+    "build:icons": "node tests/gen-icons.mjs",
+    "build:fonts": "python build_assets.py",
+    "build:bundle": "python build.py",
+    "build": "npm run build:bundle && npm run build:fonts && npm run build:css && npm run build:icons",
+    "test": "node tests/run-e2e.mjs",
+    "test:py": "pytest -q"
+  },
+  "keywords": ["pwa", "education", "kids", "indonesia", "bilingual", "offline"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@tailwindcss/forms": "^0.5.10",
+    "playwright": "^1.60.0",
+    "tailwindcss": "^3.4.17"
+  }
+}
