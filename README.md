@@ -1,5 +1,8 @@
 # Pedia Bloom — Jelajah Nusantara 🇮🇩
 
+[![CI & Deploy](https://github.com/tj0813/pedia-bloom/actions/workflows/ci-deploy.yml/badge.svg)](https://github.com/tj0813/pedia-bloom/actions/workflows/ci-deploy.yml)
+&nbsp;**Live:** https://tj0813.github.io/pedia-bloom/
+
 A bilingual (Indonesian + English), installable, **fully offline** PWA encyclopedia about Indonesia for children ages 5–13 — assembled from 102 Google Stitch screen designs into one navigable app.
 
 - **Design:** "Premium 3D Storybook" system (`DESIGN.md`) — leaf-green / sky-blue / warm-orange on a warm cream canvas, Quicksand throughout, tactile squishy buttons, soft cardstock shadows.
@@ -94,7 +97,7 @@ stitch_pedia_bloom/
 ## Known limitations (honest list)
 
 - **Tanya AI is a scripted, child-safe preview** — keyword-matched answers, no live model input. A real tutor needs a backend + verified-content retrieval (Phase 2).
-- **A few Stitch images don't match their topic** (e.g. a "Badak Jawa" card showing a lion) and some titles. These are AI-generation artifacts baked into the *source* exports — curating them is content work, not a code bug.
+- **Image content was audited and corrected** (see `CONTENT_AUDIT.md`): all 102 screens were reviewed; mismatched/missing images were fixed by repointing to correct existing assets or with 9 hand-built storybook illustrations. **0 wrong/missing-image defects remain.** One caveat: the Ki Hajar Dewantara illustration is a *stylized* portrait, not a photographic likeness.
 - **Full body-prose translation is pending.** Headings, titles, navigation and all native UI are bilingual; translating the descriptive paragraphs inside each of the 102 fragments is a separate content milestone (the i18n title map is the seed).
 - **Icon font ships all glyphs (~490 KB).** Material Symbols is a ligature variable font; a true per-icon subset isn't possible without losing the FILL toggle, so it's instanced (4 MB → 490 KB) rather than glyph-subset.
 
@@ -104,4 +107,25 @@ stitch_pedia_bloom/
 
 - **E2E (`npm test`):** 26 Playwright checks — design tokens live, fonts self-hosted, icons render as glyphs, **zero external requests**, all 11 routes + all 102 topic screens render error-free under strict CSP, bilingual present, search/parent-gate work, dark mode flips, manifest installable, **full offline boot**.
 - **Unit (`npm run test:py`):** 31 pytest checks on the build pipeline (URL rewriting, sanitising, extraction, category mapping, format sniffing, icon scan).
-- Security: strict self-only CSP, no inline secrets, no external origins, `frame-ancestors 'none'`. Deploy headers in `vercel.json`.
+- Security: strict self-only CSP, no inline secrets, no external origins. Deploy headers in `vercel.json`.
+
+---
+
+## CI/CD
+
+Every push and PR runs the unit + E2E suites via GitHub Actions
+(`.github/workflows/ci-deploy.yml`). The site **only deploys to GitHub Pages when both
+suites pass** — a broken commit can't reach production.
+
+## License & Privacy
+
+- **License:** [MIT](LICENSE) (application code). Topic facts and AI-generated imagery are
+  provided as-is — review for accuracy/rights before commercial use.
+- **Privacy:** [PRIVACY.md](PRIVACY.md) — **private by construction.** No backend, no accounts,
+  no analytics, no external requests; all learning data stays in `localStorage` on-device and
+  can be erased from Mode Orang Tua. Designed to align with COPPA / GDPR-K by default.
+
+## Scope boundary (what v1 is *not*)
+
+This is the front-end, single-device, local-only milestone. Out of scope by design: a real
+AI tutor, user accounts/sync, a content CMS, and expert content review. Those are Phase 2.
