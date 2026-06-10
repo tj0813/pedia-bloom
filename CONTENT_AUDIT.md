@@ -55,8 +55,26 @@ These 6 topics render the generic placeholder — not wrong, just missing a cove
 
 All target images were visually verified before repointing. Re-verified: 26/26 E2E pass, 9 *legitimate* UNESCO mentions (Saman, Wayang, Angklung, Batik) correctly preserved.
 
-## Still needs NEW artwork (your call — I shouldn't invent likenesses/photos)
-1. **Bunga Bangkai** (Corpse Flower) — only a robot image exists locally; needs a real Titan Arum bloom.
-2. **Jelajah Sumatra Barat** — needs a Minangkabau **Rumah Gadang** (currently a Toraja house).
-3. **Ki Hajar Dewantara** — needs an accurate portrait (peci, glasses, mustache).
-4. **6 placeholder covers:** `pusat_budaya_tradisi`, `sains_dunia_robotik`, `sains_rahasia_kekuatan_magnet`, `misi_netiket_pahlawan_digital`, `hub_luar_angkasa`, `misi_rahasia_tidur_nyenyak`.
+## New artwork — resolved with hand-built storybook illustrations (2026-06-10)
+
+All 9 remaining gaps now ship custom, self-contained SVG illustrations (palette-matched,
+never expire, recolor with the theme). Each replaces the card thumbnail **and** the in-screen
+hero, verified rendered + 26/26 E2E:
+
+| Topic | Illustration |
+|---|---|
+| Bunga Bangkai (Corpse Flower) | `illus-bunga-bangkai.svg` — Titan Arum (tall spadix + maroon spathe) |
+| Jelajah Sumatra Barat | `illus-rumah-gadang.svg` — Minangkabau house with buffalo-horn gonjong roof |
+| Ki Hajar Dewantara | `illus-ki-hajar-dewantara.svg` — stylized portrait (peci, round glasses, mustache) |
+| Robotics | `illus-robotik.svg` |
+| Magnets | `illus-magnet.svg` — horseshoe magnet + field lines |
+| Space hub | `illus-luar-angkasa.svg` — ringed planet, moon, rocket |
+| Internet Manners | `illus-netiket.svg` — phone + heart + thumbs-up + safety shield |
+| Culture hub | `illus-budaya.svg` — wayang gunungan on batik |
+| Healthy Sleep | `illus-tidur.svg` — child sleeping, moon, Zzz |
+
+> ⚠️ **Ki Hajar Dewantara** is a *stylized* representation (signature attributes), **not** a
+> photographic likeness. If exact likeness matters, drop in his public-domain photo (Rp20,000 note).
+
+**Result: 0 wrong-image / missing-image defects remain.** Only the deliberately-deferred full
+body-prose EN translation is outstanding (headings/titles already bilingual).

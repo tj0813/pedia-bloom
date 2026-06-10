@@ -140,6 +140,17 @@ THUMB_OVERRIDE = {
     "ensiklopedia_candi_borobudur_2": "app/assets/img/d3971614de970c9e.png",  # temple, not the boy mascot
     "ensiklopedia_badak_jawa":        "app/assets/img/ea85c637d8dea96d.png",  # Javan rhino, not a lion
     "ensiklopedia_burung_maleo_2":    "app/assets/img/f1c3b8ab84b64f49.png",  # Maleo bird, not the bare egg
+    # Hand-built storybook illustrations replacing wrong/missing images (content audit).
+    # The full body-image curation lives in the bundle; these keep the cards correct on rebuild.
+    "ensiklopedia_bunga_bangkai":      "app/assets/img/illus-bunga-bangkai.svg",
+    "jelajah_sumatra_barat":           "app/assets/img/illus-rumah-gadang.svg",
+    "pahlawan_ki_hajar_dewantara_1":   "app/assets/img/illus-ki-hajar-dewantara.svg",
+    "sains_dunia_robotik":             "app/assets/img/illus-robotik.svg",
+    "sains_rahasia_kekuatan_magnet":   "app/assets/img/illus-magnet.svg",
+    "hub_luar_angkasa":                "app/assets/img/illus-luar-angkasa.svg",
+    "misi_netiket_pahlawan_digital":   "app/assets/img/illus-netiket.svg",
+    "pusat_budaya_tradisi":            "app/assets/img/illus-budaya.svg",
+    "misi_rahasia_tidur_nyenyak":      "app/assets/img/illus-tidur.svg",
 }
 
 

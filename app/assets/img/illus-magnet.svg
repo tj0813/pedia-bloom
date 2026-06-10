@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="mgBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5fbef"/>
+      <stop offset="1" stop-color="#d1e4ff"/>
+    </linearGradient>
+    <linearGradient id="mgRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ba1a1a"/>
+      <stop offset="1" stop-color="#8b5000" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="mgBody" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#33a0fd"/>
+      <stop offset="0.5" stop-color="#ba1a1a"/>
+      <stop offset="1" stop-color="#33a0fd"/>
+    </linearGradient>
+    <radialGradient id="mgShadow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#171d16" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#171d16" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="400" height="300" fill="url(#mgBg)"/>
+
+  <!-- ground shadow -->
+  <ellipse cx="200" cy="258" rx="100" ry="16" fill="url(#mgShadow)"/>
+
+  <!-- magnetic field lines (thin arcs between the two poles) -->
+  <g fill="none" stroke="#0061a4" stroke-width="2" stroke-linecap="round" opacity="0.55">
+    <path d="M158 102 q42 -42 84 0"/>
+    <path d="M150 96 q50 -58 100 0"/>
+    <path d="M142 90 q58 -74 116 0"/>
+  </g>
+  <g fill="#ba1a1a" opacity="0.6" stroke="none">
+    <path d="M200 56 l5 9 -10 0 z"/>
+  </g>
+  <g fill="#0061a4" opacity="0.6" stroke="none">
+    <path d="M242 92 l8 3 -5 7 z"/>
+    <path d="M250 80 l8 3 -5 7 z"/>
+  </g>
+
+  <!-- horseshoe magnet body -->
+  <g stroke="#171d16" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- main U shape -->
+    <path d="M158 118
+             a42 42 0 0 1 84 0
+             v76
+             h-26
+             v-76
+             a16 16 0 0 0 -32 0
+             v76
+             h-26
+             z"
+          fill="url(#mgBody)"/>
+
+    <!-- left pole metal tip (N - red) -->
+    <rect x="156" y="194" width="28" height="30" rx="6" fill="#bcc8b0" stroke="#171d16"/>
+    <rect x="156" y="194" width="28" height="9" fill="#ba1a1a" stroke="none"/>
+    <!-- right pole metal tip (S - blue) -->
+    <rect x="216" y="194" width="28" height="30" rx="6" fill="#bcc8b0" stroke="#171d16"/>
+    <rect x="216" y="194" width="28" height="9" fill="#0061a4" stroke="none"/>
+  </g>
+
+  <!-- N / S labels -->
+  <text x="170" y="216" font-family="Verdana, Geneva, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">N</text>
+  <text x="230" y="216" font-family="Verdana, Geneva, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">S</text>
+
+  <!-- paperclips being attracted -->
+  <g fill="none" stroke="#8b5000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M118 232 q-6 -14 6 -16 q12 -2 8 12 q-3 9 -10 6 q-6 -2 -4 -10"/>
+    <path d="M280 236 q6 -14 -6 -16 q-12 -2 -8 12 q3 9 10 6 q6 -2 4 -10"/>
+  </g>
+  <!-- a small metal nail -->
+  <g stroke="#171d16" stroke-width="2" stroke-linejoin="round">
+    <rect x="300" y="220" width="7" height="26" rx="2" fill="#bcc8b0"/>
+    <ellipse cx="303" cy="220" rx="9" ry="4" fill="#bcc8b0"/>
+  </g>
+  <g stroke="#171d16" stroke-width="2" stroke-linejoin="round">
+    <rect x="96" y="220" width="7" height="26" rx="2" fill="#bcc8b0"/>
+    <ellipse cx="99" cy="220" rx="9" ry="4" fill="#bcc8b0"/>
+  </g>
+</svg>

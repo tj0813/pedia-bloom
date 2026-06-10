@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <radialGradient id="khRoundel" cx="0.5" cy="0.42" r="0.65">
+      <stop offset="0" stop-color="#d1e4ff"/>
+      <stop offset="1" stop-color="#33a0fd"/>
+    </radialGradient>
+    <linearGradient id="khSkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffdcbe"/>
+      <stop offset="1" stop-color="#e8b98f"/>
+    </linearGradient>
+    <linearGradient id="khPeci" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2f29"/>
+      <stop offset="1" stop-color="#171d16"/>
+    </linearGradient>
+    <linearGradient id="khBatik" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8b5000"/>
+      <stop offset="1" stop-color="#5a3208"/>
+    </linearGradient>
+    <linearGradient id="khCollar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5fbef"/>
+      <stop offset="1" stop-color="#d6e0d0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="400" height="300" fill="#f5fbef"/>
+
+  <!-- soft roundel / medallion -->
+  <circle cx="200" cy="142" r="128" fill="url(#khRoundel)" opacity="0.55"/>
+  <circle cx="200" cy="142" r="128" fill="none" stroke="#0061a4" stroke-width="4" opacity="0.5"/>
+  <circle cx="200" cy="142" r="118" fill="none" stroke="#0061a4" stroke-width="2" opacity="0.35" stroke-dasharray="3 7"/>
+
+  <!-- soft shadow under shoulders -->
+  <ellipse cx="200" cy="282" rx="120" ry="18" fill="#171d16" opacity="0.12"/>
+
+  <!-- shoulders / batik attire -->
+  <path d="M96 300
+           Q98 232 152 214
+           Q176 226 200 226
+           Q224 226 248 214
+           Q302 232 304 300 Z"
+        fill="url(#khBatik)" stroke="#3a2410" stroke-width="3.5" stroke-linejoin="round"/>
+
+  <!-- batik pattern motifs -->
+  <g fill="none" stroke="#e18500" stroke-width="2.2" stroke-linecap="round" opacity="0.85">
+    <path d="M124 268 Q132 256 140 268 Q132 280 124 268 Z"/>
+    <path d="M156 282 Q164 270 172 282 Q164 294 156 282 Z"/>
+    <path d="M228 282 Q236 270 244 282 Q236 294 228 282 Z"/>
+    <path d="M260 268 Q268 256 276 268 Q268 280 260 268 Z"/>
+  </g>
+  <g fill="#ffdcbe" opacity="0.7">
+    <circle cx="132" cy="248" r="2.4"/>
+    <circle cx="200" cy="268" r="2.4"/>
+    <circle cx="268" cy="248" r="2.4"/>
+    <circle cx="166" cy="258" r="2.2"/>
+    <circle cx="234" cy="258" r="2.2"/>
+  </g>
+
+  <!-- white collar / formal shirt -->
+  <path d="M176 222 L200 250 L224 222 L218 214 Q200 224 182 214 Z"
+        fill="url(#khCollar)" stroke="#9aa593" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- small bow/tie hint -->
+  <path d="M200 244 L192 256 L200 252 L208 256 Z" fill="#ba1a1a" stroke="#7a0f0f" stroke-width="1.8" stroke-linejoin="round"/>
+
+  <!-- neck -->
+  <path d="M184 200 L184 222 Q200 234 216 222 L216 200 Z" fill="url(#khSkin)" stroke="#c98f5e" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- ears -->
+  <ellipse cx="151" cy="150" rx="9" ry="13" fill="url(#khSkin)" stroke="#c98f5e" stroke-width="2.5"/>
+  <ellipse cx="249" cy="150" rx="9" ry="13" fill="url(#khSkin)" stroke="#c98f5e" stroke-width="2.5"/>
+
+  <!-- face -->
+  <path d="M156 132
+           Q156 96 200 94
+           Q244 96 244 132
+           Q244 182 200 198
+           Q156 182 156 132 Z"
+        fill="url(#khSkin)" stroke="#c98f5e" stroke-width="3.5" stroke-linejoin="round"/>
+
+  <!-- PECI (black flat brimless cap) -->
+  <path d="M150 104
+           Q150 60 200 58
+           Q250 60 250 104
+           Q224 94 200 94
+           Q176 94 150 104 Z"
+        fill="url(#khPeci)" stroke="#0a0d09" stroke-width="3.5" stroke-linejoin="round"/>
+  <!-- peci band highlight -->
+  <path d="M152 102 Q200 90 248 102" fill="none" stroke="#3a4038" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M160 78 Q200 66 240 78" fill="none" stroke="#3a4038" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- eyebrows -->
+  <path d="M164 138 Q176 132 188 138" fill="none" stroke="#3a2410" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M212 138 Q224 132 236 138" fill="none" stroke="#3a2410" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- round eyeglasses -->
+  <g fill="none" stroke="#3a2410" stroke-width="3.5" stroke-linecap="round">
+    <circle cx="177" cy="150" r="16"/>
+    <circle cx="223" cy="150" r="16"/>
+    <path d="M193 150 Q200 146 207 150"/>
+    <path d="M161 148 L152 146"/>
+    <path d="M239 148 L248 146"/>
+  </g>
+  <!-- lens glints -->
+  <g fill="#d1e4ff" opacity="0.55">
+    <circle cx="172" cy="145" r="4.5"/>
+    <circle cx="218" cy="145" r="4.5"/>
+  </g>
+  <!-- eyes -->
+  <circle cx="177" cy="151" r="3" fill="#171d16"/>
+  <circle cx="223" cy="151" r="3" fill="#171d16"/>
+
+  <!-- nose -->
+  <path d="M200 152 L196 170 Q200 174 204 170 Z" fill="#e8b98f" stroke="#c98f5e" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- mustache -->
+  <path d="M180 180
+           Q190 174 200 178
+           Q210 174 220 180
+           Q210 188 200 184
+           Q190 188 180 180 Z"
+        fill="#3a2410" stroke="#2a1908" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- gentle smile -->
+  <path d="M188 190 Q200 197 212 190" fill="none" stroke="#b07a4a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- education motif: small open book on lower left of roundel -->
+  <g transform="translate(96 222) rotate(-12)">
+    <path d="M0 12 Q14 4 28 10 L28 30 Q14 24 0 32 Z" fill="#f5fbef" stroke="#0061a4" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M56 12 Q42 4 28 10 L28 30 Q42 24 56 32 Z" fill="#d1e4ff" stroke="#0061a4" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M28 10 L28 30" stroke="#0061a4" stroke-width="2.5"/>
+    <g stroke="#33a0fd" stroke-width="1.6" stroke-linecap="round">
+      <path d="M6 16 L22 13"/>
+      <path d="M6 21 L22 18"/>
+      <path d="M34 13 L50 16"/>
+      <path d="M34 18 L50 21"/>
+    </g>
+  </g>
+
+  <!-- education motif: small graduation cap on lower right -->
+  <g transform="translate(280 218) rotate(10)">
+    <path d="M0 8 L22 0 L44 8 L22 16 Z" fill="#171d16" stroke="#0a0d09" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M10 12 L10 24 Q22 30 34 24 L34 12" fill="#2a2f29" stroke="#0a0d09" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M44 8 L44 22" stroke="#0a0d09" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="44" cy="24" r="3" fill="#e18500"/>
+  </g>
+</svg>

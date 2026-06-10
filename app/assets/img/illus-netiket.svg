@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="ntBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d1e4ff"/>
+      <stop offset="1" stop-color="#94f990"/>
+    </linearGradient>
+    <linearGradient id="ntPhone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33a0fd"/>
+      <stop offset="1" stop-color="#0061a4"/>
+    </linearGradient>
+    <linearGradient id="ntScreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf6ff"/>
+      <stop offset="1" stop-color="#d1e4ff"/>
+    </linearGradient>
+    <linearGradient id="ntShield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4caf50"/>
+      <stop offset="1" stop-color="#006e1c"/>
+    </linearGradient>
+    <radialGradient id="ntShadow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#171d16" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#171d16" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="400" height="300" fill="url(#ntBg)"/>
+
+  <!-- ground shadow -->
+  <ellipse cx="206" cy="268" rx="96" ry="16" fill="url(#ntShadow)"/>
+
+  <g stroke="#171d16" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- phone body -->
+    <rect x="150" y="64" width="112" height="190" rx="26" fill="url(#ntPhone)"/>
+    <!-- screen -->
+    <rect x="162" y="84" width="88" height="150" rx="14" fill="url(#ntScreen)"/>
+    <!-- home button -->
+    <circle cx="206" cy="244" r="6" fill="#d1e4ff"/>
+
+    <!-- speech bubble with heart (upper left) -->
+    <path d="M48 96 h66 a14 14 0 0 1 14 14 v34 a14 14 0 0 1 -14 14 h-30 l-14 16 v-16 h-22 a14 14 0 0 1 -14 -14 v-34 a14 14 0 0 1 14 -14 z" fill="#f5fbef"/>
+
+    <!-- speech bubble with thumbs-up (upper right) -->
+    <path d="M286 110 h64 a14 14 0 0 1 14 14 v34 a14 14 0 0 1 -14 14 h-22 v16 l-14 -16 h-28 a14 14 0 0 1 -14 -14 v-34 a14 14 0 0 1 14 -14 z" fill="#f5fbef"/>
+
+    <!-- safety shield (lower right, overlapping phone corner) -->
+    <path d="M300 196 q22 9 44 0 q0 50 -44 62 q-44 -12 -44 -62 q22 9 44 0 z" fill="url(#ntShield)"/>
+  </g>
+
+  <!-- smiley face on screen (no dark stroke for clean glow) -->
+  <circle cx="190" cy="138" r="8" fill="#171d16"/>
+  <circle cx="222" cy="138" r="8" fill="#171d16"/>
+  <circle cx="192" cy="135" r="2.6" fill="#f5fbef"/>
+  <circle cx="224" cy="135" r="2.6" fill="#f5fbef"/>
+  <path d="M184 168 q22 22 44 0" fill="none" stroke="#e18500" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="176" cy="160" r="6" fill="#33a0fd" opacity="0.55"/>
+  <circle cx="236" cy="160" r="6" fill="#33a0fd" opacity="0.55"/>
+
+  <!-- heart inside left bubble -->
+  <path d="M85 110
+           q-9 -11 -18 -3
+           q-9 8 18 25
+           q27 -17 18 -25
+           q-9 -8 -18 3 z" fill="#ba1a1a"/>
+
+  <!-- thumbs-up inside right bubble -->
+  <g stroke="#8b5000" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M312 152 v-16 q0 -12 9 -16 q5 8 0 16 h14 a7 7 0 0 1 7 7 l-3 18 a8 8 0 0 1 -8 7 h-19 z" fill="#ffdcbe"/>
+    <rect x="298" y="136" width="11" height="22" rx="3" fill="#e18500"/>
+  </g>
+
+  <!-- safety check mark on shield -->
+  <path d="M286 226 l11 12 l20 -24" fill="none" stroke="#f5fbef" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

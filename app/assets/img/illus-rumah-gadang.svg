@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="rgSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33a0fd"/>
+      <stop offset="1" stop-color="#d1e4ff"/>
+    </linearGradient>
+    <linearGradient id="rgGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#94f990"/>
+      <stop offset="1" stop-color="#4caf50"/>
+    </linearGradient>
+    <linearGradient id="rgRoof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#171d16"/>
+      <stop offset="1" stop-color="#3a2410"/>
+    </linearGradient>
+    <linearGradient id="rgBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e18500"/>
+      <stop offset="1" stop-color="#8b5000"/>
+    </linearGradient>
+    <linearGradient id="rgPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffdcbe"/>
+      <stop offset="1" stop-color="#e18500"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="400" height="300" fill="url(#rgSky)"/>
+
+  <!-- soft clouds -->
+  <g fill="#f5fbef" opacity="0.85">
+    <ellipse cx="70" cy="55" rx="34" ry="16"/>
+    <ellipse cx="95" cy="60" rx="26" ry="13"/>
+    <ellipse cx="330" cy="45" rx="30" ry="14"/>
+    <ellipse cx="305" cy="50" rx="22" ry="11"/>
+  </g>
+
+  <!-- distant hills -->
+  <ellipse cx="120" cy="245" rx="160" ry="60" fill="#4caf50" opacity="0.6"/>
+  <ellipse cx="320" cy="250" rx="150" ry="55" fill="#4caf50" opacity="0.6"/>
+
+  <!-- ground -->
+  <rect x="0" y="248" width="400" height="52" fill="url(#rgGround)"/>
+  <ellipse cx="200" cy="252" rx="240" ry="22" fill="#94f990" opacity="0.6"/>
+
+  <!-- soft shadow under house -->
+  <ellipse cx="200" cy="252" rx="135" ry="14" fill="#171d16" opacity="0.18"/>
+
+  <!-- stilts -->
+  <g fill="#8b5000" stroke="#3a2410" stroke-width="2.5" stroke-linejoin="round">
+    <rect x="92" y="222" width="13" height="30" rx="3"/>
+    <rect x="148" y="222" width="13" height="30" rx="3"/>
+    <rect x="204" y="222" width="13" height="30" rx="3"/>
+    <rect x="260" y="222" width="13" height="30" rx="3"/>
+    <rect x="296" y="222" width="13" height="30" rx="3"/>
+  </g>
+
+  <!-- house body -->
+  <rect x="78" y="150" width="244" height="78" rx="6" fill="url(#rgBody)" stroke="#3a2410" stroke-width="3.5" stroke-linejoin="round"/>
+
+  <!-- decorated wall panels with Minangkabau-style pattern -->
+  <g stroke="#8b5000" stroke-width="2.5" stroke-linejoin="round">
+    <rect x="92" y="166" width="44" height="46" rx="4" fill="url(#rgPanel)"/>
+    <rect x="178" y="166" width="44" height="46" rx="4" fill="url(#rgPanel)"/>
+    <rect x="264" y="166" width="44" height="46" rx="4" fill="url(#rgPanel)"/>
+  </g>
+  <!-- door in center panel -->
+  <rect x="146" y="172" width="32" height="56" rx="4" fill="#3a2410" stroke="#8b5000" stroke-width="2.5"/>
+  <circle cx="172" cy="200" r="2.6" fill="#ffdcbe"/>
+  <!-- carved curl motifs on panels -->
+  <g fill="none" stroke="#ba1a1a" stroke-width="2.5" stroke-linecap="round">
+    <path d="M104 200 Q114 184 124 200 Q119 192 114 196 Q119 200 124 192"/>
+    <path d="M276 200 Q286 184 296 200 Q291 192 286 196 Q291 200 296 192"/>
+  </g>
+  <g fill="none" stroke="#006e1c" stroke-width="2.5" stroke-linecap="round">
+    <path d="M104 188 Q114 196 124 188"/>
+    <path d="M276 188 Q286 196 296 188"/>
+  </g>
+
+  <!-- decorative band under roof -->
+  <rect x="74" y="142" width="252" height="12" rx="4" fill="#ba1a1a" stroke="#3a2410" stroke-width="2.5"/>
+
+  <!-- ROOF with curved buffalo-horn peaks (gonjong) - back fill -->
+  <path d="M64 146
+           Q60 132 78 130
+           L322 130
+           Q340 132 336 146
+           Z"
+        fill="url(#rgRoof)" stroke="#3a2410" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- the 5 sharp upward-curving horn peaks -->
+  <g fill="url(#rgRoof)" stroke="#3a2410" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- peak 1 (far left) -->
+    <path d="M62 138 Q70 92 38 58 Q66 86 80 108 Q86 124 82 138 Z"/>
+    <!-- peak 2 -->
+    <path d="M118 134 Q124 86 96 56 Q126 86 138 110 Q142 124 138 134 Z"/>
+    <!-- peak 3 (center, tallest) -->
+    <path d="M176 132 Q184 70 200 36 Q216 70 224 132 Q210 122 200 122 Q190 122 176 132 Z"/>
+    <!-- peak 4 -->
+    <path d="M262 134 Q256 86 284 56 Q254 86 242 110 Q238 124 242 134 Z"/>
+    <!-- peak 5 (far right) -->
+    <path d="M318 138 Q310 92 342 58 Q314 86 300 108 Q294 124 298 138 Z"/>
+  </g>
+
+  <!-- roof highlight sheen on horns -->
+  <g fill="none" stroke="#8b5000" stroke-width="2.5" stroke-linecap="round" opacity="0.6">
+    <path d="M70 130 Q72 100 52 72"/>
+    <path d="M124 128 Q126 100 106 74"/>
+    <path d="M192 124 Q194 78 200 48"/>
+    <path d="M276 128 Q274 100 294 74"/>
+    <path d="M330 130 Q328 100 348 72"/>
+  </g>
+
+  <!-- small grass tufts -->
+  <g stroke="#006e1c" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M40 270 Q38 258 44 250"/>
+    <path d="M50 272 Q52 260 46 252"/>
+    <path d="M356 270 Q358 258 352 250"/>
+    <path d="M366 272 Q364 260 370 252"/>
+  </g>
+</svg>

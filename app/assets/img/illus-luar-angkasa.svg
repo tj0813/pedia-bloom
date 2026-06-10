@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="spBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#171d16"/>
+      <stop offset="0.55" stop-color="#0061a4"/>
+      <stop offset="1" stop-color="#0d9488"/>
+    </linearGradient>
+    <radialGradient id="spPlanet" cx="0.38" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#ffdcbe"/>
+      <stop offset="0.5" stop-color="#e18500"/>
+      <stop offset="1" stop-color="#8b5000"/>
+    </radialGradient>
+    <linearGradient id="spRing" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#33a0fd"/>
+      <stop offset="0.5" stop-color="#d1e4ff"/>
+      <stop offset="1" stop-color="#0061a4"/>
+    </linearGradient>
+    <linearGradient id="spRocket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5fbef"/>
+      <stop offset="1" stop-color="#d1e4ff"/>
+    </linearGradient>
+    <linearGradient id="spFlame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffdcbe"/>
+      <stop offset="0.5" stop-color="#e18500"/>
+      <stop offset="1" stop-color="#ba1a1a"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="400" height="300" fill="url(#spBg)"/>
+
+  <!-- scattered stars -->
+  <g fill="#f5fbef">
+    <circle cx="46" cy="48" r="2.4"/>
+    <circle cx="92" cy="92" r="1.6"/>
+    <circle cx="150" cy="40" r="2"/>
+    <circle cx="330" cy="64" r="2.4"/>
+    <circle cx="372" cy="120" r="1.8"/>
+    <circle cx="60" cy="170" r="1.8"/>
+    <circle cx="120" cy="220" r="2"/>
+    <circle cx="350" cy="200" r="2.2"/>
+    <circle cx="300" cy="248" r="1.6"/>
+    <circle cx="40" cy="250" r="2"/>
+  </g>
+  <!-- twinkle stars (4-point) -->
+  <g fill="#94f990">
+    <path d="M260 36 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3 z"/>
+    <path d="M88 132 l2.2 6.6 6.6 2.2 -6.6 2.2 -2.2 6.6 -2.2 -6.6 -6.6 -2.2 6.6 -2.2 z"/>
+  </g>
+  <g fill="#ffdcbe">
+    <path d="M338 152 l2.6 7.8 7.8 2.6 -7.8 2.6 -2.6 7.8 -2.6 -7.8 -7.8 -2.6 7.8 -2.6 z"/>
+  </g>
+
+  <!-- crescent moon -->
+  <g>
+    <circle cx="338" cy="62" r="26" fill="#f5fbef"/>
+    <circle cx="350" cy="56" r="22" fill="url(#spBg)"/>
+    <circle cx="338" cy="62" r="26" fill="none" stroke="#d1e4ff" stroke-width="2" opacity="0.4"/>
+  </g>
+
+  <!-- ringed planet -->
+  <g>
+    <!-- back of ring -->
+    <path d="M118 168 a76 22 -18 0 0 132 -42" fill="none" stroke="url(#spRing)" stroke-width="9" stroke-linecap="round" opacity="0.9"/>
+    <!-- planet body -->
+    <circle cx="184" cy="150" r="48" fill="url(#spPlanet)" stroke="#8b5000" stroke-width="3"/>
+    <!-- planet surface bands -->
+    <path d="M148 134 q36 12 72 0" fill="none" stroke="#8b5000" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+    <path d="M144 166 q40 14 80 -2" fill="none" stroke="#8b5000" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+    <!-- front of ring -->
+    <path d="M118 168 a76 22 -18 0 0 132 -42" fill="none" stroke="url(#spRing)" stroke-width="9" stroke-linecap="round" transform="rotate(180 184 147)" opacity="0.95"/>
+  </g>
+
+  <!-- friendly rocket with flame trail -->
+  <g transform="rotate(28 300 200)">
+    <!-- flame trail -->
+    <path d="M300 232 q-12 22 0 40 q12 -18 0 -40 z" fill="url(#spFlame)" stroke="none"/>
+    <path d="M300 232 q-6 14 0 26 q6 -12 0 -26 z" fill="#ffdcbe" stroke="none"/>
+
+    <g stroke="#171d16" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+      <!-- fins -->
+      <path d="M284 206 q-16 6 -16 26 l16 -8 z" fill="#ba1a1a"/>
+      <path d="M316 206 q16 6 16 26 l-16 -8 z" fill="#ba1a1a"/>
+      <!-- body -->
+      <path d="M300 156
+               q22 14 18 56
+               q-2 16 -18 22
+               q-16 -6 -18 -22
+               q-4 -42 18 -56 z" fill="url(#spRocket)"/>
+      <!-- nose cone -->
+      <path d="M300 156 q14 10 17 30 l-34 0 q3 -20 17 -30 z" fill="#ba1a1a"/>
+      <!-- window -->
+      <circle cx="300" cy="200" r="11" fill="#33a0fd"/>
+      <circle cx="300" cy="200" r="11" fill="none" stroke="#0061a4" stroke-width="3"/>
+    </g>
+    <circle cx="296" cy="196" r="3" fill="#d1e4ff"/>
+  </g>
+</svg>
