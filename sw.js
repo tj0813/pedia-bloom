@@ -2,7 +2,7 @@
  * Precaches the full app shell (now fully self-hosted: no CDN). Local images are
  * cached at runtime (stale-while-revalidate). Navigations fall back to the cached
  * shell when offline so the app always boots. */
-var VERSION = "pedia-bloom-v4";
+var VERSION = "pedia-bloom-v5";
 var SHELL = VERSION + "-shell";
 var RUNTIME = VERSION + "-runtime";
 
@@ -50,6 +50,9 @@ self.addEventListener("fetch", function (e) {
   var req = e.request;
   if (req.method !== "GET") return;
   var url = new URL(req.url);
+  // Only handle real web requests. Browser-extension requests (chrome-extension:, etc.)
+  // can't be stored by the Cache API and aren't ours — let the browser handle them.
+  if (url.protocol !== "http:" && url.protocol !== "https:") return;
   var sameOrigin = url.origin === location.origin;
 
   // Navigations: try network, fall back to the cached shell so the SPA always boots offline.
