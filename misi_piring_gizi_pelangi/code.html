@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Piring Gizi Pelangi - Pedia Bloom</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#bacac5",
+                    "on-tertiary-fixed": "#351000",
+                    "on-secondary-fixed": "#301400",
+                    "surface-tint": "#006b5f",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#693300",
+                    "background": "#f8f9ff",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#ccdbf3",
+                    "secondary-container": "#fd933d",
+                    "primary-fixed-dim": "#3cddc7",
+                    "tertiary-fixed": "#ffdbcc",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#00201c",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#eff4ff",
+                    "on-tertiary-container": "#7e3913",
+                    "inverse-primary": "#3cddc7",
+                    "surface-container": "#e6eeff",
+                    "outline": "#6b7a76",
+                    "primary-fixed": "#62fae3",
+                    "primary-container": "#2dd4bf",
+                    "primary": "#006b5f",
+                    "on-error-container": "#93000a",
+                    "surface-container-highest": "#d5e3fc",
+                    "surface-bright": "#f8f9ff",
+                    "secondary-fixed-dim": "#ffb783",
+                    "on-surface-variant": "#3c4a46",
+                    "on-tertiary-fixed-variant": "#76330d",
+                    "on-primary-fixed-variant": "#005047",
+                    "on-primary-container": "#00574d",
+                    "on-surface": "#0d1c2e",
+                    "tertiary": "#944a23",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#f8f9ff",
+                    "on-background": "#0d1c2e",
+                    "on-secondary-fixed-variant": "#713700",
+                    "tertiary-container": "#ffaa81",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#ffb693",
+                    "inverse-surface": "#233144",
+                    "secondary": "#944a00",
+                    "inverse-on-surface": "#eaf1ff",
+                    "surface-variant": "#d5e3fc",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#dce9ff",
+                    "secondary-fixed": "#ffdcc5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg": [
+                            "Quicksand"
+                    ],
+                    "label-md": [
+                            "Quicksand"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-xl": [
+                            "Quicksand"
+                    ],
+                    "headline-lg-mobile": [
+                            "Quicksand"
+                    ]
+            },
+            "fontSize": {
+                    "body-md": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "20px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-xl": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "34px",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        /* Custom Utilities */
+        .squishy-btn {
+            border-bottom-width: 4px;
+            border-bottom-color: rgba(0, 0, 0, 0.15);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .squishy-btn:active {
+            border-bottom-width: 0px;
+            transform: translateY(4px);
+        }
+        
+        .breathe-animation {
+            animation: breathe 8s infinite ease-in-out;
+        }
+        @keyframes breathe {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.5); opacity: 1; }
+        }
+
+        /* Hide scrollbar for clean carousels */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar (Shared Component Executed) -->
+<!-- Applying structural & style rules exactly as dictated by JSON for TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-bright dark:bg-surface-dim shadow-sm flex justify-between items-center px-margin-mobile py-unit transition-colors duration-300">
+<!-- Leading: Avatar -->
+<div class="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-transform active:scale-95 duration-200">
+<div class="w-10 h-10 rounded-full bg-primary-container border-2 border-surface-bright overflow-hidden shadow-sm flex-shrink-0 relative">
+<img alt="Nara the Explorer Avatar" class="w-full h-full object-cover" data-alt="A small, stylized 3D avatar of a friendly Indonesian child character named Nara wearing a scout or explorer hat. The style is cute, squishy, and high-quality, rendered in soft lighting with vibrant, cheerful colors, fitting a premium kids' educational app UI." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdAOtVcb1QL9yDaRian8MUioprfePbJOrej6ds7m4ZhU98TPuLkWYL9BPz7_4ijb7XqN4R-Ucg-W1zVQnyuM9wWKhs7Djqk87dzwt0JZ_DxxIMkge77cRZBDXkpUQ_oD4dRI44GueTWO68Y79jaLZ_yhOBuETAB-soq78uvVcLSarigNJZeiVl2iOWbUGEtCw_XChgKzX_jlOhqbbKn2UbPlZBGQRfUwNnFoCvvb-CZZnykDEExsmKmkKagjbG4aWDFTk-kmdlBRg"/>
+</div>
+<!-- Brand Headline -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary dark:text-primary-fixed md:font-headline-lg md:text-headline-lg">
+                Pedia Bloom
+            </h1>
+</div>
+<!-- Trailing: Icon -->
+<button class="w-12 h-12 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-variant transition-transform active:scale-95 duration-200 shadow-sm bg-surface-container-lowest">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+</header>
+<!-- Note: BottomNavBar is intentionally suppressed here as this is a focused learning 'task' entry page. -->
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto space-y-12">
+<!-- Section 1: Vibrant Hero -->
+<section class="relative bg-surface-container-high rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 flex flex-col md:flex-row items-center p-6 md:p-12 gap-8">
+<div class="flex-1 space-y-4 z-10 text-center md:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 bg-primary-container text-on-primary-container rounded-full font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-sm">health_and_safety</span>
+                    Sehat &amp; Ceria
+                </div>
+<h2 class="font-headline-xl text-headline-xl font-bold text-primary">Piring Gizi Pelangi</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                    Mari jelajahi dunia makanan sehat bersama Nara! Cari tahu rahasia tubuh kuat dan pikiran cerdas.
+                </p>
+</div>
+<div class="flex-1 w-full relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A vivid, magical, high-quality 3D skeuomorphic illustration for a children's app featuring a giant, colorful plate of food. The plate contains vibrant sections of green broccoli, orange carrots, golden rice, and a piece of shiny fish. Next to the plate is Nara, a cute 3D Indonesian explorer character, looking excited. The lighting is soft and ambient, casting soft colored shadows in a bright, optimistic light-mode setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp8rCQi9d__oZl4SZO_YR7LzkrLKfVvNB7bJCDKaO7zHW8N-r5BqQ1hVvj24ikZ6BjoUOkc-wslcAHMYAjCrhFQMsRf6p51X3qxzVfOWFDMyiYfYIXNwn3rd5jMT46gTCmk_2sF1tVaOESXsBsTXseX_Tlcq8R59Wgvndw8jCE0YRSU7Sb0NBeBuexyASFOU9zHkuGAsGsSQ0mC847M25k60y0DVEqzGmbs3F_WbAvrH4rCbm-uWpKVn_Er58V8F_HL4bsuCLDX0Q"/>
+</div>
+<!-- Decorative floating blobs -->
+<div class="absolute -top-10 -left-10 w-32 h-32 bg-secondary-container rounded-full blur-2xl opacity-50"></div>
+<div class="absolute -bottom-10 -right-10 w-40 h-40 bg-primary-container rounded-full blur-2xl opacity-50"></div>
+</section>
+<!-- Section 2: 4 Sehat 5 Sempurna (Bento Grid) -->
+<section class="space-y-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-on-surface">Pasukan 4 Sehat 5 Sempurna</h3>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+<!-- Item 1: Karbohidrat -->
+<button class="bg-surface-container-lowest border-2 border-surface-variant rounded-lg p-4 flex flex-col items-center justify-center text-center gap-3 squishy-btn hover:border-primary-container group">
+<div class="w-16 h-16 bg-tertiary-fixed rounded-full flex items-center justify-center text-on-tertiary-fixed shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">rice_bowl</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Tenaga</p>
+<p class="font-body-md text-sm text-on-surface-variant">Nasi &amp; Jagung</p>
+</div>
+</button>
+<!-- Item 2: Protein -->
+<button class="bg-surface-container-lowest border-2 border-surface-variant rounded-lg p-4 flex flex-col items-center justify-center text-center gap-3 squishy-btn hover:border-secondary-container group">
+<div class="w-16 h-16 bg-secondary-fixed rounded-full flex items-center justify-center text-on-secondary-fixed shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">set_meal</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Pembangun</p>
+<p class="font-body-md text-sm text-on-surface-variant">Ikan &amp; Telur</p>
+</div>
+</button>
+<!-- Item 3: Sayur -->
+<button class="bg-surface-container-lowest border-2 border-surface-variant rounded-lg p-4 flex flex-col items-center justify-center text-center gap-3 squishy-btn hover:border-primary group">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">nutrition</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Pelindung</p>
+<p class="font-body-md text-sm text-on-surface-variant">Bayam &amp; Wortel</p>
+</div>
+</button>
+<!-- Item 4: Buah -->
+<button class="bg-surface-container-lowest border-2 border-surface-variant rounded-lg p-4 flex flex-col items-center justify-center text-center gap-3 squishy-btn hover:border-error-container group">
+<div class="w-16 h-16 bg-error-container rounded-full flex items-center justify-center text-on-error-container shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">apps</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Vitamin</p>
+<p class="font-body-md text-sm text-on-surface-variant">Pisang &amp; Apel</p>
+</div>
+</button>
+<!-- Item 5: Susu -->
+<button class="bg-surface-container-lowest border-2 border-surface-variant rounded-lg p-4 flex flex-col items-center justify-center text-center gap-3 squishy-btn hover:border-surface-tint col-span-2 md:col-span-1 group">
+<div class="w-16 h-16 bg-surface-container-highest rounded-full flex items-center justify-center text-on-surface shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">local_drink</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Penyempurna</p>
+<p class="font-body-md text-sm text-on-surface-variant">Susu Segar</p>
+</div>
+</button>
+</div>
+</section>
+<!-- Section 3: Build Your Plate Interactive -->
+<section class="bg-surface-container-low rounded-xl p-6 md:p-8 shadow-sm space-y-6">
+<div class="text-center">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary">Susun Piringmu!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Ketuk makanan di bawah untuk memindahkannya ke piring.</p>
+</div>
+<!-- Virtual Plate Area -->
+<div class="relative w-64 h-64 md:w-80 md:h-80 mx-auto bg-surface-container-lowest rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.08)] border-4 border-surface-variant flex items-center justify-center">
+<!-- Drop zones (visually hidden initially) -->
+<div class="absolute inset-0 m-8 grid grid-cols-2 grid-rows-2 gap-2 opacity-0 transition-opacity duration-500" id="plate-items">
+<div class="bg-tertiary-fixed rounded-tl-full rounded-tr-lg rounded-bl-lg rounded-br-sm border-2 border-surface-container-lowest flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-4xl">rice_bowl</span>
+</div>
+<div class="bg-primary-container rounded-tr-full rounded-tl-lg rounded-br-lg rounded-bl-sm border-2 border-surface-container-lowest flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container text-4xl">nutrition</span>
+</div>
+<div class="bg-secondary-fixed rounded-bl-full rounded-tl-lg rounded-br-lg rounded-tr-sm border-2 border-surface-container-lowest flex items-center justify-center col-span-2 h-20 self-end">
+<span class="material-symbols-outlined text-on-secondary-fixed text-4xl">set_meal</span>
+</div>
+</div>
+<div class="text-on-surface-variant font-label-md text-label-md opacity-100 transition-opacity duration-300" id="empty-plate-text">
+                    Piring Kosong
+                </div>
+</div>
+<!-- Food Picker -->
+<div class="flex justify-center gap-4 overflow-x-auto hide-scrollbar pb-4">
+<button class="px-6 py-3 bg-secondary-container text-on-secondary-container rounded-full font-label-md text-label-md font-bold squishy-btn flex items-center gap-2 flex-shrink-0" onclick="fillPlate()">
+<span class="material-symbols-outlined">add_circle</span>
+                    Isi Semua!
+                </button>
+<button class="px-6 py-3 bg-surface-variant text-on-surface-variant rounded-full font-label-md text-label-md font-bold squishy-btn flex items-center gap-2 flex-shrink-0" onclick="resetPlate()">
+<span class="material-symbols-outlined">refresh</span>
+                    Ulangi
+                </button>
+</div>
+<script>
+                function fillPlate() {
+                    document.getElementById('plate-items').style.opacity = '1';
+                    document.getElementById('empty-plate-text').style.opacity = '0';
+                }
+                function resetPlate() {
+                    document.getElementById('plate-items').style.opacity = '0';
+                    document.getElementById('empty-plate-text').style.opacity = '1';
+                }
+            </script>
+</section>
+<!-- Section 4: Mindful Eating Timer -->
+<section class="bg-primary-container text-on-primary-container rounded-xl p-8 md:p-12 shadow-sm text-center relative overflow-hidden flex flex-col items-center">
+<!-- Decorative background elements -->
+<div class="absolute -top-20 -left-20 w-64 h-64 bg-primary mix-blend-multiply opacity-10 rounded-full"></div>
+<div class="absolute -bottom-20 -right-20 w-64 h-64 bg-surface-bright mix-blend-overlay opacity-30 rounded-full"></div>
+<div class="z-10 max-w-md mx-auto space-y-6">
+<span class="material-symbols-outlined text-5xl">self_improvement</span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold">Bernapas Sebelum Makan</h3>
+<p class="font-body-md text-body-md">Perut tenang membuat makanan dicerna lebih baik. Yuk, ambil napas perlahan selama 1 menit.</p>
+<!-- Breathing Circle visual -->
+<div class="w-32 h-32 mx-auto relative flex items-center justify-center my-8">
+<div class="absolute w-full h-full bg-surface-bright rounded-full opacity-30 transition-transform duration-1000 scale-100" id="breathe-circle"></div>
+<div class="absolute w-24 h-24 bg-surface-lowest rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/50 flex items-center justify-center z-10 shadow-lg">
+<span class="font-headline-lg text-headline-lg font-bold" id="timer-text">60</span>
+</div>
+</div>
+<button class="px-8 py-4 bg-surface-bright text-primary rounded-full font-label-md text-label-md font-bold squishy-btn shadow-md w-full md:w-auto" id="start-timer-btn" onclick="startMindfulTimer()">
+                    Mulai Latihan
+                </button>
+</div>
+<script>
+                let timerInterval;
+                function startMindfulTimer() {
+                    const btn = document.getElementById('start-timer-btn');
+                    const text = document.getElementById('timer-text');
+                    const circle = document.getElementById('breathe-circle');
+                    
+                    if(btn.disabled) return;
+                    
+                    btn.disabled = true;
+                    btn.classList.add('opacity-50', 'cursor-not-allowed');
+                    btn.innerText = 'Sedang Berjalan...';
+                    circle.classList.add('breathe-animation');
+                    
+                    let timeLeft = 60;
+                    text.innerText = timeLeft;
+                    
+                    timerInterval = setInterval(() => {
+                        timeLeft--;
+                        text.innerText = timeLeft;
+                        if(timeLeft <= 0) {
+                            clearInterval(timerInterval);
+                            circle.classList.remove('breathe-animation');
+                            text.innerText = "Selesai!";
+                            btn.disabled = false;
+                            btn.classList.remove('opacity-50', 'cursor-not-allowed');
+                            btn.innerText = 'Mulai Lagi';
+                            setTimeout(() => { text.innerText = "60"; }, 3000);
+                        }
+                    }, 1000);
+                }
+            </script>
+</section>
+<!-- Section 5: Nutri-Quiz -->
+<section class="space-y-6">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined">quiz</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-on-surface">Kuis Nutrisi!</h3>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant/30 space-y-6">
+<p class="font-body-lg text-body-lg font-bold text-on-surface text-center">
+                    Makanan mana yang merupakan sumber <span class="text-secondary">Vitamin C</span> tertinggi untuk melawan kuman?
+                </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="quiz-container">
+<!-- Option A -->
+<button class="quiz-option relative rounded-lg overflow-hidden border-4 border-transparent bg-surface-container-low squishy-btn text-left" onclick="selectAnswer(this, false)">
+<div class="h-32 w-full bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="A stylized 3D image of a slice of white bread on a minimal, clean background. The visual is soft and squishy, matching a kids educational app style. Warm lighting, tactile feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo_1QM7cAnndWFaRhzXS0eqOApRjsqC7TYzaLXTXaIeX1vSNHMx4H9Ym_xk7DnOcU9F13oYNj-JGI6C8O-1OepZifgg96KDrOU3f0pt5IaU-VxjtGPn84voQDHDVhUxKbSFTughC_biXjmDYbmZYnCMlv3tf4UH12-IdNJN2lMv8s68SvnAY9C6cjYUCZ0wQKURVCZaLU-iLhpb1BCbMUVy16ETwtXG9Xn8drkhGwAwb5_XVZ3WXrzVgK05M1rn37QUtE2svZP2m8"/>
+</div>
+<div class="p-4 flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Roti Tawar</span>
+<span class="material-symbols-outlined text-outline hidden feedback-icon">cancel</span>
+</div>
+</button>
+<!-- Option B (Correct) -->
+<button class="quiz-option relative rounded-lg overflow-hidden border-4 border-transparent bg-surface-container-low squishy-btn text-left" onclick="selectAnswer(this, true)">
+<div class="h-32 w-full bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="A bright, high-quality 3D skeuomorphic illustration of a vibrant orange fruit, sliced open, sitting on a soft light blue background. The style is magical, tactile, and appetizing, perfect for a playful learning module." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASyvDD3h5m6Heo1zrIXqAMKiyXgQ4c41tiVfOg1Qef7HjUwFhIGdYfCwgbCtQzJE9PtAEa4eEOwMasOtKIvTKzKrrb4AgUlQHuLVZuvbpamhSsh_qaZgDhNBOHzE2UqRN2OBpwo0kbOK3p42RH-1nCa08eeyXFLqeezHwkOGArd6QPjt3WL1y-Cphdn0J5LnNESVbMmTySJrhXIjamkGjqvIzzLzPtfcD_DgfktYTNB4_rX6_s4vcGNjKdq-UuSIoDCyBwh7Cif1M"/>
+</div>
+<div class="p-4 flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Jeruk Segar</span>
+<span class="material-symbols-outlined text-primary hidden feedback-icon">check_circle</span>
+</div>
+</button>
+<!-- Option C -->
+<button class="quiz-option relative rounded-lg overflow-hidden border-4 border-transparent bg-surface-container-low squishy-btn text-left" onclick="selectAnswer(this, false)">
+<div class="h-32 w-full bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="A beautifully rendered 3D stylized illustration of a piece of fried chicken or roasted meat, glowing warmly against a soft pink background. Skeuomorphic details, soft shadows, safe and friendly aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYUQx2FV7MUMbdJQk2UAS4kOFflXNuxH0fS_io_h3j0BQ1pjWwiG8ocYhhUfadDdWEHS3O0Y0x5kJhByUGmdrLdU1uFEgs5lCUlT6beNjsNxuU0Zdh_AZnGli4budGfx8htUpQ0dyfHwgF38TwhGaOXuv74Jl7qVtwId3zj76cpgTjDwHyIv_Dyx4_k6uC0GRSqjVWAaq1yPeLSCZvgn0_Prvc0nOth27lVW3PpvjL53BqOywWzXNLj_yjQEuNgcOeXlzaJwZr2Hs"/>
+</div>
+<div class="p-4 flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Daging Ayam</span>
+<span class="material-symbols-outlined text-outline hidden feedback-icon">cancel</span>
+</div>
+</button>
+</div>
+<div class="text-center font-label-md text-label-md h-6 transition-opacity duration-300 opacity-0" id="quiz-feedback">
+<!-- Feedback text goes here -->
+</div>
+</div>
+<script>
+                function selectAnswer(element, isCorrect) {
+                    // Reset all
+                    const options = document.querySelectorAll('.quiz-option');
+                    options.forEach(opt => {
+                        opt.classList.remove('border-primary', 'border-error', 'bg-primary-container/20', 'bg-error-container/20');
+                        opt.querySelector('.feedback-icon').classList.add('hidden');
+                    });
+
+                    const feedbackDiv = document.getElementById('quiz-feedback');
+                    const icon = element.querySelector('.feedback-icon');
+
+                    icon.classList.remove('hidden');
+
+                    if(isCorrect) {
+                        element.classList.add('border-primary', 'bg-primary-container/20');
+                        icon.innerText = 'check_circle';
+                        icon.classList.add('text-primary');
+                        icon.classList.remove('text-error');
+                        feedbackDiv.innerHTML = '<span class="text-primary font-bold">Hebat! Jeruk kaya Vitamin C untuk imun tubuh.</span>';
+                    } else {
+                        element.classList.add('border-error', 'bg-error-container/20');
+                        icon.innerText = 'cancel';
+                        icon.classList.add('text-error');
+                        icon.classList.remove('text-primary');
+                        // Simple shake effect
+                        element.style.transform = 'translateX(-5px)';
+                        setTimeout(() => element.style.transform = 'translateX(5px)', 100);
+                        setTimeout(() => element.style.transform = 'translateX(0)', 200);
+                        
+                        feedbackDiv.innerHTML = '<span class="text-error">Coba lagi! Ini baik, tapi bukan sumber utama Vitamin C.</span>';
+                    }
+                    feedbackDiv.style.opacity = '1';
+                }
+            </script>
+</section>
+</main>
+</body></html>

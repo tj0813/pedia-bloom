@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RA Kartini - Pahlawan Nusantara</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Quicksand:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#bacac5",
+                      "primary-fixed": "#62fae3",
+                      "on-error": "#ffffff",
+                      "surface-container": "#e6eeff",
+                      "on-secondary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-background": "#0d1c2e",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-bright": "#f8f9ff",
+                      "secondary-container": "#fd933d",
+                      "on-primary-fixed-variant": "#005047",
+                      "tertiary-fixed": "#ffdbcc",
+                      "secondary-fixed-dim": "#ffb783",
+                      "on-tertiary-fixed": "#351000",
+                      "on-surface": "#0d1c2e",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "on-secondary-container": "#693300",
+                      "secondary": "#944a00",
+                      "error": "#ba1a1a",
+                      "secondary-fixed": "#ffdcc5",
+                      "on-primary-container": "#00574d",
+                      "surface-container-low": "#eff4ff",
+                      "on-tertiary-container": "#7e3913",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-high": "#dce9ff",
+                      "surface-tint": "#006b5f",
+                      "inverse-surface": "#233144",
+                      "primary-container": "#2dd4bf",
+                      "background": "#f8f9ff",
+                      "primary": "#006b5f",
+                      "inverse-primary": "#3cddc7",
+                      "on-surface-variant": "#3c4a46",
+                      "on-primary-fixed": "#00201c",
+                      "outline": "#6b7a76",
+                      "surface-dim": "#ccdbf3",
+                      "inverse-on-surface": "#eaf1ff",
+                      "surface": "#f8f9ff",
+                      "surface-container-highest": "#d5e3fc",
+                      "primary-fixed-dim": "#3cddc7",
+                      "tertiary-container": "#ffaa81",
+                      "surface-variant": "#d5e3fc",
+                      "on-secondary-fixed": "#301400",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed-variant": "#713700",
+                      "tertiary": "#944a23"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "unit": "8px",
+                      "container-max": "1200px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Quicksand"
+                      ],
+                      "label-md": [
+                              "Quicksand"
+                      ],
+                      "headline-xl": [
+                              "Quicksand"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Quicksand"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "34px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .bouncy-button {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .bouncy-button:active {
+            transform: translateY(4px) scale(0.98);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(45,212,191,0.15);
+        }
+        .squishy-shadow {
+            box-shadow: 0 4px 12px rgba(45,212,191,0.15);
+        }
+        .button-3d {
+            border-bottom: 4px solid theme('colors.secondary');
+        }
+        .button-3d:active {
+            border-bottom: 0px solid theme('colors.secondary');
+            transform: translateY(4px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="pb-24">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky bg-background dark:bg-on-background z-40">
+<div class="flex justify-between items-center px-gutter py-4 w-full flat no shadows">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container">
+<img alt="Nara the Explorer mascot avatar" class="w-full h-full object-cover" data-alt="A friendly, cartoon-style 3D avatar of an Indonesian explorer child with a pith helmet and a warm smile. The background is a soft teal color. The lighting is bright and cheerful, matching a modern light-mode educational app aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbRATEJ9ve_E_-Xr71lhseAyP0lrK2cOBtp7PmWRwezO-8lgYa3sOTeZJ33af8RNrt5DigGTfXFGCUbOr17NiAzZWUbkvxWUXGWHRatYzJmsVueUctovxYXHlSB3wwSeemeKe354SPOktasafjKAuMJTA-O1PYowKlcJoJ5JviyhZAtpbrolvYFPl0OqC5qgaQyZXLZyfXrx0VbJQfSxidN-ZTYt3NAEU-fe5srVm4igeqayxIfkq9ReBay-tyQJB5I9sUZPxb16k"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed">NusaPedia</h1>
+</div>
+<button class="text-on-surface-variant hover:bg-surface-container-low transition-colors rounded-full p-2 active:scale-95 duration-150 bounce-effect flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 flex flex-col gap-8">
+<!-- Hero Section -->
+<section class="relative bg-surface-container-highest rounded-xl p-6 md:p-10 overflow-hidden flex flex-col md:flex-row items-center gap-8 squishy-shadow">
+<div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-lg shrink-0 z-10 relative">
+<img alt="RA Kartini Portrait" class="w-full h-full object-cover" data-alt="A stylized, respectful, child-friendly illustration of RA Kartini, an Indonesian national heroine. She is depicted wearing traditional Javanese clothing (kebaya) with a gentle, encouraging smile. The background features subtle Indonesian batik patterns in soft, warm colors. The style is 2D vector art, suitable for an educational app." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnsQBq_lOd1WyYTvDkRBklE9EcIoddYFyeH40EhcDnxOUaXFfPE1RqnWMHMIS5p9Vm06rH9_mK5kgue07iSBr9vBKIiAItrlAkNZ0_BGtwujUj-ZchQ96yd2Mcwh_hH2zjJyPItHYZ4gRA8-Pt4FhQBCuk0pb2fGIt7NAYQSzIsHMz-VSGgIdRpZX2QlzeWGIqCnmwHVwsuCcSH7xdpLt039KosNTh7AqYBAnPsvlCRvferN6ZJ0FQHZ53_tjyisJPxIiIk_xQwoY"/>
+</div>
+<div class="z-10 flex flex-col items-center md:items-start text-center md:text-left gap-4">
+<div class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-4 py-1 rounded-full w-fit">Pahlawan Emansipasi</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Raden Ajeng Kartini</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Halo, penjelajah cilik! Mari berkenalan dengan Ibu Kartini. Beliau adalah pahlawan hebat yang berjuang agar semua anak perempuan di Indonesia bisa pergi ke sekolah dan menggapai cita-cita mereka!</p>
+</div>
+<!-- Decorative Background Element -->
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary-container rounded-full opacity-20 blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-secondary-container rounded-full opacity-20 blur-2xl"></div>
+</section>
+<!-- Story Section -->
+<section class="flex flex-col gap-6">
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Kisah Keberanian Kartini</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-container-low card-hover squishy-shadow relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container rounded-bl-xl px-3 py-1 font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined align-middle mr-1 text-[20px]">school</span>Belajar
+                    </div>
+<div class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-[32px]">menu_book</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Mimpi untuk Belajar</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Zaman dahulu, anak perempuan tidak boleh sekolah tinggi. Tapi Kartini sangat suka membaca buku. Ia belajar sendiri dari buku-buku yang ia kumpulkan.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-container-low card-hover squishy-shadow relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-secondary-container text-on-secondary-container rounded-bl-xl px-3 py-1 font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined align-middle mr-1 text-[20px]">mail</span>Surat
+                    </div>
+<div class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center mb-4 text-secondary">
+<span class="material-symbols-outlined text-[32px]">edit_document</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Surat-Surat Harapan</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Kartini menulis banyak surat kepada teman-temannya di Belanda. Ia menceritakan mimpinya agar perempuan Indonesia punya hak yang sama untuk maju dan pintar.</p>
+</div>
+</div>
+</section>
+<!-- Words of Wisdom Bento -->
+<section class="bg-surface-bright rounded-xl p-8 squishy-shadow border border-outline-variant/20">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[36px]" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+                Kata Mutiara Ibu Kartini
+            </h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="md:col-span-2 bg-primary-container rounded-xl p-8 flex items-center justify-center text-center relative overflow-hidden card-hover">
+<!-- Decorative quotes -->
+<span class="material-symbols-outlined absolute top-4 left-4 text-[64px] text-on-primary-container opacity-20">format_quote</span>
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary-container z-10 italic">
+                        "Habis gelap terbitlah terang."
+                    </p>
+</div>
+<div class="bg-tertiary-container rounded-xl p-6 flex flex-col justify-center gap-4 card-hover">
+<p class="font-body-md text-body-md text-on-tertiary-container">Artinya, setelah masa-masa sulit, pasti akan datang masa yang bahagia dan penuh harapan.</p>
+<button class="bg-secondary text-on-secondary font-label-md text-label-md px-4 py-3 rounded-full button-3d bouncy-button text-center w-full">
+                        Simpan Kutipan
+                    </button>
+</div>
+</div>
+</section>
+<!-- Timeline -->
+<section class="mb-10">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-6">Jejak Langkah Kartini</h3>
+<div class="relative pl-8 md:pl-0">
+<!-- Line -->
+<div class="absolute left-[39px] md:left-1/2 top-0 bottom-0 w-2 bg-surface-variant rounded-full transform md:-translate-x-1/2"></div>
+<!-- Timeline Item 1 -->
+<div class="relative flex md:justify-between items-center mb-8 w-full">
+<div class="hidden md:block w-5/12 text-right pr-8">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary">21 April 1879</span>
+</div>
+<div class="absolute left-0 md:left-1/2 w-8 h-8 bg-primary rounded-full border-4 border-white z-10 transform -translate-x-1/2 flex items-center justify-center squishy-shadow">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+<div class="w-full md:w-5/12 pl-8 md:pl-8">
+<div class="md:hidden mb-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary">1879</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 squishy-shadow">
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Lahir di Jepara</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Kartini kecil lahir dalam keluarga bangsawan di kota Jepara, Jawa Tengah.</p>
+</div>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative flex md:justify-between items-center mb-8 w-full md:flex-row-reverse">
+<div class="hidden md:block w-5/12 text-left pl-8">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-secondary">1903</span>
+</div>
+<div class="absolute left-0 md:left-1/2 w-8 h-8 bg-secondary rounded-full border-4 border-white z-10 transform -translate-x-1/2 flex items-center justify-center squishy-shadow">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+<div class="w-full md:w-5/12 pl-8 md:pr-8 md:pl-0 md:text-right">
+<div class="md:hidden mb-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-secondary">1903</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 squishy-shadow">
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Membuka Sekolah</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Ia mendirikan sekolah pertama untuk anak-anak perempuan di sebelah timur pintu gerbang kompleks kantor kabupaten Rembang.</p>
+</div>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative flex md:justify-between items-center w-full">
+<div class="hidden md:block w-5/12 text-right pr-8">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-tertiary">1911</span>
+</div>
+<div class="absolute left-0 md:left-1/2 w-8 h-8 bg-tertiary rounded-full border-4 border-white z-10 transform -translate-x-1/2 flex items-center justify-center squishy-shadow">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+<div class="w-full md:w-5/12 pl-8 md:pl-8">
+<div class="md:hidden mb-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-tertiary">1911</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 squishy-shadow">
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Buku Diterbitkan</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Surat-surat Kartini dikumpulkan dan dibukukan dengan judul "Door Duisternis tot Licht" (Habis Gelap Terbitlah Terang).</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Hidden on md and above) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface-container-lowest border-t-2 border-outline-variant/30 rounded-t-xl shadow-[0_-4px_12px_rgba(45,212,191,0.15)]">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-2 translate-y-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined mb-1">sports_esports</span>
+<span class="font-label-md text-label-md">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined mb-1">military_tech</span>
+<span class="font-label-md text-label-md">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined mb-1">smart_toy</span>
+<span class="font-label-md text-label-md">Tanya AI</span>
+</a>
+</nav>
+</body></html>

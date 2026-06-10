@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Candi Borobudur - NusaPedia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed": "#ffdbcc",
+                      "secondary-fixed-dim": "#ffb783",
+                      "on-tertiary-fixed": "#351000",
+                      "on-surface": "#0d1c2e",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "on-secondary-container": "#693300",
+                      "secondary": "#944a00",
+                      "error": "#ba1a1a",
+                      "secondary-fixed": "#ffdcc5",
+                      "on-primary-container": "#00574d",
+                      "outline-variant": "#bacac5",
+                      "primary-fixed": "#62fae3",
+                      "on-error": "#ffffff",
+                      "surface-container": "#e6eeff",
+                      "on-secondary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-background": "#0d1c2e",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-bright": "#f8f9ff",
+                      "secondary-container": "#fd933d",
+                      "on-primary-fixed-variant": "#005047",
+                      "on-surface-variant": "#3c4a46",
+                      "on-primary-fixed": "#00201c",
+                      "outline": "#6b7a76",
+                      "surface-dim": "#ccdbf3",
+                      "inverse-on-surface": "#eaf1ff",
+                      "surface": "#f8f9ff",
+                      "surface-container-highest": "#d5e3fc",
+                      "primary-fixed-dim": "#3cddc7",
+                      "tertiary-container": "#ffaa81",
+                      "surface-variant": "#d5e3fc",
+                      "on-secondary-fixed": "#301400",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed-variant": "#713700",
+                      "tertiary": "#944a23",
+                      "surface-container-low": "#eff4ff",
+                      "on-tertiary-container": "#7e3913",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-high": "#dce9ff",
+                      "surface-tint": "#006b5f",
+                      "inverse-surface": "#233144",
+                      "primary-container": "#2dd4bf",
+                      "background": "#f8f9ff",
+                      "primary": "#006b5f",
+                      "inverse-primary": "#3cddc7"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "container-max": "1200px",
+                      "gutter": "24px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Quicksand"
+                      ],
+                      "headline-lg": [
+                              "Quicksand"
+                      ],
+                      "label-md": [
+                              "Quicksand"
+                      ],
+                      "headline-xl": [
+                              "Quicksand"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "34px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bouncy-btn:active {
+            transform: translateY(2px);
+            border-bottom-width: 0px;
+            margin-top: 4px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col md:flex-row pb-24 md:pb-0">
+<!-- Desktop Sidebar Drawer (NavigationDrawer Component) -->
+<aside class="hidden md:flex flex-col w-80 bg-surface-container-low border-r border-outline-variant shadow-xl rounded-r-lg h-screen sticky top-0 shrink-0 z-40 overflow-y-auto">
+<div class="p-6 flex flex-col items-start border-b border-outline-variant">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-4 overflow-hidden">
+<img alt="Parent Profile Icon" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0REBYg3rqsjup7qGsKAeGrYOu8C33yKxg7GeWv0k-lfdWbiP6P6NjnHoCuSRpQOyHtr22s2eYSMiw1eJUAYYFH9FEf1B1pi0FPLIb4bxU3QIpbqeYhnL5OxEztak-lnbpsgKgAu1Ea4ZIfGB2a9f8K0-A44B74L0Kvyss81f8ZiifwD2QWkTZiq9lLXHpxppdRXYzUL60qI46IlOWE7LTu7GPuK7lBbRlQc3QJoa97lWw9y_TavEjVJzwS8PbfuOJL2rS7qVj9pw"/>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-secondary">Gerbang Orang Tua</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Area Khusus Dewasa</p>
+</div>
+<nav class="flex-1 py-4 flex flex-col gap-2">
+<!-- Items suppressed to focus on content, showing context only -->
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 hover:bg-secondary-fixed-dim rounded-full mx-2 transition-transform hover:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-body-md text-body-md">Dashboard Orang Tua</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 hover:bg-secondary-fixed-dim rounded-full mx-2 transition-transform hover:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-body-md text-body-md">Laporan Belajar</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 hover:bg-secondary-fixed-dim rounded-full mx-2 transition-transform hover:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="timer">timer</span>
+<span class="font-body-md text-body-md">Batas Waktu</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 hover:bg-secondary-fixed-dim rounded-full mx-2 transition-transform hover:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="lock">lock</span>
+<span class="font-body-md text-body-md">Keamanan</span>
+</a>
+</nav>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col relative w-full overflow-x-hidden">
+<!-- TopAppBar Component -->
+<header class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full bg-surface shadow-sm sticky top-0 z-30 transition-transform duration-150 docked full-width">
+<div class="flex items-center gap-3">
+<button class="md:hidden flex items-center justify-center p-2 rounded-full hover:bg-surface-variant text-on-surface-variant transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-primary-fixed">
+<img alt="Nara the Explorer mascot smiling" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAglPqrffMDV_AB3P6QtDF-_Bigj9elc7sd3WN22m3i5fqLPPOzTSgpVYWvrElqllJtdyerCHQ9nRMV6iZ6UyUVDLHre5GFsBP5-x2ZrArNG22zDgUO5dFlVQIVcg7QKzZndq8Hhvi-Dx_W16_qdCVQwVjhzYTbi75gTiLZ_-s43pRSqYsTffhRIFbbFSmU52XkAFl6AHdHep5dGt8jm6OJoIXvN5VW5hsnoJDmep563iaUKbdtOJECcGfvjXKeFwBx8sCnhyL-uAc"/>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">NusaPedia</h1>
+</div>
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-surface-variant text-on-surface-variant transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</header>
+<!-- Canvas -->
+<div class="p-margin-mobile md:p-margin-desktop max-w-container-max mx-auto w-full space-y-12">
+<!-- Hero Section -->
+<section class="relative rounded-xl overflow-hidden bg-surface-container-high shadow-lg isolate group">
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent z-10 pointer-events-none"></div>
+<img alt="Candi Borobudur at sunrise" class="w-full h-64 md:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A breathtaking, vibrant image of Candi Borobudur at sunrise. The massive stone temple stands majestically, its bell-shaped stupas silhouetted against a brilliant sky of orange, pink, and soft teal. Morning mist clings to the surrounding lush green jungle valleys, creating a magical, adventurous atmosphere perfect for a children's educational platform. The lighting is soft and cinematic, emphasizing the textured stone carvings and the scale of the ancient wonder." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYlD4OCVtav_RJxLfywWHSvvtgROwGTtBmkwNgPhrsKGXX-IGxpOtsgjLQoaI7zJkim22su1KRUOwV6-ua6O1E-_qdf_2XVYXq1zELXLyPqnrIdrasl-1C53UqHuUSJBkyUqH7a-3OfYMCppZI6Sa7wbOMpQZdMU2EhN6NIYkmTek2smHQPFtTmDkxYxeU6wtXwqKTZ36dIqePtCeRZgGk_xjkkBKDD78V4tTE9b63MXztCGozIOo2iiUNMfElb55u2RLzGPh05A8"/>
+<div class="absolute bottom-0 left-0 w-full p-6 md:p-8 z-20 flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<div class="flex gap-2 mb-3">
+<span class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-3 py-1 rounded-full shadow-sm">Sejarah</span>
+<span class="bg-tertiary-container text-on-tertiary-container font-label-md text-label-md px-3 py-1 rounded-full shadow-sm">Jawa Tengah</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-white mb-2 drop-shadow-md">Keajaiban Borobudur</h2>
+<p class="font-body-lg text-body-lg text-surface-bright max-w-2xl drop-shadow">Mari menjelajah candi Buddha terbesar di dunia yang ada di Indonesia!</p>
+</div>
+</div>
+</section>
+<!-- Interactive Story Section (Bento Grid) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-unit auto-rows-[minmax(180px,auto)]">
+<!-- History Card -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-6 md:p-8 border-2 border-surface-container shadow-[0_4px_20px_-5px_rgba(0,107,95,0.1)] relative">
+<div class="absolute -top-6 -right-6 w-20 h-20 rotate-12 drop-shadow-lg z-10 hidden md:block">
+<img alt="Explorer mascot" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY3XDjFuSP7Y40o4CTdboIBregzFxFSH2dswyo722vlq5McyBSffQrYfURMnDF02jKGiWONfMWUQULSk2Jkryyr0Wi5jiotFZ6A-qS8BoFTz3UujaHT-0eKzS8EWdm-FgFT7YJuiySvA3slV74acPLonRjs8efa2tvAuHrrieDboA1ZtkZes7ZIqY8AOYBMIRY0_yqcLogXmiWgIRE2BllIhOU3iiZZ_-LuXVx4-Rc2oyzyfybJV1_o5clpJvdan6V8NbG-QKJ_4k"/>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-3xl" data-icon="auto_stories">auto_stories</span>
+</div>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Kisah Masa Lalu</h3>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-4">
+                        Candi Borobudur dibangun pada abad ke-8 dan ke-9 Masehi saat masa pemerintahan Dinasti Syailendra. Bangunan megah ini tersusun dari jutaan balok batu vulkanik yang saling mengunci tanpa semen lho!
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Bentuk candi ini seperti gunung bersusun yang melambangkan alam semesta dalam ajaran Buddha. Dindingnya dipenuhi relief (ukiran cerita) yang panjangnya kalau disambung bisa mencapai 3 kilometer!
+                    </p>
+</div>
+<!-- Fact Card -->
+<div class="md:col-span-4 bg-tertiary-fixed rounded-xl p-6 flex flex-col justify-center border-2 border-tertiary-fixed-dim shadow-[0_8px_0_0_#ffb693] relative overflow-hidden">
+<span class="material-symbols-outlined text-9xl absolute -bottom-6 -right-6 text-tertiary-fixed-dim/50 rotate-[-15deg] pointer-events-none" data-icon="lightbulb">lightbulb</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-tertiary-fixed mb-2 relative z-10">Tahukah Kamu?</h4>
+<p class="font-body-md text-body-md text-on-tertiary-fixed-variant relative z-10">
+                        Borobudur sempat terkubur abu vulkanik Gunung Merapi selama berabad-abad sebelum ditemukan kembali pada tahun 1814 oleh Sir Thomas Stamford Raffles.
+                    </p>
+</div>
+<!-- Play Section -->
+<div class="md:col-span-12 bg-surface-container rounded-xl p-6 md:p-10 border-2 border-outline-variant/30 flex flex-col md:flex-row items-center gap-8 shadow-md">
+<div class="flex-1 space-y-4">
+<div class="inline-flex items-center gap-2 bg-secondary text-on-secondary px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="sports_esports" style="font-variation-settings: 'FILL' 1;">sports_esports</span>
+                            Mini Game
+                        </div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Cari Stupa Tersembunyi!</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                            Ada beberapa stupa (bangunan berbentuk lonceng) yang hilang di gambar ini. Bisakah kamu membantu Nara menemukannya?
+                        </p>
+<button class="bouncy-btn mt-4 inline-flex items-center gap-2 bg-secondary text-on-secondary font-label-md text-label-md px-8 py-4 rounded-full border-b-4 border-on-secondary-container shadow-[0_8px_15px_-3px_rgba(253,147,61,0.5)] transition-all">
+                            Mulai Bermain
+                            <span class="material-symbols-outlined" data-icon="play_arrow">play_arrow</span>
+</button>
+</div>
+<div class="flex-1 w-full relative aspect-video bg-surface-variant rounded-lg overflow-hidden border-4 border-white shadow-inner flex items-center justify-center cursor-pointer group">
+<img alt="Stupas of Borobudur" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A bright, stylized illustration of the upper levels of Candi Borobudur showing several bell-shaped stone stupas against a clear blue sky. The scene is slightly cartoonish and playful, designed as an interactive hidden object game background for children. Soft teal and heritage orange accents highlight potential interactive areas. The overall style is friendly, accessible, and highly detailed." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD84-50WgrI7vfjBvC_Iu-vYBC_eN754_ise4dbQXijtNWBAX2a0NDE2nIi3WTL4d0wUBM3O1TLhBgek_k0hW57s_ThSLTMtOwH74Y9Nj0DdoTHSe7pTOdnI3afE61AKzx7uIVHaBWjITK6qumdAlUSjSYafauuY1xCTZxcgDpALCyu5GWGLUDKCRj0TMzEIeCk9XgF64iDQZl7FNsy7piGza1Luqsw085rjB8SAL-cIqnu6fKyQHAdO8IAkMG6YqbJtRdm1mlj8IA"/>
+<div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-transparent transition-colors">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="search" style="font-variation-settings: 'FILL' 1;">search</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Mobile BottomNavBar Component -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-4 pt-2 bg-surface-container-lowest shadow-[0_-4px_20px_-5px_rgba(0,107,95,0.2)] rounded-t-lg">
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform" data-icon="home">home</span>
+<span class="font-label-md text-[12px] mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-2 mb-1 shadow-[0_4px_0_0_#005047] -translate-y-1 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="explore" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-[12px] mt-1 font-bold">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform" data-icon="sports_esports">sports_esports</span>
+<span class="font-label-md text-[12px] mt-1">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform" data-icon="military_tech">military_tech</span>
+<span class="font-label-md text-[12px] mt-1">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform" data-icon="smart_toy">smart_toy</span>
+<span class="font-label-md text-[12px] mt-1">Tanya AI</span>
+</a>
+</nav>
+</body></html>

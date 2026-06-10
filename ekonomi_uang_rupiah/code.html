@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Uang Rupiah Kita - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#351000",
+                    "tertiary": "#944a23",
+                    "surface-tint": "#006b5f",
+                    "outline-variant": "#bacac5",
+                    "surface-dim": "#ccdbf3",
+                    "tertiary-fixed-dim": "#ffb693",
+                    "on-primary-container": "#00574d",
+                    "inverse-on-surface": "#eaf1ff",
+                    "primary-fixed-dim": "#3cddc7",
+                    "surface-container-lowest": "#ffffff",
+                    "outline": "#6b7a76",
+                    "on-secondary-container": "#693300",
+                    "on-primary-fixed": "#00201c",
+                    "surface-container": "#e6eeff",
+                    "inverse-primary": "#3cddc7",
+                    "on-background": "#0d1c2e",
+                    "secondary-fixed-dim": "#ffb783",
+                    "on-primary": "#ffffff",
+                    "secondary": "#944a00",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#62fae3",
+                    "surface-bright": "#f8f9ff",
+                    "on-tertiary-container": "#7e3913",
+                    "surface-container-high": "#dce9ff",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#233144",
+                    "tertiary-fixed": "#ffdbcc",
+                    "primary-container": "#2dd4bf",
+                    "tertiary-container": "#ffaa81",
+                    "on-surface": "#0d1c2e",
+                    "on-tertiary-fixed-variant": "#76330d",
+                    "background": "#f8f9ff",
+                    "on-secondary-fixed": "#301400",
+                    "secondary-fixed": "#ffdcc5",
+                    "surface-variant": "#d5e3fc",
+                    "on-secondary-fixed-variant": "#713700",
+                    "surface-container-low": "#eff4ff",
+                    "secondary-container": "#fd933d",
+                    "on-surface-variant": "#3c4a46",
+                    "on-secondary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-container-highest": "#d5e3fc",
+                    "on-tertiary": "#ffffff",
+                    "primary": "#006b5f",
+                    "on-primary-fixed-variant": "#005047",
+                    "error-container": "#ffdad6",
+                    "surface": "#f8f9ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "container-max": "1200px",
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Quicksand"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-xl": ["Quicksand"],
+                    "label-md": ["Quicksand"],
+                    "headline-lg": ["Quicksand"]
+            },
+            "fontSize": {
+                    "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                    "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .bouncy-btn {
+            border-bottom: 4px solid rgba(0,0,0,0.2);
+            transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bouncy-btn:active {
+            transform: translateY(2px);
+            border-bottom-width: 2px;
+        }
+        .oxygen-zone {
+            padding: 40px 0;
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 25px -5px rgba(45, 212, 191, 0.2);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .hero-clip {
+            clip-path: ellipse(150% 100% at 50% 0%);
+        }
+    </style>
+</head>
+<body class="bg-background font-body-md text-on-background pb-24">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 bg-surface dark:bg-surface-dim shadow-sm flex justify-between items-center px-margin-mobile py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-primary">
+<img alt="Nara" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvmYjh2jcjO5soz_yIsJTdxnMpZ-FIzFarMeT5W-bA2Ch-Pnrqquchhf25iFZ3FHazvQ7UA3DpfJTNHNRa-jqGvK8u_DrqQ4CMuUBtzMTBqXSpcGRZNnZXwhpSxb1vAph49HWJSOUvJBSX74K1HSFOrW8c7rsiRCVzW22YnQlDdaEFefaIbng-xk-Gx6q9ZSdaP__JocNDJNCgCJ35kj_5dITt3d658Bc6Tk1Syj2GLxjCHrOhFZa4FbDT465ZXDjKo1ZC_RRGumo"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed-dim">Pedia Bloom</h1>
+</div>
+<button class="material-symbols-outlined text-primary dark:text-primary-fixed-dim text-3xl hover:opacity-80 active:scale-95 transition-transform duration-200">
+            search
+        </button>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-screen-xl mx-auto">
+<!-- Hero Section -->
+<section class="relative w-full h-[400px] md:h-[500px] overflow-hidden hero-clip bg-primary-container">
+<img alt="Uang Rupiah Kita" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmZKeHVHKi1mwOj_R1YZpa8aaqDD8MeSf6zViXZ8L8sqhKjqPzS8faZAIMwWWwnPMuaoKTdU9JSM4iUZsLQDhdkUtGpjTrt_X7Q9yG_NkLacXk_nSww7nuZR5O7MneP-rBKiNGKDiFH1nkYhJ5KG4f0In_VaJkUs9vtgQRA619JZQATeYO7dgJmL8hNb5zDyE9MQx9iEhLMc7l3QhogEgCVChPRpz88zZbU2J5iBIPTTMjq8O3YaNIlFZGig2WptBlaehbMqSWMrE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-8">
+<div class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full w-fit mb-4 font-label-md text-label-md">
+                    Ekonomi
+                </div>
+<h2 class="font-headline-xl text-headline-xl text-white mb-2 drop-shadow-md">Uang Rupiah Kita</h2>
+<p class="text-white/90 font-body-lg text-body-lg max-w-xl">Mengenal alat tukar resmi di Indonesia yang penuh warna dan sejarah!</p>
+</div>
+</section>
+<!-- Story Opener -->
+<section class="px-margin-mobile oxygen-zone -mt-8 relative z-10">
+<div class="bg-white rounded-lg p-8 soft-shadow border border-outline-variant/30 flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Petualangan Budi di Pasar</h3>
+<p class="text-on-surface-variant text-body-lg">
+                        Hari Minggu pagi, Budi ikut Ibu ke pasar tradisional. Aroma kue cucur dan klepon tercium sangat lezat! Budi membawa beberapa lembar uang kertas berwarna ungu dan hijau. 
+                        "Ibu, aku mau beli jajanan pasar pakai uang tabunganku," kata Budi dengan semangat. Dengan lembaran itu, Budi bisa menukarnya dengan cemilan manis favoritnya. Wah, ajaib ya? Itulah kegunaan <span class="font-bold text-primary">Rupiah</span>!
+                    </p>
+</div>
+<div class="w-full md:w-1/3 aspect-square rounded-lg overflow-hidden border-4 border-secondary-container">
+<img class="w-full h-full object-cover" data-alt="A vibrant and colorful traditional Indonesian market scene created in a friendly, storybook illustration style. A happy young boy named Budi is handing a purple Indonesian Rupiah note to a smiling market vendor surrounded by colorful traditional snacks like klepon and colorful cakes. The atmosphere is warm, sunny, and inviting, with soft textures and a focus on community and learning. The overall color palette is bright with teals, oranges, and purples." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT2Dp0irbFQ2tIITGbRCDUxtnRnzaVtjdY61bNlH66wociU-c2TfB9QTaDyk5vvRvsBCuDp_PXyQBxoYiib6B7_EUudWuYLLxt5st-S0ABU5eA0pkh48rFSy5cbuJC_cAbJLzPnh-tpxj9VrVBmVUGmC5mU6BYcuP8J-wau3asiF7n4AOKn9LbLcv2ivnms4A8URdn-PXcTM7LqKY26WfyoOCZAwHQ4jZIHFAHXvRQKk1evEdWzBe1ivNwlMSqr2euubXjekc2DFU"/>
+</div>
+</div>
+</section>
+<!-- Apa itu Rupiah? -->
+<section class="px-margin-mobile oxygen-zone bg-surface-container-low">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-white text-4xl">payments</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-4">Apa itu Rupiah?</h3>
+<p class="text-body-lg text-on-surface-variant">
+                    Rupiah adalah nama mata uang resmi negara kita, Indonesia. Seperti halnya kunci untuk membuka pintu, Rupiah adalah "kunci" yang kita gunakan untuk mendapatkan barang-barang yang kita butuhkan, seperti buku sekolah, makanan, atau mainan.
+                </p>
+</div>
+</section>
+<!-- Gambar di Uang Kita (Bento-ish Grid) -->
+<section class="px-margin-mobile oxygen-zone">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-8 text-center">Apa Saja di Dalam Uang Kita?</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Pahlawan -->
+<div class="md:col-span-2 bg-white rounded-lg p-6 soft-shadow border-2 border-primary-container group hover:-translate-y-1 transition-all duration-300">
+<div class="flex items-start gap-6">
+<div class="w-24 h-24 bg-primary-container rounded-full flex-shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-5xl">military_tech</span>
+</div>
+<div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Pahlawan Nasional</h4>
+<p class="text-on-surface-variant">Di setiap lembar uang kertas, ada wajah para pahlawan yang berjasa bagi Indonesia. Ini cara kita untuk selalu mengingat keberanian mereka!</p>
+</div>
+</div>
+</div>
+<!-- Pemandangan -->
+<div class="bg-secondary-container rounded-lg p-6 flex flex-col justify-between text-on-secondary-container">
+<span class="material-symbols-outlined text-4xl mb-4">landscape</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile mb-2">Pemandangan Alam</h4>
+<p class="text-on-secondary-container/80">Jika kamu membalik uangnya, kamu akan melihat gunung, pantai, atau tarian indah dari berbagai daerah di Nusantara!</p>
+</div>
+<!-- Koin -->
+<div class="bg-tertiary-container rounded-lg p-6 flex flex-col justify-between text-on-tertiary-container">
+<span class="material-symbols-outlined text-4xl mb-4">savings</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile mb-2">Uang Koin</h4>
+<p class="text-on-tertiary-container/80">Uang logam yang kuat! Biasanya ada gambar burung Garuda atau bunga melati di atasnya.</p>
+</div>
+<!-- Kertas -->
+<div class="md:col-span-2 bg-surface-container-highest rounded-lg p-6 flex items-center gap-6">
+<div class="flex-1">
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">Uang Kertas</h4>
+<p class="text-on-surface-variant">Terbuat dari serat kapas yang tidak mudah sobek dan punya warna-warni yang berbeda untuk tiap nilainya!</p>
+</div>
+<div class="hidden md:block w-32 h-20 bg-white/50 rounded-lg border-2 border-dashed border-primary"></div>
+</div>
+</div>
+</section>
+<!-- Fun Facts Section -->
+<section class="px-margin-mobile oxygen-zone">
+<div class="bg-inverse-surface text-inverse-on-surface rounded-xl p-8 overflow-hidden relative">
+<div class="absolute -right-10 -top-10 opacity-20">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-8 relative z-10">5 Fakta Seru Rupiah!</h3>
+<div class="space-y-6 relative z-10">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold">1</div>
+<p class="text-body-lg">Simbol resmi uang kita adalah <span class="font-bold text-secondary-fixed">Rp.</span></p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold">2</div>
+<p class="text-body-lg">Semua uang kita dicetak oleh <span class="font-bold text-primary-fixed">Bank Indonesia</span>.</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold">3</div>
+<p class="text-body-lg">Koin terkecil yang masih dipakai adalah <span class="font-bold text-tertiary-fixed">Rp100</span>.</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-variant text-primary flex items-center justify-center font-bold">4</div>
+<p class="text-body-lg">Uang kertas yang nilainya paling besar berwarna merah, yaitu <span class="font-bold">Rp100.000</span>.</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-white flex items-center justify-center font-bold">5</div>
+<p class="text-body-lg">Kata 'Rupiah' berasal dari bahasa Sanskerta <span class="italic">'Rupiya'</span> yang berarti perak.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Cara Menabung -->
+<section class="px-margin-mobile oxygen-zone">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="w-full md:w-1/2">
+<img class="rounded-lg soft-shadow w-full aspect-video object-cover" data-alt="A whimsical and encouraging 3D style illustration of a happy golden piggy bank sitting on a wooden desk. Next to it are a few coins and a green Indonesian Rupiah note. Soft, warm sunlight streams from a nearby window, creating a cozy and safe feeling. The background is a child's bedroom with soft focus toys. The overall vibe is educational, positive, and focused on the habit of saving money. Colors include warm golds, soft teals, and earthy wood tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2Knx-HD5CgGnd16rBMvGOH73Lm8plqcOCCOjs7DMBI0_jbEwa9Gr_nKDPh0J7pyIfMEdhubvIHXmdxSqjbNb9vkZFqDseZuBuoJc_G-iG5EX7hc0IHfHAimxkQg3zZyGu3hKn7s34xWXY56Lxh35GYUM_TVkjc27ubmvvF8NG5ls-fLEkVxlseTfpkqRxnIWtAqXebprjcBnubtBJFzfeYhfDFBFcJ-Rp32q6gkX3OSyQARA3R8lysGDzhBr5MSwNtvwhslvkyHo"/>
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-6">Yuk, Belajar Menabung!</h3>
+<div class="space-y-4">
+<div class="p-4 rounded-lg bg-primary-container/20 border-l-4 border-primary flex gap-4">
+<span class="material-symbols-outlined text-primary">lunch_dining</span>
+<p class="font-label-md text-label-md">Sisihkan sedikit uang jajanmu setiap hari.</p>
+</div>
+<div class="p-4 rounded-lg bg-secondary-container/20 border-l-4 border-secondary flex gap-4">
+<span class="material-symbols-outlined text-secondary">savings</span>
+<p class="font-label-md text-label-md">Gunakan celengan lucu agar menabung jadi seru!</p>
+</div>
+<div class="p-4 rounded-lg bg-tertiary-container/20 border-l-4 border-tertiary flex gap-4">
+<span class="material-symbols-outlined text-tertiary">assignment_turned_in</span>
+<p class="font-label-md text-label-md">Tentukan target, misalnya ingin beli buku baru.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Quiz -->
+<section class="px-margin-mobile oxygen-zone bg-surface-container">
+<div class="max-w-2xl mx-auto glass-card rounded-lg p-10 text-center">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-2">Kuis Kilat Rupiah! ⚡</h3>
+<p class="mb-8 opacity-70">Ayo uji pengetahuanmu!</p>
+<div class="text-left space-y-8" id="quiz-container">
+<div class="quiz-step" id="step-1">
+<p class="font-label-md text-label-md mb-4 text-on-surface">1. Apa warna uang Rp50.000?</p>
+<div class="grid grid-cols-2 gap-4">
+<button class="bouncy-btn py-3 bg-white border border-outline-variant rounded-full text-primary hover:bg-primary-container/10" onclick="checkAnswer(this, false)">Ungu</button>
+<button class="bouncy-btn py-3 bg-white border border-outline-variant rounded-full text-primary hover:bg-primary-container/10" onclick="checkAnswer(this, true)">Biru</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Challenge -->
+<section class="px-margin-mobile oxygen-zone">
+<div class="bg-primary text-white rounded-lg p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">savings</span>
+</div>
+<div>
+<h4 class="font-headline-lg text-headline-lg">Tantangan: Mulai Menabung!</h4>
+<p class="opacity-90">Siapkan satu botol bekas atau celengan, dan masukkan Rp500 pertamamu hari ini!</p>
+</div>
+</div>
+<button class="bouncy-btn bg-secondary-container text-on-secondary-container px-8 py-4 rounded-full font-label-md text-label-md whitespace-nowrap">
+                    Saya Siap!
+                </button>
+</div>
+</section>
+<!-- Kamus Kecil -->
+<section class="px-margin-mobile oxygen-zone mb-20">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-6">Kamus Kecil</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="p-4 bg-white rounded-lg border border-outline-variant">
+<strong class="text-primary block mb-1">Rupiah</strong>
+<span class="text-on-surface-variant text-sm">Mata uang resmi Negara Kesatuan Republik Indonesia.</span>
+</div>
+<div class="p-4 bg-white rounded-lg border border-outline-variant">
+<strong class="text-primary block mb-1">Uang Kertas</strong>
+<span class="text-on-surface-variant text-sm">Alat pembayaran yang terbuat dari kertas atau bahan serat.</span>
+</div>
+<div class="p-4 bg-white rounded-lg border border-outline-variant">
+<strong class="text-primary block mb-1">Uang Koin</strong>
+<span class="text-on-surface-variant text-sm">Uang yang terbuat dari logam, biasanya berbentuk bulat.</span>
+</div>
+<div class="p-4 bg-white rounded-lg border border-outline-variant">
+<strong class="text-primary block mb-1">Bank Indonesia</strong>
+<span class="text-on-surface-variant text-sm">Bank pusat Indonesia yang mengatur dan mencetak uang Rupiah.</span>
+</div>
+<div class="p-4 bg-white rounded-lg border border-outline-variant">
+<strong class="text-primary block mb-1">Menabung</strong>
+<span class="text-on-surface-variant text-sm">Menyimpan sebagian uang untuk keperluan di masa depan.</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface-container-lowest dark:bg-surface-container-low shadow-[0_-4px_12px_rgba(45,212,191,0.15)] rounded-t-lg">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1.5 hover:bg-surface-container-high dark:hover:bg-surface-variant rounded-xl transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-md text-label-md">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-xl px-3 py-1.5 transition-all duration-300 scale-105 shadow-md" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-label-md text-label-md">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1.5 hover:bg-surface-container-high dark:hover:bg-surface-variant rounded-xl transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="sports_esports">sports_esports</span>
+<span class="font-label-md text-label-md">Main</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1.5 hover:bg-surface-container-high dark:hover:bg-surface-variant rounded-xl transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="military_tech">military_tech</span>
+<span class="font-label-md text-label-md">Lencana</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1.5 hover:bg-surface-container-high dark:hover:bg-surface-variant rounded-xl transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<span class="font-label-md text-label-md">Tanya AI</span>
+</a>
+</nav>
+<script>
+        function checkAnswer(btn, isCorrect) {
+            const allButtons = btn.parentElement.querySelectorAll('button');
+            allButtons.forEach(b => {
+                b.disabled = true;
+                b.classList.remove('bg-white');
+            });
+
+            if (isCorrect) {
+                btn.classList.add('bg-primary-container', 'text-on-primary-container', 'border-primary');
+                confettiEffect();
+            } else {
+                btn.classList.add('bg-error-container', 'text-on-error-container', 'border-error');
+            }
+        }
+
+        function confettiEffect() {
+            // Simple visual feedback for correct answer
+            const container = document.getElementById('quiz-container');
+            const feedback = document.createElement('div');
+            feedback.innerHTML = '✨ Hebat! Kamu benar! ✨';
+            feedback.className = 'mt-4 text-primary font-bold animate-bounce text-center';
+            container.appendChild(feedback);
+        }
+    </script>
+</body></html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anggrek Macan - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-dim": "#ccdbf3",
+                      "secondary": "#944a00",
+                      "on-error": "#ffffff",
+                      "error": "#ba1a1a",
+                      "surface-container-high": "#dce9ff",
+                      "on-secondary": "#ffffff",
+                      "tertiary-container": "#ffaa81",
+                      "inverse-on-surface": "#eaf1ff",
+                      "on-primary-container": "#00574d",
+                      "inverse-primary": "#3cddc7",
+                      "on-error-container": "#93000a",
+                      "primary-fixed": "#62fae3",
+                      "secondary-fixed": "#ffdcc5",
+                      "surface-tint": "#006b5f",
+                      "on-primary-fixed-variant": "#005047",
+                      "primary-fixed-dim": "#3cddc7",
+                      "surface": "#f8f9ff",
+                      "on-secondary-container": "#693300",
+                      "primary": "#006b5f",
+                      "on-tertiary-container": "#7e3913",
+                      "surface-container-highest": "#d5e3fc",
+                      "primary-container": "#2dd4bf",
+                      "tertiary": "#944a23",
+                      "on-primary": "#ffffff",
+                      "secondary-fixed-dim": "#ffb783",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "on-secondary-fixed-variant": "#713700",
+                      "surface-bright": "#f8f9ff",
+                      "on-primary-fixed": "#00201c",
+                      "outline": "#6b7a76",
+                      "on-secondary-fixed": "#301400",
+                      "on-tertiary-fixed": "#351000",
+                      "background": "#f8f9ff",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface": "#0d1c2e",
+                      "inverse-surface": "#233144",
+                      "on-tertiary": "#ffffff",
+                      "on-background": "#0d1c2e",
+                      "surface-variant": "#d5e3fc",
+                      "surface-container-low": "#eff4ff",
+                      "surface-container": "#e6eeff",
+                      "on-surface-variant": "#3c4a46",
+                      "outline-variant": "#bacac5",
+                      "tertiary-fixed": "#ffdbcc",
+                      "secondary-container": "#fd933d",
+                      "error-container": "#ffdad6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "container-max": "1200px",
+                      "gutter": "24px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "headline-xl": [
+                              "Quicksand"
+                      ],
+                      "headline-lg-mobile": [
+                              "Quicksand"
+                      ],
+                      "label-md": [
+                              "Quicksand"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "Quicksand"
+                      ]
+              },
+              "fontSize": {
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "34px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Interactive button bounce */
+        .btn-bounce {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .btn-bounce:active {
+            transform: translateY(2px) scale(0.98);
+        }
+
+        /* Soft glowing shadows */
+        .shadow-glow-primary {
+            box-shadow: 0 8px 24px rgba(45, 212, 191, 0.2);
+        }
+        .shadow-glow-secondary {
+            box-shadow: 0 8px 24px rgba(253, 147, 61, 0.2);
+        }
+
+        /* 3D Button style */
+        .btn-3d {
+            border-bottom: 4px solid var(--tw-colors-secondary);
+        }
+        .btn-3d:active {
+            border-bottom-width: 0px;
+            transform: translateY(4px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen pb-[100px] md:pb-0 pt-16 selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-surface shadow-sm docked full-width">
+<div class="flex items-center gap-2">
+<button aria-label="Kembali" class="w-10 h-10 rounded-full flex items-center justify-center hover:opacity-80 active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-on-surface-variant text-2xl">arrow_back</span>
+</button>
+<div class="w-8 h-8 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="Nara the Explorer Mascot" class="w-full h-full object-cover bg-surface-container-high" data-alt="A cute, friendly, colorful 2D cartoon mascot character named Nara the Explorer. The character is a small, adventurous explorer with a big smile, designed in a bright, modern, light-mode illustration style suitable for a children's educational app. The mascot has a playful, squishy, and tactile appearance, rendered with smooth vector-like shading." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsaxxML5MBMdS0rjFA41WLKurlB789si-fGISurKeD3TEwV1oq9B4PQx1trJhnydPfqeFsoqUx6fauxOswf-zN4vCN9PJwIw1_WkW-AKmQx6Twer8VPd4y7XIIanG61LMuuTKf8wQHDK7HOCW_oZiUDTd10SRnhwaFqGqi8hQm6JTuqHqyxfFB16Pjhplijl0Um5JhzghriqwzFpkitZu6hsqj1vGwDZUvkqwIwilzCNPrzPw-k0w7iN_LJZNMTUlzX5ic4Nw9if4"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold ml-2">Pedia Bloom</h1>
+</div>
+<div class="flex items-center gap-3">
+<button aria-label="Simpan" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:opacity-80 active:scale-95 transition-transform duration-200 bg-surface-container-highest">
+<span class="material-symbols-outlined text-2xl">bookmark_border</span>
+</button>
+<button aria-label="Bagikan" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:opacity-80 active:scale-95 transition-transform duration-200 bg-surface-container-highest">
+<span class="material-symbols-outlined text-2xl">share</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-gutter">
+<!-- Hero Section -->
+<section class="relative w-full rounded-xl overflow-hidden mb-8 aspect-[4/3] md:aspect-[21/9] bg-surface-container shadow-lg group">
+<img alt="Anggrek Macan" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A stunning, macro photograph of the giant Grammatophyllum speciosum orchid, also known as the Tiger Orchid. The massive flower blooms prominently feature distinctive, striking tiger-like spots and stripes in deep brown against a bright yellow and pale green background. The lighting is soft and natural, suggesting a dense, humid tropical rainforest environment. The image is vivid, detailed, and captivating, perfectly suited for a children's digital encyclopedia to inspire awe and curiosity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl8WUwDgYoT0q9jqQMxopjUb0_ydicGACyv6TUEF1dfvg9LPSZ4d2OYZnfFScqsfgnjmfLKsxLMfgnm45tw2ws0HxQ_KruLjVSp6AppBmV3hZDic21n_P3H7HrZFSbXWpAo824_CUvdHH1sJKDr9sYIPwcXJy7Xx1tu8gU5bGG35KNh1Ko8LevrZ60pKrq25EFo-wZRuizZK4ootBa9K15NS3yJsdut7niO6S_DHg5nfdy1JgEj0FyTE5PhrQ4V79ykjI7b2WOpSs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 md:p-10 flex flex-col items-start gap-4">
+<div class="flex gap-2 flex-wrap">
+<span class="inline-flex items-center gap-1 bg-primary text-on-primary px-3 py-1 rounded-full font-label-md text-label-md shadow-glow-primary">
+<span class="material-symbols-outlined text-sm">local_florist</span>
+                        Flora
+                    </span>
+<span class="inline-flex items-center gap-1 bg-tertiary text-on-tertiary px-3 py-1 rounded-full font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm">warning</span>
+                        Langka
+                    </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-white drop-shadow-md">Anggrek Macan</h1>
+<p class="font-body-lg text-body-lg text-white/90 max-w-2xl">Wow! Kenalkan, ini adalah anggrek raksasa yang coraknya mirip sekali dengan bulu harimau. Aummm!</p>
+</div>
+<!-- Floating Audio Button -->
+<button aria-label="Dengarkan Suara" class="absolute top-4 right-4 w-12 h-12 bg-white/20 backdrop-blur-md border border-white/40 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors btn-bounce shadow-lg">
+<span class="material-symbols-outlined fill text-2xl">volume_up</span>
+</button>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-unit auto-rows-min">
+<!-- Fun Fact 1: Ukuran -->
+<article class="md:col-span-8 bg-surface-container-lowest rounded-xl p-6 md:p-8 border-2 border-surface-variant shadow-sm relative overflow-hidden flex flex-col justify-center min-h-[300px]">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-8 -mt-8 pointer-events-none"></div>
+<div class="absolute -bottom-4 -right-4 w-24 h-24 opacity-20 transform rotate-12">
+<span class="material-symbols-outlined text-9xl text-primary">height</span>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined">straighten</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">Raksasa Hutan</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 relative z-10 leading-relaxed">
+                    Tahukah kamu? Anggrek Macan adalah anggrek <strong>terbesar di seluruh dunia!</strong> Beratnya bisa mencapai 1 ton (sama seperti berat sebuah mobil kecil!) dan panjang daunnya bisa mencapai 3 meter. Wah, tinggi sekali ya!
+                </p>
+<div class="mt-auto bg-surface p-4 rounded-lg flex items-center gap-4 relative z-10 border border-outline-variant/30">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-secondary-container flex-shrink-0 border-2 border-white shadow-sm">
+<img alt="BimoBot" class="w-full h-full object-cover" data-alt="A cute, friendly, colorful 2D robot mascot character named BimoBot. The robot is small, metallic with friendly glowing eyes, designed in a bright, modern, light-mode illustration style suitable for a children's educational app. The mascot has a playful, squishy, and tactile appearance, rendered with smooth vector-like shading, acting as a helpful digital guide." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApeucE9XkvIOXEuMYdgAsvWDHIEhw-l5MwtbYhxAH3eIZLWUR8g6c25LvJQe970s35z9WcmeJboKZ3w3rnvrp_O070kHpCTWY6wQ6HqSgTU7c4dwwdDJ182YrZZAcWu3bv8ILM_NSPx87FJ0AkliBYjQzWspw6FCLB8j7exiYEMfifynLObZGpp0-d35VupvQbkOshgPcXore0-VGTBwwoijzF4oULLfHaywHseBAw74GXKGnS7NZvxq_D6bTI7V3_zNJRuX6nbeE"/>
+</div>
+<p class="font-body-md text-body-md text-on-surface text-sm italic">
+                        "BimoBot butuh 5 anak kecil berdiri bersusun untuk mencapai ujung daunnya!"
+                    </p>
+</div>
+</article>
+<!-- Fun Fact 2: Habitat Map -->
+<article class="md:col-span-4 bg-surface-container-highest rounded-xl p-6 border-2 border-surface-variant shadow-sm flex flex-col">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined">map</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold text-xl">Dimana Dia Tinggal?</h2>
+</div>
+<div class="flex-grow rounded-lg overflow-hidden mb-4 relative min-h-[160px] bg-surface-dim">
+<img alt="Peta Indonesia" class="w-full h-full object-cover" data-alt="A stylized, colorful, and playful map of Indonesia designed for a children's educational application. The map uses bright, soft-focus pastel colors with a light mode aesthetic. Key islands like Sumatra, Borneo, and Papua are gently highlighted in lush greens to indicate rainforest habitats. The map features subtle, squishy 3D elevation effects and a clean, minimalist layout, avoiding complex cartographic details to remain engaging and easy for kids to understand." data-location="Indonesia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrHCOiWzr8IM8Qz8BnXhAoNBWtMadW7BwLr5LwmnAVAz8pmNub_d_3oT-YTGqfUqsIY0Jl7imSVpFOAtaZgmD52MnjP59jgUbed0XuWeHDX6_utfCsCtw7vi0z7av-yFttNuTi-0sXBEaKNxMJCCZbyBVvG9dPQs5TjDwZiDKcDD4Ki_NjUYPN1UiEu4_DahYg2IDYJlToFHUU9kTe3UcMTT-hHHwDAcZkp0fMtr19yL7x5_Z8ys6hp6vvc6p7dAgnuL8_UliWPl8"/>
+<!-- Map Marker Pin -->
+<div class="absolute top-1/2 left-1/3 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center animate-bounce">
+<div class="w-8 h-8 bg-error text-on-error rounded-full flex items-center justify-center shadow-lg border-2 border-white">
+<span class="material-symbols-outlined text-sm">location_on</span>
+</div>
+<div class="bg-surface text-on-surface text-xs font-bold px-2 py-1 rounded shadow-md mt-1">Sumatera &amp; Papua</div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+                    Anggrek ini suka menempel di pohon-pohon besar di hutan hujan tropis Indonesia.
+                </p>
+</article>
+<!-- Interactive Activity: Drawing Mission -->
+<article class="md:col-span-6 bg-gradient-to-br from-surface-container-lowest to-surface-container rounded-xl p-6 md:p-8 border-2 border-primary/20 shadow-glow-primary flex flex-col relative overflow-hidden group">
+<div class="absolute right-0 top-0 w-48 h-48 bg-primary/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+<div class="flex items-center gap-3 mb-2">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-xs font-bold rounded uppercase tracking-wide">Misi Hari Ini</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold mb-2">Misi Menggambar Corak!</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                    Bantu Nara melengkapi corak Anggrek Macan agar terlihat garang seperti harimau sungguhan.
+                </p>
+<div class="bg-white rounded-xl p-4 border border-outline-variant flex-grow flex items-center justify-center mb-6 relative aspect-video">
+<!-- Placeholder for drawing canvas -->
+<div class="w-3/4 h-3/4 border-2 border-dashed border-outline-variant rounded-lg flex items-center justify-center text-outline-variant relative">
+<span class="material-symbols-outlined text-6xl opacity-20">draw</span>
+<div class="absolute bottom-4 right-4 flex gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary shadow-md border-2 border-white"></div>
+<div class="w-6 h-6 rounded-full bg-secondary-container shadow-md border-2 border-white"></div>
+</div>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md py-4 px-6 rounded-lg btn-bounce shadow-glow-primary flex items-center justify-center gap-2 hover:bg-primary/90">
+<span class="material-symbols-outlined fill">brush</span>
+                    Mulai Menggambar
+                </button>
+</article>
+<!-- Quiz / Badge Section -->
+<article class="md:col-span-6 bg-surface-container-low rounded-xl p-6 md:p-8 border-2 border-surface-variant shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute bottom-0 right-0 w-64 h-64 bg-secondary-container/10 rounded-full blur-3xl transform translate-x-1/3 translate-y-1/3"></div>
+<div>
+<div class="flex items-center justify-between mb-6">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">Kuis Pencinta Bunga</h2>
+<div class="w-14 h-14 bg-tertiary-container text-on-tertiary-container rounded-full flex items-center justify-center shadow-lg transform rotate-12 border-2 border-white">
+<span class="material-symbols-outlined text-3xl">military_tech</span>
+</div>
+</div>
+<div class="bg-surface p-5 rounded-xl border border-outline-variant/30 mb-6 relative z-10">
+<p class="font-body-lg text-body-lg text-on-surface font-medium mb-4">
+                            Kenapa dinamakan Anggrek Macan?
+                        </p>
+<div class="space-y-3">
+<label class="flex items-center gap-3 p-3 rounded-lg border-2 border-outline-variant/50 hover:bg-surface-variant cursor-pointer transition-colors group">
+<input class="form-radio text-primary w-5 h-5 border-outline focus:ring-primary focus:ring-offset-surface" name="quiz" type="radio"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Karena bisa mengaum</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-lg border-2 border-primary bg-primary-container/20 cursor-pointer transition-colors group">
+<input checked="" class="form-radio text-primary w-5 h-5 border-outline focus:ring-primary focus:ring-offset-surface" name="quiz" type="radio"/>
+<span class="font-body-md text-body-md text-on-surface font-medium">Corak bunganya mirip belang harimau</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-lg border-2 border-outline-variant/50 hover:bg-surface-variant cursor-pointer transition-colors group">
+<input class="form-radio text-primary w-5 h-5 border-outline focus:ring-primary focus:ring-offset-surface" name="quiz" type="radio"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Ditemukan oleh seekor harimau</span>
+</label>
+</div>
+</div>
+</div>
+<button class="w-full bg-secondary text-on-secondary font-label-md text-label-md py-4 px-6 rounded-lg btn-bounce btn-3d shadow-glow-secondary flex items-center justify-center gap-2">
+                    Kunci Jawaban
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</article>
+</div>
+<!-- Bottom Spacer for mobile nav -->
+<div class="h-24 md:hidden"></div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 pb-safe bg-surface-container-lowest shadow-[0_-4px_10px_rgba(0,107,95,0.1)] docked full-width rounded-t-lg">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-variant group transition-colors rounded-xl" href="#">
+<span class="material-symbols-outlined text-2xl group-hover:-translate-y-1 transition-transform duration-200">home</span>
+<span class="font-label-md text-label-md text-xs mt-1 opacity-80 group-hover:opacity-100">Home</span>
+</a>
+<!-- Active State: Jelajah (Explore) -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1.5 transition-all duration-300 translate-y-0.5 scale-95 shadow-inner" href="#">
+<span class="material-symbols-outlined text-2xl fill">explore</span>
+<span class="font-label-md text-label-md text-xs mt-1 font-bold">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-variant group transition-colors rounded-xl" href="#">
+<span class="material-symbols-outlined text-2xl group-hover:-translate-y-1 transition-transform duration-200">sports_esports</span>
+<span class="font-label-md text-label-md text-xs mt-1 opacity-80 group-hover:opacity-100">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-variant group transition-colors rounded-xl" href="#">
+<span class="material-symbols-outlined text-2xl group-hover:-translate-y-1 transition-transform duration-200">military_tech</span>
+<span class="font-label-md text-label-md text-xs mt-1 opacity-80 group-hover:opacity-100">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-variant group transition-colors rounded-xl" href="#">
+<span class="material-symbols-outlined text-2xl group-hover:-translate-y-1 transition-transform duration-200">psychology_alt</span>
+<span class="font-label-md text-label-md text-xs mt-1 opacity-80 group-hover:opacity-100">Tanya AI</span>
+</a>
+</nav>
+</body></html>

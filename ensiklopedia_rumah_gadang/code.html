@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rumah Gadang - NusaPedia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-secondary-container": "#693300",
+                        "on-tertiary-fixed": "#351000",
+                        "on-surface": "#0d1c2e",
+                        "on-error-container": "#93000a",
+                        "secondary": "#944a00",
+                        "tertiary-fixed": "#ffdbcc",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-primary-container": "#00574d",
+                        "secondary-fixed": "#ffdcc5",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#62fae3",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#e6eeff",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#bacac5",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f8f9ff",
+                        "secondary-container": "#fd933d",
+                        "on-primary-fixed-variant": "#005047",
+                        "on-background": "#0d1c2e",
+                        "surface-dim": "#ccdbf3",
+                        "surface": "#f8f9ff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-surface-variant": "#3c4a46",
+                        "outline": "#6b7a76",
+                        "on-primary-fixed": "#00201c",
+                        "on-secondary-fixed": "#301400",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#944a23",
+                        "on-secondary-fixed-variant": "#713700",
+                        "tertiary-container": "#ffaa81",
+                        "surface-variant": "#d5e3fc",
+                        "surface-container-highest": "#d5e3fc",
+                        "primary-fixed-dim": "#3cddc7",
+                        "surface-tint": "#006b5f",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-container": "#7e3913",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "inverse-primary": "#3cddc7",
+                        "primary": "#006b5f",
+                        "primary-container": "#2dd4bf",
+                        "inverse-surface": "#233144",
+                        "background": "#f8f9ff"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "container-max": "1200px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px"
+                    },
+                    fontFamily: {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Quicksand"],
+                        "headline-xl": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"]
+                    },
+                    fontSize: {
+                        "body-md": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "label-md": ["16px", { lineHeight: "20px", fontWeight: "600" }],
+                        "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+                        "headline-lg-mobile": ["28px", { lineHeight: "34px", fontWeight: "700" }],
+                        "body-lg": ["20px", { lineHeight: "32px", fontWeight: "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .bouncy-btn {
+            transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .bouncy-btn:active {
+            transform: translateY(4px);
+            border-bottom-width: 0px !important;
+            margin-top: 4px;
+        }
+        .glow-shadow-primary {
+            box-shadow: 0 8px 24px -8px rgba(45, 212, 191, 0.5);
+        }
+        .glow-shadow-secondary {
+            box-shadow: 0 8px 24px -8px rgba(253, 147, 61, 0.5);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md antialiased pb-24 md:pb-0">
+<!-- Top App Bar -->
+<header class="bg-surface dark:bg-surface-container flex justify-between items-center px-margin-mobile py-4 w-full sticky top-0 z-40">
+<div class="flex items-center gap-3">
+<button class="text-on-surface-variant hover:bg-surface-variant p-2 rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed tracking-tight">NusaPedia</h1>
+</div>
+<button class="text-primary dark:text-primary-fixed-dim hover:bg-surface-variant p-2 rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 flex flex-col gap-8">
+<!-- Hero Section -->
+<section class="relative rounded-xl overflow-hidden shadow-xl aspect-video md:aspect-[21/9]">
+<img alt="Rumah Gadang" class="w-full h-full object-cover" data-alt="A vibrant, high-quality photograph of a traditional Rumah Gadang in West Sumatra, Indonesia. The iconic structure features dramatic, sweeping roofs resembling buffalo horns, made from dark, natural fibers. The intricate wooden walls are heavily carved with colorful floral and geometric motifs in reds, golds, and blacks. The building sits proudly in a lush, green landscape under a bright, sunny sky with soft, fluffy clouds. The image embodies a modern light-mode aesthetic, emphasizing the rich cultural heritage and inviting atmosphere suitable for an educational children's platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCknp3wSutb-UXUTvDvj9m2URu4K21cPbHHT5vs0qlHqhKT8JWMJTVI_sSi9SefwUIBO_KykCyHdcVbgbQIKunHJvin0Qo4XK0ZCUwOcjTB8R1GQUN0Bd-lA7iQGfbwbmou5KPIpssdDn1zbk-bU66QMBXfOjznOCjs3dbUjvw8aNJ5kyE6PODvQlmnsYtm3Q3VdGQDSc9_En9xCJziVpvebBEcEshC0rqoY4o3LWH3iEfkzOGK9xmn5xcxOpSx1KLqJW7OztZSXQ0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-6 md:p-8">
+<div class="inline-flex items-center gap-2 bg-primary-container text-on-primary-container px-3 py-1 rounded-full w-max mb-3 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+                    Sumatera Barat
+                </div>
+<h2 class="font-headline-xl text-headline-xl text-white mb-2">Rumah Gadang</h2>
+<p class="font-body-lg text-body-lg text-white/90 max-w-2xl">Istana megah beratap tanduk kerbau, simbol kebersamaan masyarakat Minangkabau.</p>
+</div>
+</section>
+<!-- Learn Section: Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Roof Card -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-variant glow-shadow-primary relative overflow-hidden group">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-all duration-500"></div>
+<div class="flex items-start gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">architecture</span>
+</div>
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Atap Bagonjong</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">
+                            Bentuk atapnya yang melengkung tajam ke atas disebut 'gonjong'. Kenapa mirip tanduk kerbau? Dulu, masyarakat Minangkabau menang lomba adu kerbau dengan taktik cerdik! Kemenangan ini dirayakan dengan membuat atap rumah menyerupai tanduk kerbau. Selain itu, bentuk ini juga pintar menahan hujan deras lho!
+                        </p>
+</div>
+</div>
+</div>
+<!-- Material Card -->
+<div class="md:col-span-4 bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-variant glow-shadow-primary relative overflow-hidden group">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-tertiary-container/20 rounded-full blur-xl group-hover:bg-tertiary-container/30 transition-all duration-500"></div>
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">forest</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface text-lg font-bold">Bahan Alami</h3>
+</div>
+<ul class="space-y-3">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Kayu tahan rayap</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Atap ijuk (serat aren)</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Tahan gempa bumi</span>
+</li>
+</ul>
+</div>
+<!-- Meaning Card -->
+<div class="md:col-span-12 bg-secondary-fixed-dim/20 rounded-xl p-6 border-2 border-secondary-fixed glow-shadow-secondary flex flex-col md:flex-row items-center gap-6">
+<div class="w-24 h-24 bg-secondary-container rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-4xl text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Simbol Kebersamaan</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">
+                        Rumah Gadang bukan sekadar tempat tinggal. Ini adalah lambang persatuan keluarga besar. Dindingnya tidak dipaku, melainkan disatukan dengan pasak kayu, melambangkan ikatan persaudaraan yang kuat dan fleksibel. 
+                    </p>
+</div>
+</div>
+</section>
+<!-- Play Section: Puzzle -->
+<section class="bg-surface-container-high rounded-xl p-6 md:p-8 flex flex-col items-center text-center relative overflow-hidden">
+<div class="absolute inset-0 pointer-events-none opacity-30" style="background-image: radial-gradient(circle at 20px 20px, #bacac5 2px, transparent 0); background-size: 40px 40px;"></div>
+<div class="z-10 w-full max-w-3xl">
+<span class="inline-block bg-primary text-on-primary font-label-md text-label-md px-4 py-1.5 rounded-full mb-4">Aktivitas Seru</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Susun Rumah Gadang!</h2>
+<p class="text-on-surface-variant mb-8 max-w-lg mx-auto">Tarik dan pasangkan bagian-bagian rumah ke tempat yang benar untuk membangun Rumah Gadangmu sendiri.</p>
+<!-- Mock Puzzle Area -->
+<div class="bg-surface-container-lowest border-4 border-dashed border-outline-variant rounded-xl h-64 md:h-80 w-full flex items-center justify-center mb-6 relative">
+<span class="material-symbols-outlined text-outline-variant text-6xl mb-2">extension</span>
+<p class="absolute bottom-4 text-outline font-label-md text-label-md">Area Bermain Puzzle</p>
+</div>
+<button class="bouncy-btn bg-secondary text-on-secondary font-label-md text-label-md px-8 py-4 rounded-full border-b-4 border-[#693300] hover:bg-secondary/90 w-full md:w-auto shadow-lg text-lg">
+                    Mulai Bermain
+                </button>
+</div>
+</section>
+<!-- Quiz Section -->
+<section class="bg-surface-container-lowest rounded-xl p-6 md:p-8 border-2 border-surface-variant shadow-lg flex flex-col md:flex-row gap-8 items-center">
+<div class="w-full md:w-1/3 flex flex-col items-center text-center">
+<div class="w-32 h-32 bg-primary-container rounded-full flex items-center justify-center mb-4 relative">
+<span class="material-symbols-outlined text-6xl text-on-primary-container" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<div class="absolute -bottom-2 bg-secondary text-on-secondary text-xs font-bold px-3 py-1 rounded-full border-2 border-surface-container-lowest">Badge</div>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-1">Anak Nagari</h3>
+<p class="text-on-surface-variant font-label-md text-label-md">Uji pengetahuanmu!</p>
+</div>
+<div class="w-full md:w-2/3">
+<div class="bg-surface-container-low p-6 rounded-lg mb-4">
+<p class="font-body-lg text-body-lg text-on-surface font-bold mb-4">Mengapa atap Rumah Gadang berbentuk melengkung tajam ke atas?</p>
+<div class="flex flex-col gap-3">
+<button class="w-full text-left p-4 rounded-lg border-2 border-outline-variant hover:border-primary hover:bg-primary-container/10 transition-colors font-body-md text-body-md text-on-surface-variant flex items-center gap-3">
+<span class="w-6 h-6 rounded-full border-2 border-outline-variant flex items-center justify-center">A</span>
+                            Untuk menampung air hujan
+                        </button>
+<button class="w-full text-left p-4 rounded-lg border-2 border-outline-variant hover:border-primary hover:bg-primary-container/10 transition-colors font-body-md text-body-md text-on-surface-variant flex items-center gap-3">
+<span class="w-6 h-6 rounded-full border-2 border-outline-variant flex items-center justify-center">B</span>
+                            Menyerupai tanduk kerbau sebagai simbol kemenangan
+                        </button>
+<button class="w-full text-left p-4 rounded-lg border-2 border-outline-variant hover:border-primary hover:bg-primary-container/10 transition-colors font-body-md text-body-md text-on-surface-variant flex items-center gap-3">
+<span class="w-6 h-6 rounded-full border-2 border-outline-variant flex items-center justify-center">C</span>
+                            Agar rumah terlihat lebih tinggi
+                        </button>
+</div>
+</div>
+<button class="bouncy-btn bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full border-b-4 border-[#005047] hover:bg-primary/90 w-full float-right md:w-auto shadow-md">
+                    Cek Jawaban
+                </button>
+</div>
+</section>
+</main>
+<!-- Bottom Nav Bar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-4 pt-2 bg-surface-container-lowest dark:bg-inverse-surface shadow-[0_-4px_20px_-5px_rgba(0,107,95,0.2)] dark:shadow-none rounded-t-lg">
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">home</span>
+<span class="font-label-md text-label-md text-[10px] mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-2 mb-1 shadow-[0_4px_0_0_#005047] translate-y-1 transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md text-[10px] mt-1 font-bold">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">sports_esports</span>
+<span class="font-label-md text-label-md text-[10px] mt-1">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">military_tech</span>
+<span class="font-label-md text-label-md text-[10px] mt-1">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">smart_toy</span>
+<span class="font-label-md text-label-md text-[10px] mt-1">Tanya AI</span>
+</a>
+</nav>
+</body></html>

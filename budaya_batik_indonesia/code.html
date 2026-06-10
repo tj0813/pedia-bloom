@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Batik: Warisan Budaya Dunia - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#713700",
+                    "inverse-surface": "#233144",
+                    "secondary-container": "#fd933d",
+                    "primary-fixed": "#62fae3",
+                    "primary-fixed-dim": "#3cddc7",
+                    "outline": "#6b7a76",
+                    "on-surface-variant": "#3c4a46",
+                    "background": "#f8f9ff",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb693",
+                    "on-tertiary-container": "#7e3913",
+                    "on-surface": "#0d1c2e",
+                    "tertiary-container": "#ffaa81",
+                    "on-secondary-fixed": "#301400",
+                    "outline-variant": "#bacac5",
+                    "on-primary-fixed": "#00201c",
+                    "primary-container": "#2dd4bf",
+                    "inverse-primary": "#3cddc7",
+                    "primary": "#006b5f",
+                    "on-tertiary-fixed-variant": "#76330d",
+                    "on-primary-fixed-variant": "#005047",
+                    "secondary-fixed-dim": "#ffb783",
+                    "surface-container-high": "#dce9ff",
+                    "secondary": "#944a00",
+                    "inverse-on-surface": "#eaf1ff",
+                    "tertiary": "#944a23",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#d5e3fc",
+                    "secondary-fixed": "#ffdcc5",
+                    "surface-dim": "#ccdbf3",
+                    "surface-container": "#e6eeff",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#006b5f",
+                    "on-primary-container": "#00574d",
+                    "surface-container-low": "#eff4ff",
+                    "surface-variant": "#d5e3fc",
+                    "tertiary-fixed": "#ffdbcc",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#693300",
+                    "on-background": "#0d1c2e",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#f8f9ff",
+                    "surface": "#f8f9ff",
+                    "on-tertiary-fixed": "#351000"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-xl": [
+                            "Quicksand"
+                    ],
+                    "label-md": [
+                            "Quicksand"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg": [
+                            "Quicksand"
+                    ],
+                    "headline-lg-mobile": [
+                            "Quicksand"
+                    ]
+            },
+            "fontSize": {
+                    "body-md": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-xl": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "20px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "34px",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bouncy-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(45, 212, 191, 0.3);
+        }
+        .bouncy-hover:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 5px rgba(45, 212, 191, 0.2);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="bg-surface-bright dark:bg-surface-dim shadow-sm w-full top-0 sticky z-40">
+<div class="flex justify-between items-center px-margin-mobile h-16 w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container overflow-hidden border-2 border-surface">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">face</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed-dim">Pedia Bloom</h1>
+</div>
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-outline hover:opacity-80 transition-transform active:scale-95 hover:bg-surface-variant/50">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-6 flex flex-col gap-8">
+<!-- Hero Section -->
+<section class="relative w-full rounded-xl overflow-hidden shadow-[0_8px_20px_rgba(45,212,191,0.2)] bg-surface-container-lowest">
+<div class="w-full h-64 md:h-96 relative">
+<img alt="A vibrant, highly detailed illustration of a smiling Indonesian woman making batik. She holds a canting tool over white cloth, drawing intricate patterns. Behind her, colorful batik fabrics in rich blues, purples, greens, reds, and classic browns hang vertically. The scene is bright, cheerful, and educational, capturing the essence of traditional Indonesian art in a modern children's book style." class="w-full h-full object-cover object-center" data-alt="A vibrant, highly detailed illustration of a smiling Indonesian woman making batik. She holds a canting tool over white cloth, drawing intricate patterns. Behind her, colorful batik fabrics in rich blues, purples, greens, reds, and classic browns hang vertically. The scene is bright, cheerful, and educational, capturing the essence of traditional Indonesian art in a modern children's book style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd1wrOk1nzwTg0zUQgUwsSD7YgPZcQpyfRoMqZWhGOU48fajdiaLK3yoVxfyfEgAD-IowXHz1UVclD1_pflAmOLDWFeAS_Lm0GceXXCG0JvdU2aHsTPskn4-KP2vOmTqsMowfbCKJXcGJ3EuWmdywbihBjHzkN77sA2FOV264nw8I4HRSJhL53Yual-uEhl79FB9xJcEiUeNQkmvHVMFzoofx12zhAm6WWUpSTf9F0556HbLxMwCIFY6ojnWNqXkUIRuRDVOzhuBQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<div class="inline-block px-3 py-1 bg-tertiary text-on-tertiary rounded-full font-label-md text-label-md mb-3 shadow-md">
+                    Budaya dan Seni
+                </div>
+<h2 class="font-headline-lg text-headline-lg text-white mb-2 leading-tight">Batik: Warisan Budaya Dunia</h2>
+<p class="font-body-md text-body-md text-surface-container-high md:w-2/3 line-clamp-2 md:line-clamp-none">Mengenal mahakarya kain indah asli Indonesia yang diakui dunia!</p>
+</div>
+</section>
+<!-- Intro Speech Bubble -->
+<section class="flex gap-4 items-start bg-primary-container/20 p-6 rounded-xl border border-primary-container/30 relative mt-4">
+<div class="w-16 h-16 rounded-full bg-primary-container flex-shrink-0 flex items-center justify-center border-4 border-surface shadow-md relative -top-8 -ml-2">
+<span class="material-symbols-outlined text-4xl text-on-primary-container" style="font-variation-settings: 'FILL' 1;">face_3</span>
+</div>
+<div class="pt-2">
+<h3 class="font-label-md text-label-md text-on-primary-container mb-1">Nara the Explorer</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">"Halo Penjelajah! Tahukah kamu kalau baju batik yang dipakai Nenek atau Ayah itu adalah sebuah karya seni tingkat tinggi? Yuk, kita cari tahu rahasia di balik titik-titik dan garis cantiknya!"</p>
+</div>
+</section>
+<!-- Section 1: Apa itu Batik? -->
+<section class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-variant shadow-[0_4px_15px_rgba(0,0,0,0.03)]">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">help</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Apa itu Batik?</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed">Batik adalah teknik menghias kain menggunakan lilin khusus yang disebut <strong>'Malam'</strong>. Bagian yang diberi lilin tidak akan terkena warna saat dicelupkan ke pewarna. Unik ya!</p>
+</section>
+<!-- Section 2: Cara Membuat Batik -->
+<section>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">format_paint</span>
+                Langkah Membuat Batik
+            </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border-2 border-surface-variant flex shadow-[0_4px_10px_rgba(0,0,0,0.02)]">
+<div class="w-1/3 bg-surface-variant/30 relative">
+<img alt="Illustration of a child drawing with wax on cloth (Nyanting)" class="absolute inset-0 w-full h-full object-cover object-[0_0]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDolYCyBK-Z289M6ZpMB7s2QeXqoVU-HPwTDQJh6uDM4BONGCplCKAtY-uVR64AOQ68VxIDjEkbqfXzcd0gQQH6Kkgczjob324O1OOExajPhHYt7nTrEGtCtpxwgIqVT5UsPcxw-JLdEJ2RdU3iISYCK6N1pvw1uZzW9Yj68pEqkHMrDrTSXzBehPmhFU6UI4HAsxWqLIuESVJXzY02HSPz2O6XDGEFrfXSiSp2sDuvBdmLFC_YLgLXMh2G-__q52myk1hnIzjKAQE"/>
+</div>
+<div class="p-4 w-2/3">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">1</span>
+<h4 class="font-label-md text-label-md text-on-surface">Nyanting</h4>
+</div>
+<p class="text-sm text-on-surface-variant">Menggambar pola dengan lilin malam menggunakan alat canting.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border-2 border-surface-variant flex shadow-[0_4px_10px_rgba(0,0,0,0.02)]">
+<div class="w-1/3 bg-surface-variant/30 relative">
+<img alt="Illustration of a child dipping cloth in dye (Pewarnaan)" class="absolute inset-0 w-full h-full object-cover object-[100%_0]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDolYCyBK-Z289M6ZpMB7s2QeXqoVU-HPwTDQJh6uDM4BONGCplCKAtY-uVR64AOQ68VxIDjEkbqfXzcd0gQQH6Kkgczjob324O1OOExajPhHYt7nTrEGtCtpxwgIqVT5UsPcxw-JLdEJ2RdU3iISYCK6N1pvw1uZzW9Yj68pEqkHMrDrTSXzBehPmhFU6UI4HAsxWqLIuESVJXzY02HSPz2O6XDGEFrfXSiSp2sDuvBdmLFC_YLgLXMh2G-__q52myk1hnIzjKAQE"/>
+</div>
+<div class="p-4 w-2/3">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">2</span>
+<h4 class="font-label-md text-label-md text-on-surface">Pewarnaan</h4>
+</div>
+<p class="text-sm text-on-surface-variant">Mencelupkan kain yang sudah digambar ke dalam cairan pewarna.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border-2 border-surface-variant flex shadow-[0_4px_10px_rgba(0,0,0,0.02)]">
+<div class="w-1/3 bg-surface-variant/30 relative">
+<img alt="Illustration of a child melting wax off cloth (Pelorodan)" class="absolute inset-0 w-full h-full object-cover object-[0_100%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDolYCyBK-Z289M6ZpMB7s2QeXqoVU-HPwTDQJh6uDM4BONGCplCKAtY-uVR64AOQ68VxIDjEkbqfXzcd0gQQH6Kkgczjob324O1OOExajPhHYt7nTrEGtCtpxwgIqVT5UsPcxw-JLdEJ2RdU3iISYCK6N1pvw1uZzW9Yj68pEqkHMrDrTSXzBehPmhFU6UI4HAsxWqLIuESVJXzY02HSPz2O6XDGEFrfXSiSp2sDuvBdmLFC_YLgLXMh2G-__q52myk1hnIzjKAQE"/>
+</div>
+<div class="p-4 w-2/3">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">3</span>
+<h4 class="font-label-md text-label-md text-on-surface">Pelorodan</h4>
+</div>
+<p class="text-sm text-on-surface-variant">Melepas lilin malam dari kain dengan menggunakan air mendidih.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border-2 border-surface-variant flex shadow-[0_4px_10px_rgba(0,0,0,0.02)]">
+<div class="w-1/3 bg-surface-variant/30 relative">
+<img alt="Illustration of a child rinsing and drying cloth (Pencucian)" class="absolute inset-0 w-full h-full object-cover object-[100%_100%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDolYCyBK-Z289M6ZpMB7s2QeXqoVU-HPwTDQJh6uDM4BONGCplCKAtY-uVR64AOQ68VxIDjEkbqfXzcd0gQQH6Kkgczjob324O1OOExajPhHYt7nTrEGtCtpxwgIqVT5UsPcxw-JLdEJ2RdU3iISYCK6N1pvw1uZzW9Yj68pEqkHMrDrTSXzBehPmhFU6UI4HAsxWqLIuESVJXzY02HSPz2O6XDGEFrfXSiSp2sDuvBdmLFC_YLgLXMh2G-__q52myk1hnIzjKAQE"/>
+</div>
+<div class="p-4 w-2/3">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">4</span>
+<h4 class="font-label-md text-label-md text-on-surface">Pencucian</h4>
+</div>
+<p class="text-sm text-on-surface-variant">Membilas kain hingga bersih dan menjemurnya di bawah sinar matahari.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Jenis-jenis Batik -->
+<section>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">map</span>
+                Jenis Batik Nusantara
+            </h3>
+<div class="flex overflow-x-auto hide-scrollbar gap-4 pb-4 -mx-margin-mobile px-margin-mobile md:mx-0 md:px-0 snap-x">
+<div class="min-w-[240px] bg-[#4e342e]/10 border-2 border-[#4e342e]/20 rounded-xl p-5 snap-start flex-shrink-0 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-[#4e342e] flex items-center justify-center mb-3 shadow-md">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">architecture</span>
+</div>
+<h4 class="font-label-md text-label-md text-[#4e342e] mb-2">Batik Solo</h4>
+<p class="text-sm text-on-surface-variant">Elegan dengan warna cokelat dan krem (sogan).</p>
+</div>
+<div class="min-w-[240px] bg-[#e91e63]/10 border-2 border-[#e91e63]/20 rounded-xl p-5 snap-start flex-shrink-0 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-[#e91e63] flex items-center justify-center mb-3 shadow-md">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">local_florist</span>
+</div>
+<h4 class="font-label-md text-label-md text-[#e91e63] mb-2">Batik Pekalongan</h4>
+<p class="text-sm text-on-surface-variant">Cerah dan berwarna-warni, sering bermotif bunga.</p>
+</div>
+<div class="min-w-[240px] bg-surface-container-high border-2 border-outline-variant rounded-xl p-5 snap-start flex-shrink-0 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-on-surface flex items-center justify-center mb-3 shadow-md">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface mb-2">Batik Yogya</h4>
+<p class="text-sm text-on-surface-variant">Memiliki pola geometris yang penuh makna filosofis.</p>
+</div>
+<div class="min-w-[240px] bg-[#1a237e]/10 border-2 border-[#1a237e]/20 rounded-xl p-5 snap-start flex-shrink-0 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-[#1a237e] flex items-center justify-center mb-3 shadow-md">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">cloud</span>
+</div>
+<h4 class="font-label-md text-label-md text-[#1a237e] mb-2">Batik Cirebon</h4>
+<p class="text-sm text-on-surface-variant">Terkenal dengan motif awan 'Mega Mendung' yang biru.</p>
+</div>
+</div>
+</section>
+<!-- Footer Padding for Bottom Nav on Mobile -->
+<div class="h-10 md:hidden"></div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-2 h-20 bg-surface-container-low dark:bg-surface-container-highest shadow-[0_-4px_10px_rgba(0,0,0,0.05)] rounded-t-lg md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50" href="#">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="font-label-md text-label-md text-xs mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-xl px-4 py-1 translate-y-[-2px] transition-all scale-90 duration-200 ease-out shadow-[0_4px_10px_rgba(45,212,191,0.3)]" href="#">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md text-xs mt-1">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50" href="#">
+<span class="material-symbols-outlined text-2xl">sports_esports</span>
+<span class="font-label-md text-label-md text-xs mt-1">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50" href="#">
+<span class="material-symbols-outlined text-2xl">military_tech</span>
+<span class="font-label-md text-label-md text-xs mt-1">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50" href="#">
+<span class="material-symbols-outlined text-2xl">smart_toy</span>
+<span class="font-label-md text-label-md text-xs mt-1">Tanya AI</span>
+</a>
+</nav>
+</body></html>

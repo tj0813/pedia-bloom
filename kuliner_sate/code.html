@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&family=Quicksand:wght@600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&family=Quicksand:wght@100..900&display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+        .bouncy {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .bouncy:active {
+            transform: scale(0.95);
+        }
+        .squishy-shadow {
+            box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.05);
+        }
+        .orange-3d-button {
+            box-shadow: 0 4px 0 0 #713700;
+        }
+        .orange-3d-button:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 0 #713700;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f8f9ff;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2dd4bf;
+            border-radius: 10px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "error-container": "#ffdad6",
+                        "secondary": "#944a00",
+                        "outline-variant": "#bacac5",
+                        "primary-fixed": "#62fae3",
+                        "on-surface": "#0d1c2e",
+                        "surface-dim": "#ccdbf3",
+                        "primary-fixed-dim": "#3cddc7",
+                        "outline": "#6b7a76",
+                        "tertiary-container": "#ffaa81",
+                        "on-primary-fixed": "#00201c",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#f8f9ff",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#ffb783",
+                        "surface-container-high": "#dce9ff",
+                        "secondary-container": "#fd933d",
+                        "surface-container-low": "#eff4ff",
+                        "tertiary": "#944a23",
+                        "secondary-fixed": "#ffdcc5",
+                        "on-secondary-container": "#693300",
+                        "inverse-surface": "#233144",
+                        "surface-variant": "#d5e3fc",
+                        "surface-container": "#e6eeff",
+                        "on-background": "#0d1c2e",
+                        "surface": "#f8f9ff",
+                        "primary": "#006b5f",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d5e3fc",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-primary-container": "#00574d",
+                        "on-primary-fixed-variant": "#005047",
+                        "surface-tint": "#006b5f",
+                        "on-surface-variant": "#3c4a46",
+                        "on-secondary-fixed-variant": "#713700",
+                        "on-secondary-fixed": "#301400",
+                        "on-tertiary-container": "#7e3913",
+                        "inverse-primary": "#3cddc7",
+                        "primary-container": "#2dd4bf",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#351000",
+                        "background": "#f8f9ff",
+                        "tertiary-fixed": "#ffdbcc",
+                        "inverse-on-surface": "#eaf1ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Quicksand"],
+                        "headline-xl": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-surface sticky top-0 z-50 shadow-sm flex justify-between items-center w-full px-margin-mobile py-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-primary-container flex items-center justify-center border-2 border-primary">
+<img alt="Nara the Explorer Mascot" class="w-10 h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0THcid8YPFQDh45_5OPAsGj-Rl4SIG2fyPoXbeNek6L6etkEvzrBD50qdHqwds6rB9bQqTW_pO1dw1mpoKBBilWdk6oFIGew9Dn5pRpPiQDxgC-VvOyB0fXmxhzlJRnOcsDbvYvVR3_-PsJm4E4QdgprPzRjeavjPS9nYsMtTqJjBY7ewBTrVOfPagHvHXNXnFC5bFvm8ou3Sw7sl4sND8FsF7hnqGXt2lpZvcd7UfkvTQkThfQpezF-YMv-WHrQuV3xueRpr3UU"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary">Pedia Bloom</h1>
+</div>
+<button class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary active:scale-95 transition-transform">
+<span class="material-symbols-outlined">search</span>
+</button>
+</header>
+<main class="max-w-container-max mx-auto">
+<!-- Hero Section -->
+<section class="relative w-full h-[450px] md:h-[600px] overflow-hidden md:rounded-b-lg">
+<img alt="Sate: Makanan Seribu Rasa" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0Isc6VG-sFbyCdPc26tmwOlmQTajk8Lsd5AO5LMJkd1Ts6Z5RtJV0_TSJFga2wCjv07Xk9mj8-E5UNGDEktSny4f47l5wefm_MyPUH89aQh_zj0jyAsoZIJb9aFQlouNKR9Kt41_Va96OytFc2z59ojnxUm4UJY8WPisG2pCIYCmloOseYLNhccz3cTaKoY0N5QTp5YUq3WsHEXXN5PWfaii6h1Ed2H_u47glp5vjEk-WKsKTZodJhB-PxGlAdM-4dnzf9psrLNw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-margin-mobile md:p-12 w-full">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary text-on-secondary font-label-md text-label-md mb-4 shadow-lg">Kuliner Nusantara</span>
+<h2 class="font-headline-xl text-headline-xl text-white drop-shadow-md">Sate: Makanan Seribu Rasa</h2>
+</div>
+</section>
+<!-- Introduction -->
+<section class="px-margin-mobile py-10 md:px-margin-desktop">
+<div class="max-w-3xl mx-auto text-center">
+<div class="inline-block mb-6 p-4 bg-primary-container/20 rounded-full">
+<span class="material-symbols-outlined text-primary text-4xl">restaurant</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    Pernahkah kamu mencium aroma harum daging bakar saat melewati keramaian pesta desa atau hajatan? Hmm, wangi asapnya yang sedap langsung membuat perut keroncongan! Itu adalah aroma khas <strong>Sate</strong>, hidangan ajaib yang disukai semua orang di seluruh penjuru Indonesia.
+                </p>
+</div>
+</section>
+<!-- Section 1: Apa itu Sate? -->
+<section class="px-margin-mobile py-8 md:px-margin-desktop bg-surface-container-low">
+<div class="bg-white rounded-lg p-8 shadow-sm border-2 border-outline-variant flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Apa itu Sate?</h3>
+<p class="text-body-md text-on-surface-variant">Sate adalah potongan daging kecil-kecil yang ditusuk menggunakan lidi bambu atau kayu, lalu dipanggang di atas bara api arang yang panas. Sambil dipanggang, sate biasanya dikipasi agar matang merata dan diolesi bumbu rahasia yang membuatnya sangat lezat!</p>
+</div>
+<div class="w-full md:w-1/3 aspect-square bg-secondary-container rounded-lg flex items-center justify-center p-6 border-b-4 border-secondary/30 relative">
+<span class="material-symbols-outlined text-8xl text-on-secondary-container">outdoor_grill</span>
+<div class="absolute -top-4 -right-4 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-3xl">local_fire_department</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Sate dari Mana Saja? -->
+<section class="px-margin-mobile py-12 md:px-margin-desktop">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-8 text-center">Sate dari Mana Saja?</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Sate Madura -->
+<div class="bg-white p-6 rounded-lg border-2 border-surface-variant hover:border-primary-container transition-colors group">
+<div class="w-full aspect-video bg-surface-container rounded-md mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110" data-alt="A close up photo of Indonesian chicken satay Madura with thick peanut sauce and rice cakes on a traditional ceramic plate. Warm evening lighting in a clean, modern aesthetic with hints of teal and orange from the Pedia Bloom design system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE8PoV0EAEOzq9yuJHZ25ixdoMDy5R7HavwuKTq8xnMlWa1RJCUEbJL-df0jKQSGEo4apYdQEuDrSzC8pqBG9Ey8pFs7Wq-BCMBLE8slt4__mIDjYS_QZ3uuCkloy-I0ZNFjUrEpVEmj8UrLdZbHlwUi2ZsMiNZumbeCoK3SSmE6OLVe4VjJrE8a1ZzouuWh_u5I-8aI3nR3VC_c8dxZnE7z0CT5i_eO7CghQlWlzyV2HASlfKqjjLpAMDdAzrz-OyXcr5G08Tkds"/>
+<div class="absolute top-2 right-2 px-2 py-1 bg-white/90 rounded-md text-[12px] font-bold text-primary">Jawa Timur</div>
+</div>
+<h4 class="font-headline-lg-mobile text-primary mb-2">Sate Madura</h4>
+<p class="text-label-md text-on-surface-variant">Daging ayam empuk dengan siraman bumbu kacang kental yang manis.</p>
+</div>
+<!-- Sate Padang -->
+<div class="bg-white p-6 rounded-lg border-2 border-surface-variant hover:border-primary-container transition-colors group">
+<div class="w-full aspect-video bg-surface-container rounded-md mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110" data-alt="A traditional plate of Sate Padang with thick yellow spicy sauce poured over beef skewers, served on a banana leaf. Bright, vibrant food photography with high contrast and professional lighting, reflecting a curious and adventurous Indonesian brand personality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPrj7E3EZZJvV9hEO2EyDeBiRh2bjy44EENEzs1jUwlOOPxPdM_oj4x6kaTSRZs0XxpCmUmRo7sAo-c4txovjUT3qLGumVQ-v7AIRaxFCk0IIH2xr0DPOKJtN0REX63iIUrMB-IvaUVUFSY8eQnqu3n6XL186YDAgZaXtt0hFBiLhVrY0IrC3pYulJ9x6cv4DTCm8OHRJhNtFk7R44xoYeHaVu28f_liiV2KZqnc5sVKHqftQY0Sj5BCAQ5d69dw7Bvrc28MJzt7Q"/>
+<div class="absolute top-2 right-2 px-2 py-1 bg-white/90 rounded-md text-[12px] font-bold text-primary">Sumatera Barat</div>
+</div>
+<h4 class="font-headline-lg-mobile text-primary mb-2">Sate Padang</h4>
+<p class="text-label-md text-on-surface-variant">Daging sapi berpadu kuah kuning kental yang gurih dan sedikit pedas.</p>
+</div>
+<!-- Sate Lilit -->
+<div class="bg-white p-6 rounded-lg border-2 border-surface-variant hover:border-primary-container transition-colors group">
+<div class="w-full aspect-video bg-surface-container rounded-md mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110" data-alt="A beautiful presentation of Balinese Sate Lilit made of minced meat wrapped around lemongrass sticks. The background is a serene tropical Balinese setting. Soft, diffuse shadows and high-key lighting create a safe and welcoming atmosphere for children's learning." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBOCMRR53MwN8VNBsR-tDeWUoyY61fotL1tkY7DUKwtAPFehrdjT51a3wgo-ZJhhvnNZd5vBcNyvRQDV1GbeHQSxVeJeNHs8nuQm8uJbS4cGH1mUGAHE83i73rKeQx6SviwirXtlOertRZAYaEZZ03I-u5Fl4bKczYMO3FrkhW5BtWqhVrGfu5k14HkPdraRN08oteTMod0iFBPKd7G2TPfgC71xbnRZuNXIDZBWpzNPgP5tDP8Rl1ksa7i5XkWybqyW0V-VFFcew"/>
+<div class="absolute top-2 right-2 px-2 py-1 bg-white/90 rounded-md text-[12px] font-bold text-primary">Bali</div>
+</div>
+<h4 class="font-headline-lg-mobile text-primary mb-2">Sate Lilit</h4>
+<p class="text-label-md text-on-surface-variant">Daging cincang yang dililit pada batang serai, wangi sekali!</p>
+</div>
+<!-- Sate Klathak -->
+<div class="bg-white p-6 rounded-lg border-2 border-surface-variant hover:border-primary-container transition-colors group">
+<div class="w-full aspect-video bg-surface-container rounded-md mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110" data-alt="A rustic yet clean photo of Sate Klathak from Yogyakarta, using iron skewers and simple salt seasoning. Minimalist layout with plenty of oxygen zones around the food. The style is a hybrid of minimalism and tactile skeuomorphism with soft-focus depth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgpo7YNTeNeW2Gg6k2luf44pLYi82LJrlpHFbFSFPEGzUw_Gb401XBMTVoMfjuzAigEyaKj53oeyUl1id8YUvcrAVpvlLI8RV8XrPi2VayP-2H8L3B11Z-w0cmPwbJXr3vNq8lJSJfHRFidX-e53DDJhiVIyhCGIZEOH0C2wMaYBKpVfEWZ0LQb728KttgOshMaps3iHs6wsgwt_Peqcrr-6wtabjI_P7UUaHhzTSAgNCoGjJD-s4UMbH4ZQrVrqU1uDXacEuzOaA"/>
+<div class="absolute top-2 right-2 px-2 py-1 bg-white/90 rounded-md text-[12px] font-bold text-primary">Yogyakarta</div>
+</div>
+<h4 class="font-headline-lg-mobile text-primary mb-2">Sate Klathak</h4>
+<p class="text-label-md text-on-surface-variant">Sate kambing unik yang menggunakan jeruji besi sepeda sebagai tusuknya.</p>
+</div>
+</div>
+</section>
+<!-- Section 3: 5 Fakta Seru! -->
+<section class="px-margin-mobile py-12 md:px-margin-desktop bg-primary/5">
+<div class="flex items-center gap-4 mb-8 justify-center">
+<span class="material-symbols-outlined text-4xl text-secondary" style="font-variation-settings: 'FILL' 1;">stars</span>
+<h3 class="font-headline-lg text-headline-lg text-primary">5 Fakta Seru!</h3>
+<span class="material-symbols-outlined text-4xl text-secondary" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+<div class="flex overflow-x-auto pb-6 gap-6 scrollbar-hide snap-x px-4">
+<div class="min-w-[280px] bg-white p-6 rounded-lg shadow-md border-t-4 border-primary snap-center flex flex-col items-center text-center">
+<div class="text-4xl font-black text-primary mb-4">1</div>
+<p class="text-body-md font-semibold">Rekor dunia sate terpanjang pernah dibuat di Indonesia, lho!</p>
+</div>
+<div class="min-w-[280px] bg-white p-6 rounded-lg shadow-md border-t-4 border-secondary snap-center flex flex-col items-center text-center">
+<div class="text-4xl font-black text-secondary mb-4">2</div>
+<p class="text-body-md font-semibold">Ada lebih dari 200 jenis sate di seluruh Indonesia!</p>
+</div>
+<div class="min-w-[280px] bg-white p-6 rounded-lg shadow-md border-t-4 border-tertiary snap-center flex flex-col items-center text-center">
+<div class="text-4xl font-black text-tertiary mb-4">3</div>
+<p class="text-body-md font-semibold">Sate adalah salah satu makanan favorit Presiden kita!</p>
+</div>
+<div class="min-w-[280px] bg-white p-6 rounded-lg shadow-md border-t-4 border-primary-container snap-center flex flex-col items-center text-center">
+<div class="text-4xl font-black text-primary-container mb-4">4</div>
+<p class="text-body-md font-semibold">'Tusuk' sate biasanya terbuat dari bambu yang diruncingkan.</p>
+</div>
+<div class="min-w-[280px] bg-white p-6 rounded-lg shadow-md border-t-4 border-secondary-container snap-center flex flex-col items-center text-center">
+<div class="text-4xl font-black text-secondary-container mb-4">5</div>
+<p class="text-body-md font-semibold">Sate sudah terkenal di seluruh dunia sebagai 'Street Food' terlezat!</p>
+</div>
+</div>
+</section>
+<!-- Section 4: Misi: Racik Bumbu Sate! -->
+<section class="px-margin-mobile py-12 md:px-margin-desktop">
+<div class="bg-surface-container rounded-xl p-8 border-4 border-dashed border-primary/30 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-8xl">kitchen</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-2">Misi: Racik Bumbu Sate!</h3>
+<p class="text-body-md mb-8">Ketuk bahan-bahan di bawah untuk memasukkannya ke dalam mangkuk!</p>
+<div class="flex justify-center gap-4 mb-8 flex-wrap">
+<button class="bg-white p-4 rounded-xl shadow-sm hover:scale-105 active:scale-95 transition-all flex flex-col items-center border-b-4 border-surface-variant font-bold text-on-surface" onclick="addIngredient('Kacang 🥜')">
+<span class="text-3xl mb-1">🥜</span>
+                        Kacang
+                    </button>
+<button class="bg-white p-4 rounded-xl shadow-sm hover:scale-105 active:scale-95 transition-all flex flex-col items-center border-b-4 border-surface-variant font-bold text-on-surface" onclick="addIngredient('Kecap Manis 🍯')">
+<span class="text-3xl mb-1">🍯</span>
+                        Kecap
+                    </button>
+<button class="bg-white p-4 rounded-xl shadow-sm hover:scale-105 active:scale-95 transition-all flex flex-col items-center border-b-4 border-surface-variant font-bold text-on-surface" onclick="addIngredient('Jeruk Nipis 🍋')">
+<span class="text-3xl mb-1">🍋</span>
+                        Jeruk
+                    </button>
+</div>
+<div class="w-48 h-24 mx-auto bg-primary-container rounded-b-full border-x-8 border-b-8 border-primary/20 flex items-center justify-center p-4 relative">
+<div class="text-primary font-bold text-sm overflow-hidden whitespace-nowrap" id="sauce-mix">Mangkuk Kosong...</div>
+</div>
+<button class="mt-6 text-primary-container font-bold underline hover:text-primary transition-colors" onclick="resetMix()">Ulangi Racikan</button>
+</div>
+</section>
+<!-- Section 5: Kuis Kilat! -->
+<section class="px-margin-mobile py-12 md:px-margin-desktop bg-on-surface text-white rounded-t-xl mx-4 md:mx-margin-desktop">
+<div class="max-w-2xl mx-auto">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary-fixed">quiz</span>
+<h3 class="font-headline-lg text-headline-lg">Kuis Kilat!</h3>
+</div>
+<p class="text-body-lg mb-8">Terbuat dari apa tusuk sate biasanya?</p>
+<div class="space-y-4">
+<button class="w-full text-left p-6 bg-white/10 hover:bg-white/20 border-2 border-white/20 rounded-lg transition-all flex justify-between items-center group" onclick="checkAnswer(this, true)">
+<span class="font-bold text-lg">A. Bambu</span>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</button>
+<button class="w-full text-left p-6 bg-white/10 hover:bg-white/20 border-2 border-white/20 rounded-lg transition-all flex justify-between items-center group" onclick="checkAnswer(this, false)">
+<span class="font-bold text-lg">B. Besi</span>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</button>
+<button class="w-full text-left p-6 bg-white/10 hover:bg-white/20 border-2 border-white/20 rounded-lg transition-all flex justify-between items-center group" onclick="checkAnswer(this, false)">
+<span class="font-bold text-lg">C. Plastik</span>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</button>
+</div>
+<div class="mt-6 h-8 text-center font-bold text-primary-fixed" id="quiz-feedback"></div>
+</div>
+</section>
+<!-- Glossary Section -->
+<section class="px-margin-mobile py-12 md:px-margin-desktop">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-8">Kamus Kecil</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="p-4 bg-white border-2 border-surface-variant rounded-lg">
+<div class="font-bold text-primary mb-1">Sate</div>
+<div class="text-sm text-on-surface-variant">Daging bakar yang ditusuk lidi.</div>
+</div>
+<div class="p-4 bg-white border-2 border-surface-variant rounded-lg">
+<div class="font-bold text-primary mb-1">Tusuk</div>
+<div class="text-sm text-on-surface-variant">Batang tipis untuk merangkai daging.</div>
+</div>
+<div class="p-4 bg-white border-2 border-surface-variant rounded-lg">
+<div class="font-bold text-primary mb-1">Bumbu Kacang</div>
+<div class="text-sm text-on-surface-variant">Saus lezat dari kacang tanah.</div>
+</div>
+<div class="p-4 bg-white border-2 border-surface-variant rounded-lg">
+<div class="font-bold text-primary mb-1">Bumbu Kecap</div>
+<div class="text-sm text-on-surface-variant">Saus manis dari kedelai hitam.</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-surface-container shadow-[0_-4px_12px_rgba(0,107,95,0.1)] rounded-t-lg">
+<div class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:bg-surface-variant/30 transition-all p-2 rounded-xl">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl px-4 py-1.5 transition-all duration-300 shadow-lg">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md">Jelajah</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:bg-surface-variant/30 transition-all p-2 rounded-xl">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-label-md">Game</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:bg-surface-variant/30 transition-all p-2 rounded-xl">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-label-md">Badge</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:bg-surface-variant/30 transition-all p-2 rounded-xl">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md text-label-md">Tanya AI</span>
+</div>
+</nav>
+<script>
+        const ingredients = [];
+        function addIngredient(name) {
+            if (ingredients.length < 5) {
+                ingredients.push(name);
+                updateBowl();
+            }
+        }
+        function updateBowl() {
+            const bowl = document.getElementById('sauce-mix');
+            bowl.textContent = ingredients.join(' + ');
+            if (ingredients.length >= 3) {
+                bowl.classList.add('text-on-primary-container');
+                bowl.textContent = "Wah, sausnya sudah jadi! 🥣✨";
+            }
+        }
+        function resetMix() {
+            ingredients.length = 0;
+            const bowl = document.getElementById('sauce-mix');
+            bowl.textContent = "Mangkuk Kosong...";
+            bowl.classList.remove('text-on-primary-container');
+        }
+
+        function checkAnswer(btn, isCorrect) {
+            const feedback = document.getElementById('quiz-feedback');
+            if (isCorrect) {
+                btn.classList.add('bg-primary', 'border-primary');
+                feedback.textContent = "HORE! KAMU BENAR! 🎉";
+                feedback.className = "mt-6 h-8 text-center font-bold text-primary-fixed animate-bounce";
+            } else {
+                btn.classList.add('bg-error', 'border-error');
+                feedback.textContent = "Ups! Coba lagi ya... 😊";
+                feedback.className = "mt-6 h-8 text-center font-bold text-error-container";
+                setTimeout(() => {
+                    btn.classList.remove('bg-error', 'border-error');
+                    feedback.textContent = "";
+                }, 1500);
+            }
+        }
+    </script>
+</body></html>

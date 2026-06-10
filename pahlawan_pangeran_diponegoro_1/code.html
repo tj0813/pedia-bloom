@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pangeran Diponegoro - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#005047",
+                        "secondary": "#944a00",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#944a23",
+                        "secondary-fixed-dim": "#ffb783",
+                        "surface-tint": "#006b5f",
+                        "surface": "#f8f9ff",
+                        "surface-bright": "#f8f9ff",
+                        "on-tertiary-fixed": "#351000",
+                        "on-secondary-fixed": "#301400",
+                        "surface-container-high": "#dce9ff",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#3cddc7",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#62fae3",
+                        "outline-variant": "#bacac5",
+                        "on-tertiary-container": "#7e3913",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#d5e3fc",
+                        "surface-container": "#e6eeff",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#00201c",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-background": "#0d1c2e",
+                        "primary-fixed-dim": "#3cddc7",
+                        "primary-container": "#2dd4bf",
+                        "outline": "#6b7a76",
+                        "background": "#f8f9ff",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#ccdbf3",
+                        "on-primary-container": "#00574d",
+                        "surface-container-low": "#eff4ff",
+                        "inverse-surface": "#233144",
+                        "secondary-fixed": "#ffdcc5",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-secondary-fixed-variant": "#713700",
+                        "surface-variant": "#d5e3fc",
+                        "tertiary-container": "#ffaa81",
+                        "on-surface-variant": "#3c4a46",
+                        "secondary-container": "#fd933d",
+                        "primary": "#006b5f",
+                        "on-surface": "#0d1c2e",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-secondary-container": "#693300"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "headline-lg": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(0, 107, 95, 0.9) 0%, rgba(45, 212, 191, 0.8) 100%);
+        }
+        .bouncy-button {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border-bottom: 4px solid #7a3d00;
+        }
+        .bouncy-button:active {
+            transform: translateY(2px);
+            border-bottom-width: 2px;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 12px rgba(45, 212, 191, 0.15);
+        }
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom, 20px); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-bright shadow-sm flex justify-between items-center px-margin-mobile py-unit md:px-margin-desktop md:py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container overflow-hidden">
+<img alt="Nara the Explorer Avatar" class="w-full h-full object-cover" data-alt="A cute illustration of a young explorer character, Nara, wearing a safari hat and smiling warmly. The style is 2D vector art, clean lines, vibrant colors, suitable for a children's educational app. Light mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHk9lwjE090onyLW8LuUawwfSES6TZ-ashK62rRdqRLUNQv2k89ZTd_K30avVGEP05wD9QlQJmKX0w6KCeOqmSoi_dUEB_rKw0TTPDOCN4uj3ZNzt5fHLiGmZasAoE03bKtari0rHlG_RBHW-glIYXNl3FNe3lg-F8DFT-1s66qTWxoB0XnZj9safpuGKVqDCpT9GvuIOnfsq7JTls48UuwC-Fqlg_yhm2B99Pcd5CXDsktezmkuwI-cRfeiHQIMB-jex2efr00CQ"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg font-bold text-primary">Pedia Bloom</h1>
+</div>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80 transition-colors" href="#">Beranda</a>
+<a class="font-label-md text-label-md text-primary font-bold hover:opacity-80 transition-colors" href="#">Jelajah</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80 transition-colors" href="#">Main</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80 transition-colors" href="#">Lencana</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80 transition-colors" href="#">Tanya AI</a>
+</nav>
+<button class="text-primary hover:opacity-80 transition-transform active:scale-95 duration-200">
+<span class="material-symbols-outlined text-3xl">settings</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="pt-[80px] pb-[100px] md:pt-[100px] md:pb-12 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero Section -->
+<section class="relative rounded-[2rem] overflow-hidden mb-8 md:mb-12">
+<div class="absolute inset-0 z-0">
+<img alt="Hero Background" class="w-full h-full object-cover" data-alt="A majestic, stylized illustration of a heroic figure riding a powerful horse through an epic, historical landscape. Warm sunset lighting casts a golden glow. The style is inspiring, vibrant, and engaging for children, with soft edges and a sense of adventure. Light mode aesthetic with heritage orange and soft teal tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCH-SKIc8TdXZnLpR1xGDssMoWj3eUbKnmxKBWRfeb0gRWoZJ765S1pcezjTXEgd2Yhazm0u_a_PT7C5rgMwoH2HG7D2PykKmdO-mWNhqkl9yS73IGBkRYUzUIpYfXAQNxnCyLejady9rQxp_oc0EX9MQjMeb8pe5033uuMR5Ql6n40r-t9A32ziT37-XUPZ2PAWAnsPOpQ3H8A9WorqU6OwWiUdX3QJ3D-4bCUKaS_5e8T8aX_tGP17My8X4629M-sD5YxiMYVTQ"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 p-8 md:p-12 flex flex-col justify-end min-h-[300px] md:min-h-[400px] text-white">
+<div class="inline-flex items-center gap-2 bg-[#6b21a8] text-white px-4 py-2 rounded-full font-label-md text-label-md mb-4 w-max">
+<span class="material-symbols-outlined text-sm">history_edu</span>
+                    Pahlawan Nasional
+                </div>
+<h1 class="font-headline-xl text-headline-xl mb-4 text-white">Pangeran Diponegoro</h1>
+<p class="font-body-lg text-body-lg text-surface-bright max-w-2xl opacity-90">Sang Ksatria Keadilan yang berani melawan ketidakadilan, memimpin dengan hati, dan berjuang demi Nusantara.</p>
+</div>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Main Content Area -->
+<div class="col-span-1 md:col-span-8 space-y-8">
+<!-- Intro Card -->
+<article class="bg-surface-container-lowest rounded-[2rem] p-6 md:p-8 card-shadow border-2 border-surface-container-high relative overflow-hidden">
+<div class="absolute -top-4 -right-4 w-24 h-24 bg-surface-variant rounded-full opacity-50 blur-xl"></div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-4">Siapa Pangeran Diponegoro?</h2>
+<div class="font-body-md text-body-md text-on-surface-variant space-y-4">
+<p>Pangeran Diponegoro adalah seorang pahlawan besar dari Yogyakarta. Beliau lahir dengan nama Bendara Pangeran Harya Dipanegara. Sejak kecil, beliau lebih suka tinggal di desa bersama neneknya dan rakyat biasa, daripada di istana yang mewah.</p>
+<p>Beliau adalah sosok yang sangat peduli pada keadilan dan kebenaran. Saat melihat rakyatnya menderita, jiwa kesatrianya bangkit untuk membela mereka!</p>
+</div>
+</article>
+<!-- Kyai Gentayu Card -->
+<article class="bg-surface-container-lowest rounded-[2rem] p-6 md:p-8 card-shadow border-2 border-surface-container-high relative">
+<div class="flex flex-col md:flex-row gap-6 items-center">
+<div class="w-full md:w-1/3 flex-shrink-0">
+<div class="rounded-[1.5rem] overflow-hidden aspect-square border-4 border-surface-container-low shadow-lg shadow-tertiary-container/30">
+<img alt="Kyai Gentayu" class="w-full h-full object-cover" data-alt="A majestic, friendly-looking brown horse with a beautiful mane. The illustration is warm, tactile, and slightly squishy in style, appealing to children. Soft lighting, set against a soft focus, natural green background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkz-bRwm83sEWaWy90U2zNBHBCLm11YNKf028sC3ZI_GsrbFxmatYaEQSxrLRjs_U2natHnuEPQ8nse-sXK1xI9VjRqCYsjQ6sq0xNvMALayEkEOCb3bXtwjrWu-XaBAQ3k4w-BVxrx2V9r3jIx6t9V0HWhecpTp3im4ju5KUP2P0mj5NOlLNsbKoSpsHJnG1Ar0ls1OdNEwlC_8QXnHSHy8fBk2DJ7qXVuhPtywackJ7NGTj5r-Q4tfHF1aupiVD-af25LURFtog"/>
+</div>
+</div>
+<div class="w-full md:w-2/3">
+<div class="flex items-center gap-2 text-secondary mb-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">pets</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-sm">Sahabat Setia</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-4">Kuda Sakti: Kyai Gentayu</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Setiap pahlawan punya sahabat setia, begitu juga Pangeran Diponegoro. Beliau memiliki seekor kuda istimewa bernama <strong>Kyai Gentayu</strong>.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Konon, Kyai Gentayu sangat gagah berani, bisa berlari secepat angin, dan tidak pernah takut di medan pertempuran. Bersama Kyai Gentayu, Pangeran Diponegoro bagaikan ksatria tak terkalahkan!</p>
+</div>
+</div>
+</article>
+<!-- Values/Lessons -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="bg-primary-container/20 rounded-[1.5rem] p-6 border border-primary-container/30 hover:bg-primary-container/30 transition-colors">
+<div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/30">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary-container mb-2 text-xl">Keberanian</h3>
+<p class="font-body-md text-body-md text-on-primary-fixed-variant text-sm">Berani berdiri membela yang benar meskipun menghadapi tantangan besar.</p>
+</div>
+<div class="bg-secondary-container/20 rounded-[1.5rem] p-6 border border-secondary-container/30 hover:bg-secondary-container/30 transition-colors">
+<div class="w-12 h-12 rounded-full bg-secondary text-white flex items-center justify-center mb-4 shadow-lg shadow-secondary/30">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">balance</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-secondary-container mb-2 text-xl">Keadilan</h3>
+<p class="font-body-md text-body-md text-on-secondary-fixed-variant text-sm">Selalu memperlakukan semua orang dengan adil, tidak peduli siapa mereka.</p>
+</div>
+</div>
+</div>
+<!-- Sidebar -->
+<div class="col-span-1 md:col-span-4 space-y-8">
+<!-- Timeline/Journey -->
+<aside class="bg-surface-container-low rounded-[2rem] p-6">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">route</span>
+                        Jejak Ksatria
+                    </h3>
+<div class="space-y-6 relative before:content-[''] before:absolute before:left-3.5 before:top-2 before:bottom-2 before:w-1 before:bg-outline-variant before:rounded-full">
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-surface-container-lowest border-4 border-primary flex items-center justify-center z-10">
+<div class="w-2 h-2 bg-primary rounded-full"></div>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface">1785 - Lahir</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Lahir di Keraton Yogyakarta dengan nama kecil Raden Mas Ontowiryo.</p>
+</div>
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-surface-container-lowest border-4 border-secondary flex items-center justify-center z-10">
+<div class="w-2 h-2 bg-secondary rounded-full"></div>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface">1825 - Perang Jawa</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Memulai perjuangan besar melawan penjajah yang tidak adil.</p>
+</div>
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-surface-container-lowest border-4 border-error flex items-center justify-center z-10">
+<div class="w-2 h-2 bg-error rounded-full"></div>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface">1830 - Ditangkap</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Dijebak saat berunding dan diasingkan, namun semangatnya tak pernah padam.</p>
+</div>
+</div>
+</aside>
+<!-- Quiz Card -->
+<aside class="bg-surface-container-lowest rounded-[2rem] p-6 card-shadow border-2 border-tertiary-container relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary-fixed-dim rounded-bl-full opacity-20"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-2 text-tertiary mb-4">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">quiz</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface text-xl">Uji Pengetahuan!</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Siapa nama kuda kesayangan Pangeran Diponegoro?</p>
+<div class="space-y-3">
+<button class="w-full text-left px-4 py-3 rounded-xl border-2 border-outline-variant text-on-surface font-body-md hover:bg-surface-container hover:border-primary transition-all active:scale-95">A. Kyai Slamet</button>
+<button class="w-full text-left px-4 py-3 rounded-xl border-2 border-outline-variant text-on-surface font-body-md hover:bg-surface-container hover:border-primary transition-all active:scale-95">B. Kyai Gentayu</button>
+<button class="w-full text-left px-4 py-3 rounded-xl border-2 border-outline-variant text-on-surface font-body-md hover:bg-surface-container hover:border-primary transition-all active:scale-95">C. Kyai Plered</button>
+</div>
+<button class="w-full mt-6 bg-secondary text-on-secondary font-label-md text-label-md py-4 rounded-xl bouncy-button shadow-[0_8px_16px_rgba(148,74,0,0.2)]">
+                            Cek Jawaban
+                        </button>
+</div>
+</aside>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-[1.5rem] bg-surface-container-lowest shadow-[0_-4px_16px_-1px_rgba(0,0,0,0.1)] h-[88px] flex justify-around items-center px-4 pb-safe">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:bg-surface-container-high transition-colors rounded-xl min-w-[64px]" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">home</span>
+<span class="font-label-md text-label-md text-[12px] leading-tight">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl px-4 py-2 min-w-[64px] shadow-sm" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md text-[12px] leading-tight">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:bg-surface-container-high transition-colors rounded-xl min-w-[64px]" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">sports_esports</span>
+<span class="font-label-md text-label-md text-[12px] leading-tight">Main</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:bg-surface-container-high transition-colors rounded-xl min-w-[64px]" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">military_tech</span>
+<span class="font-label-md text-label-md text-[12px] leading-tight">Lencana</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:bg-surface-container-high transition-colors rounded-xl min-w-[64px]" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">smart_toy</span>
+<span class="font-label-md text-label-md text-[12px] leading-tight">Tanya AI</span>
+</a>
+</nav>
+</body></html>

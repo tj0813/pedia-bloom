@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Antariksa - Nusantara Explorers</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-secondary-container": "#693300",
+                        "on-tertiary-fixed": "#351000",
+                        "on-surface": "#0d1c2e",
+                        "on-error-container": "#93000a",
+                        "secondary": "#944a00",
+                        "tertiary-fixed": "#ffdbcc",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-primary-container": "#00574d",
+                        "secondary-fixed": "#ffdcc5",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#62fae3",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#e6eeff",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#bacac5",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f8f9ff",
+                        "secondary-container": "#fd933d",
+                        "on-primary-fixed-variant": "#005047",
+                        "on-background": "#0d1c2e",
+                        "surface-dim": "#ccdbf3",
+                        "surface": "#f8f9ff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-surface-variant": "#3c4a46",
+                        "outline": "#6b7a76",
+                        "on-primary-fixed": "#00201c",
+                        "on-secondary-fixed": "#301400",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#944a23",
+                        "on-secondary-fixed-variant": "#713700",
+                        "tertiary-container": "#ffaa81",
+                        "surface-variant": "#d5e3fc",
+                        "surface-container-highest": "#d5e3fc",
+                        "primary-fixed-dim": "#3cddc7",
+                        "surface-tint": "#006b5f",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-container": "#7e3913",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "inverse-primary": "#3cddc7",
+                        "primary": "#006b5f",
+                        "primary-container": "#2dd4bf",
+                        "inverse-surface": "#233144",
+                        "background": "#f8f9ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "container-max": "1200px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Quicksand"],
+                        "headline-xl": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Tactical animations for interactive elements */
+        .bounce-hover:hover {
+            transform: translateY(-2px);
+        }
+        .squish-active:active {
+            transform: scale(0.95);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<!-- Applying dark theme override manually for this specific "Lab Sains" section as requested, while keeping the structural tokens intact -->
+<body class="bg-inverse-surface text-on-primary min-h-screen font-body-md pb-[100px] md:pb-0 overflow-x-hidden" style="background-color: #1a202c;">
+<!-- TopAppBar (Web & Mobile, Transparent over Hero) -->
+<header class="fixed top-0 w-full z-50 transition-all duration-300" id="topNav">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full bg-surface/10 backdrop-blur-md dark:bg-surface-container/10 border-b border-surface/5">
+<div class="flex items-center gap-3 cursor-pointer group">
+<div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden border-2 border-primary group-hover:scale-105 transition-transform">
+<img alt="Nara the Explorer mascot smiling" class="w-full h-full object-cover" data-alt="A cute stylized 3D avatar of an explorer mascot character smiling brightly. The mascot is wearing an explorer hat and a green neckerchief. The background is a solid bright teal color to match a fun, children's educational app aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBF_qffdaT8fcknX2jp8F4Pb96ilNrtt1V93HWcupL-TLZc-Sj4REUPOI3GBURJx6Q3tzbwvx8ULmiXuB-vK4hiWHcyvH00MrXJ_55NYKQv5no45OV7zZvJ4jebHKfeVNiZ6do7MoCLwut6wixFe9SxpoFjWfdHQlsJXUgfKJhqW21teD3bCTuhp5tMjM4A2_Lt_HfjkA0XihVfgfVMSl6wmxDBe2P-aAJbRUMYLyo40TUYuFSm-v5iUhTbFjzD365IEh9HOYM1dk"/>
+</div>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-primary-fixed tracking-tight">NusaPedia</h1>
+</div>
+<!-- Desktop Nav (Hidden on mobile) -->
+<nav class="hidden md:flex gap-2">
+<a class="px-4 py-2 rounded-full text-on-primary font-bold bg-primary-container/20 border border-primary-container transition-all" href="#">Home</a>
+<a class="px-4 py-2 rounded-full text-outline-variant hover:bg-surface-variant/10 transition-all" href="#">Jelajah</a>
+<a class="px-4 py-2 rounded-full text-outline-variant hover:bg-surface-variant/10 transition-all" href="#">Game</a>
+</nav>
+<button class="w-10 h-10 rounded-full bg-surface-container/20 flex items-center justify-center text-on-primary hover:bg-surface-variant/30 transition-colors">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="w-full">
+<!-- Hero Section: Galaxy -->
+<section class="relative w-full h-[530px] md:h-[618px] flex items-end justify-center pb-12 overflow-hidden">
+<!-- Background Image -->
+<div class="absolute inset-0 w-full h-full">
+<img alt="Galaxy background" class="w-full h-full object-cover object-center" data-alt="A breathtaking, hyper-realistic view of outer space, featuring a vibrant nebula in deep purples and bright neon teals. Twinkling stars dot the dark cosmic background. The scene feels vast and mysterious, illuminated by soft glowing ethereal light, perfectly suited as a dramatic background for a children's science exploration app." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcdP4yw2sNwiiBmSO8rU40NpybDWcMMQdrKspZxJ0W8IU8SPOZCsyCgBIY5BuyNnOFskxxHhARzM1hvuWeY6R-uY2Q9iDeHwqiAcsz7U0OES7mu-RobWZpLxPApTiC-dGddzC3aT6U4Y9Fkz4aZuoE131tgkaAcmOh4CM5TF0yzo2Jnjkn8N492TWPzK-wsx6fPN6LVvu_CMKd3kYmo7es3WQF91e--Dfdh2NnaP-GxEfVI2VrtyWLFwA9-ADKIkQrxT5NlebWPO4"/>
+<!-- Overlay Gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-[#1a202c] via-[#1a202c]/50 to-transparent"></div>
+</div>
+<!-- Content -->
+<div class="relative z-10 text-center px-4 max-w-container-max mx-auto">
+<span class="inline-block bg-[#8b5cf6] text-white px-3 py-1 rounded-full font-label-md text-label-md mb-4 shadow-[0_0_15px_rgba(139,92,246,0.5)]">Ilmu Pengetahuan Alam</span>
+<h2 class="font-headline-xl text-headline-xl text-primary-fixed mb-4 drop-shadow-lg">Antariksa</h2>
+<p class="font-body-lg text-body-lg text-surface-container-lowest max-w-2xl mx-auto drop-shadow-md">Ayo jelajahi misteri tata surya dan satelit kebanggaan Indonesia di luar angkasa!</p>
+</div>
+</section>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 flex flex-col gap-12">
+<!-- Quick Facts Bento Grid -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary-fixed text-3xl" data-icon="public" data-weight="fill">public</span>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-surface-container-lowest">Fakta Tata Surya</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Planet Card -->
+<div class="bg-surface-variant/10 border border-primary-container/30 rounded-xl p-6 backdrop-blur-sm hover:border-primary-fixed transition-colors shadow-[0_4px_20px_rgba(45,212,191,0.05)]">
+<div class="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center mb-4 text-primary-fixed">
+<span class="material-symbols-outlined text-4xl" data-icon="travel_explore">travel_explore</span>
+</div>
+<h4 class="font-label-md text-label-md text-primary-fixed mb-2">8 Planet</h4>
+<p class="font-body-md text-body-md text-surface-container-low text-sm opacity-90">Tata surya kita memiliki 8 planet yang mengelilingi matahari sebagai pusatnya.</p>
+</div>
+<!-- Sun Card -->
+<div class="bg-surface-variant/10 border border-secondary-container/30 rounded-xl p-6 backdrop-blur-sm hover:border-secondary-container transition-colors shadow-[0_4px_20px_rgba(253,147,61,0.05)] md:col-span-2 relative overflow-hidden group">
+<div class="relative z-10">
+<div class="w-16 h-16 rounded-full bg-secondary-container/20 flex items-center justify-center mb-4 text-secondary-container">
+<span class="material-symbols-outlined text-4xl" data-icon="light_mode">light_mode</span>
+</div>
+<h4 class="font-label-md text-label-md text-secondary-container mb-2">Matahari itu Bintang</h4>
+<p class="font-body-md text-body-md text-surface-container-low text-sm md:w-2/3 opacity-90">Matahari adalah bintang yang paling dekat dengan Bumi. Ukurannya sangat besar, bisa memuat jutaan Bumi di dalamnya!</p>
+</div>
+<div class="absolute -right-10 -bottom-10 w-48 h-48 bg-secondary-container/10 rounded-full blur-2xl group-hover:bg-secondary-container/20 transition-all"></div>
+</div>
+</div>
+</section>
+<!-- Palapa Satellite Feature -->
+<section class="bg-gradient-to-br from-[#1a202c] to-[#0f172a] rounded-xl border border-outline/30 overflow-hidden relative shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+<div class="absolute right-0 top-0 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div class="p-8 md:p-12 relative z-10">
+<span class="inline-block bg-primary-container/20 text-primary-fixed border border-primary-container px-3 py-1 rounded-full font-label-md text-sm mb-4">Kebanggaan Bangsa</span>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-surface-container-lowest mb-4">Satelit Palapa</h3>
+<p class="font-body-md text-body-md text-surface-container-low opacity-90 mb-6">Tahukah kamu? Indonesia adalah negara berkembang pertama yang memiliki satelit sendiri! Satelit Palapa diluncurkan untuk menyatukan komunikasi di seluruh Nusantara.</p>
+<button class="bg-secondary text-on-secondary px-6 py-3 rounded-full font-label-md text-label-md border-b-4 border-secondary-fixed-dim hover:bg-secondary/90 transition-all bounce-hover squish-active flex items-center gap-2">
+                            Lihat Sejarah
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="h-64 md:h-full w-full relative">
+<img alt="Satellite in space over earth" class="w-full h-full object-cover object-left" data-alt="A highly detailed 3D rendering of a telecommunications satellite orbiting the Earth. The satellite features shiny solar panels reflecting the sun's light against the dark backdrop of space. Below, the blue oceans and clouds of Earth are visible. The lighting is cinematic, with high contrast neon teal accents highlighting the technological details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf2BB5Mkp6f4JfE6-Zp_ll8jy2QSygujYeD-pamyyk2zg9zmrl0PU5i_r6Q2uvAwxSc0x2nRZJfAdFAJ6QlB_-dmV1GxUhdfqCXsp-q19O01YoB-Odxbz-1R_HnWJYx8e4lhzQC0aI5REc331bPb2kX1AoqfHhfuFwKXP67ddn2MUzhduxZuHZHMRWjCHvDDgPIxLLhCkj2BlS0K4Oet-HPlfHEDd3ozrpiRtVQ3XgILvqQLm6Ask-DUtXnREQxeZ-mPKrsvXWEmw"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#0f172a] to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Interactive Minigame / Quiz Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Rakit Roket -->
+<div class="bg-surface-variant/5 rounded-xl border border-primary-container/20 p-8 flex flex-col items-center text-center relative overflow-hidden group">
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiMyZGQ0YmYiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PC9zdmc+')] opacity-50"></div>
+<div class="w-24 h-24 mb-6 relative z-10 transform group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-8xl text-primary-fixed" data-icon="rocket_launch" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</div>
+<h3 class="font-headline-lg-mobile text-surface-container-lowest relative z-10 mb-2">Misi: Rakit Roket</h3>
+<p class="font-body-md text-surface-container-low text-sm opacity-80 mb-6 relative z-10">Bantu Nara merakit komponen roket untuk meluncur ke bulan!</p>
+<button class="relative z-10 bg-primary-container text-on-primary-container px-8 py-3 rounded-full font-label-md text-label-md shadow-[0_4px_15px_rgba(45,212,191,0.4)] hover:shadow-[0_6px_20px_rgba(45,212,191,0.6)] transition-all bounce-hover squish-active font-bold">
+                        Main Sekarang
+                    </button>
+</div>
+<!-- Astronaut Badge Quiz -->
+<div class="bg-surface-variant/5 rounded-xl border border-tertiary-container/20 p-8 flex flex-col justify-center relative overflow-hidden">
+<div class="flex items-start gap-4 z-10 relative">
+<div class="w-16 h-16 rounded-full bg-tertiary-container/20 flex items-center justify-center border border-tertiary-container shadow-[0_0_15px_rgba(255,170,129,0.3)] shrink-0">
+<span class="material-symbols-outlined text-3xl text-tertiary-container" data-icon="military_tech" data-weight="fill">military_tech</span>
+</div>
+<div>
+<h3 class="font-headline-lg-mobile text-surface-container-lowest mb-2">Kuis Astronot Cilik</h3>
+<p class="font-body-md text-surface-container-low text-sm opacity-80 mb-4">Uji pengetahuanmu tentang antariksa dan dapatkan lencana eksklusif ini!</p>
+<!-- Simple Progress -->
+<div class="w-full h-3 bg-surface-container-low/20 rounded-full mb-4 overflow-hidden relative">
+<div class="absolute left-0 top-0 h-full bg-tertiary-container w-1/3 rounded-full"></div>
+</div>
+<button class="text-tertiary-container font-label-md text-label-md flex items-center gap-1 hover:text-tertiary-fixed transition-colors">
+                                Mulai Kuis <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="absolute -bottom-10 -right-10 text-[150px] text-tertiary-container/5 select-none pointer-events-none">
+<span class="material-symbols-outlined" data-icon="military_tech" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full rounded-t-lg bg-inverse-surface shadow-none border-t border-surface/10 z-50 flex justify-around items-center px-2 pb-6 pt-3" style="background-color: #1a202c;">
+<!-- Inactive: Home -->
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant/10 rounded-full transition-colors w-16" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="home">home</span>
+<span class="font-label-md text-[10px]">Home</span>
+</a>
+<!-- Active: Jelajah (matches current page intent) -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-2 mb-1 shadow-[0_4px_0_0_#005047] transform translate-y-[-4px] w-20" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="explore" data-weight="fill">explore</span>
+<span class="font-label-md text-[12px] font-bold">Jelajah</span>
+</a>
+<!-- Inactive: Game -->
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant/10 rounded-full transition-colors w-16" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="sports_esports">sports_esports</span>
+<span class="font-label-md text-[10px]">Game</span>
+</a>
+<!-- Inactive: Badge -->
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant/10 rounded-full transition-colors w-16" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="military_tech">military_tech</span>
+<span class="font-label-md text-[10px]">Badge</span>
+</a>
+<!-- Inactive: Tanya AI -->
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant/10 rounded-full transition-colors w-16" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="smart_toy">smart_toy</span>
+<span class="font-label-md text-[10px]">Tanya AI</span>
+</a>
+</nav>
+<!-- Scroll behavior script -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const topNav = document.getElementById('topNav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    topNav.classList.add('bg-[#1a202c]/90', 'shadow-lg');
+                    topNav.classList.remove('bg-surface/10');
+                } else {
+                    topNav.classList.remove('bg-[#1a202c]/90', 'shadow-lg');
+                    topNav.classList.add('bg-surface/10');
+                }
+            });
+        });
+    </script>
+</body></html>

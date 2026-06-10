@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Perubahan Iklim - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#e6eeff",
+                        "on-secondary": "#ffffff",
+                        "background": "#f8f9ff",
+                        "surface-bright": "#f8f9ff",
+                        "primary-fixed-dim": "#3cddc7",
+                        "surface-variant": "#d5e3fc",
+                        "on-primary-container": "#00574d",
+                        "outline-variant": "#bacac5",
+                        "outline": "#6b7a76",
+                        "secondary-container": "#fd933d",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "surface": "#f8f9ff",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#ccdbf3",
+                        "primary-container": "#2dd4bf",
+                        "tertiary-container": "#ffaa81",
+                        "on-primary-fixed": "#00201c",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#eff4ff",
+                        "inverse-primary": "#3cddc7",
+                        "surface-container-highest": "#d5e3fc",
+                        "on-tertiary-fixed": "#351000",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#944a23",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "secondary": "#944a00",
+                        "on-secondary-fixed": "#301400",
+                        "on-secondary-container": "#693300",
+                        "inverse-surface": "#233144",
+                        "surface-tint": "#006b5f",
+                        "on-surface-variant": "#3c4a46",
+                        "primary-fixed": "#62fae3",
+                        "surface-container-high": "#dce9ff",
+                        "secondary-fixed": "#ffdcc5",
+                        "on-tertiary-container": "#7e3913",
+                        "primary": "#006b5f",
+                        "on-secondary-fixed-variant": "#713700",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#ffb783",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#005047",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-surface": "#0d1c2e",
+                        "on-background": "#0d1c2e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "label-md": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #f8f9ff; }
+        .bouncy-btn:active { transform: translateY(2px); }
+        .soft-shadow { box-shadow: 0 4px 14px rgba(45, 212, 191, 0.15); }
+        .interactive-shadow { box-shadow: 0 8px 24px rgba(45, 212, 191, 0.25); }
+        
+        /* Hide scrollbar for horizontal scroll */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="text-on-background font-body-md pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="bg-surface-bright shadow-sm w-full top-0 sticky z-50 flex justify-between items-center px-margin-mobile h-16 md:hidden">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-white soft-shadow">
+<img alt="Nara the Explorer Mascot" class="w-full h-full object-cover" data-alt="Cute friendly Indonesian child explorer mascot face, soft 3d render style, vibrant teal background, cheerful expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWbV65Rh0psuKVIimcrNS6XXHYNlEXenGAHLHDsl2jgJll9Pv4QS58UEcLAZlrloaIAxX-92seJOdSvo0jJMUu-8pYg1eH0ijVUiv9wpQfXO4VJZmPB9UWREHebtQ7o_5zMu4Gp8K_XeNcIE8nsmv5NWBC9xaVqHQ6QI5Us5g7Z4QLfBlmiA08r76tnxjSlMQqY52bv8luO48JvpXWIpKaXgsPuDxB0n8gk_ApH6LOcThFtm0UWMKkxd76dkRVfl7zftb04s0XaJU"/>
+</div>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Pedia Bloom</span>
+</div>
+<button class="w-10 h-10 flex items-center justify-center text-primary hover:opacity-80 transition-transform active:scale-95">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+</button>
+</header>
+<!-- Desktop Nav (Hidden on Mobile) -->
+<header class="hidden md:flex bg-surface-bright shadow-sm w-full top-0 sticky z-50 justify-between items-center px-margin-desktop h-20">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-white soft-shadow">
+<img alt="Nara the Explorer Mascot" class="w-full h-full object-cover" data-alt="Cute friendly Indonesian child explorer mascot face, soft 3d render style, vibrant teal background, cheerful expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-du9St4LYmRCPOaEwikaEap0c0_no7Lu8aheQ8FoYQWQkRYum89tvj2-EdF52ocRXPy3oj7A50n_Wy2PFTsg0RWG_ebf8OTeM0feiuxWu4TolzcG824fH-h7qFY2foDLtKf-3cH106qWmuufECBIkOHLnqydOixlOJKILBb6k3EMfCFnmqvoTOa-o2cxRGmFAAZYKBVEC_N3hW63V1CH0n_IYDoHRwL-jAxoMtF1yZx74U2M_U2j2I98F_Yip9eLfKc_SSFGrzHU"/>
+</div>
+<span class="font-headline-xl text-headline-xl text-primary">Pedia Bloom</span>
+</div>
+<nav class="flex gap-8">
+<a class="font-label-md text-label-md text-outline hover:opacity-80 transition-opacity" href="#">Home</a>
+<a class="font-label-md text-label-md text-primary flex flex-col items-center" href="#">
+                Jelajah
+                <div class="w-1.5 h-1.5 rounded-full bg-primary mt-1"></div>
+</a>
+<a class="font-label-md text-label-md text-outline hover:opacity-80 transition-opacity" href="#">Game</a>
+<a class="font-label-md text-label-md text-outline hover:opacity-80 transition-opacity" href="#">Badge</a>
+<a class="font-label-md text-label-md text-outline hover:opacity-80 transition-opacity" href="#">Tanya AI</a>
+</nav>
+<button class="w-12 h-12 flex items-center justify-center bg-surface-container-low rounded-full text-primary hover:opacity-80 transition-transform active:scale-95">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+</button>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-6 space-y-12 pb-12">
+<!-- Hero Section -->
+<section class="flex flex-col items-center text-center space-y-6">
+<div class="w-full max-w-3xl rounded-xl overflow-hidden soft-shadow border-2 border-surface-variant relative aspect-[4/3] md:aspect-video">
+<img alt="Before and After Earth Illustration" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo_ClP-14-NNO81C98NUzgcmO8F5DUA_4szRE_3v_7l_fnu6l87eSkiy3fk2R_Z1t4iY8mVpIwjt2q3Svt0hYQtqjY3RWv4emn3282Hm9g9fzKZpWbQxqTaCNAstkxD6xHKPGVs6UOnMTjeHP4E73FxOTn3ixdgAiRfvF2E5KMAxHljpRjs9VC9d2P9WBZLadaWRDz9j0gb5_7JpOtPdKQxji7-NtyDGRApzX1YR7RlcJ2HScOblCRnfs4A-E07ElUikKFjA5S8hg"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary-container text-on-primary-container font-label-md text-label-md px-4 py-1.5 rounded-full inline-block shadow-sm">
+                        Lingkungan
+                    </span>
+</div>
+</div>
+<div class="max-w-2xl space-y-4">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-xl md:text-headline-xl text-primary">Perubahan Iklim: Bumi Kita Butuh Bantuan Kita</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Pernahkah kamu merasa udara di luar semakin panas? Atau musim hujan yang datangnya tidak menentu? Itu semua adalah tanda kalau Bumi kita sedang mengalami perubahan iklim.</p>
+</div>
+</section>
+<!-- Section 1: Apa itu -->
+<section class="bg-white rounded-xl p-6 md:p-8 soft-shadow border-2 border-surface-variant relative">
+<div class="absolute -top-6 -right-4 w-16 h-16 md:w-20 md:h-20 bg-tertiary-container rounded-full flex items-center justify-center border-4 border-white shadow-sm rotate-12">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">thermostat</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary-container mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: 'FILL' 1;">help</span>
+                Apa itu Perubahan Iklim?
+            </h2>
+<div class="flex flex-col md:flex-row gap-6 items-center">
+<div class="flex-1 font-body-md text-body-md text-on-surface">
+<p>Bayangkan Bumi memakai selimut. Selimut ini terbuat dari gas yang disebut <strong>Gas Rumah Kaca</strong>. Nah, selimut ini fungsinya bagus, yaitu menjaga Bumi tetap hangat supaya kita bisa hidup nyaman.</p>
+<p class="mt-4">Tapi sekarang, selimutnya jadi terlalu tebal! Gas rumah kaca ini terlalu banyak, sehingga panas matahari terperangkap di Bumi seperti di dalam mobil yang diparkir siang hari. Akibatnya, suhu Bumi jadi makin panas lebih cepat dari biasanya.</p>
+</div>
+</div>
+</section>
+<!-- Section 2: Penyebab -->
+<section class="space-y-6">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">warning</span>
+                Penyebab Perubahan Iklim
+            </h2>
+<div class="w-full rounded-xl overflow-hidden soft-shadow border-2 border-surface-variant mb-8 bg-white p-4">
+<img alt="Causes of Climate Change" class="w-full h-auto max-h-64 object-contain mx-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrzamZAUqRTlzh8YR5FBtOpDWDab5YGlCoUJ4xfIaXsHYyZy5PhuacKcIbNqK8n0D2hcrH21hzorcQZUW7O72KTjn_VskecbtEIBJlhfm331-oq71hLrrBtXm7kXuyJ4rtTP1BJFtbh0vySOjo7mGwyYk6ji4MqGs2LBT6xUs7fWpaZOm95qk2z-CZlwLl_etDTooKMS1uRsbezB-yuuYZDxHV6ZjP2B49MHSv-LyCdFnvauN-Jtv3S6Cj5SbQxqZ70_h2e9EHV0o"/>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+<!-- Card 1 -->
+<div class="bg-surface-container-low rounded-lg p-4 text-center border-2 border-surface-variant hover:border-primary-container transition-colors soft-shadow cursor-pointer group">
+<div class="w-12 h-12 mx-auto bg-error-container rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-error-container" style="font-variation-settings: 'FILL' 1;">local_gas_station</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface">Bahan Bakar Fosil</h3>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low rounded-lg p-4 text-center border-2 border-surface-variant hover:border-primary-container transition-colors soft-shadow cursor-pointer group">
+<div class="w-12 h-12 mx-auto bg-tertiary-container rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">forest</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface">Penebangan Hutan</h3>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low rounded-lg p-4 text-center border-2 border-surface-variant hover:border-primary-container transition-colors soft-shadow cursor-pointer group">
+<div class="w-12 h-12 mx-auto bg-secondary-fixed rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">pets</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface">Peternakan Sapi</h3>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-low rounded-lg p-4 text-center border-2 border-surface-variant hover:border-primary-container transition-colors soft-shadow cursor-pointer group">
+<div class="w-12 h-12 mx-auto bg-surface-variant rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-surface-variant" style="font-variation-settings: 'FILL' 1;">factory</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface">Pabrik</h3>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-low rounded-lg p-4 text-center border-2 border-surface-variant hover:border-primary-container transition-colors soft-shadow cursor-pointer group">
+<div class="w-12 h-12 mx-auto bg-primary-container rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface">Pemborosan Energi</h3>
+</div>
+</div>
+</section>
+<!-- Section 4: Solusi -->
+<section class="space-y-6">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">volunteer_activism</span>
+                Apa yang Bisa Kita Lakukan?
+            </h2>
+<div class="w-full rounded-xl overflow-hidden soft-shadow border-2 border-surface-variant mb-8 bg-white p-4">
+<img alt="What we can do" class="w-full h-auto max-h-80 object-contain mx-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDms8u72LAHO93iJWLBu6nVpbqIaT_D8MEHY4HfUN2DwD79Qs3ZZ8rlGuQQNMKSoeNIJreH4KfFId5YKsWoW43cnsoQcmBlpYSqhVJrNtpA95dyYTU3eOdMv8ZNEPSINfIarnOIu7V0zNhe9Zgk6Z9O5tyIIt-WUxO5G2fg27fa75dTHuc39KNTHLpMPsWuobFd7XeUE5d_hWJsRNCTK0YxKnpAusxLF0guDI4Y-dEAEi4v8qkFa2q18gl2x2kFeh_nC04rWtfG7sE"/>
+</div>
+</section>
+<!-- Kuis Kilat -->
+<section class="bg-primary-container rounded-xl p-6 md:p-8 border-2 border-primary-fixed-dim interactive-shadow text-center relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 opacity-20">
+<span class="material-symbols-outlined text-[150px] text-on-primary-container" style="font-variation-settings: 'FILL' 1;">quiz</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary-container mb-2 relative z-10">Kuis Kilat! ⚡</h2>
+<p class="font-body-md text-body-md text-on-primary-container mb-6 relative z-10">Gas apa yang paling banyak menyebabkan efek rumah kaca?</p>
+<div class="flex flex-col gap-3 max-w-md mx-auto relative z-10">
+<button class="bg-white text-on-surface font-label-md text-label-md py-3 px-6 rounded-lg border-b-4 border-surface-variant hover:bg-surface-container transition-colors flex items-center justify-between bouncy-btn" onclick="alert('Yay! Benar sekali!')">
+<span>A. Karbon dioksida</span>
+<span class="material-symbols-outlined text-outline" style="font-variation-settings: 'FILL' 0;">check_circle</span>
+</button>
+<button class="bg-white text-on-surface font-label-md text-label-md py-3 px-6 rounded-lg border-b-4 border-surface-variant hover:bg-surface-container transition-colors flex items-center justify-between bouncy-btn" onclick="alert('Coba lagi ya!')">
+<span>B. Oksigen</span>
+<span class="material-symbols-outlined text-outline" style="font-variation-settings: 'FILL' 0;">radio_button_unchecked</span>
+</button>
+<button class="bg-white text-on-surface font-label-md text-label-md py-3 px-6 rounded-lg border-b-4 border-surface-variant hover:bg-surface-container transition-colors flex items-center justify-between bouncy-btn" onclick="alert('Coba lagi ya!')">
+<span>C. Nitrogen</span>
+<span class="material-symbols-outlined text-outline" style="font-variation-settings: 'FILL' 0;">radio_button_unchecked</span>
+</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-2 h-20 bg-surface-container-low shadow-[0_-4px_10px_rgba(0,0,0,0.05)] rounded-t-lg md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-surface-variant/50 transition-all rounded-xl" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-label-md text-[12px] mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1 translate-y-[-2px] transition-all scale-90 duration-200 ease-out shadow-sm" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-[12px] mt-1">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-surface-variant/50 transition-all rounded-xl" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">sports_esports</span>
+<span class="font-label-md text-[12px] mt-1">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-surface-variant/50 transition-all rounded-xl" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">military_tech</span>
+<span class="font-label-md text-[12px] mt-1">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-surface-variant/50 transition-all rounded-xl" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">smart_toy</span>
+<span class="font-label-md text-[12px] mt-1">Tanya AI</span>
+</a>
+</nav>
+</body></html>

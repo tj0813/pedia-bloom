@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alam &amp; Flora Fauna - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#bacac5",
+                    "on-primary-container": "#00574d",
+                    "on-secondary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f8f9ff",
+                    "tertiary-fixed-dim": "#ffb693",
+                    "tertiary": "#944a23",
+                    "surface-container": "#e6eeff",
+                    "on-primary-fixed": "#00201c",
+                    "surface-container-highest": "#d5e3fc",
+                    "on-surface": "#0d1c2e",
+                    "inverse-primary": "#3cddc7",
+                    "surface": "#f8f9ff",
+                    "outline": "#6b7a76",
+                    "surface-tint": "#006b5f",
+                    "surface-dim": "#ccdbf3",
+                    "on-surface-variant": "#3c4a46",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#005047",
+                    "inverse-on-surface": "#eaf1ff",
+                    "background": "#f8f9ff",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#713700",
+                    "on-background": "#0d1c2e",
+                    "secondary": "#944a00",
+                    "primary-fixed": "#62fae3",
+                    "secondary-fixed-dim": "#ffb783",
+                    "secondary-container": "#fd933d",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#dce9ff",
+                    "secondary-fixed": "#ffdcc5",
+                    "primary": "#006b5f",
+                    "on-tertiary-container": "#7e3913",
+                    "on-secondary-fixed": "#301400",
+                    "primary-container": "#2dd4bf",
+                    "on-tertiary-fixed": "#351000",
+                    "inverse-surface": "#233144",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#d5e3fc",
+                    "on-secondary-container": "#693300",
+                    "tertiary-fixed": "#ffdbcc",
+                    "tertiary-container": "#ffaa81",
+                    "primary-fixed-dim": "#3cddc7",
+                    "on-tertiary-fixed-variant": "#76330d",
+                    "surface-container-low": "#eff4ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-md": [
+                            "Quicksand"
+                    ],
+                    "headline-lg": [
+                            "Quicksand"
+                    ],
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-xl": [
+                            "Quicksand"
+                    ],
+                    "headline-lg-mobile": [
+                            "Quicksand"
+                    ]
+            },
+            "fontSize": {
+                    "body-lg": [
+                            "20px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "label-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-xl": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "34px",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .squishy-shadow {
+            box-shadow: 0 4px 15px rgba(0, 107, 95, 0.1);
+        }
+        .squishy-shadow-interactive {
+            box-shadow: 0 8px 25px rgba(0, 107, 95, 0.15);
+            transition: all 0.2s ease-in-out;
+        }
+        .squishy-shadow-interactive:active {
+            box-shadow: 0 2px 8px rgba(0, 107, 95, 0.2);
+            transform: translateY(2px);
+        }
+        .btn-3d {
+            border-bottom: 4px solid #713700;
+            transition: transform 0.1s, border-bottom-width 0.1s;
+        }
+        .btn-3d:active {
+            border-bottom-width: 0px;
+            transform: translateY(4px);
+        }
+        
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen pt-16 pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-surface shadow-sm docked full-width top-0 md:px-margin-desktop">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden border-2 border-surface flex-shrink-0 squishy-shadow">
+<img alt="Nara the Explorer Mascot" class="w-full h-full object-cover" data-alt="A friendly, stylized 3D mascot of an Indonesian explorer child named Nara, wearing a safari hat and holding a magnifying glass. The background is a soft teal color, matching the app's primary container tone. The lighting is bright and cheerful, emphasizing the character's welcoming expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpy2NvRgI69i9QpIkfklDo8v_L2m_wttzNpfp_n-8L3qGNc3GC9B9nteSz9FnzaKa2eJgsrotkMxszHw09ivGLV5GvuT2m3OOsfDfMzS08eYE1I90NndmzR4pEj18DFiTxwwAAO1kUL5f28_k1w4PhevzmfeizbI7l_PaQcmYP2-4Rwsx6R8D5sCzrkLBcSGudsfCpRIrx1aGM-800UqgoXS6dHB7xPsMWjMzbmxMYmyOFKtS-ZxFXx842rRPHBWdsg_HX09FNrho"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold md:font-headline-lg md:text-headline-lg">Pedia Bloom</h1>
+</div>
+<div class="hidden md:flex gap-6">
+<a class="text-on-surface-variant font-label-md text-label-md hover:opacity-80" href="#">Home</a>
+<a class="text-primary font-label-md text-label-md hover:opacity-80 border-b-2 border-primary" href="#">Jelajah</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:opacity-80" href="#">Game</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:opacity-80" href="#">Badge</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:opacity-80" href="#">Tanya AI</a>
+</div>
+<button class="md:hidden text-primary hover:opacity-80 active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-6">
+<!-- Header & Search -->
+<section class="mb-10 text-center md:text-left">
+<h2 class="font-headline-xl text-headline-xl text-on-surface mb-2">Alam &amp; Flora Fauna</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Ayo temukan keajaiban alam Nusantara!</p>
+<div class="relative max-w-2xl mx-auto md:mx-0">
+<div class="absolute inset-y-0 left-0 pl-6 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 0;">search</span>
+</div>
+<input class="w-full pl-16 pr-6 py-5 rounded-xl border-2 border-surface-variant bg-surface-container-lowest text-on-surface font-body-lg text-body-lg focus:outline-none focus:ring-4 focus:ring-primary-container focus:border-primary transition-all squishy-shadow-interactive placeholder:text-outline-variant" placeholder="Cari rahasia alam..." type="text"/>
+</div>
+</section>
+<!-- Categories (Chips) -->
+<section class="mb-12">
+<div class="flex overflow-x-auto gap-4 pb-4 no-scrollbar -mx-margin-mobile px-margin-mobile md:mx-0 md:px-0">
+<button class="flex-shrink-0 px-6 py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md squishy-shadow-interactive border-2 border-primary">Semua</button>
+<button class="flex-shrink-0 px-6 py-3 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md squishy-shadow-interactive border-2 border-surface-variant hover:border-primary-container transition-colors">Hewan</button>
+<button class="flex-shrink-0 px-6 py-3 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md squishy-shadow-interactive border-2 border-surface-variant hover:border-primary-container transition-colors">Tumbuhan</button>
+<button class="flex-shrink-0 px-6 py-3 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md squishy-shadow-interactive border-2 border-surface-variant hover:border-primary-container transition-colors">Ekosistem</button>
+<button class="flex-shrink-0 px-6 py-3 rounded-lg bg-tertiary text-on-tertiary font-label-md text-label-md squishy-shadow-interactive border-2 border-tertiary">Mitos &amp; Fakta</button>
+</div>
+</section>
+<!-- Daily Fact Card -->
+<section class="mb-12">
+<div class="relative bg-surface-container-low rounded-xl p-6 md:p-8 squishy-shadow border-2 border-surface-variant overflow-hidden flex flex-col md:flex-row items-center gap-6">
+<!-- Mascot Image overlayed -->
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-surface-container-lowest overflow-hidden flex-shrink-0 squishy-shadow z-10">
+<img alt="Nara Mascot Fact" class="w-full h-full object-cover" data-alt="Close up of a stylized 3D mascot, an Indonesian child named Nara, with an excited expression. The character is brightly lit against a cheerful background. The overall aesthetic is cute, tactile, and fits a high-quality educational children's app in a light mode setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOBjn6dAQ7FGaZBp39sadkfqmskfEvyAZ4sELmljgL4TVqznqNCWhiZ2WpcBhHeAJYnpl1QJLygamgdxxntuywOjisc0VgL8Gq3oOxdLkRK4lHlI-BoGhBhxRnM_JA0JPfDOxcWqFN4MBucArjKbzj4FxV7ZiaCgbss3fdObeEkLmYPxrQoIbbfD987JVBVaKMIKOOjwPCJRvipdpZKiq1OUHOcVOhdCPwaax6RBWQqZClDzc_e74bmXTa4hunCsYUbQWWbkLeRS4"/>
+</div>
+<div class="flex-1 text-center md:text-left z-10">
+<div class="flex items-center justify-center md:justify-start gap-2 mb-2 text-secondary-container font-label-md text-label-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<span>Fakta Alam Hari Ini!</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-3">Tahukah Kamu?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Burung Cendrawasih dari Papua sering disebut sebagai "Burung Surga" karena bulunya yang sangat indah dan berwarna-warni. Mereka punya tarian khusus untuk menarik perhatian pasangannya lho!</p>
+<button class="bg-secondary text-on-secondary font-label-md text-label-md px-6 py-3 rounded-lg btn-3d inline-flex items-center gap-2">
+<span>Baca Selengkapnya</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</button>
+</div>
+<!-- Decorative Background Element -->
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-primary-container rounded-full opacity-20 blur-3xl pointer-events-none"></div>
+</div>
+</section>
+<!-- Main Topics Grid -->
+<section class="mb-12">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-6">Pilih Petualanganmu</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl border-2 border-surface-variant overflow-hidden squishy-shadow-interactive group cursor-pointer flex flex-col">
+<div class="h-48 overflow-hidden relative">
+<img alt="Hewan Liar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A majestic Sumatran tiger resting in a dense, lush tropical jungle. The sunlight filters beautifully through the green foliage, creating dappled lighting on the tiger's orange and black stripes. The image is vibrant and high-quality, fitting for an educational app about Indonesian wildlife." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkNyqY0JIgEfcvoY-bzTus3rW9XMtImG7D9sMwuPIENaqTmQyjqX-Se_XlY2ff0Gcpt1QW4TMl6eS_PGTUKXivxC125T-Y7asYjhRTvRU3KDKjlR4oBwFiN0Ps3xpJEKDlwWaMOwgxceUfs8szZ369aHzKwubQZkXzcu3ydmtf8T04-TtnE_DRmcAC4okLgK3U8keK4aMOm23TATUMZ-DeGhMeuuQMMcqYhHytaaSERjnRL_UHc-DonSxF7LwKkcf9eNGF-H_u8BA"/>
+<div class="absolute top-4 left-4 bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-md text-sm shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">pets</span>
+                            Fauna
+                        </div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2 group-hover:text-primary transition-colors">Hewan Liar</h4>
+<p class="font-body-md text-body-md text-on-surface-variant flex-1 mb-4">Kenali harimau Sumatera, orangutan, komodo, dan satwa menakjubkan lainnya.</p>
+<div class="flex items-center justify-between text-primary font-label-md text-label-md">
+<span>Mulai Jelajah</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl border-2 border-surface-variant overflow-hidden squishy-shadow-interactive group cursor-pointer flex flex-col">
+<div class="h-48 overflow-hidden relative">
+<img alt="Tumbuhan Tropis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A close-up view of vibrant, oversized tropical plant leaves, possibly a Monstera or Rafflesia, bathed in soft, diffused light. The greens are deep and rich, with pops of bright color. The scene feels humid and alive, perfect for exploring Indonesian flora." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-7uieX4mhJomphbqTXQlHlbIzpHpRmEr0BR6qHvWc7kicZ4-CJxGQRYlQpbPS7sUYF7YLCbaNSC-cUyuJDYqXxwb1gqJpPvGrXt1t6QR22EIC0tJQNyilyF_EMkfoz0fUioVM8UCKBXZBddOBmFjIWV96Gy8jGhmUkpwLWfPt2R32pmDpwlV-hdBuFtp7mneo_RrFZA2GTLis2KXoZGUkeQ3uKQzwrsdGMSQc2n1RgZiZjKv4PwpV2kwJnh2ziajnpOl-nf5NJFw"/>
+<div class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-md text-sm shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">local_florist</span>
+                            Flora
+                        </div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2 group-hover:text-primary transition-colors">Tumbuhan Tropis</h4>
+<p class="font-body-md text-body-md text-on-surface-variant flex-1 mb-4">Temukan bunga Rafflesia raksasa, kantong semar, dan pohon-pohon purba.</p>
+<div class="flex items-center justify-between text-primary font-label-md text-label-md">
+<span>Mulai Jelajah</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl border-2 border-surface-variant overflow-hidden squishy-shadow-interactive group cursor-pointer flex flex-col">
+<div class="h-48 overflow-hidden relative">
+<img alt="Kehidupan Laut" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An underwater view of a vibrant coral reef teeming with colorful tropical fish. A gentle sea turtle glides through the clear, turquoise water. Sun rays pierce the surface, illuminating the diverse marine ecosystem. The aesthetic is bright, inviting, and educational." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRuPKITwR0SmTMKV6MhnchdrnAfBurXWZRLK1MQdglCkHojzCvNetTBJMH2Ju_ePVEO4hZ4iJHrkNaNyc21RsMQVV5Cz4DJFrISYGutOKEEw8_bvVcOaoSJSHuo39Oo5HvZkyXbQEM8pEyFpU7zAWH5kf5ZqNAUCsXwVRgl0n6eBI45T4bX535MM9ARdGeVd4Ys0WXZ61kTCcpe-d9A0MVbrY_X5nJH0mF1lRKEuv6xovogUhaf8Dgt9YCnQw59admk-CoLZ3xWV4"/>
+<div class="absolute top-4 left-4 bg-surface-dim text-on-surface-variant px-3 py-1 rounded-full font-label-md text-sm shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+                            Ekosistem
+                        </div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2 group-hover:text-primary transition-colors">Kehidupan Laut</h4>
+<p class="font-body-md text-body-md text-on-surface-variant flex-1 mb-4">Menyelam bersama penyu, ikan pari, dan melihat indahnya terumbu karang.</p>
+<div class="flex items-center justify-between text-primary font-label-md text-label-md">
+<span>Mulai Jelajah</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 pb-safe bg-surface-container-lowest shadow-[0_-4px_10px_rgba(0,107,95,0.1)] md:hidden docked full-width bottom-0 rounded-t-lg">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-variant rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-label-md text-xs">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1.5 transition-all duration-300 translate-y-0.5 scale-95 bounce-effect squishy-shadow" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-xs">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-variant rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">sports_esports</span>
+<span class="font-label-md text-xs">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-variant rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">military_tech</span>
+<span class="font-label-md text-xs">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-variant rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">psychology_alt</span>
+<span class="font-label-md text-xs">Tanya AI</span>
+</a>
+</nav>
+<script>
+        // Simple bounce effect for buttons
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('mousedown', function() {
+                this.style.transform = 'scale(0.95)';
+            });
+            btn.addEventListener('mouseup', function() {
+                this.style.transform = 'scale(1)';
+            });
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedia Bloom - Anoa</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#ccdbf3",
+                    "secondary": "#944a00",
+                    "on-error": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#dce9ff",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#ffaa81",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-primary-container": "#00574d",
+                    "inverse-primary": "#3cddc7",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#62fae3",
+                    "secondary-fixed": "#ffdcc5",
+                    "surface-tint": "#006b5f",
+                    "on-primary-fixed-variant": "#005047",
+                    "primary-fixed-dim": "#3cddc7",
+                    "surface": "#f8f9ff",
+                    "on-secondary-container": "#693300",
+                    "primary": "#006b5f",
+                    "on-tertiary-container": "#7e3913",
+                    "surface-container-highest": "#d5e3fc",
+                    "primary-container": "#2dd4bf",
+                    "tertiary": "#944a23",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#ffb783",
+                    "on-tertiary-fixed-variant": "#76330d",
+                    "on-secondary-fixed-variant": "#713700",
+                    "surface-bright": "#f8f9ff",
+                    "on-primary-fixed": "#00201c",
+                    "outline": "#6b7a76",
+                    "on-secondary-fixed": "#301400",
+                    "on-tertiary-fixed": "#351000",
+                    "background": "#f8f9ff",
+                    "tertiary-fixed-dim": "#ffb693",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#0d1c2e",
+                    "inverse-surface": "#233144",
+                    "on-tertiary": "#ffffff",
+                    "on-background": "#0d1c2e",
+                    "surface-variant": "#d5e3fc",
+                    "surface-container-low": "#eff4ff",
+                    "surface-container": "#e6eeff",
+                    "on-surface-variant": "#3c4a46",
+                    "outline-variant": "#bacac5",
+                    "tertiary-fixed": "#ffdbcc",
+                    "secondary-container": "#fd933d",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "container-max": "1200px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Quicksand"],
+                    "headline-lg-mobile": ["Quicksand"],
+                    "label-md": ["Quicksand"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Quicksand"]
+            },
+            "fontSize": {
+                    "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                    "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .filled-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        .bouncy-button {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .bouncy-button:active {
+            transform: translateY(4px) scale(0.98);
+        }
+        .bouncy-button:hover {
+            transform: translateY(-2px);
+        }
+        .soft-shadow-primary {
+            box-shadow: 0 8px 24px -8px rgba(45, 212, 191, 0.4);
+        }
+        .soft-shadow-secondary {
+            box-shadow: 0 8px 24px -8px rgba(253, 147, 61, 0.4);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md pb-24 min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-surface dark:bg-on-background shadow-sm">
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary bouncy-button">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden">
+<img alt="Nara the Explorer Mascot" class="w-full h-full object-cover" data-alt="A cute, friendly cartoon illustration of a young Indonesian explorer mascot named Nara. She is wearing a green scout-like uniform with a bright orange neckerchief and a wide-brimmed hat. She has a warm, encouraging smile and large expressive eyes. The style is 2D vector art, vibrant, colorful, and appealing to children. The background is a solid, soft pastel color." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnksqzP3U-MZPitUBaQwkvwmfDYniBQ7ele_aw-0rdEjKFM9hBXVZqv3-qISBmsiGbfXjkktj-YsoNvOz70032siKJbVYYn8o5gP-EUb0zSFNFeqQ7OLafv0o2pL2wJzbKIxrYslp9P3fMPL8dpg-aRV067M7RUStHlAy6AHMSt-zB6fWQxZDer6V8aPb8pDs9P2Od7PFewBA8M42MHhCgOtRCGDLe68SJKhmdhsEM8O_UO9m9iEno4cx4w7LaMK8Qkj5DsaxNOPU"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">Pedia Bloom</h1>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary bouncy-button">
+<span class="material-symbols-outlined">bookmark</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="pt-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto space-y-8">
+<!-- Hero Section -->
+<section class="relative rounded-xl overflow-hidden bg-surface-container h-64 md:h-96 flex items-end p-6 soft-shadow-primary border-2 border-outline-variant">
+<img alt="Anoa in the forest" class="absolute inset-0 w-full h-full object-cover z-0 opacity-80" data-alt="A stylized, colorful illustration of an Anoa (a small water buffalo) standing cautiously in a lush, magical Indonesian rainforest. The Anoa is depicted with soft, friendly features suitable for a children's educational app. The forest is vibrant with oversized tropical leaves, shafts of golden sunlight filtering through the canopy, and small sparkling particles in the air. The overall mood is curious, safe, and wondrous, matching a tactile, slightly skeuomorphic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY0P7CkgiPB0uLd4_s_3ND3SN9cvJe9MtAtqWSqhCxNnAskvXt_E71yHIt1q_XM3H0OJM7NVi8yY_R4XDN4MI3rr4rx2fM4_bSkkQNtx8UmeUb6Qyb09QPd2-7bOJk6hmi_okvMvMPd_030VrWUUm76XgzSheASeKbsL7n-4S6zwpGn7G2ksTAIlL4iTCp7iNzsQJ1w711RGKIo_g1HHgGSH7TUCPi7gCl-1WSAbjoeiKuM4sw-Dcycni3TI0iimzd_pW9VrUp_JM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-tint/90 to-transparent z-10"></div>
+<div class="relative z-20 text-white w-full">
+<div class="flex gap-2 mb-2">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-md text-sm border-2 border-white/20">Sulawesi</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-md text-sm border-2 border-white/20">Hewan Endemik</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl mb-1 text-on-primary drop-shadow-md">Anoa</h2>
+<p class="font-body-lg text-surface-container-high opacity-90">Sapi hutan pemalu yang menggemaskan!</p>
+</div>
+</section>
+<!-- Bento Grid Information -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Fakta Unik Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-outline-variant shadow-sm relative overflow-hidden">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-surface-variant rounded-full opacity-50"></div>
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined filled-icon">info</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Fakta Unik</h3>
+</div>
+<p class="font-body-md text-on-surface-variant">Anoa adalah mamalia endemik pulau Sulawesi. Mereka sering disebut sebagai "kerbau kerdil" karena ukurannya yang sangat kecil, hanya sebesar kambing lho! Mereka sangat pemalu dan suka bersembunyi di hutan lebat.</p>
+</div>
+<!-- Ciri-ciri Card -->
+<div class="bg-surface-container-highest rounded-xl p-6 border-2 border-outline-variant shadow-sm relative">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined filled-icon">visibility</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Ciri-ciri Anoa</h3>
+</div>
+<ul class="space-y-3">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span class="font-body-md text-on-surface-variant">Punya sepasang tanduk lurus ke belakang.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span class="font-body-md text-on-surface-variant">Warna bulunya gelap, dari cokelat tua sampai hitam.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span class="font-body-md text-on-surface-variant">Suka hidup menyendiri (soliter).</span>
+</li>
+</ul>
+</div>
+</section>
+<!-- Mini Mission -->
+<section class="bg-surface-dim rounded-xl p-6 border-2 border-primary-container relative soft-shadow-primary">
+<div class="absolute -top-8 -right-4 w-24 h-24 z-10">
+<img alt="Nara Mascot" class="w-full h-full object-contain drop-shadow-md" data-alt="A 2D illustration of Nara, the Indonesian explorer girl mascot, holding a magnifying glass and looking excited. She is pointing towards the left, encouraging the user to participate. The art style is vibrant, vector-based, and child-friendly, with soft shading to give a slightly tactile feel. Solid transparent background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpVemRddSstOHQ8v_J604b6_XBBrniWq98ZA_7GXhYGkHdNv36FyN_d9aJJP-rqEi-S_tQTUurpMPca3eEEweKRKl1SBIlcZMsANu2THjaovqLW1OCZYrVvs4BNhi30pcOGqNGCMc1S6cpjbR69dIrgRd7nePQc09ZZvl-QuUGzveMenyXnh0sSfxXkT6haU-wvTamXsomR9CxuBgwO4lU9ejoJi98v7AkWB6wup6zwMc0-vL_7bElwN9mwV4VunuFIl38Gy8dqHI"/>
+</div>
+<div class="max-w-[85%]">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined filled-icon">explore</span>
+                    Misi Hari Ini
+                </h3>
+<p class="font-body-md text-on-surface-variant mb-6">Bantu Nara mencari Anoa yang bersembunyi di balik semak-semak hutan Sulawesi!</p>
+<button class="bg-secondary-container text-on-secondary-container font-label-md px-6 py-3 rounded-xl border-b-4 border-secondary bouncy-button flex items-center gap-2 w-full md:w-auto justify-center soft-shadow-secondary">
+<span class="material-symbols-outlined">search</span>
+                    Mulai Cari Anoa
+                </button>
+</div>
+</section>
+<!-- Quiz Section -->
+<section class="bg-surface-container-lowest rounded-xl p-6 border-2 border-outline-variant shadow-sm text-center">
+<div class="w-16 h-16 mx-auto bg-surface-container rounded-full flex items-center justify-center mb-4 text-secondary">
+<span class="material-symbols-outlined text-4xl filled-icon">military_tech</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Kuis Sahabat Anoa</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Uji pengetahuanmu tentang Anoa dan dapatkan lencana spesial!</p>
+<div class="bg-surface p-4 rounded-xl text-left border border-outline-variant mb-4">
+<p class="font-body-lg text-on-surface mb-4">Di pulau manakah Anoa hidup secara alami?</p>
+<div class="space-y-2">
+<label class="flex items-center gap-3 p-3 rounded-lg border border-outline-variant hover:bg-surface-variant cursor-pointer transition-colors">
+<input class="text-primary focus:ring-primary w-5 h-5" name="quiz" type="radio"/>
+<span class="font-body-md text-on-surface-variant">Sumatera</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-lg border-2 border-primary bg-primary-container/20 cursor-pointer transition-colors">
+<input checked="" class="text-primary focus:ring-primary w-5 h-5" name="quiz" type="radio"/>
+<span class="font-body-md text-on-surface">Sulawesi</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-lg border border-outline-variant hover:bg-surface-variant cursor-pointer transition-colors">
+<input class="text-primary focus:ring-primary w-5 h-5" name="quiz" type="radio"/>
+<span class="font-body-md text-on-surface-variant">Jawa</span>
+</label>
+</div>
+</div>
+<button class="bg-primary text-on-primary font-label-md px-8 py-3 rounded-xl border-b-4 border-on-primary-fixed-variant bouncy-button w-full soft-shadow-primary">
+                Cek Jawaban
+            </button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 pb-safe bg-surface-container-lowest dark:bg-inverse-surface shadow-[0_-4px_10px_rgba(0,107,95,0.1)] rounded-t-lg md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-4 py-1.5 hover:bg-surface-variant dark:hover:bg-on-surface-variant rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md text-xs mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-xl px-4 py-1.5 transition-all duration-300 translate-y-0.5 scale-95 bouncy-button" href="#">
+<span class="material-symbols-outlined filled-icon">explore</span>
+<span class="font-label-md text-label-md text-xs mt-1">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-4 py-1.5 hover:bg-surface-variant dark:hover:bg-on-surface-variant rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-label-md text-xs mt-1">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-4 py-1.5 hover:bg-surface-variant dark:hover:bg-on-surface-variant rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-label-md text-xs mt-1">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-4 py-1.5 hover:bg-surface-variant dark:hover:bg-on-surface-variant rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">psychology_alt</span>
+<span class="font-label-md text-label-md text-xs mt-1">Tanya AI</span>
+</a>
+</nav>
+</body></html>

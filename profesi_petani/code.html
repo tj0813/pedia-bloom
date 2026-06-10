@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Petani Indonesia - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "primary-container": "#2dd4bf",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#7e3913",
+                        "surface-dim": "#ccdbf3",
+                        "surface-container-low": "#eff4ff",
+                        "secondary-container": "#fd933d",
+                        "outline-variant": "#bacac5",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#d5e3fc",
+                        "surface-container-highest": "#d5e3fc",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-background": "#0d1c2e",
+                        "tertiary-container": "#ffaa81",
+                        "secondary-fixed": "#ffdcc5",
+                        "secondary": "#944a00",
+                        "primary-fixed": "#62fae3",
+                        "surface-container-high": "#dce9ff",
+                        "inverse-surface": "#233144",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "surface-container": "#e6eeff",
+                        "outline": "#6b7a76",
+                        "primary-fixed-dim": "#3cddc7",
+                        "background": "#f8f9ff",
+                        "on-secondary-fixed": "#301400",
+                        "on-primary-fixed": "#00201c",
+                        "inverse-primary": "#3cddc7",
+                        "error-container": "#ffdad6",
+                        "surface": "#f8f9ff",
+                        "on-primary-fixed-variant": "#005047",
+                        "on-primary-container": "#00574d",
+                        "on-surface-variant": "#3c4a46",
+                        "on-tertiary-fixed": "#351000",
+                        "surface-bright": "#f8f9ff",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-secondary-fixed-variant": "#713700",
+                        "inverse-on-surface": "#eaf1ff",
+                        "primary": "#006b5f",
+                        "surface-tint": "#006b5f",
+                        "tertiary": "#944a23",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-surface": "#0d1c2e",
+                        "on-secondary-container": "#693300"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "headline-xl": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8f9ff; }
+        h1, h2, h3, h4, .font-headline-lg-mobile, .font-headline-lg { font-family: 'Quicksand', sans-serif; }
+        .bouncy-card { transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .bouncy-card:hover { transform: translateY(-4px) scale(1.02); }
+        .bouncy-btn { transition: transform 0.1s ease-out; }
+        .bouncy-btn:active { transform: translateY(4px); }
+        
+        /* Custom scrollbar for horizontal lists */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky bg-surface-bright dark:bg-surface-dim shadow-sm z-40">
+<div class="flex justify-between items-center px-margin-mobile h-16 w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden flex items-center justify-center border-2 border-primary">
+<!-- Nara Mascot Avatar placeholder -->
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">face</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed-dim tracking-tight">Pedia Bloom</h1>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center hover:opacity-80 active:scale-95 transition-transform text-primary">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</header>
+<main class="max-w-container-max mx-auto w-full">
+<!-- Hero Section -->
+<section class="relative w-full h-[40vh] md:h-[50vh] min-h-[300px] overflow-hidden rounded-b-xl md:rounded-xl md:mt-4 md:mx-4 shadow-sm group">
+<img alt="A beautiful, vibrant illustration of an Indonesian farmer smiling in a lush, golden terraced rice paddy field during sunrise. The scene features warm morning light, cute stylized animals like a water buffalo and birds, and a colorful, inviting aesthetic suitable for a children's educational app." class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjNgoxvz7f-NBEucXK6SVpHF7dBxmofTX0-i_dDKPn-lkEGodCJ2PUn33b7tDxpzDIzhYGjfuiEfzQj4UlBE8Sw4d2coiKhq3MScZr8f7B6yzo-ehs6twjpAE0p6APL2BhsQbb0GAEy55pN9H-962D5-ps2C9m8rspdxNT10iJAG-HpDJc8t_NDEf6i-K4EtbXIg1UzxLg2LOKDQ5AHvwP8BgU4eQPWenvgNeeytOyIRyW7iyWNgCmh5jppUAH-5g78wib6cNvgzs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-margin-mobile w-full text-white">
+<div class="inline-flex items-center gap-2 bg-secondary-container text-on-secondary px-3 py-1 rounded-full text-sm font-bold mb-3 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">work</span>
+                    Ekonomi dan Profesi
+                </div>
+<h2 class="font-headline-xl text-headline-xl text-white drop-shadow-md leading-tight mb-2">Petani: Pahlawan Pangan Indonesia</h2>
+</div>
+</section>
+<div class="px-margin-mobile md:px-margin-desktop py-8 space-y-12">
+<!-- Introduction -->
+<section class="bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_20px_rgba(45,212,191,0.08)] border border-outline-variant/30 relative">
+<div class="absolute -top-6 -right-2 w-16 h-16 bg-primary-container rounded-full flex items-center justify-center shadow-md transform rotate-12">
+<span class="material-symbols-outlined text-4xl text-on-primary-container" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    Pernahkah kamu berpikir, dari mana asalnya nasi putih hangat di piringmu? Setiap butir nasi bermula dari biji kecil yang ditanam dengan penuh kasih sayang oleh tangan-tangan pekerja keras. Mereka adalah para petani, pahlawan tanpa tanda jasa yang memastikan kita semua memiliki cukup makanan setiap hari!
+                </p>
+</section>
+<!-- Peran Petani -->
+<section>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-3xl text-secondary" style="font-variation-settings: 'FILL' 1;">agriculture</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background">Peran Hebat Petani</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm border border-outline-variant/20 flex gap-4 bouncy-card">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex-shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-container">psychiatry</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md mb-1 text-tertiary">Menanam Harapan</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Petani dengan sabar menanam bibit di tanah yang subur, merawatnya setiap hari agar tumbuh sehat.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm border border-outline-variant/20 flex gap-4 bouncy-card">
+<div class="w-12 h-12 rounded-full bg-primary-container flex-shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container">shopping_basket</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md mb-1 text-primary">Memberi Makan Bangsa</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Hasil panen mereka yang melimpah menjadi sumber makanan bergizi untuk seluruh keluarga di Indonesia.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Apa Saja yang Ditanam -->
+<section>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-3xl text-secondary-container" style="font-variation-settings: 'FILL' 1;">grass</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background">Apa Saja yang Ditanam?</h3>
+</div>
+<div class="flex overflow-x-auto gap-4 pb-4 hide-scroll snap-x">
+<!-- Item 1 -->
+<div class="snap-center flex-shrink-0 w-32 bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-outline-variant/20 flex flex-col items-center bouncy-card">
+<img alt="Icon of Padi" class="w-16 h-16 object-contain mb-2 drop-shadow-sm rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCRlgMpXP6Yxqtgk_92hIWWaQhTf2P_EBm57vaKMqfIs_cuONtI90u6h-aDTTmBsf0SqcgWWtt0xvWBpCk0iPN1e_mIYRVK2ytQmfA5Wofmw25NJYxV-2QXvYlHR7Tx0fQekQ5YJAL4KJvV_5h5YyASLpTxpm6tj77UMp6oAh2aBKh37-3HPTiq32-y9vfokQvMzuxAyo7FvA7r4j4oqeODJBPedvaiOFjQiOgxSwbkOobc4_hrkXDrGSiNIip6t4VTsHgVCV3BbY" style="object-position: 0 0; clip-path: inset(0 66% 66% 0);"/>
+<span class="font-label-md text-label-md text-center text-on-surface-variant">Padi</span>
+</div>
+<!-- Item 2 -->
+<div class="snap-center flex-shrink-0 w-32 bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-outline-variant/20 flex flex-col items-center bouncy-card">
+<img alt="Icon of Jagung" class="w-16 h-16 object-contain mb-2 drop-shadow-sm rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCRlgMpXP6Yxqtgk_92hIWWaQhTf2P_EBm57vaKMqfIs_cuONtI90u6h-aDTTmBsf0SqcgWWtt0xvWBpCk0iPN1e_mIYRVK2ytQmfA5Wofmw25NJYxV-2QXvYlHR7Tx0fQekQ5YJAL4KJvV_5h5YyASLpTxpm6tj77UMp6oAh2aBKh37-3HPTiq32-y9vfokQvMzuxAyo7FvA7r4j4oqeODJBPedvaiOFjQiOgxSwbkOobc4_hrkXDrGSiNIip6t4VTsHgVCV3BbY" style="object-position: 50% 0; clip-path: inset(0 33% 66% 33%);"/>
+<span class="font-label-md text-label-md text-center text-on-surface-variant">Jagung</span>
+</div>
+<!-- Item 3 -->
+<div class="snap-center flex-shrink-0 w-32 bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-outline-variant/20 flex flex-col items-center bouncy-card">
+<img alt="Icon of Singkong" class="w-16 h-16 object-contain mb-2 drop-shadow-sm rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCRlgMpXP6Yxqtgk_92hIWWaQhTf2P_EBm57vaKMqfIs_cuONtI90u6h-aDTTmBsf0SqcgWWtt0xvWBpCk0iPN1e_mIYRVK2ytQmfA5Wofmw25NJYxV-2QXvYlHR7Tx0fQekQ5YJAL4KJvV_5h5YyASLpTxpm6tj77UMp6oAh2aBKh37-3HPTiq32-y9vfokQvMzuxAyo7FvA7r4j4oqeODJBPedvaiOFjQiOgxSwbkOobc4_hrkXDrGSiNIip6t4VTsHgVCV3BbY" style="object-position: 100% 0; clip-path: inset(0 0 66% 66%);"/>
+<span class="font-label-md text-label-md text-center text-on-surface-variant">Singkong</span>
+</div>
+<!-- Item 4 -->
+<div class="snap-center flex-shrink-0 w-32 bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-outline-variant/20 flex flex-col items-center bouncy-card">
+<img alt="Icon of Kedelai" class="w-16 h-16 object-contain mb-2 drop-shadow-sm rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCRlgMpXP6Yxqtgk_92hIWWaQhTf2P_EBm57vaKMqfIs_cuONtI90u6h-aDTTmBsf0SqcgWWtt0xvWBpCk0iPN1e_mIYRVK2ytQmfA5Wofmw25NJYxV-2QXvYlHR7Tx0fQekQ5YJAL4KJvV_5h5YyASLpTxpm6tj77UMp6oAh2aBKh37-3HPTiq32-y9vfokQvMzuxAyo7FvA7r4j4oqeODJBPedvaiOFjQiOgxSwbkOobc4_hrkXDrGSiNIip6t4VTsHgVCV3BbY" style="object-position: 0 50%; clip-path: inset(33% 66% 33% 0);"/>
+<span class="font-label-md text-label-md text-center text-on-surface-variant">Kedelai</span>
+</div>
+<!-- Item 5 -->
+<div class="snap-center flex-shrink-0 w-32 bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-outline-variant/20 flex flex-col items-center bouncy-card">
+<img alt="Icon of Cabai" class="w-16 h-16 object-contain mb-2 drop-shadow-sm rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCRlgMpXP6Yxqtgk_92hIWWaQhTf2P_EBm57vaKMqfIs_cuONtI90u6h-aDTTmBsf0SqcgWWtt0xvWBpCk0iPN1e_mIYRVK2ytQmfA5Wofmw25NJYxV-2QXvYlHR7Tx0fQekQ5YJAL4KJvV_5h5YyASLpTxpm6tj77UMp6oAh2aBKh37-3HPTiq32-y9vfokQvMzuxAyo7FvA7r4j4oqeODJBPedvaiOFjQiOgxSwbkOobc4_hrkXDrGSiNIip6t4VTsHgVCV3BbY" style="object-position: 100% 50%; clip-path: inset(33% 0 33% 66%);"/>
+<span class="font-label-md text-label-md text-center text-on-surface-variant">Cabai</span>
+</div>
+</div>
+</section>
+<!-- Kuis Kilat -->
+<section class="bg-secondary-fixed/50 p-6 rounded-xl border-2 border-secondary-fixed-dim relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 opacity-20 transform rotate-45">
+<span class="material-symbols-outlined text-[150px] text-secondary">help</span>
+</div>
+<div class="relative z-10">
+<div class="inline-block bg-secondary text-white px-3 py-1 rounded-full text-sm font-bold mb-4 shadow-sm">
+                        Kuis Cilik 🎯
+                    </div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-4">Apa alat utama petani untuk mencangkul tanah?</h3>
+<div class="space-y-3">
+<button class="w-full text-left bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 font-label-md text-label-md text-on-surface-variant hover:bg-primary-container/20 hover:border-primary-container transition-colors flex justify-between items-center group">
+                            A. Cangkul
+                            <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">check_circle</span>
+</button>
+<button class="w-full text-left bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 font-label-md text-label-md text-on-surface-variant hover:bg-error-container/20 hover:border-error-container transition-colors">
+                            B. Gergaji
+                        </button>
+<button class="w-full text-left bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 font-label-md text-label-md text-on-surface-variant hover:bg-error-container/20 hover:border-error-container transition-colors">
+                            C. Palu
+                        </button>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 w-full rounded-t-lg bg-surface-container-low dark:bg-surface-container-highest shadow-lg z-50 flex justify-around items-center px-2 pb-2 h-20 border-none">
+<!-- Home (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 rounded-xl transition-colors">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-[12px] font-semibold mt-1">Home</span>
+</button>
+<!-- Jelajah (Active Context) -->
+<button class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-xl px-4 py-1 translate-y-[-2px] transition-all scale-90 duration-200 ease-out shadow-[0_4px_10px_rgba(45,212,191,0.3)]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-[12px] font-bold mt-1">Jelajah</span>
+</button>
+<!-- Game (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 rounded-xl transition-colors">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-[12px] font-semibold mt-1">Game</span>
+</button>
+<!-- Badge (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 rounded-xl transition-colors">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-[12px] font-semibold mt-1">Badge</span>
+</button>
+<!-- Tanya AI (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 rounded-xl transition-colors">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md text-[12px] font-semibold mt-1">Tanya AI</span>
+</button>
+</nav>
+</body></html>

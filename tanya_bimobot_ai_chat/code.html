@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tanya BimoBot - Nusantara Explorers</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed-dim": "#ffb783",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "primary-container": "#2dd4bf",
+                      "inverse-surface": "#233144",
+                      "surface-container-high": "#dce9ff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-container": "#7e3913",
+                      "primary": "#006b5f",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "on-secondary-fixed": "#301400",
+                      "on-primary-container": "#00574d",
+                      "on-error": "#ffffff",
+                      "background": "#f8f9ff",
+                      "surface-container-low": "#eff4ff",
+                      "outline": "#6b7a76",
+                      "on-secondary-container": "#693300",
+                      "surface-container": "#e6eeff",
+                      "surface-variant": "#d5e3fc",
+                      "inverse-primary": "#3cddc7",
+                      "outline-variant": "#bacac5",
+                      "tertiary": "#944a23",
+                      "primary-fixed": "#62fae3",
+                      "error-container": "#ffdad6",
+                      "inverse-on-surface": "#eaf1ff",
+                      "tertiary-container": "#ffaa81",
+                      "on-background": "#0d1c2e",
+                      "secondary": "#944a00",
+                      "on-primary-fixed-variant": "#005047",
+                      "tertiary-fixed": "#ffdbcc",
+                      "surface-tint": "#006b5f",
+                      "surface-container-highest": "#d5e3fc",
+                      "on-surface-variant": "#3c4a46",
+                      "on-error-container": "#93000a",
+                      "surface-dim": "#ccdbf3",
+                      "primary-fixed-dim": "#3cddc7",
+                      "on-secondary-fixed-variant": "#713700",
+                      "surface": "#f8f9ff",
+                      "on-tertiary-fixed": "#351000",
+                      "on-primary-fixed": "#00201c",
+                      "surface-bright": "#f8f9ff",
+                      "error": "#ba1a1a",
+                      "on-surface": "#0d1c2e",
+                      "secondary-fixed": "#ffdcc5",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "secondary-container": "#fd933d",
+                      "on-primary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-desktop": "64px",
+                      "container-max": "1200px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Quicksand"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Quicksand"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-md": [
+                              "Quicksand"
+                      ],
+                      "headline-xl": [
+                              "Quicksand"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "34px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .animate-bounce-short {
+            animation: bounce-short 0.5s ease-in-out 1;
+        }
+        @keyframes bounce-short {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10%); }
+        }
+        
+        /* Ambient Shadows */
+        .shadow-ambient-primary {
+            box-shadow: 0 4px 12px rgba(45, 212, 191, 0.2);
+        }
+        .shadow-ambient-secondary {
+            box-shadow: 0 4px 12px rgba(253, 147, 61, 0.2);
+        }
+        .shadow-ambient-surface {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* 3D Button Effect */
+        .btn-3d {
+            border-bottom: 4px solid var(--tw-colors-secondary);
+            transition: all 0.1s ease;
+        }
+        .btn-3d:active {
+            border-bottom-width: 0px;
+            transform: translateY(4px);
+        }
+
+        /* Hide scrollbar for chips */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-on-background w-full top-0 shadow-sm fixed z-40 bg-surface-container dark:bg-inverse-surface">
+<div class="flex items-center justify-between px-margin-mobile h-16 w-full">
+<button class="text-primary dark:text-primary-fixed-dim hover:bg-surface-variant/50 transition-transform duration-200 active:scale-95 p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed-dim truncate">
+                Tanya BimoBot
+            </h1>
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden border-2 border-primary-container shadow-ambient-primary flex items-center justify-center">
+<!-- BimoBot Avatar -->
+<span class="material-symbols-outlined text-primary-container text-2xl" data-icon="smart_toy" data-weight="fill" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+</div>
+</div>
+</header>
+<!-- Main Chat Canvas -->
+<main class="flex-1 flex flex-col w-full relative">
+<div id="chat-messages" class="flex-1 overflow-y-auto pt-20 pb-[180px] px-margin-mobile flex flex-col gap-6 md:px-margin-desktop md:max-w-container-max md:mx-auto w-full">
+<!-- BimoBot Message -->
+<div class="flex items-end gap-3 self-start max-w-[85%] md:max-w-[70%] group">
+<div class="w-8 h-8 rounded-full bg-primary-container flex-shrink-0 flex items-center justify-center shadow-ambient-primary mb-1">
+<span class="material-symbols-outlined text-on-primary-container text-sm" data-icon="smart_toy" data-weight="fill" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+</div>
+<div class="bg-surface-container-high text-on-surface rounded-2xl rounded-bl-sm px-5 py-4 shadow-ambient-surface relative">
+<p class="font-body-md text-body-md">
+                    Halo Penjelajah! Aku BimoBot. Kamu mau tanya apa hari ini tentang alam Indonesia?
+                </p>
+</div>
+</div>
+<!-- User Message -->
+<div class="flex items-end gap-3 self-end max-w-[85%] md:max-w-[70%]">
+<div class="bg-primary text-on-primary rounded-2xl rounded-br-sm px-5 py-4 shadow-ambient-primary">
+<p class="font-body-md text-body-md">
+                    Kenapa hidung Bekantan besar?
+                </p>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary-container flex-shrink-0 flex items-center justify-center shadow-ambient-secondary mb-1 overflow-hidden">
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="A small, cheerful avatar image representing a child user in the Nusantara Explorers app. The image features a bright, cartoon-like depiction of a smiling young explorer with a simple pith helmet, set against a vibrant orange background. The style is playful, 2D vector art, suitable for a safe, educational children's application. Lighting is flat and bright." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8fp8nqJKu7ilXSTx-q4LO_4FFHDpC97WD4OQGC5M4Mi_LSyN3hshnwXGm6b8xSyrElFcAF6vRR5n6qYv3SoFN6ZPQOm_nxNVxZpLpGQ2QeK6EZD3HVdO8JO0DNuutxVXGR-sBGiLkCEnzATmr410Tp5Osv4dU31bKFl_yMcd2TZlMs-RxOx0cTK21gn8lupiRoZN1Wa0a_xsXb21B_VpQ5tgh6am18cH4gFobsDeCI7-vmhGDNZqws1ml9kRGt5mEyNQq_C89S0s"/>
+</div>
+</div>
+<!-- BimoBot Message -->
+<div class="flex items-end gap-3 self-start max-w-[85%] md:max-w-[70%] group">
+<div class="w-8 h-8 rounded-full bg-primary-container flex-shrink-0 flex items-center justify-center shadow-ambient-primary mb-1">
+<span class="material-symbols-outlined text-on-primary-container text-sm" data-icon="smart_toy" data-weight="fill" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+</div>
+<div class="bg-surface-container-high text-on-surface rounded-2xl rounded-bl-sm px-5 py-4 shadow-ambient-surface relative">
+<p class="font-body-md text-body-md">
+                    Wah, pertanyaan bagus! Hidung besar Bekantan jantan itu gunanya untuk menarik perhatian betina dan juga untuk mengeluarkan suara keras untuk memperingatkan teman-temannya dari bahaya!
+                </p>
+</div>
+</div>
+</div>
+<!-- Bottom Input Area (Fixed above BottomNavBar on Mobile) -->
+<div class="fixed bottom-20 md:bottom-0 left-0 w-full z-30 bg-gradient-to-t from-surface via-surface to-transparent pt-8 pb-4 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto flex flex-col gap-4">
+<!-- Suggestion Chips -->
+<div id="chat-chips" class="flex gap-3 overflow-x-auto no-scrollbar pb-2">
+<button class="whitespace-nowrap bg-surface-container text-on-surface font-label-md text-label-md px-4 py-2 rounded-full border-2 border-surface-variant hover:bg-surface-variant hover:border-outline-variant transition-colors shadow-sm flex-shrink-0">
+                    Kenapa Komodo lidahnya bercabang?
+                </button>
+<button class="whitespace-nowrap bg-surface-container text-on-surface font-label-md text-label-md px-4 py-2 rounded-full border-2 border-surface-variant hover:bg-surface-variant hover:border-outline-variant transition-colors shadow-sm flex-shrink-0">
+                    Dimana rumah Badak Jawa?
+                </button>
+<button class="whitespace-nowrap bg-surface-container text-on-surface font-label-md text-label-md px-4 py-2 rounded-full border-2 border-surface-variant hover:bg-surface-variant hover:border-outline-variant transition-colors shadow-sm flex-shrink-0">
+                    Apa makanan favorit Orangutan?
+                </button>
+</div>
+<!-- Input Field -->
+<div class="flex items-center gap-2 bg-surface-container-lowest rounded-full p-2 border-2 border-surface-variant shadow-ambient-surface focus-within:border-primary-container focus-within:ring-2 focus-within:ring-primary-container/20 transition-all">
+<button class="p-3 text-outline hover:text-primary transition-colors rounded-full hover:bg-surface-container">
+<span class="material-symbols-outlined" data-icon="mic">mic</span>
+</button>
+<input id="chat-input" class="flex-1 bg-transparent border-none focus:ring-0 font-body-md text-body-md text-on-surface placeholder:text-outline-variant py-3 px-2" placeholder="Tanya sesuatu ke BimoBot..." type="text"/>
+<button id="chat-send" class="bg-secondary-container text-on-secondary-container p-3 rounded-full hover:bg-secondary hover:text-on-secondary transition-colors shadow-ambient-secondary btn-3d flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="send" data-weight="fill" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-surface-container-lowest dark:bg-inverse-surface fixed bottom-0 w-full rounded-t-lg shadow-[0_-4px_10px_rgba(0,0,0,0.05)] shadow-lg fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2">
+<!-- Jelajah -->
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant px-4 py-1 hover:bg-surface-container-high dark:hover:bg-surface-variant transition-all duration-300 active:translate-y-1 rounded-xl" href="#/explore">
+<span class="material-symbols-outlined mb-1" data-icon="explore">explore</span>
+<span class="font-label-md text-label-md">Jelajah</span>
+</a>
+<!-- Misi -->
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant px-4 py-1 hover:bg-surface-container-high dark:hover:bg-surface-variant transition-all duration-300 active:translate-y-1 rounded-xl" href="#/games">
+<span class="material-symbols-outlined mb-1" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label-md text-label-md">Misi</span>
+</a>
+<!-- BimoBot (Active) -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1 animate-bounce-short hover:bg-surface-container-high dark:hover:bg-surface-variant transition-all duration-300 active:translate-y-1" href="#/ai">
+<span class="material-symbols-outlined mb-1" data-icon="smart_toy" data-weight="fill" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+<span class="font-label-md text-label-md">BimoBot</span>
+</a>
+<!-- Profil -->
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant px-4 py-1 hover:bg-surface-container-high dark:hover:bg-surface-variant transition-all duration-300 active:translate-y-1 rounded-xl" href="#/badges">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-label-md text-label-md">Profil</span>
+</a>
+</nav>
+<!-- Desktop Navigation Cluster (Hidden on Mobile) -->
+<div class="hidden md:flex fixed top-0 right-margin-desktop h-16 items-center gap-6 z-50">
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors flex items-center gap-2" href="#/explore">
+<span class="material-symbols-outlined" data-icon="explore">explore</span> Jelajah
+        </a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors flex items-center gap-2" href="#/games">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span> Misi
+        </a>
+<a class="text-primary font-label-md text-label-md flex items-center gap-2 bg-primary-container/20 px-4 py-2 rounded-full" href="#/ai">
+<span class="material-symbols-outlined" data-icon="smart_toy" data-weight="fill" style="font-variation-settings: 'FILL' 1;">smart_toy</span> BimoBot
+        </a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors flex items-center gap-2" href="#/badges">
+<span class="material-symbols-outlined" data-icon="person">person</span> Profil
+        </a>
+</div>
+
+<script>
+(function() {
+  var messages = document.getElementById("chat-messages");
+  var input = document.getElementById("chat-input");
+  var send = document.getElementById("chat-send");
+  var chips = document.getElementById("chat-chips");
+
+  if (!messages || !input || !send || !chips) return;
+
+  var userAvatar = "https://lh3.googleusercontent.com/aida-public/AB6AXuD8fp8nqJKu7ilXSTx-q4LO_4FFHDpC97WD4OQGC5M4Mi_LSyN3hshnwXGm6b8xSyrElFcAF6vRR5n6qYv3SoFN6ZPQOm_nxNVxZpLpGQ2QeK6EZD3HVdO8JO0DNuutxVXGR-sBGiLkCEnzATmr410Tp5Osv4dU31bKFl_yMcd2TZlMs-RxOx0cTK21gn8lupiRoZN1Wa0a_xsXb21B_VpQ5tgh6am18cH4gFobsDeCI7-vmhGDNZqws1ml9kRGt5mEyNQq_C89S0s";
+
+  function appendBotMessage(text) {
+    var div = document.createElement("div");
+    div.className = "flex items-end gap-3 self-start max-w-[85%] md:max-w-[70%] group pop-in";
+    div.innerHTML = 
+      '<div class="w-8 h-8 rounded-full bg-primary-container flex-shrink-0 flex items-center justify-center shadow-ambient-primary mb-1">' +
+        '<span class="material-symbols-outlined text-on-primary-container text-sm" style="font-variation-settings: \'FILL\' 1;">smart_toy</span>' +
+      '</div>' +
+      '<div class="bg-surface-container-high text-on-surface rounded-2xl rounded-bl-sm px-5 py-4 shadow-ambient-surface relative">' +
+        '<p class="font-body-md text-body-md">' + text + '</p>' +
+      '</div>';
+    messages.appendChild(div);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  function appendUserMessage(text) {
+    var div = document.createElement("div");
+    div.className = "flex items-end gap-3 self-end max-w-[85%] md:max-w-[70%] pop-in";
+    div.innerHTML = 
+      '<div class="bg-primary text-on-primary rounded-2xl rounded-br-sm px-5 py-4 shadow-ambient-primary">' +
+        '<p class="font-body-md text-body-md">' + text + '</p>' +
+      '</div>' +
+      '<div class="w-8 h-8 rounded-full bg-secondary-container flex-shrink-0 flex items-center justify-center shadow-ambient-secondary mb-1 overflow-hidden">' +
+        '<img alt="User Avatar" class="w-full h-full object-cover" src="' + userAvatar + '">' +
+      '</div>';
+    messages.appendChild(div);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  var typingBubble = null;
+  function showTyping() {
+    if (typingBubble) return;
+    typingBubble = document.createElement("div");
+    typingBubble.className = "flex items-end gap-3 self-start max-w-[85%] md:max-w-[70%] group pop-in";
+    typingBubble.innerHTML = 
+      '<div class="w-8 h-8 rounded-full bg-primary-container flex-shrink-0 flex items-center justify-center shadow-ambient-primary mb-1">' +
+        '<span class="material-symbols-outlined text-on-primary-container text-sm" style="font-variation-settings: \'FILL\' 1;">smart_toy</span>' +
+      '</div>' +
+      '<div class="bg-surface-container-high text-on-surface rounded-2xl rounded-bl-sm px-5 py-4 shadow-ambient-surface relative">' +
+        '<div class="flex items-center gap-1.5 py-1.5 px-3">' +
+          '<div class="w-2 h-2 bg-primary rounded-full animate-bounce" style="animation-delay: 0s"></div>' +
+          '<div class="w-2 h-2 bg-primary rounded-full animate-bounce" style="animation-delay: 0.15s"></div>' +
+          '<div class="w-2 h-2 bg-primary rounded-full animate-bounce" style="animation-delay: 0.3s"></div>' +
+        '</div>' +
+      '</div>';
+    messages.appendChild(typingBubble);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  function hideTyping() {
+    if (typingBubble && typingBubble.parentNode) {
+      typingBubble.parentNode.removeChild(typingBubble);
+    }
+    typingBubble = null;
+  }
+
+  var QA_KNOWLEDGE = {
+    "komodo": "Komodo adalah kadal terbesar di dunia! Lidah mereka bercabang dua untuk mendeteksi bau mangsa atau makanan hingga jarak 9 km! Keren kan?",
+    "badak": "Badak Jawa hanya tersisa sedikit sekali dan tinggal di Taman Nasional Ujung Kulon. Mereka punya cula satu yang sangat langka dan suka berendam di lumpur agar kulitnya tetap sejuk.",
+    "orangutan": "Orangutan adalah kera besar yang sangat cerdas. Makanan kesukaan mereka adalah buah-buahan seperti durian, rambutan, dan mangga. Mereka juga suka membuat sarang baru dari dedaunan di atas pohon setiap malam!",
+    "rupiah": "Uang Rupiah adalah mata uang resmi negara kita Indonesia! Pecahan kertas terbesarnya adalah Rp100.000, sedangkan pecahan logam terkecilnya adalah Rp100.",
+    "sate": "Sate adalah potongan daging kecil yang ditusuk dengan bilah bambu lalu dibakar memakai arang kayu. Biasanya sate disajikan dengan bumbu kacang yang gurih manis atau bumbu kecap pedas!",
+    "rendang": "Rendang adalah makanan terlezat di dunia dari Sumatra Barat! Rendang dimasak sangat lama dengan santan kelapa dan banyak rempah khas Indonesia sehingga rasanya sangat kaya.",
+    "borobudur": "Candi Borobudur adalah candi Buddha terbesar di dunia! Candi ini dibangun pada zaman Kerajaan Syailendra dan memiliki 504 patung Buddha serta relief indah yang bercerita tentang kehidupan kuno.",
+    "prambanan": "Candi Prambanan adalah candi Hindu terindah di Indonesia. Menurut legenda, candi ini dibangun oleh Bandung Bondowoso dalam satu malam untuk Roro Jonggrang, lho!",
+    "wayang": "Wayang Kulit adalah kesenian tradisional Jawa yang terbuat dari kulit sapi atau kerbau. Wayang dimainkan oleh seorang Dalang di balik layar putih dengan sorotan lampu blencong.",
+    "toba": "Danau Toba di Sumatra Utara adalah danau vulkanik terbesar di dunia! Di tengah danau ini terdapat sebuah pulau yang sangat indah bernama Pulau Samosir.",
+    "bulan": "Bulan berubah bentuk (fase bulan) karena dia mengitari Bumi! Bagian Bulan yang terkena sinar matahari akan terlihat berbeda-beda dari Bumi seiring berjalannya waktu.",
+    "hujan": "Air hujan terbentuk dari air laut, danau, atau sungai yang menguap karena panas matahari menjadi awan. Ketika awan sudah terlalu berat menampung air, jatuhlah rintik hujan ke bumi!",
+    "sampah": "Kita harus membuang sampah di tempat sampah agar lingkungan tidak kotor dan tidak menyebabkan banjir! Sampah plastik juga harus dikurangi karena butuh ratusan tahun untuk hancur.",
+    "angkasa": "Luar angkasa adalah tempat yang sangat luas di luar atmosfer Bumi. Di sana ada Matahari, planet-planet seperti Mars dan Jupiter, serta bintang-bintang yang berkilau!",
+    "pancasila": "Pancasila adalah dasar negara Indonesia yang lambangnya adalah Garuda Pancasila dengan 5 sila yang mengatur kebersamaan, keadilan, dan persatuan kita.",
+    "proklamasi": "Proklamasi Kemerdekaan Indonesia dibacakan oleh Ir. Soekarno didampingi oleh Drs. Mohammad Hatta pada tanggal 17 Agustus 1945 di Jakarta."
+  };
+
+  function getReply(userMsg) {
+    var msg = userMsg.toLowerCase();
+    for (var key in QA_KNOWLEDGE) {
+      if (msg.indexOf(key) > -1) {
+        return QA_KNOWLEDGE[key];
+      }
+    }
+    return "Pertanyaan yang hebat! Aku akan mencatatnya di buku petualanganku. Mau tahu lebih banyak tentang hewan, budaya, atau sains di Indonesia? Coba tanyakan hal lain ya! 😊";
+  }
+
+  function handleSend(text) {
+    if (!text.trim()) return;
+    appendUserMessage(text);
+    input.value = "";
+    showTyping();
+
+    setTimeout(function() {
+      hideTyping();
+      var reply = getReply(text);
+      appendBotMessage(reply);
+    }, 1200);
+  }
+
+  send.onclick = function() { handleSend(input.value); };
+  input.onkeydown = function(e) { if (e.key === "Enter") handleSend(input.value); };
+
+  function setChips(queries) {
+    chips.innerHTML = "";
+    queries.forEach(function(q) {
+      var btn = document.createElement("button");
+      btn.className = "whitespace-nowrap bg-surface-container text-on-surface font-label-md text-label-md px-4 py-2 rounded-full border-2 border-surface-variant hover:bg-surface-variant hover:border-outline-variant transition-colors shadow-sm flex-shrink-0";
+      btn.textContent = q;
+      btn.onclick = function() { handleSend(q); };
+      chips.appendChild(btn);
+    });
+  }
+
+  var topic = window.BIMOBOT_INIT_TOPIC || "";
+  if (topic) {
+    messages.innerHTML = "";
+    appendBotMessage("Halo Penjelajah! Aku lihat kamu sedang membaca tentang **" + topic + "**. Ada yang ingin kamu tanyakan tentang " + topic + "? 🤖");
+    
+    var normalized = topic.toLowerCase();
+    if (normalized.indexOf("komodo") > -1) {
+      setChips([
+        "Kenapa Komodo lidahnya bercabang?",
+        "Di mana Komodo tinggal?",
+        "Apa makanan Komodo?"
+      ]);
+    } else if (normalized.indexOf("borobudur") > -1) {
+      setChips([
+        "Siapa yang membangun Candi Borobudur?",
+        "Berapa jumlah stupa di Candi Borobudur?",
+        "Di mana letak Candi Borobudur?"
+      ]);
+    } else if (normalized.indexOf("rendang") > -1) {
+      setChips([
+        "Terbuat dari apa Rendang itu?",
+        "Kenapa Rendang dimasak sangat lama?",
+        "Dari mana asal makanan Rendang?"
+      ]);
+    } else {
+      setChips([
+        "Beri tahu aku fakta seru tentang " + topic + "!",
+        "Mengapa " + topic + " sangat penting?",
+        "Ada cerita apa tentang " + topic + "?"
+      ]);
+    }
+  } else {
+    var defaultChips = chips.querySelectorAll("button");
+    defaultChips.forEach(function(btn) {
+      var q = btn.textContent.trim();
+      btn.onclick = function() { handleSend(q); };
+    });
+  }
+})();
+</script>
+</body></html>

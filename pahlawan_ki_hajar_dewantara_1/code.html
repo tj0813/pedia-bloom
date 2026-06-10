@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedia Bloom - Ki Hajar Dewantara</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed-variant": "#005047",
+                      "secondary": "#944a00",
+                      "on-error-container": "#93000a",
+                      "tertiary": "#944a23",
+                      "secondary-fixed-dim": "#ffb783",
+                      "surface-tint": "#006b5f",
+                      "surface": "#f8f9ff",
+                      "surface-bright": "#f8f9ff",
+                      "on-tertiary-fixed": "#351000",
+                      "on-secondary-fixed": "#301400",
+                      "surface-container-high": "#dce9ff",
+                      "error-container": "#ffdad6",
+                      "inverse-primary": "#3cddc7",
+                      "error": "#ba1a1a",
+                      "primary-fixed": "#62fae3",
+                      "outline-variant": "#bacac5",
+                      "on-tertiary-container": "#7e3913",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-highest": "#d5e3fc",
+                      "surface-container": "#e6eeff",
+                      "on-primary": "#ffffff",
+                      "on-primary-fixed": "#00201c",
+                      "inverse-on-surface": "#eaf1ff",
+                      "on-background": "#0d1c2e",
+                      "primary-fixed-dim": "#3cddc7",
+                      "primary-container": "#2dd4bf",
+                      "outline": "#6b7a76",
+                      "background": "#f8f9ff",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "surface-dim": "#ccdbf3",
+                      "on-primary-container": "#00574d",
+                      "surface-container-low": "#eff4ff",
+                      "inverse-surface": "#233144",
+                      "secondary-fixed": "#ffdcc5",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "on-secondary-fixed-variant": "#713700",
+                      "surface-variant": "#d5e3fc",
+                      "tertiary-container": "#ffaa81",
+                      "on-surface-variant": "#3c4a46",
+                      "secondary-container": "#fd933d",
+                      "primary": "#006b5f",
+                      "on-surface": "#0d1c2e",
+                      "tertiary-fixed": "#ffdbcc",
+                      "on-secondary-container": "#693300"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1200px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-xl": [
+                              "Quicksand"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-md": [
+                              "Quicksand"
+                      ],
+                      "headline-lg-mobile": [
+                              "Quicksand"
+                      ],
+                      "headline-lg": [
+                              "Quicksand"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "34px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: theme('colors.surface');
+            color: theme('colors.on-surface');
+        }
+        
+        .soft-shadow-primary {
+            box-shadow: 0 8px 24px -4px rgba(45, 212, 191, 0.3);
+        }
+        
+        .soft-shadow-secondary {
+            box-shadow: 0 8px 24px -4px rgba(253, 147, 61, 0.3);
+        }
+        
+        .card-blur {
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        .bouncy-hover:hover {
+            transform: translateY(-2px);
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .bouncy-active:active {
+            transform: translateY(2px);
+            transition: transform 0.1s;
+        }
+
+        /* Hide scrollbar for clean horizontal scroll */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-body-md antialiased min-h-screen flex flex-col pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-dim shadow-sm docked full-width top-0 sticky z-40">
+<div class="flex justify-between items-center w-full px-margin-mobile h-16 max-w-container-max mx-auto">
+<!-- Leading Avatar -->
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-surface-container-highest">
+<!-- Placeholder for Nara Mascot -->
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">face</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed md:font-headline-lg md:text-headline-lg tracking-tight">Pedia Bloom</h1>
+</div>
+<!-- Web Navigation (Hidden on Mobile) -->
+<nav class="hidden md:flex items-center gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:scale-105 transition-transform" href="#">Home</a>
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed flex flex-col items-center" href="#">
+                    Explore
+                    <div class="w-1.5 h-1.5 rounded-full bg-primary mt-1"></div>
+</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:scale-105 transition-transform" href="#">Game</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:scale-105 transition-transform" href="#">Badge</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:scale-105 transition-transform" href="#">Tanya AI</a>
+</nav>
+<!-- Trailing Icon -->
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-variant transition-colors active:translate-y-0.5 transition-all duration-200 hover:scale-105">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 md:py-12 flex flex-col gap-8 md:gap-12">
+<!-- Hero Section -->
+<section class="relative w-full rounded-[2rem] md:rounded-[3rem] overflow-hidden bg-surface-container-high min-h-[530px] flex flex-col justify-end p-6 md:p-12 soft-shadow-primary group">
+<!-- Background Image -->
+<div class="absolute inset-0 w-full h-full">
+<img alt="Hero Background" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="A cinematic, low-angle digital painting of a heroic, wise Indonesian figure standing in front of an old colonial-era school building. The scene is bathed in warm, golden-hour sunlight, casting long, soft shadows. The art style is vibrant, slightly stylized, and uplifting, utilizing the Pedia Bloom palette of soft teals, heritage oranges, and bright whites. The mood is inspiring and educational, evoking a sense of discovery and historical significance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqghQono4WQR53X3QZxdunepX89NWNsIA0WYyPT_KBdQxXiXTxgQc8umIJvCmuzoEF-sKWqcO-yoH_PALLtD2bt8GsY0Ww2eWx3lH2o5vBlA20EanaMRr_8dBCXii3eNJ4eSV7htjepY-3Qdnh9EitSG94yI-Jxzcq2nsc3qcMojX73itQe9VTCKAoDZYkSrxq48Lxy8RtB0K-C8Dw3afYfzHerwwjKSARI-Rir46QEj5dAYICGM49PBieTqaQa4l6vNvjPmRT5m4"/>
+<!-- Soft Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface/80 to-transparent"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 max-w-3xl flex flex-col gap-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-4 py-1.5 rounded-full inline-block">Pahlawan Nasional</span>
+<span class="bg-primary-container text-on-primary-container font-label-md text-label-md px-4 py-1.5 rounded-full inline-block flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">school</span>
+                        Pendidikan
+                    </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface">Ki Hajar Dewantara</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Bapak Pendidikan Nasional Indonesia yang percaya bahwa belajar harus seperti bermain di taman yang menyenangkan.
+                </p>
+</div>
+</section>
+<!-- Bento Grid Layout -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-min">
+<!-- Ajaran Utama Card (Large) -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-[2rem] p-6 md:p-8 border-2 border-surface-container-high soft-shadow-primary relative overflow-hidden flex flex-col gap-6">
+<!-- Decorative Icon -->
+<div class="absolute -top-4 -right-4 w-24 h-24 bg-primary-container/20 rounded-full blur-xl"></div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Ajaran Tiga Semboyan</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Semboyan ini adalah rahasia bagaimana seorang guru dan pemimpin yang baik harus bersikap. Sampai sekarang, ajaran ini masih dipakai di sekolah-sekolah kita!
+                </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+<!-- Semboyan 1 -->
+<div class="bg-surface-container rounded-xl p-5 flex flex-col gap-3 bouncy-hover transition-transform cursor-default">
+<div class="text-primary font-headline-lg-mobile text-headline-lg-mobile leading-none">1</div>
+<h3 class="font-label-md text-label-md text-on-surface">Ing Ngarso Sung Tulodo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">"Di depan memberi contoh." Seorang pemimpin harus jadi teladan yang baik.</p>
+</div>
+<!-- Semboyan 2 -->
+<div class="bg-surface-container rounded-xl p-5 flex flex-col gap-3 bouncy-hover transition-transform cursor-default">
+<div class="text-secondary font-headline-lg-mobile text-headline-lg-mobile leading-none">2</div>
+<h3 class="font-label-md text-label-md text-on-surface">Ing Madyo Mangun Karso</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">"Di tengah memberi semangat." Selalu mendukung teman-teman di sekitar.</p>
+</div>
+<!-- Semboyan 3 -->
+<div class="bg-surface-container rounded-xl p-5 flex flex-col gap-3 bouncy-hover transition-transform cursor-default">
+<div class="text-primary-fixed-dim font-headline-lg-mobile text-headline-lg-mobile leading-none">3</div>
+<h3 class="font-label-md text-label-md text-on-surface">Tut Wuri Handayani</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">"Di belakang memberi dorongan." Percaya pada kemampuan orang lain untuk maju.</p>
+</div>
+</div>
+</div>
+<!-- Hari Pendidikan Card (Tall) -->
+<div class="md:col-span-4 bg-secondary-container text-on-secondary-container rounded-[2rem] p-6 md:p-8 soft-shadow-secondary flex flex-col justify-between items-start gap-6 relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+')]"></div>
+<div class="relative z-10 flex flex-col gap-4">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-secondary-container">2 Mei</h2>
+<h3 class="font-label-md text-label-md text-on-secondary-container opacity-90">Hari Pendidikan Nasional</h3>
+</div>
+<p class="relative z-10 font-body-md text-body-md text-on-secondary-container opacity-90">
+                    Tahukah kamu? Hari ulang tahun Ki Hajar Dewantara dirayakan sebagai Hari Pendidikan Nasional untuk mengenang jasa-jasanya membangun sekolah untuk rakyat Indonesia.
+                </p>
+<button class="relative z-10 mt-auto bg-on-secondary-container text-secondary-container font-label-md text-label-md px-6 py-3 rounded-xl hover:scale-105 transition-transform bouncy-active w-full flex justify-center items-center gap-2 shadow-lg">
+<span>Pasang Pengingat</span>
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+</button>
+</div>
+<!-- Taman Siswa Section (Full Width) -->
+<div class="md:col-span-12 bg-surface-container-low rounded-[2rem] p-6 md:p-10 border-2 border-outline-variant/30 flex flex-col md:flex-row gap-8 items-center mt-4">
+<div class="flex-1 flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 bg-tertiary-container/30 text-on-tertiary-container px-4 py-2 rounded-full w-max">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">history_edu</span>
+<span class="font-label-md text-label-md">Sejarah</span>
+</div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Sekolah Taman Siswa</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Pada masa penjajahan Belanda, hanya anak-anak orang kaya dan Belanda saja yang boleh sekolah. Ki Hajar Dewantara tidak setuju!
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Ia mendirikan <strong>Perguruan Nasional Taman Siswa</strong> pada 3 Juli 1922 di Yogyakarta. Sekolah ini terbuka untuk semua anak Indonesia. Kata "Taman" dipilih agar sekolah terasa menyenangkan, bukan menakutkan.
+                    </p>
+</div>
+<div class="flex-1 w-full relative rounded-2xl overflow-hidden aspect-video border-4 border-surface-container-lowest soft-shadow-primary">
+<img alt="Taman Siswa Illustration" class="w-full h-full object-cover" data-alt="A stylized, cheerful digital illustration of a historical Indonesian school courtyard. Children in traditional 1920s Indonesian clothing are playing and reading happily under a large, shady banyan tree. The architecture is a mix of traditional Javanese pendopo and colonial elements. The color palette features vibrant teals, warm oranges, and soft creamy whites, reflecting a safe, playful, and educational environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLG2b_EKep1FmKQsBX2eqas_MBeHmEn5g0Sw076MMuGL7JN9C2G9gnRREr2x5CMTEny3Fyyrm8YAXLV-I4Cwlk0skOL0XUN-X2kU4QyK0TUg2AeqXF9YhBImbHrjla1wFAc-HOtLJ3orXWS7oYd4y5P7R-kjF8_P2rYfJ9WYR9HPxDwY10acBj1kWQ51bnQ-tRMErqpf-T9_h6ys9MKUHqUrdSAtAv4aJZDC9KxofguG6NBkdq1zeegRt47ywxILJ0NUtUyUx45pU"/>
+</div>
+</div>
+</section>
+<!-- Interactive Fun Fact Quiz (Custom Component) -->
+<section class="mt-8 bg-surface-container-lowest rounded-[2rem] p-6 md:p-8 border-2 border-primary-container soft-shadow-primary text-center">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">Waktunya Kuis!</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Siapa nama asli Ki Hajar Dewantara sebelum ia menggantinya?</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+<button class="bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md p-4 rounded-xl border-2 border-transparent hover:border-primary-container transition-all bouncy-hover text-left flex justify-between items-center group">
+<span>Raden Mas Soewardi Soerjaningrat</span>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 text-primary transition-opacity">check_circle</span>
+</button>
+<button class="bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md p-4 rounded-xl border-2 border-transparent hover:border-error-container transition-all bouncy-hover text-left flex justify-between items-center group">
+<span>Raden Mas Soerjo</span>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 text-error transition-opacity">cancel</span>
+</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-4 pt-2 bg-surface-container dark:bg-surface-container-high rounded-t-xl shadow-[0_-4px_10px_rgba(0,107,95,0.1)]">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant p-2 hover:bg-surface-variant dark:hover:bg-surface-bright rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-md text-label-md text-[10px] mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-4 py-2 translate-y-0.5 scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="explore" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md text-[10px] mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant p-2 hover:bg-surface-variant dark:hover:bg-surface-bright rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="sports_esports">sports_esports</span>
+<span class="font-label-md text-label-md text-[10px] mt-1">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant p-2 hover:bg-surface-variant dark:hover:bg-surface-bright rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="military_tech">military_tech</span>
+<span class="font-label-md text-label-md text-[10px] mt-1">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant p-2 hover:bg-surface-variant dark:hover:bg-surface-bright rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<span class="font-label-md text-label-md text-[10px] mt-1">Tanya AI</span>
+</a>
+</nav>
+<script>
+        // Simple interaction for the quiz buttons to demonstrate 'alive' UI
+        document.querySelectorAll('section.text-center button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Reset all
+                document.querySelectorAll('section.text-center button').forEach(b => {
+                    b.classList.remove('bg-primary-container', 'text-on-primary-container', 'border-primary', 'bg-error-container', 'text-on-error-container', 'border-error');
+                    b.querySelector('span.material-symbols-outlined').style.opacity = '0';
+                });
+                
+                // Simulate correct answer on the first button
+                if(this.textContent.includes('Soewardi')) {
+                    this.classList.add('bg-primary-container', 'text-on-primary-container', 'border-primary');
+                    this.querySelector('span.material-symbols-outlined').textContent = 'check_circle';
+                    this.querySelector('span.material-symbols-outlined').style.opacity = '1';
+                } else {
+                    this.classList.add('bg-error-container', 'text-on-error-container', 'border-error');
+                    this.querySelector('span.material-symbols-outlined').textContent = 'cancel';
+                    this.querySelector('span.material-symbols-outlined').style.opacity = '1';
+                }
+            });
+        });
+    </script>
+</body></html>

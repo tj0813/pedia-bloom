@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Misi Kesehatan: Gigi Kuat - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#ffdcc5",
+                      "primary-fixed": "#62fae3",
+                      "on-primary-fixed": "#00201c",
+                      "on-error": "#ffffff",
+                      "surface-variant": "#d5e3fc",
+                      "surface-container-high": "#dce9ff",
+                      "tertiary": "#944a23",
+                      "surface-dim": "#ccdbf3",
+                      "inverse-on-surface": "#eaf1ff",
+                      "secondary-container": "#fd933d",
+                      "error": "#ba1a1a",
+                      "surface-bright": "#f8f9ff",
+                      "primary-container": "#2dd4bf",
+                      "outline-variant": "#bacac5",
+                      "on-secondary-fixed": "#301400",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "surface-container-highest": "#d5e3fc",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-fixed": "#351000",
+                      "on-secondary-fixed-variant": "#713700",
+                      "on-primary-container": "#00574d",
+                      "background": "#f8f9ff",
+                      "on-tertiary-container": "#7e3913",
+                      "surface-container-low": "#eff4ff",
+                      "on-tertiary": "#ffffff",
+                      "primary": "#006b5f",
+                      "tertiary-container": "#ffaa81",
+                      "on-background": "#0d1c2e",
+                      "on-surface": "#0d1c2e",
+                      "on-error-container": "#93000a",
+                      "on-primary": "#ffffff",
+                      "surface-container": "#e6eeff",
+                      "secondary": "#944a00",
+                      "surface": "#f8f9ff",
+                      "on-primary-fixed-variant": "#005047",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "on-surface-variant": "#3c4a46",
+                      "inverse-surface": "#233144",
+                      "error-container": "#ffdad6",
+                      "outline": "#6b7a76",
+                      "inverse-primary": "#3cddc7",
+                      "tertiary-fixed": "#ffdbcc",
+                      "primary-fixed-dim": "#3cddc7",
+                      "on-secondary-container": "#693300",
+                      "surface-tint": "#006b5f",
+                      "secondary-fixed-dim": "#ffb783"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1200px",
+                      "margin-mobile": "20px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-desktop": "64px"
+              },
+              "fontFamily": {
+                      "headline-xl": [
+                              "Quicksand"
+                      ],
+                      "headline-lg-mobile": [
+                              "Quicksand"
+                      ],
+                      "headline-lg": [
+                              "Quicksand"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-md": [
+                              "Quicksand"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "34px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .squishy-btn {
+            transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .squishy-btn:active {
+            transform: scale(0.95) translateY(4px);
+            border-bottom-width: 0px !important;
+            margin-bottom: 4px;
+        }
+        .tooth-stain {
+            transition: opacity 0.3s ease;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background pb-32 md:pb-0">
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface-bright dark:bg-surface-dim shadow-sm flex justify-between items-center px-margin-mobile py-unit w-full">
+<div class="flex items-center gap-3">
+<button class="hover:opacity-80 transition-transform active:scale-95 duration-200">
+<span class="material-symbols-outlined text-primary">arrow_back</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="Nara the Explorer Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd5Xe4VHG9rlDS5Lby5oDgMKKL3rtlM4XrGocGpt2PlHTI74DkqR8Cd6VZn94bF2gqmsAU7sVKM9bHaBhViAIuaHAkH5Wc4oTRNAxLpTr2gRHUWC3AXuKOsbzef81IjwNGn3el2_L6Kuj_AsUGlLUSsdKje8IomdEGTBrdSU6l45DmvqVWYlHMphKpJUSc8z7wBx7CME2-Vt7RrKVbTRsyirKl3TWujIyjBs8sSBck1rX5yk9y7RrNDJ8LCJO8jWpQXNaYpHIRmw0"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary dark:text-primary-fixed">Pedia Bloom</h1>
+</div>
+<button class="hover:opacity-80 transition-transform active:scale-95 duration-200">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed">settings</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="pt-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto md:pt-32">
+<!-- Hero Section -->
+<section class="relative bg-surface-container-low rounded-xl p-6 md:p-10 mb-8 border-2 border-surface-variant overflow-hidden shadow-[0_4px_16px_rgba(45,212,191,0.15)] text-center">
+<div class="inline-flex items-center gap-2 bg-primary-container text-on-primary-container px-4 py-2 rounded-full font-label-md text-label-md mb-4 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">health_and_safety</span>
+                Sehat &amp; Ceria
+            </div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Misi: Gigi Sekuat Baja!</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Ayo kita belajar cara menjaga gigi agar selalu putih, bersih, dan kuat seperti pahlawan super!</p>
+<img alt="Happy child smiling" class="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full mx-auto mt-8 border-4 border-white shadow-lg" data-alt="A brightly lit, cheerful illustration-style photograph of a happy child with a big, bright smile, set against a soft teal and orange pastel background. The scene feels playful and educational, representing dental health. Lighting is soft and even, highlighting the clean, white teeth. The overall aesthetic matches the 'Pedia Bloom' brand with a mix of minimalism and friendly tactile elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcB08JMkFi7Ai9O-gzV5j00rymfv4W0OUO_NbO1SnHYqaQp2pRRT2RZvV67Y2_CbE7iDlkKZ5HquhWL1anL87R5e8UV6Ogv2XYMd98cycSuQ0wldlSajFGEuwR1zw6DpaHSEOKx3CIjAM9kYI6Yl59RQxRV8-6jR4j2FatfMri-msrRwoRA3w39U72m2HoAgdlNZAn8dvysA2ZYlHMP2T9MO8HQsSYFl2mtO8OQ-oMZQDsbSykRTR36NXbmFd1AUBcmwIwgiQC9xg"/>
+</section>
+<!-- Kuman Nakal Section -->
+<section class="mb-12">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[32px]">coronavirus</span>
+                Awas Kuman Nakal!
+            </h3>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="bg-white rounded-xl p-6 border-2 border-surface-variant shadow-[0_4px_16px_rgba(186,26,26,0.1)] relative">
+<p class="font-body-md text-body-md text-on-surface mb-4">Kuman nakal suka sekali bersembunyi di sela-sela gigi kita setelah makan makanan manis. Kalau tidak dibersihkan, mereka bisa membuat gigi berlubang!</p>
+<div class="bg-error-container text-on-error-container p-4 rounded-lg font-label-md text-label-md">
+<span class="material-symbols-outlined align-middle mr-1">warning</span>
+                        Sikat gigi 2 kali sehari: Pagi setelah sarapan dan malam sebelum tidur.
+                    </div>
+</div>
+<div class="bg-surface-container rounded-xl p-4 flex items-center justify-center border-2 border-surface-variant overflow-hidden">
+<img alt="Toothbrush ready" class="w-full h-48 object-cover rounded-lg" data-alt="A macro, close-up shot of a toothbrush with bright green bristles and a dab of sparkling white toothpaste, ready for action. The background is a soft, blurred bathroom setting with warm orange and teal lighting reflecting the Pedia Bloom color palette. The image feels clean, fresh, and slightly playful, emphasizing the importance of brushing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6g2mo2AAjl3KzC4NoM5AfLwp1NCvUddN67viKpG-DJSQLHulZOttTSIoA_k0rhsJEgYV2xstVMAKuLi4CY-_qZz9NIRsgDCRiDBgze1RtO9MzX6oU0_zlf0M_OzAZH1WirnGaEMwsRF2Qd4oNdbv5fo5SlfiNNDyEehubG_unQx-u_KHCuYIR_c8GQpYfRxu9UiAEo1ksb5lSsYuaQL3RKIcjm2gmuDtKQwSsF3faH9Wo-q07CqMAY6GctbJ9CyQ0RVNhrQ3tcCk"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-lg bg-surface-container-lowest dark:bg-inverse-surface shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
+<div class="fixed bottom-0 left-0 w-full h-20 flex justify-around items-center px-4 pb-safe">
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md mt-1 text-[12px]">Beranda</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md mt-1 text-[12px]">Jelajah</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-label-md mt-1 text-[12px]">Main</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-label-md mt-1 text-[12px]">Lencana</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md text-label-md mt-1 text-[12px]">Tanya AI</span>
+</button>
+</div>
+</nav>
+</body></html>

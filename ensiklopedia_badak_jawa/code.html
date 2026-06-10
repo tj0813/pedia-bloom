@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jelajah Badak Jawa - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#ccdbf3",
+                    "secondary": "#944a00",
+                    "on-error": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#dce9ff",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#ffaa81",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-primary-container": "#00574d",
+                    "inverse-primary": "#3cddc7",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#62fae3",
+                    "secondary-fixed": "#ffdcc5",
+                    "surface-tint": "#006b5f",
+                    "on-primary-fixed-variant": "#005047",
+                    "primary-fixed-dim": "#3cddc7",
+                    "surface": "#f8f9ff",
+                    "on-secondary-container": "#693300",
+                    "primary": "#006b5f",
+                    "on-tertiary-container": "#7e3913",
+                    "surface-container-highest": "#d5e3fc",
+                    "primary-container": "#2dd4bf",
+                    "tertiary": "#944a23",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#ffb783",
+                    "on-tertiary-fixed-variant": "#76330d",
+                    "on-secondary-fixed-variant": "#713700",
+                    "surface-bright": "#f8f9ff",
+                    "on-primary-fixed": "#00201c",
+                    "outline": "#6b7a76",
+                    "on-secondary-fixed": "#301400",
+                    "on-tertiary-fixed": "#351000",
+                    "background": "#f8f9ff",
+                    "tertiary-fixed-dim": "#ffb693",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#0d1c2e",
+                    "inverse-surface": "#233144",
+                    "on-tertiary": "#ffffff",
+                    "on-background": "#0d1c2e",
+                    "surface-variant": "#d5e3fc",
+                    "surface-container-low": "#eff4ff",
+                    "surface-container": "#e6eeff",
+                    "on-surface-variant": "#3c4a46",
+                    "outline-variant": "#bacac5",
+                    "tertiary-fixed": "#ffdbcc",
+                    "secondary-container": "#fd933d",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "container-max": "1200px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "safe": "env(safe-area-inset-bottom, 20px)"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Quicksand"],
+                    "headline-lg-mobile": ["Quicksand"],
+                    "label-md": ["Quicksand"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Quicksand"]
+            },
+            "fontSize": {
+                    "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                    "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .bounce-hover:hover { transform: translateY(-2px); }
+        .bounce-active:active { transform: translateY(2px) scale(0.98); }
+        .soft-shadow-primary { box-shadow: 0 8px 24px -4px rgba(45, 212, 191, 0.25); }
+        .soft-shadow-secondary { box-shadow: 0 8px 24px -4px rgba(253, 147, 61, 0.25); }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* 3D Button Effect */
+        .btn-3d {
+            border-bottom-width: 4px;
+            transition: all 0.2s ease;
+        }
+        .btn-3d:active {
+            border-bottom-width: 0px;
+            transform: translateY(4px);
+            margin-bottom: 4px; /* Compensate for lost border to keep layout stable */
+        }
+        
+        /* Progress Bar Animation */
+        @keyframes progress-walk {
+            0% { transform: translateX(0) rotate(0deg); }
+            25% { transform: translateX(25%) rotate(5deg); }
+            50% { transform: translateX(50%) rotate(0deg); }
+            75% { transform: translateX(75%) rotate(-5deg); }
+            100% { transform: translateX(100%) rotate(0deg); }
+        }
+        
+        /* Pulse Animation */
+        @keyframes soft-pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.8; }
+        }
+        .animate-soft-pulse { animation: soft-pulse 3s infinite ease-in-out; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md antialiased pb-32">
+<!-- TopAppBar: Rendered on all sizes, but adapted based on JSON rules -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-surface shadow-sm">
+<div class="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold tracking-tight">Pedia Bloom</span>
+</div>
+<!-- Desktop Nav Items (Hidden on Mobile) -->
+<nav class="hidden md:flex gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80 transition-all flex flex-col items-center group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:-translate-y-1 transition-transform">home</span>
+<span>Home</span>
+</a>
+<a class="font-label-md text-label-md text-primary flex flex-col items-center" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="border-b-2 border-primary pb-1">Jelajah</span>
+</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80 transition-all flex flex-col items-center group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:-translate-y-1 transition-transform">sports_esports</span>
+<span>Game</span>
+</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80 transition-all flex flex-col items-center group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:-translate-y-1 transition-transform">military_tech</span>
+<span>Badge</span>
+</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80 transition-all flex flex-col items-center group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:-translate-y-1 transition-transform">psychology_alt</span>
+<span>Tanya AI</span>
+</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary hover:opacity-80 transition-transform hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined">search</span>
+</button>
+<div class="w-10 h-10 rounded-full bg-secondary-container overflow-hidden border-2 border-surface border-white soft-shadow-secondary hover:opacity-80 transition-transform hover:scale-105 cursor-pointer">
+<!-- Avatar placeholder -->
+<img alt="Nara Mascot" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaYGnhzDi9PHMmygdGkhaYDzr9EedlsYemTayi5msImuH7rZ_9Y3EQM8L-Og4LyK492B8U3wSpPXqlp_Rs8gBgKI3GETUVZ4uFWbrihHucWNEwiDiL15sqyT2j8gHxSTm_Ign0SwMP8Orwpqhv12WljrLgaposYXwviIcppolokpkUOVJ1RkVpbpHBND6-Vax9zo4sstIiruIv4B80f6n21GCYOZk0dtAwmQz9OkLOzIBYBPpjjhRrLcQi0I36rjZ_2G-I7mhC1Kk"/>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Progress Tracker (Path Metaphor) -->
+<div class="mb-8 flex items-center gap-4">
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-colors active:scale-95">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div class="flex-1 h-4 bg-surface-container-high rounded-full relative overflow-hidden">
+<div class="absolute top-0 left-0 h-full bg-primary-container w-1/3 rounded-full"></div>
+</div>
+<span class="font-label-md text-label-md text-primary bg-primary-container px-3 py-1 rounded-full">1 / 3 Bagian</span>
+</div>
+<!-- Hero Section: Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-unit md:gap-gutter mb-12">
+<!-- Main Hero Card -->
+<div class="md:col-span-8 bg-white rounded-xl md:rounded-lg overflow-hidden border-2 border-surface-container relative soft-shadow-primary flex flex-col h-full min-h-[400px]">
+<!-- Mascot Peek -->
+<div class="absolute -top-4 -right-4 w-20 h-20 bg-secondary-container rounded-full flex items-center justify-center border-4 border-white z-10 shadow-sm transform rotate-12">
+<img alt="Nara Peeking" class="w-12 h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALUxraToTBPSvEHHBXYDCwy1cm_SjOhB3etcmvG5D9Ji9JydX1xQiuHRIwwzsHkPmO1q1e3vbFekx75P89zWYkC5IYVpCPrF6I2PxDydwQu3FXmUkJWXwDNN0mv6jC3HXLE7Lo41_YlaUuipEA4QbgXqEO0-n1sl_UBOu1CmKpe2a79S6EHvAjkoNhq1T610xIsqHi5k9lWHJmwC5FCFJGFU3zl3fNw-C-GJNbaTFAzkzeQFwXEEpwuW6L97FooR83iR4mJmm0dMM"/>
+</div>
+<div class="h-64 relative w-full overflow-hidden">
+<img alt="Badak Jawa" class="absolute inset-0 w-full h-full object-cover object-center" data-alt="A friendly, slightly stylized, high-quality photograph of a rhinoceros in a lush green jungle setting. The lighting is bright and cheerful, emphasizing the vibrant greens of the foliage and the rough texture of the rhino's skin. The overall mood is curious and safe, fitting for a children's educational platform with a light-mode, modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBowgMahO08EkgG_aRB81mNTvx2Hkk-Lyp9NrC5CTR7hcdgJkWQRbUMlfuzU8OuJH0flad-g3NsePJ-lN4yxZTK1OAvj_cFxDwvColhHI06S8OUqtqr3onNk8yDsRkqhoC8Kc0LYBKJrlmI6CAHzSOz-vnyn96NWOZ_c7ewrK8gfvXR_DUG6HQmDseIVQE4jMxQhaJGimsZUckGsFEc2ONRhe9gzRUmTZ2CMG7Rs9qrQubHFnWZ5KwzO81Cl83zQkgJHKs9YDS1tyc"/>
+<!-- Chips overlay -->
+<div class="absolute top-4 left-4 flex gap-2 z-10">
+<span class="bg-primary text-on-primary font-label-md text-label-md px-3 py-1 rounded-full shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">pets</span> Hewan
+                        </span>
+<span class="bg-error text-on-error font-label-md text-label-md px-3 py-1 rounded-full shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">warning</span> Sangat Langka
+                        </span>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col bg-white z-20 -mt-6 rounded-t-xl">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-2">Badak Jawa</h1>
+<h2 class="font-body-lg text-body-lg text-on-surface-variant mb-4 italic">(Rhinoceros sondaicus)</h2>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                        Halo, penjelajah! Kenalkan, ini Badak Jawa. Dia adalah salah satu mamalia paling langka di dunia! Badak ini sangat pemalu dan lebih suka menyendiri di dalam hutan lebat.
+                    </p>
+</div>
+</div>
+<!-- Side Bento Cards -->
+<div class="md:col-span-4 flex flex-col gap-unit md:gap-gutter">
+<!-- Fact 1: Single Horn -->
+<div class="bg-surface-container-low rounded-xl border-2 border-surface-container p-6 flex flex-col items-center text-center soft-shadow-primary flex-1 justify-center relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary-container rounded-bl-full opacity-20 -z-0 group-hover:scale-110 transition-transform"></div>
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-4 z-10">
+<span class="material-symbols-outlined text-primary text-4xl">change_history</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2 z-10">Cula Tunggal</h3>
+<p class="font-body-md text-body-md text-on-surface-variant z-10">
+                        Berbeda dengan badak lain, Badak Jawa jantan hanya memiliki <b>satu cula</b>. Yang betina biasanya tidak punya cula lho!
+                    </p>
+</div>
+<!-- Fact 2: Location -->
+<div class="bg-secondary-fixed rounded-xl border-2 border-secondary-fixed-dim p-6 flex flex-col items-center text-center soft-shadow-secondary flex-1 justify-center relative group">
+<div class="w-16 h-16 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center mb-4 transform group-hover:rotate-12 transition-transform">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-secondary-fixed mb-2">Ujung Kulon</h3>
+<p class="font-body-md text-body-md text-on-secondary-fixed-variant">
+                        Rumah satu-satunya di seluruh dunia! Mereka tinggal dengan damai di Taman Nasional Ujung Kulon, Banten.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Call to Action & Quiz Section -->
+<section class="mb-12">
+<div class="bg-surface-container-highest rounded-xl p-8 md:p-12 border-2 border-outline-variant relative overflow-hidden flex flex-col md:flex-row items-center gap-8">
+<!-- Decorative background elements -->
+<div class="absolute -bottom-10 -left-10 w-40 h-40 bg-tertiary-container rounded-full opacity-50 blur-2xl"></div>
+<div class="absolute top-10 right-10 w-32 h-32 bg-primary-container rounded-full opacity-50 blur-2xl"></div>
+<div class="w-full md:w-1/3 flex justify-center z-10">
+<img alt="Nara Mascot Hero" class="w-48 h-48 rounded-full border-4 border-white shadow-lg animate-soft-pulse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTi5Y9BrrEMZ_Ib8w1gejd9r363IDnKYleI4lU6ji_HL9NM63N37e0JCebyCpOllb83kyTQ_454ndXZQYlFmA-xgLoVYJ09E98DqP7IEljhbDUWHjeoOZk_SfFeJv4fhA9akqJGo5t03bRaBOYRyNJbquXuLIqrHgXrQj9Lj8eBCw23R3VHzpcM_wytIeCgGWLXO_8sbmr0ONlYCRIVohnECdnieGbb7XJvThh1Xdesw3er_yWj7-cLQK8yzBsr5Xq7AtDsVoEKbE"/>
+</div>
+<div class="w-full md:w-2/3 flex flex-col items-center md:items-start text-center md:text-left z-10">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Ayo Lindungi Hutan!</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-2xl">
+                        Badak Jawa sangat langka. Jumlah mereka sangat sedikit karena hutan tempat tinggal mereka pernah rusak. Kalau kita menjaga hutan, kita juga menjaga teman-teman badak ini. Mau jadi Pelindung Badak?
+                    </p>
+<button class="bg-secondary text-on-secondary font-label-md text-label-md px-8 py-4 rounded-xl btn-3d border-on-secondary-container flex items-center gap-3 w-full md:w-auto justify-center hover:bg-opacity-90">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+                        Ambil Kuis "Pelindung Badak"
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar: Mobile Only (as dictated by design system response rules) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 pb-safe bg-surface-container-lowest shadow-[0_-4px_10px_rgba(0,107,95,0.1)] rounded-t-lg">
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant px-4 py-1.5 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="font-label-md text-[12px] mt-1">Home</span>
+</a>
+<!-- Active Tab: Jelajah (Semantic Match to Encyclopedia Screen) -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1.5 transition-all duration-300 transform -translate-y-0.5 scale-95 shadow-sm" href="#">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-[12px] mt-1 font-bold">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant px-4 py-1.5 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined text-2xl">sports_esports</span>
+<span class="font-label-md text-[12px] mt-1">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant px-4 py-1.5 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined text-2xl">military_tech</span>
+<span class="font-label-md text-[12px] mt-1">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant px-4 py-1.5 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined text-2xl">psychology_alt</span>
+<span class="font-label-md text-[12px] mt-1">Tanya AI</span>
+</a>
+</nav>
+<script>
+        // Simple micro-interactions
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('mousedown', () => btn.classList.add('scale-95'));
+            btn.addEventListener('mouseup', () => btn.classList.remove('scale-95'));
+            btn.addEventListener('mouseleave', () => btn.classList.remove('scale-95'));
+        });
+    </script>
+</body></html>

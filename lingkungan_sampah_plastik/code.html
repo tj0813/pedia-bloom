@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedia Bloom - Plastik dan Bumi Kita</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#f8f9ff",
+                    "surface-container": "#e6eeff",
+                    "on-background": "#0d1c2e",
+                    "on-secondary": "#ffffff",
+                    "primary": "#006b5f",
+                    "error": "#ba1a1a",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#d5e3fc",
+                    "on-primary-container": "#00574d",
+                    "tertiary-fixed-dim": "#ffb693",
+                    "on-surface-variant": "#3c4a46",
+                    "on-secondary-fixed-variant": "#713700",
+                    "on-secondary-fixed": "#301400",
+                    "on-primary-fixed-variant": "#005047",
+                    "surface-tint": "#006b5f",
+                    "on-tertiary-container": "#7e3913",
+                    "primary-container": "#2dd4bf",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#351000",
+                    "inverse-primary": "#3cddc7",
+                    "inverse-on-surface": "#eaf1ff",
+                    "background": "#f8f9ff",
+                    "tertiary-fixed": "#ffdbcc",
+                    "secondary": "#944a00",
+                    "outline-variant": "#bacac5",
+                    "primary-fixed": "#62fae3",
+                    "on-surface": "#0d1c2e",
+                    "on-tertiary-fixed-variant": "#76330d",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#ccdbf3",
+                    "outline": "#6b7a76",
+                    "primary-fixed-dim": "#3cddc7",
+                    "surface-bright": "#f8f9ff",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#ffaa81",
+                    "on-primary-fixed": "#00201c",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#dce9ff",
+                    "secondary-container": "#fd933d",
+                    "secondary-fixed-dim": "#ffb783",
+                    "secondary-fixed": "#ffdcc5",
+                    "on-secondary-container": "#693300",
+                    "inverse-surface": "#233144",
+                    "surface-variant": "#d5e3fc",
+                    "surface-container-low": "#eff4ff",
+                    "tertiary": "#944a23"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "container-max": "1200px",
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "label-md": ["Quicksand"],
+                    "headline-lg-mobile": ["Quicksand"],
+                    "headline-lg": ["Quicksand"],
+                    "headline-xl": ["Quicksand"]
+            },
+            "fontSize": {
+                    "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .quicksand { font-family: 'Quicksand', sans-serif; }
+        .bouncy-btn {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border-bottom: 4px solid rgba(0,0,0,0.2);
+        }
+        .bouncy-btn:active {
+            transform: translateY(2px) scale(0.98);
+            border-bottom-width: 2px;
+        }
+        .oxygen-zone { padding: 40px 20px; }
+        .glow-teal { box-shadow: 0 8px 30px rgba(45, 212, 191, 0.15); }
+        .glow-orange { box-shadow: 0 8px 30px rgba(253, 147, 61, 0.2); }
+        .nara-float { animation: float 3s ease-in-out infinite; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface pb-32">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 bg-surface dark:bg-surface-dim shadow-sm flex justify-between items-center px-margin-mobile py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden">
+<img alt="Nara Mascot" class="w-full h-full object-cover" data-alt="A cute, friendly mascot character named Nara the Explorer, designed for a children's learning app. Nara has a joyful expression, wearing a small explorer's hat and a teal scarf. The illustration style is clean, vibrant, and soft-edged, perfectly fitting a modern kid-friendly UI." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl6BOe3MfQ5OcNc4bwaZwf5_m6dgOfGR7TSKlMLxFKjGlzmvvMmIYERsbtTh_Q8S10aEJUFzRZm-OCpr4HPUhkSe-tVJac7a1jEEzgz-h8xED12MJMw8xHRET8AR2W11omDx5i_jDN4fhXJMhcIvkCN3Ph3WBenGEQZCeAH-j8qruv2sjI2ck0SWfDq8ARVPCJ-hClTP4gXI0syB1bE9WcNPQTBssnOaFF22gQcaTotAaHDUJUo0Yz2DGcBwACmO7iJeBZEP9E8yw"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed-dim">Pedia Bloom</h1>
+</div>
+<button class="material-symbols-outlined text-primary dark:text-primary-fixed-dim text-3xl">search</button>
+</header>
+<main class="max-w-[1200px] mx-auto">
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden">
+<div class="aspect-[3/2] w-full relative">
+<img alt="Plastik dan Bumi Kita" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8IiqWJdWi7Fi-mTaVPOcUUAam1yxWCu7n4gcsB7R_lWSsaJRe98Pb52hkRIbknMJodCuiqpRDQJGN61oChMtlsorkxPgX3AzPbl1AO09HNnx1ivpxzA0HEVFU4sxDY-adjmuEs91ONJgsLIsihsAmGeUWkyJcQOx9RjNCAS0SY9IbdIvlnR7yzXIJ3vqEDV-VURRUq8bjm71pQ8WzTbaHcta4jMGCRqSeLjGX8gbZ7zb2p147inLXYpzxNeFiREGtEnsoxTG9olc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+</div>
+<div class="px-margin-mobile -mt-16 relative z-10">
+<div class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full inline-flex items-center gap-2 mb-4 font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm">eco</span>
+                    Lingkungan
+                </div>
+<h2 class="font-headline-xl text-headline-xl mb-4 leading-tight">Plastik dan Bumi Kita</h2>
+<div class="bg-surface-container-lowest p-6 rounded-lg glow-teal border-2 border-primary/5">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed italic">
+                        "Halo Sahabat Bumi! Pernahkah kamu berenang di laut dan melihat sampah plastik melayang seperti ubur-ubur? Wah, itu gawat sekali! Mari kita cari tahu kenapa plastik bisa berbahaya dan bagaimana kita bisa jadi Pahlawan Lingkungan!"
+                    </p>
+</div>
+</div>
+</section>
+<!-- Section 1: Apa itu Sampah Plastik? -->
+<section class="oxygen-zone">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white rounded-lg p-8 glow-teal">
+<div class="order-2 md:order-1">
+<h3 class="font-headline-lg text-headline-lg mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-4xl">question_mark</span>
+                        Apa itu Sampah Plastik?
+                    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Plastik adalah bahan buatan manusia yang sangat kuat dan tahan lama. Tapi, karena terlalu kuat, plastik tidak bisa hancur dengan sendirinya seperti kulit pisang atau daun!
+                    </p>
+</div>
+<div class="order-1 md:order-2 flex justify-center">
+<div class="w-48 h-48 bg-surface-container-highest rounded-xl flex items-center justify-center relative">
+<span class="material-symbols-outlined text-8xl text-primary">recycling</span>
+<div class="absolute -top-4 -right-4 bg-secondary-container p-3 rounded-full text-white shadow-lg">
+<span class="material-symbols-outlined">science</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Mengapa Berbahaya? -->
+<section class="px-margin-mobile mb-12">
+<div class="bg-error-container text-on-error-container p-8 rounded-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-9xl" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-lg text-headline-lg mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-4xl">report_problem</span>
+                        Mengapa Berbahaya?
+                    </h3>
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1 space-y-4">
+<p class="font-body-md text-body-md leading-relaxed">
+                                Tahukah kamu? Indonesia adalah penyumbang sampah plastik ke laut terbesar kedua di dunia. Ikan, kura-kura, dan paus seringkali mengira plastik adalah makanan mereka.
+                            </p>
+<div class="flex items-center gap-4 bg-white/50 p-4 rounded-full border border-error/20">
+<span class="material-symbols-outlined text-error">schedule</span>
+<span class="font-bold">Plastik bisa bertahan hingga 400 tahun di alam!</span>
+</div>
+</div>
+<div class="w-full md:w-1/3 flex justify-center">
+<img alt="Turtle Graphic" class="w-32 h-32 grayscale brightness-50 contrast-125" data-alt="A stylized, illustrative graphic of a sea turtle looking distressed, floating near a translucent plastic bag in murky water. The visual style is child-friendly but conveys a serious environmental message, using a color palette of muted greens and somber grays to represent ocean pollution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD11GgAmTYYiuLisUGAt2bvHIuZ-9914or3QWP0NUF6_6Bv-_DGZUAni5doxKA6XRkH1dvExtX9A5is5zbVoniiUHHA3aTcMqhimplAXlhz6g0U4eFCzKRmJbp5G7NC0dbemz3HakPLuyrYDXX6qantXmuOHOX3T7k38_-xBLDPBehDEGTtv18_I7ZKX8kfloSd7G8oH5E8-PE95zqpMWCKTirVjQDNwNvqHCnaOLOe3ZOc7v6M18eM4q_2x51NMkiqTqsQibx_imc"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Apa yang Bisa Kita Lakukan? -->
+<section class="oxygen-zone">
+<h3 class="font-headline-lg text-headline-lg mb-8 text-center">Apa yang Bisa Kita Lakukan?</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+<!-- Reduce -->
+<div class="bg-surface-container-low p-6 rounded-lg text-center hover:scale-105 transition-transform border-b-4 border-primary">
+<div class="bg-primary-container w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-on-primary-container text-3xl">shopping_bag</span>
+</div>
+<h4 class="font-bold text-lg mb-1">Reduce</h4>
+<p class="text-sm opacity-80">Bawa botol minum sendiri.</p>
+</div>
+<!-- Reuse -->
+<div class="bg-surface-container-low p-6 rounded-lg text-center hover:scale-105 transition-transform border-b-4 border-secondary-container">
+<div class="bg-secondary-fixed w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-on-secondary-fixed text-3xl">rebase_edit</span>
+</div>
+<h4 class="font-bold text-lg mb-1">Reuse</h4>
+<p class="text-sm opacity-80">Pakai tas belanja kain.</p>
+</div>
+<!-- Recycle -->
+<div class="bg-surface-container-low p-6 rounded-lg text-center hover:scale-105 transition-transform border-b-4 border-tertiary-container">
+<div class="bg-tertiary-fixed w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-3xl">delete_sweep</span>
+</div>
+<h4 class="font-bold text-lg mb-1">Recycle</h4>
+<p class="text-sm opacity-80">Pisahkan sampah plastik.</p>
+</div>
+<!-- Refuse -->
+<div class="bg-surface-container-low p-6 rounded-lg text-center hover:scale-105 transition-transform border-b-4 border-error/50">
+<div class="bg-error-container w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-on-error-container text-3xl">block</span>
+</div>
+<h4 class="font-bold text-lg mb-1">Refuse</h4>
+<p class="text-sm opacity-80">Tolak sedotan plastik.</p>
+</div>
+</div>
+</section>
+<!-- Interactive Card: Tantangan 21 Hari -->
+<section class="px-margin-mobile mb-12">
+<div class="bg-secondary-container text-on-secondary-container p-8 rounded-lg glow-orange flex flex-col md:flex-row gap-8 items-center border-4 border-white/20">
+<div class="flex-1">
+<h3 class="font-headline-lg text-headline-lg mb-2">Tantangan 21 Hari</h3>
+<p class="font-body-md text-body-md mb-6 opacity-90">
+                        Jadilah Pahlawan Lingkungan! Lakukan satu aksi hijau setiap hari selama 21 hari untuk membentuk kebiasaan baru yang keren.
+                    </p>
+<div class="mb-6">
+<div class="flex justify-between mb-2 font-bold">
+<span>Progres: 0/21 hari</span>
+<span>0%</span>
+</div>
+<div class="h-6 w-full bg-white/30 rounded-full relative overflow-hidden p-1">
+<div class="h-full w-0 bg-white rounded-full transition-all duration-1000" id="progress-bar"></div>
+<img alt="Nara Tracker" class="absolute left-0 top-1/2 -translate-y-1/2 w-8 h-8 transition-all duration-1000" id="progress-avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlcJ8h1XZ4VXJ34NKwFihBdBm8SRO1g8VMOz9VPY4UB_6SbLCkho9YGEk-BQKP2n7NrrgQ-KX_cC-1zVMZX7KhnnS61w_kd_T5BVws8Z0KqHDQaF2uLNx_Ir7zyWdprY6wA5jF9j3UShncK1tjOiSnBJkGRGJSylgm_nLf04xopObDJki4Tp6FZ0n3gaK_u2xbS_g9D5S2nAX18Wl-NuHj1LQ76gq_z7PmcQlUhcJInI-suI8QonWSxVenjquFBTlyGZGOwFN5Sfc"/>
+</div>
+</div>
+<button class="bouncy-btn bg-secondary text-white px-8 py-3 rounded-full font-headline-lg-mobile text-headline-lg-mobile w-full md:w-auto" onclick="startChallenge()">
+                        Mulai Tantangan!
+                    </button>
+</div>
+<div class="w-40 md:w-56 shrink-0 nara-float">
+<img alt="Hero Mascot" class="w-full" data-alt="A cheerful, diverse child character wearing a cape made of green leaves and a superhero mask. The character is striking a heroic pose, symbolizing environmental stewardship. The art style is bold, colorful, and highly approachable for children, set against a warm sunburst background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbdY43u7ar1bZ35AcUP43vnz985Zr0KK4Nc_eL3nZsJtsWUVhDWvz0F_PFlkOGPWA_cBmfQhYDCoDPqSsRwQfsGHyLQblKBb_sjFg3nS7Huhr5NG4zzy-iUNvPfStikXtGjD1Io7-ncO8nqF5xs1Jj6gNtm6Zi6Urvhcvlc7yT2eCDjEUo4lUiIYVO73z3JjvGbJohE1rSx9waqvl5WmHgALwO3uYdZJciDvRK2sZCAt_IorJsEfHqpQvKj2VDyvVe_e6MjfSACA8"/>
+</div>
+</div>
+</section>
+<!-- Mini Quiz -->
+<section class="oxygen-zone">
+<div class="bg-surface-container-highest p-8 rounded-lg">
+<h3 class="font-headline-lg text-headline-lg mb-8 text-center">Kuis Pahlawan Cilik</h3>
+<div class="space-y-8">
+<!-- Q1 -->
+<div class="quiz-item">
+<p class="font-bold text-xl mb-4">1. Berapa lama plastik bisa bertahan di alam?</p>
+<div class="flex flex-wrap gap-4">
+<button class="quiz-btn px-6 py-3 bg-white rounded-xl border-2 border-transparent hover:border-primary transition-all font-bold">400 tahun</button>
+<button class="quiz-btn px-6 py-3 bg-white rounded-xl border-2 border-transparent hover:border-primary transition-all font-bold">10 tahun</button>
+</div>
+</div>
+<!-- Q2 -->
+<div class="quiz-item">
+<p class="font-bold text-xl mb-4">2. Apa sebutan untuk memisahkan sampah untuk diolah lagi?</p>
+<div class="flex flex-wrap gap-4">
+<button class="quiz-btn px-6 py-3 bg-white rounded-xl border-2 border-transparent hover:border-primary transition-all font-bold">Daur Ulang</button>
+<button class="quiz-btn px-6 py-3 bg-white rounded-xl border-2 border-transparent hover:border-primary transition-all font-bold">Buang Sampah</button>
+</div>
+</div>
+<!-- Q3 -->
+<div class="quiz-item">
+<p class="font-bold text-xl mb-4">3. Manakah yang lebih baik?</p>
+<div class="flex flex-wrap gap-4">
+<button class="quiz-btn px-6 py-3 bg-white rounded-xl border-2 border-transparent hover:border-primary transition-all font-bold">Bawa Tumbler</button>
+<button class="quiz-btn px-6 py-3 bg-white rounded-xl border-2 border-transparent hover:border-primary transition-all font-bold">Pakai Gelas Sekali Pakai</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Glossary -->
+<section class="px-margin-mobile mb-12">
+<h3 class="font-headline-lg text-headline-lg mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-4xl">menu_book</span>
+                Kamus Kecil
+            </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-white p-6 rounded-lg border-l-8 border-primary glow-teal">
+<p class="font-bold text-primary mb-1 text-xl">Plastik</p>
+<p class="text-on-surface-variant">Bahan buatan manusia yang sulit hancur.</p>
+</div>
+<div class="bg-white p-6 rounded-lg border-l-8 border-secondary-container glow-teal">
+<p class="font-bold text-secondary mb-1 text-xl">Daur Ulang</p>
+<p class="text-on-surface-variant">Proses mengolah barang bekas menjadi barang baru.</p>
+</div>
+<div class="bg-white p-6 rounded-lg border-l-8 border-tertiary-container glow-teal">
+<p class="font-bold text-tertiary mb-1 text-xl">Ekosistem</p>
+<p class="text-on-surface-variant">Hubungan antara makhluk hidup dan lingkungannya.</p>
+</div>
+<div class="bg-white p-6 rounded-lg border-l-8 border-primary-container glow-teal">
+<p class="font-bold text-on-primary-container mb-1 text-xl">Terumbu Karang</p>
+<p class="text-on-surface-variant">Rumah bagi ribuan ikan di bawah laut.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface-container-lowest dark:bg-surface-container-low rounded-t-lg shadow-[0_-4px_12px_rgba(45,212,191,0.15)]">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1.5 hover:bg-surface-container-high dark:hover:bg-surface-variant rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-xl px-3 py-1.5 transition-all duration-300 scale-105" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1.5 hover:bg-surface-container-high dark:hover:bg-surface-variant rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-label-md">Main</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1.5 hover:bg-surface-container-high dark:hover:bg-surface-variant rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-label-md">Lencana</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1.5 hover:bg-surface-container-high dark:hover:bg-surface-variant rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">psychology</span>
+<span class="font-label-md text-label-md">Tanya AI</span>
+</a>
+</nav>
+<script>
+        function startChallenge() {
+            const bar = document.getElementById('progress-bar');
+            const avatar = document.getElementById('progress-avatar');
+            bar.style.width = '100%';
+            avatar.style.left = '90%';
+            
+            setTimeout(() => {
+                alert('Yey! Kamu siap memulai petualangan 21 hari menyelamatkan bumi!');
+            }, 1000);
+        }
+
+        // Simple Quiz Interaction
+        document.querySelectorAll('.quiz-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const isCorrect = this.innerText === '400 tahun' || this.innerText === 'Daur Ulang' || this.innerText === 'Bawa Tumbler';
+                
+                // Clear sibling states
+                this.parentElement.querySelectorAll('.quiz-btn').forEach(b => {
+                    b.classList.remove('bg-primary', 'text-white', 'bg-error', 'border-primary');
+                });
+
+                if (isCorrect) {
+                    this.classList.add('bg-primary', 'text-white');
+                    this.innerHTML += ' <span class="material-symbols-outlined align-middle ml-2">check_circle</span>';
+                } else {
+                    this.classList.add('bg-error', 'text-white');
+                    this.innerHTML += ' <span class="material-symbols-outlined align-middle ml-2">cancel</span>';
+                }
+            });
+        });
+
+        // Add bouncy active state for navbar icons
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('mousedown', () => {
+                link.classList.add('scale-95');
+            });
+            link.addEventListener('mouseup', () => {
+                link.classList.remove('scale-95');
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Satelit Palapa: Pemersatu Bangsa - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#bacac5",
+                      "on-tertiary-fixed": "#351000",
+                      "on-secondary-fixed": "#301400",
+                      "surface-tint": "#006b5f",
+                      "on-error": "#ffffff",
+                      "on-secondary-container": "#693300",
+                      "background": "#f8f9ff",
+                      "on-secondary": "#ffffff",
+                      "surface-dim": "#ccdbf3",
+                      "secondary-container": "#fd933d",
+                      "primary-fixed-dim": "#3cddc7",
+                      "tertiary-fixed": "#ffdbcc",
+                      "error": "#ba1a1a",
+                      "on-primary-fixed": "#00201c",
+                      "on-primary": "#ffffff",
+                      "surface-container-low": "#eff4ff",
+                      "on-tertiary-container": "#7e3913",
+                      "inverse-primary": "#3cddc7",
+                      "surface-container": "#e6eeff",
+                      "outline": "#6b7a76",
+                      "primary-fixed": "#62fae3",
+                      "primary-container": "#2dd4bf",
+                      "primary": "#006b5f",
+                      "on-error-container": "#93000a",
+                      "surface-container-highest": "#d5e3fc",
+                      "surface-bright": "#f8f9ff",
+                      "secondary-fixed-dim": "#ffb783",
+                      "on-surface-variant": "#3c4a46",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "on-primary-fixed-variant": "#005047",
+                      "on-primary-container": "#00574d",
+                      "on-surface": "#0d1c2e",
+                      "tertiary": "#944a23",
+                      "surface-container-lowest": "#ffffff",
+                      "surface": "#f8f9ff",
+                      "on-background": "#0d1c2e",
+                      "on-secondary-fixed-variant": "#713700",
+                      "tertiary-container": "#ffaa81",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "inverse-surface": "#233144",
+                      "secondary": "#944a00",
+                      "inverse-on-surface": "#eaf1ff",
+                      "surface-variant": "#d5e3fc",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-high": "#dce9ff",
+                      "secondary-fixed": "#ffdcc5"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "container-max": "1200px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "Quicksand"
+                      ],
+                      "label-md": [
+                              "Quicksand"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-xl": [
+                              "Quicksand"
+                      ],
+                      "headline-lg-mobile": [
+                              "Quicksand"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "34px",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .squishy-button {
+            transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .squishy-button:active {
+            transform: scale(0.95) translateY(2px);
+        }
+        .bouncy-card {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+        }
+        .bouncy-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -8px rgba(45, 212, 191, 0.25);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md antialiased pb-24 md:pb-0 pt-20">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-bright dark:bg-surface-dim shadow-sm flex justify-between items-center px-margin-mobile py-unit">
+<div class="flex items-center gap-3">
+<button aria-label="Back" class="p-2 rounded-full hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary dark:text-primary-fixed">Pedia Bloom</h1>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Settings" class="p-2 rounded-full hover:bg-surface-variant transition-colors text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-12 space-y-12">
+<!-- Hero Section -->
+<section class="relative w-full rounded-xl overflow-hidden shadow-lg mt-6 bg-[#0B132B]">
+<div class="aspect-video w-full relative">
+<img alt="Palapa Satellite Orbiting Earth" class="w-full h-full object-cover opacity-80" data-alt="A breathtaking, highly detailed digital illustration of a retro-futuristic satellite, resembling Indonesia's historical Palapa satellite, orbiting gracefully above the lush green islands of the Indonesian archipelago. The scene is set against a deep cosmic backdrop of starry space with subtle nebula glows in vibrant deep blues and science purples. The lighting is cinematic, with a soft teal aura illuminating the Earth's atmosphere, casting a gentle, hopeful glow on the satellite. The overall aesthetic is educational, adventurous, and magical, perfectly suited for a children's digital learning platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKxw5VJjnZesKZA8h6sK5ws0_VC11ez11NMwHHPujxDcfLcFBTvxmJa1rcam4Ja-xnommgD6RTEl40iVP6Ue2M_IWb0clUCC6SuSeiIPqxB3VHqSiLHahW9AJdYcIt_JaJ4Wiqb75yYir8rwFD3w6vyR9zuV-Ws8HNCR_tw1m09nuP4IYrvkcVVbRveR1VYXxcbm6f8AEpd3WXLVEGjaStD8_o7ht9FCfM_SGsUCWws4KJvZHzVNeWaNEXv2oYM118hevYj22PNx8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0B132B] to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 md:p-8 w-full">
+<span class="inline-block bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-md text-label-md mb-3 shadow-md border border-white/20 backdrop-blur-sm">Luar Angkasa</span>
+<h1 class="font-headline-xl text-headline-xl text-white mb-2">Satelit Palapa</h1>
+<p class="font-body-lg text-body-lg text-surface-container-high max-w-2xl">Pemersatu Bangsa di Udara</p>
+</div>
+</div>
+</section>
+<!-- Intro Text -->
+<section class="bg-surface-container-lowest rounded-xl p-6 md:p-8 shadow-sm border-[2px] border-surface-container-high bouncy-card relative">
+<div class="absolute -top-6 -right-4 w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center shadow-lg border-4 border-white rotate-12">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary mb-4">Halo, Penjelajah Nusantara!</h2>
+<p class="mb-4 text-on-surface-variant">Tahukah kamu? Indonesia adalah negara kepulauan yang sangat luas! Untuk menghubungkan kita semua dari Sabang sampai Merauke, kita punya pahlawan di luar angkasa bernama <strong>Satelit Palapa</strong>.</p>
+<p class="text-on-surface-variant">Satelit ini melayang tinggi di atas bumi, memantulkan sinyal telepon, televisi, dan internet agar kita bisa saling menyapa meski terpisah lautan luas.</p>
+</section>
+</main>
+</body></html>

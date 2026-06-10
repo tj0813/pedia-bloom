@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bunga Bangkai - NusaPedia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#d5e3fc",
+                        "surface-bright": "#f8f9ff",
+                        "secondary-fixed-dim": "#ffb783",
+                        "primary-container": "#2dd4bf",
+                        "primary-fixed": "#62fae3",
+                        "primary": "#006b5f",
+                        "on-primary-container": "#00574d",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-primary-fixed-variant": "#005047",
+                        "on-surface-variant": "#3c4a46",
+                        "on-background": "#0d1c2e",
+                        "tertiary-container": "#ffaa81",
+                        "on-secondary-fixed-variant": "#713700",
+                        "on-surface": "#0d1c2e",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f8f9ff",
+                        "tertiary": "#944a23",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#ffdcc5",
+                        "surface-container-high": "#dce9ff",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "inverse-surface": "#233144",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#d5e3fc",
+                        "secondary": "#944a00",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#006b5f",
+                        "on-secondary-fixed": "#301400",
+                        "outline-variant": "#bacac5",
+                        "on-tertiary-fixed": "#351000",
+                        "primary-fixed-dim": "#3cddc7",
+                        "surface-dim": "#ccdbf3",
+                        "secondary-container": "#fd933d",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-secondary-container": "#693300",
+                        "background": "#f8f9ff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-container": "#7e3913",
+                        "on-primary-fixed": "#00201c",
+                        "on-primary": "#ffffff",
+                        "outline": "#6b7a76",
+                        "inverse-primary": "#3cddc7",
+                        "surface-container": "#e6eeff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Quicksand"],
+                        "headline-xl": ["Quicksand"],
+                        "label-md": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .squishy-button {
+            transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .squishy-button:active {
+            transform: scale(0.95) translateY(2px);
+            box-shadow: 0 0 0 0 rgba(0,0,0,0) !important;
+        }
+        .soft-shadow {
+            box-shadow: 0 4px 20px -2px rgba(45, 212, 191, 0.15);
+        }
+        .soft-shadow-secondary {
+            box-shadow: 0 4px 20px -2px rgba(253, 147, 61, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md antialiased pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-container docked full-width top-0 sticky z-40 bg-surface dark:bg-surface-container flex justify-between items-center px-margin-mobile py-4 w-full md:hidden">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-primary">
+<img alt="Nara the Explorer mascot smiling" class="w-full h-full object-cover" data-alt="A cute, highly detailed 3D illustration of a young Indonesian explorer girl mascot named Nara, wearing a safari hat and a bright smile. The style is Pixar-like with soft, warm lighting, vibrant colors, and a friendly, encouraging expression. High quality, light mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBu2aaDu6RxtDlITIaqwGTtJ2Hxsu_Zer46w7XdX3iDQAOfJ9xcBKFfc50DHqksi_K_H1bsPp5M9LrusGzDzgYwQXve-SoEmru8ZCCIwcfFdJGeJJ1LHEZgF2rxtX6uP4TxFE9fBPYSoTIyq6mV9QgKGesTCbWY5EIhXcL9VSRGIeWugiIpEyvRK5snUWW2_XMcimqOQ4v-pHAv79F72K9xapcR0guklvvkwVQq96AuY8GtzLHs6tQCspn-UicyKm61QyjPJwrxEs"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed tracking-tight">NusaPedia</h1>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary dark:text-primary-fixed-dim hover:scale-105 transition-transform active:translate-y-0.5 duration-150">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+</button>
+</header>
+<div class="flex max-w-[1440px] mx-auto min-h-screen">
+<!-- NavigationDrawer (Web) -->
+<nav class="hidden md:flex w-80 bg-surface-container-low dark:bg-surface-container-highest rounded-r-lg h-full border-r border-outline-variant shadow-xl flex-col overflow-y-auto sticky top-0 h-screen">
+<div class="p-6 border-b border-outline-variant/30 flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-secondary-container flex items-center justify-center overflow-hidden border-2 border-secondary">
+<img alt="Parent Profile Icon" class="w-full h-full object-cover" data-alt="A warm, approachable 3D avatar of an adult parent smiling gently. The character design is soft, cartoonish, and friendly, with a clean light background. The lighting is soft and studio-like, fitting a high-quality educational app interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJF2SA1muwdZqpPdOijRBZp9qVIV4e6ULlY2vCXGyuqU7mdj9ExcPjxYBkJeh-AaeGjavr-y8P8qTqeSiD9_JTaFknPYZkj4MMswJavhZMCMKxywAqViT-j1mO9v1EYqlXC7_4U7I0ekNrxDhaswCC3a2Pbz4yNycGoEI2jSO1tcZ_96jvvHbwO7AzMM8ocOw-Ve4KKTgVkoxz0jwSQ0Ai7drPaUuYdooWxwLDuVY_eJwsVrgH6xVNEY3fcXmKYCtJBTi92zCtvY0"/>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-secondary">Gerbang Orang Tua</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Area Khusus Dewasa</p>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-2 flex-grow">
+<a class="flex items-center gap-4 px-4 py-3 rounded-full hover:bg-secondary-fixed-dim text-on-surface-variant font-body-md text-body-md transition-colors scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+                    Dashboard Orang Tua
+                </a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-full hover:bg-secondary-fixed-dim text-on-surface-variant font-body-md text-body-md transition-colors scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">analytics</span>
+                    Laporan Belajar
+                </a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-full hover:bg-secondary-fixed-dim text-on-surface-variant font-body-md text-body-md transition-colors scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">timer</span>
+                    Batas Waktu
+                </a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-full hover:bg-secondary-fixed-dim text-on-surface-variant font-body-md text-body-md transition-colors scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">lock</span>
+                    Keamanan
+                </a>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow p-margin-mobile md:p-margin-desktop overflow-x-hidden">
+<!-- Hero Section -->
+<section class="relative rounded-xl overflow-hidden mb-8 h-[400px] md:h-[500px] soft-shadow group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A highly detailed, realistic, and vibrant photograph of a massive Titan Arum (Bunga Bangkai) blooming in a dense, lush tropical rainforest in Sumatra, Indonesia. The towering central spadix is prominently featured against the deep maroon, frilled spathe. Sunlight filters softly through the canopy, creating a magical, awe-inspiring atmosphere perfect for an educational children's app. High resolution, bright, and inviting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCj9Iam7n-gxo7psCGtX4HJPk8qa80P5QY5-ciahHX5OYpGoaktowRevi617BBHkjioPgS1CCRud4DdIHSYn5f66312ZYiKHCCm85bIo4C_SlxB4TTPkzJsH2f3Dxesx_XdfkAU339IcK1rbeMPzaO3z0trutewn7_W3Q9nX2vpGyX4KJKRJIMGnS0aJ2EYbI9JxCvffMiyRFwiBYh1hvHSMdHIMZ-tIQv2HcfdKOFkA0tUFeJFINSZ_E2fwRXuJvGslLBcpDA-7tg');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 md:p-10 w-full">
+<div class="flex gap-2 mb-4">
+<span class="bg-primary px-3 py-1 rounded-full text-on-primary font-label-md text-label-md shadow-sm">Flora Langka</span>
+<span class="bg-secondary px-3 py-1 rounded-full text-on-secondary font-label-md text-label-md shadow-sm">Sumatra</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-white mb-2">Bunga Bangkai</h1>
+<p class="font-body-lg text-body-lg text-white/90 max-w-2xl">Si raksasa cantik dari hutan Sumatra yang aromanya... unik!</p>
+</div>
+<button class="absolute top-6 right-6 w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white/40 transition-colors">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+</section>
+<!-- Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Main Content Column -->
+<div class="lg:col-span-8 space-y-8">
+<!-- Intro Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 md:p-8 border-2 border-surface-container soft-shadow relative">
+<div class="absolute -top-6 -right-6 w-20 h-20">
+<img alt="Nara pointing" class="w-full h-full object-contain drop-shadow-md" data-alt="A cute 3D mascot illustration of a small robotic sidekick or explorer character pointing excitedly downwards. Soft pastel colors, clean edges, playful and squishy style suitable for a modern educational UI. Light background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjooROIcn0-364LCUOJtMxfF_tCYe_SmlFf_t7FkL2Zt2C8OaaAxkFdVtGGmJd6DBeHDMtLu2Y0jj2Z-vT0bun9LTKPQt4IhVmQC5HLhTsXe-IZkDQ8KE9Anr8G04isNRMFpw053Y3qUk8PRCiEv2bVq3LJHeg9fSD6LXipFD9B4nUcBn-oBbP2J1elQelAE0NZHaPvr5HSTsfFQJohRjepKAfwTTO_vBxGl4l1pOwxLVhwEpOZU99s3kbz9BjsToGPiVqH37_BKk"/>
+</div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">eco</span>
+                            Kenalan Yuk!
+                        </h2>
+<p class="font-body-lg text-body-lg text-on-surface mb-4">
+                            Pernahkah kamu melihat bunga yang lebih tinggi dari ayahmu? Kenalkan, ini adalah <strong>Amorphophallus titanum</strong>, atau yang biasa kita sebut Bunga Bangkai. Ia adalah bunga majemuk terbesar di dunia, lho!
+                        </p>
+<div class="bg-secondary-fixed-dim/20 p-4 rounded-lg flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl shrink-0 mt-1" style="font-variation-settings: 'FILL' 1;">air</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Kenapa dinamakan bunga bangkai? Saat mekar, bunga ini mengeluarkan bau yang sangat tidak enak, mirip daging busuk. Tapi tenang, bau ini justru berguna untuk menarik lalat dan kumbang yang membantu penyerbukannya!
+                            </p>
+</div>
+</div>
+<!-- Story / Fact Bento -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Bento 1 -->
+<div class="bg-primary-container rounded-xl p-6 soft-shadow text-on-primary-container transform hover:scale-[1.02] transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl mb-4 block" style="font-variation-settings: 'FILL' 1;">calendar_clock</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile mb-2">Penantian Panjang</h3>
+<p class="font-body-md text-body-md">
+                                Bunga ini butuh waktu berbulan-bulan bahkan bertahun-tahun untuk mengumpulkan energi, tapi saat mekar, ia hanya bertahan 2 hingga 3 hari saja sebelum akhirnya layu kembali. Sangat langka!
+                            </p>
+</div>
+<!-- Bento 2 -->
+<div class="bg-tertiary-container rounded-xl p-6 soft-shadow text-on-tertiary-container transform hover:scale-[1.02] transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl mb-4 block" style="font-variation-settings: 'FILL' 1;">height</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile mb-2">Raksasa Beneran!</h3>
+<p class="font-body-md text-body-md">
+                                Tingginya bisa mencapai 3 meter! Kalau kamu berdiri di sebelahnya, mungkin kamu harus mendongak ke atas untuk melihat ujungnya. Coba bayangkan!
+                            </p>
+</div>
+</div>
+</div>
+<!-- Sidebar Column -->
+<div class="lg:col-span-4 space-y-6">
+<!-- Mission Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-secondary soft-shadow-secondary">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-on-secondary shadow-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">straighten</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Misi Hari Ini</h3>
+</div>
+<h4 class="font-label-md text-label-md text-secondary mb-2 uppercase tracking-wide">Mengukur Bunga</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                            Ambil meteran dan ukur tinggi pintu di rumahmu. Bandingkan dengan Bunga Bangkai yang tingginya 3 meter. Mana yang lebih tinggi?
+                        </p>
+<button class="w-full bg-secondary text-on-secondary font-label-md text-label-md py-4 rounded-xl squishy-button shadow-[0_4px_0_0_#713700] hover:bg-secondary/90 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">camera_alt</span>
+                            Unggah Foto Hasil Ukur
+                        </button>
+</div>
+<!-- Quiz Card -->
+<div class="bg-surface-bright rounded-xl p-6 border-2 border-primary-container soft-shadow">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Kuis Kilat!</h3>
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-4">Kumpulkan lencana "Sahabat Bunga Raksasa"!</p>
+<div class="space-y-3">
+<p class="font-body-lg text-body-lg text-on-background font-semibold">Serangga apa yang ditarik oleh bau Bunga Bangkai?</p>
+<button class="w-full text-left p-4 rounded-lg border-2 border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors font-body-md text-body-md text-on-surface flex items-center justify-between group">
+                                Kupu-kupu cantik
+                                <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 text-primary">check_circle</span>
+</button>
+<button class="w-full text-left p-4 rounded-lg border-2 border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors font-body-md text-body-md text-on-surface flex items-center justify-between group">
+                                Lalat dan kumbang bangkai
+                                <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 text-primary">check_circle</span>
+</button>
+<button class="w-full text-left p-4 rounded-lg border-2 border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors font-body-md text-body-md text-on-surface flex items-center justify-between group">
+                                Lebah madu
+                                <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 text-primary">check_circle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden bg-surface-container-lowest dark:bg-inverse-surface fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-4 pt-2 rounded-t-lg shadow-[0_-4px_20px_-5px_rgba(0,107,95,0.2)] dark:shadow-none shadow-lg">
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform">home</span>
+<span class="font-label-md text-label-md text-[10px] md:text-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-2 mb-1 shadow-[0_4px_0_0_#005047] active:translate-y-1 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md text-[10px] md:text-sm font-bold">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform">sports_esports</span>
+<span class="font-label-md text-label-md text-[10px] md:text-sm">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform">military_tech</span>
+<span class="font-label-md text-label-md text-[10px] md:text-sm">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform">smart_toy</span>
+<span class="font-label-md text-label-md text-[10px] md:text-sm">Tanya AI</span>
+</a>
+</nav>
+</body></html>

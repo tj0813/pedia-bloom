@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Candi Prambanan - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#ffdcc5",
+                      "primary-fixed": "#62fae3",
+                      "on-primary-fixed": "#00201c",
+                      "on-error": "#ffffff",
+                      "surface-variant": "#d5e3fc",
+                      "surface-container-high": "#dce9ff",
+                      "tertiary": "#944a23",
+                      "surface-dim": "#ccdbf3",
+                      "inverse-on-surface": "#eaf1ff",
+                      "secondary-container": "#fd933d",
+                      "error": "#ba1a1a",
+                      "surface-bright": "#f8f9ff",
+                      "primary-container": "#2dd4bf",
+                      "outline-variant": "#bacac5",
+                      "on-secondary-fixed": "#301400",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "surface-container-highest": "#d5e3fc",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-fixed": "#351000",
+                      "on-secondary-fixed-variant": "#713700",
+                      "on-primary-container": "#00574d",
+                      "background": "#f8f9ff",
+                      "on-tertiary-container": "#7e3913",
+                      "surface-container-low": "#eff4ff",
+                      "on-tertiary": "#ffffff",
+                      "primary": "#006b5f",
+                      "tertiary-container": "#ffaa81",
+                      "on-background": "#0d1c2e",
+                      "on-surface": "#0d1c2e",
+                      "on-error-container": "#93000a",
+                      "on-primary": "#ffffff",
+                      "surface-container": "#e6eeff",
+                      "secondary": "#944a00",
+                      "surface": "#f8f9ff",
+                      "on-primary-fixed-variant": "#005047",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "on-surface-variant": "#3c4a46",
+                      "inverse-surface": "#233144",
+                      "error-container": "#ffdad6",
+                      "outline": "#6b7a76",
+                      "inverse-primary": "#3cddc7",
+                      "tertiary-fixed": "#ffdbcc",
+                      "primary-fixed-dim": "#3cddc7",
+                      "on-secondary-container": "#693300",
+                      "surface-tint": "#006b5f",
+                      "secondary-fixed-dim": "#ffb783"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1200px",
+                      "margin-mobile": "20px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-desktop": "64px"
+              },
+              "fontFamily": {
+                      "headline-xl": ["Quicksand"],
+                      "headline-lg-mobile": ["Quicksand"],
+                      "headline-lg": ["Quicksand"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "label-md": ["Quicksand"],
+                      "body-lg": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                      "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                      "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        body { background-color: #f8f9ff; color: #0d1c2e; }
+        .bouncy-button { transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .bouncy-button:active { transform: translateY(2px) scale(0.98); }
+        .glass-card { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); border: 2px solid #eff4ff; }
+        .soft-shadow-primary { box-shadow: 0 10px 25px -5px rgba(45, 212, 191, 0.3); }
+        .soft-shadow-secondary { box-shadow: 0 10px 25px -5px rgba(253, 147, 61, 0.3); }
+        .puzzle-piece { cursor: grab; }
+        .puzzle-piece:active { cursor: grabbing; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-body-md antialiased pb-24 md:pb-0 pt-20">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-bright shadow-sm flex justify-between items-center px-margin-mobile py-unit w-full">
+<div class="flex items-center gap-3">
+<button class="text-on-surface-variant hover:opacity-80 transition-transform active:scale-95 duration-200 p-2 rounded-full hover:bg-surface-container-low" onclick="history.back()">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">arrow_back</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary">Pedia Bloom</h1>
+</div>
+<button class="text-on-surface-variant hover:opacity-80 transition-transform active:scale-95 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8">
+<!-- Header & Badges -->
+<section class="mb-12 text-center md:text-left flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1 space-y-4">
+<div class="flex flex-wrap gap-2 justify-center md:justify-start">
+<span class="bg-tertiary text-on-tertiary font-label-md text-label-md px-4 py-1.5 rounded-full shadow-sm">Budaya</span>
+<span class="bg-primary-container text-on-primary-container font-label-md text-label-md px-4 py-1.5 rounded-full shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">location_on</span> Yogyakarta
+                    </span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-background">Candi Prambanan</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Keajaiban arsitektur Hindu terbesar di Indonesia yang menyimpan kisah magis dan sejarah megah Nusantara.</p>
+</div>
+<div class="w-full md:w-1/2 aspect-video rounded-[2rem] overflow-hidden soft-shadow-primary relative">
+<img alt="Candi Prambanan saat senja" class="w-full h-full object-cover" data-alt="A majestic, high-resolution photograph of Candi Prambanan temple complex at sunset, bathed in warm golden-hour light. The ancient stone structures rise dramatically against a clear sky with soft, scattered clouds. The scene conveys a sense of wonder and historical grandeur, fitting the Pedia Bloom light-mode educational aesthetic with subtle teal and orange tint enhancements for vibrancy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8S94CwrZk-M22o6GJfdexogFDA9jeGIU6VeN4-FGyeB9U9Fs0VqKGoEd5zWqoruHuXW5Xl1R6j23dwykMnvmFXQW1Vb0dcDqy0km6DIgszPYpAt356N4ow-uTO2JEsALVSuGpaoISY8zwtPUbdD5t9-5zdVVwkaiQ66v4RBUEMwgNEmz1PFLo-VR0yG-5e-gz8g-F2RzeyAlZlnQiRgYXzyCf4q5YU5n1NmgRqq1gHRURg3Y0T6ngOveVwe31iIiAGR5-_G1KAmo"/>
+</div>
+</section>
+<!-- Story Section: Bento Grid -->
+<section class="mb-16">
+<h3 class="font-headline-lg text-headline-lg mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+                Kisah Roro Jonggrang
+            </h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 glass-card rounded-[2rem] p-8 soft-shadow-primary relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/20 rounded-bl-[4rem] -z-10"></div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4">1000 Candi dalam Semalam</h4>
+<p class="font-body-md text-body-md text-on-surface mb-4">
+                        Legenda menceritakan tentang Bandung Bondowoso yang jatuh cinta pada Roro Jonggrang. Sang putri yang enggan menerima lamaran, memberikan syarat mustahil: membangun 1000 candi dalam satu malam!
+                    </p>
+<p class="font-body-md text-body-md text-on-surface">
+                        Dengan bantuan pasukan jin, Bandung Bondowoso hampir berhasil. Namun, Roro Jonggrang mengakalinya dengan memukul lesung dan membakar jerami agar ayam berkokok, seolah pagi telah tiba.
+                    </p>
+</div>
+<div class="glass-card rounded-[2rem] p-8 flex flex-col justify-center items-center text-center soft-shadow-secondary bg-surface-container-lowest">
+<span class="material-symbols-outlined text-[64px] text-secondary-container mb-4" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<h4 class="font-label-md text-label-md text-on-surface-variant mb-2">Tahukah Kamu?</h4>
+<p class="font-body-md text-body-md text-on-surface">Candi ke-1000 konon adalah arca Roro Jonggrang sendiri yang dikutuk oleh Bandung Bondowoso karena marah telah ditipu.</p>
+</div>
+</div>
+</section>
+<!-- Architecture Section -->
+<section class="mb-16 bg-surface-container-low rounded-[3rem] p-8 md:p-12">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="w-full md:w-1/2">
+<h3 class="font-headline-lg text-headline-lg mb-4 text-on-background">Candi Siwa: Jantung Prambanan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        Candi utama ini adalah yang tertinggi dan termegah, didedikasikan untuk Dewa Siwa sang Pelebur. Tingginya mencapai 47 meter, menjulang anggun di tengah kompleks.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="bg-primary-container text-on-primary-container p-1 rounded-full mt-1">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</span>
+<span class="font-body-md text-body-md">Relief epik Ramayana diukir indah di dinding lorongnya.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="bg-primary-container text-on-primary-container p-1 rounded-full mt-1">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</span>
+<span class="font-body-md text-body-md">Terdiri dari 4 ruangan utama yang berisi arca-arca dewa.</span>
+</li>
+</ul>
+</div>
+<div class="w-full md:w-1/2 aspect-square rounded-[2rem] overflow-hidden border-4 border-white shadow-xl relative">
+<img alt="Detail Relief Candi" class="w-full h-full object-cover" data-alt="Close-up macro shot of the intricate stone carvings and bas-reliefs on the walls of Candi Shiva at Prambanan. The sunlight strikes the textured grey volcanic stone from an angle, highlighting the exquisite details of ancient figures and mythological scenes. The image feels tactile and educational, fitting the minimalist yet skeuomorphic vibe of the Pedia Bloom interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR4OosVRP7R6I3qEMk2tb9pS_oNhUvd3NkqGSNw0y-LPxxks9XJi2M5dkFNxrVbSoaAA6ETJnfY9puTcrlk-uVHvsX7ofFdEaJl4nWxbr_QzPFN3926aE8gaCsaQP_H3R_xYi0YCi77joasJtyigjGQaIJJFU690PZ5s-bavpcECxv1pII2zkRSmVwTNwterGp7rEljozQevkEp6hVMyW3x9ojSyxne5qogYdFYPsLs6hiupyUvrO67p-hCT-on8shYJvHm4J4LJg"/>
+</div>
+</div>
+</section>
+<!-- Interactive Game & Quiz Row -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+<!-- Game CTA -->
+<div class="glass-card rounded-[2rem] p-8 text-center flex flex-col items-center border-2 border-primary-container/30 bg-surface-bright">
+<div class="w-24 h-24 bg-primary-container/20 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[48px] text-primary" style="font-variation-settings: 'FILL' 1;">extension</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile mb-2">Main Susun Candi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Bantu Bandung Bondowoso menyusun balok-balok batu untuk membangun candi sebelum pagi tiba!</p>
+<button class="bouncy-button w-full py-4 bg-secondary-container text-on-secondary font-label-md text-label-md rounded-xl border-b-[4px] border-secondary soft-shadow-secondary flex justify-center items-center gap-2">
+<span class="material-symbols-outlined">play_arrow</span>
+                    Mulai Main
+                </button>
+</div>
+<!-- Quiz CTA -->
+<div class="glass-card rounded-[2rem] p-8 text-center flex flex-col items-center border-2 border-secondary-container/30 bg-surface-bright">
+<div class="w-24 h-24 bg-secondary-container/20 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[48px] text-secondary" style="font-variation-settings: 'FILL' 1;">psychology_alt</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile mb-2">Kuis Penjelajah</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Uji pengetahuanmu tentang Candi Prambanan dan dapatkan Lencana Penjelajah Sejarah!</p>
+<button class="bouncy-button w-full py-4 bg-primary text-on-primary font-label-md text-label-md rounded-xl border-b-[4px] border-[#005047] soft-shadow-primary flex justify-center items-center gap-2">
+<span class="material-symbols-outlined">quiz</span>
+                    Mulai Kuis
+                </button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Visible on Mobile) -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-lg bg-surface-container-lowest shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] shadow-lg md:hidden">
+<ul class="flex justify-around items-center px-4 pb-safe h-20">
+<li class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-md text-label-md text-[12px] mt-1">Beranda</span>
+</li>
+<li class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md text-[12px] mt-1">Jelajah</span>
+</li>
+<li class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">sports_esports</span>
+<span class="font-label-md text-label-md text-[12px] mt-1">Main</span>
+</li>
+<li class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span class="font-label-md text-label-md text-[12px] mt-1">Lencana</span>
+</li>
+<li class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+<span class="font-label-md text-label-md text-[12px] mt-1">Tanya AI</span>
+</li>
+</ul>
+</nav>
+</body></html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mengenal Mata Uang Rupiah - Pedia Bloom</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Custom Utilities for Tactile Feel */
+        .btn-tactile {
+            border-bottom-width: 4px;
+            transition: all 0.15s ease-in-out;
+        }
+        .btn-tactile:active {
+            transform: translateY(4px);
+            border-bottom-width: 0px;
+            margin-bottom: 4px; /* Compensate for lost border to keep layout stable */
+        }
+        
+        /* Tinted Shadows */
+        .shadow-tint-primary {
+            box-shadow: 0 4px 14px -2px rgba(45, 212, 191, 0.4);
+        }
+        .shadow-tint-secondary {
+            box-shadow: 0 4px 14px -2px rgba(253, 147, 61, 0.4);
+        }
+    </style>
+<!-- Tailwind Config -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#bacac5",
+                        "on-tertiary-fixed": "#351000",
+                        "on-secondary-fixed": "#301400",
+                        "surface-tint": "#006b5f",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#693300",
+                        "background": "#f8f9ff",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#ccdbf3",
+                        "secondary-container": "#fd933d",
+                        "primary-fixed-dim": "#3cddc7",
+                        "tertiary-fixed": "#ffdbcc",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#00201c",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-container": "#7e3913",
+                        "inverse-primary": "#3cddc7",
+                        "surface-container": "#e6eeff",
+                        "outline": "#6b7a76",
+                        "primary-fixed": "#62fae3",
+                        "primary-container": "#2dd4bf",
+                        "primary": "#006b5f",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#d5e3fc",
+                        "surface-bright": "#f8f9ff",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-surface-variant": "#3c4a46",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-primary-fixed-variant": "#005047",
+                        "on-primary-container": "#00574d",
+                        "on-surface": "#0d1c2e",
+                        "tertiary": "#944a23",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f8f9ff",
+                        "on-background": "#0d1c2e",
+                        "on-secondary-fixed-variant": "#713700",
+                        "tertiary-container": "#ffaa81",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "inverse-surface": "#233144",
+                        "secondary": "#944a00",
+                        "inverse-on-surface": "#eaf1ff",
+                        "surface-variant": "#d5e3fc",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "secondary-fixed": "#ffdcc5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Quicksand"],
+                        "label-md": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-bright shadow-sm flex justify-between items-center px-margin-mobile py-unit h-[72px]">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden flex items-center justify-center border-2 border-outline-variant shadow-sm">
+<img alt="Nara the Explorer Avatar" class="w-full h-full object-cover" data-alt="A small, stylized digital avatar illustration of a cheerful child character named Nara the Explorer, wearing a tiny explorer hat. The avatar is set against a vibrant teal background, designed with a soft, clay-like 3D rendering style typical of modern educational apps. The lighting is bright and even, giving it a friendly, squishy appearance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHpBCp0qlU83CiUaq31q2almbDXVjrW9B-hcxU-lS2W3O3U6nlY0Z-odfe2G9bDfo9SKQs_-tlYTPGlN86j3HFf7aVNTL_9XkF2Ht4FpLtNMCncsvQd_wIbczD-fvMUNLPL1SXabn0ATWFhMZ9KwUhLk1vtqgtE4Vc-9JOv1erPyBFl4tZhJHfBKbT3OHA42cX_KUfvvJE72rnaltf7BBtGm3KDTXcOHXGnvPJDcMn025CFSVEQsUzvI5zLBbzrFog0QNVT8oWrfA"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary">Pedia Bloom</h1>
+</div>
+<button aria-label="Settings" class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:opacity-80 transition-transform active:scale-95 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-[92px] pb-[100px] px-margin-mobile max-w-container-max mx-auto flex flex-col gap-8">
+<!-- Back Navigation Context -->
+<div class="flex items-center gap-2 text-primary hover:opacity-80 transition-opacity cursor-pointer w-fit">
+<span class="material-symbols-outlined text-[20px]">arrow_back_ios_new</span>
+<span class="font-label-md text-label-md font-bold">Tabungan Pintar</span>
+</div>
+<!-- Hero Section -->
+<section class="relative bg-primary-container rounded-xl overflow-hidden shadow-tint-primary p-6 flex flex-col items-center text-center gap-4">
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMiIgZmlsbD0iI2ZmZmZmZiIgZmlsbC1vcGFjaXR5PSIwLjMiLz48L3N2Zz4=')] opacity-50"></div>
+<div class="relative w-full h-48 rounded-lg bg-surface-container-lowest overflow-hidden border-2 border-primary border-opacity-20 shadow-inner mb-2">
+<img alt="Ilustrasi Uang Rupiah" class="w-full h-full object-cover" data-alt="A playful, vibrant 3D illustration of various Indonesian Rupiah banknotes and gold coins scattering playfully in the air. The money features cartoonish, slightly exaggerated proportions with soft, rounded edges to appeal to children. The background is a soft, dreamlike gradient of teal and light blue, creating a sense of magical discovery and financial literacy fun." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-4AIGK0VC6GVTDU95ZgJzoAE-6swQJrZwdIL02cCd0hK0du6SJ9U2yU6mrdjIi3geTGRJhJZFq957Rpb-JQndQ8YmxFgmLlgeMsh3fYW8jdyvztgByJbh891K6U7i7XvbyIDxu7wFxKXVZbwsc9uHO0HcGxL3DTXinnk6bI3AMDnI7h9ov5L6bfBcRyLjJMluuuCjWtmyu3Pv4zac4rUL21MFBZq9S-iwMxjtxXIi5MeQ9lk3_RtGQ0wQbKs_Olnfjri2TYWuHjE"/>
+</div>
+<div class="relative z-10">
+<span class="inline-block bg-surface-container-lowest text-primary font-label-md text-label-md px-3 py-1 rounded-full mb-3 shadow-sm border border-outline-variant">Misi Hari Ini</span>
+<h2 class="font-headline-xl text-headline-xl text-on-primary-container leading-tight">Mengenal Mata Uang Rupiah</h2>
+<p class="font-body-md text-body-md text-on-primary-container mt-2 opacity-90">Ayo pelajari pahlawan dan nilai uang yang sering kita gunakan sehari-hari!</p>
+</div>
+</section>
+<!-- Gallery of Money (Bento Grid) -->
+<section class="flex flex-col gap-4">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Galeri Uang</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- 2000 -->
+<div class="bg-surface-container-lowest border-2 border-outline-variant rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-16 h-16 bg-surface-container-low rounded-bl-full -z-0"></div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-3">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Rp 2.000</span>
+<span class="material-symbols-outlined text-outline-variant">payments</span>
+</div>
+<div class="h-32 w-full bg-surface-container rounded-DEFAULT mb-3 overflow-hidden border border-outline-variant/50">
+<img alt="Uang 2000" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A close-up, softly lit photograph of an Indonesian 2000 Rupiah banknote. The focus is on the intricate portrait engraving and the woven texture of the paper. The lighting is warm and inviting, highlighting the predominantly grey and green color palette of the bill, set against a pristine white studio background to minimize distractions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM8vGoF01gmOoNb0A6fHdn-uUpB3o40NOr7c3YnTq_mjoaYupUrpYRDY4lWKQhqT7J22-6VWsZYOdfN8MbV_e3FWOgsHqGM07cXJ5TccWdHkTs6_9IEFfOCHTdEJ7a_9KOCQwtaef57HOR2bHMDRfg-0ep8aHpbuqVOYpq8XzF1ONImDmo-cBflaM8K8KLb0rTSK6VW7ZuEgFkrGDyeiVh_1e7YMRv7bRPOc2CWV45AYUjfM8U110Vx4wuRfM1DoJVLqXfVpnOxWo"/>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Mohammad Hoesni Thamrin</h4>
+<p class="font-body-md text-[14px] leading-snug text-on-surface-variant">Pahlawan dari Jakarta yang sangat peduli pada pendidikan rakyat kecil.</p>
+</div>
+</div>
+<!-- 5000 -->
+<div class="bg-surface-container-lowest border-2 border-outline-variant rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-16 h-16 bg-tertiary-fixed rounded-bl-full -z-0"></div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-3">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-tertiary">Rp 5.000</span>
+<span class="material-symbols-outlined text-outline-variant">payments</span>
+</div>
+<div class="h-32 w-full bg-surface-container rounded-DEFAULT mb-3 overflow-hidden border border-outline-variant/50">
+<img alt="Uang 5000" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A detailed macro shot of an Indonesian 5000 Rupiah banknote, focusing on the portrait of the national hero. The image captures the fine line details and security features of the brown-tinted paper currency. The lighting is soft but directional, creating a slight drop shadow on the clean white surface below, giving a tactile, physical presence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfnP2vYS551OrTa3Qr5CfUHBbeLHY_SBj9xekDVPTBdbFZHisqHHWnD9tBXQwqo-T8BV7IPu92mCPeZUzXJCHVE0c7u1CsBtB7Wips5IOI0jzg8yMIRIjvoD3v0nPZ83qLo5HhVSZGTRKIDac-4s9sm5o21dFxQ7BsRRPNh-f4CL5O92Y6AVcTpYbraEDkSqTX0BEjxzpVsAmPXA7mddVLM3ZziIE2kI5z7w_rb5TiD-0sdkZznShwZylJFfiHVxWdAPMY8vgfDb8"/>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Dr. K.H. Idham Chalid</h4>
+<p class="font-body-md text-[14px] leading-snug text-on-surface-variant">Seorang ulama dan tokoh politik yang pernah menjadi wakil perdana menteri lho!</p>
+</div>
+</div>
+<!-- 10000 -->
+<div class="bg-surface-container-lowest border-2 border-outline-variant rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-16 h-16 bg-primary-container/20 rounded-bl-full -z-0"></div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-3">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary-container">Rp 10.000</span>
+<span class="material-symbols-outlined text-outline-variant">payments</span>
+</div>
+<div class="h-32 w-full bg-surface-container rounded-DEFAULT mb-3 overflow-hidden border border-outline-variant/50">
+<img alt="Uang 10000" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A bright, clear studio photograph of a purple Indonesian 10000 Rupiah banknote lying flat. The camera angle is slightly tilted, showing the distinct color and portrait details of the hero. The lighting is diffused, preventing harsh reflections, and the background is an abstract, soft-focus gradient that perfectly matches the purple hues of the bill." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjgrGzcs_uGfuOQ1MJQEVYaRNaY9iF3bbZiAhLXyJW9zdzGgp5MuI90YYn1SwW7NgNUMvSLLDV1ntUWD5wqJ8SvnG999Aq6SWg4I3awxlaxHXYP7iw5hqxfICIU8kBlzC3BSadA-bzP8ymdlWZZVS5GPypihWyLz5JESVVjhO9FDsl3jI4wSjOxG5b_kaAGsw0QvNbjI35FRRCgf7rYVMKxSQ_p6cEjpz5wO94E5Gic3VAbaRcJIEsQl7KS26atWJ3ecWG39HzvcU"/>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Frans Kaisiepo</h4>
+<p class="font-body-md text-[14px] leading-snug text-on-surface-variant">Pahlawan dari Papua yang mengusulkan nama 'Irian' untuk wilayah asalnya.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Needs vs Wants Interactive Section -->
+<section class="bg-surface-container-low rounded-xl p-6 border border-outline-variant/30 mt-4">
+<div class="text-center mb-6">
+<span class="inline-block bg-primary-container/20 text-on-primary-container font-label-md text-label-md px-4 py-1 rounded-full mb-2">Mini Game</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Kebutuhan vs Keinginan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Uang yang kita punya harus dipakai untuk apa dulu ya?</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Needs Zone -->
+<div class="bg-surface-container-lowest rounded-lg border-2 border-primary-container border-dashed p-4 flex flex-col items-center">
+<h4 class="font-label-md text-label-md text-primary bg-primary-container/20 px-4 py-2 rounded-full mb-4">Kebutuhan (Needs)</h4>
+<div class="flex flex-wrap justify-center gap-3 w-full">
+<div class="bg-surface flex items-center gap-2 px-3 py-2 rounded-lg border border-outline-variant shadow-sm w-full sm:w-auto">
+<span class="material-symbols-outlined text-primary">restaurant</span>
+<span class="font-body-md font-medium">Makanan Bergizi</span>
+</div>
+<div class="bg-surface flex items-center gap-2 px-3 py-2 rounded-lg border border-outline-variant shadow-sm w-full sm:w-auto">
+<span class="material-symbols-outlined text-primary">school</span>
+<span class="font-body-md font-medium">Buku Sekolah</span>
+</div>
+</div>
+</div>
+<!-- Wants Zone -->
+<div class="bg-surface-container-lowest rounded-lg border-2 border-secondary-container border-dashed p-4 flex flex-col items-center">
+<h4 class="font-label-md text-label-md text-secondary bg-secondary-container/20 px-4 py-2 rounded-full mb-4">Keinginan (Wants)</h4>
+<div class="flex flex-wrap justify-center gap-3 w-full">
+<div class="bg-surface flex items-center gap-2 px-3 py-2 rounded-lg border border-outline-variant shadow-sm w-full sm:w-auto">
+<span class="material-symbols-outlined text-secondary">toys</span>
+<span class="font-body-md font-medium">Mainan Baru</span>
+</div>
+<div class="bg-surface flex items-center gap-2 px-3 py-2 rounded-lg border border-outline-variant shadow-sm w-full sm:w-auto">
+<span class="material-symbols-outlined text-secondary">icecream</span>
+<span class="font-body-md font-medium">Es Krim Manis</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 text-center">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full btn-tactile border-on-primary-fixed-variant inline-flex items-center gap-2 shadow-tint-primary">
+<span class="material-symbols-outlined text-[20px]">ads_click</span>
+                    Mulai Main Sortir!
+                </button>
+</div>
+</section>
+<!-- Quick Quiz -->
+<section class="bg-secondary-container rounded-xl p-6 shadow-tint-secondary relative overflow-hidden mt-2">
+<div class="absolute -right-10 -top-10 w-32 h-32 bg-secondary rounded-full opacity-20"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-2 mb-4 text-on-secondary-container">
+<span class="material-symbols-outlined">quiz</span>
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider">Kuis Cepat</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-secondary-container mb-6">Siapakah pahlawan yang ada di uang Rp 50.000 (pecahan biru)?</h3>
+<div class="flex flex-col gap-3">
+<button class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md font-medium p-4 rounded-lg border border-outline-variant hover:bg-surface-container transition-colors text-left flex items-center justify-between group">
+<span>A. Ir. Soekarno</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">circle</span>
+</button>
+<button class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md font-medium p-4 rounded-lg border border-outline-variant hover:bg-surface-container transition-colors text-left flex items-center justify-between group">
+<span>B. Ir. H. Djuanda Kartawidjaja</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">circle</span>
+</button>
+<button class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md font-medium p-4 rounded-lg border border-outline-variant hover:bg-surface-container transition-colors text-left flex items-center justify-between group">
+<span>C. Cut Meutia</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">circle</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-lg bg-surface-container-lowest dark:bg-inverse-surface shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] h-20 flex justify-around items-center px-4 pb-safe">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-90 duration-200 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-label-md text-[12px] leading-tight">Beranda</span>
+</a>
+<!-- Active State: Jelajah -->
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-3 py-2 hover:bg-surface-container-high transition-colors active:scale-90 duration-200 shadow-sm" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-[12px] leading-tight font-bold">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-90 duration-200 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">sports_esports</span>
+<span class="font-label-md text-[12px] leading-tight">Main</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-90 duration-200 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">military_tech</span>
+<span class="font-label-md text-[12px] leading-tight">Lencana</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-90 duration-200 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">smart_toy</span>
+<span class="font-label-md text-[12px] leading-tight">Tanya AI</span>
+</a>
+</nav>
+<script>
+        // Simple micro-interaction for quiz buttons to show they are clickable
+        document.querySelectorAll('section.bg-secondary-container button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Reset all
+                document.querySelectorAll('section.bg-secondary-container button').forEach(btn => {
+                    btn.classList.remove('bg-primary-container', 'border-primary', 'text-on-primary-container');
+                    btn.classList.add('bg-surface-container-lowest');
+                    const icon = btn.querySelector('.material-symbols-outlined');
+                    icon.textContent = 'circle';
+                    icon.classList.remove('text-primary');
+                });
+                
+                // Set active
+                this.classList.remove('bg-surface-container-lowest');
+                this.classList.add('bg-primary-container', 'border-primary', 'text-on-primary-container');
+                const icon = this.querySelector('.material-symbols-outlined');
+                icon.textContent = 'check_circle';
+                icon.classList.add('text-primary');
+                icon.style.fontVariationSettings = "'FILL' 1";
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Terumbu Karang - Pedia Bloom</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom Scrollbar for horizontal scrolling */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "on-secondary": "#ffffff",
+                            "on-error-container": "#93000a",
+                            "outline-variant": "#bacac5",
+                            "on-secondary-container": "#693300",
+                            "surface-container-lowest": "#ffffff",
+                            "on-secondary-fixed": "#301400",
+                            "on-tertiary": "#ffffff",
+                            "secondary-fixed": "#ffdcc5",
+                            "inverse-surface": "#233144",
+                            "on-tertiary-container": "#7e3913",
+                            "on-tertiary-fixed-variant": "#76330d",
+                            "secondary-fixed-dim": "#ffb783",
+                            "surface-tint": "#006b5f",
+                            "tertiary-fixed-dim": "#ffb693",
+                            "surface-container-low": "#eff4ff",
+                            "on-primary-container": "#00574d",
+                            "surface-container": "#e6eeff",
+                            "inverse-primary": "#3cddc7",
+                            "secondary": "#944a00",
+                            "on-surface-variant": "#3c4a46",
+                            "error-container": "#ffdad6",
+                            "surface-dim": "#ccdbf3",
+                            "surface-container-highest": "#d5e3fc",
+                            "tertiary-fixed": "#ffdbcc",
+                            "secondary-container": "#fd933d",
+                            "outline": "#6b7a76",
+                            "on-primary": "#ffffff",
+                            "error": "#ba1a1a",
+                            "tertiary-container": "#ffaa81",
+                            "on-primary-fixed": "#00201c",
+                            "primary-fixed-dim": "#3cddc7",
+                            "on-surface": "#0d1c2e",
+                            "on-tertiary-fixed": "#351000",
+                            "primary": "#006b5f",
+                            "on-primary-fixed-variant": "#005047",
+                            "surface-bright": "#f8f9ff",
+                            "on-secondary-fixed-variant": "#713700",
+                            "surface": "#f8f9ff",
+                            "primary-fixed": "#62fae3",
+                            "primary-container": "#2dd4bf",
+                            "inverse-on-surface": "#eaf1ff",
+                            "tertiary": "#944a23",
+                            "surface-variant": "#d5e3fc",
+                            "surface-container-high": "#dce9ff",
+                            "background": "#f8f9ff",
+                            "on-background": "#0d1c2e",
+                            "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "1rem",
+                            "lg": "2rem",
+                            "xl": "3rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "unit": "8px",
+                            "container-max": "1200px",
+                            "margin-mobile": "20px",
+                            "margin-desktop": "64px",
+                            "gutter": "24px"
+                    },
+                    "fontFamily": {
+                            "headline-lg-mobile": ["Quicksand"],
+                            "headline-xl": ["Quicksand"],
+                            "headline-lg": ["Quicksand"],
+                            "body-lg": ["Plus Jakarta Sans"],
+                            "body-md": ["Plus Jakarta Sans"],
+                            "label-md": ["Quicksand"]
+                    },
+                    "fontSize": {
+                            "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                            "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                            "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "500" }],
+                            "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                            "label-md": ["16px", { "lineHeight": "20px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-40 bg-surface-bright dark:bg-surface-dim shadow-sm flex justify-between items-center px-margin-mobile h-16 transition-transform">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-primary">
+<!-- Avatar placeholder using an icon for Nara -->
+<span class="material-symbols-outlined text-primary" style="font-size: 24px;">face</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed-dim">Pedia Bloom</h1>
+</div>
+<button aria-label="Search" class="w-10 h-10 rounded-full flex items-center justify-center text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-transform active:scale-95">
+<span class="material-symbols-outlined">search</span>
+</button>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 flex flex-col gap-12">
+<!-- Hero Section -->
+<section class="flex flex-col gap-6">
+<div class="relative w-full h-64 md:h-96 rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(45,212,191,0.2)]">
+<img alt="Hutan Bawah Laut Indonesia" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTYHIOajPqvkSCz9mBHs3AuQGOD1Ui53UxVJdTq0u8bDsXlgLePorV21JxlR3JsiEICNNqpou1ZAVXI1kxUaH0TIltsRGAQKVZWk25VQ9cnc3LY_0F7rxcEfOYIiNwB768nMaGf5Czz9eXX-h-1Cp-_S7_5Z4TRLMxW2ER84Tmn1bSOcDI3Oz9pG1kBQZQDs4HoqsGOj7Ys2DMxWGaRyEYq9Yu2KdDQfDRwvs30X_WQ6WEXzRPlFhrNRHScOP5Ciq7u5UI0e6nj08"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
+<span class="bg-primary-container text-on-primary-container font-label-md text-label-md px-4 py-1.5 rounded-full w-max mb-3 shadow-md border border-primary/20">Lingkungan</span>
+<h2 class="font-headline-xl text-headline-xl text-white">Terumbu Karang: Hutan Bawah Laut Indonesia</h2>
+</div>
+</div>
+</section>
+<!-- Introduction -->
+<section class="bg-surface-container-lowest border-2 border-surface-variant rounded-xl p-6 md:p-8 shadow-[0_4px_15px_rgba(0,0,0,0.03)] relative">
+<div class="absolute -top-6 -right-4 w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center shadow-lg border-4 border-surface-container-lowest transform rotate-12">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl">sailing</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface">
+                Bayangkan kamu menyusut menjadi sebesar ikan badut! Kamu berenang melintasi kota bawah laut yang penuh warna. Bangunan-bangunannya terbuat dari bentuk-bentuk aneh seperti otak raksasa, tanduk rusa, dan kipas melambai. Selamat datang di Terumbu Karang, kota paling sibuk dan indah di dalam lautan!
+            </p>
+</section>
+<!-- Section 1: Apa Itu Terumbu Karang? -->
+<section class="flex flex-col gap-4">
+<h3 class="font-headline-lg text-headline-lg text-primary flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-4xl">water_drop</span>
+                Apa Itu Terumbu Karang?
+            </h3>
+<div class="bg-surface-container rounded-xl p-6 shadow-sm border border-surface-variant/50">
+<p class="text-on-surface-variant mb-4">
+                    Terumbu karang mungkin terlihat seperti batu atau tumbuhan yang berwarna-warni, tapi tahukah kamu? Mereka sebenarnya adalah hewan! Karang dibangun oleh ribuan hewan kecil yang sangat lembut bernama <strong>polip karang</strong>.
+                </p>
+<div class="flex items-center gap-4 bg-surface-bright p-4 rounded-lg">
+<span class="material-symbols-outlined text-primary text-3xl">info</span>
+<p class="text-sm">Polip-polip ini mengeluarkan zat kapur keras yang lama-kelamaan bertumpuk menjadi rumah mereka, membentuk terumbu karang yang besar dan kuat.</p>
+</div>
+</div>
+</section>
+<!-- Section 2: Mengapa Indonesia Istimewa? -->
+<section class="flex flex-col gap-6">
+<h3 class="font-headline-lg text-headline-lg text-secondary flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-4xl">public</span>
+                Mengapa Indonesia Istimewa?
+            </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col justify-center">
+<p class="text-on-surface mb-4">
+                        Indonesia berada tepat di jantung <strong>Segitiga Terumbu Karang (Coral Triangle)</strong>, sebuah wilayah laut yang diakui sebagai pusat kehidupan laut paling kaya di seluruh dunia. Laut kita adalah rumah susun raksasa bagi ikan-ikan!
+                    </p>
+</div>
+<!-- Stats Card -->
+<div class="bg-primary-container rounded-xl p-6 shadow-[0_8px_20px_rgba(45,212,191,0.3)] border-b-4 border-primary/20 text-center flex flex-col justify-center items-center gap-4 transform transition-transform hover:-translate-y-1">
+<span class="material-symbols-outlined text-on-primary-container text-5xl">pie_chart</span>
+<div>
+<p class="font-headline-xl text-headline-xl text-on-primary-container">18%</p>
+<p class="font-label-md text-label-md text-on-primary-container/80 uppercase tracking-wide">Terumbu Karang Dunia</p>
+</div>
+<div class="w-full h-px bg-on-primary-container/20 my-2"></div>
+<div>
+<p class="font-headline-lg text-headline-lg text-on-primary-container">3.000+</p>
+<p class="font-label-md text-label-md text-on-primary-container/80 uppercase tracking-wide">Spesies Ikan</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Ancaman -->
+<section class="flex flex-col gap-6">
+<h3 class="font-headline-lg text-headline-lg text-error flex items-center gap-3">
+<span class="material-symbols-outlined text-error-container text-4xl">warning</span>
+                Ancaman Terumbu Karang
+            </h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Threat 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-variant shadow-[0_4px_15px_rgba(0,0,0,0.03)] flex flex-col items-center text-center gap-4">
+<div class="w-16 h-16 bg-error-container rounded-full flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-3xl">thermostat</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface text-lg">Pemutihan Karang</h4>
+<p class="text-on-surface-variant text-sm">Suhu air laut yang memanas membuat karang stres dan membuang ganggang warnanya, sehingga karang menjadi putih dan bisa mati.</p>
+</div>
+<!-- Threat 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-variant shadow-[0_4px_15px_rgba(0,0,0,0.03)] flex flex-col items-center text-center gap-4">
+<div class="w-16 h-16 bg-secondary-fixed rounded-full flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-3xl">delete</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface text-lg">Sampah Plastik</h4>
+<p class="text-on-surface-variant text-sm">Sampah plastik yang dibuang ke laut bisa menutupi karang, membuat mereka tidak bisa bernapas dan terkena penyakit.</p>
+</div>
+<!-- Threat 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-variant shadow-[0_4px_15px_rgba(0,0,0,0.03)] flex flex-col items-center text-center gap-4">
+<div class="w-16 h-16 bg-tertiary-container rounded-full flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-3xl">phishing</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface text-lg">Cara Tangkap Ikan yang Salah</h4>
+<p class="text-on-surface-variant text-sm">Menangkap ikan dengan bom atau racun menghancurkan rumah karang yang butuh puluhan tahun untuk tumbuh kembali.</p>
+</div>
+</div>
+</section>
+<!-- Section 4: Cara Melindungi -->
+<section class="bg-surface-container-high rounded-xl p-6 md:p-8 shadow-sm">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-4xl">verified</span>
+                Cara Melindungi Terumbu Karang
+            </h3>
+<div class="flex flex-col gap-4">
+<label class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-lg cursor-pointer hover:bg-surface-bright transition-colors border border-surface-variant/50">
+<input class="w-6 h-6 rounded text-primary focus:ring-primary border-outline-variant bg-surface-container" type="checkbox"/>
+<span class="text-on-surface font-medium text-lg">Kurangi penggunaan plastik sekali pakai (bawa botol minum sendiri!)</span>
+</label>
+<label class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-lg cursor-pointer hover:bg-surface-bright transition-colors border border-surface-variant/50">
+<input class="w-6 h-6 rounded text-primary focus:ring-primary border-outline-variant bg-surface-container" type="checkbox"/>
+<span class="text-on-surface font-medium text-lg">Jangan pernah membeli suvenir atau perhiasan yang terbuat dari karang asli.</span>
+</label>
+<label class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-lg cursor-pointer hover:bg-surface-bright transition-colors border border-surface-variant/50">
+<input class="w-6 h-6 rounded text-primary focus:ring-primary border-outline-variant bg-surface-container" type="checkbox"/>
+<span class="text-on-surface font-medium text-lg">Ikut aksi bersih-bersih pantai bersama keluarga atau teman.</span>
+</label>
+</div>
+</section>
+<!-- Section 5: 5 Fakta Seru! (Horizontal Scroll) -->
+<section class="flex flex-col gap-4 overflow-hidden">
+<h3 class="font-headline-lg text-headline-lg text-on-surface flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-4xl">tips_and_updates</span>
+                5 Fakta Seru!
+            </h3>
+<div class="flex overflow-x-auto gap-4 pb-4 hide-scrollbar snap-x snap-mandatory">
+<!-- Fact 1 -->
+<div class="snap-center shrink-0 w-64 bg-surface-container-lowest border-2 border-surface-variant rounded-xl p-5 shadow-sm flex flex-col gap-3">
+<div class="w-10 h-10 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center font-bold text-xl">1</div>
+<p class="font-label-md text-label-md text-on-surface">Karang itu Makhluk Hidup</p>
+<p class="text-sm text-on-surface-variant">Bukan batu atau tumbuhan hijau, mereka hewan yang butuh makan!</p>
+</div>
+<!-- Fact 2 -->
+<div class="snap-center shrink-0 w-64 bg-surface-container-lowest border-2 border-surface-variant rounded-xl p-5 shadow-sm flex flex-col gap-3">
+<div class="w-10 h-10 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center font-bold text-xl">2</div>
+<p class="font-label-md text-label-md text-on-surface">Bisa Berumur 500+ Tahun</p>
+<p class="text-sm text-on-surface-variant">Beberapa terumbu karang yang besar sudah ada sejak ratusan tahun lalu lho.</p>
+</div>
+<!-- Fact 3 -->
+<div class="snap-center shrink-0 w-64 bg-surface-container-lowest border-2 border-surface-variant rounded-xl p-5 shadow-sm flex flex-col gap-3">
+<div class="w-10 h-10 bg-tertiary-container text-on-tertiary-container rounded-full flex items-center justify-center font-bold text-xl">3</div>
+<p class="font-label-md text-label-md text-on-surface">Rumah Si Nemo</p>
+<p class="text-sm text-on-surface-variant">Ikan badut (Nemo) tinggal di anemon, tetangga dekat si terumbu karang.</p>
+</div>
+<!-- Fact 4 -->
+<div class="snap-center shrink-0 w-64 bg-surface-container-lowest border-2 border-surface-variant rounded-xl p-5 shadow-sm flex flex-col gap-3">
+<div class="w-10 h-10 bg-primary-fixed-dim text-on-primary-fixed rounded-full flex items-center justify-center font-bold text-xl">4</div>
+<p class="font-label-md text-label-md text-on-surface">Hutan Tropis Laut</p>
+<p class="text-sm text-on-surface-variant">Karena saking ramainya, terumbu karang sering disebut hutan hujan tropis di laut.</p>
+</div>
+<!-- Fact 5 -->
+<div class="snap-center shrink-0 w-64 bg-surface-container-lowest border-2 border-surface-variant rounded-xl p-5 shadow-sm flex flex-col gap-3">
+<div class="w-10 h-10 bg-error-container text-on-error-container rounded-full flex items-center justify-center font-bold text-xl">5</div>
+<p class="font-label-md text-label-md text-on-surface">Melindungi Pantai</p>
+<p class="text-sm text-on-surface-variant">Mereka bertindak sebagai tembok alami yang menahan ombak besar agar tidak merusak pantai.</p>
+</div>
+</div>
+</section>
+<!-- Section 6: Kuis Kilat -->
+<section class="bg-surface-bright border-2 border-primary-container rounded-xl p-6 shadow-[0_4px_15px_rgba(45,212,191,0.1)] text-center flex flex-col items-center gap-6">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-4xl">quiz</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary">Kuis Kilat!</h3>
+<p class="font-body-lg text-body-lg text-on-surface max-w-2xl">Apa nama wilayah laut yang merupakan pusat kehidupan terumbu karang terbesar di dunia yang sebagian besarnya ada di Indonesia?</p>
+<div class="flex flex-col w-full max-w-md gap-3">
+<button class="bg-surface-container-lowest border-2 border-outline-variant hover:border-primary hover:bg-surface-container text-on-surface font-label-md text-label-md py-3 px-6 rounded-lg transition-all active:scale-95 text-left flex items-center justify-between group">
+<span>Segitiga Bermuda</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary">radio_button_unchecked</span>
+</button>
+<button class="bg-surface-container-lowest border-2 border-outline-variant hover:border-primary hover:bg-surface-container text-on-surface font-label-md text-label-md py-3 px-6 rounded-lg transition-all active:scale-95 text-left flex items-center justify-between group">
+<span>Great Barrier Reef</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary">radio_button_unchecked</span>
+</button>
+<!-- Correct Answer interaction handled by JS ideally, but structurally simple -->
+<button class="bg-surface-container-lowest border-2 border-outline-variant hover:border-primary hover:bg-surface-container text-on-surface font-label-md text-label-md py-3 px-6 rounded-lg transition-all active:scale-95 text-left flex items-center justify-between group">
+<span>Segitiga Terumbu Karang</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary">radio_button_unchecked</span>
+</button>
+</div>
+</section>
+<!-- Glossary (Kamus Kecil) -->
+<section class="mb-10">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-3xl">menu_book</span>
+                Kamus Kecil
+            </h3>
+<div class="bg-surface-container rounded-xl overflow-hidden divide-y divide-surface-variant border border-surface-variant">
+<div class="p-4 flex flex-col md:flex-row md:items-start gap-2 md:gap-4">
+<span class="font-label-md text-label-md text-primary min-w-[150px]">Terumbu Karang</span>
+<p class="text-on-surface-variant text-sm md:text-base">Struktur besar di bawah laut yang terbentuk dari tumpukan kerangka polip karang yang sudah mati dan yang masih hidup.</p>
+</div>
+<div class="p-4 flex flex-col md:flex-row md:items-start gap-2 md:gap-4">
+<span class="font-label-md text-label-md text-primary min-w-[150px]">Polip</span>
+<p class="text-on-surface-variant text-sm md:text-base">Hewan laut bertubuh lunak dan kecil yang hidup berkoloni (berkelompok) dan membangun terumbu karang.</p>
+</div>
+<div class="p-4 flex flex-col md:flex-row md:items-start gap-2 md:gap-4">
+<span class="font-label-md text-label-md text-primary min-w-[150px]">Pemutihan Karang</span>
+<p class="text-on-surface-variant text-sm md:text-base">Kondisi saat karang kehilangan ganggang warna-warninya karena stres (biasanya karena air panas), membuatnya tampak putih.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-2 h-20 bg-surface-container-low dark:bg-surface-container-highest shadow-[0_-4px_10px_rgba(0,0,0,0.05)] rounded-t-lg">
+<!-- Home (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-[12px] leading-[16px] mt-1 font-semibold">Home</span>
+</a>
+<!-- Jelajah (Active) -->
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-xl px-4 py-1 translate-y-[-2px] transition-all scale-90 duration-200 ease-out shadow-sm border border-primary/10" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-label-md text-[12px] leading-[16px] mt-1 font-semibold">Jelajah</span>
+</a>
+<!-- Game (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-[12px] leading-[16px] mt-1 font-semibold">Game</span>
+</a>
+<!-- Badge (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-[12px] leading-[16px] mt-1 font-semibold">Badge</span>
+</a>
+<!-- Tanya AI (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md text-[12px] leading-[16px] mt-1 font-semibold">Tanya AI</span>
+</a>
+</nav>
+</body></html>

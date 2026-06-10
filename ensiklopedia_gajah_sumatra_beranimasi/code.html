@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedia Bloom - Gajah Sumatra</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed-variant": "#005047",
+                      "secondary": "#944a00",
+                      "on-error-container": "#93000a",
+                      "tertiary": "#944a23",
+                      "secondary-fixed-dim": "#ffb783",
+                      "surface-tint": "#006b5f",
+                      "surface": "#f8f9ff",
+                      "surface-bright": "#f8f9ff",
+                      "on-tertiary-fixed": "#351000",
+                      "on-secondary-fixed": "#301400",
+                      "surface-container-high": "#dce9ff",
+                      "error-container": "#ffdad6",
+                      "inverse-primary": "#3cddc7",
+                      "error": "#ba1a1a",
+                      "primary-fixed": "#62fae3",
+                      "outline-variant": "#bacac5",
+                      "on-tertiary-container": "#7e3913",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-highest": "#d5e3fc",
+                      "surface-container": "#e6eeff",
+                      "on-primary": "#ffffff",
+                      "on-primary-fixed": "#00201c",
+                      "inverse-on-surface": "#eaf1ff",
+                      "on-background": "#0d1c2e",
+                      "primary-fixed-dim": "#3cddc7",
+                      "primary-container": "#2dd4bf",
+                      "outline": "#6b7a76",
+                      "background": "#f8f9ff",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "surface-dim": "#ccdbf3",
+                      "on-primary-container": "#00574d",
+                      "surface-container-low": "#eff4ff",
+                      "inverse-surface": "#233144",
+                      "secondary-fixed": "#ffdcc5",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "on-secondary-fixed-variant": "#713700",
+                      "surface-variant": "#d5e3fc",
+                      "tertiary-container": "#ffaa81",
+                      "on-surface-variant": "#3c4a46",
+                      "secondary-container": "#fd933d",
+                      "primary": "#006b5f",
+                      "on-surface": "#0d1c2e",
+                      "tertiary-fixed": "#ffdbcc",
+                      "on-secondary-container": "#693300"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1200px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-xl": [
+                              "Quicksand"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-md": [
+                              "Quicksand"
+                      ],
+                      "headline-lg-mobile": [
+                              "Quicksand"
+                      ],
+                      "headline-lg": [
+                              "Quicksand"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "34px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Bouncy Button Effect */
+        .btn-bouncy {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border-bottom-width: 4px;
+        }
+        .btn-bouncy:active {
+            transform: translateY(4px);
+            border-bottom-width: 0px;
+            margin-top: 4px;
+        }
+
+        /* Ambient Shadows */
+        .shadow-primary-ambient {
+            box-shadow: 0 10px 25px -5px rgba(0, 107, 95, 0.3);
+        }
+        .shadow-secondary-ambient {
+            box-shadow: 0 10px 25px -5px rgba(253, 147, 61, 0.4);
+        }
+
+        .bg-pattern {
+            background-image: radial-gradient(var(--tw-colors-primary-container) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.1;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+            opacity: 0;
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+
+        @keyframes gentlePulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 10px 25px -5px rgba(0, 107, 95, 0.3); }
+            50% { transform: scale(1.02); box-shadow: 0 15px 30px -5px rgba(0, 107, 95, 0.5); }
+        }
+        .animate-gentle-pulse {
+            animation: gentlePulse 2s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        .animate-float {
+            animation: float 4s infinite ease-in-out;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen relative pb-24 md:pb-0 overflow-x-hidden">
+<!-- Ambient Background Pattern -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-[-1]"></div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-bright dark:bg-surface-dim shadow-sm flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit w-full h-16 md:h-20">
+<div class="flex items-center gap-3 transition-transform active:scale-95 duration-200 cursor-pointer">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-primary">
+<img alt="Nara the Explorer Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOUBQC52KM9P_4WoPiU4qw4lTe3GiYTPkKLnXJxp2tm91vCJQRlprI2zitsTjZgMq6stApRrn1pMvLV0UPW2M5qoSfNs9CO2x8WOukMhTo07vaRLDsObxV0W-y-y4qKoSMUQ7yCH5x1iFTVPNj6cm3XpadFC-zYcioi_SWBBu82AAr-hbsMwY19RVFeDjpmyRaHzhgS0zUO5jec1cIqCsxGAJ8ZydowgdhY_aqJrm3P3mhYyJQQDBALK9hp0bNDU1ust-617jUQUc"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg font-bold text-primary dark:text-primary-fixed">Pedia Bloom</h1>
+</div>
+<!-- Desktop Nav (Hidden on Mobile) -->
+<nav class="hidden md:flex items-center gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80 flex flex-col items-center gap-1 transition-transform active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+                Beranda
+            </a>
+<a class="font-label-md text-label-md text-primary font-bold flex flex-col items-center gap-1 transition-transform active:scale-95 duration-200 relative" href="#">
+<span class="material-symbols-outlined" data-weight="fill">explore</span>
+                 Jelajah
+                 <div class="absolute -bottom-2 w-1.5 h-1.5 rounded-full bg-primary"></div>
+</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80 flex flex-col items-center gap-1 transition-transform active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">sports_esports</span>
+                 Main
+            </a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:opacity-80 flex flex-col items-center gap-1 transition-transform active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">military_tech</span>
+                 Lencana
+            </a>
+</nav>
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-high text-primary transition-transform active:scale-95 duration-200 hover:opacity-80">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 md:pt-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative">
+<!-- Shader Background Canvas -->
+<canvas class="absolute top-0 left-0 w-full h-[500px] opacity-30 z-[-1] pointer-events-none rounded-2xl" id="shader-canvas"></canvas>
+<!-- Breadcrumb / Back Navigation -->
+<div class="mb-6 flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<button class="flex items-center gap-1 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+                Kembali
+            </button>
+<span class="text-outline">/</span>
+<span>Hewan Darat</span>
+<span class="text-outline">/</span>
+<span class="text-primary font-bold">Gajah Sumatra</span>
+</div>
+<!-- Hero Section - Bento Grid Style -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-12">
+<!-- Main Hero Image -->
+<div class="md:col-span-8 bg-surface-container rounded-xl overflow-hidden relative shadow-primary-ambient min-h-[300px] md:min-h-[450px]">
+<img alt="Gajah Sumatra di Hutan" class="absolute inset-0 w-full h-full object-cover" data-alt="A highly detailed, majestic photograph of a Sumatran Elephant standing peacefully in a lush, green tropical rainforest. The sunlight filters softly through the dense canopy, highlighting the elephant's wrinkled grey skin and gentle eyes. The scene is bright, vibrant, and optimistic, fitting a children's educational app. The color palette features rich jungle greens, warm earth tones, and a soft, diffused light mode aesthetic. The mood is calm and wondrous." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM1mkpaz5_68mAjLyQ-D9QMNkLocicv8H7uXUl34DV3O74J5eB-YPllpRqSXkC27DJvb2gNuJ4Zn6jPF4oEFz0Ni1OUSdg6FDCna6EjK6RKlK3o3DP-CljqbQDA0x73nLsXN7NEs0VPQZGkWkXmWZY2slPLB2zzMl3NiJHV4Ye1GrytI5lRPp-NK7B7Nt1OLmMhUNNbW5gsWzdOF_c6t8HjRJPkVnghvg8xu1ff3DWs83G17QZk9nAagUolZ4VsbJsA3HJ4RMN4iA"/>
+<!-- Three.js Container -->
+<div class="absolute inset-0 pointer-events-none z-10" id="threejs-container"></div>
+<!-- Overlay Gradient for Text Legibility -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent z-20"></div>
+<div class="absolute bottom-0 left-0 p-6 md:p-10 w-full z-30">
+<div class="flex gap-2 mb-3">
+<span class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-3 py-1 rounded-full text-xs shadow-sm">Mamalia Besar</span>
+<span class="bg-error-container text-on-error-container font-label-md text-label-md px-3 py-1 rounded-full text-xs shadow-sm">Terancam Punah</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-surface-bright drop-shadow-md mb-2">Gajah Sumatra</h2>
+<p class="font-body-md text-body-md text-surface-container-high max-w-2xl">Raksasa lembut penjaga hutan Indonesia. Yuk, kenalan lebih dekat!</p>
+</div>
+</div>
+<!-- Side Stats / Quick Facts -->
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-container-high shadow-sm flex-1 flex flex-col justify-center relative overflow-hidden">
+<!-- Decorative Background -->
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-primary-container/20 rounded-full blur-2xl"></div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4">Kartu Fakta</h3>
+<div class="space-y-4 font-body-md text-body-md">
+<div class="flex items-center gap-3 animate-fade-in-up delay-100">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined">scale</span>
+</div>
+<div>
+<p class="text-on-surface-variant text-sm">Berat Badan</p>
+<p class="font-bold text-on-background">3 - 5 Ton!</p>
+</div>
+</div>
+<div class="flex items-center gap-3 animate-fade-in-up delay-200">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined">straighten</span>
+</div>
+<div>
+<p class="text-on-surface-variant text-sm">Tinggi Badan</p>
+<p class="font-bold text-on-background">Setinggi Atap Rumah (2-3 meter)</p>
+</div>
+</div>
+<div class="flex items-center gap-3 animate-fade-in-up delay-300">
+<div class="w-10 h-10 rounded-full bg-tertiary-container/20 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<div>
+<p class="text-on-surface-variant text-sm">Makanan Kesukaan</p>
+<p class="font-bold text-on-background">Rumput, Buah, Kulit Kayu</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Listen to Audio Button -->
+<button class="bg-primary text-on-primary rounded-xl p-4 flex items-center justify-between btn-bouncy shadow-primary-ambient border-primary-fixed-dim border-b-4 animate-gentle-pulse">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl">play_circle</span>
+<span class="font-label-md text-label-md text-lg">Dengar Suara Gajah</span>
+</div>
+<span class="material-symbols-outlined">volume_up</span>
+</button>
+</div>
+</section>
+<!-- Social Behavior & Ecosystem Role (Squishy Cards) -->
+<section class="mb-12">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-background mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl" data-weight="fill">hub</span>
+                Kehidupan Si Gajah
+            </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Social Card -->
+<div class="bg-surface-container-low rounded-xl p-6 border-2 border-surface-container shadow-sm hover:shadow-primary-ambient transition-shadow duration-300 animate-float">
+<div class="w-12 h-12 rounded-full bg-primary-container text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl" data-weight="fill">diversity_1</span>
+</div>
+<h4 class="font-label-md text-label-md text-xl mb-2 text-on-background">Keluarga Adalah Segalanya</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Gajah Sumatra sangat menyayangi keluarganya lho! Mereka hidup dalam kelompok yang dipimpin oleh gajah betina paling tua dan bijaksana, disebut <strong>Matriark</strong>. Kalau ada anak gajah yang rewel, bibi dan nenek gajah akan ikut menenangkannya. Gemas ya!
+                    </p>
+</div>
+<!-- Ecosystem Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-container shadow-sm hover:shadow-secondary-ambient transition-shadow duration-300 animate-float" style="animation-delay: 0.5s;">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-secondary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl" data-weight="fill">nature</span>
+</div>
+<h4 class="font-label-md text-label-md text-xl mb-2 text-on-background">Petani Hutan</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Gajah dijuluki "Spesies Payung". Sambil berjalan-jalan keliling hutan dan buang kotoran, mereka sebenarnya sedang menanam pohon! Kotoran mereka penuh dengan biji buah-buahan yang akan tumbuh menjadi pohon baru. Keren kan?
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-lg bg-surface-container-lowest dark:bg-inverse-surface shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] fixed bottom-0 left-0 w-full h-20 flex justify-around items-center px-4 pb-safe">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-md text-label-md text-xs mt-1">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="explore" data-weight="fill">explore</span>
+<span class="font-label-md text-label-md text-xs mt-1">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="sports_esports">sports_esports</span>
+<span class="font-label-md text-label-md text-xs mt-1">Main</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="military_tech">military_tech</span>
+<span class="font-label-md text-label-md text-xs mt-1">Lencana</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="smart_toy">smart_toy</span>
+<span class="font-label-md text-label-md text-xs mt-1">Tanya AI</span>
+</a>
+</nav>
+<script>
+        // Simple micro-interaction for the quiz cards
+        document.querySelectorAll('.quiz-option').forEach(option => {
+            option.addEventListener('click', function() {
+                // Reset others
+                this.parentElement.querySelectorAll('.quiz-option').forEach(opt => {
+                    opt.classList.remove('bg-primary-container', 'border-primary', 'text-on-primary-container');
+                    opt.classList.add('bg-surface-container-lowest', 'border-surface-container-high');
+                });
+                
+                // Select this one
+                this.classList.remove('bg-surface-container-lowest', 'border-surface-container-high');
+                this.classList.add('bg-primary-container', 'border-primary', 'text-on-primary-container');
+                
+                // Show feedback
+                const feedbackId = this.getAttribute('data-target');
+                if(feedbackId) {
+                    const feedbackEl = document.getElementById(feedbackId);
+                    feedbackEl.classList.remove('hidden');
+                    // Add a tiny bounce
+                    feedbackEl.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        feedbackEl.style.transform = 'scale(1)';
+                    }, 100);
+                }
+            });
+        });
+
+        // WebGL Setup for Shader Background
+        window.addEventListener('load', function() {
+            const canvas = document.getElementById('shader-canvas');
+            if (!canvas) return;
+            const gl = canvas.getContext('webgl');
+            if (!gl) return;
+            
+            function resize() {
+                canvas.width = canvas.clientWidth;
+                canvas.height = canvas.clientHeight;
+                gl.viewport(0, 0, canvas.width, canvas.height);
+            }
+            window.addEventListener('resize', resize);
+            resize();
+
+            const vsSource = `
+                attribute vec4 a_position;
+                varying vec2 v_texCoord;
+                void main() {
+                    gl_Position = a_position;
+                    v_texCoord = (a_position.xy + 1.0) * 0.5;
+                }
+            `;
+            const fsSource = `
+precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+varying vec2 v_texCoord;
+
+// Simplex 2D noise
+vec3 permute(vec3 x) { return mod(((x*34.0)+1.0)*x, 289.0); }
+
+float snoise(vec2 v){
+  const vec4 C = vec4(0.211324865405187, 0.366025403784439,
+           -0.577350269189626, 0.024390243902439);
+  vec2 i  = floor(v + dot(v, C.yy) );
+  vec2 x0 = v -   i + dot(i, C.xx);
+  vec2 i1;
+  i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+  vec4 x12 = x0.xyxy + C.xxzz;
+  x12.xy -= i1;
+  i = mod(i, 289.0);
+  vec3 p = permute( permute( i.y + vec3(0.0, i1.y, 1.0 ))
+  + i.x + vec3(0.0, i1.x, 1.0 ));
+  vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy),
+    dot(x12.zw,x12.zw)), 0.0);
+  m = m*m ;
+  m = m*m ;
+  vec3 x = 2.0 * fract(p * C.www) - 1.0;
+  vec3 h = abs(x) - 0.5;
+  vec3 a0 = x - floor(x + 0.5);
+  m *= 1.79284291400159 - 0.85373472095314 * ( a0*a0 + h*h );
+  vec3 g;
+  g.x  = a0.x  * x0.x  + h.x  * x0.y;
+  g.yz = a0.yz * x12.xz + h.yz * x12.yw;
+  return 130.0 * dot(m, g);
+}
+
+void main() {
+    vec2 uv = v_texCoord;
+    
+    // Create soft flowing movement
+    float n = snoise(uv * 2.0 + u_time * 0.1);
+    float n2 = snoise(uv * 4.0 - u_time * 0.15);
+    
+    // Pedia Bloom brand colors: Teal (#2dd4bf), Light Blue, soft White
+    vec3 color1 = vec3(0.176, 0.831, 0.749); // #2dd4bf (Teal)
+    vec3 color2 = vec3(0.94, 0.97, 1.0);    // Soft light blue
+    vec3 color3 = vec3(1.0, 1.0, 1.0);     // White
+    
+    vec3 color = mix(color1, color2, n * 0.5 + 0.5);
+    color = mix(color, color3, n2 * 0.3);
+    
+    // Soft vignette
+    float vignette = 1.0 - smoothstep(0.5, 1.5, length(uv - 0.5));
+    
+    gl_FragColor = vec4(color * vignette, 1.0);
+}
+            `;
+
+            function compileShader(gl, type, source) {
+                const shader = gl.createShader(type);
+                gl.shaderSource(shader, source);
+                gl.compileShader(shader);
+                if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+                    console.error('Shader compile failed:', gl.getShaderInfoLog(shader));
+                    gl.deleteShader(shader);
+                    return null;
+                }
+                return shader;
+            }
+
+            const vertexShader = compileShader(gl, gl.VERTEX_SHADER, vsSource);
+            const fragmentShader = compileShader(gl, gl.FRAGMENT_SHADER, fsSource);
+
+            const program = gl.createProgram();
+            gl.attachShader(program, vertexShader);
+            gl.attachShader(program, fragmentShader);
+            gl.linkProgram(program);
+            if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+                console.error('Program link failed:', gl.getProgramInfoLog(program));
+                return;
+            }
+            gl.useProgram(program);
+
+            const positionBuffer = gl.createBuffer();
+            gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+            const positions = [
+                -1.0, -1.0,  1.0, -1.0, -1.0,  1.0,
+                -1.0,  1.0,  1.0, -1.0,  1.0,  1.0,
+            ];
+            gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(positions), gl.STATIC_DRAW);
+
+            const positionLocation = gl.getAttribLocation(program, "a_position");
+            gl.enableVertexAttribArray(positionLocation);
+            gl.vertexAttribPointer(positionLocation, 2, gl.FLOAT, false, 0, 0);
+
+            const timeLocation = gl.getUniformLocation(program, "u_time");
+            const resolutionLocation = gl.getUniformLocation(program, "u_resolution");
+
+            function render(time) {
+                time *= 0.001;
+                gl.uniform1f(timeLocation, time);
+                gl.uniform2f(resolutionLocation, canvas.width, canvas.height);
+                gl.drawArrays(gl.TRIANGLES, 0, 6);
+                requestAnimationFrame(render);
+            }
+            requestAnimationFrame(render);
+        });
+
+        // Three.js Setup for Magic Discovery Effect
+        window.addEventListener('load', function() {
+            const container = document.getElementById('threejs-container');
+            if(container && typeof THREE !== 'undefined') {
+                const width = container.clientWidth || window.innerWidth;
+const height = container.clientHeight || window.innerHeight;
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+camera.position.z = 5;
+
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+renderer.setSize(width, height);
+renderer.setPixelRatio(window.devicePixelRatio);
+container.appendChild(renderer.domElement);
+
+// Ambient light
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+scene.add(ambientLight);
+
+// Directional light for depth
+const dirLight = new THREE.DirectionalLight(0xffffff, 1);
+dirLight.position.set(5, 5, 5);
+scene.add(dirLight);
+
+// Create floating 3D "Seeds of Knowledge" (soft spheres with glow)
+const spheres = [];
+const geometry = new THREE.SphereGeometry(0.5, 32, 32);
+
+for (let i = 0; i < 8; i++) {
+    const material = new THREE.MeshPhongMaterial({
+        color: new THREE.Color(Math.random() * 0.5 + 0.5, 1, 0.9), // Teal-ish colors
+        shininess: 100,
+        transparent: true,
+        opacity: 0.6
+    });
+    
+    const sphere = new THREE.Mesh(geometry, material);
+    
+    // Random positions
+    sphere.position.set(
+        (Math.random() - 0.5) * 10,
+        (Math.random() - 0.5) * 6,
+        (Math.random() - 0.5) * 4
+    );
+    
+    // Random scale
+    const scale = Math.random() * 0.5 + 0.2;
+    sphere.scale.set(scale, scale, scale);
+    
+    // Store movement properties
+    sphere.userData = {
+        speed: Math.random() * 0.01 + 0.005,
+        offset: Math.random() * Math.PI * 2,
+        rotSpeed: Math.random() * 0.02
+    };
+    
+    scene.add(sphere);
+    spheres.push(sphere);
+}
+
+function animate() {
+    requestAnimationFrame(animate);
+    
+    const time = Date.now() * 0.001;
+    
+    spheres.forEach((sphere, i) => {
+        sphere.position.y += Math.sin(time + sphere.userData.offset) * 0.002;
+        sphere.position.x += Math.cos(time + sphere.userData.offset) * 0.001;
+        sphere.rotation.x += sphere.userData.rotSpeed;
+        sphere.rotation.y += sphere.userData.rotSpeed;
+    });
+    
+    renderer.render(scene, camera);
+}
+
+window.addEventListener('resize', () => {
+    const w = container.clientWidth || window.innerWidth;
+    const h = container.clientHeight || window.innerHeight;
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    renderer.setSize(w, h);
+});
+
+animate();
+            }
+        });
+    </script>
+</body></html>

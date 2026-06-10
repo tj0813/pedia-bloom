@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Burung Maleo - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#bacac5",
+                      "primary-fixed": "#62fae3",
+                      "on-error": "#ffffff",
+                      "surface-container": "#e6eeff",
+                      "on-secondary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-background": "#0d1c2e",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-bright": "#f8f9ff",
+                      "secondary-container": "#fd933d",
+                      "on-primary-fixed-variant": "#005047",
+                      "tertiary-fixed": "#ffdbcc",
+                      "secondary-fixed-dim": "#ffb783",
+                      "on-tertiary-fixed": "#351000",
+                      "on-surface": "#0d1c2e",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "on-secondary-container": "#693300",
+                      "secondary": "#944a00",
+                      "error": "#ba1a1a",
+                      "secondary-fixed": "#ffdcc5",
+                      "on-primary-container": "#00574d",
+                      "surface-container-low": "#eff4ff",
+                      "on-tertiary-container": "#7e3913",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-high": "#dce9ff",
+                      "surface-tint": "#006b5f",
+                      "inverse-surface": "#233144",
+                      "primary-container": "#2dd4bf",
+                      "background": "#f8f9ff",
+                      "primary": "#006b5f",
+                      "inverse-primary": "#3cddc7",
+                      "on-surface-variant": "#3c4a46",
+                      "on-primary-fixed": "#00201c",
+                      "outline": "#6b7a76",
+                      "surface-dim": "#ccdbf3",
+                      "inverse-on-surface": "#eaf1ff",
+                      "surface": "#f8f9ff",
+                      "surface-container-highest": "#d5e3fc",
+                      "primary-fixed-dim": "#3cddc7",
+                      "tertiary-container": "#ffaa81",
+                      "surface-variant": "#d5e3fc",
+                      "on-secondary-fixed": "#301400",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed-variant": "#713700",
+                      "tertiary": "#944a23"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "unit": "8px",
+                      "container-max": "1200px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Quicksand"
+                      ],
+                      "label-md": [
+                              "Quicksand"
+                      ],
+                      "headline-xl": [
+                              "Quicksand"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Quicksand"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "34px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .squishy-button {
+            transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .squishy-button:active {
+            transform: translateY(4px);
+            box-shadow: 0 0px 0px 0 #944a00;
+        }
+        .egg-shake {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+        .soft-shadow {
+            box-shadow: 0 4px 20px -2px rgba(45, 212, 191, 0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-24 md:pb-0 font-body-md text-body-md overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="w-full top-0 sticky bg-background dark:bg-on-background z-40 transition-shadow">
+<div class="flex justify-between items-center px-gutter py-4 w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors" onclick="history.back()">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+</button>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary dark:text-primary-fixed">NusaPedia</h1>
+<div class="flex items-center gap-2">
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-primary hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">bookmark_border</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 flex flex-col gap-8">
+<!-- Hero Section -->
+<section class="relative rounded-xl overflow-hidden soft-shadow bg-surface-container-lowest border-2 border-outline-variant/30">
+<div class="h-64 md:h-96 w-full bg-cover bg-center" data-alt="A vivid, bright illustration style photo of a unique Maleo bird from Sulawesi, Indonesia, standing near a sandy beach with volcanic hills in the background. The lighting is sunny and cheerful, suitable for a children's educational platform. The colors are highly saturated, focusing on the bird's distinct black plumage, peachy breast, and distinctive bony casque on its head." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAzeUwCldp5oTQgnuZIGbFjAIcsQhcq6bacMG_2x3UXFkiiMDGETV3g7GBJOIU3xMC_wKd09nji0Z9ob-vIhUrIAsttOQyFX--UEhzSvY2Z6qfe0ovpObK9BL-GS3N9RKAVK1xhIxfdrpnRzkLq8EFatRywjuHwA4B2s0VP-H1raoLXsuqPANgm3a-Y8AZs0XXaSTAWdCwbKgmvLfScJNO9gQQmIBr-H25hvB8F8ZihquL5ZPd5ezZFTDobYO3-BvTYSSSDn2m8YnA');">
+<!-- Overlay gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<div class="flex gap-2 mb-3">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-md text-label-md text-sm">Hewan Unik</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-md text-label-md text-sm">Sulawesi</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-surface-container-lowest mb-2">Burung Maleo</h2>
+<p class="font-body-lg text-body-lg text-surface-container-highest">Si Penetas Telur di Pasir Panas</p>
+</div>
+</section>
+<!-- Bento Grid Content -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Main Info Column -->
+<div class="md:col-span-8 flex flex-col gap-6">
+<!-- Intro Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 md:p-8 soft-shadow border-2 border-outline-variant/30 relative">
+<div class="absolute -top-4 -right-4 w-16 h-16 bg-tertiary-container rounded-full flex items-center justify-center border-4 border-surface-container-lowest transform rotate-12">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">pets</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">info</span>
+                        Siapa itu Maleo?
+                    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Halo Penjelajah! Pernah dengar tentang burung Maleo? Burung ini sangat istimewa dan hanya bisa ditemukan di Pulau Sulawesi, Indonesia. Bayangkan, mereka itu seperti burung ayam hutan raksasa, tapi punya 'helm' keras di kepalanya! Helm ini disebut <strong class="text-secondary">casque</strong>.
+                    </p>
+</div>
+<!-- Nesting Habit Card -->
+<div class="bg-surface-bright rounded-xl p-6 md:p-8 soft-shadow border-2 border-primary-container/50">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary-container mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">volcano</span>
+                        Oven Alam Alami
+                    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+                        Kebanyakan burung mengerami telurnya dengan cara dierami (diduduki). Tapi tidak dengan Ibu Maleo! Ia sangat pintar memanfaatkan alam. Ibu Maleo akan mencari pasir pantai yang hangat atau tanah di dekat sumber air panas pegunungan berapi.
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-secondary mb-2" style="font-variation-settings: 'FILL' 1;">egg</span>
+<span class="font-label-md text-label-md text-on-surface">Telur Raksasa</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-2" style="font-variation-settings: 'FILL' 1;">sunny</span>
+<span class="font-label-md text-label-md text-on-surface">Pasir Panas</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-2" style="font-variation-settings: 'FILL' 1;">flight_takeoff</span>
+<span class="font-label-md text-label-md text-on-surface">Langsung Terbang</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Side Sidebar / Gamification -->
+<div class="md:col-span-4 flex flex-col gap-6">
+<!-- Status Card -->
+<div class="bg-error-container rounded-xl p-6 border-2 border-error/20">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-3xl text-error" style="font-variation-settings: 'FILL' 1;">warning</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-error-container text-xl">Spesies Dilindungi</h3>
+</div>
+<p class="font-body-md text-body-md text-on-error-container mb-4">
+                        Sayangnya, Burung Maleo saat ini terancam punah. Habitat mereka dirusak dan banyak predator (bahkan manusia) yang mengambil telur mereka.
+                    </p>
+<div class="w-full bg-surface-container-lowest rounded-full h-4 overflow-hidden relative">
+<div class="bg-error h-full rounded-full" style="width: 25%;"></div>
+</div>
+<p class="text-sm font-label-md text-label-md text-on-error-container mt-2 text-right">Populasi Semakin Sedikit</p>
+</div>
+<!-- Minigame Card -->
+<div class="bg-primary-container rounded-xl p-6 soft-shadow text-center relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-24 h-24 bg-surface-container-lowest opacity-20 rounded-full blur-xl"></div>
+<div class="absolute -left-8 -bottom-8 w-32 h-32 bg-surface-container-lowest opacity-20 rounded-full blur-xl"></div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary-container mb-2 relative z-10">Bantu Maleo Menetas!</h3>
+<p class="font-body-md text-body-md text-on-primary-container text-sm mb-6 relative z-10">Tap telur raksasa ini berkali-kali untuk membantunya keluar dari pasir panas!</p>
+<button class="w-32 h-40 mx-auto bg-surface-container-lowest rounded-full flex items-center justify-center cursor-pointer mb-6 transform transition-transform border-4 border-outline-variant relative z-10 shadow-[0_8px_0_#bacac5] active:shadow-[0_0px_0_#bacac5] active:translate-y-2" id="eggButton">
+<img alt="Egg" class="w-full h-full object-cover rounded-full opacity-0 absolute" data-alt="A smooth, large bird egg resting on warm, reddish-brown sand, characteristic of volcanic soil. The lighting is warm and bright, highlighting the texture of the sand and the slight speckles on the egg shell. Minimalist, cheerful, educational illustration style suitable for a children's app interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxwEJBwHH2_CC_M79kvCBf_igq6wrfwhkdsG22Si-mNdP-ryba7kx_cdzOpkK2SHLqHLDDV7o2q-NvdMOrsjFQh43MKOxV3Hq-Kw_0stEAzaxp6CB9de9Gcn-aUgiQ0_AuLro-Jn9Nk3qNX6SKgSIBirxInOv9-bbUM_w6SX4dEKU8wOkYx6yworshnJn3HvbVGjlf6AaGB_aNfsixdMLN2dA2teJvfHmUVnLn3IeSEoQgrcvq7jLU6m06KIbuWIPxzWDmc4NNolw"/>
+<span class="material-symbols-outlined text-6xl text-secondary-container" style="font-variation-settings: 'FILL' 1;">egg</span>
+</button>
+<div class="w-full bg-surface-container-lowest/50 rounded-full h-3 mb-2 relative z-10">
+<div class="bg-secondary h-full rounded-full transition-all duration-200" id="hatchProgress" style="width: 0%;"></div>
+</div>
+<p class="font-label-md text-label-md text-on-primary-container relative z-10" id="hatchMessage">0 / 10 Taps</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Shell (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface-container-lowest md:hidden rounded-t-xl border-t-2 border-outline-variant/30 shadow-[0_-4px_12px_rgba(45,212,191,0.15)]">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-label-md text-label-md text-xs mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-2 hover:bg-surface-container-high transition-all active:translate-y-1 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md text-xs mt-1">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">sports_esports</span>
+<span class="font-label-md text-label-md text-xs mt-1">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">military_tech</span>
+<span class="font-label-md text-label-md text-xs mt-1">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">smart_toy</span>
+<span class="font-label-md text-label-md text-xs mt-1">Tanya AI</span>
+</a>
+</nav>
+<script>
+        // Minigame Logic
+        let taps = 0;
+        const maxTaps = 10;
+        const eggButton = document.getElementById('eggButton');
+        const progressBar = document.getElementById('hatchProgress');
+        const message = document.getElementById('hatchMessage');
+        const eggIcon = eggButton.querySelector('.material-symbols-outlined');
+
+        eggButton.addEventListener('click', () => {
+            if (taps < maxTaps) {
+                taps++;
+                const percentage = (taps / maxTaps) * 100;
+                progressBar.style.width = `${percentage}%`;
+                message.textContent = `${taps} / ${maxTaps} Taps`;
+                
+                // Shake effect
+                eggButton.classList.remove('egg-shake');
+                void eggButton.offsetWidth; // trigger reflow
+                eggButton.classList.add('egg-shake');
+
+                if (taps === maxTaps) {
+                    message.textContent = "Horee! Anak Maleo menetas!";
+                    eggIcon.textContent = "cruelty_free"; // Change to a bird-like icon for hatching
+                    eggIcon.classList.remove('text-secondary-container');
+                    eggIcon.classList.add('text-on-surface');
+                    eggButton.classList.remove('egg-shake');
+                    
+                    // Simple confetti effect could go here
+                }
+            }
+        });
+    </script>
+</body></html>

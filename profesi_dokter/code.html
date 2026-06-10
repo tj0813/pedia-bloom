@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedia Bloom - Dokter: Pahlawan Kesehatan!</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#713700",
+                        "outline": "#6b7a76",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#3c4a46",
+                        "on-surface": "#0d1c2e",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "primary-fixed-dim": "#3cddc7",
+                        "on-primary-fixed-variant": "#005047",
+                        "outline-variant": "#bacac5",
+                        "on-background": "#0d1c2e",
+                        "inverse-surface": "#233144",
+                        "background": "#f8f9ff",
+                        "secondary": "#944a00",
+                        "surface-bright": "#f8f9ff",
+                        "surface-container-highest": "#d5e3fc",
+                        "primary-fixed": "#62fae3",
+                        "surface-tint": "#006b5f",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "surface": "#f8f9ff",
+                        "on-secondary-container": "#693300",
+                        "tertiary": "#944a23",
+                        "primary-container": "#2dd4bf",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#ccdbf3",
+                        "on-secondary-fixed": "#301400",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#eff4ff",
+                        "primary": "#006b5f",
+                        "on-primary-fixed": "#00201c",
+                        "inverse-primary": "#3cddc7",
+                        "surface-variant": "#d5e3fc",
+                        "surface-container-high": "#dce9ff",
+                        "secondary-container": "#fd933d",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#ffaa81",
+                        "on-tertiary-container": "#7e3913",
+                        "inverse-on-surface": "#eaf1ff",
+                        "secondary-fixed-dim": "#ffb783",
+                        "secondary-fixed": "#ffdcc5",
+                        "on-primary-container": "#00574d",
+                        "surface-container": "#e6eeff",
+                        "on-tertiary-fixed": "#351000"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "container-max": "1200px",
+                        "margin-mobile": "20px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Quicksand"],
+                        "label-md": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .squishy-btn {
+            transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border-bottom-width: 4px;
+        }
+        .squishy-btn:active {
+            transform: translateY(4px);
+            border-bottom-width: 0px;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased pb-28 pt-20 flex flex-col items-center">
+<header class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-margin-mobile h-16 bg-surface shadow-[0px_4px_12px_rgba(0,107,95,0.1)] shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-surface-container-highest">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">face_4</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary">Pedia Bloom</h1>
+</div>
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:opacity-80 transition-all duration-200 active:scale-95 bg-surface-container-lowest border border-outline-variant">
+<span class="material-symbols-outlined text-2xl">notifications</span>
+</button>
+</header>
+<main class="w-full max-w-container-max px-margin-mobile flex flex-col gap-10">
+<section class="flex flex-col gap-4 mt-4">
+<div class="relative w-full aspect-[4/3] md:aspect-[21/9] rounded-xl overflow-hidden shadow-sm border-4 border-surface-container-lowest">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsQ6x8Lmtx8ajz0TlKpVKNi9RNJAS33EcnW_a7aKtuaLF2sXWxPr82ZTJjYQDTzRJbZl4352AwQK__bjdnQtXgWF3EFClhC6RiEBE7iO81l9aDG7u4Fihc71OvPS_dbNNAzSO7hQE-OJG1BhUqi4G4kMi3Al6PKcjkB8SDhJTSv9IEzwOKZ3CdR09fcUog61vh37JBu5AW0bv4DA6h5Zh3AfgGZNwuCVr_E_M-LYh6ePNc1tDK1mmaOMMlIMAX_J31IpKIysDIgDo"/>
+<div class="absolute top-4 left-4 bg-tertiary-container text-on-tertiary-container px-4 py-2 rounded-full font-label-md text-label-md shadow-sm border border-surface-container-lowest">
+                    Ekonomi dan Profesi
+                </div>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary mt-2">Dokter: Pahlawan Kesehatan!</h2>
+<div class="bg-surface-container-high rounded-xl p-6 relative shadow-sm border border-outline-variant mt-2">
+<div class="absolute -top-6 -right-2 w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center shadow-sm border-4 border-surface rotate-12">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" style="font-variation-settings: 'FILL' 1;">waving_hand</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface">
+                    Halo Penjelajah Cilik! Pernahkah kamu merasa tidak enak badan? Jangan khawatir, ada Dokter yang siap membantu! Dokter adalah pahlawan yang belajar keras untuk membuat kita semua sehat dan ceria kembali.
+                </p>
+</div>
+</section>
+<section class="flex flex-col gap-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+                Apa yang Dilakukan Dokter?
+            </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-xl border-2 border-surface-container shadow-sm hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">stethoscope</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Periksa pasien</span>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-xl border-2 border-surface-container shadow-sm hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">search</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Cari tahu penyakit</span>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-xl border-2 border-surface-container shadow-sm hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">prescriptions</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Kasih resep obat</span>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-xl border-2 border-surface-container shadow-sm hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-error-container" style="font-variation-settings: 'FILL' 1;">healing</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Bantu operasi</span>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-tertiary flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">diversity_3</span>
+                Jenis-jenis Dokter
+            </h3>
+<div class="flex overflow-x-auto gap-4 pb-4 -mx-margin-mobile px-margin-mobile snap-x snap-mandatory hide-scrollbar">
+<div class="min-w-[140px] flex flex-col items-center gap-3 bg-surface-container-lowest p-6 rounded-xl border-2 border-surface-container shadow-sm snap-center">
+<div class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">local_hospital</span>
+</div>
+<span class="font-label-md text-label-md text-center">Dokter Umum</span>
+</div>
+<div class="min-w-[140px] flex flex-col items-center gap-3 bg-surface-container-lowest p-6 rounded-xl border-2 border-surface-container shadow-sm snap-center">
+<div class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-secondary" style="font-variation-settings: 'FILL' 1;">child_care</span>
+</div>
+<span class="font-label-md text-label-md text-center">Dokter Anak</span>
+</div>
+<div class="min-w-[140px] flex flex-col items-center gap-3 bg-surface-container-lowest p-6 rounded-xl border-2 border-surface-container shadow-sm snap-center">
+<div class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-tertiary" style="font-variation-settings: 'FILL' 1;">dentistry</span>
+</div>
+<span class="font-label-md text-label-md text-center">Dokter Gigi</span>
+</div>
+<div class="min-w-[140px] flex flex-col items-center gap-3 bg-surface-container-lowest p-6 rounded-xl border-2 border-surface-container shadow-sm snap-center">
+<div class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">visibility</span>
+</div>
+<span class="font-label-md text-label-md text-center">Dokter Mata</span>
+</div>
+<div class="min-w-[140px] flex flex-col items-center gap-3 bg-surface-container-lowest p-6 rounded-xl border-2 border-surface-container shadow-sm snap-center">
+<div class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-secondary" style="font-variation-settings: 'FILL' 1;">pets</span>
+</div>
+<span class="font-label-md text-label-md text-center">Dokter Hewan</span>
+</div>
+</div>
+</section>
+<section class="bg-primary-container/20 rounded-xl p-6 border-2 border-primary-container/30">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">school</span>
+                Langkah Menjadi Dokter
+            </h3>
+<div class="relative pl-6 flex flex-col gap-6 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-1 before:bg-primary-container before:rounded-full">
+<div class="relative flex items-center gap-4">
+<div class="absolute -left-8 w-5 h-5 rounded-full bg-primary border-4 border-surface flex-shrink-0"></div>
+<span class="font-label-md text-label-md text-on-surface bg-surface-container-lowest px-4 py-2 rounded-full border border-surface-variant shadow-sm">SD, SMP, SMA (IPA)</span>
+</div>
+<div class="relative flex items-center gap-4">
+<div class="absolute -left-8 w-5 h-5 rounded-full bg-primary border-4 border-surface flex-shrink-0"></div>
+<span class="font-label-md text-label-md text-on-surface bg-surface-container-lowest px-4 py-2 rounded-full border border-surface-variant shadow-sm">Kuliah Kedokteran (~4 tahun)</span>
+</div>
+<div class="relative flex items-center gap-4">
+<div class="absolute -left-8 w-5 h-5 rounded-full bg-primary border-4 border-surface flex-shrink-0"></div>
+<span class="font-label-md text-label-md text-on-surface bg-surface-container-lowest px-4 py-2 rounded-full border border-surface-variant shadow-sm">Masa Klinik / Co-ass (~2 tahun)</span>
+</div>
+<div class="relative flex items-center gap-4">
+<div class="absolute -left-8 w-5 h-5 rounded-full bg-secondary border-4 border-surface flex-shrink-0"></div>
+<span class="font-label-md text-label-md text-on-surface bg-secondary-container px-4 py-2 rounded-full border border-surface-variant shadow-sm font-bold">Resmi Jadi Dokter Umum!</span>
+</div>
+<div class="relative flex items-center gap-4">
+<div class="absolute -left-8 w-5 h-5 rounded-full bg-outline-variant border-4 border-surface flex-shrink-0"></div>
+<span class="font-label-md text-label-md text-outline bg-surface-container-lowest px-4 py-2 rounded-full border border-surface-variant shadow-sm border-dashed">Sekolah Spesialis (Pilihan)</span>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">work</span>
+                Tas Alat Dokter
+            </h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-4 rounded-xl border-2 border-surface-container shadow-sm flex flex-col items-center text-center gap-2 active:scale-95 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-5xl text-primary" style="font-variation-settings: 'FILL' 1;">stethoscope</span>
+<h4 class="font-label-md text-label-md text-on-surface">Stetoskop</h4>
+<p class="font-body-md text-body-md text-sm text-on-surface-variant">Dengar detak jantung</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border-2 border-surface-container shadow-sm flex flex-col items-center text-center gap-2 active:scale-95 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-5xl text-secondary" style="font-variation-settings: 'FILL' 1;">device_thermostat</span>
+<h4 class="font-label-md text-label-md text-on-surface">Termometer</h4>
+<p class="font-body-md text-body-md text-sm text-on-surface-variant">Cek suhu badan</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border-2 border-surface-container shadow-sm flex flex-col items-center text-center gap-2 active:scale-95 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-5xl text-tertiary" style="font-variation-settings: 'FILL' 1;">monitor_heart</span>
+<h4 class="font-label-md text-label-md text-on-surface">Tensimeter</h4>
+<p class="font-body-md text-body-md text-sm text-on-surface-variant">Cek tekanan darah</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border-2 border-surface-container shadow-sm flex flex-col items-center text-center gap-2 active:scale-95 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-5xl text-error" style="font-variation-settings: 'FILL' 1;">vaccines</span>
+<h4 class="font-label-md text-label-md text-on-surface">Suntikan</h4>
+<p class="font-body-md text-body-md text-sm text-on-surface-variant">Kasih obat cepat</p>
+</div>
+</div>
+</section>
+<section class="bg-secondary-fixed rounded-xl p-6 border-4 border-secondary shadow-sm flex flex-col items-center text-center gap-6 mt-4">
+<div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center shadow-lg border-4 border-surface-container-lowest -mt-12">
+<span class="material-symbols-outlined text-on-secondary text-4xl" style="font-variation-settings: 'FILL' 1;">local_police</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-secondary-fixed">Misi: Jadi Dokter Kecil!</h3>
+<p class="font-body-lg text-body-lg text-on-secondary-fixed-variant bg-surface-container-lowest/50 p-4 rounded-xl">
+                "Pasienmu sedang demam, suhu badannya 38 derajat Celcius. Apa yang akan kamu lakukan untuk membantunya?"
+            </p>
+<div class="flex flex-col w-full gap-3">
+<button class="squishy-btn w-full bg-primary text-on-primary font-label-md text-label-md py-4 rounded-xl border-on-primary-fixed-variant flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    Kompres &amp; Bawa ke Dokter
+                </button>
+<button class="squishy-btn w-full bg-surface-container-lowest text-on-surface font-label-md text-label-md py-4 rounded-xl border-outline-variant flex items-center justify-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined">close</span>
+                    Ajak Main di Luar
+                </button>
+</div>
+</section>
+<section class="bg-tertiary-fixed rounded-xl p-6 border-2 border-tertiary-fixed-dim flex flex-col gap-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-tertiary-fixed flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">help</span>
+                Kuis Kilat
+            </h3>
+<p class="font-body-lg text-body-lg text-on-tertiary-fixed-variant font-bold">Dokter yang khusus merawat gigi disebut?</p>
+<div class="flex flex-col gap-2">
+<button class="bg-surface-container-lowest text-left px-6 py-4 rounded-xl border-2 border-surface-variant font-label-md text-label-md text-on-surface hover:bg-tertiary-container/30 hover:border-tertiary transition-colors">
+                    A. Dokter Mata
+                </button>
+<button class="bg-surface-container-lowest text-left px-6 py-4 rounded-xl border-2 border-surface-variant font-label-md text-label-md text-on-surface hover:bg-tertiary-container/30 hover:border-tertiary transition-colors flex justify-between items-center group focus:bg-primary-container focus:border-primary focus:text-on-primary-container">
+                    B. Dokter Gigi
+                    <span class="material-symbols-outlined hidden group-focus:block" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</button>
+<button class="bg-surface-container-lowest text-left px-6 py-4 rounded-xl border-2 border-surface-variant font-label-md text-label-md text-on-surface hover:bg-tertiary-container/30 hover:border-tertiary transition-colors">
+                    C. Dokter Bedah
+                </button>
+</div>
+</section>
+<section class="bg-surface-container-low p-6 rounded-xl mb-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-4">Kamus Cilik</h3>
+<ul class="flex flex-col gap-3 font-body-md text-body-md text-on-surface">
+<li class="bg-surface-container-lowest p-3 rounded-lg shadow-sm border border-surface-container"><strong class="text-primary font-label-md">Diagnosis:</strong> Mencari tahu nama penyakit.</li>
+<li class="bg-surface-container-lowest p-3 rounded-lg shadow-sm border border-surface-container"><strong class="text-primary font-label-md">Resep:</strong> Surat dari dokter untuk beli obat.</li>
+<li class="bg-surface-container-lowest p-3 rounded-lg shadow-sm border border-surface-container"><strong class="text-primary font-label-md">Klinik:</strong> Tempat dokter memeriksa pasien.</li>
+</ul>
+</section>
+</main>
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-4 pt-2 bg-surface-container-lowest border-t-2 border-surface-container shadow-[0px_-4px_16px_rgba(148,74,0,0.08)] rounded-t-lg md:hidden">
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-secondary-fixed-dim/20 transition-all duration-300 cubic-bezier(0.34, 1.56, 0.64, 1) active:scale-90">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="font-label-md text-label-md text-[12px]">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl px-4 py-1 translate-y-[-2px] transition-all duration-300 cubic-bezier(0.34, 1.56, 0.64, 1) active:scale-90">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md text-[12px] font-bold">Jelajah</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-secondary-fixed-dim/20 transition-all duration-300 cubic-bezier(0.34, 1.56, 0.64, 1) active:scale-90">
+<span class="material-symbols-outlined text-2xl">sports_esports</span>
+<span class="font-label-md text-label-md text-[12px]">Game</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-secondary-fixed-dim/20 transition-all duration-300 cubic-bezier(0.34, 1.56, 0.64, 1) active:scale-90">
+<span class="material-symbols-outlined text-2xl">military_tech</span>
+<span class="font-label-md text-label-md text-[12px]">Badge</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-secondary-fixed-dim/20 transition-all duration-300 cubic-bezier(0.34, 1.56, 0.64, 1) active:scale-90">
+<span class="material-symbols-outlined text-2xl">smart_toy</span>
+<span class="font-label-md text-label-md text-[12px]">Tanya AI</span>
+</button>
+</nav>
+</body></html>

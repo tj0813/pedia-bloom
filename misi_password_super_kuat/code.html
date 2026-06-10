@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rahasia Password Super Kuat - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline-variant": "#bacac5",
+                        "on-tertiary-fixed": "#351000",
+                        "on-secondary-fixed": "#301400",
+                        "surface-tint": "#006b5f",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#693300",
+                        "background": "#f8f9ff",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#ccdbf3",
+                        "secondary-container": "#fd933d",
+                        "primary-fixed-dim": "#3cddc7",
+                        "tertiary-fixed": "#ffdbcc",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#00201c",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-container": "#7e3913",
+                        "inverse-primary": "#3cddc7",
+                        "surface-container": "#e6eeff",
+                        "outline": "#6b7a76",
+                        "primary-fixed": "#62fae3",
+                        "primary-container": "#2dd4bf",
+                        "primary": "#006b5f",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#d5e3fc",
+                        "surface-bright": "#f8f9ff",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-surface-variant": "#3c4a46",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-primary-fixed-variant": "#005047",
+                        "on-primary-container": "#00574d",
+                        "on-surface": "#0d1c2e",
+                        "tertiary": "#944a23",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f8f9ff",
+                        "on-background": "#0d1c2e",
+                        "on-secondary-fixed-variant": "#713700",
+                        "tertiary-container": "#ffaa81",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "inverse-surface": "#233144",
+                        "secondary": "#944a00",
+                        "inverse-on-surface": "#eaf1ff",
+                        "surface-variant": "#d5e3fc",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "secondary-fixed": "#ffdcc5"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "unit": "8px"
+                    },
+                    fontFamily: {
+                        "body-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-lg": ["Quicksand", "sans-serif"],
+                        "label-md": ["Quicksand", "sans-serif"],
+                        "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-xl": ["Quicksand", "sans-serif"],
+                        "headline-lg-mobile": ["Quicksand", "sans-serif"]
+                    },
+                    fontSize: {
+                        "body-md": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+                        "label-md": ["16px", { lineHeight: "20px", fontWeight: "600" }],
+                        "body-lg": ["20px", { lineHeight: "32px", fontWeight: "500" }],
+                        "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "headline-lg-mobile": ["28px", { lineHeight: "34px", fontWeight: "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom glow utilities based on theme colors for tactile feel */
+        .glow-primary { box-shadow: 0 8px 24px -4px rgba(45, 212, 191, 0.4); }
+        .glow-secondary { box-shadow: 0 8px 24px -4px rgba(253, 147, 61, 0.4); }
+        .glow-error { box-shadow: 0 8px 24px -4px rgba(255, 218, 214, 0.6); }
+        
+        /* Skeuomorphic border bottom for buttons */
+        .btn-tactile {
+            border-bottom-width: 4px;
+            border-bottom-color: rgba(0,0,0,0.15);
+        }
+        .btn-tactile:active {
+            border-bottom-width: 0px;
+            transform: translateY(4px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar (Shared Component) -->
+<header class="fixed top-0 w-full z-50 bg-surface-bright dark:bg-surface-dim shadow-sm flex justify-between items-center px-margin-mobile py-unit w-full h-[72px]">
+<div class="flex items-center gap-3">
+<!-- Leading Avatar -->
+<button class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container transition-transform active:scale-95 duration-200 hover:opacity-80">
+<img alt="Nara the Explorer Avatar" class="w-full h-full object-cover" data-alt="A stylized, cheerful 3D illustration of an Indonesian child explorer named Nara, wearing a tiny scout hat and smiling brightly against a soft pastel background. Designed in a safe, kid-friendly digital art style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXm_WuzJXVoBCKZh_p6unj_70gF0PV3jXi7e1oB-j4Cd0589tmA11yKkf0sI1WL7sXgvejIarClVzsZ1rWonJH7F5WWp6qM8OvEG-uH4plMF8F91nIDdVtfJJ6UxJdtqyVS7J8c82wlHIRnG4ZKOQ5Y-pIkaQo33zy9EA9vT4PeRPysnVkoJOth2GtPkmua1lfZsfMresojXAFrFSJUeypvqgXAEHbuIWQjUOG2M6MChoFLFY0966NodaZrdEh9fgy00m5aryYbqA"/>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary dark:text-primary-fixed">Pedia Bloom</h1>
+</div>
+<!-- Trailing Icon -->
+<button aria-label="Settings" class="w-12 h-12 flex items-center justify-center rounded-full text-primary dark:text-primary-fixed transition-transform active:scale-95 duration-200 hover:opacity-80 hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-[28px]">settings</span>
+</button>
+</header>
+<!-- Main Content Area -->
+<main class="pt-[72px] pb-margin-desktop w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col gap-gutter">
+<!-- Hero Section -->
+<section class="relative bg-primary-container rounded-xl overflow-hidden mt-6 p-6 md:p-10 flex flex-col md:flex-row items-center gap-6 shadow-sm border-2 border-outline-variant/30">
+<!-- Background Pattern (Subtle) -->
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, #00574d 1px, transparent 0); background-size: 24px 24px;"></div>
+<div class="flex-1 z-10 text-center md:text-left space-y-4">
+<div class="inline-flex items-center gap-2 bg-surface-container-lowest/50 backdrop-blur-sm px-4 py-1.5 rounded-full text-on-primary-container font-label-md text-label-md mb-2">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Aman Berinternet</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-primary-container">Rahasia Password Super Kuat</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container/80 max-w-lg">
+                    Ayo belajar membuat tameng digital pelindung akunmu bersama Pasukan Bintang!
+                </p>
+</div>
+<div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 z-10 relative">
+<!-- Digital Shield Character Image -->
+<img alt="Digital Shield Mascot" class="w-full h-full object-contain drop-shadow-xl animate-pulse" data-alt="A cute, friendly 3D mascot resembling a glowing teal and silver shield with big expressive eyes and a brave smile. The mascot is floating in a bright, safe digital space, rendered in a soft, tactile skeuomorphic style suitable for children's educational content." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuibbSl8-zb1oPK-f2h7E8bQZDXMA6EaqUDhSWc8C6dHtOLbXUQVFWSWXyAsi8mkQYBbgpE1Ho2EbZXE36Q3cno-64d3Q80q8IE7MmQBXL6NwLdr6ozRrwnQkpBbTOdiUE0ms1XD-Wda8e98QL03YgenVjztNrF2N0J4GsmCLzRfa0H7eAU-tLOz7gSHIDB54kxC_ZA_P0wsMiKPvOaRkT0hzCsVIKECl_PKeaNEuz8zvAGcHrHeAQ_KCCgoKM24gCz_HFTihKz8E"/>
+</div>
+</section>
+<!-- Password Workshop (Bento Grid Style) -->
+<section class="flex flex-col gap-4">
+<div class="flex items-center gap-3 px-2">
+<span class="material-symbols-outlined text-tertiary text-[28px]" data-weight="fill">construction</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Bengkel Password</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Base Word Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant/20 flex flex-col items-center text-center gap-3 transition-transform hover:-translate-y-1 duration-300">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container glow-secondary">
+<span class="material-symbols-outlined text-[32px]">pets</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface">1. Kata Unik</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Pilih kata yang mudah kamu ingat, tapi susah ditebak orang lain.</p>
+<div class="bg-surface-container-high px-4 py-2 rounded-lg font-headline-lg-mobile text-headline-lg-mobile text-primary mt-2 w-full tracking-wider">
+                        Kucing
+                    </div>
+</div>
+<!-- Numbers Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant/20 flex flex-col items-center text-center gap-3 transition-transform hover:-translate-y-1 duration-300">
+<div class="w-16 h-16 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container glow-secondary">
+<span class="material-symbols-outlined text-[32px]">pin</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface">2. Tambah Angka</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Gabungkan dengan angka rahasiamu (jangan tanggal lahir ya!).</p>
+<div class="bg-surface-container-high px-4 py-2 rounded-lg font-headline-lg-mobile text-headline-lg-mobile text-primary mt-2 w-full tracking-wider">
+                        Kucing<span class="text-tertiary">99</span>
+</div>
+</div>
+<!-- Symbols Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant/20 flex flex-col items-center text-center gap-3 transition-transform hover:-translate-y-1 duration-300">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container glow-primary">
+<span class="material-symbols-outlined text-[32px]">asterisk</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface">3. Simbol Spesial</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Akhiri dengan simbol agar passwordmu tak terkalahkan!</p>
+<div class="bg-surface-container-high px-4 py-2 rounded-lg font-headline-lg-mobile text-headline-lg-mobile text-primary mt-2 w-full tracking-wider">
+                        Kucing<span class="text-tertiary">99</span><span class="text-secondary">!</span>
+</div>
+</div>
+</div>
+<!-- Result Banner -->
+<div class="bg-surface-container-low rounded-lg p-4 flex items-center justify-between border border-primary-container/30">
+<span class="font-body-lg text-body-lg text-on-surface">Kekuatan Password:</span>
+<div class="flex gap-1">
+<div class="h-3 w-12 bg-primary rounded-full"></div>
+<div class="h-3 w-12 bg-primary rounded-full"></div>
+<div class="h-3 w-12 bg-primary rounded-full"></div>
+<span class="ml-2 font-label-md text-label-md text-primary">Super Kuat!</span>
+</div>
+</div>
+</section>
+<!-- Safe or Not? Game -->
+<section class="flex flex-col gap-4 mt-8">
+<div class="flex items-center justify-between px-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[28px]" data-weight="fill">sports_esports</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Aman atau Tidak?</h3>
+</div>
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded-full font-label-md text-label-md text-sm">Misi Harian</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Scenario 1: Not Safe -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-outline-variant/20 flex flex-col">
+<div class="p-6 bg-surface-bright flex-grow flex items-center justify-center text-center min-h-[120px]">
+<p class="font-body-lg text-body-lg text-on-surface">"Memberikan password game ke sahabat baikmu agar dia bisa membantu main."</p>
+</div>
+<div class="flex grid grid-cols-2 border-t border-outline-variant/20">
+<button class="py-4 font-label-md text-label-md text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">close</span> Tidak Aman
+                        </button>
+<button class="py-4 font-label-md text-label-md text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors flex items-center justify-center gap-2 border-l border-outline-variant/20">
+<span class="material-symbols-outlined">check</span> Aman
+                        </button>
+</div>
+</div>
+<!-- Scenario 2: Safe -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-outline-variant/20 flex flex-col">
+<div class="p-6 bg-surface-bright flex-grow flex items-center justify-center text-center min-h-[120px]">
+<p class="font-body-lg text-body-lg text-on-surface">"Membuat password panjang yang hanya diketahui olehmu dan orang tuamu."</p>
+</div>
+<div class="flex grid grid-cols-2 border-t border-outline-variant/20">
+<button class="py-4 font-label-md text-label-md text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">close</span> Tidak Aman
+                        </button>
+<button class="py-4 font-label-md text-label-md text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors flex items-center justify-center gap-2 border-l border-outline-variant/20">
+<span class="material-symbols-outlined">check</span> Aman
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Safety Quiz -->
+<section class="bg-surface-container-low rounded-xl p-6 md:p-8 mt-8 shadow-sm relative overflow-hidden">
+<!-- Decorative blob -->
+<div class="absolute -right-10 -top-10 w-32 h-32 bg-primary-fixed/20 rounded-full blur-2xl"></div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-6 relative z-10 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">quiz</span> Kuis Cepat
+             </h3>
+<div class="space-y-4 relative z-10">
+<div class="bg-surface-container-lowest p-5 rounded-lg border border-outline-variant/30 transition-colors hover:border-primary-container cursor-pointer group">
+<p class="font-body-lg text-body-lg text-on-surface mb-3 group-hover:text-primary transition-colors">Siapa saja yang boleh tahu passwordmu?</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container px-4 py-2 rounded-full font-body-md text-body-md text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors">A. Semua teman kelas</span>
+<span class="bg-surface-container px-4 py-2 rounded-full font-body-md text-body-md text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors">B. Hanya orang tua/wali</span>
+<span class="bg-surface-container px-4 py-2 rounded-full font-body-md text-body-md text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors">C. Orang tak dikenal di internet</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Digital Hero Oath -->
+<section class="mt-8 mb-4">
+<div class="bg-secondary-container rounded-xl p-8 md:p-12 text-center flex flex-col items-center gap-6 relative overflow-hidden shadow-lg border-4 border-secondary-fixed/50">
+<!-- Background visual texture -->
+<div class="absolute inset-0 opacity-20" style="background-image: repeating-linear-gradient(45deg, #944a00 25%, transparent 25%, transparent 75%, #944a00 75%, #944a00), repeating-linear-gradient(45deg, #944a00 25%, transparent 25%, transparent 75%, #944a00 75%, #944a00); background-position: 0 0, 10px 10px; background-size: 20px 20px;"></div>
+<span class="material-symbols-outlined text-[64px] text-on-secondary-container drop-shadow-md z-10" data-weight="fill">local_police</span>
+<div class="z-10 max-w-lg">
+<h3 class="font-headline-xl text-headline-xl text-on-secondary-container mb-4">Sumpah Pahlawan Digital</h3>
+<p class="font-body-lg text-body-lg text-on-secondary-container/90 italic">
+                        "Aku berjanji akan menjaga passwordku seperti harta karun, tidak membagikannya sembarangan, dan selalu berinternet dengan aman!"
+                    </p>
+</div>
+<button class="z-10 mt-4 bg-secondary text-on-secondary font-headline-lg-mobile text-headline-lg-mobile px-8 py-4 rounded-xl flex items-center gap-3 transition-all active:scale-95 btn-tactile glow-secondary hover:brightness-110">
+<span class="material-symbols-outlined">draw</span>
+                    Tap untuk Tanda Tangan
+                </button>
+</div>
+</section>
+</main>
+<script>
+        // Simple micro-interactions for the learning module
+        document.querySelectorAll('button:not(header button)').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Add a simple visual feedback class temporarily
+                this.classList.add('scale-95');
+                setTimeout(() => {
+                    this.classList.remove('scale-95');
+                }, 150);
+            });
+        });
+
+        // Scenario game interaction logic
+        const scenarioButtons = document.querySelectorAll('.grid-cols-2 button');
+        scenarioButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const isSafeBtn = this.textContent.includes('Aman') && !this.textContent.includes('Tidak');
+                const parentCard = this.closest('.rounded-xl');
+                const textContent = parentCard.querySelector('p').textContent;
+                const isActuallySafe = textContent.includes('Membuat password panjang'); // Simple logic for demo
+
+                // Reset siblings
+                const siblings = parentCard.querySelectorAll('button');
+                siblings.forEach(s => {
+                    s.classList.remove('bg-primary-container', 'text-on-primary-container', 'bg-error-container', 'text-on-error-container', 'opacity-50');
+                });
+
+                if ((isSafeBtn && isActuallySafe) || (!isSafeBtn && !isActuallySafe)) {
+                    // Correct answer
+                    this.classList.add('bg-primary-container', 'text-on-primary-container');
+                    siblings.forEach(s => { if(s !== this) s.classList.add('opacity-50') });
+                } else {
+                    // Wrong answer
+                    this.classList.add('bg-error-container', 'text-on-error-container');
+                }
+            });
+        });
+    </script>
+</body></html>

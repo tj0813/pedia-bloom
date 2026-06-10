@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jelajah Sumatra Barat - NusaPedia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f8f9ff",
+                        "background": "#f8f9ff",
+                        "error": "#ba1a1a",
+                        "tertiary": "#944a23",
+                        "secondary-fixed": "#ffdcc5",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-surface": "#0d1c2e",
+                        "outline": "#6b7a76",
+                        "inverse-primary": "#3cddc7",
+                        "surface-bright": "#f8f9ff",
+                        "on-surface-variant": "#3c4a46",
+                        "on-tertiary-container": "#7e3913",
+                        "primary": "#006b5f",
+                        "secondary-container": "#fd933d",
+                        "surface-container-highest": "#d5e3fc",
+                        "surface-dim": "#ccdbf3",
+                        "surface-container-low": "#eff4ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#351000",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "surface-container": "#e6eeff",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#d5e3fc",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#00201c",
+                        "on-primary-container": "#00574d",
+                        "primary-fixed-dim": "#3cddc7",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#ffb783",
+                        "tertiary-container": "#ffaa81",
+                        "surface-tint": "#006b5f",
+                        "secondary": "#944a00",
+                        "on-background": "#0d1c2e",
+                        "on-primary-fixed-variant": "#005047",
+                        "outline-variant": "#bacac5",
+                        "surface-container-high": "#dce9ff",
+                        "primary-container": "#2dd4bf",
+                        "on-secondary-fixed-variant": "#713700",
+                        "inverse-surface": "#233144",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#62fae3",
+                        "on-secondary-fixed": "#301400",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-secondary-container": "#693300"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .bounce-hover:hover { transform: translateY(-4px); }
+        .press-effect:active { transform: translateY(2px); box-shadow: 0 0 0 0 rgba(0,0,0,0); }
+        .soft-shadow { box-shadow: 0 8px 24px -8px rgba(0, 107, 95, 0.15); }
+        .button-shadow { box-shadow: 0 4px 0 0 #713700; }
+        .glass-card { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); }
+        
+        /* Custom scrollbar for horizontal sections */
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md pb-24 min-h-screen">
+<!-- Top App Bar (Mobile optimized per prompt request) -->
+<header class="flex justify-between items-center px-margin-mobile py-4 w-full bg-surface docked full-width top-0 z-40 sticky shadow-sm">
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">arrow_back</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">Sumatra Barat</h1>
+</div>
+<button class="w-12 h-12 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="Avatar" class="w-full h-full object-cover" data-alt="A cheerful 3D cartoon style portrait of an Indonesian child explorer wearing a small scout hat. Bright, inviting lighting. Warm colors. Soft rendering style suitable for kids app avatar." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOfpWpMoM5ZhuvF6RYeKMtHYIrXtXlM-mVRwwL38udgvUgkymeQBpD85qkV4quqPTm7oULbSmSU7AZ-uOk3ySItvO9geFcnkKoLV19YWvK5PNI4zluwSZlPecxiRv2GfkYU6u8Dy06K4pGpWAwuU4Co6v_gT3WgJUwHOZlKLtgUOznqMFVXF109CTm8zMc7T8_EVT0rH-7HnM4ROp47Gaxdza8ldIUrBjOQnSf1p-aN6r50dmjcEbEz8yXPMh3flRRCqvWBDrEICs"/>
+</button>
+</header>
+<main class="max-w-container-max mx-auto md:px-margin-desktop">
+<!-- Hero Section: Rumah Gadang -->
+<section class="relative w-full h-[397px] md:h-[530px] md:rounded-xl md:overflow-hidden md:mt-4 md:mx-auto">
+<img alt="Rumah Gadang" class="absolute inset-0 w-full h-full object-cover" data-alt="A vibrant, high-quality photograph of a traditional Rumah Gadang in West Sumatra, Indonesia. The iconic sweeping curved roofs resembling buffalo horns are prominent against a bright, clear blue sky. Lush green tropical foliage surrounds the intricate wooden architecture. The lighting is sunny and optimistic, reflecting a joyful and educational mood suitable for a children's exploration app." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGflYVU3ULWq-FQ7GJPXCc9rcexR7FlV33xKiT9H3_UKcGe3Y5PRgoKD5dEeMXucreluPRt-aUzq87jlC5v1zrTwBzjPYxQRYguHm8b3NxPXuN6Fn_Gkhbx3i4Zglg7sGUqDdcbj6cMn0onn3gcBvwTe39X_-z7U4LgK4OfPVWTtTB4m33IBWTO3goCNKz-YAPFlc14kzcP4do-RH6VLRUr3xzacvzbagO7Bi_5Ar75TRKXVuE2JRMtzRfKhlUOIWEGY2b5pg5nX0"/>
+<!-- Gradient Overlay for text readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-margin-mobile flex flex-col gap-2">
+<span class="inline-block px-4 py-1.5 bg-primary-container text-on-primary-container font-label-md text-label-md rounded-full w-max shadow-sm backdrop-blur-sm">
+                    Budaya
+                </span>
+<h2 class="font-headline-xl text-headline-xl text-white drop-shadow-md">Pesona Minangkabau</h2>
+<p class="text-surface-container-low font-body-md max-w-lg drop-shadow-sm">Jelajahi keunikan budaya, rumah adat yang megah, dan makanan terlezat di dunia!</p>
+</div>
+</section>
+<!-- Nara Mascot Speech Bubble -->
+<section class="px-margin-mobile py-6 -mt-8 relative z-10 md:max-w-2xl md:mx-auto">
+<div class="glass-card rounded-lg p-4 border-2 border-surface-container-high soft-shadow flex items-start gap-4">
+<div class="w-16 h-16 shrink-0 relative">
+<!-- Placeholder for Nara Mascot -->
+<div class="w-16 h-16 bg-tertiary-container rounded-full border-2 border-white shadow-sm overflow-hidden">
+<img alt="Nara Mascot" class="w-full h-full object-cover" data-alt="A cute, 3D rendered mascot character resembling a smart young explorer child with a magnifying glass. The character has an expressive, friendly face and is colored in bright, playful tones. The style is highly polished, squishy, and tactile, perfect for a modern kid's educational app." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7AS9jIbYu90mlVNsjfVEuoVKoV__YKGukwAd7KkbbaWAFNDRzbrOIuUEDVrrSfGCMFbEQP30iV0_8IXZAsVC22UmLalh2bQ1y_kJNXMXka1wfEXgckiTebDBCeps4du_Oa3N5xdGw8xarnZy0mGgM0kCrSxeHluraK_myT01PVacoW2jdn0yannF3nHk-_qS8Eg8qN3_22DbnbQf5f44yGL7ovxRV2GKQpw-V-zUyNMq3BhPItiLlQ9qzE_YUY6Sc_bbf1lVNaiQ"/>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl rounded-tl-none p-4 shadow-sm border border-outline-variant relative flex-1">
+<p class="font-body-md text-on-surface">Tahukah kamu atap Rumah Gadang mirip tanduk kerbau?</p>
+<!-- Speech bubble arrow -->
+<div class="absolute top-0 -left-2 w-0 h-0 border-t-8 border-t-surface-container-lowest border-l-8 border-l-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Content Sections -->
+<section class="px-margin-mobile pb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Rumah Adat Card -->
+<article class="bg-surface-container-lowest rounded-xl p-5 border-2 border-surface-variant soft-shadow bounce-hover transition-transform duration-300 md:col-span-2 lg:col-span-1">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">holiday_village</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Rumah Gadang</h3>
+</div>
+<div class="w-full h-40 rounded-lg mb-4 overflow-hidden">
+<img alt="Detail Rumah Gadang" class="w-full h-full object-cover" data-alt="Close up view of the intricate wooden carvings and painted details on the walls of a traditional Rumah Gadang in West Sumatra. Vibrant reds, yellows, and blacks dominate the patterns. The image is bright and colorful, highlighting the craftsmanship in a clear, educational way." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmBDVmgP-9yL-RpuXixm--FRDgcNZnM4NkW9p-48BidpYsgpVpU7T73OJ_jsvZIN3YYI25R3DhtZGuDevhgXcOdQuYzL4m32jqHZVQYxSyfLb-_aChSw4FJUo0zN6ud1MmXO8YkxNDzE_uNot5eN2N7ZsufVAmdK9AFGCyq2Dvs6xZJVVOQ25cS5eNvVzXdP6JEuPstQRzFQTLXrw24xCiVcr8I5B7NW6JMio9nJo1PO7IhOjanFEEa-VFguEeDvfNoDadNZFExIo"/>
+</div>
+<p class="font-body-md text-on-surface-variant mb-4">Rumah adat ini dibangun tanpa menggunakan paku besi lho! Semuanya disambung dengan pasak kayu.</p>
+<div class="bg-surface-container-low p-3 rounded-lg border border-outline-variant">
+<p class="font-label-md text-label-md text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">lightbulb</span>
+                        Fakta Seru
+                    </p>
+<p class="text-sm mt-1 text-on-surface-variant">Bentuk atapnya yang melengkung tajam disebut "gonjong".</p>
+</div>
+</article>
+<!-- Tarian Card -->
+<article class="bg-surface-container-lowest rounded-xl p-5 border-2 border-surface-variant soft-shadow bounce-hover transition-transform duration-300">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">celebration</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Tari Piring</h3>
+</div>
+<div class="w-full h-40 rounded-lg mb-4 overflow-hidden relative">
+<img alt="Tari Piring" class="w-full h-full object-cover" data-alt="A dynamic action shot of traditional Indonesian dancers performing the Tari Piring (Plate Dance). The dancers are wearing brightly colored traditional Minangkabau costumes with elaborate headdresses. They are holding white ceramic plates in their hands, moving gracefully. The lighting is dramatic yet warm, capturing the energy of the cultural performance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2vo7PciRaOqwDsY_rbR1klC0CKmF8evefsQP_teni-iZPQ-a_J0GzxqZXmLJ2Hl9ojMlaLyzGStW_f8twDfK3MM9o2ll0J8WFUchzsRRrvVlliGddRq-mkfeHD9EaLhpp4pd2IGdc0g9gwhQ2kec9ofA7qSpjRxm8O4sIgpuv5JT1Xh4FqY57ptZ7QKE_1LTUgNitVefpFfnn0CfykLou_WVY7gvv01v1y4X2TBsirNJuA0oSfcx-DuVQcCse5RheU0psgTXVeI8"/>
+</div>
+<p class="font-body-md text-on-surface-variant">Tarian lincah menggunakan piring di tangan penari. Hebatnya, piring-piring itu tidak pernah jatuh saat menari cepat!</p>
+</article>
+<!-- Makanan Card -->
+<article class="bg-surface-container-lowest rounded-xl p-5 border-2 border-surface-variant soft-shadow bounce-hover transition-transform duration-300">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-10 h-10 rounded-full bg-[#ffdbcc] text-[#76330d] flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Rendang</h3>
+</div>
+<div class="w-full h-40 rounded-lg mb-4 overflow-hidden relative">
+<img alt="Rendang Daging" class="w-full h-full object-cover" data-alt="A mouth-watering, close-up food photography shot of authentic beef Rendang from West Sumatra. The rich, dark brown, caramelized coconut curry sauce coats tender chunks of beef. Garnished with subtle green herbs, served on a traditional plate. The lighting is warm and inviting, emphasizing the texture and savory nature of the dish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPlggipIyhs94EsPmnWQqOEzqj1aJIICxx_NQritF4EFx-Zyt_rLVaq0DFk-TvJb8b40wvTaj-wjf_d0j24XGOyt1y93Dr7QrnaCI0ApjWI7WShKntf18VZilaE7lQ06x-ZKUlSXaOxus97C9PR0n2DV_urPtCt6U03WftYbCKHU1gIA5ERfc_Z7aNovx_3Tojbxq3YRnenZ6pw0az_mdyqtdA-KMWEi7kHK9EpzRMtl7_NqmzpnB1Aj8VIbcSCXhm2kbbqFIIlNs"/>
+</div>
+<p class="font-body-md text-on-surface-variant">Makanan paling lezat sedunia! Rendang dimasak dengan santan kelapa dan rempah-rempah selama berjam-jam sampai berwarna gelap.</p>
+</article>
+</section>
+<!-- Call to Action -->
+<section class="px-margin-mobile py-6 flex justify-center pb-32">
+<button class="bg-secondary text-on-secondary font-headline-lg-mobile text-headline-lg-mobile px-8 py-4 rounded-full button-shadow press-effect transition-transform flex items-center gap-3 w-full md:w-auto md:min-w-[300px] justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+                Mulai Petualangan
+            </button>
+</section>
+</main>
+<!-- Bottom Nav Bar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-4 pt-2 bg-surface-container-lowest shadow-[0_-4px_20px_-5px_rgba(0,107,95,0.2)] rounded-t-lg">
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-2 mb-1 shadow-[0_4px_0_0_#005047] hover:bg-surface-variant transition-all Active: translate-y-1" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md mt-1">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full" href="#">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-label-md mt-1">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full" href="#">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-label-md mt-1">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md text-label-md mt-1">Tanya AI</span>
+</a>
+</nav>
+</body></html>

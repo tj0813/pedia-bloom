@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sains Populer - Gunung Berapi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#bacac5",
+                        "primary-fixed": "#62fae3",
+                        "on-error": "#ffffff",
+                        "surface-container": "#e6eeff",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-background": "#0d1c2e",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f8f9ff",
+                        "secondary-container": "#fd933d",
+                        "on-primary-fixed-variant": "#005047",
+                        "tertiary-fixed": "#ffdbcc",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-tertiary-fixed": "#351000",
+                        "on-surface": "#0d1c2e",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-secondary-container": "#693300",
+                        "secondary": "#944a00",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#ffdcc5",
+                        "on-primary-container": "#00574d",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-container": "#7e3913",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "surface-tint": "#006b5f",
+                        "inverse-surface": "#233144",
+                        "primary-container": "#2dd4bf",
+                        "background": "#f8f9ff",
+                        "primary": "#006b5f",
+                        "inverse-primary": "#3cddc7",
+                        "on-surface-variant": "#3c4a46",
+                        "on-primary-fixed": "#00201c",
+                        "outline": "#6b7a76",
+                        "surface-dim": "#ccdbf3",
+                        "inverse-on-surface": "#eaf1ff",
+                        "surface": "#f8f9ff",
+                        "surface-container-highest": "#d5e3fc",
+                        "primary-fixed-dim": "#3cddc7",
+                        "tertiary-container": "#ffaa81",
+                        "surface-variant": "#d5e3fc",
+                        "on-secondary-fixed": "#301400",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#713700",
+                        "tertiary": "#944a23"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "container-max": "1200px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Quicksand"],
+                        "label-md": ["Quicksand"],
+                        "headline-xl": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "label-md": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .bouncy-button {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+        }
+        .bouncy-button:active {
+            transform: translateY(4px);
+            box-shadow: 0 0px 0px rgba(0,0,0,0) !important;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 20px -2px rgba(45, 212, 191, 0.15);
+        }
+        .card-shadow-hover:hover {
+            box-shadow: 0 8px 24px -4px rgba(45, 212, 191, 0.25);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+        body {
+            -webkit-tap-highlight-color: transparent;
+        }
+        /* Custom scrollbar for horizontal sections */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky bg-background dark:bg-on-background z-40 flat no shadows flex justify-between items-center px-gutter py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden border-2 border-primary-container shrink-0">
+<img alt="Nara the Explorer mascot avatar" class="w-full h-full object-cover" data-alt="A cute, stylized 3D illustration of a young Indonesian explorer mascot named Nara, wearing a safari hat and a bright orange vest, smiling enthusiastically. The art style is soft, friendly, and colorful, suitable for a children's educational app. Lighting is bright and cheerful." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRaYgFhV5nVg87oczfd1dkoj2iXGb-uCy2ljXo49x72pHKDy8cC8hTYjRcRmKF-DaRchXW1BgQ9yvpKtyHbFfFhKfpwzrOHrbBhnckuQPOsduKE1s4MRcXH3gO4t6VZ6hNOYQ6JUEsJCrBZMCpWHLDNA2jSM-Gs_X7JyEaAQ12V4Zzqb6nTFUD7WeI-8KPRy-n5G3XIbRhLLBDDT7tUNsXRsOTNDk4Wr-F_qioCHgNMX1TeqBhdwHVMjFllxElU5RAXM5dYvwc7sg"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed">NusaPedia</h1>
+</div>
+<button aria-label="Settings" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors active:scale-95 duration-150 bounce-effect">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+</button>
+</header>
+<!-- Main Canvas -->
+<main class="flex-grow flex flex-col px-gutter pb-[100px] max-w-container-max mx-auto w-full gap-8 mt-4">
+<!-- Hero Section -->
+<section class="relative w-full rounded-xl overflow-hidden shadow-[0_8px_30px_rgba(45,212,191,0.2)] bg-surface-container-lowest border-2 border-outline-variant/20 group">
+<div class="absolute top-4 left-4 z-10">
+<span class="bg-[#944a23] text-white font-label-md text-label-md px-3 py-1 rounded-full shadow-md">Geologi</span>
+</div>
+<div class="aspect-video w-full relative overflow-hidden bg-surface-container">
+<img alt="Gunung Berapi Erupsi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A dramatic, high-quality photograph of a volcano erupting at twilight. Plumes of dark smoke and glowing red lava contrast against a deep blue and purple sky. The image has a slightly stylized, soft-focus feel to fit an educational app, highlighting the raw power of nature in a safe, awe-inspiring way." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjoiIkCXaUg6Xd7XKhGjT8FxBkHMw23r-L3Caxu74m6MjiAvhn9Qp2zYLqTRuFK4z6IVeklh3FeHYnXsvdbNPghTxJPXYcQoxBhUjGmcOukuIGOCZDlMY5aIJGZvkCc2bwVdWWZ5FyH4znUL3PnN05nzp4KfWhWgd8W0r4G5_8unD4LRZs31ykWczQb4vc756ajyek3hFJ7W_mYH6ZzB2m1ukFu2hKdfQj99sDRA-nvT5KjNhKYcCHwFUb6aCp3fYUQigS3eHbxcg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-white mb-2 md:font-headline-lg md:text-headline-lg">Rahasia Gunung Berapi</h2>
+<p class="font-body-md text-body-md text-white/90 line-clamp-2 md:font-body-lg md:text-body-lg">Bagaimana gunung raksasa ini bisa menyemburkan api dan batuan panas? Mari kita cari tahu!</p>
+</div>
+</div>
+</section>
+<!-- What is a Volcano -->
+<section class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary-container shadow-[0_0_15px_rgba(253,147,61,0.3)]">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">volcano</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Apa itu Gunung Berapi?</h3>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-outline-variant/20 card-shadow relative">
+<p class="font-body-md text-body-md text-on-surface-variant relative z-10">
+                    Gunung berapi seperti jendela rahasia menuju perut Bumi! Jauh di bawah tanah, batu-batuan sangat panas sampai meleleh menjadi cairan yang disebut <strong>magma</strong>. Saat tekanan di bawah tanah terlalu kuat, magma ini mendesak naik dan keluar. Begitu sampai di luar, kita menyebutnya <strong>lava</strong>!
+                </p>
+<!-- Decorative element -->
+<div class="absolute -bottom-4 -right-4 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-9xl text-primary">local_fire_department</span>
+</div>
+</div>
+</section>
+<!-- The Ring of Fire Info Card -->
+<section class="bg-surface-container-highest rounded-xl p-1 shadow-[0_4px_20px_rgba(253,147,61,0.15)] overflow-hidden">
+<div class="bg-surface-container-lowest rounded-[14px] p-6 h-full flex flex-col md:flex-row gap-6 items-center">
+<div class="flex-1 space-y-4">
+<div class="inline-flex items-center gap-2 bg-error-container text-on-error-container px-3 py-1.5 rounded-full font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">public</span>
+                        Cincin Api Pasifik
+                    </div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Kenapa Indonesia Banyak Gunung Berapi?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Indonesia terletak tepat di atas <strong>Ring of Fire</strong> atau Cincin Api Pasifik! Ini adalah jalur panjang berbentuk tapal kuda di sekitar Samudra Pasifik di mana banyak lempeng Bumi saling bertabrakan. Tabrakan inilah yang membuat gunung berapi terbentuk.
+                    </p>
+</div>
+<div class="w-full md:w-1/3 aspect-square rounded-lg overflow-hidden border-4 border-white shadow-lg bg-surface relative">
+<img alt="Peta Indonesia" class="w-full h-full object-cover" data-alt="A stylized, colorful 3D map illustration focusing on the Indonesian archipelago. The map shows glowing, pulsing red dots indicating locations of active volcanoes along the 'Ring of Fire' path. The oceans are a soft, deep blue, and the landmasses are vibrant green, rendered in a cheerful, educational children's app aesthetic with soft lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3F9VrcckgiH6eMQ6Xcw8UPKGKwHi3KKCpFQ4q5zBkaPtLcctWFV_HReGSyoxXr_kWq5ztuYDLN1XcnrnhbYh__9p62HNA8ueyfZ830TPb6VwzBeGisDwZ5KA1hntt2lX-x1BjqXSaYWnNdJP3paxDWlRKp7Lle9VqGHXVelRp0FT8d51efce6oATkph-rTF9vHdaG7ORGk452nMkXGgGVihAyD8O6GMDnvM7NEpN2WfRgLr3EXe-ouOK0HdC9JjPazNArghnm5ZI"/>
+</div>
+</div>
+</section>
+<!-- Interactive CTA -->
+<section class="mt-4 mb-8">
+<button class="w-full relative overflow-hidden bg-secondary text-white rounded-xl p-6 bouncy-button shadow-[0_8px_0_#693300,0_15px_20px_rgba(148,74,0,0.4)] border-2 border-secondary-container/50 group">
+<!-- Background decoration -->
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xNSIvPjwvc3ZnPg==')] opacity-50"></div>
+<div class="relative z-10 flex flex-col items-center justify-center text-center gap-3">
+<div class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">science</span>
+</div>
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile mb-1">Simulasi Gunung Berapi</h3>
+<p class="font-body-md text-body-md text-tertiary-fixed opacity-90">Bangun gunungmu sendiri dan lihat cara erupsinya!</p>
+</div>
+<div class="mt-2 inline-flex items-center gap-2 bg-white text-secondary font-label-md text-label-md px-6 py-2 rounded-full">
+                        Mulai Main <span class="material-symbols-outlined text-lg">play_arrow</span>
+</div>
+</div>
+</button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface-container-lowest dark:bg-on-background shadow-[0_-4px_12px_rgba(45,212,191,0.15)] rounded-t-xl">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+            Home
+        </a>
+<!-- Jelajah (Active due to semantic intent: Exploring science topics) -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-2 active:translate-y-1 transition-transform duration-200 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+            Jelajah
+        </a>
+<!-- Game -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined mb-1">sports_esports</span>
+            Game
+        </a>
+<!-- Badge -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined mb-1">military_tech</span>
+            Badge
+        </a>
+<!-- Tanya AI -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined mb-1">smart_toy</span>
+            Tanya AI
+        </a>
+</nav>
+</body></html>

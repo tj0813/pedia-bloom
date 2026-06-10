@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wayang Kulit - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#ffdcc5",
+                        "primary-fixed": "#62fae3",
+                        "on-primary-fixed": "#00201c",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#d5e3fc",
+                        "surface-container-high": "#dce9ff",
+                        "tertiary": "#944a23",
+                        "surface-dim": "#ccdbf3",
+                        "inverse-on-surface": "#eaf1ff",
+                        "secondary-container": "#fd933d",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f8f9ff",
+                        "primary-container": "#2dd4bf",
+                        "outline-variant": "#bacac5",
+                        "on-secondary-fixed": "#301400",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "surface-container-highest": "#d5e3fc",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#351000",
+                        "on-secondary-fixed-variant": "#713700",
+                        "on-primary-container": "#00574d",
+                        "background": "#f8f9ff",
+                        "on-tertiary-container": "#7e3913",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#006b5f",
+                        "tertiary-container": "#ffaa81",
+                        "on-background": "#0d1c2e",
+                        "on-surface": "#0d1c2e",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#e6eeff",
+                        "secondary": "#944a00",
+                        "surface": "#f8f9ff",
+                        "on-primary-fixed-variant": "#005047",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-surface-variant": "#3c4a46",
+                        "inverse-surface": "#233144",
+                        "error-container": "#ffdad6",
+                        "outline": "#6b7a76",
+                        "inverse-primary": "#3cddc7",
+                        "tertiary-fixed": "#ffdbcc",
+                        "primary-fixed-dim": "#3cddc7",
+                        "on-secondary-container": "#693300",
+                        "surface-tint": "#006b5f",
+                        "secondary-fixed-dim": "#ffb783"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bouncy-button {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .bouncy-button:active {
+            transform: scale(0.95) translateY(2px);
+        }
+        .shadow-colored {
+            box-shadow: 0 10px 25px -5px rgba(45, 212, 191, 0.2), 0 8px 10px -6px rgba(45, 212, 191, 0.1);
+        }
+        .shadow-interactive {
+            box-shadow: 0 4px 15px -3px rgba(0, 107, 95, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md antialiased pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-bright dark:bg-surface-dim shadow-sm flex justify-between items-center px-margin-mobile py-unit w-full h-16">
+<div class="flex items-center gap-3">
+<button aria-label="Go Back" class="text-primary p-2 bouncy-button hover:opacity-80 transition-transform active:scale-95 duration-200">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-surface">
+<img alt="Nara Avatar" class="w-full h-full object-cover" data-alt="A small, friendly illustrated avatar of an explorer child character named Nara, designed in a soft, squishy digital playground style with heritage orange and science purple accents, suitable for a children's educational app." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJQaf6CVXd56OYosQwbGAVQCvWMOSCxLGi3aRPoJhUyY9LqVvDw8QQs7KnalU_reNHqfvFZwJ0LzALU1glrHfyOrRCx2ZOU5mzdXuNIPxpQ28m9ofY7J--2nKECkoZ7OrgkTL-9k81DzV-lupFG7Hug3kMIvZx9K71LbL_9OUrSKMY8yP-55ZSfArNNeNS8uQfeZTdFuI9mm7yLd_bWl4fXBeQ4yDsG93skkLJpGUwCvBCIQWcs66sHFIGUW6lSswG7aO5rlQHmWE"/>
+</div>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary dark:text-primary-fixed">Pedia Bloom</h1>
+<button aria-label="Settings" class="text-primary p-2 bouncy-button hover:opacity-80 transition-transform active:scale-95 duration-200">
+<span class="material-symbols-outlined text-2xl" data-icon="settings">settings</span>
+</button>
+</header>
+<main class="pt-24 px-margin-mobile max-w-container-max mx-auto space-y-12">
+<!-- Hero Section -->
+<section class="relative rounded-2xl overflow-hidden bg-white shadow-colored border-2 border-surface-container">
+<div class="h-64 md:h-80 w-full bg-surface-container relative">
+<img alt="Wayang Kulit" class="w-full h-full object-cover" data-alt="A beautiful, vibrant photo of traditional Indonesian Wayang Kulit shadow puppets displayed against a glowing warm light. The intricate leather carvings of the puppets are highlighted, creating a magical, storytelling atmosphere suitable for a children's educational app." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg_6QWmN2Ib_j_LFv7r_vVF26_OWfoEsdZRbxl_xxppttsFIc6rA_Ii-hT_vN5Tc8j_Ky74g12bKdnO3JBpF1BK2doM9VlC2KHutCHV_SZbcmmQnXtpfCv0X7btRlqxYZ-87DSk8fWhOLN8k1-NzfObWbZF8QoAFxXfuPjRuZKZnaU1lxzpEopvyb92KGlDB3yX21KbfFC7W6ClmNsT9jQm_foI9RpSqTAU2LdbPd9fGi0-9O5KEtw0CvMmJWg5V07I12-PY4gEG0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+</div>
+<div class="p-6 relative z-10 -mt-16 bg-white rounded-t-2xl">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container font-label-md text-label-md rounded-full shadow-sm">Budaya</span>
+<span class="px-3 py-1 bg-tertiary-container text-on-tertiary-container font-label-md text-label-md rounded-full shadow-sm">Jawa</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-2">Wayang Kulit</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Seni bercerita kuno dari Indonesia menggunakan bayangan dan cahaya.</p>
+</div>
+</section>
+<!-- Story Section -->
+<section class="bg-surface-container-low rounded-2xl p-6 md:p-8 border-2 border-white shadow-interactive relative">
+<div class="absolute -top-6 -right-4 w-20 h-20 bg-primary-container rounded-full flex items-center justify-center border-4 border-white shadow-md z-10 rotate-12">
+<span class="material-symbols-outlined text-4xl text-on-primary-container" data-weight="fill">auto_awesome</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">menu_book</span>
+                Cerita di Balik Bayangan
+            </h2>
+<div class="space-y-4 font-body-md text-body-md text-on-surface">
+<p>Bayangkan sebuah layar putih yang lebar, disinari oleh lampu minyak yang hangat. Di baliknya, seorang pencerita hebat yang disebut <strong>Dalang</strong> memainkan boneka-boneka pipih yang terbuat dari kulit kerbau.</p>
+<p>Boneka ini diukir sangat indah dengan lubang-lubang kecil. Saat dimainkan di depan cahaya, bayangannya menari-nari di layar putih. Inilah Wayang Kulit, pertunjukan ajaib yang sudah ada sejak ratusan tahun lalu!</p>
+</div>
+</section>
+<!-- Characters Section (Bento Grid) -->
+<section class="space-y-6">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">groups</span>
+                Tokoh Utama
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Pandawa Card -->
+<div class="bg-white rounded-2xl p-6 border-2 border-surface-container shadow-interactive flex flex-col justify-between overflow-hidden relative group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/20 rounded-bl-full -mr-10 -mt-10 transition-transform group-hover:scale-110"></div>
+<div>
+<div class="w-14 h-14 bg-primary-container text-on-primary-container rounded-xl flex items-center justify-center mb-4 shadow-sm">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Pandawa Lima</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Lima bersaudara pahlawan yang baik hati dan membela kebenaran: Yudhistira, Bima, Arjuna, Nakula, dan Sadewa.</p>
+</div>
+<div class="h-32 bg-surface-container-high rounded-xl mt-4 overflow-hidden border border-surface-dim">
+<img alt="Pandawa" class="w-full h-full object-cover opacity-80" data-alt="A stylized, illustrative representation of the five Pandawa brothers from Indonesian mythology, designed in a soft, child-friendly style with bright, optimistic colors fitting the Pedia Bloom aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWZXTCYKsF3a8m4AjZuuJIERQ9OSQhxHLd-f3-NeLTgoLB3cZptXU38IXbIGKWoWIKyHHoCWeni1ydrPSq0mXTpnGKwvkdrz5S2J4tv9X7QB9afVpCggAEThTe385MhY85_HD1IfxNGRCkM2WYPABezSJLQsdiskp1T1r4d2lsgi4mLpEbRnHScvSllJP57PRZClNW1zho-Gc44fNUIoG4QmANHNiyVR2kTAphYIIqFiDC1ZM2Tc3SHx-FLw14X4910O98xcMnDIY"/>
+</div>
+</div>
+<!-- Kurawa Card -->
+<div class="bg-white rounded-2xl p-6 border-2 border-surface-container shadow-interactive flex flex-col justify-between overflow-hidden relative group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-error-container/20 rounded-bl-full -mr-10 -mt-10 transition-transform group-hover:scale-110"></div>
+<div>
+<div class="w-14 h-14 bg-error-container text-on-error-container rounded-xl flex items-center justify-center mb-4 shadow-sm">
+<span class="material-symbols-outlined text-3xl">swords</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Kurawa</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Seratus bersaudara yang sering menjadi lawan para Pandawa dalam cerita epik Mahabharata.</p>
+</div>
+<div class="h-32 bg-surface-container-high rounded-xl mt-4 overflow-hidden border border-surface-dim">
+<img alt="Kurawa" class="w-full h-full object-cover opacity-80" data-alt="A stylized, dramatic but child-friendly illustration representing the Kurawa characters from Indonesian mythology, using darker, bolder colors to contrast with the Pandawa, fitting the educational Pedia Bloom style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTmEANBwBv5vFeQHinM2v_yOZwJY5OJdoHysJb964-62blppUHwHnZXg3xHTXbfwjqYztLzaUzSE8l_yo6Ltde01ILISVCE4vhzBILj_7dtnuSbHm4kZ35J2ela5jIw9pWfPd4-4Nszkev2u4agKtyNYKsSuL7rsi-uxi9MwT32lR023ikT4c-Ycgfcvch31cFwuA-5ei3gyFDMZnPbpW-Ua2PJvuEkpcJMLgTbVEBChEQt3oEL4M6BFoCkYll6RDQb9ZsfTX6Y5w"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive 'Dalang Cilik' Area -->
+<section class="bg-gradient-to-br from-surface-dim to-surface rounded-2xl p-6 md:p-8 border-2 border-outline-variant shadow-lg text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAiPjwvcmVjdD4KPHBhdGggZD0iTTAgMEw4IDhNOCAwTDAgOCIgc3Ryb2tlPSIjMDA2YjVmIiBzdHJva2Utd2lkdGg9IjAuNSIgc3Ryb2tlLW9wYWNpdHk9IjAuMSI+PC9wYXRoPgo8L3N2Zz4=')] opacity-50"></div>
+<div class="relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Jadi Dalang Cilik!</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Geser wayang di bawah ini untuk melihat bayangannya.</p>
+<div class="bg-white h-48 rounded-xl border-4 border-secondary-container relative overflow-hidden mb-6 shadow-inner mx-auto max-w-md cursor-ew-resize group" id="interactive-stage">
+<!-- Light Source -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-yellow-100 rounded-full blur-2xl opacity-50"></div>
+<!-- The Puppet (Draggable visual representation) -->
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 transition-transform duration-75 text-primary" id="puppet">
+<span class="material-symbols-outlined text-6xl drop-shadow-xl" data-weight="fill">accessibility_new</span>
+</div>
+</div>
+<button class="bouncy-button bg-secondary-container text-on-secondary-container font-label-md text-label-md px-8 py-4 rounded-full shadow-[0_4px_0_#944a00] hover:bg-secondary-fixed transition-colors inline-flex items-center gap-2">
+<span class="material-symbols-outlined">play_arrow</span>
+                    Mainkan Efek Suara Gamelan
+                </button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full h-20 flex justify-around items-center px-4 pb-safe bg-surface-container-lowest dark:bg-inverse-surface shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-50 rounded-t-lg md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="home">home</span>
+<span class="font-label-md text-label-md text-xs">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-90 duration-200 shadow-sm" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="explore" data-weight="fill">explore</span>
+<span class="font-label-md text-label-md text-xs">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="sports_esports">sports_esports</span>
+<span class="font-label-md text-label-md text-xs">Main</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="military_tech">military_tech</span>
+<span class="font-label-md text-label-md text-xs">Lencana</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="smart_toy">smart_toy</span>
+<span class="font-label-md text-label-md text-xs">Tanya AI</span>
+</a>
+</nav>
+<script>
+        // Simple interaction for Dalang Cilik
+        const stage = document.getElementById('interactive-stage');
+        const puppet = document.getElementById('puppet');
+        
+        let isDragging = false;
+
+        stage.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            movePuppet(e.clientX);
+        });
+
+        window.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+
+        stage.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            movePuppet(e.clientX);
+        });
+
+        // Touch support
+        stage.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            movePuppet(e.touches[0].clientX);
+        }, {passive: true});
+        
+        stage.addEventListener('touchend', () => {
+            isDragging = false;
+        });
+
+        stage.addEventListener('touchmove', (e) => {
+             if (!isDragging) return;
+             // Prevent scrolling while playing
+             e.preventDefault(); 
+             movePuppet(e.touches[0].clientX);
+        }, {passive: false});
+
+        function movePuppet(clientX) {
+            const rect = stage.getBoundingClientRect();
+            let x = clientX - rect.left;
+            
+            // Constrain
+            x = Math.max(20, Math.min(x, rect.width - 20));
+            
+            // Center the puppet on cursor
+            puppet.style.left = `${x}px`;
+            
+            // Add a slight rotation based on movement
+            const centerX = rect.width / 2;
+            const tilt = ((x - centerX) / centerX) * 15; // Max 15 deg tilt
+            puppet.style.transform = `translateX(-50%) rotate(${tilt}deg)`;
+        }
+    </script>
+</body></html>

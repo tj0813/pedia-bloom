@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jalak Bali - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed-variant": "#005047",
+                      "secondary": "#944a00",
+                      "on-error-container": "#93000a",
+                      "tertiary": "#944a23",
+                      "secondary-fixed-dim": "#ffb783",
+                      "surface-tint": "#006b5f",
+                      "surface": "#f8f9ff",
+                      "surface-bright": "#f8f9ff",
+                      "on-tertiary-fixed": "#351000",
+                      "on-secondary-fixed": "#301400",
+                      "surface-container-high": "#dce9ff",
+                      "error-container": "#ffdad6",
+                      "inverse-primary": "#3cddc7",
+                      "error": "#ba1a1a",
+                      "primary-fixed": "#62fae3",
+                      "outline-variant": "#bacac5",
+                      "on-tertiary-container": "#7e3913",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-highest": "#d5e3fc",
+                      "surface-container": "#e6eeff",
+                      "on-primary": "#ffffff",
+                      "on-primary-fixed": "#00201c",
+                      "inverse-on-surface": "#eaf1ff",
+                      "on-background": "#0d1c2e",
+                      "primary-fixed-dim": "#3cddc7",
+                      "primary-container": "#2dd4bf",
+                      "outline": "#6b7a76",
+                      "background": "#f8f9ff",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "surface-dim": "#ccdbf3",
+                      "on-primary-container": "#00574d",
+                      "surface-container-low": "#eff4ff",
+                      "inverse-surface": "#233144",
+                      "secondary-fixed": "#ffdcc5",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "on-secondary-fixed-variant": "#713700",
+                      "surface-variant": "#d5e3fc",
+                      "tertiary-container": "#ffaa81",
+                      "on-surface-variant": "#3c4a46",
+                      "secondary-container": "#fd933d",
+                      "primary": "#006b5f",
+                      "on-surface": "#0d1c2e",
+                      "tertiary-fixed": "#ffdbcc",
+                      "on-secondary-container": "#693300"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1200px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-xl": [
+                              "Quicksand"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-md": [
+                              "Quicksand"
+                      ],
+                      "headline-lg-mobile": [
+                              "Quicksand"
+                      ],
+                      "headline-lg": [
+                              "Quicksand"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "34px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .squishy-shadow {
+            box-shadow: 0 4px 10px rgba(45, 212, 191, 0.15); /* Soft teal glow */
+            transition: all 0.2s ease;
+        }
+        .squishy-shadow-interactive {
+            box-shadow: 0 8px 20px rgba(45, 212, 191, 0.25);
+            transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .squishy-shadow-interactive:active {
+            box-shadow: 0 2px 5px rgba(45, 212, 191, 0.3);
+            transform: translateY(2px);
+        }
+        .heritage-button {
+            border-bottom-width: 4px;
+            border-color: #693300; /* Darker orange/brown */
+            transition: all 0.15s ease-out;
+        }
+        .heritage-button:active {
+            border-bottom-width: 0px;
+            transform: translateY(4px);
+            margin-bottom: 4px; /* maintain layout flow */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased pb-24 md:pb-0 font-body-md text-body-md">
+<!-- TopAppBar -->
+<header class="bg-surface shadow-sm docked full-width top-0 z-40 sticky">
+<div class="flex justify-between items-center w-full px-margin-mobile h-16 max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container flex items-center justify-center">
+<img alt="Nara the Explorer Mascot" class="w-full h-full object-cover" data-alt="A cute, illustrated mascot of an Indonesian explorer child with a pith helmet and friendly smile, set against a solid teal background. Minimalist and playful style suitable for a children's app icon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlQKy4epVi94QBaoN2srHmvVBZ_xw5i771VLRZmkv3C2sTwNCzXCw5aBJLu6DPsN7tWGL-x8yuk-RpxVhp1MaLRVFicVSbUxA1sRBxSNR_uSqTMatKqKYBjg5YKrbQMr8Obsvz84rxnoeChLENWd19kwDjHJgPV2Uq-PsF7sQmqmOMoXxm43VRnG7Sg0xhQPbtSUJoFoOeX80X7FmtGKR6Bfc_OnQMrp6hadxjJufZYABRRG9pRmfGYcpvQNTQGTxyeZ3vV8TECJs"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold tracking-tight">Pedia Bloom</h1>
+</div>
+<button aria-label="Settings" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 flex flex-col gap-8">
+<!-- Hero Section -->
+<section class="relative w-full rounded-xl overflow-hidden shadow-sm h-64 md:h-96">
+<img alt="Jalak Bali" class="w-full h-full object-cover" data-alt="A close-up photograph of a beautiful Bali Starling (Jalak Bali) perched on a branch. The bird features pristine, snow-white feathers and a striking, bright blue patch of skin around its eye. The background is a soft, blurred lush green forest canopy. The lighting is natural and bright, highlighting the bird's elegant crest." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqNJdGkn--5sIBaHVpT-GcGQGGXnMUNFVUjOkmgAAE5ci63EYCVEOcb3agV1RusKnSks7y4lanJ9A4di1DlcmsvqaHfyFVhVZ3d_4aPtiQAxGmnmuKMlLCWMKzzNMMn1vonSfMf5oNl-VQcUkmW1vsCytp-5rBhWL5_PAhSpnunn4hHNLHD-YVFq_uh40mOXmy9ejTkdA8LasnWe-oFnQxzpwEEF_Z02RXqnKbahMHta5fF1AOKSoO4fdkMdqJU_K8Dwgk1HMbE0A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full font-label-md text-label-md w-max mb-2">Hewan (Animals)</span>
+<h2 class="font-headline-xl text-headline-xl text-white">Jalak Bali</h2>
+<p class="text-white/90 font-body-lg text-body-lg">Burung Cantik dari Pulau Dewata</p>
+</div>
+</section>
+<!-- Bento Grid Content -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Beautiful Features -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-6 squishy-shadow border-2 border-surface-container border-solid relative">
+<div class="absolute -top-4 -right-4 w-12 h-12 bg-primary-container rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">visibility</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4">Mata Biru dan Bulu Seputih Salju</h3>
+<p class="mb-4">Jalak Bali (Bali Starling) adalah salah satu burung paling cantik di Indonesia! Bayangkan burung dengan bulu yang putih bersinar seperti salju yang baru turun.</p>
+<p>Ciri khasnya yang paling keren adalah "topeng" biru cerah di sekitar matanya. Kalau sedang pamer, bulu di atas kepalanya bisa berdiri tegak seperti rambut Mohawk!</p>
+</div>
+<!-- Interactive Sound Card -->
+<div class="bg-surface-container-high rounded-xl p-6 flex flex-col items-center justify-center squishy-shadow text-center">
+<div class="w-20 h-20 bg-secondary-container rounded-full flex items-center justify-center mb-4 squishy-shadow-interactive cursor-pointer hover:scale-105" onclick="playSound()">
+<span class="material-symbols-outlined text-4xl text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2 text-xl">Dengarkan Kicauannya!</h4>
+<p class="text-on-surface-variant font-body-md text-body-md mb-4">Ketuk tombol untuk mendengar suara Jalak Bali yang merdu.</p>
+<div class="flex gap-1 h-6 items-end opacity-0 transition-opacity" id="audio-wave">
+<div class="w-2 bg-primary rounded-t-full h-2"></div>
+<div class="w-2 bg-primary rounded-t-full h-4"></div>
+<div class="w-2 bg-primary rounded-t-full h-6"></div>
+<div class="w-2 bg-primary rounded-t-full h-3"></div>
+<div class="w-2 bg-primary rounded-t-full h-5"></div>
+</div>
+</div>
+<!-- Habitat & Rarity -->
+<div class="md:col-span-3 bg-inverse-on-surface rounded-xl p-6 squishy-shadow">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-4">Kenapa Jalak Bali Langka?</h3>
+<div class="flex flex-col md:flex-row gap-6 items-center">
+<div class="flex-1">
+<p class="mb-4 text-on-surface">Burung cantik ini hanya bisa ditemukan di satu tempat di seluruh dunia: Taman Nasional Bali Barat. Sayangnya, karena bulunya yang indah, dulu banyak orang yang menangkapnya untuk dipelihara.</p>
+<p class="text-on-surface">Selain itu, tempat tinggal mereka (habitat) di hutan juga semakin menyempit. Sekarang, mereka dilindungi secara ketat agar teman-teman cantik ini tidak punah!</p>
+</div>
+<div class="w-full md:w-1/3 h-48 rounded-lg overflow-hidden relative">
+<img alt="Bali Barat National Park Forest" class="w-full h-full object-cover" data-alt="A scenic view of a dense, tropical monsoon forest in Bali Barat National Park. Sunlight filters through the green canopy, illuminating dry branches and lush undergrowth. The scene feels peaceful, warm, and distinctly Indonesian, representing a protected natural habitat for rare wildlife." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzKybv4vC1_-rHF48_qnmnPW5iFvChjSgzA0iAyPvEoZWsKFPPxhiM9_QPZuyL6etpREbmgNfVUiq-vV45z94azjXk7tWDngJmoRVQx1JF_Tg4UiETrzTbinnH_LWibyN-0rN6APNtNfpefJAa61lH_kgajX7rYGWIiIQZHQG-M4VUugRS610FMO7BzAw2yPLKNoNLyNhXCZsQBUp8kUAQ5T7iM8fZxvYalH3NRel62MedahJCqWCFO4A6kyy00XgTOnOX90iuvJE"/>
+<div class="absolute bottom-2 left-2 bg-surface/80 backdrop-blur-sm px-2 py-1 rounded text-xs text-on-surface font-label-md">Taman Nasional Bali Barat</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quiz Section -->
+<section class="bg-surface-container-highest rounded-xl p-6 squishy-shadow mt-4 border-2 border-primary-container border-solid">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-3xl text-secondary" style="font-variation-settings: 'FILL' 1;">quiz</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Kuis Pelindung Burung!</h3>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface mb-4">Apa yang bisa kita lakukan untuk melindungi burung liar seperti Jalak Bali?</p>
+<div class="flex flex-col gap-3">
+<button class="text-left w-full p-4 rounded-lg bg-surface hover:bg-surface-variant transition-colors border border-outline-variant text-on-surface font-body-md" onclick="checkAnswer(this, false)">
+                    A. Menangkapnya untuk dipelihara di sangkar yang bagus.
+                </button>
+<button class="text-left w-full p-4 rounded-lg bg-surface hover:bg-surface-variant transition-colors border border-outline-variant text-on-surface font-body-md" onclick="checkAnswer(this, true)">
+                    B. Membiarkannya hidup bebas di alam liar dan melindungi hutannya.
+                </button>
+<button class="text-left w-full p-4 rounded-lg bg-surface hover:bg-surface-variant transition-colors border border-outline-variant text-on-surface font-body-md" onclick="checkAnswer(this, false)">
+                    C. Membeli bulunya untuk hiasan baju.
+                </button>
+</div>
+<div class="mt-4 p-4 rounded-lg hidden font-body-md text-center font-bold" id="quiz-feedback"></div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-xl bg-surface-container shadow-[0_-4px_10px_rgba(0,107,95,0.1)] md:hidden">
+<div class="flex justify-around items-center px-2 pb-4 pt-2">
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant transition-colors rounded-lg">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-label-md text-[10px]">Home</span>
+</button>
+<!-- Active Tab: Explore -->
+<button class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl px-4 py-2 translate-y-0.5 scale-95 transition-transform duration-150">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-[10px]">Explore</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant transition-colors rounded-lg">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">sports_esports</span>
+<span class="font-label-md text-[10px]">Game</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant transition-colors rounded-lg">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">military_tech</span>
+<span class="font-label-md text-[10px]">Badge</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant transition-colors rounded-lg">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">psychology</span>
+<span class="font-label-md text-[10px]">Tanya AI</span>
+</button>
+</div>
+</nav>
+<script>
+        function playSound() {
+            const wave = document.getElementById('audio-wave');
+            wave.classList.remove('opacity-0');
+            
+            // Simple animation for the bars to simulate sound
+            const bars = wave.children;
+            let interval = setInterval(() => {
+                for(let i=0; i<bars.length; i++) {
+                    const randomHeight = Math.floor(Math.random() * 6) + 2; // 2 to 8 (rem equivalent roughly)
+                    bars[i].style.height = `${randomHeight * 0.25}rem`;
+                }
+            }, 100);
+
+            setTimeout(() => {
+                clearInterval(interval);
+                wave.classList.add('opacity-0');
+            }, 2000);
+        }
+
+        function checkAnswer(btn, isCorrect) {
+            // Reset all buttons
+            const allBtns = btn.parentElement.querySelectorAll('button');
+            allBtns.forEach(b => {
+                b.classList.remove('bg-error-container', 'border-error', 'bg-primary-container', 'border-primary');
+                b.classList.add('bg-surface', 'border-outline-variant');
+            });
+
+            const feedback = document.getElementById('quiz-feedback');
+            feedback.classList.remove('hidden', 'bg-error-container', 'text-on-error-container', 'bg-primary-container', 'text-on-primary-container');
+
+            if (isCorrect) {
+                btn.classList.replace('bg-surface', 'bg-primary-container');
+                btn.classList.replace('border-outline-variant', 'border-primary');
+                feedback.classList.add('bg-primary-container', 'text-on-primary-container');
+                feedback.innerText = "Hebat! Kamu benar. Biarkan mereka terbang bebas!";
+            } else {
+                btn.classList.replace('bg-surface', 'bg-error-container');
+                btn.classList.replace('border-outline-variant', 'border-error');
+                feedback.classList.add('bg-error-container', 'text-on-error-container');
+                feedback.innerText = "Ups, coba lagi! Burung liar butuh alam untuk hidup bahagia.";
+            }
+        }
+    </script>
+</body></html>

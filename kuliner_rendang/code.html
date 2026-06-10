@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedia Bloom - Rendang: Si Hitam yang Lezat</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#2dd4bf",
+                        "surface-container-high": "#dce9ff",
+                        "surface-bright": "#f8f9ff",
+                        "surface-container": "#e6eeff",
+                        "on-primary-fixed": "#00201c",
+                        "tertiary": "#944a23",
+                        "on-secondary-container": "#693300",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "secondary": "#944a00",
+                        "surface": "#f8f9ff",
+                        "on-tertiary-fixed": "#351000",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#ffaa81",
+                        "surface-container-highest": "#d5e3fc",
+                        "secondary-container": "#fd933d",
+                        "on-secondary-fixed": "#301400",
+                        "error-container": "#ffdad6",
+                        "on-background": "#0d1c2e",
+                        "inverse-surface": "#233144",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#006b5f",
+                        "surface-dim": "#ccdbf3",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#0d1c2e",
+                        "outline": "#6b7a76",
+                        "on-surface-variant": "#3c4a46",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#005047",
+                        "secondary-fixed": "#ffdcc5",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-primary-container": "#00574d",
+                        "on-error": "#ffffff",
+                        "primary": "#006b5f",
+                        "on-secondary": "#ffffff",
+                        "background": "#f8f9ff",
+                        "on-secondary-fixed-variant": "#713700",
+                        "inverse-on-surface": "#eaf1ff",
+                        "primary-fixed": "#62fae3",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#ffb783",
+                        "primary-fixed-dim": "#3cddc7",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-container": "#7e3913",
+                        "outline-variant": "#bacac5",
+                        "surface-variant": "#d5e3fc",
+                        "inverse-primary": "#3cddc7",
+                        "tertiary-fixed": "#ffdbcc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "headline-xl": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8f9ff; }
+        .quicksand { font-family: 'Quicksand', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .bouncy-btn { transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .bouncy-btn:active { transform: translateY(4px); }
+        .shadow-tactile { box-shadow: 0 4px 0 rgba(113, 55, 0, 0.2); }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(8px); }
+    </style>
+</head>
+<body class="bg-background text-on-surface pb-32">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-40 bg-surface-container-low shadow-sm flex items-center justify-between px-margin-mobile h-20 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-white">
+<img alt="Nara" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqnO1ODtk9oJZ5hciC5aWTmJHxxFieUVuN2CiAx6KxSRuAFJxzgL3fF6RHBmdHH6EzELmsvFkBfZol87yawiYtjDCRkZMoIDR2gcLY6dPLUEwUckWtYNna3dmZ75fNBh5soPU-RP6I-JbC-owoLel077IrPtxSzDHeWKXQdyyXri7FMy8YY2lIbEOFEgJHY9XFjmz9a5AlndZqoxysEnrbQoD96WQcxwBC8rpYIXSTK1MKt8SyUZyj_YatA1xEnbfRvOt7vAkn7Qg"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Pedia Bloom</h1>
+</div>
+<button class="material-symbols-outlined text-primary text-2xl hover:opacity-80 transition-opacity">search</button>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8">
+<!-- Hero Section -->
+<section class="mb-12">
+<div class="relative rounded-lg overflow-hidden mb-6 shadow-lg group">
+<img class="w-full h-[300px] md:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl-ZnnRlZ66gD7OZsb7TGe6CGl3pLZqgiAWqDsZ074NpfORJ33G9ZqPaKrYO4ei9_H-RR-UM1Xvdy1kZkIJ6Vicdx7cXoVm_xfRzGh17HIk4TxxqZ5brwhgaFpjLy7asSHawITT1Xgqy0mYMQ4f--dwf1VRVMjUWD0zLAymnakXmxSOSWS09aDabpmYEb_qynlwLXLvxrn0a6hPVA3_j0C_K65lU0hbFPaYCbxEsIx4Mmpk2uyurFl5AqhyxlYjVr4Cs_VaXbMVOs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
+<div class="flex gap-2 mb-3">
+<span class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full font-label-md text-label-md shadow-tactile">Makanan Tradisional</span>
+<span class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full font-label-md text-label-md shadow-tactile">Sumatra Barat</span>
+</div>
+<h2 class="font-headline-xl text-white text-3xl md:text-5xl mb-2 drop-shadow-md">Rendang: Si Hitam yang Lezat</h2>
+</div>
+</div>
+<div class="bg-surface-container p-6 rounded-lg border-2 border-white/50 shadow-sm relative overflow-hidden">
+<div class="absolute -top-4 -right-4 opacity-10">
+<span class="material-symbols-outlined text-[120px]">restaurant_menu</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed italic">
+                    "Wah, bau apa ini ya? Harum sekali! Ternyata Nenek sedang memasak Rendang di dapur. Ayo kita cari tahu rahasia kelezatan masakan kebanggaan Indonesia ini!"
+                </p>
+</div>
+</section>
+<!-- Bento Grid: Content Sections -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+<!-- Apa itu Rendang? -->
+<div class="bg-white p-8 rounded-lg shadow-sm border border-outline-variant flex flex-col gap-4">
+<div class="flex items-center gap-3 text-secondary">
+<span class="material-symbols-outlined text-3xl">question_mark</span>
+<h3 class="font-headline-lg text-headline-lg">Apa itu Rendang?</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Rendang adalah masakan daging yang dimasak dengan santan kental dan bumbu-bumbu spesial. Proses masaknya pelan-pelan sekali sampai kuahnya kering dan warnanya jadi gelap mengkilap. Hasilnya? Dagingnya jadi empuk banget dan rasanya juara!
+                </p>
+<div class="mt-4 p-4 bg-surface-container-low rounded-lg border-l-4 border-primary">
+<p class="font-label-md text-primary">💡 Tahukah kamu? Nama 'Rendang' berasal dari kata 'Randang' yang artinya proses memasak yang lama.</p>
+</div>
+</div>
+<!-- Mengapa Rendang Spesial? -->
+<div class="bg-white p-8 rounded-lg shadow-sm border border-outline-variant flex flex-col gap-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">star</span>
+<h3 class="font-headline-lg text-headline-lg">Mengapa Rendang Spesial?</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Rendang dibuat dengan penuh kasih sayang dan kesabaran. Di dalamnya ada banyak sekali rempah-rempah rahasia seperti lengkuas, serai, jahe, dan bawang-bawangan. Perpaduan bumbu ini bikin Rendang dinobatkan sebagai salah satu makanan terenak di seluruh dunia, lho!
+                </p>
+<div class="flex justify-center mt-4">
+<img alt="Yum" class="w-20 h-20 animate-bounce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL6Ed4d7S2QVmlSEFHZeeCI7NIwmuX4P0FJ3nMoUkrYGGZ3Ij57RKiQbanLdBIMETG3Bsrvc5cgWsk95t_QbHYwwEcxLBpJjyUFsmGxMmoSvkvZDYg4eDdAhTHCqO9riu6M8qNuy7T6D9jphcZ8WRQAO-bOiR49ZG8qpWlmENZNlM-_66UZv1B6pvt5oUW2Wj4tKmEVnNRLcbTSXxozmAJEjsZCCPbKJaR-TZqjpN_vVHZKlBLASQkFZUsLr3CBKBlMGFTUdgTYU0"/>
+</div>
+</div>
+</div>
+<!-- 5 Fakta Seru (Carousel/Grid) -->
+<section class="mb-12">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-6 text-on-background flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">explore</span> 5 Fakta Seru Rendang!
+            </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+<div class="bg-surface-container-high p-4 rounded-lg shadow-tactile border-b-4 border-primary-fixed-variant text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-2">public</span>
+<p class="font-label-md text-label-md text-on-primary-container">Warisan Dunia UNESCO</p>
+</div>
+<div class="bg-tertiary-fixed p-4 rounded-lg shadow-tactile border-b-4 border-tertiary-fixed-dim text-center">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-2">timer</span>
+<p class="font-label-md text-label-md text-on-tertiary-container">Dimasak Berjam-jam</p>
+</div>
+<div class="bg-secondary-fixed p-4 rounded-lg shadow-tactile border-b-4 border-secondary-container text-center">
+<span class="material-symbols-outlined text-secondary text-4xl mb-2">location_on</span>
+<p class="font-label-md text-label-md text-on-secondary-fixed-variant">Asal Minangkabau</p>
+</div>
+<div class="bg-surface-container-highest p-4 rounded-lg shadow-tactile border-b-4 border-outline text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-2">shield_moon</span>
+<p class="font-label-md text-label-md text-on-surface">Bisa Tahan Lama</p>
+</div>
+<div class="bg-primary-fixed p-4 rounded-lg shadow-tactile border-b-4 border-primary-container text-center">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-2">inventory_2</span>
+<p class="font-label-md text-label-md text-on-primary-container">Rempah Rahasia</p>
+</div>
+</div>
+</section>
+<!-- Kuis Kilat -->
+<section class="bg-white border-2 border-primary/20 rounded-lg p-8 mb-12 shadow-md relative">
+<div class="absolute -top-6 left-6 bg-primary text-white px-6 py-2 rounded-full font-headline-lg shadow-lg">Kuis Kilat ⚡</div>
+<div class="mt-4 space-y-8">
+<div class="quiz-item" data-q="1">
+<p class="font-body-lg text-body-lg mb-4">1. Dari mana asal masakan Rendang?</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<button class="p-4 border-2 border-surface-container rounded-lg font-label-md hover:bg-surface-container-low transition-colors" onclick="checkAnswer(this, false)">Jawa Barat</button>
+<button class="p-4 border-2 border-surface-container rounded-lg font-label-md hover:bg-surface-container-low transition-colors" onclick="checkAnswer(this, true)">Sumatra Barat</button>
+<button class="p-4 border-2 border-surface-container rounded-lg font-label-md hover:bg-surface-container-low transition-colors" onclick="checkAnswer(this, false)">Kalimantan Timur</button>
+</div>
+</div>
+<div class="quiz-item" data-q="2">
+<p class="font-body-lg text-body-lg mb-4">2. Apa bahan utama pembuat Rendang?</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<button class="p-4 border-2 border-surface-container rounded-lg font-label-md hover:bg-surface-container-low transition-colors" onclick="checkAnswer(this, true)">Daging &amp; Santan</button>
+<button class="p-4 border-2 border-surface-container rounded-lg font-label-md hover:bg-surface-container-low transition-colors" onclick="checkAnswer(this, false)">Ikan &amp; Cuka</button>
+<button class="p-4 border-2 border-surface-container rounded-lg font-label-md hover:bg-surface-container-low transition-colors" onclick="checkAnswer(this, false)">Ayam &amp; Madu</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Aktivitas & Kamus -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-tertiary-container/20 p-8 rounded-lg border-2 border-dashed border-tertiary flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-6xl text-tertiary mb-4">draw</span>
+<h4 class="font-headline-lg text-headline-lg mb-2">Aktivitas Seru</h4>
+<p class="font-body-md text-body-md mb-6">Ayo ambil pensil warnamu dan tunjukkan bakatmu!</p>
+<button class="bouncy-btn bg-secondary text-white font-headline-lg px-8 py-3 rounded-lg shadow-tactile border-b-4 border-on-secondary-fixed-variant hover:opacity-90">
+                    Gambar Makanan Favoritmu!
+                </button>
+</div>
+<div class="bg-surface-container p-8 rounded-lg">
+<h4 class="font-headline-lg text-headline-lg mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">menu_book</span> Kamus Kecil
+                </h4>
+<ul class="space-y-4">
+<li class="bg-white p-3 rounded-lg shadow-sm">
+<strong class="text-secondary font-label-md">Rendang:</strong> <span class="text-on-surface-variant font-body-md">Masakan daging berbumbu santan khas Minang.</span>
+</li>
+<li class="bg-white p-3 rounded-lg shadow-sm">
+<strong class="text-secondary font-label-md">Minangkabau:</strong> <span class="text-on-surface-variant font-body-md">Suku bangsa yang berasal dari Sumatra Barat.</span>
+</li>
+<li class="bg-white p-3 rounded-lg shadow-sm">
+<strong class="text-secondary font-label-md">Rempah:</strong> <span class="text-on-surface-variant font-body-md">Bagian tumbuhan yang beraroma kuat untuk bumbu.</span>
+</li>
+</ul>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe bg-surface-container-highest shadow-[0_-4px_10px_rgba(0,0,0,0.05)] rounded-t-lg">
+<div class="flex flex-col items-center justify-center text-on-surface-variant hover:scale-105 transition-all duration-150">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl px-4 py-1 shadow-[0_4px_0px_#713700] transition-all duration-150 translate-y-1">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-label-md text-label-md">Jelajah</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant hover:scale-105 transition-all duration-150">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-label-md">Game</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant hover:scale-105 transition-all duration-150">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-label-md">Badge</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant hover:scale-105 transition-all duration-150">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md text-label-md">Tanya AI</span>
+</div>
+</nav>
+<script>
+        function checkAnswer(btn, isCorrect) {
+            const parent = btn.closest('.quiz-item');
+            const buttons = parent.querySelectorAll('button');
+            
+            buttons.forEach(b => {
+                b.disabled = true;
+                b.classList.remove('hover:bg-surface-container-low');
+            });
+
+            if (isCorrect) {
+                btn.classList.add('bg-primary-container', 'text-on-primary-container', 'border-primary');
+                confettiEffect(btn);
+            } else {
+                btn.classList.add('bg-error-container', 'text-on-error-container', 'border-error');
+            }
+        }
+
+        function confettiEffect(element) {
+            const rect = element.getBoundingClientRect();
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.style.position = 'fixed';
+                particle.style.left = (rect.left + rect.width / 2) + 'px';
+                particle.style.top = (rect.top + rect.height / 2) + 'px';
+                particle.style.width = '8px';
+                particle.style.height = '8px';
+                particle.style.backgroundColor = ['#2dd4bf', '#fd933d', '#944a23'][Math.floor(Math.random() * 3)];
+                particle.style.borderRadius = '50%';
+                particle.style.zIndex = '100';
+                document.body.appendChild(particle);
+
+                const angle = Math.random() * Math.PI * 2;
+                const distance = 50 + Math.random() * 50;
+                const tx = Math.cos(angle) * distance;
+                const ty = Math.sin(angle) * distance;
+
+                particle.animate([
+                    { transform: 'translate(0, 0) scale(1)', opacity: 1 },
+                    { transform: `translate(${tx}px, ${ty}px) scale(0)`, opacity: 0 }
+                ], {
+                    duration: 1000,
+                    easing: 'cubic-bezier(0, .9, .57, 1)'
+                }).onfinish = () => particle.remove();
+            }
+        }
+    </script>
+</body></html>

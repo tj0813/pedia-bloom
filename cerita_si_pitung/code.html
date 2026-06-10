@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Si Pitung: Robin Hood dari Betawi - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#233144",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#7e3913",
+                        "tertiary-container": "#ffaa81",
+                        "secondary": "#944a00",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#3c4a46",
+                        "on-primary-fixed-variant": "#005047",
+                        "on-secondary-fixed": "#301400",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-secondary-fixed-variant": "#713700",
+                        "background": "#f8f9ff",
+                        "inverse-primary": "#3cddc7",
+                        "outline": "#6b7a76",
+                        "surface": "#f8f9ff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#fd933d",
+                        "surface-dim": "#ccdbf3",
+                        "secondary-fixed-dim": "#ffb783",
+                        "surface-bright": "#f8f9ff",
+                        "surface-container-low": "#eff4ff",
+                        "surface-container-highest": "#d5e3fc",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-tertiary-fixed": "#351000",
+                        "surface-container-high": "#dce9ff",
+                        "outline-variant": "#bacac5",
+                        "on-primary-container": "#00574d",
+                        "on-background": "#0d1c2e",
+                        "primary-fixed-dim": "#3cddc7",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#006b5f",
+                        "primary-fixed": "#62fae3",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-surface": "#0d1c2e",
+                        "secondary-fixed": "#ffdcc5",
+                        "inverse-on-surface": "#eaf1ff",
+                        "primary-container": "#2dd4bf",
+                        "on-primary-fixed": "#00201c",
+                        "surface-variant": "#d5e3fc",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "tertiary": "#944a23",
+                        "primary": "#006b5f",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#e6eeff",
+                        "on-secondary-container": "#693300"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-md": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .squishy-card {
+            box-shadow: 0 4px 12px rgba(0, 107, 95, 0.1);
+            transition: all 0.2s ease-in-out;
+        }
+        .squishy-card:active {
+            transform: scale(0.98);
+            box-shadow: 0 2px 6px rgba(0, 107, 95, 0.1);
+        }
+        .squishy-button {
+            border-bottom: 4px solid theme('colors.secondary-container');
+            transition: all 0.1s ease-in-out;
+        }
+        .squishy-button:active {
+            border-bottom-width: 0px;
+            transform: translateY(4px);
+        }
+        
+        /* Hide scrollbar for horizontal scrolling */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="pb-24 pt-16 md:pb-8 md:pt-20">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-container-low fixed top-0 left-0 w-full z-50 flex items-center justify-between px-margin-mobile h-16 shadow-[0px_4px_12px_rgba(0,107,95,0.1)] transition-all duration-200">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-primary">
+<!-- Avatar Placeholder -->
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">explore</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary dark:text-primary-fixed-dim">Pedia Bloom</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center text-primary hover:opacity-80 transition-all duration-200 active:scale-95 rounded-full hover:bg-surface-variant">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-12">
+<!-- Hero Section -->
+<section class="relative rounded-xl overflow-hidden mt-6 bg-surface-container-low shadow-[0px_4px_12px_rgba(0,107,95,0.1)]">
+<div class="aspect-video md:aspect-[21/9] w-full relative">
+<img alt="Ilustrasi pahlawan Betawi Si Pitung dengan pakaian hitam dan sabuk merah, berdiri tegak dengan latar belakang rumah adat Betawi yang berwarna cerah. Suasana sore hari yang hangat dengan cahaya keemasan. Gaya ilustrasi vektor ramah anak yang penuh warna dan bersemangat." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1oQmMeRIKMPJ1xelDLyDpDZgm6iTEBhv1BUiqRSFJeWuEXEBkdfawuKvDz3UgZBo7XHyknbNOEWDyzmagt_etvBr0IM4-hRx0oTPFPMpRG6R6YunG764yGPbs2eboUaY_-mh7kOOc5D7DulmquYTn0LLsu7kEkOCBpF0-xm4UzRvriKJngarV9xC_lKSTIN9RZGn0vY1YYad0j4kEMZe4X4XtJsddcSvSSY_A7hootsbUgjJ-sbB2jMEgLdEVcDBC7lAHgMiDfQw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-6">
+<span class="inline-block bg-secondary text-on-secondary font-label-md text-label-md px-3 py-1 rounded-full w-max mb-3 shadow-sm border border-secondary-container">Cerita Rakyat</span>
+<h2 class="font-headline-xl text-headline-xl text-white drop-shadow-md">Si Pitung: Robin Hood dari Betawi</h2>
+</div>
+</div>
+</section>
+<!-- Introduction -->
+<section class="bg-primary-container text-on-primary-container p-6 rounded-xl relative squishy-card overflow-hidden">
+<div class="absolute -right-4 -top-4 opacity-20 transform rotate-12">
+<span class="material-symbols-outlined text-9xl" style="font-variation-settings: 'FILL' 1;">waving_hand</span>
+</div>
+<p class="font-body-lg text-body-lg relative z-10 leading-relaxed">
+                Halo Penjelajah! Pernahkah kamu mendengar tentang pahlawan gagah berani dari tanah Betawi? Yuk, kita kenali Si Pitung, jawara pembela rakyat kecil!
+            </p>
+</section>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Section 1 (Siapa Si Pitung?) -->
+<section class="bg-surface-container-lowest p-6 rounded-xl border-2 border-surface-variant squishy-card flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">history_edu</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary mb-3">Siapa Si Pitung?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Si Pitung adalah tokoh nyata yang lahir di Marunda, Batavia (Jakarta) sekitar tahun 1860-an.
+                </p>
+</section>
+<!-- Section 2 (Mengapa Jadi Pahlawan?) -->
+<section class="bg-surface-container-lowest p-6 rounded-xl border-2 border-surface-variant squishy-card flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-error-container text-on-error-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">balance</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-error mb-3">Mengapa Jadi Pahlawan?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Ia melawan tuan tanah yang kejam dan membagikan hartanya kepada rakyat Betawi yang kesusahan.
+                </p>
+</section>
+</div>
+<!-- Section 3 (Kemampuan Istimewa) -->
+<section class="space-y-4">
+<h3 class="font-headline-lg text-headline-lg text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+                Kemampuan Istimewa
+            </h3>
+<div class="flex overflow-x-auto gap-4 pb-4 no-scrollbar -mx-margin-mobile px-margin-mobile md:mx-0 md:px-0 snap-x">
+<div class="min-w-[240px] bg-tertiary-container p-5 rounded-xl border-2 border-tertiary shadow-[0px_4px_12px_rgba(148,74,35,0.1)] snap-start">
+<span class="material-symbols-outlined text-tertiary text-3xl mb-2" style="font-variation-settings: 'FILL' 1;">shield</span>
+<h4 class="font-label-md text-label-md text-on-tertiary-container mb-2">Ilmu Kebal</h4>
+<p class="font-body-md text-body-md text-on-tertiary-container/80 text-sm">Doa dan keberanian membuatnya sulit dikalahkan.</p>
+</div>
+<div class="min-w-[240px] bg-secondary-fixed p-5 rounded-xl border-2 border-secondary shadow-[0px_4px_12px_rgba(148,74,0,0.1)] snap-start">
+<span class="material-symbols-outlined text-secondary text-3xl mb-2" style="font-variation-settings: 'FILL' 1;">sports_martial_arts</span>
+<h4 class="font-label-md text-label-md text-on-secondary-fixed mb-2">Ahli Pencak Silat</h4>
+<p class="font-body-md text-body-md text-on-secondary-fixed/80 text-sm">Jago beladiri khas Betawi.</p>
+</div>
+<div class="min-w-[240px] bg-primary-fixed p-5 rounded-xl border-2 border-primary shadow-[0px_4px_12px_rgba(0,107,95,0.1)] snap-start">
+<span class="material-symbols-outlined text-primary text-3xl mb-2" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<h4 class="font-label-md text-label-md text-on-primary-fixed mb-2">Cerdik &amp; Gesit</h4>
+<p class="font-body-md text-body-md text-on-primary-fixed/80 text-sm">Selalu punya ide untuk lolos dari kejaran.</p>
+</div>
+<div class="min-w-[240px] bg-surface-variant p-5 rounded-xl border-2 border-outline-variant shadow-[0px_4px_12px_rgba(13,28,46,0.1)] snap-start">
+<span class="material-symbols-outlined text-on-surface text-3xl mb-2" style="font-variation-settings: 'FILL' 1;">groups</span>
+<h4 class="font-label-md text-label-md text-on-surface mb-2">Didukung Rakyat</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Disayangi dan dilindungi oleh warga Marunda.</p>
+</div>
+</div>
+</section>
+<!-- Section 4 (Akhir Kisah) & Section 5 (Warisan Budaya) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<section class="bg-surface-container-highest p-6 rounded-xl border-l-4 border-l-error squishy-card">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+                    Akhir Kisah
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Setelah perjuangan panjang, Si Pitung dikepeti oleh penjajah Belanda karena pengkhianatan. Namun, namanya tetap abadi sebagai simbol keberanian.
+                </p>
+</section>
+<section class="bg-surface-container-highest p-6 rounded-xl border-l-4 border-l-primary squishy-card">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">museum</span>
+                    Warisan Budaya
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Kisah Si Pitung diabadikan di 'Museum Rumah Si Pitung' di Marunda, Jakarta Utara, dan telah diadaptasi ke dalam berbagai film layar lebar.
+                </p>
+</section>
+</div>
+<!-- Section 6 (5 Fakta Seru!) -->
+<section class="bg-inverse-on-surface p-6 rounded-xl squishy-card border-2 border-surface-variant">
+<h3 class="font-headline-lg text-headline-lg text-inverse-surface mb-6 flex items-center gap-2 justify-center">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+                5 Fakta Seru!
+            </h3>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-3 bg-surface p-3 rounded-lg shadow-sm border border-surface-container">
+<span class="bg-secondary text-white w-6 h-6 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">1</span>
+                    Nama aslinya Muhammad Pitoeng.
+                </li>
+<li class="flex items-start gap-3 bg-surface p-3 rounded-lg shadow-sm border border-surface-container">
+<span class="bg-secondary text-white w-6 h-6 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">2</span>
+                    Meninggal tahun 1893.
+                </li>
+<li class="flex items-start gap-3 bg-surface p-3 rounded-lg shadow-sm border border-surface-container">
+<span class="bg-secondary text-white w-6 h-6 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">3</span>
+                    Kepalanya sempat dihargai mahal oleh Belanda.
+                </li>
+<li class="flex items-start gap-3 bg-surface p-3 rounded-lg shadow-sm border border-surface-container">
+<span class="bg-secondary text-white w-6 h-6 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">4</span>
+                    Rajin mengaji dan hafal Al-Quran.
+                </li>
+<li class="flex items-start gap-3 bg-surface p-3 rounded-lg shadow-sm border border-surface-container">
+<span class="bg-secondary text-white w-6 h-6 rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">5</span>
+                    Jagoan Silat dari Marunda.
+                </li>
+</ul>
+</section>
+<!-- Section 7 (Kuis Kilat) -->
+<section class="bg-primary p-6 rounded-xl text-on-primary squishy-card text-center relative overflow-hidden">
+<!-- Decorative Background Element -->
+<div class="absolute -left-8 -bottom-8 opacity-20 transform -rotate-12">
+<span class="material-symbols-outlined text-9xl" style="font-variation-settings: 'FILL' 1;">quiz</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-lg text-headline-lg mb-4 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">psychology_alt</span>
+                    Kuis Kilat
+                </h3>
+<p class="font-body-lg text-body-lg mb-6 font-semibold">Si Pitung berasal dari daerah mana?</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-surface text-primary font-label-md text-label-md py-3 px-6 rounded-xl squishy-button hover:bg-surface-variant w-full md:w-auto" onclick="alert('Benar sekali! Si Pitung berasal dari Marunda, Betawi (Jakarta).')">Betawi Jakarta</button>
+<button class="bg-surface text-primary font-label-md text-label-md py-3 px-6 rounded-xl squishy-button hover:bg-surface-variant w-full md:w-auto" onclick="alert('Coba lagi ya, Penjelajah!')">Jawa Tengah</button>
+<button class="bg-surface text-primary font-label-md text-label-md py-3 px-6 rounded-xl squishy-button hover:bg-surface-variant w-full md:w-auto" onclick="alert('Coba lagi ya, Penjelajah!')">Sumatra</button>
+</div>
+</div>
+</section>
+<!-- Glossary (Kamus Kecil) -->
+<section class="bg-surface-container p-6 rounded-xl border-2 border-surface-variant mb-8">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+                Kamus Kecil
+            </h3>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface text-on-surface font-label-md text-label-md px-4 py-2 rounded-lg border border-outline-variant shadow-sm hover:bg-surface-variant cursor-help" title="Suku bangsa asli yang mendiami wilayah Jakarta dan sekitarnya.">Betawi</span>
+<span class="bg-surface text-on-surface font-label-md text-label-md px-4 py-2 rounded-lg border border-outline-variant shadow-sm hover:bg-surface-variant cursor-help" title="Sebutan untuk jagoan atau pendekar silat di tanah Betawi.">Jawara</span>
+<span class="bg-surface text-on-surface font-label-md text-label-md px-4 py-2 rounded-lg border border-outline-variant shadow-sm hover:bg-surface-variant cursor-help" title="Ilmu gaib yang dipercaya membuat seseorang tidak mempan senjata tajam.">Ilmu Kebal</span>
+<span class="bg-surface text-on-surface font-label-md text-label-md px-4 py-2 rounded-lg border border-outline-variant shadow-sm hover:bg-surface-variant cursor-help" title="Vereenigde Oostindische Compagnie, kongsi dagang Belanda yang pernah menguasai Nusantara.">VOC</span>
+<span class="bg-surface text-on-surface font-label-md text-label-md px-4 py-2 rounded-lg border border-outline-variant shadow-sm hover:bg-surface-variant cursor-help" title="Sebuah kelurahan di Cilincing, Jakarta Utara, yang dipercaya sebagai tempat asal Si Pitung.">Marunda</span>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden bg-surface-container-lowest dark:bg-surface-container fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-4 pt-2 border-t-2 border-surface-container shadow-[0px_-4px_16px_rgba(148,74,0,0.08)] rounded-t-lg transition-all duration-300 cubic-bezier(0.34, 1.56, 0.64, 1)">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-secondary-fixed-dim/20 rounded-xl transition-all duration-300 active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-label-md text-label-md text-[10px]">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl px-4 py-1 translate-y-[-2px] transition-all duration-300 active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md text-[10px] font-bold">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-secondary-fixed-dim/20 rounded-xl transition-all duration-300 active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1">sports_esports</span>
+<span class="font-label-md text-label-md text-[10px]">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-secondary-fixed-dim/20 rounded-xl transition-all duration-300 active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1">military_tech</span>
+<span class="font-label-md text-label-md text-[10px]">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-secondary-fixed-dim/20 rounded-xl transition-all duration-300 active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1">smart_toy</span>
+<span class="font-label-md text-label-md text-[10px]">Tanya AI</span>
+</a>
+</nav>
+</body></html>

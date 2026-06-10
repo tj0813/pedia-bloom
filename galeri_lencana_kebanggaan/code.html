@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lencana - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#ffaa81",
+                    "tertiary": "#944a23",
+                    "on-primary": "#ffffff",
+                    "on-surface-variant": "#3c4a46",
+                    "on-error": "#ffffff",
+                    "primary-container": "#2dd4bf",
+                    "inverse-surface": "#233144",
+                    "on-secondary-fixed": "#301400",
+                    "surface-bright": "#f8f9ff",
+                    "on-secondary-fixed-variant": "#713700",
+                    "on-primary-container": "#00574d",
+                    "surface-container-highest": "#d5e3fc",
+                    "on-tertiary-fixed-variant": "#76330d",
+                    "on-primary-fixed": "#00201c",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#fd933d",
+                    "background": "#f8f9ff",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#62fae3",
+                    "surface-container-low": "#eff4ff",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#351000",
+                    "on-tertiary-container": "#7e3913",
+                    "surface-tint": "#006b5f",
+                    "secondary": "#944a00",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#ffdbcc",
+                    "outline-variant": "#bacac5",
+                    "on-secondary": "#ffffff",
+                    "surface-variant": "#d5e3fc",
+                    "on-primary-fixed-variant": "#005047",
+                    "tertiary-fixed-dim": "#ffb693",
+                    "on-secondary-container": "#693300",
+                    "surface-container-high": "#dce9ff",
+                    "outline": "#6b7a76",
+                    "inverse-primary": "#3cddc7",
+                    "on-surface": "#0d1c2e",
+                    "primary": "#006b5f",
+                    "on-background": "#0d1c2e",
+                    "surface": "#f8f9ff",
+                    "primary-fixed-dim": "#3cddc7",
+                    "inverse-on-surface": "#eaf1ff",
+                    "surface-dim": "#ccdbf3",
+                    "secondary-fixed": "#ffdcc5",
+                    "surface-container": "#e6eeff",
+                    "secondary-fixed-dim": "#ffb783"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "label-md": [
+                            "Quicksand"
+                    ],
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg": [
+                            "Quicksand"
+                    ],
+                    "headline-xl": [
+                            "Quicksand"
+                    ],
+                    "headline-lg-mobile": [
+                            "Quicksand"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {
+                    "label-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-xl": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "34px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "20px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "500"
+                            }
+                    ]
+            }
+        },
+        },
+      }
+    </script>
+<style>
+        body { background-color: theme('colors.surface'); color: theme('colors.on-surface'); }
+        .bouncy-btn { transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1); border-bottom-width: 4px; }
+        .bouncy-btn:active { transform: translateY(2px); border-bottom-width: 2px; margin-top: 2px; margin-bottom: 2px; }
+        .card-shadow { box-shadow: 0 4px 12px rgba(45, 212, 191, 0.15); }
+        .locked-badge { filter: grayscale(100%) opacity(0.5); }
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* Modal Animation */
+        #badgeModal { opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+        #badgeModal.active { opacity: 1; pointer-events: auto; }
+        #badgeModalContent { transform: scale(0.9); transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        #badgeModal.active #badgeModalContent { transform: scale(1); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-body-md pb-32 pt-24 md:pt-0">
+<!-- Mobile Top App Bar -->
+<header class="md:hidden fixed top-0 w-full z-50 bg-surface-bright shadow-sm flex justify-between items-center px-margin-mobile py-unit">
+<div class="flex items-center gap-3">
+<img alt="Nara Avatar" class="w-10 h-10 rounded-full border-2 border-primary-container object-cover" data-alt="A cheerful, cute cartoon-style illustration of an Indonesian child explorer wearing a small adventure hat and a bright orange vest. The character has a warm smile and curious eyes. The background is a solid soft teal color. The lighting is bright and cheerful, matching the Pedia Bloom light mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC66Mqk7jIGml34p4xIEMrBpuW__t1xljw4OGe3ExfdvWwVqYrczJp1we0TitAB0PDP8I8NPwi9HzKwyQY7z47oEIqAECqOd9zxhqrXOZ5wzt42YdSNVoFlWjhET_fEAdIHIkk1QP8i-W10InUYv1I816IZcaOONrzaRTvc0sbTbxDUtF2g1xpoAsVI6msm1agz1Swcdv8Bu-Q75YIyWpBHcRewjFLNKz6U9GjFspuePnNmRVyoRYOXyGG3fgbABMBYLL7dg95TGNk"/>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary">Pedia Bloom</h1>
+</div>
+<button class="p-2 text-primary hover:opacity-80 transition-transform active:scale-95 duration-200">
+<span class="material-symbols-outlined text-[28px]">settings</span>
+</button>
+</header>
+<div class="flex h-screen overflow-hidden max-w-[1400px] mx-auto">
+<!-- Desktop Side Nav (NavigationDrawer logic) -->
+<nav class="hidden md:flex flex-col h-full w-80 rounded-r-lg bg-surface-container-low shadow-xl py-6 space-y-2 flex-shrink-0 z-40 relative">
+<div class="px-6 mb-8 flex items-center gap-4">
+<img alt="Parent Profile Icon" class="w-14 h-14 rounded-full border-2 border-primary-container object-cover" data-alt="A cheerful, cute cartoon-style illustration of an Indonesian child explorer wearing a small adventure hat and a bright orange vest. The character has a warm smile and curious eyes. The background is a solid soft teal color. The lighting is bright and cheerful, matching the Pedia Bloom light mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCElljC_W1I7AagknCe70hpw2knWVpGw-vQ0EcBlqLsnVUllQUHOFjXqWHMTG10LdlH2UigQu9nP-O7eFl9DL0t-n5SBG6uYlFV9rP1b69yVvpG_bEGT2x1YfXAVrosEW8OMcD7TdcvH1WSF-4tX4cG2l7FKwKkF2BIgZysF7iFNUtlZmVCbdjcIO657Qnf40WGlX7eIO1fudGVnt1GqvKl_sFXkoZQus2nb7QVUct35f7CW-wDYQc8Q1mk_4Cqtj3nBE2U3TPeDfw"/>
+<div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary leading-tight">Zona Orang Tua</h2>
+<p class="text-[14px] text-on-surface-variant leading-tight mt-1">Kelola waktu belajar si kecil</p>
+</div>
+</div>
+<a class="flex items-center gap-4 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 px-4 py-3 transition-colors" href="#">
+<span class="material-symbols-outlined">family_restroom</span>
+<span class="font-label-md text-label-md">Kontrol Orang Tua</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 px-4 py-3 transition-colors" href="#">
+<span class="material-symbols-outlined">manage_accounts</span>
+<span class="font-label-md text-label-md">Pengaturan Akun</span>
+</a>
+<a class="flex items-center gap-4 bg-primary-container text-on-primary-container rounded-full mx-2 px-4 py-3" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span class="font-label-md text-label-md">Lencana</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 px-4 py-3 transition-colors" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="font-label-md text-label-md">Bantuan</span>
+</a>
+<div class="mt-auto px-6 pt-8">
+<p class="text-[12px] text-outline">Versi 1.2.0</p>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto w-full px-margin-mobile md:px-margin-desktop py-8 md:py-12 relative hide-scroll">
+<!-- Encouraging Message & Total Badges -->
+<section class="mb-12 relative">
+<div class="bg-surface-container-high rounded-[2rem] p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 card-shadow border-2 border-surface-variant relative overflow-hidden">
+<!-- Decorative background element -->
+<div class="absolute -right-10 -top-10 w-40 h-40 bg-secondary-container rounded-full opacity-20 blur-2xl pointer-events-none"></div>
+<img alt="Nara Cheering" class="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white shadow-md object-cover z-10" data-alt="A 3D stylized, cute cartoon mascot character resembling an Indonesian child explorer, smiling enthusiastically and giving a thumbs up. The character wears a bright orange explorer vest and a teal bandana. The background is a plain, soft off-white to allow the character to pop. High-key lighting, vibrant colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpB4Reo8DnXfqTEmLdXsDtBMyFw9Jo9orEncO4VCdU82Of2DyBwmVhbECz87DOvuyAnpgS5bkXppd9GBD_jyGl5dYGodiGlpaqAq6ML7_836C6lUU33TYavTeixZNtbw933r8Celaujprqfigx3Lk0IperfalkovziRh-GW5e8vc3vUeU9jQbG5Sl1cV1nrxtCWkoxkuHVVQ1zA3DQP69tSGT5ZS1UlImES2usi5OQ_s7GEEepbZnmXGuF1FzF1iEaSf1xbIMbyTs"/>
+<div class="flex-1 text-center md:text-left z-10">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Wah, Kamu Hebat!</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-4 md:mb-0">Teruslah menjelajah dan kumpulkan semua lencana rahasia Nusantara!</p>
+</div>
+<div class="bg-white rounded-xl p-4 flex items-center gap-4 shadow-sm border-2 border-surface-variant min-w-[180px] justify-center z-10">
+<div class="bg-secondary-container text-on-secondary-container p-3 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+</div>
+<div>
+<p class="text-[14px] text-on-surface-variant font-bold uppercase tracking-wider">Total Lencana</p>
+<p class="font-headline-xl text-headline-xl text-secondary leading-none">12<span class="text-[20px] text-outline ml-1">/ 40</span></p>
+</div>
+</div>
+</div>
+</section>
+<!-- Badge Categories Grid -->
+<div class="space-y-12">
+<!-- Category 1: Penjelajah Alam -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">forest</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Penjelajah Alam</h3>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
+<!-- Earned Badge -->
+<div class="bg-white rounded-[1.5rem] p-4 flex flex-col items-center text-center card-shadow border-2 border-surface-variant cursor-pointer transition-transform hover:-translate-y-1" onclick="openBadgeModal('Harimau Sumatera', 'Kamu telah mempelajari habitat dan cara hidup Harimau Sumatera yang langka!', 'pets', 'text-secondary', 'bg-secondary-container')">
+<div class="w-20 h-20 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-3 shadow-inner">
+<span class="material-symbols-outlined text-[40px]" style="font-variation-settings: 'FILL' 1;">pets</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Harimau Sumatera</span>
+</div>
+<!-- Earned Badge -->
+<div class="bg-white rounded-[1.5rem] p-4 flex flex-col items-center text-center card-shadow border-2 border-surface-variant cursor-pointer transition-transform hover:-translate-y-1" onclick="openBadgeModal('Rafflesia Arnoldii', 'Kamu berhasil menemukan bunga terbesar di dunia yang ada di hutan Bengkulu!', 'local_florist', 'text-primary', 'bg-primary-container')">
+<div class="w-20 h-20 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-3 shadow-inner">
+<span class="material-symbols-outlined text-[40px]" style="font-variation-settings: 'FILL' 1;">local_florist</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Rafflesia Arnoldii</span>
+</div>
+<!-- Locked Badge -->
+<div class="bg-surface-container-low rounded-[1.5rem] p-4 flex flex-col items-center text-center border-2 border-surface-variant border-dashed">
+<div class="w-20 h-20 rounded-full bg-surface-variant text-outline flex items-center justify-center mb-3 locked-badge relative">
+<span class="material-symbols-outlined text-[40px]">volcano</span>
+<div class="absolute -bottom-1 -right-1 bg-surface text-outline rounded-full p-1 border-2 border-surface-variant">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-outline">Gunung Bromo</span>
+</div>
+<!-- Locked Badge -->
+<div class="bg-surface-container-low rounded-[1.5rem] p-4 flex flex-col items-center text-center border-2 border-surface-variant border-dashed">
+<div class="w-20 h-20 rounded-full bg-surface-variant text-outline flex items-center justify-center mb-3 locked-badge relative">
+<span class="material-symbols-outlined text-[40px]">water</span>
+<div class="absolute -bottom-1 -right-1 bg-surface text-outline rounded-full p-1 border-2 border-surface-variant">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-outline">Raja Ampat</span>
+</div>
+</div>
+</section>
+<!-- Category 2: Budayawan Cilik -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">festival</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Budayawan Cilik</h3>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
+<!-- Earned Badge -->
+<div class="bg-white rounded-[1.5rem] p-4 flex flex-col items-center text-center card-shadow border-2 border-surface-variant cursor-pointer transition-transform hover:-translate-y-1" onclick="openBadgeModal('Tari Kecak', 'Kamu telah mengenal sejarah dan gerakan magis Tari Kecak dari Bali!', 'group', 'text-tertiary', 'bg-tertiary-container')">
+<div class="w-20 h-20 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center mb-3 shadow-inner">
+<span class="material-symbols-outlined text-[40px]" style="font-variation-settings: 'FILL' 1;">group</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Tari Kecak</span>
+</div>
+<!-- Locked Badge -->
+<div class="bg-surface-container-low rounded-[1.5rem] p-4 flex flex-col items-center text-center border-2 border-surface-variant border-dashed">
+<div class="w-20 h-20 rounded-full bg-surface-variant text-outline flex items-center justify-center mb-3 locked-badge relative">
+<span class="material-symbols-outlined text-[40px]">architecture</span>
+<div class="absolute -bottom-1 -right-1 bg-surface text-outline rounded-full p-1 border-2 border-surface-variant">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-outline">Rumah Gadang</span>
+</div>
+</div>
+</section>
+</div>
+<div class="h-10"></div> <!-- Bottom padding for scroll -->
+</main>
+</div>
+<!-- Mobile Bottom Nav Bar -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-lg bg-surface-container-lowest shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] fixed bottom-0 left-0 w-full h-20 flex justify-around items-center px-4 pb-safe">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<span class="font-label-md text-[12px] mt-1">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined text-[24px]">explore</span>
+<span class="font-label-md text-[12px] mt-1">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined text-[24px]">sports_esports</span>
+<span class="font-label-md text-[12px] mt-1">Main</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl px-3 py-1 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span class="font-label-md text-[12px] mt-1">Lencana</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined text-[24px]">smart_toy</span>
+<span class="font-label-md text-[12px] mt-1">Tanya AI</span>
+</a>
+</nav>
+<!-- Badge Detail Modal -->
+<div class="fixed inset-0 z-[60] flex items-center justify-center px-margin-mobile" id="badgeModal">
+<div class="absolute inset-0 bg-on-surface/40 backdrop-blur-sm" onclick="closeBadgeModal()"></div>
+<div class="bg-white rounded-[2rem] p-8 max-w-sm w-full relative z-10 shadow-2xl border-4 border-surface-variant flex flex-col items-center text-center" id="badgeModalContent">
+<button class="absolute top-4 right-4 text-outline hover:text-on-surface transition-colors w-8 h-8 flex items-center justify-center bg-surface rounded-full" onclick="closeBadgeModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="w-24 h-24 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-6 shadow-inner border-4 border-white" id="modalIconContainer">
+<span class="material-symbols-outlined text-[48px]" id="modalIcon" style="font-variation-settings: 'FILL' 1;">pets</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2" id="modalTitle">Harimau Sumatera</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8" id="modalDesc">Kamu telah mempelajari habitat dan cara hidup Harimau Sumatera yang langka!</p>
+<button class="w-full bg-secondary text-on-secondary font-label-md text-label-md py-3 rounded-xl bouncy-btn border-secondary-fixed-variant" onclick="closeBadgeModal()">
+                Tutup
+            </button>
+</div>
+</div>
+<script>
+        function openBadgeModal(title, description, iconName, textColorClass, bgColorClass) {
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalDesc').textContent = description;
+            
+            const iconSpan = document.getElementById('modalIcon');
+            iconSpan.textContent = iconName;
+            
+            const iconContainer = document.getElementById('modalIconContainer');
+            // Reset classes
+            iconContainer.className = `w-24 h-24 rounded-full flex items-center justify-center mb-6 shadow-inner border-4 border-white ${bgColorClass} text-on-${bgColorClass.split('-')[1]}-container`;
+            
+            // Show modal
+            document.getElementById('badgeModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeBadgeModal() {
+            document.getElementById('badgeModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    </script>
+</body></html>

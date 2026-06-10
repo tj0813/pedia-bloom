@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bulu Tangkis: Kebanggaan Indonesia | Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                "on-secondary": "#ffffff",
+                "primary-fixed": "#62fae3",
+                "inverse-surface": "#233144",
+                "on-secondary-container": "#693300",
+                "on-primary-container": "#00574d",
+                "surface-container-highest": "#d5e3fc",
+                "on-tertiary-fixed": "#351000",
+                "on-tertiary": "#ffffff",
+                "primary-container": "#2dd4bf",
+                "on-primary-fixed": "#00201c",
+                "on-secondary-fixed-variant": "#713700",
+                "on-error-container": "#93000a",
+                "on-tertiary-fixed-variant": "#76330d",
+                "outline-variant": "#bacac5",
+                "surface-bright": "#f8f9ff",
+                "on-surface": "#0d1c2e",
+                "background": "#f8f9ff",
+                "on-primary-fixed-variant": "#005047",
+                "outline": "#6b7a76",
+                "tertiary-container": "#ffaa81",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-high": "#dce9ff",
+                "on-error": "#ffffff",
+                "tertiary": "#944a23",
+                "tertiary-fixed": "#ffdbcc",
+                "surface-container": "#e6eeff",
+                "inverse-primary": "#3cddc7",
+                "secondary-fixed": "#ffdcc5",
+                "secondary-fixed-dim": "#ffb783",
+                "secondary-container": "#fd933d",
+                "error": "#ba1a1a",
+                "tertiary-fixed-dim": "#ffb693",
+                "surface-dim": "#ccdbf3",
+                "primary-fixed-dim": "#3cddc7",
+                "secondary": "#944a00",
+                "surface-variant": "#d5e3fc",
+                "on-primary": "#ffffff",
+                "surface-container-low": "#eff4ff",
+                "on-background": "#0d1c2e",
+                "on-tertiary-container": "#7e3913",
+                "on-surface-variant": "#3c4a46",
+                "primary": "#006b5f",
+                "on-secondary-fixed": "#301400",
+                "inverse-on-surface": "#eaf1ff",
+                "surface": "#f8f9ff",
+                "error-container": "#ffdad6",
+                "surface-tint": "#006b5f"
+              },
+              "borderRadius": {
+                "DEFAULT": "1rem",
+                "lg": "2rem",
+                "xl": "3rem",
+                "full": "9999px"
+              },
+              "spacing": {
+                "margin-desktop": "64px",
+                "unit": "8px",
+                "margin-mobile": "20px",
+                "gutter": "24px",
+                "container-max": "1200px"
+              },
+              "fontFamily": {
+                "headline-lg-mobile": ["Quicksand"],
+                "headline-lg": ["Quicksand"],
+                "body-md": ["Plus Jakarta Sans"],
+                "body-lg": ["Plus Jakarta Sans"],
+                "label-md": ["Quicksand"],
+                "headline-xl": ["Quicksand"]
+              },
+              "fontSize": {
+                "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8f9ff; overflow-x: hidden; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .bouncy-button { transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .bouncy-button:active { transform: scale(0.95) translateY(2px); }
+        .heritage-button { border-bottom: 4px solid #713700; }
+        .heritage-button:active { border-bottom-width: 0px; }
+        .oxygen-zone { margin-top: 48px; margin-bottom: 48px; }
+        .timeline-line { width: 4px; background: linear-gradient(to bottom, #2dd4bf, #006b5f); }
+        .shuttlecock-trail { animation: fly 2s infinite ease-in-out; }
+        @keyframes fly { 
+            0% { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+            50% { transform: translate(50px, -20px) rotate(45deg); opacity: 0.8; }
+            100% { transform: translate(100px, 0) rotate(90deg); opacity: 0; }
+        }
+        .squishy-card { transition: all 0.3s ease; box-shadow: 0 4px 0 rgba(0, 107, 95, 0.1); }
+        .squishy-card:hover { transform: translateY(-4px); box-shadow: 0 8px 12px rgba(0, 107, 95, 0.15); }
+    </style>
+</head>
+<body class="text-on-surface">
+<!-- Top Navigation Anchor -->
+<header class="fixed top-0 w-full z-50 bg-surface shadow-sm px-margin-mobile py-2 flex justify-between items-center md:px-margin-desktop">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="Nara" data-alt="A friendly and cute cartoon explorer girl named Nara with brown hair in pigtails, wearing a khaki explorer hat and a teal vest. She has a bright, curious smile and big expressive eyes, set against a soft, blurred natural background to emphasize her character. The style is modern 3D-inspired digital illustration with warm, cheerful lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIssHWfGpf4AMCotkjm4JbqUfyQ1DFNuJbU-K_icL5nOc4RKAOBzSy2aKApm93piiLa0loKgKFD-bW8Ux53JX34FncjaKQPDHGV_Zf5q0eMse_P5KG98LC9fKl7QyvO0u3gLuqGZnGrXhOlsemrWU8bqt2gNwJ6XVOUbawis8l_QbVp7sG-lAYa-PypRbz0RXkRVrNxYgAIcO5Wy3TVTZE8SBejVf2tdU6ra15vHZJLKdqgUtLfD3RXfZDqMhlknqPNjN2sxpU8B4"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary">Pedia Bloom</h1>
+</div>
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-low p-2 rounded-full transition-colors">settings</button>
+</header>
+<main class="pt-20 pb-32">
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden bg-surface-container-low">
+<div class="container-max mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col md:flex-row items-center py-12 gap-10">
+<div class="flex-1 space-y-6 z-10">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">emoji_events</span> Olahraga
+                        </span>
+</span>
+<h2 class="font-headline-xl text-headline-xl text-primary leading-tight">Bulu Tangkis: <br/><span class="text-secondary">Kebanggaan Indonesia</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Tahukah kamu? Indonesia adalah "Raja Lapangan" di dunia bulu tangkis! Mari kita telusuri rahasia kehebatannya.
+                    </p>
+<button class="heritage-button bouncy-button bg-secondary text-on-secondary px-8 py-4 rounded-lg font-headline-lg-mobile text-headline-lg-mobile shadow-lg">Mulai Jelajah!</button>
+</div>
+<div class="flex-1 relative">
+<div class="absolute inset-0 bg-primary-container/20 blur-3xl rounded-full"></div>
+<img alt="Bulu Tangkis Hero" class="relative z-10 w-full h-auto drop-shadow-2xl rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxK1NZKJifg5Oqbg9L3QreH1CysD0uPLLZuQfk41PThvRyJtwA4ZvPRp2TGtaZ4CQWjJ4CQ0DyLjxFn3Ny-Un9cidZGywa2LK4oKxer6-L8FSAFVoN0Kxn2kN-ns9QOt2ONKmRpiOy7nkFe4RYnt1YuQmFyx6HtvYkU63xvEAg8PfJZ27c8cfl_MXq_7xL2BdZ2bdE1zf09B_TpSQgSSaYM69p1NNy1hLOEA5PXwXXjTpdGgpOXcPivbbzNkIXOGJUdOWy-tEuaiM"/>
+</div>
+</div>
+</section>
+<!-- Opening Story -->
+<section class="oxygen-zone container-max mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="bg-white rounded-lg p-8 md:p-12 border border-outline-variant shadow-sm relative overflow-hidden">
+<div class="absolute -right-4 -top-4 w-32 h-32 opacity-10">
+<span class="material-symbols-outlined text-[120px] text-primary">auto_awesome</span>
+</div>
+<div class="max-w-3xl">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-6">Mimpi dari Layar Kaca</h3>
+<div class="font-body-md text-body-md text-on-surface-variant space-y-4">
+<p>Bayangkan kamu sedang duduk di depan TV bersama Ayah dan Ibu. Tiba-tiba, suara sorak-sorai "INDONESIA! INDONESIA!" bergemuruh memenuhi ruangan. Di layar, seorang pemain kita baru saja melompat tinggi dan melakukan <i>smash</i> yang sangat kencang!</p>
+<p>Air mata haru menetes saat bendera Merah Putih berkibar paling tinggi diiringi lagu Indonesia Raya. "Aku ingin seperti mereka," bisikmu dalam hati. Itulah awal mula mimpi besar banyak anak Indonesia: menjadi pahlawan di lapangan bulu tangkis!</p>
+</div>
+</div>
+</div>
+</section>
+<!-- What is Badminton -->
+<section class="oxygen-zone container-max mx-auto px-margin-mobile lg:px-margin-desktop grid md:grid-cols-2 gap-12 items-center">
+<div class="order-2 md:order-1 relative h-80 rounded-lg overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A vibrant, top-down view of a bright green professional badminton court with crisp white lines and a high net. The scene is bathed in bright stadium lighting with a cinematic soft glow. A single, colorful shuttlecock rests on the court floor, casting a soft teal shadow against the floor. The style is clean, modern, and inviting for children, featuring the Nusantara Explorers palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiC09OvgKam3ARI97HfwpTHw8CfmyAreiZTuX5zPu4c5z7sdWUG0vVej18HSIcRc8JUG9Csu8FovSu3RYAC-mVeGVn1kne-Y02epHTNM1H2xCbEB5SZInyb2N0ctILlNpr6hJ2kOMzE7tBIvXU3nl3xHBmIN_WpUG7JHyjkhL4gUbBADz7uDqBsD_JRsuvHNJdQBBxPTQ5oZ_s6W9YVz0oWPQnOQX5kw8C70HNwS1DY8fZicDSWMY1CdPd99L5z1KFZzcM-B7i1Wo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<p class="font-headline-lg-mobile text-headline-lg-mobile">Arena Pertempuran Seru</p>
+</div>
+</div>
+<div class="order-1 md:order-2 space-y-6">
+<h3 class="font-headline-lg text-headline-lg text-primary">Apa itu Bulu Tangkis?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Bulu tangkis atau <i>badminton</i> adalah olahraga yang dimainkan oleh dua orang (tunggal) atau dua pasangan (ganda). Tujuannya sederhana: pukul <b>Kok</b> (Shuttlecock) melewati net menggunakan <b>Raket</b> agar jatuh di lantai lapangan lawan!
+                </p>
+<div class="flex gap-4">
+<div class="bg-primary-container/20 p-4 rounded-lg flex-1 text-center">
+<span class="material-symbols-outlined text-primary text-[32px] mb-2">speed</span>
+<p class="font-label-md text-label-md text-primary">Cepat &amp; Lincah</p>
+</div>
+<div class="bg-primary-container/20 p-4 rounded-lg flex-1 text-center">
+<span class="material-symbols-outlined text-primary text-[32px] mb-2">psychology</span>
+<p class="font-label-md text-label-md text-primary">Fokus Tinggi</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Indonesia Champions -->
+<section class="oxygen-zone bg-surface-container py-16">
+<div class="container-max mx-auto px-margin-mobile lg:px-margin-desktop">
+<h3 class="font-headline-lg text-headline-lg text-center text-primary mb-12">Indonesia Juara Dunia! 🇮🇩</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+<!-- Medals -->
+<div class="bg-white p-6 rounded-lg shadow-sm text-center squishy-card">
+<div class="w-12 h-12 bg-secondary-fixed mx-auto rounded-full flex items-center justify-center mb-4 text-on-secondary-fixed">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary">1992</h4>
+<p class="font-label-md text-label-md text-on-surface-variant">Barcelona</p>
+<p class="text-[12px] mt-2 font-bold text-primary">Susi &amp; Alan</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm text-center squishy-card">
+<div class="w-12 h-12 bg-secondary-fixed mx-auto rounded-full flex items-center justify-center mb-4 text-on-secondary-fixed">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary">2000</h4>
+<p class="font-label-md text-label-md text-on-surface-variant">Sydney</p>
+<p class="text-[12px] mt-2 font-bold text-primary">Tony &amp; Candra</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm text-center squishy-card">
+<div class="w-12 h-12 bg-secondary-fixed mx-auto rounded-full flex items-center justify-center mb-4 text-on-secondary-fixed">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary">2004</h4>
+<p class="font-label-md text-label-md text-on-surface-variant">Athens</p>
+<p class="text-[12px] mt-2 font-bold text-primary">Taufik Hidayat</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm text-center squishy-card">
+<div class="w-12 h-12 bg-secondary-fixed mx-auto rounded-full flex items-center justify-center mb-4 text-on-secondary-fixed">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary">2008</h4>
+<p class="font-label-md text-label-md text-on-surface-variant">Beijing</p>
+<p class="text-[12px] mt-2 font-bold text-primary">Markis &amp; Hendra</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm text-center squishy-card">
+<div class="w-12 h-12 bg-secondary-fixed mx-auto rounded-full flex items-center justify-center mb-4 text-on-secondary-fixed">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary">2016</h4>
+<p class="font-label-md text-label-md text-on-surface-variant">Rio</p>
+<p class="text-[12px] mt-2 font-bold text-primary">Owi &amp; Butet</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm text-center squishy-card border-2 border-secondary-container">
+<div class="w-12 h-12 bg-secondary-fixed mx-auto rounded-full flex items-center justify-center mb-4 text-on-secondary-fixed">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary">2020</h4>
+<p class="font-label-md text-label-md text-on-surface-variant">Tokyo</p>
+<p class="text-[12px] mt-2 font-bold text-primary">Greysia &amp; Apriani</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5 Fun Facts -->
+<section class="oxygen-zone container-max mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="flex items-center gap-4 mb-8">
+<span class="w-12 h-12 bg-tertiary-container rounded-full flex items-center justify-center text-on-tertiary-container font-bold text-xl">5</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Fakta Seru Bulu Tangkis</h3>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Fact 1 -->
+<div class="bg-white p-8 rounded-lg border-2 border-primary/10 flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-[48px]">bolt</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile">Kecepatan Kilat!</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Smash bulu tangkis bisa melesat hingga 400 km/jam! Itu lebih cepat daripada kereta cepat lho.</p>
+</div>
+<!-- Fact 2 -->
+<div class="bg-white p-8 rounded-lg border-2 border-primary/10 flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-[48px]">nest_eco_leaf</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile">Bulu Angsa Asli</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Satu Kok butuh 16 helai bulu dari sayap kiri seekor angsa agar bisa terbang dengan stabil.</p>
+</div>
+<!-- Fact 3 -->
+<div class="bg-white p-8 rounded-lg border-2 border-primary/10 flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-[48px]">stars</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile">Legenda Hidup</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Indonesia punya Susi Susanti yang sangat lincah dan 'Minions' (Kevin/Marcus) yang sangat cepat!</p>
+</div>
+<!-- Fact 4 -->
+<div class="bg-white p-8 rounded-lg border-2 border-primary/10 flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-[48px]">trophy</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile">Thomas Cup</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Piala paling bergengsi untuk beregu putra. Indonesia sudah menang 14 kali, terbanyak di dunia!</p>
+</div>
+<!-- Fact 5 -->
+<div class="bg-white p-8 rounded-lg border-2 border-primary/10 flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-[48px]">fitness_center</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile">Olahraga Berat</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Dalam satu pertandingan, pemain bisa berlari sejauh 6 kilometer sambil terus melompat!</p>
+</div>
+</div>
+</section>
+<!-- Challenge Area -->
+<section class="oxygen-zone container-max mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="bg-inverse-surface text-white rounded-lg p-10 relative overflow-hidden">
+
+<div class="relative z-10 text-center space-y-6">
+<h3 class="font-headline-lg text-headline-lg">Misi Lempar Kok!</h3>
+<p class="font-body-lg text-body-lg text-surface-container-highest max-w-xl mx-auto">Ayo uji ketangkasanmu! Klik tombol di bawah saat target berada di tengah untuk lemparan sempurna!</p>
+<div class="relative w-full max-w-md mx-auto h-24 bg-white/10 rounded-full flex items-center px-4" id="game-container">
+<div class="absolute left-1/2 -translate-x-1/2 w-20 h-16 bg-primary-container/40 rounded-full border-2 border-primary shadow-[0_0_20px_rgba(45,212,191,0.5)]" id="target-zone"></div>
+<div class="relative w-12 h-12 text-white flex items-center justify-center transition-all duration-75" id="shuttlecock-indicator">
+<span class="material-symbols-outlined text-[40px]">sports_tennis</span>
+</div>
+</div>
+<button class="heritage-button bg-primary text-on-primary px-10 py-4 rounded-lg font-headline-lg-mobile text-headline-lg-mobile shadow-lg" id="throw-btn">LEMpar!</button>
+<p class="h-6 font-label-md text-label-md text-secondary-container" id="game-feedback"></p>
+</div>
+</div>
+</section>
+<!-- Mini Quiz -->
+<section class="oxygen-zone container-max mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="max-w-2xl mx-auto bg-white p-8 rounded-lg border-2 border-outline-variant">
+<h3 class="font-headline-lg text-headline-lg text-center text-primary mb-8">Kuis Kilat Kok!</h3>
+<div id="quiz-content">
+<div class="quiz-step" data-step="1">
+<p class="font-body-lg text-body-lg text-on-surface mb-6">1. Apa nama alat yang digunakan untuk memukul Kok?</p>
+<div class="grid grid-cols-1 gap-4">
+<button class="quiz-opt border-2 border-outline-variant p-4 rounded-lg text-left hover:bg-surface-container transition-colors font-label-md text-label-md" data-correct="true">A. Raket</button>
+<button class="quiz-opt border-2 border-outline-variant p-4 rounded-lg text-left hover:bg-surface-container transition-colors font-label-md text-label-md">B. Bat</button>
+<button class="quiz-opt border-2 border-outline-variant p-4 rounded-lg text-left hover:bg-surface-container transition-colors font-label-md text-label-md">C. Stik</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Glossary -->
+<section class="oxygen-zone container-max mx-auto px-margin-mobile lg:px-margin-desktop">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-8">Kamus Kecil (Glossary)</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-surface-container-low p-6 rounded-lg border-l-4 border-primary">
+<h5 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">Badminton</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Nama bahasa Inggris resmi untuk olahraga bulu tangkis.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg border-l-4 border-primary">
+<h5 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">Shuttlecock</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Bola yang digunakan, terbuat dari bulu atau plastik.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg border-l-4 border-primary">
+<h5 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">Raket</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Alat pemukul yang ringan namun kuat.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg border-l-4 border-primary">
+<h5 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">Smes (Smash)</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Pukulan keras dan tajam ke bawah ke arah lawan.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-surface-container flex justify-around items-center px-4 pt-2 pb-6 shadow-[0_-4px_10px_rgba(0,107,95,0.1)] rounded-t-lg">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 transition-all" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl px-3 py-1 transition-all duration-300 transform -translate-y-1" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 transition-all" href="#">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-label-md">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 transition-all" href="#">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-label-md">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 transition-all" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md text-label-md">Tanya AI</span>
+</a>
+</nav>
+<script>
+        // Game Logic
+        const shuttlecock = document.getElementById('shuttlecock-indicator');
+        const throwBtn = document.getElementById('throw-btn');
+        const feedback = document.getElementById('game-feedback');
+        let pos = 0;
+        let direction = 1;
+        let gameActive = true;
+
+        function animateIndicator() {
+            if (!gameActive) return;
+            pos += 2 * direction;
+            if (pos >= 360 || pos <= 0) direction *= -1;
+            shuttlecock.style.left = `${pos}px`;
+            requestAnimationFrame(animateIndicator);
+        }
+        animateIndicator();
+
+        throwBtn.addEventListener('click', () => {
+            if (!gameActive) return;
+            gameActive = false;
+            
+            // Central zone check (roughly 140px to 220px)
+            if (pos > 160 && pos < 220) {
+                feedback.innerText = "Smes Sempurna! 🏸✨";
+                feedback.className = "h-6 font-label-md text-label-md text-primary font-bold";
+                shuttlecock.classList.add('shuttlecock-trail');
+            } else {
+                feedback.innerText = "Hampir saja! Coba lagi ya.";
+                feedback.className = "h-6 font-label-md text-label-md text-error";
+            }
+
+            setTimeout(() => {
+                gameActive = true;
+                shuttlecock.classList.remove('shuttlecock-trail');
+                animateIndicator();
+            }, 2000);
+        });
+
+        // Quiz Logic
+        const options = document.querySelectorAll('.quiz-opt');
+        options.forEach(opt => {
+            opt.addEventListener('click', () => {
+                const isCorrect = opt.getAttribute('data-correct') === 'true';
+                if (isCorrect) {
+                    opt.classList.add('bg-primary-container', 'text-on-primary-container', 'border-primary');
+                    opt.innerHTML += " ✅ Betul!";
+                } else {
+                    opt.classList.add('bg-error-container', 'text-on-error-container', 'border-error');
+                    opt.innerHTML += " ❌ Ups, belum tepat.";
+                }
+                // Disable other options
+                const siblings = opt.parentElement.querySelectorAll('.quiz-opt');
+                siblings.forEach(s => s.style.pointerEvents = 'none');
+            });
+        });
+    </script>
+</body></html>

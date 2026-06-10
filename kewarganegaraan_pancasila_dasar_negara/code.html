@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pemerintah Indonesia - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#944a00",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#944a23",
+                        "inverse-primary": "#3cddc7",
+                        "on-error": "#ffffff",
+                        "surface-container": "#e6eeff",
+                        "on-secondary-fixed-variant": "#713700",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-error-container": "#93000a",
+                        "on-background": "#0d1c2e",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "surface-container-high": "#dce9ff",
+                        "surface-bright": "#f8f9ff",
+                        "primary": "#006b5f",
+                        "surface-container-low": "#eff4ff",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#ffdcc5",
+                        "outline": "#6b7a76",
+                        "on-tertiary-container": "#7e3913",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#d5e3fc",
+                        "outline-variant": "#bacac5",
+                        "primary-container": "#2dd4bf",
+                        "on-primary-fixed-variant": "#005047",
+                        "inverse-surface": "#233144",
+                        "on-primary-container": "#00574d",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-tertiary-fixed": "#351000",
+                        "on-secondary-container": "#693300",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#d5e3fc",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-secondary-fixed": "#301400",
+                        "tertiary-container": "#ffaa81",
+                        "surface-dim": "#ccdbf3",
+                        "background": "#f8f9ff",
+                        "surface": "#f8f9ff",
+                        "secondary-container": "#fd933d",
+                        "primary-fixed-dim": "#3cddc7",
+                        "primary-fixed": "#62fae3",
+                        "on-surface": "#0d1c2e",
+                        "on-primary-fixed": "#00201c",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#006b5f",
+                        "on-surface-variant": "#3c4a46",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "label-md": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8f9ff;
+            color: #0d1c2e;
+        }
+        h1, h2, h3, h4, h5, h6, .font-headline-xl, .font-headline-lg, .font-headline-lg-mobile, .font-label-md {
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        /* Bouncy Button Animation */
+        .btn-bouncy {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+        }
+        .btn-bouncy:active {
+            transform: translateY(2px);
+            box-shadow: 0 0px 0px rgba(0,0,0,0) !important;
+        }
+
+        /* Ambient Shadows */
+        .shadow-ambient-primary {
+            box-shadow: 0 8px 24px -4px rgba(45, 212, 191, 0.25);
+        }
+        .shadow-ambient-secondary {
+            box-shadow: 0 8px 24px -4px rgba(253, 147, 61, 0.25);
+        }
+        
+        .oxygen-zone {
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+
+        /* Red and White Patriotic Accents */
+        .accent-red { color: #dc2626; }
+        .bg-accent-red { background-color: #dc2626; }
+        .border-accent-red { border-color: #dc2626; }
+    </style>
+</head>
+<body class="bg-background min-h-screen pb-32 pt-16">
+<!-- TopAppBar -->
+<header class="bg-surface shadow-[0px_4px_12px_rgba(0,107,95,0.1)] shadow-sm fixed top-0 left-0 w-full z-50 flex items-center justify-between px-margin-mobile h-16">
+<div class="flex items-center gap-3">
+<div aria-label="Nara the Explorer mascot" class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-primary">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">face_4</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary">Pedia Bloom</h1>
+</div>
+<button aria-label="Notifications" class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary hover:opacity-80 transition-all duration-200 active:scale-95">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">notifications</span>
+</button>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero Section -->
+<section class="oxygen-zone pt-8">
+<div class="relative rounded-[2rem] overflow-hidden bg-surface-container-high shadow-ambient-primary border-2 border-outline-variant/30 group">
+<div class="aspect-video w-full relative">
+<img alt="Negara Indonesia: NKRI yang Demokratis" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuefA2l78oq3VBkLY7WOT4wjqQm7lwFtx37ek-UnDQhcDcM8uDxL4iqm8uhF3vSk4M3S9lAbwTAwVSEdtvRPQKqRHALxC7XSq2wKphR5y1vbYvz2SU2cDk4royWmnMj8KMw3JRT4N-8Q5CPs86R_d3YCjQ_0A_GuVQ-r_jk4YCcGv90eQBnZBdwUrDp7R2DTvoxDvRn1HOZXxBoywRFFDB25sact1zL2xRajtxVzaqJgMys7MU_Tf_hS-SMrK3wSg7fUMoXCVA58k"/>
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent"></div>
+</div>
+<div class="relative px-6 pb-8 -mt-16 md:-mt-24 z-10">
+<span class="inline-block bg-primary text-on-primary font-label-md text-label-md px-4 py-1.5 rounded-full mb-4 shadow-sm">Kewarganegaraan</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mb-4">Negara Indonesia: NKRI yang Demokratis</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed bg-surface/80 backdrop-blur-sm p-4 rounded-xl border border-outline-variant/20">
+                        Halo Penjelajah Cilik! Tahukah kamu bagaimana negara kita yang besar ini diatur? Indonesia adalah negara demokrasi, artinya rakyatlah yang menentukan masa depan bangsa melalui pilihan mereka. Yuk, kita cari tahu rahasianya!
+                    </p>
+</div>
+<!-- Mascot Peek -->
+<div class="absolute top-4 right-4 w-16 h-16 bg-surface rounded-full shadow-md flex items-center justify-center border-4 border-primary-container z-20">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+</div>
+</div>
+</section>
+<!-- Section 1: Apa itu NKRI? -->
+<section class="oxygen-zone">
+<div class="bg-surface-container-lowest rounded-[2rem] p-8 shadow-ambient-primary border-2 border-surface-container relative overflow-hidden">
+<!-- Patriotic Accent -->
+<div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-red-500 to-white"></div>
+<div class="flex items-start gap-6">
+<div class="w-16 h-16 shrink-0 bg-primary-container rounded-2xl flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-on-primary-container text-4xl" style="font-variation-settings: 'FILL' 1;">public</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-3">Apa itu NKRI?</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            Indonesia sering disebut <strong class="text-primary font-bold">Negara Kesatuan Republik Indonesia (NKRI)</strong>. Kata 'Republik' berarti bahwa pemimpin negara kita dipilih oleh rakyat, seperti Presiden kita. Berbeda dengan kerajaan yang dipimpin oleh Raja atau Ratu yang mewariskan kekuasaannya.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Siapa Pemimpin Indonesia? (Bento Grid / Hierarchy) -->
+<section class="oxygen-zone">
+<div class="text-center mb-8">
+<h3 class="font-headline-lg text-headline-lg text-secondary mb-2">Siapa Pemimpin Indonesia?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Dari tingkat nasional hingga lingkungan rumahmu!</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- 1 -->
+<div class="col-span-1 md:col-span-2 lg:col-span-3 bg-secondary-container rounded-[2rem] p-6 flex flex-col sm:flex-row items-center gap-6 shadow-ambient-secondary border-b-[6px] border-secondary border-2 border-secondary-container transform hover:-translate-y-1 transition-transform">
+<div class="w-20 h-20 shrink-0 bg-surface rounded-full flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-secondary text-5xl" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+<div class="text-center sm:text-left">
+<span class="bg-surface text-secondary font-bold px-3 py-1 rounded-full text-sm mb-2 inline-block">Tingkat Nasional</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-secondary-container mb-1">Presiden &amp; Wakil Presiden</h4>
+<p class="font-body-md text-body-md text-on-secondary-container/80">Pemimpin tertinggi negara yang dipilih langsung oleh rakyat.</p>
+</div>
+</div>
+<!-- 2 -->
+<div class="bg-surface-container-high rounded-[2rem] p-6 flex flex-col items-center text-center shadow-sm border-2 border-surface-container border-b-[4px]">
+<div class="w-16 h-16 mb-4 bg-tertiary-container rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-container text-3xl" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface mb-2">Menteri</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Membantu tugas-tugas Presiden mengatur berbagai bidang.</p>
+</div>
+<!-- 3 -->
+<div class="bg-surface-container-high rounded-[2rem] p-6 flex flex-col items-center text-center shadow-sm border-2 border-surface-container border-b-[4px]">
+<div class="w-16 h-16 mb-4 bg-primary-container rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container text-3xl" style="font-variation-settings: 'FILL' 1;">map</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface mb-2">Gubernur</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Pemimpin tingkat Provinsi (seperti Jawa Barat atau Bali).</p>
+</div>
+<!-- 4 -->
+<div class="bg-surface-container-high rounded-[2rem] p-6 flex flex-col items-center text-center shadow-sm border-2 border-surface-container border-b-[4px]">
+<div class="w-16 h-16 mb-4 bg-primary-container rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container text-3xl" style="font-variation-settings: 'FILL' 1;">location_city</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface mb-2">Bupati / Walikota</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Pemimpin tingkat Kabupaten atau Kota.</p>
+</div>
+<!-- 5 & 6 (Grouped for smaller layout) -->
+<div class="md:col-span-2 lg:col-span-3 grid grid-cols-2 gap-4">
+<div class="bg-surface-container rounded-xl p-4 flex items-center gap-3 border border-outline-variant/30">
+<div class="w-10 h-10 bg-surface rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">home_pin</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Camat</h4>
+<p class="text-xs text-on-surface-variant">Tingkat Kecamatan</p>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-4 flex items-center gap-3 border border-outline-variant/30">
+<div class="w-10 h-10 bg-surface rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">holiday_village</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Lurah / Kades</h4>
+<p class="text-xs text-on-surface-variant">Tingkat Desa/Kelurahan</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Tiga Kekuasaan Negara -->
+<section class="oxygen-zone">
+<h3 class="font-headline-lg text-headline-lg text-primary text-center mb-8">Tiga Kekuasaan Negara</h3>
+<div class="flex flex-col md:flex-row gap-6">
+<!-- Eksekutif -->
+<div class="flex-1 bg-surface-container-lowest rounded-[2rem] p-6 shadow-sm border-2 border-outline-variant/30 flex flex-col items-center text-center relative overflow-hidden group hover:border-primary transition-colors">
+<div class="w-20 h-20 bg-primary-container rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-primary-container text-4xl" style="font-variation-settings: 'FILL' 1;">gavel</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Eksekutif</h4>
+<span class="bg-surface-container text-on-surface font-semibold px-3 py-1 rounded-full text-sm mb-3">Presiden &amp; Menteri</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Tugasnya menjalankan pemerintahan dan melaksanakan undang-undang.</p>
+</div>
+<!-- Legislatif -->
+<div class="flex-1 bg-surface-container-lowest rounded-[2rem] p-6 shadow-sm border-2 border-outline-variant/30 flex flex-col items-center text-center relative overflow-hidden group hover:border-secondary transition-colors">
+<div class="w-20 h-20 bg-secondary-container rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-container text-4xl" style="font-variation-settings: 'FILL' 1;">history_edu</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Legislatif</h4>
+<span class="bg-surface-container text-on-surface font-semibold px-3 py-1 rounded-full text-sm mb-3">DPR &amp; DPD</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Tugasnya membuat aturan atau undang-undang baru untuk negara.</p>
+</div>
+<!-- Yudikatif -->
+<div class="flex-1 bg-surface-container-lowest rounded-[2rem] p-6 shadow-sm border-2 border-outline-variant/30 flex flex-col items-center text-center relative overflow-hidden group hover:border-tertiary transition-colors">
+<div class="w-20 h-20 bg-tertiary-container rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-tertiary-container text-4xl" style="font-variation-settings: 'FILL' 1;">balance</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Yudikatif</h4>
+<span class="bg-surface-container text-on-surface font-semibold px-3 py-1 rounded-full text-sm mb-3">MA &amp; MK</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Tugasnya mengadili dan memastikan keadilan ditegakkan sesuai hukum.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-surface-container-lowest border-t-2 border-surface-container shadow-[0px_-4px_16px_rgba(148,74,0,0.08)] fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-4 pt-2 md:hidden rounded-t-lg">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-secondary-fixed-dim/20 transition-all duration-300 cubic-bezier(0.34, 1.56, 0.64, 1) active:scale-90 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-label-md text-[12px] leading-tight">Home</span>
+</a>
+<!-- Active Tab: Jelajah (Explore) because this is an encyclopedia article -->
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl px-4 py-1 translate-y-[-2px] transition-all duration-300 cubic-bezier(0.34, 1.56, 0.64, 1) active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-[12px] leading-tight">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-secondary-fixed-dim/20 transition-all duration-300 cubic-bezier(0.34, 1.56, 0.64, 1) active:scale-90 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">sports_esports</span>
+<span class="font-label-md text-[12px] leading-tight">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-secondary-fixed-dim/20 transition-all duration-300 cubic-bezier(0.34, 1.56, 0.64, 1) active:scale-90 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">military_tech</span>
+<span class="font-label-md text-[12px] leading-tight">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-secondary-fixed-dim/20 transition-all duration-300 cubic-bezier(0.34, 1.56, 0.64, 1) active:scale-90 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">smart_toy</span>
+<span class="font-label-md text-[12px] leading-tight">Tanya AI</span>
+</a>
+</nav>
+<!-- Quiz Interaction Script (Simple UI logic) -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const quizOptions = document.querySelectorAll('.quiz-option');
+            const quizFeedback = document.getElementById('quiz-feedback');
+            
+            quizOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    // Reset others
+                    quizOptions.forEach(opt => {
+                        opt.classList.remove('bg-primary-container', 'border-primary', 'text-on-primary-container');
+                        opt.classList.add('bg-surface', 'border-outline-variant', 'text-on-surface');
+                    });
+                    
+                    // Select current
+                    this.classList.remove('bg-surface', 'border-outline-variant', 'text-on-surface');
+                    this.classList.add('bg-primary-container', 'border-primary', 'text-on-primary-container', 'border-2');
+                    
+                    // Show feedback based on data attribute
+                    if (this.dataset.correct === 'true') {
+                        quizFeedback.innerHTML = '<span class="material-symbols-outlined text-primary align-middle mr-1">check_circle</span> Wah, kamu hebat! Jawabanmu benar!';
+                        quizFeedback.className = 'mt-4 p-3 bg-surface-container-low text-primary rounded-xl font-label-md text-label-md border border-primary/30 text-center animate-pulse';
+                    } else {
+                        quizFeedback.innerHTML = '<span class="material-symbols-outlined text-error align-middle mr-1">cancel</span> Oops, coba ingat-ingat lagi hirarki pemimpin kita.';
+                        quizFeedback.className = 'mt-4 p-3 bg-error-container text-on-error-container rounded-xl font-label-md text-label-md border border-error/30 text-center';
+                    }
+                    quizFeedback.classList.remove('hidden');
+                });
+            });
+        });
+    </script>
+</body></html>

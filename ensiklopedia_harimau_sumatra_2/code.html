@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Harimau Sumatra - NusaPedia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#bacac5",
+                        "primary-fixed": "#62fae3",
+                        "on-error": "#ffffff",
+                        "surface-container": "#e6eeff",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-background": "#0d1c2e",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f8f9ff",
+                        "secondary-container": "#fd933d",
+                        "on-primary-fixed-variant": "#005047",
+                        "tertiary-fixed": "#ffdbcc",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-tertiary-fixed": "#351000",
+                        "on-surface": "#0d1c2e",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-secondary-container": "#693300",
+                        "secondary": "#944a00",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#ffdcc5",
+                        "on-primary-container": "#00574d",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-container": "#7e3913",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "surface-tint": "#006b5f",
+                        "inverse-surface": "#233144",
+                        "primary-container": "#2dd4bf",
+                        "background": "#f8f9ff",
+                        "primary": "#006b5f",
+                        "inverse-primary": "#3cddc7",
+                        "on-surface-variant": "#3c4a46",
+                        "on-primary-fixed": "#00201c",
+                        "outline": "#6b7a76",
+                        "surface-dim": "#ccdbf3",
+                        "inverse-on-surface": "#eaf1ff",
+                        "surface": "#f8f9ff",
+                        "surface-container-highest": "#d5e3fc",
+                        "primary-fixed-dim": "#3cddc7",
+                        "tertiary-container": "#ffaa81",
+                        "surface-variant": "#d5e3fc",
+                        "on-secondary-fixed": "#301400",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#713700",
+                        "tertiary": "#944a23"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "container-max": "1200px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Quicksand"],
+                        "label-md": ["Quicksand"],
+                        "headline-xl": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "label-md": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+        .shadow-glow-primary {
+            box-shadow: 0 4px 12px rgba(45, 212, 191, 0.25);
+        }
+        .shadow-glow-interactive {
+            box-shadow: 0 8px 16px rgba(45, 212, 191, 0.3);
+            transition: box-shadow 0.2s ease, transform 0.2s ease;
+        }
+        .shadow-glow-interactive:active {
+            box-shadow: 0 2px 4px rgba(45, 212, 191, 0.2);
+            transform: translateY(2px);
+        }
+        .bg-pattern {
+            background-image: radial-gradient(var(--tw-colors-primary-container) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.05;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased pb-24 md:pb-0 font-body-md text-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky bg-background z-40 transition-shadow duration-300" id="top-nav">
+<div class="flex justify-between items-center px-gutter py-4 w-full container mx-auto max-w-container-max">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-container overflow-hidden shadow-glow-primary flex-shrink-0">
+<img alt="Nara the Explorer avatar" class="w-full h-full object-cover" data-alt="A cute, highly detailed 3D rendering of an adventurous cartoon mascot named Nara, dressed in explorer gear (khaki shirt, small backpack, binoculars). The mascot is smiling brightly in a sunny jungle setting. The lighting is soft and colorful, appealing to children, following a skeuomorphic and tactile design style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhiaUphww1muDNhvrMfcVsiHBD5AUYY-EmbCMWqfCCIegklVrfqXxPJA0MErr0WTiQbNGxQCTAzKFDaljsqH_6ATpSi3BDTi7kDipSi6bbFD_1CjnQltpqKTp4rFxSDnykxRrsZlK6PAzeJ-7sBOXPn0GFR9JAK_gK9qNC40bQoAsoe1IyWqSalgG8LgGtkCvuy41Acuc6EgfZLL1hfAawfho8-YhlzB6MlvYTuOvzkffOCqE6OO7VEvce64zBD1s2aFMHjJZ9J0g"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary tracking-tight">NusaPedia</h1>
+</div>
+<!-- Desktop Nav (Hidden on Mobile) -->
+<nav class="hidden md:flex gap-2">
+<a class="flex items-center gap-2 px-4 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span> Home
+                </a>
+<a class="flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-container text-on-primary-container font-bold font-label-md text-label-md hover:bg-surface-container-low transition-colors shadow-glow-primary" href="#">
+<span class="material-symbols-outlined" data-icon="explore" data-weight="fill">explore</span> Jelajah
+                </a>
+<a class="flex items-center gap-2 px-4 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="sports_esports">sports_esports</span> Game
+                </a>
+<a class="flex items-center gap-2 px-4 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="military_tech">military_tech</span> Badge
+                </a>
+<a class="flex items-center gap-2 px-4 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="smart_toy">smart_toy</span> Tanya AI
+                </a>
+</nav>
+<button aria-label="Settings" class="text-primary p-2 rounded-full hover:bg-surface-container-low transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined text-[28px]" data-icon="settings">settings</span>
+</button>
+</div>
+</header>
+<main class="container mx-auto max-w-container-max px-margin-mobile md:px-margin-desktop py-8 relative">
+<div class="absolute inset-0 bg-pattern pointer-events-none z-0"></div>
+<div class="relative z-10 max-w-3xl mx-auto space-y-12">
+<!-- Breadcrumb & Title -->
+<div class="space-y-4 text-center">
+<div class="inline-flex gap-2 flex-wrap justify-center">
+<span class="bg-surface-container text-on-surface px-4 py-1.5 rounded-full font-label-md text-label-md flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[18px]" data-icon="category">category</span> Hewan
+                    </span>
+<span class="bg-tertiary text-on-tertiary px-4 py-1.5 rounded-full font-label-md text-label-md flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[18px]" data-icon="location_on">location_on</span> Sumatra
+                    </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-background">Harimau Sumatra</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Raja hutan bergaris yang menjadi penjaga setia pulau Sumatra.</p>
+</div>
+<!-- Hero Image -->
+<div class="relative w-full aspect-[4/3] md:aspect-[16/9] rounded-xl overflow-hidden shadow-glow-primary border-2 border-surface-container-high group">
+<img alt="Harimau Sumatra" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A majestic Sumatran tiger resting in a lush, verdant tropical rainforest. Sunlight filters through the dense canopy, highlighting the striking orange and black stripes on its thick fur. The scene is photorealistic but slightly stylized with a soft, warm glow to feel inviting rather than intimidating. The overall aesthetic aligns with a premium, tactile educational platform, emphasizing vibrant greens and rich oranges." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiyMqihLYz3rV243vvt4m_iJqTR94AkqavDxS8rCXHLMPOT_w3CooMQmDed4lUcz1kyeFFbxvWCyxZKZUFYCYXfusyc9_FHeMpMl4voZfKfg4qCFyrEvb_nSfN_QUJp1GXM0OHQ40GBOqFk-k3lYVucAfzsSjBWWNXIm_8SXX-c6AFxQisyXbU-8MF7O8DF-layVTJx8wpvmFVBBPNDUo9vWIPfS8wC0G9YEmkFFfHCdJmwmyjErMSfQbWDpXrJWQH5zzhNZXZpzc"/>
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary" data-icon="volume_up">volume_up</span>
+<span class="font-label-md text-label-md text-on-surface">Aum!</span>
+</div>
+</div>
+<!-- Content Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Appearance Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-glow-primary border-2 border-surface-container relative">
+<div class="absolute -top-4 -left-4 w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center shadow-sm transform -rotate-12">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="visibility">visibility</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4 mt-2">Penampilan Gagah</h2>
+<p class="mb-4">Harimau Sumatra adalah subspesies harimau terkecil yang masih ada, lho! Meski ukurannya lebih kecil, mereka memiliki bulu yang paling gelap dan garis-garis yang sangat rapat.</p>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-primary-container flex items-center justify-center flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-on-primary-container text-[16px]" data-icon="check">check</span>
+</div>
+<span>Garis loreng hitam yang tebal dan rapat.</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-primary-container flex items-center justify-center flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-on-primary-container text-[16px]" data-icon="check">check</span>
+</div>
+<span>Janggut atau surai tebal pada jantan, membuat mereka terlihat sangat berwibawa!</span>
+</li>
+</ul>
+</div>
+<!-- Guardian Role Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-glow-primary border-2 border-surface-container relative">
+<div class="absolute -top-4 -right-4 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-sm transform rotate-12">
+<span class="material-symbols-outlined text-on-primary" data-icon="forest">forest</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4 mt-2">Penjaga Hutan</h2>
+<p>Mereka bukan sekadar kucing besar biasa. Harimau Sumatra berperan sebagai predator puncak (predator tertinggi) dalam rantai makanan.</p>
+<div class="mt-6 bg-surface-container p-4 rounded-lg">
+<p class="font-label-md text-label-md text-on-surface-variant">Dengan menjaga keseimbangan jumlah mangsanya (seperti babi hutan dan rusa), mereka memastikan hutan tetap subur dan sehat. Jika harimau punah, keseimbangan hutan akan rusak.</p>
+</div>
+</div>
+</div>
+<!-- Conservation Alert -->
+<div class="bg-error-container text-on-error-container rounded-xl p-6 shadow-sm border border-error/20 flex flex-col md:flex-row gap-6 items-center">
+<div class="w-16 h-16 rounded-full bg-error text-on-error flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[32px]" data-icon="warning">warning</span>
+</div>
+<div class="flex-1 text-center md:text-left">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile mb-2">Butuh Bantuan Kita!</h3>
+<p>Status mereka saat ini <strong>Kritis (Critically Endangered)</strong>. Kehilangan habitat karena penebangan hutan dan perburuan liar adalah ancaman terbesar mereka. Saatnya kita bertindak melindungi rumah mereka!</p>
+</div>
+<button class="bg-error text-on-error px-6 py-3 rounded-full font-label-md text-label-md shadow-glow-interactive whitespace-nowrap">
+                    Ayo Bantu
+                </button>
+</div>
+<!-- Interactive Game Section -->
+<div class="bg-surface-bright rounded-xl p-8 border-4 border-primary-container shadow-glow-primary text-center">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-2">Temukan Pola Loreng!</h2>
+<p class="text-on-surface-variant mb-8">Setiap harimau punya pola loreng yang unik seperti sidik jari manusia. Coba temukan 3 pola yang persis sama!</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto mb-8">
+<!-- Game Tiles (Static Mockup) -->
+<div class="aspect-square bg-surface-container rounded-lg border-2 border-outline-variant hover:border-primary cursor-pointer flex items-center justify-center transition-colors shadow-sm">
+<div class="w-16 h-4 bg-on-surface rounded-full transform rotate-45"></div>
+</div>
+<div class="aspect-square bg-surface-container rounded-lg border-2 border-outline-variant hover:border-primary cursor-pointer flex items-center justify-center transition-colors shadow-sm">
+<div class="w-16 h-4 bg-on-surface rounded-full"></div>
+</div>
+<div class="aspect-square bg-surface-container rounded-lg border-2 border-outline-variant hover:border-primary cursor-pointer flex items-center justify-center transition-colors shadow-sm bg-primary-container/20">
+<div class="w-16 h-4 bg-on-surface rounded-full transform -rotate-45"></div>
+</div>
+<div class="aspect-square bg-surface-container rounded-lg border-2 border-outline-variant hover:border-primary cursor-pointer flex items-center justify-center transition-colors shadow-sm">
+<div class="w-12 h-12 bg-on-surface rounded-full"></div>
+</div>
+</div>
+<button class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-full font-headline-lg-mobile text-headline-lg-mobile border-b-4 border-secondary shadow-glow-interactive">
+                    Mulai Main
+                </button>
+</div>
+<!-- Daily Mission Progress (Mini) -->
+<div class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-surface-container">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="book">book</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between mb-1">
+<span class="font-label-md text-label-md text-on-surface">Misi Membaca Hari Ini</span>
+<span class="font-label-md text-label-md text-primary">1/3</span>
+</div>
+<div class="h-4 bg-surface-variant rounded-full overflow-hidden relative">
+<div class="absolute top-0 left-0 h-full bg-primary rounded-full transition-all duration-500 w-1/3"></div>
+<!-- Little Nara Head Progress Indicator -->
+<div class="absolute top-1/2 -translate-y-1/2 left-[33%] -translate-x-1/2 w-6 h-6 rounded-full bg-tertiary-container shadow-sm border-2 border-surface-container-lowest z-10 overflow-hidden">
+<img alt="Nara" class="w-full h-full object-cover" data-alt="A very small circular avatar image showing the face of a cute, adventurous 3D cartoon explorer mascot named Nara." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF_AdO2_qLyEHAf8MEkvX0UGtnZgKpdd1o6Pw8qaddyWBb1IxG3K1VOAZYcDvJqyIbKk3PYS1GDGQGRm6S_warHvkMIEabqCINAfSvJy0GPzWGSYTINy8DqZCQ2X3J_NJhzhxyqBsc7IGPkNs698jA9Xd1QBCXapoo-daIRk4AqbR9WND9eS1AQoFNm0EHFoz0LPdKMKwioeFzSP_2AMjC6W_R5OFE1Lm-itBmsTv2-epc4HVMbBq2oepf_UZ9_p4yRWgZz6-_r7g"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface-container-lowest shadow-[0_-4px_12px_rgba(45,212,191,0.15)] rounded-t-xl pb-safe">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl w-16" href="#">
+<span class="material-symbols-outlined mb-1 text-[24px]" data-icon="home">home</span>
+<span class="font-label-md text-[12px] leading-tight font-semibold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-2 hover:bg-surface-container-high transition-all shadow-glow-primary transform -translate-y-1 w-16" href="#">
+<span class="material-symbols-outlined mb-1 text-[24px]" data-icon="explore" data-weight="fill">explore</span>
+<span class="font-label-md text-[12px] leading-tight font-bold">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl w-16" href="#">
+<span class="material-symbols-outlined mb-1 text-[24px]" data-icon="sports_esports">sports_esports</span>
+<span class="font-label-md text-[12px] leading-tight font-semibold">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl w-16" href="#">
+<span class="material-symbols-outlined mb-1 text-[24px]" data-icon="military_tech">military_tech</span>
+<span class="font-label-md text-[12px] leading-tight font-semibold">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl w-16" href="#">
+<span class="material-symbols-outlined mb-1 text-[24px]" data-icon="smart_toy">smart_toy</span>
+<span class="font-label-md text-[12px] leading-tight font-semibold">Tanya AI</span>
+</a>
+</nav>
+<script>
+        // Simple scroll effect for Top Nav
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('top-nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body></html>

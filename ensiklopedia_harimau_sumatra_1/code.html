@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Harimau Sumatra - NusaPedia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "on-surface-variant": "#3c4a46",
+                      "on-tertiary-container": "#7e3913",
+                      "surface": "#f8f9ff",
+                      "on-error-container": "#93000a",
+                      "surface-variant": "#d5e3fc",
+                      "on-secondary-fixed": "#301400",
+                      "on-secondary-container": "#693300",
+                      "primary-fixed-dim": "#3cddc7",
+                      "primary-fixed": "#62fae3",
+                      "tertiary-fixed": "#ffdbcc",
+                      "tertiary-container": "#ffaa81",
+                      "on-surface": "#0d1c2e",
+                      "on-primary-container": "#00574d",
+                      "surface-tint": "#006b5f",
+                      "surface-container": "#e6eeff",
+                      "on-primary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "secondary-fixed-dim": "#ffb783",
+                      "secondary": "#944a00",
+                      "surface-container-highest": "#d5e3fc",
+                      "on-tertiary-fixed": "#351000",
+                      "primary": "#006b5f",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "on-tertiary": "#ffffff",
+                      "secondary-fixed": "#ffdcc5",
+                      "outline-variant": "#bacac5",
+                      "surface-container-low": "#eff4ff",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "tertiary": "#944a23",
+                      "outline": "#6b7a76",
+                      "surface-dim": "#ccdbf3",
+                      "surface-bright": "#f8f9ff",
+                      "primary-container": "#2dd4bf",
+                      "on-primary-fixed-variant": "#005047",
+                      "on-background": "#0d1c2e",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed": "#00201c",
+                      "inverse-surface": "#233144",
+                      "inverse-on-surface": "#eaf1ff",
+                      "surface-container-high": "#dce9ff",
+                      "on-secondary-fixed-variant": "#713700",
+                      "on-error": "#ffffff",
+                      "inverse-primary": "#3cddc7",
+                      "secondary-container": "#fd933d",
+                      "background": "#f8f9ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "container-max": "1200px",
+                      "margin-mobile": "20px",
+                      "gutter": "24px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "label-md": ["Quicksand"],
+                      "headline-xl": ["Quicksand"],
+                      "headline-lg": ["Quicksand"],
+                      "headline-lg-mobile": ["Quicksand"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "body-lg": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                      "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                      "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-filled {
+          font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom bounce animation for buttons */
+        .btn-bounce:active {
+            transform: translateY(2px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen pb-[90px]">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky bg-background flex justify-between items-center px-gutter py-4 z-40 transition-transform duration-300">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden flex items-center justify-center border-2 border-primary-fixed">
+<!-- Avatar Placeholder -->
+<span class="material-symbols-outlined text-on-primary-container icon-filled">face</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary md:font-headline-lg md:text-headline-lg">NusaPedia</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low transition-colors text-primary active:scale-95 duration-150">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4 flex flex-col gap-6">
+<!-- Hero Section -->
+<section class="relative w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden shadow-[0_8px_24px_rgba(0,107,95,0.15)] flex flex-col justify-end p-6">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent z-10"></div>
+<img alt="Harimau Sumatra di Hutan" class="absolute inset-0 w-full h-full object-cover z-0" data-alt="A majestic Sumatran Tiger walking stealthily through a dense, lush green Indonesian jungle. The lighting is dappled sunlight filtering through the canopy, creating a magical, adventurous atmosphere. The color palette emphasizes vibrant emerald greens and the rich orange and black stripes of the tiger, fitting a high-quality educational children's application." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuCEUG23tKwFsyHJrV6buVJcSzMIMy9DYQdYSZcP0jaTAA5Kp5FI_VGJhIs0fIyrqVF-KFYN_RwovvO4O7d_6VNH7JO7zLs-9NdZwZwnijVLRrXvZ49S6PkGGN3vWhgr3bKkqvbbVr0t5TetgGHGeiBpZfxapA2Jy9aeTP08F4ZpBRFIODcgYH55fLatgBRcp6rfkwQN9IA1ONH8PKYd4WD_Q_zaQzO8mOwPWRHmHk1aSFYkoHEIHbNIuU2cnmT5Ca7l97-KFIr1c"/>
+<div class="relative z-20 text-white flex flex-col gap-2">
+<div class="inline-flex items-center gap-2 bg-secondary text-white px-3 py-1 rounded-full w-max text-sm font-bold shadow-[0_4px_8px_rgba(148,74,0,0.3)]">
+<span class="material-symbols-outlined icon-filled text-[18px]">verified</span>
+                    Mamalia Terancam Punah
+                </div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-xl md:text-headline-xl text-white">Harimau Sumatra</h2>
+<p class="font-body-md text-white/90">Kucing besar penguasa rimba Nusantara yang pemberani!</p>
+</div>
+</section>
+<!-- Bento Grid Info -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Tempat Tinggal -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-outline-variant/30 shadow-[0_4px_16px_rgba(45,212,191,0.1)] relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-primary-container/20 rounded-full blur-2xl group-hover:bg-primary-container/30 transition-all"></div>
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined icon-filled">forest</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface text-[24px]">Tempat Tinggal</h3>
+</div>
+<p class="text-on-surface-variant font-body-md">
+                    Harimau Sumatra hanya bisa ditemukan di Pulau Sumatra, lho! Mereka sangat suka tinggal di hutan hujan tropis yang lebat, tempat yang banyak pepohonan rindang untuk bersembunyi dan bermain.
+                </p>
+</div>
+<!-- Makanan -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-outline-variant/30 shadow-[0_4px_16px_rgba(253,147,61,0.1)] relative overflow-hidden group">
+<div class="absolute -left-4 -bottom-4 w-24 h-24 bg-secondary-container/20 rounded-full blur-2xl group-hover:bg-secondary-container/30 transition-all"></div>
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined icon-filled">restaurant</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface text-[24px]">Makanan Kesukaan</h3>
+</div>
+<p class="text-on-surface-variant font-body-md">
+                    Mereka adalah karnivora hebat! Harimau ini suka sekali berburu babi hutan dan rusa. Karena pintar berenang, kadang mereka juga menangkap ikan di sungai. Nyam nyam!
+                </p>
+</div>
+</section>
+<!-- Fakta Unik (Asymmetric/Cards) -->
+<section class="flex flex-col gap-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mt-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">lightbulb</span> Fakta Unik
+            </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="bg-surface-container-low p-5 rounded-xl border border-outline-variant/20 flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">pool</span>
+<h4 class="font-label-md text-label-md text-on-surface">Pintar Berenang</h4>
+<p class="text-sm text-on-surface-variant">Berbeda dengan kucing rumah, harimau ini sangat suka air dan jago berenang!</p>
+</div>
+<div class="bg-surface-container-low p-5 rounded-xl border border-outline-variant/20 flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">fingerprint</span>
+<h4 class="font-label-md text-label-md text-on-surface">Loreng Khas</h4>
+<p class="text-sm text-on-surface-variant">Pola loreng setiap harimau itu unik, sama seperti sidik jari manusia.</p>
+</div>
+<div class="bg-surface-container-low p-5 rounded-xl border border-outline-variant/20 flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">hearing</span>
+<h4 class="font-label-md text-label-md text-on-surface">Pendengaran Super</h4>
+<p class="text-sm text-on-surface-variant">Mereka bisa mendengar suara mangsa dari jarak yang sangat jauh di dalam hutan lebat.</p>
+</div>
+</div>
+</section>
+<!-- Misi Penyelamat Story -->
+<section class="bg-tertiary-fixed rounded-xl p-6 mt-4 relative overflow-hidden flex flex-col md:flex-row gap-6 items-center shadow-[0_8px_24px_rgba(148,74,35,0.15)] border border-tertiary-fixed-dim/50">
+<div class="flex-1 z-10 flex flex-col gap-4">
+<div class="inline-block bg-tertiary text-on-tertiary px-4 py-1.5 rounded-full font-label-md text-label-md w-max">Misi Penyelamat</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-tertiary-fixed font-bold">Ayo Lindungi Rumah Mereka!</h3>
+<p class="text-on-tertiary-fixed-variant font-body-md">
+                    Hutan tempat tinggal Harimau Sumatra semakin kecil. Kita bisa membantu dengan cara belajar tentang mereka dan menyayangi alam. Jadilah pahlawan bumi bersama Nara dan BimoBot!
+                </p>
+<button class="bg-tertiary text-on-tertiary px-6 py-3 rounded-xl font-label-md text-label-md w-max mt-2 shadow-[0_4px_0_#76330d] btn-bounce transition-transform">
+                    Baca Cerita Pahlawan Hutan
+                </button>
+</div>
+<div class="w-full md:w-1/3 aspect-square rounded-full bg-tertiary-container/50 border-4 border-tertiary-fixed-dim flex items-center justify-center overflow-hidden z-10 relative">
+<img alt="Anak kecil menanam pohon" class="object-cover w-full h-full opacity-80 mix-blend-multiply" data-alt="A stylized, cheerful illustration or bright photo of a child planting a small sapling in a sunlit clearing. The mood is hopeful and educational, using soft warm tones like orange and light green to match a positive, eco-friendly children's app aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKeTikeqMcHgHGP_C9HhFAUq-9XVmW3Of-6HqJfKwZteYXMoZn9gUESrOoX6DhbTKkvCs-3n7WgsTZfnt9hKawcTwH43Qn3jnKmwQKga8MiU56P6Fx29E9KUkIBuMZEF8_8RQlSiq6toqMfDeWh3kg8OiwWa4ZVAwqcCIlTqjbJhI6oTiBEqpeFPy_q9a_EUXo9eYdEJpwwo4eOf_pvlc9WtE77S5pPNN0a19OfjekvxNH0v3Eon068eZRM6LPK-Ap62w1Bff2r2s"/>
+</div>
+</section>
+<!-- Kuis Section -->
+<section class="bg-surface-container rounded-xl p-6 mt-8 text-center flex flex-col items-center gap-6 border-2 border-primary-container/30 shadow-[0_4px_16px_rgba(45,212,191,0.1)]">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-on-primary mb-2 shadow-[0_4px_12px_rgba(0,107,95,0.3)]">
+<span class="material-symbols-outlined icon-filled text-[32px]">military_tech</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Kuis Cepat!</h3>
+<p class="text-on-surface-variant font-body-md max-w-md">Jawab pertanyaan ini untuk mendapatkan lencana <strong>Sahabat Harimau</strong>!</p>
+<div class="bg-surface-container-lowest w-full max-w-lg p-6 rounded-xl border border-outline-variant/30 text-left">
+<p class="font-body-lg text-on-surface mb-4">Di pulau manakah harimau ini tinggal?</p>
+<div class="flex flex-col gap-3">
+<button class="w-full text-left px-4 py-3 rounded-lg border-2 border-outline-variant text-on-surface-variant hover:border-primary hover:bg-primary-container/10 hover:text-primary transition-all font-body-md">
+                        A. Pulau Jawa
+                    </button>
+<button class="w-full text-left px-4 py-3 rounded-lg border-2 border-primary bg-primary-container/10 text-primary font-bold transition-all font-body-md relative overflow-hidden">
+<span class="relative z-10">B. Pulau Sumatra</span>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined">check_circle</span>
+</button>
+<button class="w-full text-left px-4 py-3 rounded-lg border-2 border-outline-variant text-on-surface-variant hover:border-primary hover:bg-primary-container/10 hover:text-primary transition-all font-body-md">
+                        C. Pulau Kalimantan
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface-container-lowest border-t-0 shadow-[0_-4px_12px_rgba(45,212,191,0.15)] md:hidden rounded-t-xl pb-safe">
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl w-16">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-label-md text-[10px] sm:text-xs">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-2 hover:bg-surface-container-high transition-all translate-y-[-4px] shadow-[0_4px_8px_rgba(45,212,191,0.3)] w-20">
+<span class="material-symbols-outlined icon-filled mb-1">explore</span>
+<span class="font-label-md text-[10px] sm:text-xs">Jelajah</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl w-16">
+<span class="material-symbols-outlined mb-1">sports_esports</span>
+<span class="font-label-md text-[10px] sm:text-xs">Game</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl w-16">
+<span class="material-symbols-outlined mb-1">military_tech</span>
+<span class="font-label-md text-[10px] sm:text-xs">Badge</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl w-16">
+<span class="material-symbols-outlined mb-1">smart_toy</span>
+<span class="font-label-md text-[10px] sm:text-xs whitespace-nowrap">Tanya AI</span>
+</button>
+</nav>
+<!-- Decorative Bottom Padding for Web (to mimic app feel if needed, though hidden on mobile by pb-[90px] on body) -->
+<div class="hidden md:block h-8"></div>
+</body></html>

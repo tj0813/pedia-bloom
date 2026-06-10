@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedia Bloom - Rafflesia Arnoldii</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#bacac5",
+                    "on-primary-container": "#00574d",
+                    "on-secondary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f8f9ff",
+                    "tertiary-fixed-dim": "#ffb693",
+                    "tertiary": "#944a23",
+                    "surface-container": "#e6eeff",
+                    "on-primary-fixed": "#00201c",
+                    "surface-container-highest": "#d5e3fc",
+                    "on-surface": "#0d1c2e",
+                    "inverse-primary": "#3cddc7",
+                    "surface": "#f8f9ff",
+                    "outline": "#6b7a76",
+                    "surface-tint": "#006b5f",
+                    "surface-dim": "#ccdbf3",
+                    "on-surface-variant": "#3c4a46",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#005047",
+                    "inverse-on-surface": "#eaf1ff",
+                    "background": "#f8f9ff",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#713700",
+                    "on-background": "#0d1c2e",
+                    "secondary": "#944a00",
+                    "primary-fixed": "#62fae3",
+                    "secondary-fixed-dim": "#ffb783",
+                    "secondary-container": "#fd933d",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#dce9ff",
+                    "secondary-fixed": "#ffdcc5",
+                    "primary": "#006b5f",
+                    "on-tertiary-container": "#7e3913",
+                    "on-secondary-fixed": "#301400",
+                    "primary-container": "#2dd4bf",
+                    "on-tertiary-fixed": "#351000",
+                    "inverse-surface": "#233144",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#d5e3fc",
+                    "on-secondary-container": "#693300",
+                    "tertiary-fixed": "#ffdbcc",
+                    "tertiary-container": "#ffaa81",
+                    "primary-fixed-dim": "#3cddc7",
+                    "on-tertiary-fixed-variant": "#76330d",
+                    "surface-container-low": "#eff4ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "label-md": ["Quicksand"],
+                    "headline-lg": ["Quicksand"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-xl": ["Quicksand"],
+                    "headline-lg-mobile": ["Quicksand"]
+            },
+            "fontSize": {
+                    "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .bounce-hover:hover {
+            transform: translateY(-4px);
+        }
+        .squishy-press:active {
+            transform: scale(0.95);
+            box-shadow: 0 2px 4px rgba(0, 107, 95, 0.2);
+        }
+        .ambient-shadow-primary {
+            box-shadow: 0 8px 24px -8px rgba(45, 212, 191, 0.4);
+        }
+        .ambient-shadow-secondary {
+            box-shadow: 0 8px 24px -8px rgba(253, 147, 61, 0.4);
+        }
+        .bouncy-button {
+            border-bottom-width: 4px;
+            transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .bouncy-button:active {
+            border-bottom-width: 0px;
+            transform: translateY(4px);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen pb-32 md:pb-16 pt-16 selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-surface shadow-sm transition-transform duration-200">
+<div class="flex items-center gap-2">
+<button aria-label="Kembali" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-variant text-primary squishy-press transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold hidden md:block">Pedia Bloom</h1>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-primary-fixed shadow-sm">
+<img alt="Nara Mascot" class="w-full h-full object-cover" data-alt="A friendly, stylized 3D mascot character named Nara the Explorer. Nara is a cute, young Indonesian adventurer wearing a little safari hat and a bright orange scarf, smiling warmly. The art style is soft, tactile, and colorful, suitable for a children's educational app. Lighting is bright and cheerful." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9w1S6c7NUGgJ_BFEqUI6KT9eD7cdTLWBSQ12xDzwwVEzeeMQydEZgzqGFgukEE9Y5dbOo4ufFrEuTEnc2E1JH8pN5GwCOLt5opxdgxdNRJPaORE4maVwN3s0oij5nScY1s6THhd4LnDWoJkDxBjMGMd7xBtJJ1aFmeKt7RpiL8HduJBpJBz0z-nkCSTeuvR0-I-hrtBVjLO5eHoZ7vEzFTtu44fyWtXrQNK1rhbEnWMKZ_Q6oHiQGf7Qu5YGfFNN1eLbnlCOQEvs"/>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-8 space-y-12">
+<!-- Hero Article Header -->
+<section class="relative w-full rounded-xl overflow-hidden ambient-shadow-primary bg-surface-container-lowest border-2 border-surface-variant flex flex-col md:flex-row">
+<div class="w-full md:w-1/2 aspect-square md:aspect-auto min-h-[300px] relative overflow-hidden bg-primary-container">
+<img alt="Rafflesia Arnoldii Illustration" class="absolute inset-0 w-full h-full object-cover" data-alt="A massive, vibrant red Rafflesia Arnoldii flower blooming in a dense, stylized Indonesian rainforest. The flower is detailed with its characteristic white spots and textured petals. The art style is a blend of realism and colorful digital illustration, appealing to children, with soft lighting filtering through the jungle canopy above." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrzqGAgElONUDpzyGONkH3c56dKZzq8bCqTV6mqbqQ9gnEc-3gfYdtzioZzZA-uaqBhtDr2O2dyOX-1TQWi4JlSs-CttyhRmRxjJ1r_stvWGU36lW8ZsfT5IjhmzDkJRww7HkbT1UYsaY-muWFZmv0yrY5gICJEWXp2lvvMe95Xlw-ZJvkR4YKt5Y7caTsm_XugwpTS-6I7aF9g5yq3QdIrUy45MCndmF1yo5f4MV5LoWoPb0Vn88PvcKISkqUivoNayFgRT038DU"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-3 py-1 bg-surface/90 backdrop-blur rounded-full font-label-md text-label-md text-primary flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">local_florist</span> Tumbuhan
+                    </span>
+<span class="px-3 py-1 bg-secondary-container/90 backdrop-blur rounded-full font-label-md text-label-md text-on-secondary-container flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">star</span> Langka
+                    </span>
+</div>
+</div>
+<div class="w-full md:w-1/2 p-6 md:p-10 flex flex-col justify-center bg-surface-container-lowest relative">
+<!-- Mascot Peek -->
+<div class="absolute -top-12 -right-4 md:-top-16 md:right-4 w-24 h-24 rotate-[-10deg] drop-shadow-lg z-10 hidden md:block">
+<img alt="Nara Pointing" class="w-full h-full object-contain drop-shadow-md rounded-full bg-primary-container border-4 border-white" data-alt="A stylized 3D avatar of Nara the Explorer, a cute Indonesian child mascot, looking surprised and pointing excitedly downwards towards the content. The avatar has a soft, tactile, toy-like quality with bright, cheerful lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcGTmrD40aRXYnv6s5ZVXlAm-IjW3m1FmuebK1WTYqCBVNM9jrM4eedmMwTvasb3WZmzqTZNsdOqt-YEHIim_NQVglXnyDIWziCQc0bRlYcuJavuQLSqducxFKEgJpuCdDNZPSNnTOZZNpzYbxmKUmgo79IW_I6wFsqPiEuKIsqBFakuTrlyrf2v6Tt_xZt7n4CBMY2GPoKb870AzIskjVk4DozpiMJy6e1vnQxyA0w9wg8KYN1XooClrOHqYh0kkOyYh0UGR2UWE"/>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-2">Rafflesia Arnoldii</h1>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary mb-6">Sang Padma Raksasa</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                    Wah, tahukah kamu? Di hutan Sumatra, ada bunga yang super duper besar! Namanya Rafflesia Arnoldii. Bunga ini tidak punya akar, batang, atau daun, lho. Ia cuma sekuntum bunga raksasa merah berbintik yang suka bersembunyi!
+                </p>
+<button class="bouncy-button bg-secondary-container text-on-secondary-container border-secondary hover:bg-secondary hover:text-white px-8 py-4 rounded-full font-label-md text-label-md flex items-center justify-center gap-2 w-fit">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+                    Dengarkan Cerita
+                </button>
+</div>
+</section>
+<!-- Bento Grid: Quick Facts -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Fact 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-variant ambient-shadow-primary flex flex-col items-center text-center bounce-hover transition-transform">
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[32px]">emoji_nature</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface mb-2">Jenis Tumbuhan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-bold text-primary">Parasit</p>
+<p class="text-sm mt-2 text-outline">Ia menumpang hidup di akar tumbuhan lain (Tetrastigma).</p>
+</div>
+<!-- Fact 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-variant ambient-shadow-secondary flex flex-col items-center text-center bounce-hover transition-transform">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[32px]">straighten</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface mb-2">Ukuran Spesial</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-bold text-secondary">Terbesar di Dunia</p>
+<p class="text-sm mt-2 text-outline">Lebarnya bisa mencapai 1 meter! Lebih besar dari ban mobil!</p>
+</div>
+<!-- Fact 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-variant ambient-shadow-primary flex flex-col items-center text-center bounce-hover transition-transform">
+<div class="w-16 h-16 rounded-full bg-error-container text-on-error-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[32px]">air</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface mb-2">Aroma Unik</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-bold text-error">Bau Daging Busuk</p>
+<p class="text-sm mt-2 text-outline">Bau ini untuk memanggil lalat agar datang membantunya berkembang biak.</p>
+</div>
+</section>
+<!-- Look & Listen & Mission Split -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Look & Listen -->
+<div class="bg-surface-container-low rounded-xl p-6 border-2 border-surface-variant relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-48 h-48 bg-primary/10 rounded-full blur-2xl"></div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">visibility</span> Lihat &amp; Dengar
+                </h3>
+<div class="rounded-lg overflow-hidden relative group cursor-pointer">
+<img alt="Jungle Video Placeholder" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A lush, dense Indonesian tropical rainforest floor scene, slightly dark and mysterious, with thick green foliage and creeping vines. A soft ray of sunlight highlights a spot where a giant flower might grow. The visual style is highly detailed, slightly stylized, evoking an adventurous nature documentary feel for kids." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjBRFk2pPgT1qZNRWXxwbJj1Vu_zdiUvDZE3uHSd5ZoJo31rLrkqfC8k_j8MjxsASWzvz4uXRGZ2BqJ-NlcUqyF2dw9PQ2OGbinex8e0V2JXon74d4WmetpDK8UZJ8iEJetR6903QsGY8llZf-wucHsbcmFw7cyKfZRXW6BN_RGqtBxuQjYNgr8_-h7XBVgx0GH6ld8jugK_JItU9eXHZ1-wucpVLDVPa0UHENOGEBh06Uuai5QzZ6_2a8B5BDyKquhpJpCI4KRhA"/>
+<div class="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/20 transition-colors">
+<div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center shadow-lg backdrop-blur-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<p class="mt-4 font-body-md text-body-md text-on-surface-variant">
+                    Ssst... Coba dengarkan suara hutan Sumatra dan lihat bagaimana lalat-lalat berkerumun mendekati si bunga raksasa ini!
+                </p>
+</div>
+<!-- Nature Mission -->
+<div class="bg-tertiary-fixed rounded-xl p-6 border-2 border-tertiary-fixed-dim ambient-shadow-secondary relative">
+<div class="absolute top-4 right-4 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">draw</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-tertiary mb-2 flex items-center gap-2">
+                    Misi Alam Hari Ini!
+                </h3>
+<p class="font-body-lg text-body-lg text-on-tertiary-fixed font-bold mb-4">
+                    Gambarlah Si Padma Raksasa
+                </p>
+<div class="bg-white/80 backdrop-blur rounded-lg p-4 mb-6 border border-white">
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">
+                        Ambil kertas dan krayon merahmu! Gambarlah bunga Rafflesia yang besar dengan bintik-bintik putih di kelopaknya. Jangan lupa beri gambar lalat kecil di sekitarnya ya!
+                    </p>
+</div>
+<button class="bouncy-button bg-tertiary text-white border-[#5c2a11] hover:bg-[#7a391a] w-full py-4 rounded-xl font-label-md text-label-md flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">add_a_photo</span>
+                    Kirim Gambar Misimu!
+                </button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Hidden on md, visible on mobile) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 pb-safe bg-surface-container-lowest shadow-[0_-4px_10px_rgba(0,107,95,0.1)] rounded-t-lg md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-variant rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-[12px] mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1.5 transition-all duration-300 translate-y-0.5 scale-95 shadow-sm" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-[12px] mt-1">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-variant rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-[12px] mt-1">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-variant rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-[12px] mt-1">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-variant rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">psychology_alt</span>
+<span class="font-label-md text-[12px] mt-1">Tanya AI</span>
+</a>
+</nav>
+<!-- Desktop Navigation Cluster (Visible on md, hidden on mobile) -->
+<nav class="hidden md:flex fixed top-0 right-margin-desktop h-16 z-50 items-center gap-2">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary px-4 py-2 rounded-full hover:bg-surface-variant transition-colors" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-primary-container bg-primary-container px-4 py-2 rounded-full shadow-sm transition-colors" href="#">Jelajah</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary px-4 py-2 rounded-full hover:bg-surface-variant transition-colors" href="#">Game</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary px-4 py-2 rounded-full hover:bg-surface-variant transition-colors" href="#">Badge</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary px-4 py-2 rounded-full hover:bg-surface-variant transition-colors" href="#">Tanya AI</a>
+</nav>
+</body></html>

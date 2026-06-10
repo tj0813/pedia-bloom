@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-width=1.0" name="viewport"/>
+<title>Pedia Bloom - Hutan Hujan Tropis Indonesia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#2dd4bf",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#351000",
+                        "inverse-primary": "#3cddc7",
+                        "inverse-on-surface": "#eaf1ff",
+                        "background": "#f8f9ff",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-surface-variant": "#3c4a46",
+                        "on-secondary-fixed-variant": "#713700",
+                        "on-secondary-fixed": "#301400",
+                        "on-primary-fixed-variant": "#005047",
+                        "surface-tint": "#006b5f",
+                        "on-tertiary-container": "#7e3913",
+                        "surface-container-highest": "#d5e3fc",
+                        "on-primary-container": "#00574d",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "surface": "#f8f9ff",
+                        "surface-container": "#e6eeff",
+                        "on-background": "#0d1c2e",
+                        "on-secondary": "#ffffff",
+                        "primary": "#006b5f",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "secondary-container": "#fd933d",
+                        "secondary-fixed-dim": "#ffb783",
+                        "secondary-fixed": "#ffdcc5",
+                        "on-secondary-container": "#693300",
+                        "inverse-surface": "#233144",
+                        "surface-variant": "#d5e3fc",
+                        "surface-container-low": "#eff4ff",
+                        "tertiary": "#944a23",
+                        "outline": "#6b7a76",
+                        "primary-fixed-dim": "#3cddc7",
+                        "surface-bright": "#f8f9ff",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#ffaa81",
+                        "on-primary-fixed": "#00201c",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#ccdbf3",
+                        "secondary": "#944a00",
+                        "outline-variant": "#bacac5",
+                        "primary-fixed": "#62fae3",
+                        "on-surface": "#0d1c2e",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Quicksand"],
+                        "headline-xl": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "label-md": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-40 bg-surface-bright dark:bg-surface-dim shadow-sm flex justify-between items-center px-margin-mobile h-16">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-surface-container-lowest shadow-sm">
+<!-- Avatar Placeholder for Nara -->
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">face_4</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed-dim tracking-tight">Pedia Bloom</h1>
+</div>
+<button aria-label="Search" class="w-10 h-10 flex items-center justify-center text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-transform active:scale-95 rounded-full hover:bg-surface-variant/50">
+<span class="material-symbols-outlined">search</span>
+</button>
+</header>
+<main class="w-full max-w-container-max mx-auto md:px-margin-desktop md:py-8 flex flex-col gap-8 md:gap-12">
+<!-- Hero Section -->
+<section class="relative w-full aspect-square md:aspect-[21/9] md:rounded-3xl overflow-hidden bg-surface-container shadow-md">
+<img alt="Hero Image" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhWI5PajMLJL58_YEC_uaroso3hE2sbdkqmKaKUIMQVVodXgyuWKTgQTj8e3qxk-p-8sNAXvYTWnQvarsSEvSThfyzaoBeCVA22WZd44OsPEHwWC1Sjuu8F-btmnGGbNiJOjBCvbD1mwpwCOxuE1HhcUDEyp6a2zWwczwgTJg6vy2Ozzt8QaDLBcg3ms6CTXjt6AM6sJUj9pWydj5m8uQYsrRtcJ84yv8Plc_ULorcGrmThkitUu137zukDeqm5eSLcHWC67F-eLI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-on-background/30 to-transparent flex flex-col justify-end p-margin-mobile md:p-12">
+<div class="inline-flex items-center gap-2 bg-primary-container text-on-primary-container px-3 py-1.5 rounded-full w-fit mb-3 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">nature</span>
+<span class="font-label-md text-label-md">Lingkungan</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-surface-container-lowest mb-2 shadow-sm drop-shadow-md">Hutan Tropis:<br/>Jantung Hijau Indonesia</h2>
+</div>
+</section>
+<!-- Intro Story -->
+<section class="px-margin-mobile md:px-0">
+<div class="bg-surface-container-lowest rounded-3xl p-6 md:p-8 shadow-[0_4px_20px_rgba(45,212,191,0.15)] border-2 border-surface-container relative">
+<div class="absolute -top-6 -right-4 w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center shadow-md rotate-12">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" style="font-variation-settings: 'FILL' 1;">emoji_objects</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+<strong class="text-primary font-bold">Tahukah kamu?</strong> Hutan Indonesia begitu luas hingga terlihat hijau royo-royo dari luar angkasa! Yuk, kita jelajahi rahasia di balik rimbunnya pepohonan kita.
+                </p>
+</div>
+</section>
+<!-- Hutan Terbesar -->
+<section class="px-margin-mobile md:px-0">
+<div class="flex flex-col md:flex-row items-center gap-6 bg-surface-container-low rounded-3xl p-6 shadow-sm border border-surface-container">
+<div class="w-24 h-24 md:w-32 md:h-32 shrink-0 bg-tertiary-container rounded-full flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-on-tertiary-container text-5xl" style="font-variation-settings: 'FILL' 1;">public</span>
+</div>
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-2">Hutan Terbesar ke-3</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Indonesia memiliki <span class="text-primary font-bold">95 juta hektar</span> hutan tropis! Kita adalah pemilik hutan tropis terbesar ketiga di dunia setelah Brasil dan Kongo. Hebat, kan?
+                    </p>
+</div>
+</div>
+</section>
+<!-- Keanekaragaman Hayati (Bento) -->
+<section class="px-margin-mobile md:px-0 flex flex-col gap-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary text-center">Keanekaragaman Hayati</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<!-- Data from IMAGE_177 applied as stats -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 flex flex-col items-center justify-center text-center shadow-sm border border-surface-variant/50 hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 bg-[#8bc34a]/20 rounded-full flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[#8bc34a]" style="font-variation-settings: 'FILL' 1;">cruelty_free</span>
+</div>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary">12%</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Mamalia Dunia</span>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-4 flex flex-col items-center justify-center text-center shadow-sm border border-surface-variant/50 hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 bg-[#ffeb3b]/20 rounded-full flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[#fbc02d]" style="font-variation-settings: 'FILL' 1;">pest_control</span>
+</div>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-secondary-container">16%</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Reptil Dunia</span>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-4 flex flex-col items-center justify-center text-center shadow-sm border border-surface-variant/50 hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 bg-[#03a9f4]/20 rounded-full flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[#0288d1]" style="font-variation-settings: 'FILL' 1;">flutter_dash</span>
+</div>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary-fixed">17%</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Burung Dunia</span>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-4 flex flex-col items-center justify-center text-center shadow-sm border border-surface-variant/50 hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 bg-[#cddc39]/20 rounded-full flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[#afb42b]" style="font-variation-settings: 'FILL' 1;">local_florist</span>
+</div>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-tertiary">10%</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Tanaman Dunia</span>
+</div>
+</div>
+<img alt="Ilustrasi Keanekaragaman Hayati" class="w-full max-w-md mx-auto rounded-2xl shadow-sm mt-4 hidden md:block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmbOjxu0_gp-5d-Hmf3y-r61tqiDJts8YrbNBw4pYEk2LtnadlkIB_ZF4N0mfckd9vCo_yFMAzD_XEeFyYXP6aG9J0vAZ3hAw_eQFXEQDJ_2k7Y1wfxsKMfqs353gBlIWBdjYWwYaT5SmhkBo6RqZPYAltI-wJOFoFOlN_4a_U0inl8oZPfaXWqwbdaTjZvj1MH7pI0uCR6xobNFoXi_6bXegRLQnvMuusDD7KD3i-GlYRqlQGF1hiDGuHJfB9OaEp9WINH3lG4aw"/>
+</section>
+<!-- Mengapa Hutan Penting & Ancaman (Side by side on Desktop) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-margin-mobile md:px-0">
+<!-- Mengapa Penting -->
+<section class="flex flex-col gap-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary flex items-center gap-2">
+<span class="material-symbols-outlined">favorite</span> Mengapa Hutan Penting?
+                </h3>
+<div class="bg-surface-container-lowest rounded-3xl p-2 shadow-sm border border-surface-container overflow-hidden">
+<img alt="Manfaat Hutan" class="w-full aspect-square object-cover rounded-2xl mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoygHR7DaooaVubMBlBgqONjvXFvdrpfEN6KziX1fVu4NtxGo_cE9gq6OGdCtRljaQveHMLMqUjeSo0uQspeVjH2PcpVAvGE5nIpXjL5MeBsUWf_w-nb40PNtMc12X9q52VFdYYjnsAEwuZHwxFPPqUljug5_GJ7nGKoq_rz6OLQQeC4TYzAqq7-AjHl_RmP6jPHpxJlAX6_2fCskStHzYK3Z7L82Qd8KPs1GFkvy0pJRbaVy3lKHUOsasfpIDKJimBt7H1g2cds0"/>
+<div class="grid grid-cols-2 gap-2 pb-2 px-2">
+<div class="bg-primary-container/20 text-on-primary-container font-label-md text-label-md p-2 rounded-xl text-center">Penyerap CO2</div>
+<div class="bg-secondary-container/20 text-on-secondary-container font-label-md text-label-md p-2 rounded-xl text-center">Rumah Satwa</div>
+<div class="bg-tertiary-container/20 text-on-tertiary-container font-label-md text-label-md p-2 rounded-xl text-center">Sumber Air</div>
+<div class="bg-surface-variant text-on-surface-variant font-label-md text-label-md p-2 rounded-xl text-center">Apotek Alami</div>
+</div>
+</div>
+</section>
+<!-- Ancaman -->
+<section class="flex flex-col gap-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-error flex items-center gap-2">
+<span class="material-symbols-outlined">warning</span> Ancaman Hutan
+                </h3>
+<div class="bg-error-container/30 rounded-3xl p-2 shadow-sm border border-error-container overflow-hidden">
+<img alt="Ancaman Hutan" class="w-full aspect-square object-cover rounded-2xl mb-4 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTZnL9cZ-eo799Fpekw5Qea4elWZIFeW96L-Ch74mOxzFZRv7vlYbFI4Marp-0edH9vo0647jspC1HrS5A8KTbKq0q64pn2FxwpeH-cpeqJaZUImYD8Raeu9w9PW8L_zAAiAt0cAuF_0VpLMdXfwM4al8jq_axdgrl7_4xw7jvcHy2fP-DdSnpecBEyxMIoebB6XCDx2gsbu12y6mWtj4cKgoJGT71F1mlHjw2Do4VvJvvLiZ1imV5NNpHFMdqJEgTzJvuAaFLsyo"/>
+<div class="grid grid-cols-2 gap-2 pb-2 px-2">
+<div class="bg-error/10 text-error font-label-md text-label-md p-2 rounded-xl text-center">Penebangan Liar</div>
+<div class="bg-error/10 text-error font-label-md text-label-md p-2 rounded-xl text-center">Kebakaran Hutan</div>
+<div class="bg-error/10 text-error font-label-md text-label-md p-2 rounded-xl text-center">Perluasan Lahan</div>
+<div class="bg-error/10 text-error font-label-md text-label-md p-2 rounded-xl text-center">Perambahan</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only for Explore context) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-2 h-20 bg-surface-container-low dark:bg-surface-container-highest shadow-[0_-4px_10px_rgba(0,0,0,0.05)] rounded-t-lg">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md mt-1 text-[12px]">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-xl px-4 py-1 translate-y-[-2px] transition-all scale-90 duration-200 ease-out shadow-sm" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md mt-1 text-[12px]">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-label-md mt-1 text-[12px]">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-label-md mt-1 text-[12px]">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md text-label-md mt-1 text-[12px]">Tanya AI</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedia Bloom - Timun Mas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&family=Quicksand:wght@100..900&display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bouncy-btn {
+            transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bouncy-btn:active {
+            transform: translateY(4px);
+            box-shadow: none !important;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #bacac5;
+            border-radius: 10px;
+        }
+        .text-shadow-soft {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .card-glow-teal {
+            box-shadow: 0 10px 25px -5px rgba(45, 212, 191, 0.2);
+        }
+        .card-glow-orange {
+            box-shadow: 0 10px 25px -5px rgba(253, 147, 61, 0.3);
+        }
+        .floating-nara {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-dim": "#ccdbf3",
+                      "surface-container": "#e6eeff",
+                      "secondary-fixed-dim": "#ffb783",
+                      "on-secondary-fixed": "#301400",
+                      "surface-variant": "#d5e3fc",
+                      "secondary-container": "#fd933d",
+                      "on-tertiary-fixed": "#351000",
+                      "on-secondary-container": "#693300",
+                      "primary": "#006b5f",
+                      "surface-bright": "#f8f9ff",
+                      "primary-fixed": "#62fae3",
+                      "background": "#f8f9ff",
+                      "surface": "#f8f9ff",
+                      "tertiary": "#944a23",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-high": "#dce9ff",
+                      "on-primary-fixed-variant": "#005047",
+                      "on-background": "#0d1c2e",
+                      "tertiary-container": "#ffaa81",
+                      "primary-container": "#2dd4bf",
+                      "on-error": "#ffffff",
+                      "primary-fixed-dim": "#3cddc7",
+                      "on-primary-fixed": "#00201c",
+                      "on-error-container": "#93000a",
+                      "surface-container-lowest": "#ffffff",
+                      "error": "#ba1a1a",
+                      "inverse-primary": "#3cddc7",
+                      "secondary": "#944a00",
+                      "outline-variant": "#bacac5",
+                      "inverse-surface": "#233144",
+                      "on-secondary": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "outline": "#6b7a76",
+                      "tertiary-fixed": "#ffdbcc",
+                      "surface-container-low": "#eff4ff",
+                      "on-surface-variant": "#3c4a46",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "on-surface": "#0d1c2e",
+                      "secondary-fixed": "#ffdcc5",
+                      "error-container": "#ffdad6",
+                      "surface-container-highest": "#d5e3fc",
+                      "inverse-on-surface": "#eaf1ff",
+                      "surface-tint": "#006b5f",
+                      "on-tertiary-container": "#7e3913",
+                      "on-secondary-fixed-variant": "#713700",
+                      "on-primary-container": "#00574d"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1200px",
+                      "unit": "8px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "20px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": ["Quicksand"],
+                      "headline-xl": ["Quicksand"],
+                      "headline-lg": ["Quicksand"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "body-lg": ["Plus Jakarta Sans"],
+                      "label-md": ["Quicksand"]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                      "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                      "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                      "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-container-high shadow-sm fixed top-0 w-full z-[60] flex justify-between items-center px-margin-mobile py-unit">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center border-2 border-primary overflow-hidden">
+<span class="material-symbols-outlined text-on-primary-container">face_6</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed">Pedia Bloom</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-variant transition-all duration-200 active:scale-95">
+<span class="material-symbols-outlined text-primary">settings</span>
+</button>
+</header>
+<main class="pt-20 pb-32 max-w-screen-md mx-auto px-margin-mobile">
+<!-- Hero Section -->
+<section class="relative mb-10 group">
+<div class="rounded-lg overflow-hidden border-4 border-white shadow-lg relative aspect-[3/2]">
+<img alt="Timun Mas running from giant" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFDVk0KM9ecC0Eeff5kArcn6N0ophO7UWeStMyoLNnLz05CEMhZW3H4BuckjX8yK8TQ4Hehxi_GKNsWWDe5vhfEN-p7z8Q3lvuAsM3W0YBKIQfCvxXLEEi3uqCnlNE9YQcli49rxBUUftYbmGzmqSLyuUNQkj8B06c8nDo-LE4pWTen2PCnnlN16_jCJDoeJFZ_MSQ6U5egmx9dH4XM_oTSyiAQ3683Nm0VolukccPAU-sXlhZndMcrWbhNOTQYc-hJ1PXJstwDNY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="flex flex-wrap gap-2 mb-3">
+<span class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full font-label-md text-label-md border-b-2 border-primary/20">Cerita Rakyat</span>
+<span class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full font-label-md text-label-md border-b-2 border-secondary/20">Jawa</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-white text-shadow-soft">Timun Mas: Si Pemberani</h2>
+</div>
+</div>
+<!-- Mascot Peek -->
+<div class="absolute -top-6 -right-4 floating-nara z-10">
+<div class="bg-white p-2 rounded-full shadow-md border-2 border-primary-container">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+</div>
+</section>
+<!-- Intro Text -->
+<section class="mb-10 text-center px-4">
+<p class="font-body-lg text-body-lg text-on-surface-variant italic leading-relaxed">
+                "Kisah legendaris dari Jawa Tengah tentang seorang gadis kecil yang sangat berani melawan raksasa hijau dengan benda-benda ajaib!"
+            </p>
+</section>
+<!-- Story Panels (Horizontal Carousel for Mobile) -->
+<section class="mb-12">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined">auto_stories</span>
+                Perjalanan Timun Mas
+            </h3>
+<div class="flex overflow-x-auto snap-x snap-mandatory gap-gutter pb-6 custom-scrollbar -mx-margin-mobile px-margin-mobile">
+<!-- Panel 1 -->
+<div class="snap-center shrink-0 w-[280px] bg-white rounded-lg border-2 border-surface-variant overflow-hidden card-glow-teal flex flex-col">
+<img alt="Timun Mas born from cucumber" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmurBaW04MQ4qQ9NJdI7bN0rTW3jBsj_rf52nspjYh4KxT-3P9-4kfHAkgeP4Ve0Ft1m6Sr3mnLZo105YbtlXzsR1O4uSeomqsA1R40RRA1aqhnNnhhzHJNFb00Rb5VJ7MNgbSJNpc9eQISfmmF16bvrFjBQG3Am1EiGEjdcELNZ-GscG_7hDDBOSSUzg4k42y8AQnuOTZBQUxxJ3QJ9hSmD4tNRFW6VNDPusp01va52-lmKtRaCqAZgdhdyL7VT51AQQC5H8-YEs"/>
+<div class="p-4 flex-1 bg-surface-container-low">
+<p class="font-body-md text-body-md leading-snug">
+<span class="font-bold text-primary">1. Keajaiban Timun Mas:</span> Lahir dari buah mentimun emas yang diberikan oleh Buto Ijo kepada sepasang kakek dan nenek.
+                        </p>
+</div>
+</div>
+<!-- Panel 2 -->
+<div class="snap-center shrink-0 w-[280px] bg-white rounded-lg border-2 border-surface-variant overflow-hidden card-glow-teal flex flex-col">
+<img alt="Timun Mas getting magic items" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPcuaWHJKLIxqAI7MqFzFoOal3fkN1Wyt0WSYhBf0RFp6-L5K-OTkmU6yojocrpEdmhbMbe96uKw3O1FzRAFI2k7t-X8Nkdee7cmpvCeC8PJYD2NUXJB-7-aLVeB64RETq75DCvQ9zv_uoRIxx9OZygS8qoluHDAKCK5qlOFsm2Ghiw8TYtxuz86A5NC0w6gnI1Vuop2sO_7CTSiuDj5-b-u9cMvPpi9SRitvKpMhOZucdGsnaMvYqDZqfKf697G2aJyUEBYnl_O8"/>
+<div class="p-4 flex-1 bg-surface-container-low">
+<p class="font-body-md text-body-md leading-snug">
+<span class="font-bold text-primary">2. Bekal Perjalanan:</span> Sebelum melarikan diri, Timun Mas diberi 4 kantong ajaib berisi biji mentimun, jarum, garam, dan terasi.
+                        </p>
+</div>
+</div>
+<!-- Panel 3 -->
+<div class="snap-center shrink-0 w-[280px] bg-white rounded-lg border-2 border-surface-variant overflow-hidden card-glow-teal flex flex-col">
+<img alt="Forest transforms to bamboo" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFDVk0KM9ecC0Eeff5kArcn6N0ophO7UWeStMyoLNnLz05CEMhZW3H4BuckjX8yK8TQ4Hehxi_GKNsWWDe5vhfEN-p7z8Q3lvuAsM3W0YBKIQfCvxXLEEi3uqCnlNE9YQcli49rxBUUftYbmGzmqSLyuUNQkj8B06c8nDo-LE4pWTen2PCnnlN16_jCJDoeJFZ_MSQ6U5egmx9dH4XM_oTSyiAQ3683Nm0VolukccPAU-sXlhZndMcrWbhNOTQYc-hJ1PXJstwDNY"/>
+<div class="p-4 flex-1 bg-surface-container-low">
+<p class="font-body-md text-body-md leading-snug">
+<span class="font-bold text-primary">3. Hutan Bambu:</span> Biji mentimun yang ditabur berubah menjadi hutan bambu lebat yang menghalangi jalan sang raksasa.
+                        </p>
+</div>
+</div>
+<!-- Panel 4 -->
+<div class="snap-center shrink-0 w-[280px] bg-white rounded-lg border-2 border-surface-variant overflow-hidden card-glow-teal flex flex-col">
+<img alt="Salt turns into ocean" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg1B2cxVlGVeE7uFbKJrWqTO0hL7BK3fC6XDpWpTu4UoKUnGs56ofzgO_q78E6ME7pmML5lAHZjji4ApfmxFWcFLi_x2g5TFe1wpvyC6OgRKIDdfyytw8qMJeLQCrifiegMifDyQklIU1D8f4WhbkoWfP1gi0uHIFqzm3YZTLettBQPZRpVTSu9_iiwetqGikUbHbJx4ZQxXnu1rFKnS4Sy6CiWUSmDzF-PmRT-uzkvKxrotXsMPfTMuPhtsGzPKivhtToAP9kbYw"/>
+<div class="p-4 flex-1 bg-surface-container-low">
+<p class="font-body-md text-body-md leading-snug">
+<span class="font-bold text-primary">4. Lautan Garam:</span> Garam yang ditabur berubah menjadi lautan luas yang dalam, membuat Buto Ijo kesulitan mengejar.
+                        </p>
+</div>
+</div>
+<!-- Panel 5 -->
+<div class="snap-center shrink-0 w-[280px] bg-white rounded-lg border-2 border-surface-variant overflow-hidden card-glow-teal flex flex-col">
+<img alt="Mud trap victory" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXQL0hv1sRuKoFv2DjxHpZ6qIJ6V8eWpzKKwePsQnp9-URM5BpcY6TDOvLj3ssXWBEBF9XuV07WQxmqtwYYj8IpE4s0qvAN1ryYi024suaG6mZtoPoCbN8GXTfu-aAt1vxRvbToyYn7x_QWAdT0eHHKQ69EBcDHXK87fMCxkrVDydudzSlTVtCwM4cNEaK3mRT-EHnTrZflX-FDOqjElfC5RvVkovRR0Km5icAQme8SrvrsNeSOmNM79acb6rgy3fdvbzv2JFRIBc"/>
+<div class="p-4 flex-1 bg-surface-container-low">
+<p class="font-body-md text-body-md leading-snug">
+<span class="font-bold text-primary">5. Kemenangan:</span> Terasi terakhir menciptakan lautan lumpur panas yang menelan Buto Ijo. Timun Mas pun selamat!
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Moral & Facts -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-12">
+<!-- Moral card -->
+<div class="bg-secondary-container rounded-lg p-6 card-glow-orange relative overflow-hidden border-b-4 border-secondary/30">
+<div class="absolute -bottom-4 -right-4 opacity-20">
+<span class="material-symbols-outlined text-8xl text-white">volunteer_activism</span>
+</div>
+<h4 class="font-headline-lg text-headline-lg text-on-secondary-container mb-3">Pesan Moral</h4>
+<p class="font-body-lg text-body-lg text-on-secondary-container font-medium">
+                    "Keberanian dan akal cerdik bisa membantu kita melewati masalah yang besar. Jangan pernah menyerah!"
+                </p>
+</div>
+<!-- Fun Facts -->
+<div class="bg-surface-container rounded-lg p-6 border-2 border-outline-variant">
+<h4 class="font-headline-lg text-headline-lg text-tertiary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined">lightbulb</span>
+                    Fakta Seru
+                </h4>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-tertiary mt-2 shrink-0"></span>
+<p class="font-body-md text-body-md">Timun Mas adalah salah satu dongeng paling populer di Indonesia.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-tertiary mt-2 shrink-0"></span>
+<p class="font-body-md text-body-md">Benda ajaibnya melambangkan kekuatan alam.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-tertiary mt-2 shrink-0"></span>
+<p class="font-body-md text-body-md">Buto Ijo berarti 'Raksasa Hijau'.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-tertiary mt-2 shrink-0"></span>
+<p class="font-body-md text-body-md">Cerita ini mengajarkan tentang kasih sayang orang tua.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-tertiary mt-2 shrink-0"></span>
+<p class="font-body-md text-body-md">Sering dipentaskan dalam pertunjukan wayang atau drama sekolah.</p>
+</li>
+</ul>
+</div>
+</section>
+<!-- Mini Quiz -->
+<section class="mb-12 bg-primary-container/10 border-2 border-dashed border-primary rounded-lg p-6">
+<h4 class="font-headline-lg text-headline-lg text-primary text-center mb-6 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">quiz</span>
+                Kuis Cepat!
+            </h4>
+<div class="bg-white p-6 rounded-lg shadow-sm mb-6 border-2 border-primary-container">
+<p class="font-body-lg text-body-lg text-center mb-6 font-semibold">"Benda apa yang berubah menjadi lautan lumpur?"</p>
+<div class="grid grid-cols-1 gap-3">
+<button class="quiz-option p-4 rounded-lg border-2 border-surface-variant font-label-md text-label-md text-left hover:bg-surface-variant transition-all bouncy-btn bg-white" onclick="checkAnswer(this, false)">
+                        A. Garam
+                    </button>
+<button class="quiz-option p-4 rounded-lg border-2 border-surface-variant font-label-md text-label-md text-left hover:bg-surface-variant transition-all bouncy-btn bg-white" onclick="checkAnswer(this, false)">
+                        B. Jarum
+                    </button>
+<button class="quiz-option p-4 rounded-lg border-2 border-surface-variant font-label-md text-label-md text-left hover:bg-surface-variant transition-all bouncy-btn bg-white" onclick="checkAnswer(this, true)">
+                        C. Terasi
+                    </button>
+</div>
+</div>
+</section>
+<!-- Glossary -->
+<section class="mb-8">
+<h4 class="font-headline-lg text-headline-lg text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined">translate</span>
+                Kamus Kecil
+            </h4>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="p-4 bg-surface-container-lowest rounded-lg border-l-4 border-primary shadow-sm">
+<p class="font-bold text-primary font-headline-lg-mobile text-xl">Raksasa</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Makhluk yang sangat besar dan kuat.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-lg border-l-4 border-primary shadow-sm">
+<p class="font-bold text-primary font-headline-lg-mobile text-xl">Timun</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Buah berwarna hijau yang segar.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-lg border-l-4 border-primary shadow-sm">
+<p class="font-bold text-primary font-headline-lg-mobile text-xl">Pari</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Nama lain untuk jarum yang tajam dalam beberapa versi cerita.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-lg border-l-4 border-primary shadow-sm">
+<p class="font-bold text-primary font-headline-lg-mobile text-xl">Petapa</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Orang bijak yang tinggal menyendiri di hutan.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-4 pt-2 bg-surface-container-lowest dark:bg-surface-container shadow-[0_-4px_10px_rgba(0,0,0,0.05)] rounded-t-lg">
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant px-4 py-2 transition-all duration-300 active:scale-90 hover:bg-surface-variant/50 rounded-lg" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-4 py-1 translate-y-[-2px] border-b-4 border-secondary/20 transition-all duration-300 active:scale-90" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant px-4 py-2 transition-all duration-300 active:scale-90 hover:bg-surface-variant/50 rounded-lg" href="#">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-label-md">Main</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant px-4 py-2 transition-all duration-300 active:scale-90 hover:bg-surface-variant/50 rounded-lg" href="#">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-label-md">Lencana</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant px-4 py-2 transition-all duration-300 active:scale-90 hover:bg-surface-variant/50 rounded-lg" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md text-label-md">Tanya AI</span>
+</a>
+</nav>
+<script>
+        function checkAnswer(btn, isCorrect) {
+            // Reset others
+            document.querySelectorAll('.quiz-option').forEach(opt => {
+                opt.classList.remove('bg-green-100', 'border-green-500', 'bg-red-100', 'border-red-500', 'text-green-700', 'text-red-700');
+                opt.classList.add('bg-white', 'border-surface-variant');
+            });
+
+            if (isCorrect) {
+                btn.classList.remove('bg-white', 'border-surface-variant');
+                btn.classList.add('bg-green-100', 'border-green-500', 'text-green-700');
+                // Play simple success effect (optional logic here)
+                confettiEffect(btn);
+            } else {
+                btn.classList.remove('bg-white', 'border-surface-variant');
+                btn.classList.add('bg-red-100', 'border-red-500', 'text-red-700');
+            }
+        }
+
+        function confettiEffect(element) {
+            // Simple visual "pop" to simulate achievement
+            element.animate([
+                { transform: 'scale(1)' },
+                { transform: 'scale(1.05)' },
+                { transform: 'scale(1)' }
+            ], {
+                duration: 500,
+                easing: 'ease-in-out'
+            });
+        }
+    </script>
+</body></html>

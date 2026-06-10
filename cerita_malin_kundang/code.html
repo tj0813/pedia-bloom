@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Malin Kundang - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#f8f9ff",
+                        "on-background": "#0d1c2e",
+                        "surface-dim": "#ccdbf3",
+                        "on-tertiary-container": "#7e3913",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-error": "#ffffff",
+                        "primary": "#006b5f",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#eff4ff",
+                        "surface-container": "#e6eeff",
+                        "on-secondary-container": "#693300",
+                        "surface-bright": "#f8f9ff",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-surface-variant": "#3c4a46",
+                        "on-primary-container": "#00574d",
+                        "inverse-surface": "#233144",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#ffaa81",
+                        "primary-fixed-dim": "#3cddc7",
+                        "on-surface": "#0d1c2e",
+                        "surface-tint": "#006b5f",
+                        "surface": "#f8f9ff",
+                        "on-secondary-fixed-variant": "#713700",
+                        "tertiary-fixed": "#ffdbcc",
+                        "surface-variant": "#d5e3fc",
+                        "secondary": "#944a00",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#fd933d",
+                        "on-secondary-fixed": "#301400",
+                        "inverse-on-surface": "#eaf1ff",
+                        "surface-container-high": "#dce9ff",
+                        "outline": "#6b7a76",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "inverse-primary": "#3cddc7",
+                        "on-primary-fixed-variant": "#005047",
+                        "surface-container-highest": "#d5e3fc",
+                        "primary-fixed": "#62fae3",
+                        "primary-container": "#2dd4bf",
+                        "on-primary-fixed": "#00201c",
+                        "on-tertiary-fixed": "#351000",
+                        "secondary-fixed": "#ffdcc5",
+                        "outline-variant": "#bacac5",
+                        "tertiary": "#944a23"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #f8f9ff;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .bouncy-btn {
+            box-shadow: 0 4px 0 #713700;
+            transition: all 0.15s ease;
+        }
+        .bouncy-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #713700;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .mask-avatar {
+            clip-path: circle(50% at 50% 50%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="pb-24">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 bg-surface-container-low shadow-sm flex items-center justify-between px-margin-mobile h-20">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center overflow-hidden border-2 border-white">
+<img alt="Nara" class="w-10 h-10" data-alt="A friendly and cute mascot character named Nara the Explorer, designed for children's educational content. The mascot has large expressive eyes, a small smile, and wears a miniature teal explorer hat. The illustration style is soft, 3D-rendered with clean lines and vibrant colors against a simple white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6jlvCIVf74i3BX5ZuKFOKElrfvcrco0LZnn5YTnxANgV7-zuqwcj65sWJ8pChJGaQbs7Csx93orPyS-6YDGGPEErlwVcMO7rzwq-XAX9fu40B0-V4RE0ZYQk0bJey7VEfs-lU9UJnYW9rfD6z1fruOgAyEKPoR71pluVGfbqNlq0glil8NAV-oFXUy8CbnAhnMueawYJsGUBYeC9lrirMejQA14wJhD8AJ_ReaVGEB7hAHtcHpXW-tk1UDsh4mjhCjeHV6wAUTLY"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Pedia Bloom</h1>
+</div>
+<button class="w-12 h-12 flex items-center justify-center text-primary hover:opacity-80 transition-transform active:translate-y-0.5">
+<span class="material-symbols-outlined text-3xl">search</span>
+</button>
+</header>
+<main class="max-w-screen-md mx-auto px-margin-mobile pt-6">
+<!-- Hero Section -->
+<section class="relative mb-8">
+<div class="bg-white rounded-lg overflow-hidden card-shadow border-2 border-surface-variant relative">
+<img alt="Malin Kundang Illustration" class="w-full aspect-video object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhh1TQJ3sdYX9GNHnTDmcmtGfyOKTBNc2zjKyJO9DsGjKcHFXTglhB5g-CrhdbkmJPBdga3fVSsLY3pcBoWy6kATj0J0fsaKGlzw80ZxZPpo0RI79O4-Z_dFbb5913SW9J8RhEg9h0YEQftOyLF5H7gwdJdcU_Ljx-rERT91iO5p38rTqGx56UVv6SDD9Ymwa2jO3w1t3XVPNHFTi4pbY1zaiugchyga4IR935a93vfXuEr_Jq9haDDXv8t0BW9KLcMGmhd3IXIqs"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full font-label-md text-label-md shadow-sm">Cerita Rakyat</span>
+</div>
+<div class="p-6 bg-white">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-2">Malin Kundang: Si Anak Durhaka</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Kisah legendaris dari Sumatra Barat tentang seorang pemuda yang melupakan ibunya setelah menjadi kaya raya.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Intro Section -->
+<section class="mb-10 p-6 bg-surface-container rounded-lg border-l-8 border-secondary">
+<p class="font-body-lg text-body-lg text-on-surface italic leading-relaxed">
+                "Dahulu kala di pesisir Pantai Air Manis, hiduplah Malin bersama ibunya yang miskin. Dengan tekad bulat, Malin memutuskan untuk merantau demi mengubah nasib dan membahagiakan sang ibu..."
+            </p>
+</section>
+<!-- Story Panels -->
+<section class="mb-10">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined">auto_stories</span> Perjalanan Malin
+            </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Panel 1 -->
+<div class="bg-white p-5 rounded-lg card-shadow border border-surface-variant hover:scale-[1.02] transition-transform">
+<div class="w-10 h-10 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center mb-3 font-bold">1</div>
+<h4 class="font-label-md text-label-md text-on-background mb-1">Masa Kecil</h4>
+<p class="text-sm text-on-surface-variant">Malin kecil sangat rajin membantu ibunya mencari kayu bakar dan menangkap ikan di laut.</p>
+</div>
+<!-- Panel 2 -->
+<div class="bg-white p-5 rounded-lg card-shadow border border-surface-variant hover:scale-[1.02] transition-transform">
+<div class="w-10 h-10 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center mb-3 font-bold">2</div>
+<h4 class="font-label-md text-label-md text-on-background mb-1">Kesuksesan</h4>
+<p class="text-sm text-on-surface-variant">Setelah bertahun-tahun merantau, Malin menjadi saudagar kaya dengan kapal-kapal yang besar.</p>
+</div>
+<!-- Panel 3 -->
+<div class="bg-white p-5 rounded-lg card-shadow border border-surface-variant hover:scale-[1.02] transition-transform">
+<div class="w-10 h-10 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center mb-3 font-bold">3</div>
+<h4 class="font-label-md text-label-md text-on-background mb-1">Pertemuan Ibu</h4>
+<p class="text-sm text-on-surface-variant">Kembali ke kampung halaman, Malin malu mengakui ibunya yang renta dan berpakaian compang-camping.</p>
+</div>
+<!-- Panel 4 -->
+<div class="bg-white p-5 rounded-lg card-shadow border border-surface-variant hover:scale-[1.02] transition-transform">
+<div class="w-10 h-10 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center mb-3 font-bold">4</div>
+<h4 class="font-label-md text-label-md text-on-background mb-1">Kutukan Jadi Batu</h4>
+<p class="text-sm text-on-surface-variant">Sakit hati, sang ibu berdoa hingga badai datang dan mengubah Malin serta kapalnya menjadi batu.</p>
+</div>
+</div>
+</section>
+<!-- Pesan Moral -->
+<section class="mb-10 bg-tertiary-container p-8 rounded-xl relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-tertiary-container mb-3">Pesan Moral</h3>
+<p class="font-body-md text-body-md text-on-tertiary-container leading-relaxed">
+                    Sayangi dan hormatilah orang tuamu, terutama ibumu. Setinggi apa pun kesuksesan yang kita raih, jangan pernah melupakan jasa mereka yang telah membesarkan kita dengan penuh kasih sayang.
+                </p>
+</div>
+<span class="material-symbols-outlined absolute -bottom-4 -right-4 text-9xl opacity-20 text-on-tertiary-container">favorite</span>
+</section>
+<!-- Fun Facts & Tahukah Kamu? -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+<section>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary mb-4">5 Fakta Seru!</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 bg-white p-3 rounded-lg card-shadow">
+<span class="material-symbols-outlined text-secondary">verified</span>
+<span class="text-sm text-on-surface">Batu Malin Kundang benar-benar ada di Pantai Air Manis, Padang.</span>
+</li>
+<li class="flex items-start gap-3 bg-white p-3 rounded-lg card-shadow">
+<span class="material-symbols-outlined text-secondary">verified</span>
+<span class="text-sm text-on-surface">Bentuk batunya menyerupai orang yang sedang bersujud memohon ampun.</span>
+</li>
+<li class="flex items-start gap-3 bg-white p-3 rounded-lg card-shadow">
+<span class="material-symbols-outlined text-secondary">verified</span>
+<span class="text-sm text-on-surface">Cerita ini sudah diceritakan secara turun-temurun sejak ratusan tahun lalu.</span>
+</li>
+<li class="flex items-start gap-3 bg-white p-3 rounded-lg card-shadow">
+<span class="material-symbols-outlined text-secondary">verified</span>
+<span class="text-sm text-on-surface">Nama 'Malin' adalah gelar untuk pemuda terhormat di Minangkabau.</span>
+</li>
+<li class="flex items-start gap-3 bg-white p-3 rounded-lg card-shadow">
+<span class="material-symbols-outlined text-secondary">verified</span>
+<span class="text-sm text-on-surface">Selain Malin, ada juga sisa-sisa tali kapal yang juga membatu di sana.</span>
+</li>
+</ul>
+</section>
+<section class="bg-surface-container-high p-6 rounded-lg border-2 border-dashed border-primary">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">lightbulb</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Tahukah Kamu?</h3>
+</div>
+<p class="text-on-surface-variant font-body-md">
+                    Pantai Air Manis tempat batu Malin berada adalah salah satu destinasi wisata paling populer di Sumatra Barat. Air laut di sana tenang, dan pemandangannya sangat indah, terutama saat matahari terbenam!
+                </p>
+<div class="mt-4 rounded-lg overflow-hidden shadow-sm">
+<img alt="Pantai Air Manis" class="w-full h-32 object-cover" data-alt="A serene landscape of Pantai Air Manis in Padang, West Sumatra during a golden sunset. The calm ocean waves gently lap against the sandy shore, with dark volcanic rock formations scattered along the coast. The sky is a blend of warm oranges, soft purples, and deep blues, reflecting the peaceful and historical atmosphere of this legendary site." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2u8wosCd-rN6OOOurZyVJdHhar94VdFydUoMnh2ZXGLGaoyx1vHMRph4cAAwsBf9vnQyRUpxdxFyiq0FWXVZuB5pbrbN1_h3OdNoJYojIWgsz9c6k5lzG1m2z9TivIgrQCy4Y27VPNrFrtP826_Pp9qinvtO0_F-8GB_-b4oozOd3kCZFceXgyJmfjVbwKDPEI2Np50ufm6Og73dULWx816qHu536luldSFPi09V6YYRmn3-wKo2fsJyaOjQ5-T186O_lFsdHbjo"/>
+</div>
+</section>
+</div>
+<!-- Mini Quiz -->
+<section class="mb-10 bg-white p-8 rounded-lg card-shadow border-2 border-primary-container">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">Kuis Kilat!</h3>
+<p class="text-on-surface-variant mb-6">Uji ingatanmu tentang cerita Malin Kundang.</p>
+<div class="space-y-4">
+<p class="font-body-lg text-on-background">Apa yang terjadi pada Malin di akhir cerita?</p>
+<button class="w-full text-left p-4 rounded-lg border-2 border-surface-variant hover:bg-surface-container transition-colors flex justify-between items-center group" onclick="checkQuiz(this, false)">
+<span>A. Menjadi raja yang bijaksana</span>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity">chevron_right</span>
+</button>
+<button class="w-full text-left p-4 rounded-lg border-2 border-surface-variant hover:bg-surface-container transition-colors flex justify-between items-center group" onclick="checkQuiz(this, true)">
+<span>B. Dikutuk menjadi sebuah batu</span>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity">chevron_right</span>
+</button>
+<button class="w-full text-left p-4 rounded-lg border-2 border-surface-variant hover:bg-surface-container transition-colors flex justify-between items-center group" onclick="checkQuiz(this, false)">
+<span>C. Pergi merantau lagi ke luar negeri</span>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity">chevron_right</span>
+</button>
+</div>
+<div class="mt-4 hidden p-4 rounded-lg font-bold text-center" id="quiz-feedback"></div>
+</section>
+<!-- Kamus Kecil -->
+<section class="mb-12">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-6">Kamus Kecil</h3>
+<div class="grid grid-cols-1 gap-4">
+<div class="flex items-center gap-4 bg-surface-container-low p-4 rounded-lg">
+<div class="w-12 h-12 flex-shrink-0 bg-primary text-white rounded-full flex items-center justify-center font-bold">D</div>
+<div>
+<p class="font-bold text-on-background">Durhaka</p>
+<p class="text-sm text-on-surface-variant">Sikap tidak hormat atau membangkang kepada orang tua.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-low p-4 rounded-lg">
+<div class="w-12 h-12 flex-shrink-0 bg-secondary text-white rounded-full flex items-center justify-center font-bold">N</div>
+<div>
+<p class="font-bold text-on-background">Nelayan</p>
+<p class="text-sm text-on-surface-variant">Orang yang mata pencahariannya adalah menangkap ikan di laut.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-low p-4 rounded-lg">
+<div class="w-12 h-12 flex-shrink-0 bg-tertiary text-white rounded-full flex items-center justify-center font-bold">S</div>
+<div>
+<p class="font-bold text-on-background">Saudagar</p>
+<p class="text-sm text-on-surface-variant">Seseorang yang berprofesi sebagai pedagang besar atau pengusaha kaya.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-surface-container-highest shadow-[0_-4px_10px_rgba(0,0,0,0.05)] flex justify-around items-center px-4 py-3 pb-safe rounded-t-lg">
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:scale-105 transition-all">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl px-4 py-1 shadow-[0_4px_0px_#713700] hover:scale-105 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md">Jelajah</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:scale-105 transition-all">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-label-md">Game</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:scale-105 transition-all">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-label-md">Badge</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:scale-105 transition-all">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md text-label-md">Tanya AI</span>
+</button>
+</nav>
+<script>
+        function checkQuiz(btn, isCorrect) {
+            const feedback = document.getElementById('quiz-feedback');
+            const buttons = btn.parentElement.querySelectorAll('button');
+            
+            // Disable all buttons after choice
+            buttons.forEach(b => {
+                b.disabled = true;
+                b.classList.add('opacity-50');
+            });
+
+            feedback.classList.remove('hidden');
+            if (isCorrect) {
+                btn.classList.remove('opacity-50', 'border-surface-variant');
+                btn.classList.add('border-primary', 'bg-primary-container', 'opacity-100');
+                feedback.innerText = "YAY! Kamu benar! Malin dikutuk ibunya menjadi batu. 🌟";
+                feedback.classList.add('bg-primary-container', 'text-on-primary-container');
+            } else {
+                btn.classList.remove('opacity-50', 'border-surface-variant');
+                btn.classList.add('border-error', 'bg-error-container', 'opacity-100');
+                feedback.innerText = "Ups! Kurang tepat. Jawaban yang benar adalah B. Coba lagi di artikel lain ya!";
+                feedback.classList.add('bg-error-container', 'text-on-error-container');
+            }
+        }
+    </script>
+</body></html>

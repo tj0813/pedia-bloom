@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedia Bloom - Sangkuriang</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f8f9ff",
+                        "surface-dim": "#ccdbf3",
+                        "surface-variant": "#d5e3fc",
+                        "tertiary-container": "#ffaa81",
+                        "secondary-container": "#fd933d",
+                        "surface-container-high": "#dce9ff",
+                        "surface-tint": "#006b5f",
+                        "on-primary-container": "#00574d",
+                        "on-tertiary-fixed": "#351000",
+                        "on-primary-fixed": "#00201c",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#3cddc7",
+                        "background": "#f8f9ff",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#3c4a46",
+                        "on-surface": "#0d1c2e",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#ffb783",
+                        "surface-container-highest": "#d5e3fc",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "primary-container": "#2dd4bf",
+                        "surface-bright": "#f8f9ff",
+                        "outline-variant": "#bacac5",
+                        "outline": "#6b7a76",
+                        "on-secondary-container": "#693300",
+                        "on-secondary-fixed": "#301400",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#7e3913",
+                        "on-primary-fixed-variant": "#005047",
+                        "inverse-primary": "#3cddc7",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#713700",
+                        "tertiary-fixed": "#ffdbcc",
+                        "secondary-fixed": "#ffdcc5",
+                        "on-background": "#0d1c2e",
+                        "tertiary": "#944a23",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#944a00",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#eff4ff",
+                        "primary-fixed": "#62fae3",
+                        "inverse-surface": "#233144",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "surface-container": "#e6eeff",
+                        "primary": "#006b5f",
+                        "inverse-on-surface": "#eaf1ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Quicksand"],
+                        "headline-xl": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "label-md": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .squishy-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 0px 0px 0px rgba(0,0,0,0.2) !important;
+        }
+        .squishy-btn {
+            transition: all 0.1s ease-in-out;
+            box-shadow: 0 4px 0px 0px #d97706; /* Heritage Orange dark */
+        }
+        .soft-shadow {
+            box-shadow: 0 4px 20px rgba(45, 212, 191, 0.15);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="bg-surface-bright dark:bg-surface-dim shadow-sm w-full top-0 sticky z-50">
+<div class="flex justify-between items-center px-margin-mobile h-16 w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-primary overflow-hidden">
+<img alt="Nara Mascot" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi8wkStrPyBUrw7o8XvSKQc1I448PdWCARnuLDF9crRNFKiDlxryYw16nkGrE8NMbJMhDd7fb7bdbup5FsnPixcrV7VnYOnns6hROaFp_mDDhqJKApx6KmOB-fsk9jBOF3dcn48a6MRGn6wD7MUHHLyDjLXeD-mpRfRBqkYMtN-NlkmxW3dxKl7IXFymAc0unGnztC81DVtBUGT7KvZEj55W0f76iAtecriP6cUHZwVd1LifWJJVvQKqu86rwSar8BWVQDhmvU2uI"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed-dim">Pedia Bloom</h1>
+</div>
+<button class="text-primary dark:text-primary-fixed-dim hover:opacity-80 active:scale-95 transition-transform w-10 h-10 flex items-center justify-center rounded-full bg-surface-container hover:bg-surface-variant">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+</button>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 space-y-12">
+<!-- Hero Section -->
+<section class="relative rounded-xl overflow-hidden bg-white soft-shadow border-2 border-surface-variant">
+<div class="aspect-[16/9] md:aspect-[21/9] w-full relative">
+<img alt="Sangkuriang building a boat at night with magical spirits helping him." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvRCEhBM5W68NoBUaFt-114_2m5V57t2TyqdIgkGeAbqidsCO_MSuNbeM8Nzr_18Pb-afEc1V04B1dzeQSo2LG6FK2IYAL0LhlMTLcjfQNlz0ep5K9Vh3E-pyRfXdiMv2_h8q-vqRd4NH6KbkZ_HPrzVfuT3agq0nuK1fcgidejDHRyId1HBl_aZt-fHPSLDxaJaCHFJfoUOtMANEvCl-Z5_fqVUWtTm-iI7xSdxjQmOIo5xk3yghh4uOW4widrL2vlE6DVgIU80Y"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<span class="inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container font-label-md text-label-md rounded-full mb-3 shadow-sm border border-white/20">
+                    Cerita Rakyat
+                </span>
+<h1 class="font-headline-xl text-headline-xl text-white drop-shadow-md">Sangkuriang &amp; Tangkuban Perahu</h1>
+</div>
+</section>
+<!-- Story Panels (Horizontal Scroll) -->
+<section class="space-y-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-3xl" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Kisah Sangkuriang</h2>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar gap-6 pb-6 snap-x snap-mandatory">
+<!-- Panel 1 -->
+<div class="min-w-[280px] md:min-w-[320px] bg-white rounded-xl p-4 soft-shadow border-2 border-surface-variant snap-center shrink-0 flex flex-col">
+<div class="aspect-square w-full rounded-lg overflow-hidden mb-4 bg-surface-container">
+<img alt="Story panel showing Sangkuriang and his dog Tumang in the forest." class="w-full h-full object-cover object-[0%_0%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDry-XelHgeklsmJYpBtttY6hbmryegQMOFbDbKxA_nr3lT3E5-ZRDNHJmyDUUxc6VULVMLupN8MAxZ0rTWIxpAlF2uqDesoNZfu2hJHpbWstmysGXrkyQ8c7awwm9ljUfTLnJUHhCIKmIwMKL4dxiCtzaPwYEYMTlH4Pj5Jh7Pe_GLmD1aMccE-i8J1Cls6xOC_cRREZhTSgHYIGBuHEHoKX_UwHEu_dDXnNLwX1BVTU8QT0LWDtX1uakrjZBobDvqoRL2XBB7OEA"/>
+</div>
+<h3 class="font-label-md text-label-md text-primary mb-2">1. Sangkuriang &amp; Tumang</h3>
+<p class="text-on-surface-variant text-sm flex-grow">Sangkuriang suka berburu di hutan ditemani anjing kesayangannya, Tumang, yang sebenarnya adalah ayahnya.</p>
+</div>
+<!-- Panel 2 -->
+<div class="min-w-[280px] md:min-w-[320px] bg-white rounded-xl p-4 soft-shadow border-2 border-surface-variant snap-center shrink-0 flex flex-col">
+<div class="aspect-square w-full rounded-lg overflow-hidden mb-4 bg-surface-container">
+<img alt="Story panel showing Dayang Sumbi hitting young Sangkuriang with a ladle." class="w-full h-full object-cover object-[50%_0%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDry-XelHgeklsmJYpBtttY6hbmryegQMOFbDbKxA_nr3lT3E5-ZRDNHJmyDUUxc6VULVMLupN8MAxZ0rTWIxpAlF2uqDesoNZfu2hJHpbWstmysGXrkyQ8c7awwm9ljUfTLnJUHhCIKmIwMKL4dxiCtzaPwYEYMTlH4Pj5Jh7Pe_GLmD1aMccE-i8J1Cls6xOC_cRREZhTSgHYIGBuHEHoKX_UwHEu_dDXnNLwX1BVTU8QT0LWDtX1uakrjZBobDvqoRL2XBB7OEA"/>
+</div>
+<h3 class="font-label-md text-label-md text-primary mb-2">2. Insiden Centong</h3>
+<p class="text-on-surface-variant text-sm flex-grow">Ibunya, Dayang Sumbi, marah besar dan memukul kepala Sangkuriang dengan centong nasi karena suatu kesalahan.</p>
+</div>
+<!-- Panel 3 -->
+<div class="min-w-[280px] md:min-w-[320px] bg-white rounded-xl p-4 soft-shadow border-2 border-surface-variant snap-center shrink-0 flex flex-col">
+<div class="aspect-square w-full rounded-lg overflow-hidden mb-4 bg-surface-container">
+<img alt="Story panel showing grown up Sangkuriang meeting Dayang Sumbi." class="w-full h-full object-cover object-[100%_0%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDry-XelHgeklsmJYpBtttY6hbmryegQMOFbDbKxA_nr3lT3E5-ZRDNHJmyDUUxc6VULVMLupN8MAxZ0rTWIxpAlF2uqDesoNZfu2hJHpbWstmysGXrkyQ8c7awwm9ljUfTLnJUHhCIKmIwMKL4dxiCtzaPwYEYMTlH4Pj5Jh7Pe_GLmD1aMccE-i8J1Cls6xOC_cRREZhTSgHYIGBuHEHoKX_UwHEu_dDXnNLwX1BVTU8QT0LWDtX1uakrjZBobDvqoRL2XBB7OEA"/>
+</div>
+<h3 class="font-label-md text-label-md text-primary mb-2">3. Kembali Pulang</h3>
+<p class="text-on-surface-variant text-sm flex-grow">Bertahun-tahun kemudian, Sangkuriang dewasa kembali dan jatuh cinta pada Dayang Sumbi, tanpa tahu itu ibunya.</p>
+</div>
+<!-- Panel 4 -->
+<div class="min-w-[280px] md:min-w-[320px] bg-white rounded-xl p-4 soft-shadow border-2 border-surface-variant snap-center shrink-0 flex flex-col">
+<div class="aspect-square w-full rounded-lg overflow-hidden mb-4 bg-surface-container">
+<img alt="Story panel showing Sangkuriang building a huge boat with magical helpers." class="w-full h-full object-cover object-[0%_100%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDry-XelHgeklsmJYpBtttY6hbmryegQMOFbDbKxA_nr3lT3E5-ZRDNHJmyDUUxc6VULVMLupN8MAxZ0rTWIxpAlF2uqDesoNZfu2hJHpbWstmysGXrkyQ8c7awwm9ljUfTLnJUHhCIKmIwMKL4dxiCtzaPwYEYMTlH4Pj5Jh7Pe_GLmD1aMccE-i8J1Cls6xOC_cRREZhTSgHYIGBuHEHoKX_UwHEu_dDXnNLwX1BVTU8QT0LWDtX1uakrjZBobDvqoRL2XBB7OEA"/>
+</div>
+<h3 class="font-label-md text-label-md text-primary mb-2">4. Syarat Mustahil</h3>
+<p class="text-on-surface-variant text-sm flex-grow">Untuk menolaknya, Dayang Sumbi meminta dibuatkan telaga dan perahu besar dalam satu malam.</p>
+</div>
+<!-- Panel 5 -->
+<div class="min-w-[280px] md:min-w-[320px] bg-white rounded-xl p-4 soft-shadow border-2 border-surface-variant snap-center shrink-0 flex flex-col">
+<div class="aspect-square w-full rounded-lg overflow-hidden mb-4 bg-surface-container">
+<img alt="Story panel showing Sangkuriang kicking a boat to form a mountain." class="w-full h-full object-cover object-[100%_100%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDry-XelHgeklsmJYpBtttY6hbmryegQMOFbDbKxA_nr3lT3E5-ZRDNHJmyDUUxc6VULVMLupN8MAxZ0rTWIxpAlF2uqDesoNZfu2hJHpbWstmysGXrkyQ8c7awwm9ljUfTLnJUHhCIKmIwMKL4dxiCtzaPwYEYMTlH4Pj5Jh7Pe_GLmD1aMccE-i8J1Cls6xOC_cRREZhTSgHYIGBuHEHoKX_UwHEu_dDXnNLwX1BVTU8QT0LWDtX1uakrjZBobDvqoRL2XBB7OEA"/>
+</div>
+<h3 class="font-label-md text-label-md text-primary mb-2">5. Perahu Ditendang</h3>
+<p class="text-on-surface-variant text-sm flex-grow">Gagal memenuhi syarat karena fajar tiba, Sangkuriang marah dan menendang perahu itu hingga terbalik menjadi Gunung Tangkuban Perahu.</p>
+</div>
+</div>
+</section>
+<!-- Moral Lesson -->
+<section class="bg-primary-container rounded-xl p-6 flex flex-col md:flex-row items-center gap-6 soft-shadow relative overflow-hidden">
+<div class="absolute -right-10 -top-10 w-40 h-40 bg-white/20 rounded-full blur-2xl"></div>
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0 z-10">
+<span class="material-symbols-outlined text-tertiary text-4xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div class="z-10 text-center md:text-left">
+<h3 class="font-label-md text-label-md text-on-primary-container mb-2 uppercase tracking-wider">Pesan Moral</h3>
+<p class="font-body-lg text-body-lg text-on-primary-fixed font-medium">"Kejujuran dan mendengarkan nasihat orang tua sangat penting dalam kehidupan."</p>
+</div>
+</section>
+<!-- Bento Grid: Fun Facts & Glossary -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Fun Facts -->
+<div class="md:col-span-2 bg-surface-container-low rounded-xl p-6 soft-shadow border-2 border-surface-variant">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Fakta Seru!</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary-container mt-1">landscape</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Gunung Nyata</p>
+<p class="text-sm text-on-surface-variant">Gunung Tangkuban Perahu benar-benar ada di Jawa Barat.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary mt-1">sailing</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Bentuk Unik</p>
+<p class="text-sm text-on-surface-variant">Bentuknya memang mirip seperti perahu yang terbalik.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-tertiary-container mt-1">account_balance</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Warisan Budaya</p>
+<p class="text-sm text-on-surface-variant">Diakui sebagai salah satu kekayaan cerita rakyat UNESCO.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary-fixed-dim mt-1">festival</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Kebanggaan Sunda</p>
+<p class="text-sm text-on-surface-variant">Menjadi simbol kebanggaan budaya masyarakat Sunda.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Glossary -->
+<div class="bg-surface-bright rounded-xl p-6 soft-shadow border-2 border-surface-variant">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-tertiary text-2xl" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Kamus Mini</h2>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 bg-primary-container text-on-primary-container rounded-full text-sm font-medium">Sangkuriang</span>
+<span class="px-3 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-sm font-medium">Dayang Sumbi</span>
+<span class="px-3 py-1.5 bg-tertiary-container text-on-tertiary-container rounded-full text-sm font-medium">Tumang</span>
+<span class="px-3 py-1.5 bg-surface-variant text-on-surface-variant rounded-full text-sm font-medium">Perahu</span>
+<span class="px-3 py-1.5 bg-surface-variant text-on-surface-variant rounded-full text-sm font-medium">Tangkuban</span>
+</div>
+</div>
+</section>
+<!-- Kuis Kilat -->
+<section class="bg-[#fd933d] rounded-xl p-8 text-center soft-shadow relative overflow-hidden text-white">
+<div class="absolute -left-10 -bottom-10 w-32 h-32 bg-white/20 rounded-full blur-xl"></div>
+<div class="absolute right-10 top-0 w-24 h-24 bg-white/10 rounded-full blur-lg"></div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<div class="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-4">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">quiz</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile mb-6">Kuis Kilat!</h2>
+<p class="font-body-lg text-body-lg mb-8">"Kenapa Gunung Tangkuban Perahu berbentuk perahu terbalik?"</p>
+<div class="flex flex-col gap-3">
+<button class="bg-white text-[#944a00] font-label-md text-label-md py-4 px-6 rounded-xl hover:bg-surface-variant transition-colors text-left flex items-center gap-4">
+<span class="w-8 h-8 rounded-full bg-[#fd933d] text-white flex items-center justify-center shrink-0">A</span>
+                        Karena jatuh dari langit
+                    </button>
+<button class="bg-white text-[#944a00] font-label-md text-label-md py-4 px-6 rounded-xl hover:bg-surface-variant transition-colors text-left flex items-center gap-4 border-2 border-transparent focus:border-white focus:bg-[#ffb783]">
+<span class="w-8 h-8 rounded-full bg-[#fd933d] text-white flex items-center justify-center shrink-0">B</span>
+                        Karena ditendang Sangkuriang
+                    </button>
+<button class="bg-white text-[#944a00] font-label-md text-label-md py-4 px-6 rounded-xl hover:bg-surface-variant transition-colors text-left flex items-center gap-4">
+<span class="w-8 h-8 rounded-full bg-[#fd933d] text-white flex items-center justify-center shrink-0">C</span>
+                        Karena dipahat raksasa
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-surface-container-low dark:bg-surface-container-highest shadow-[0_-4px_10px_rgba(0,0,0,0.05)] fixed bottom-0 w-full rounded-t-lg fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-2 h-20">
+<!-- Inactive -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 hover:opacity-80" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-label-md text-[12px] leading-tight">Home</span>
+</a>
+<!-- Active -->
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-xl px-4 py-1 translate-y-[-2px] transition-all hover:opacity-80 scale-90 transition-all duration-200 ease-out" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-[12px] leading-tight">Jelajah</span>
+</a>
+<!-- Inactive -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 hover:opacity-80" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 0;">sports_esports</span>
+<span class="font-label-md text-[12px] leading-tight">Game</span>
+</a>
+<!-- Inactive -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 hover:opacity-80" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 0;">military_tech</span>
+<span class="font-label-md text-[12px] leading-tight">Badge</span>
+</a>
+<!-- Inactive -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 hover:opacity-80" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 0;">smart_toy</span>
+<span class="font-label-md text-[12px] leading-tight">Tanya AI</span>
+</a>
+</nav>
+<script>
+        // Simple quiz interaction
+        const quizButtons = document.querySelectorAll('section.bg-\\[\\#fd933d\\] button');
+        quizButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                quizButtons.forEach(b => b.classList.remove('bg-[#ffb783]', 'border-white'));
+                btn.classList.add('bg-[#ffb783]', 'border-white');
+                
+                // If they clicked B (correct answer)
+                if(btn.innerText.includes('B')) {
+                    btn.classList.replace('bg-white', 'bg-primary-container');
+                    btn.classList.replace('text-[#944a00]', 'text-on-primary-container');
+                } else {
+                    btn.classList.replace('bg-white', 'bg-error-container');
+                    btn.classList.replace('text-[#944a00]', 'text-on-error-container');
+                }
+            });
+        });
+    </script>
+</body></html>

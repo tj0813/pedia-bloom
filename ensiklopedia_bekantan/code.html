@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bekantan - NusaPedia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#d5e3fc",
+                        "surface-bright": "#f8f9ff",
+                        "secondary-fixed-dim": "#ffb783",
+                        "primary-container": "#2dd4bf",
+                        "primary-fixed": "#62fae3",
+                        "primary": "#006b5f",
+                        "on-primary-container": "#00574d",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-primary-fixed-variant": "#005047",
+                        "on-surface-variant": "#3c4a46",
+                        "on-background": "#0d1c2e",
+                        "tertiary-container": "#ffaa81",
+                        "on-secondary-fixed-variant": "#713700",
+                        "on-surface": "#0d1c2e",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f8f9ff",
+                        "tertiary": "#944a23",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#ffdcc5",
+                        "surface-container-high": "#dce9ff",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "inverse-surface": "#233144",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#d5e3fc",
+                        "secondary": "#944a00",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#006b5f",
+                        "on-secondary-fixed": "#301400",
+                        "outline-variant": "#bacac5",
+                        "on-tertiary-fixed": "#351000",
+                        "primary-fixed-dim": "#3cddc7",
+                        "surface-dim": "#ccdbf3",
+                        "secondary-container": "#fd933d",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-secondary-container": "#693300",
+                        "background": "#f8f9ff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-container": "#7e3913",
+                        "on-primary-fixed": "#00201c",
+                        "on-primary": "#ffffff",
+                        "outline": "#6b7a76",
+                        "inverse-primary": "#3cddc7",
+                        "surface-container": "#e6eeff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Quicksand"],
+                        "headline-xl": ["Quicksand"],
+                        "label-md": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1;
+        }
+        .bouncy-hover {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .bouncy-hover:hover {
+            transform: translateY(-4px);
+        }
+        .squishy-btn {
+            transition: all 0.15s ease;
+            box-shadow: 0 4px 0 0 theme('colors.secondary');
+        }
+        .squishy-btn:active {
+            transform: translateY(4px);
+            box-shadow: 0 0 0 0 theme('colors.secondary');
+        }
+        .card-shadow {
+            box-shadow: 0 4px 24px -6px rgba(45, 212, 191, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-24 md:pb-0 font-body-md text-body-md overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-surface docked full-width top-0 z-40 sticky shadow-sm">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full container mx-auto max-w-container-max">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container overflow-hidden">
+<img alt="Nara" class="w-full h-full object-cover" data-alt="A friendly, stylized 3d illustration of a smiling child mascot face, flat lighting, teal and white colors, smooth textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjMqyLln991yLqfygbegXoL7yVz5MWTSjHaq4SwUfpJHsLqWRXq5fo2J3cMsg2l0VeaaH9TtiYUmk3UOtLF1qz2Av0rtYDnvEf7yT9cbaD09jaOyTnrGGKNjpv2ZIXPXNJ8-Jqob2FuM3Jvy5BqIt_v5nqdorkmYgSl-4eBQr3-_F4jMG-YgWU02-DYW-UJrwR1JIQm3DAfY2WlxyVEupqimXB7wC2KvvRR4a6SVzs7-Gxkeo-gFomWhBSShcENX7vJB8W8XtPni0"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-xl md:text-headline-xl text-primary tracking-tight">NusaPedia</h1>
+</div>
+<button class="w-10 h-10 rounded-full hover:bg-surface-variant flex items-center justify-center text-on-surface hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">settings</span>
+</button>
+</div>
+</header>
+<main class="container mx-auto max-w-container-max px-margin-mobile md:px-margin-desktop py-8 md:py-12 flex flex-col gap-12">
+<!-- Hero Section -->
+<section class="relative w-full rounded-xl overflow-hidden min-h-[353px] md:min-h-[442px] flex flex-col justify-end p-6 md:p-10 card-shadow group">
+<div class="absolute inset-0 z-0">
+<img alt="Bekantan in Jungle" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A vibrant, stylized illustration of a dense, lush tropical rainforest in Kalimantan, Indonesia, featuring a wide river reflecting sunlight. A proboscis monkey (Bekantan) sits on a branch. Soft, magical lighting creates a friendly, adventurous atmosphere suitable for a children's educational platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABVMojD4Fmnid9eUkxZn3rm4juTkM1-PMCwsDwpCVipGaIsrC5F7P-vGTIARSFo1XVXv6LNObkH77g-FrNJ7R12_aYyN8qCIf5AGz4e3CbBPd4i0jF601O4k5AwJOW9kO0xdLfrMO-RFf8jryLQsnIl1bfyhs8q0uWqaC8w0uZP5Zm-WFnTZMGoj-T1GiVcjYLBxosG5y6Uw7fRHYGb-9Cto0v_TQQW4ED8RrfJA8smQxtCBDjfEoHRG6-Xo9neYdmezsC2KRM4bc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+</div>
+<div class="relative z-10 text-white max-w-2xl">
+<div class="inline-flex items-center gap-2 bg-primary-container/90 text-on-primary-container px-3 py-1 rounded-full font-label-md text-label-md mb-4 backdrop-blur-sm">
+<span class="material-symbols-outlined text-[18px]">forest</span>
+                    Mamalia Endemik
+                </div>
+<h2 class="font-headline-xl text-headline-xl md:text-[48px] md:leading-[56px] font-bold mb-2">Bekantan</h2>
+<p class="font-body-lg text-body-lg text-white/90">Si Hidung Panjang Perenang Ulung dari Kalimantan!</p>
+</div>
+</section>
+<!-- Main Content Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Long Nose Fact -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-6 md:p-8 card-shadow border-2 border-surface-container-low bouncy-hover">
+<div class="flex items-start gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[28px]">face</span>
+</div>
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">Kenapa Hidungnya Besar?</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">Hidung besar ini bukan cuma buat gaya, lho! Bagi Bekantan jantan, hidung yang besar dan panjang berfungsi seperti alat musik alami. Semakin besar hidungnya, semakin keras suara panggilannya untuk memikat betina atau memperingatkan kawanan dari bahaya. Keren, kan?</p>
+</div>
+</div>
+</div>
+<!-- Swimming Fact -->
+<div class="md:col-span-4 bg-primary-container rounded-xl p-6 md:p-8 card-shadow flex flex-col justify-between bouncy-hover relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 opacity-20 pointer-events-none">
+<span class="material-symbols-outlined text-[120px]">pool</span>
+</div>
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary-container mb-3 relative z-10">Perenang Hebat!</h3>
+<p class="text-on-primary-fixed-variant relative z-10">Percaya nggak? Bekantan punya selaput di sela-sela jari kaki mereka, mirip seperti bebek! Ini bikin mereka jago banget berenang menyeberangi sungai lebat di Kalimantan.</p>
+</div>
+<button class="mt-6 bg-surface-container-lowest text-primary px-4 py-2 rounded-full font-label-md text-label-md self-start flex items-center gap-2 hover:bg-surface-bright transition-colors relative z-10">
+                    Lihat Video Renang <span class="material-symbols-outlined text-[18px]">play_circle</span>
+</button>
+</div>
+<!-- Stomach Fun Fact -->
+<div class="md:col-span-4 bg-tertiary-container rounded-xl p-6 md:p-8 card-shadow bouncy-hover">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-tertiary mb-4">
+<span class="material-symbols-outlined text-[24px]">restaurant</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-tertiary-container mb-2">Perut Buncit Daun</h3>
+<p class="text-on-tertiary-fixed-variant">Bekantan punya perut yang sangat besar karena butuh waktu lama untuk mencerna daun-daun muda yang keras. Perutnya itu seperti pabrik fermentasi mini!</p>
+</div>
+<!-- Story Section -->
+<div class="md:col-span-8 bg-surface-container-high rounded-xl p-6 md:p-8 card-shadow border-2 border-surface-container">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">book</span>
+                    Petualangan Bekantan
+                </h3>
+<div class="prose max-w-none text-on-surface-variant">
+<p>Pagi itu di pedalaman Sungai Mahakam, Bimo si Bekantan muda bersiap untuk melompat. Ia melihat buah pedada merah yang lezat di pohon seberang sungai. Namun, di bawahnya, air beriak—ada buaya yang sedang mengintai!</p>
+<p>Dengan hidung besarnya yang bergetar, Bimo mengeluarkan suara "Honk!" yang keras untuk memperingatkan kawanannya. Ia lalu melompat jauh, terbang melintasi udara bagaikan akrobat hutan, dan mendarat dengan aman. Semua teman-temannya bersorak!</p>
+</div>
+</div>
+</section>
+<!-- Quiz Section -->
+<section class="bg-surface-container-lowest rounded-xl p-6 md:p-10 card-shadow border-2 border-secondary-container/30 text-center relative overflow-hidden">
+<div class="absolute -top-10 -left-10 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[150px]">military_tech</span>
+</div>
+<div class="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
+<div class="w-20 h-20 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-4 shadow-lg shadow-secondary-container/50">
+<span class="material-symbols-outlined text-[40px]">psychology_alt</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary mb-2">Kuis Sahabat Bekantan</h2>
+<p class="text-on-surface-variant mb-8">Uji pengetahuanmu tentang Bekantan dan dapatkan Lencana Hidung Panjang!</p>
+<div class="w-full bg-surface p-6 rounded-lg border-2 border-outline-variant text-left mb-6">
+<p class="font-body-lg text-body-lg text-on-surface mb-4 font-semibold">Apa fungsi hidung besar pada Bekantan jantan?</p>
+<div class="space-y-3">
+<label class="flex items-center p-3 rounded-lg border-2 border-transparent hover:bg-surface-variant cursor-pointer transition-colors">
+<input class="form-radio text-primary focus:ring-primary w-5 h-5" name="quiz" type="radio"/>
+<span class="ml-3">Untuk mencium bau buah dari jarak jauh</span>
+</label>
+<label class="flex items-center p-3 rounded-lg border-2 border-primary-container bg-primary-container/10 cursor-pointer transition-colors">
+<input checked="" class="form-radio text-primary focus:ring-primary w-5 h-5" name="quiz" type="radio"/>
+<span class="ml-3 font-medium text-on-surface">Sebagai alat komunikasi dan memikat betina</span>
+</label>
+<label class="flex items-center p-3 rounded-lg border-2 border-transparent hover:bg-surface-variant cursor-pointer transition-colors">
+<input class="form-radio text-primary focus:ring-primary w-5 h-5" name="quiz" type="radio"/>
+<span class="ml-3">Hanya untuk hiasan saja</span>
+</label>
+</div>
+</div>
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-full font-label-md text-label-md squishy-btn inline-flex items-center gap-2">
+                    Jawab &amp; Kumpulkan Badge <span class="material-symbols-outlined">military_tech</span>
+</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-surface-container-lowest fixed bottom-0 w-full rounded-t-lg shadow-[0_-4px_20px_-5px_rgba(0,107,95,0.2)] z-50">
+<div class="flex justify-around items-center px-2 pb-4 pt-2">
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform">home</span>
+<span class="font-label-md text-[12px] leading-tight">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-2 mb-1 shadow-[0_4px_0_0_#005047] translate-y-1 transition-all" href="#">
+<span class="material-symbols-outlined mb-1">explore</span>
+<span class="font-label-md text-[12px] leading-tight font-bold">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform">sports_esports</span>
+<span class="font-label-md text-[12px] leading-tight">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform">military_tech</span>
+<span class="font-label-md text-[12px] leading-tight">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform">smart_toy</span>
+<span class="font-label-md text-[12px] leading-tight">Tanya AI</span>
+</a>
+</div>
+</nav>
+</body></html>

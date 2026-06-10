@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nasi Goreng - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#62fae3",
+                        "surface-tint": "#006b5f",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-background": "#0d1c2e",
+                        "inverse-surface": "#233144",
+                        "background": "#f8f9ff",
+                        "secondary": "#944a00",
+                        "surface-bright": "#f8f9ff",
+                        "surface-container-highest": "#d5e3fc",
+                        "on-surface-variant": "#3c4a46",
+                        "on-surface": "#0d1c2e",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "primary-fixed-dim": "#3cddc7",
+                        "on-primary-fixed-variant": "#005047",
+                        "outline-variant": "#bacac5",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#713700",
+                        "outline": "#6b7a76",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#ffaa81",
+                        "on-tertiary-container": "#7e3913",
+                        "inverse-on-surface": "#eaf1ff",
+                        "secondary-fixed-dim": "#ffb783",
+                        "secondary-fixed": "#ffdcc5",
+                        "on-primary-container": "#00574d",
+                        "surface-container": "#e6eeff",
+                        "on-tertiary-fixed": "#351000",
+                        "on-primary-fixed": "#00201c",
+                        "inverse-primary": "#3cddc7",
+                        "surface-variant": "#d5e3fc",
+                        "surface-container-high": "#dce9ff",
+                        "secondary-container": "#fd933d",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#ccdbf3",
+                        "on-secondary-fixed": "#301400",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#eff4ff",
+                        "primary": "#006b5f",
+                        "surface": "#f8f9ff",
+                        "on-secondary-container": "#693300",
+                        "tertiary": "#944a23",
+                        "primary-container": "#2dd4bf"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "container-max": "1200px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Quicksand"],
+                        "headline-xl": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-md": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.background'); color: theme('colors.on-background'); overflow-x: hidden; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .btn-bounce { transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .btn-bounce:active { transform: translateY(2px) scale(0.95); box-shadow: 0 0 0 rgba(0,0,0,0) !important; border-bottom-width: 0px !important; margin-top: 4px; }
+        .card-shadow { box-shadow: 0 4px 12px rgba(45, 212, 191, 0.15); }
+        .interactive-shadow { box-shadow: 0 8px 16px rgba(45, 212, 191, 0.2); }
+        
+        .ingredient-btn.active { background-color: theme('colors.primary-container'); color: theme('colors.on-primary-container'); transform: scale(1.05); border-color: theme('colors.primary'); }
+        .ingredient-btn.active span.material-symbols-outlined { color: theme('colors.primary'); }
+        
+        .quiz-btn.correct { background-color: theme('colors.primary-container'); border-color: theme('colors.primary'); color: theme('colors.on-primary-container'); }
+        .quiz-btn.wrong { background-color: theme('colors.error-container'); border-color: theme('colors.error'); color: theme('colors.on-error-container'); }
+    </style>
+</head>
+<body class="font-body-md pb-[100px] md:pb-0">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface dark:bg-surface-container-high shadow-sm transition-all duration-200">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-unit max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-primary/20">
+<img alt="Nara the Explorer mascot" class="w-full h-full object-cover" data-alt="A cute, stylized 3D illustration of an Indonesian child explorer mascot named Nara, wearing a tiny scout uniform and a bright orange neckerchief. Soft lighting, child-friendly, expressive face. Minimalist background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1msbZTHMplDfnGemFrfkf1QBrrKF4KWTZvLnAVzVdXytBNsfTvRLuuYbrFhf325M_gXIFmtKDNnRkiIMJyIlImjL7xXu2YEzjZUfgAYBtsEDFP5PtcWSt_QOtEVqdjDXuI1belQgcTN_T4ZFczZ7sup1V_adop732rQPzwJhQcuzvSt-iWS0CNUGyHjGq9jJmYj-vZ78_NlsMdbQ_ewE-YcGzAGzUCc0a3HA630VpALCkR-dnEBpUwXsWbbZrlhICgVRAZ1Xae1Q"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed tracking-tight">Pedia Bloom</h1>
+</div>
+<button aria-label="Settings" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-all duration-200 active:scale-95">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+</div>
+</header>
+<main class="pt-[72px] max-w-container-max mx-auto md:px-margin-desktop">
+<!-- Hero Section -->
+<section class="relative w-full aspect-[4/3] md:aspect-[21/9] md:rounded-xl overflow-hidden mb-8 md:mt-8 group">
+<img alt="Nasi Goreng" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyN7pEZLC4tOHSZ5A7PAJwy7hIoH60nbT_OMvFUs6VtIZ8pVMqEACIqnM4W22-r0aYSxPt5lpvcdoyZ0H_BvHt9E6E8uPTY63j4Nqp15Wm5MnbbGuHmmHIVwr6x2kowYSoqesvpIrcOAnT13M_hPo2XWKk9Fz7SvLks0ToHvy86XSF1j9c9J3QS8LxQLvkTv15HtzxVCnIy5VgQVxjwqIGPCzGMu9lXf6F86Mz-q00jzdoei7WVredk5S2GOQYtqI9K3i_2c6Evow"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-margin-mobile md:p-12">
+<div class="inline-flex items-center gap-2 bg-primary-container text-on-primary-container px-4 py-1.5 rounded-full font-label-md text-label-md mb-3 w-max">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+                    Kuliner Nusantara
+                </div>
+<h2 class="font-headline-xl text-headline-xl text-white mb-2 leading-tight">Nasi Goreng: Raja Dapur Nusantara</h2>
+</div>
+</section>
+<!-- Intro Card -->
+<section class="px-margin-mobile mb-10">
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-variant card-shadow relative">
+<div class="absolute -top-6 -right-2 w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center border-4 border-surface shadow-md">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" style="font-variation-settings: 'FILL' 1;">emoji_food_beverage</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface">Pernahkah kamu terbangun karena bau harum dari dapur? Biasanya, itu adalah tanda Ibu sedang memasak nasi goreng kesukaanmu! Makanan lezat ini tidak hanya enak, tapi juga punya sejarah panjang dan banyak rahasia seru. Yuk, kita mulai petualangan rasanya!</p>
+</div>
+</section>
+<!-- Apa Itu Nasi Goreng? -->
+<section class="px-margin-mobile mb-12">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">help</span>
+                Apa Itu Nasi Goreng?
+            </h3>
+<div class="bg-surface-container-low rounded-[2rem] p-6 text-on-surface border border-surface-dim">
+<p class="mb-4">Nasi goreng adalah makanan yang dibuat dari <strong>nasi kemarin</strong> (nasi sisa semalam) yang digoreng di atas wajan besar. Nasi ini dicampur dengan kecap manis yang lengket, bawang merah, bawang putih, dan tentu saja, telur yang diorak-arik!</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+<div class="bg-surface-container-lowest p-3 rounded-xl flex flex-col items-center text-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl mb-2" style="font-variation-settings: 'FILL' 1;">rice_bowl</span>
+<span class="font-label-md text-label-md">Nasi Dingin</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl flex flex-col items-center text-center shadow-sm">
+<span class="material-symbols-outlined text-secondary text-3xl mb-2" style="font-variation-settings: 'FILL' 1;">egg</span>
+<span class="font-label-md text-label-md">Telur</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl flex flex-col items-center text-center shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-3xl mb-2" style="font-variation-settings: 'FILL' 1;">local_drink</span>
+<span class="font-label-md text-label-md">Kecap Manis</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl flex flex-col items-center text-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl mb-2" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-label-md text-label-md">Bawang</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Misi: Buat Nasi Gorengmu! (Interactive) -->
+<section class="px-margin-mobile mb-12">
+<div class="bg-secondary-container/10 rounded-xl p-6 border-2 border-secondary/20">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary-fixed text-on-secondary-container mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">sports_esports</span>
+                    Misi: Buat Nasi Gorengmu!
+                </h3>
+<p class="text-on-surface-variant mb-6">Pilih bahan-bahan favoritmu untuk ditambahkan ke piring!</p>
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<!-- Interactive Plate -->
+<div class="w-48 h-48 md:w-64 md:h-64 rounded-full bg-surface-container-lowest border-4 border-outline-variant shadow-lg relative flex items-center justify-center overflow-hidden">
+<div class="w-3/4 h-3/4 rounded-full bg-orange-100/50 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-primary/30">rice_bowl</span>
+</div>
+<!-- Added Ingredients Placeholders (Hidden by default, shown via JS) -->
+<div class="absolute top-1/4 left-1/4 w-12 h-12 bg-yellow-300 rounded-full border-2 border-white shadow-sm hidden flex items-center justify-center" id="plate-telur"><span class="material-symbols-outlined text-yellow-700 text-sm" style="font-variation-settings: 'FILL' 1;">egg</span></div>
+<div class="absolute bottom-1/4 right-1/4 w-14 h-14 bg-orange-200 rounded-full border-2 border-white shadow-sm hidden flex items-center justify-center" id="plate-kerupuk"><span class="material-symbols-outlined text-orange-600 text-sm" style="font-variation-settings: 'FILL' 1;">cookie</span></div>
+<div class="absolute top-1/2 right-1/4 w-8 h-8 bg-green-500 rounded-full border-2 border-white shadow-sm hidden flex items-center justify-center" id="plate-pete"><span class="material-symbols-outlined text-green-900 text-sm" style="font-variation-settings: 'FILL' 1;">eco</span></div>
+<div class="absolute bottom-1/3 left-1/4 w-10 h-6 bg-red-400 rounded-full border-2 border-white shadow-sm hidden transform rotate-45" id="plate-sosis"></div>
+</div>
+<!-- Ingredients Selection -->
+<div class="flex flex-wrap gap-3 justify-center md:justify-start">
+<button class="ingredient-btn flex items-center gap-2 bg-surface-container-lowest border-2 border-surface-variant px-4 py-2 rounded-full font-label-md transition-all duration-200 shadow-sm btn-bounce" id="btn-telur" onclick="toggleIngredient('telur')">
+<span class="material-symbols-outlined text-on-surface-variant">egg</span> Telur
+                        </button>
+<button class="ingredient-btn flex items-center gap-2 bg-surface-container-lowest border-2 border-surface-variant px-4 py-2 rounded-full font-label-md transition-all duration-200 shadow-sm btn-bounce" id="btn-kerupuk" onclick="toggleIngredient('kerupuk')">
+<span class="material-symbols-outlined text-on-surface-variant">cookie</span> Kerupuk
+                        </button>
+<button class="ingredient-btn flex items-center gap-2 bg-surface-container-lowest border-2 border-surface-variant px-4 py-2 rounded-full font-label-md transition-all duration-200 shadow-sm btn-bounce" id="btn-pete" onclick="toggleIngredient('pete')">
+<span class="material-symbols-outlined text-on-surface-variant">eco</span> Pete
+                        </button>
+<button class="ingredient-btn flex items-center gap-2 bg-surface-container-lowest border-2 border-surface-variant px-4 py-2 rounded-full font-label-md transition-all duration-200 shadow-sm btn-bounce" id="btn-sosis" onclick="toggleIngredient('sosis')">
+<span class="material-symbols-outlined text-on-surface-variant">lunch_dining</span> Sosis
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Kuis Kilat! -->
+<section class="px-margin-mobile mb-12">
+<div class="bg-primary/5 rounded-[2rem] p-6 border-2 border-primary/20">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white shadow-md">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">quiz</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Kuis Kilat!</h3>
+</div>
+<p class="font-body-lg text-body-lg mb-6">Dari bahan apa nasi goreng terbaik biasanya dibuat?</p>
+<div class="flex flex-col gap-3">
+<button class="quiz-btn flex items-center justify-between bg-surface-container-lowest border-2 border-surface-variant p-4 rounded-xl text-left font-label-md transition-all duration-200 btn-bounce w-full" onclick="checkAnswer(this, true)">
+<span>Nasi kemarin yang sudah dingin</span>
+<span class="material-symbols-outlined hidden result-icon"></span>
+</button>
+<button class="quiz-btn flex items-center justify-between bg-surface-container-lowest border-2 border-surface-variant p-4 rounded-xl text-left font-label-md transition-all duration-200 btn-bounce w-full" onclick="checkAnswer(this, false)">
+<span>Nasi baru yang masih panas</span>
+<span class="material-symbols-outlined hidden result-icon"></span>
+</button>
+<button class="quiz-btn flex items-center justify-between bg-surface-container-lowest border-2 border-surface-variant p-4 rounded-xl text-left font-label-md transition-all duration-200 btn-bounce w-full" onclick="checkAnswer(this, false)">
+<span>Tepung terigu</span>
+<span class="material-symbols-outlined hidden result-icon"></span>
+</button>
+</div>
+<div class="mt-4 font-label-md text-center hidden" id="quiz-feedback"></div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-4 pt-2 bg-surface-container-lowest dark:bg-surface-container shadow-[0_-4px_10px_rgba(0,0,0,0.05)] rounded-t-lg md:hidden">
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant px-4 py-2 hover:bg-surface-variant/50 transition-all duration-300 active:scale-90 active:translate-y-0" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-label-md text-[12px] font-semibold">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-4 py-1 translate-y-[-2px] border-b-4 border-secondary/20 hover:bg-surface-variant/50 transition-all duration-300 active:scale-90 active:translate-y-0" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-[12px] font-semibold">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant px-4 py-2 hover:bg-surface-variant/50 transition-all duration-300 active:scale-90 active:translate-y-0" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">sports_esports</span>
+<span class="font-label-md text-[12px] font-semibold">Main</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant px-4 py-2 hover:bg-surface-variant/50 transition-all duration-300 active:scale-90 active:translate-y-0" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">military_tech</span>
+<span class="font-label-md text-[12px] font-semibold">Lencana</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant px-4 py-2 hover:bg-surface-variant/50 transition-all duration-300 active:scale-90 active:translate-y-0" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">smart_toy</span>
+<span class="font-label-md text-[12px] font-semibold">Tanya AI</span>
+</a>
+</nav>
+<script>
+        // Interactive Plate Logic
+        function toggleIngredient(ingredient) {
+            const btn = document.getElementById(`btn-${ingredient}`);
+            const item = document.getElementById(`plate-${ingredient}`);
+            
+            btn.classList.toggle('active');
+            
+            if (btn.classList.contains('active')) {
+                item.classList.remove('hidden');
+                // Simple bounce animation
+                item.animate([
+                    { transform: 'scale(0)' },
+                    { transform: 'scale(1.2)' },
+                    { transform: 'scale(1)' }
+                ], { duration: 300, easing: 'ease-out' });
+            } else {
+                item.classList.add('hidden');
+            }
+        }
+
+        // Quiz Logic
+        function checkAnswer(button, isCorrect) {
+            // Reset all buttons
+            const allButtons = document.querySelectorAll('.quiz-btn');
+            allButtons.forEach(btn => {
+                btn.classList.remove('correct', 'wrong');
+                btn.querySelector('.result-icon').classList.add('hidden');
+            });
+
+            const icon = button.querySelector('.result-icon');
+            icon.classList.remove('hidden');
+            
+            const feedback = document.getElementById('quiz-feedback');
+            feedback.classList.remove('hidden');
+
+            if (isCorrect) {
+                button.classList.add('correct');
+                icon.textContent = 'check_circle';
+                icon.style.fontVariationSettings = "'FILL' 1";
+                feedback.textContent = 'Hore! Benar sekali. Nasi kemarin lebih kering jadi tidak lembek saat digoreng!';
+                feedback.className = 'mt-4 font-label-md text-center text-primary block';
+                confettiEffect(button);
+            } else {
+                button.classList.add('wrong');
+                icon.textContent = 'cancel';
+                icon.style.fontVariationSettings = "'FILL' 1";
+                feedback.textContent = 'Oops, coba lagi! Petunjuk: Nasi baru biasanya masih terlalu basah.';
+                feedback.className = 'mt-4 font-label-md text-center text-error block';
+            }
+        }
+
+        // Extremely simple pseudo-confetti for correct answer
+        function confettiEffect(element) {
+            for(let i=0; i<5; i++) {
+                const conf = document.createElement('div');
+                conf.className = 'absolute w-2 h-2 bg-primary rounded-full pointer-events-none';
+                conf.style.left = (Math.random() * 100) + '%';
+                conf.style.top = '50%';
+                element.appendChild(conf);
+                
+                conf.animate([
+                    { transform: 'translate(0,0) scale(1)', opacity: 1 },
+                    { transform: `translate(${(Math.random()-0.5)*100}px, -${Math.random()*50 + 20}px) scale(0)`, opacity: 0 }
+                ], { duration: 600, easing: 'cubic-bezier(.25,.8,.25,1)' }).onfinish = () => conf.remove();
+            }
+        }
+    </script>
+</body></html>

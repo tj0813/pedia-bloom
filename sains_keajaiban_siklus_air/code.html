@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NusaPedia - Siklus Air</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#bacac5",
+                        "primary-fixed": "#62fae3",
+                        "on-error": "#ffffff",
+                        "surface-container": "#e6eeff",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-background": "#0d1c2e",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f8f9ff",
+                        "secondary-container": "#fd933d",
+                        "on-primary-fixed-variant": "#005047",
+                        "tertiary-fixed": "#ffdbcc",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-tertiary-fixed": "#351000",
+                        "on-surface": "#0d1c2e",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-secondary-container": "#693300",
+                        "secondary": "#944a00",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#ffdcc5",
+                        "on-primary-container": "#00574d",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-container": "#7e3913",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "surface-tint": "#006b5f",
+                        "inverse-surface": "#233144",
+                        "primary-container": "#2dd4bf",
+                        "background": "#f8f9ff",
+                        "primary": "#006b5f",
+                        "inverse-primary": "#3cddc7",
+                        "on-surface-variant": "#3c4a46",
+                        "on-primary-fixed": "#00201c",
+                        "outline": "#6b7a76",
+                        "surface-dim": "#ccdbf3",
+                        "inverse-on-surface": "#eaf1ff",
+                        "surface": "#f8f9ff",
+                        "surface-container-highest": "#d5e3fc",
+                        "primary-fixed-dim": "#3cddc7",
+                        "tertiary-container": "#ffaa81",
+                        "surface-variant": "#d5e3fc",
+                        "on-secondary-fixed": "#301400",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#713700",
+                        "tertiary": "#944a23"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "container-max": "1200px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Quicksand"],
+                        "label-md": ["Quicksand"],
+                        "headline-xl": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "label-md": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Drag and Drop Styles */
+        .draggable {
+            cursor: grab;
+        }
+        .draggable:active {
+            cursor: grabbing;
+        }
+        .dropzone.dragover {
+            background-color: theme('colors.surface-container-highest');
+            border-color: theme('colors.primary');
+        }
+        
+        /* Ambient Shadows */
+        .shadow-ambient-primary {
+            box-shadow: 0 4px 12px rgba(45, 212, 191, 0.15);
+        }
+        .shadow-ambient-secondary {
+            box-shadow: 0 4px 12px rgba(253, 147, 61, 0.15);
+        }
+        
+        /* Bouncy Button */
+        .btn-bouncy {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .btn-bouncy:active {
+            transform: scale(0.95) translateY(2px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-[80px] md:pb-0 font-body-md">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-40 bg-background dark:bg-on-background flat no shadows flex justify-between items-center px-gutter py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden border-2 border-primary-container">
+<img alt="Nara the Explorer mascot avatar" class="w-full h-full object-cover" data-alt="A cute, 3D cartoon-style mascot avatar of a young explorer kid named Nara. Bright, colorful, and friendly aesthetic suitable for a children's educational app. Soft lighting, teal and orange accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf7-z8HoUWVleyx01XnTDv3u-PokbMyaLpqjr4n4A7R9Y7g01SIyo1DUXlac4x2X13cFqWg69pEhDNEzdASIUnbBgkCDQXPR5j1Og0lJIwEzxMJVakHWaW_QUkvRejzD3dFKJyE7-urgY2rdhG-0upHqbJv9iq3yGPyWakf6_ilUggvbMzcMFzQbogOJZNboYave1dRGCAJ0igORuMqGBLcbcHJ7iksxdeM9Ps01oS7vJGcG4DUSa9VOOw7GZKk795ekdssq_5ZCU"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed md:font-headline-lg md:text-headline-lg">NusaPedia</h1>
+</div>
+<button aria-label="Settings" class="w-10 h-10 rounded-full flex items-center justify-center text-primary dark:text-primary-fixed hover:bg-surface-container-low transition-colors active:scale-95 duration-150 bounce-effect">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8">
+<!-- Hero Section -->
+<section class="mb-12">
+<div class="bg-surface-container-lowest rounded-xl border-2 border-outline-variant/20 shadow-ambient-primary p-6 md:p-10 relative overflow-hidden">
+<!-- Decorative background blob -->
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-primary-container/20 rounded-full blur-2xl"></div>
+<div class="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary-container/20 rounded-full blur-2xl"></div>
+<div class="relative z-10 grid md:grid-cols-2 gap-8 items-center">
+<div>
+<div class="inline-flex items-center gap-2 bg-surface-container-high px-4 py-2 rounded-full mb-4">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="science">science</span>
+<span class="font-label-md text-label-md text-primary">Ilmu Pengetahuan Alam</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mb-4">Petualangan Siklus Air!</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Tahukah kamu dari mana asal hujan? Yuk, kita ikuti perjalanan seru air mengelilingi bumi!</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center shadow-ambient-primary">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="water_drop">water_drop</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Misi Hari Ini</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Pelajari 3 tahapan siklus air</p>
+</div>
+</div>
+</div>
+<div class="relative w-full aspect-square md:aspect-video rounded-xl overflow-hidden border-4 border-surface-container-lowest shadow-ambient-secondary">
+<img alt="Ilustrasi Siklus Air" class="w-full h-full object-cover" data-alt="A colorful, simplified 3D illustration of the water cycle designed for children. It features a bright blue ocean, a smiling yellow sun, fluffy white clouds with rain, and green mountains. Soft, squishy textures, vibrant colors, clear distinctions between evaporation, condensation, and precipitation. High-key lighting, cheerful mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHGmvM1P663EgXkH8zHO10TZ2IagyFvnYfGbPpANJ0c92QKE-9Lv2Sqc13dC4tbuNM30qXneZqqUz8al_dxDJtqapkwmW90zHtftlPGCJAkWSErTPX4UQnralRSzcg8rstnZkrmrqw0PeNoSJmeVOX_IQ1Se3_NB4rH48HiBCa7RjLpp5hJCdx07JKZD-iZtgOnuyaN4LedV5vEmmmD_Xt75EzQuiS1TIha1XeMO-ALVrfz0gd2F-cIl5gsbVgibQFDvkQ4e2XiR0"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Explainer Cards (Bento Grid Style) -->
+<section class="mb-12">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-6">3 Langkah Ajaib Air</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Evaporasi -->
+<div class="bg-surface-container-lowest rounded-xl border-2 border-outline-variant/20 shadow-ambient-primary p-6 relative group hover:-translate-y-1 transition-transform duration-300">
+<div class="w-16 h-16 bg-tertiary-container rounded-full flex items-center justify-center mb-4 shadow-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-3xl" data-icon="wb_sunny">wb_sunny</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">1. Evaporasi</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Matahari yang hangat memanaskan air laut dan sungai. Airnya berubah jadi uap dan terbang ke langit! Wuuush!</p>
+</div>
+<!-- Kondensasi -->
+<div class="bg-surface-container-lowest rounded-xl border-2 border-outline-variant/20 shadow-ambient-primary p-6 relative group hover:-translate-y-1 transition-transform duration-300">
+<div class="w-16 h-16 bg-surface-variant rounded-full flex items-center justify-center mb-4 shadow-sm">
+<span class="material-symbols-outlined text-on-surface text-3xl" data-icon="cloud">cloud</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">2. Kondensasi</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Di langit yang dingin, uap air berkumpul dan berpelukan membentuk awan yang tebal dan putih.</p>
+</div>
+<!-- Presipitasi -->
+<div class="bg-surface-container-lowest rounded-xl border-2 border-outline-variant/20 shadow-ambient-primary p-6 relative group hover:-translate-y-1 transition-transform duration-300">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-4 shadow-sm">
+<span class="material-symbols-outlined text-on-primary-container text-3xl" data-icon="rainy">rainy</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">3. Presipitasi</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Saat awan sudah terlalu berat dan penuh air, turunlah hujan membasahi bumi. Hore, tanaman bisa minum!</p>
+</div>
+</div>
+</section>
+<!-- Interactive Activity (Drag & Drop) -->
+<section class="mb-12">
+<div class="bg-surface-bright rounded-xl border-2 border-outline-variant/30 shadow-ambient-primary p-6 md:p-8">
+<div class="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-2">Ayo Bermain!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Tarik label ke tempat yang benar pada gambar.</p>
+</div>
+<div class="bg-secondary-container px-4 py-2 rounded-full shadow-ambient-secondary">
+<span class="font-label-md text-label-md text-on-secondary-container">Misi Seru!</span>
+</div>
+</div>
+<div class="grid md:grid-cols-12 gap-8">
+<!-- Labels to drag -->
+<div class="md:col-span-3 flex flex-row md:flex-col gap-4 overflow-x-auto pb-4 md:pb-0" id="drag-container">
+<div class="draggable bg-tertiary-container text-on-tertiary-container px-6 py-3 rounded-xl font-label-md text-label-md text-center shadow-sm cursor-grab active:cursor-grabbing border-b-4 border-on-tertiary-container/20" data-target="evaporasi" draggable="true" id="label-evaporasi">
+                            Evaporasi
+                        </div>
+<div class="draggable bg-surface-variant text-on-surface px-6 py-3 rounded-xl font-label-md text-label-md text-center shadow-sm cursor-grab active:cursor-grabbing border-b-4 border-on-surface/20" data-target="kondensasi" draggable="true" id="label-kondensasi">
+                            Kondensasi
+                        </div>
+<div class="draggable bg-primary-container text-on-primary-container px-6 py-3 rounded-xl font-label-md text-label-md text-center shadow-sm cursor-grab active:cursor-grabbing border-b-4 border-on-primary-container/20" data-target="presipitasi" draggable="true" id="label-presipitasi">
+                            Presipitasi
+                        </div>
+</div>
+<!-- Drop area / Diagram -->
+<div class="md:col-span-9 relative bg-surface-container-lowest rounded-xl border-2 border-dashed border-outline-variant/50 p-4 h-[400px] flex items-center justify-center overflow-hidden">
+<!-- Simple conceptual background for drop zones -->
+<div class="absolute inset-0 bg-gradient-to-b from-surface-container-high to-surface-bright opacity-50"></div>
+<!-- Dropzones -->
+<!-- Evaporasi Zone (Bottom Right) -->
+<div class="dropzone absolute bottom-10 right-10 w-32 h-16 border-2 border-dashed border-outline-variant rounded-xl flex items-center justify-center transition-colors bg-surface-container-lowest/80 backdrop-blur-sm" data-accept="evaporasi">
+<span class="font-label-md text-label-md text-outline-variant text-center px-2">Tarik ke sini<br/>(Air Menguap)</span>
+</div>
+<!-- Kondensasi Zone (Top Center) -->
+<div class="dropzone absolute top-10 left-1/2 -translate-x-1/2 w-32 h-16 border-2 border-dashed border-outline-variant rounded-xl flex items-center justify-center transition-colors bg-surface-container-lowest/80 backdrop-blur-sm" data-accept="kondensasi">
+<span class="font-label-md text-label-md text-outline-variant text-center px-2">Tarik ke sini<br/>(Membentuk Awan)</span>
+</div>
+<!-- Presipitasi Zone (Left Center) -->
+<div class="dropzone absolute top-1/2 -translate-y-1/2 left-10 w-32 h-16 border-2 border-dashed border-outline-variant rounded-xl flex items-center justify-center transition-colors bg-surface-container-lowest/80 backdrop-blur-sm" data-accept="presipitasi">
+<span class="font-label-md text-label-md text-outline-variant text-center px-2">Tarik ke sini<br/>(Turun Hujan)</span>
+</div>
+<!-- Visual cues for cycle -->
+<div class="absolute inset-0 pointer-events-none flex items-center justify-center">
+<span class="material-symbols-outlined text-outline-variant/20 text-[200px]" data-icon="cycle">cycle</span>
+</div>
+</div>
+</div>
+<!-- Success Message (Hidden by default) -->
+<div class="hidden mt-8 bg-primary-container/20 border-2 border-primary-container p-4 rounded-xl flex items-center gap-4" id="success-message">
+<div class="w-10 h-10 bg-primary-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="celebration">celebration</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-primary-container">Hebat! Kamu berhasil menyelesaikan misi!</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Kamu sudah paham 3 langkah siklus air.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface-container-lowest border-t-2 border-outline-variant/30 shadow-[0_-4px_12px_rgba(45,212,191,0.15)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-md text-label-md mt-1 text-[10px]">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-2 translate-y-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-label-md text-label-md mt-1 text-[10px]">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="sports_esports">sports_esports</span>
+<span class="font-label-md text-label-md mt-1 text-[10px]">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="military_tech">military_tech</span>
+<span class="font-label-md text-label-md mt-1 text-[10px]">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="smart_toy">smart_toy</span>
+<span class="font-label-md text-label-md mt-1 text-[10px]">Tanya AI</span>
+</a>
+</nav>
+<!-- Interactive Script for Drag & Drop -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const draggables = document.querySelectorAll('.draggable');
+            const dropzones = document.querySelectorAll('.dropzone');
+            let correctCount = 0;
+
+            draggables.forEach(draggable => {
+                draggable.addEventListener('dragstart', (e) => {
+                    e.dataTransfer.setData('text/plain', draggable.id);
+                    setTimeout(() => {
+                        draggable.classList.add('opacity-50');
+                    }, 0);
+                });
+
+                draggable.addEventListener('dragend', () => {
+                    draggable.classList.remove('opacity-50');
+                });
+            });
+
+            dropzones.forEach(zone => {
+                zone.addEventListener('dragover', (e) => {
+                    e.preventDefault();
+                    zone.classList.add('dragover');
+                });
+
+                zone.addEventListener('dragleave', () => {
+                    zone.classList.remove('dragover');
+                });
+
+                zone.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    zone.classList.remove('dragover');
+                    
+                    const draggableId = e.dataTransfer.getData('text/plain');
+                    const draggableElement = document.getElementById(draggableId);
+                    
+                    if (!draggableElement) return;
+
+                    const expectedTarget = draggableElement.dataset.target;
+                    const zoneAccepts = zone.dataset.accept;
+
+                    if (expectedTarget === zoneAccepts && !zone.hasChildNodes()) {
+                        // Success! Append it visually
+                        zone.innerHTML = ''; // clear placeholder text
+                        
+                        // Create a static clone to place in the zone
+                        const clone = draggableElement.cloneNode(true);
+                        clone.classList.remove('draggable', 'cursor-grab', 'active:cursor-grabbing');
+                        clone.removeAttribute('draggable');
+                        clone.classList.add('w-full', 'h-full', 'flex', 'items-center', 'justify-center', 'm-0', 'border-0');
+                        
+                        zone.appendChild(clone);
+                        zone.classList.replace('border-dashed', 'border-solid');
+                        zone.classList.add('border-primary-container', 'bg-surface-container-lowest');
+                        
+                        // Hide original
+                        draggableElement.style.display = 'none';
+                        
+                        correctCount++;
+                        
+                        // Check if all are correct
+                        if (correctCount === 3) {
+                            document.getElementById('success-message').classList.remove('hidden');
+                        }
+                    } else {
+                        // Shake animation for error
+                        zone.classList.add('animate-pulse');
+                        setTimeout(() => zone.classList.remove('animate-pulse'), 500);
+                    }
+                });
+            });
+        });
+    </script>
+</body></html>

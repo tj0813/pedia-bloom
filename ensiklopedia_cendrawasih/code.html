@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedia Bloom - Burung Cendrawasih</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#ffdcc5",
+                    "primary-fixed": "#62fae3",
+                    "on-primary-fixed": "#00201c",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#d5e3fc",
+                    "surface-container-high": "#dce9ff",
+                    "tertiary": "#944a23",
+                    "surface-dim": "#ccdbf3",
+                    "inverse-on-surface": "#eaf1ff",
+                    "secondary-container": "#fd933d",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f8f9ff",
+                    "primary-container": "#2dd4bf",
+                    "outline-variant": "#bacac5",
+                    "on-secondary-fixed": "#301400",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#76330d",
+                    "surface-container-highest": "#d5e3fc",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#351000",
+                    "on-secondary-fixed-variant": "#713700",
+                    "on-primary-container": "#00574d",
+                    "background": "#f8f9ff",
+                    "on-tertiary-container": "#7e3913",
+                    "surface-container-low": "#eff4ff",
+                    "on-tertiary": "#ffffff",
+                    "primary": "#006b5f",
+                    "tertiary-container": "#ffaa81",
+                    "on-background": "#0d1c2e",
+                    "on-surface": "#0d1c2e",
+                    "on-error-container": "#93000a",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#e6eeff",
+                    "secondary": "#944a00",
+                    "surface": "#f8f9ff",
+                    "on-primary-fixed-variant": "#005047",
+                    "tertiary-fixed-dim": "#ffb693",
+                    "on-surface-variant": "#3c4a46",
+                    "inverse-surface": "#233144",
+                    "error-container": "#ffdad6",
+                    "outline": "#6b7a76",
+                    "inverse-primary": "#3cddc7",
+                    "tertiary-fixed": "#ffdbcc",
+                    "primary-fixed-dim": "#3cddc7",
+                    "on-secondary-container": "#693300",
+                    "surface-tint": "#006b5f",
+                    "secondary-fixed-dim": "#ffb783"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1200px",
+                    "margin-mobile": "20px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Quicksand"],
+                    "headline-lg-mobile": ["Quicksand"],
+                    "headline-lg": ["Quicksand"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "label-md": ["Quicksand"],
+                    "body-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { background-color: #f8f9ff; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .filled-icon {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soft-shadow {
+            box-shadow: 0 4px 20px rgba(45, 212, 191, 0.15);
+        }
+        .bouncy-btn {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .bouncy-btn:active {
+            transform: scale(0.95) translateY(2px);
+        }
+        .bouncy-btn-primary {
+            border-bottom-width: 4px;
+            border-bottom-color: #7e3913; /* darker shade for Heritage Orange/Secondary Container */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col pt-20 pb-24 md:pb-8">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-bright shadow-sm flex justify-between items-center px-margin-mobile py-unit transition-transform duration-200">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden flex items-center justify-center">
+<img alt="Nara the Explorer Avatar" class="w-full h-full object-cover" data-alt="A cheerful, stylized 3D avatar of an explorer child named Nara, wearing a small safari hat. The art style is bright, inviting, and reminiscent of modern 3D animated films, perfect for a kids educational app. The lighting is soft and warm, highlighting the child's adventurous spirit against a clean, light mode background with teal accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrZGC4rD5baB0ylBGe3-2ejFNQZVaN_WNDadH84-sPOroSkWSIIMUOFyUKl-ERIkGGYhYhi_1RKPnV08bXYGXn7Z9XjHf4LZCuUUfEaoOQoX3mFypQBt5veFu2ZWdBl8Ao76d-U-fNsRC0viFL4H1257gLLyVG7nU--nXyPYH2XXoFjUvE5ZYMgvFj6r_E2UHSd3TC2WaldhRj_QmMX81EantkPa2UtBkMOkQHH-VqvPdmcIG6sH3f_2R0McfAblnlAQZu295jqRE"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary tracking-tight">Pedia Bloom</h1>
+</div>
+<button class="text-primary hover:opacity-80 transition-transform active:scale-95 duration-200 w-12 h-12 flex items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-3xl">settings</span>
+</button>
+</header>
+<main class="flex-grow container mx-auto max-w-container-max px-margin-mobile md:px-margin-desktop space-y-12">
+<!-- Hero Section / Header -->
+<section class="mt-8 relative rounded-xl overflow-hidden soft-shadow bg-surface-container-lowest border-2 border-surface-variant flex flex-col md:flex-row">
+<div class="md:w-1/2 p-8 flex flex-col justify-center">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-md text-sm inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">warning</span> Burung Langka
+                    </span>
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-md text-sm inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span> Papua
+                    </span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-2">Cendrawasih</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Burung Surga yang mempesona dengan tarian dan bulunya yang indah. Mari kita kenali lebih dekat harta karun dari timur Indonesia ini!</p>
+<button class="bouncy-btn bouncy-btn-primary bg-secondary-container text-on-secondary-container font-label-md text-label-md py-3 px-8 rounded-full self-start flex items-center gap-2 shadow-lg hover:bg-tertiary-container transition-colors">
+<span class="material-symbols-outlined">play_circle</span> Mulai Petualangan
+                </button>
+</div>
+<div class="md:w-1/2 h-64 md:h-auto relative bg-surface-container">
+<img alt="Bird of Paradise" class="w-full h-full object-cover" data-alt="A highly detailed, vibrant photograph of a Bird of Paradise (Cendrawasih) perched on a branch in a lush jungle setting. The bird features magnificent, flowing plumage in brilliant yellows, oranges, and greens. The background is a soft-focus, bright tropical forest bathed in warm, dappled sunlight, fitting a cheerful, educational light mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4zK8imHhgb8E5_8o-5J_ja0yjil33XXKhhir0a-Xtx0OQ1q2fXFKbgZHq6NPtBwM8gdOI6o-zKe0haGzgrPdBF-T4wfbkt5c7yhh_5TtK0g-9aPrFKx9vY0i35cQVbq0ZgpupBkUdX2xJBw44BANs8RRjZjiLOnJ7N4c97t0RkW8eqjVrqc9iN8T7oC8vfhQ3sgx3BC7fOkMqmh5ySUyGr8nUodwg54KCzE3znnISXtuapzRBYwjTSVpqkY2tAJQYIoDzvbGqx6A"/>
+</div>
+</section>
+<!-- Bento Grid Info -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-variant soft-shadow relative">
+<div class="absolute -top-4 -right-4 w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-md transform rotate-12">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-3">Bulu Sang Surga</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Cendrawasih jantan memiliki bulu panjang yang cerah untuk menarik perhatian betina. Warnanya seperti pelangi di tengah hutan!</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-variant soft-shadow md:col-span-2 flex flex-col md:flex-row gap-6 items-center">
+<div class="flex-1">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-3">Tarian Cinta</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Untuk memikat pasangan, Cendrawasih jantan akan membersihkan area di tanah dan melakukan tarian akrobatik yang lucu dan menakjubkan.</p>
+<button class="text-primary font-label-md flex items-center gap-1 hover:text-primary-container transition-colors">
+                        Lihat Video Tarian <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="w-full md:w-48 h-48 rounded-lg overflow-hidden bg-surface-container">
+<img alt="Cendrawasih Dancing" class="w-full h-full object-cover" data-alt="An artistic illustration of a male Bird of Paradise mid-dance, displaying its spectacular plumage. The style is bright, whimsical, and painterly, suitable for a children's encyclopedia. The background features subtle tropical leaves and soft teal and orange hues, maintaining a playful and educational vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6Memz_ZOM0NT4gMJFQ4hNc_M2FhfbrjGTNANEFhO5ABVKRFrM65Q7lheU_ftCSXWnfjlbKvKA5S54lsyywcWPlZtZU-WRG7voWGFA85sBwLYPHIRDBg3OJTYUTsTSlE3TFPXeraObfdwv2JxpFSyyCDNHhJVXQWwuCh6XApsP_aJJugangsWRRnyzarqhebHv6ndAb3ZUNkj-IDl4QJaq1v_d_gvQTdo5DNMDhpw2-S0YCEHgpWoWQ2zJEywTxFVd9ewUg5TdxvY"/>
+</div>
+</div>
+</section>
+<!-- Interactive Hidden Object Game -->
+<section class="bg-surface-container-low rounded-xl p-6 md:p-8 border-2 border-surface-variant soft-shadow text-center">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-2">Hutan Papua</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Temukan Cendrawasih yang bersembunyi di rimbunnya hutan!</p>
+<div class="relative w-full h-80 md:h-96 rounded-lg overflow-hidden border-4 border-primary-container mx-auto max-w-4xl cursor-pointer group bg-surface-container">
+<img alt="Jungle Hidden Object" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A dense, vibrant illustration of a tropical Papuan rainforest canopy, designed as a hidden object game background. The scene is filled with lush green foliage, oversized leaves, and bright exotic flowers. Hidden subtly among the branches is a Bird of Paradise. The lighting is bright and cheerful, adhering to a playful, educational aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7YNK-J6huCUjVp2JvZgSM5Um1fzZF69Rs6Q5sJMZoF_clW_jI3OWW0uOhRncaT4yCQO6IJShqmVLP7dzOcQsXTA3FMptbx3QsX9KYyP0pzi937qf_NI-HkS62B09eR-Q81beOKvIJeVClAcp1azVFevPhyxXbNjFEJrdK8pC6bhXK9Uibf_wLzVrSrE_KuPDdrN_90Q3XgDMpMKsMe940sfAniwe0kwFMvZQdZ7YTp8nOGvfNzi4VT5MdlJCTpg4V5B-nSZ8Zhdw"/>
+<!-- Interactive hotspots would go here in a real app -->
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-on-surface/20">
+<button class="bouncy-btn bg-surface-container-lowest text-primary font-label-md py-2 px-6 rounded-full shadow-lg flex items-center gap-2">
+<span class="material-symbols-outlined">search</span> Ketuk untuk Mencari
+                     </button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-lg bg-surface-container-lowest shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] h-20 flex justify-around items-center px-4 pb-safe">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-label-md text-xs">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl px-3 py-1 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1 filled-icon">explore</span>
+<span class="font-label-md text-xs">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1">sports_esports</span>
+<span class="font-label-md text-xs">Main</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1">military_tech</span>
+<span class="font-label-md text-xs">Lencana</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1">smart_toy</span>
+<span class="font-label-md text-xs">Tanya AI</span>
+</a>
+</nav>
+</body></html>

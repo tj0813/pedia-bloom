@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NusaPedia - Energi Matahari</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#bacac5",
+                    "primary-fixed": "#62fae3",
+                    "on-error": "#ffffff",
+                    "surface-container": "#e6eeff",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-background": "#0d1c2e",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#f8f9ff",
+                    "secondary-container": "#fd933d",
+                    "on-primary-fixed-variant": "#005047",
+                    "tertiary-fixed": "#ffdbcc",
+                    "secondary-fixed-dim": "#ffb783",
+                    "on-tertiary-fixed": "#351000",
+                    "on-surface": "#0d1c2e",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#ffb693",
+                    "on-tertiary-fixed-variant": "#76330d",
+                    "on-secondary-container": "#693300",
+                    "secondary": "#944a00",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#ffdcc5",
+                    "on-primary-container": "#00574d",
+                    "surface-container-low": "#eff4ff",
+                    "on-tertiary-container": "#7e3913",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#dce9ff",
+                    "surface-tint": "#006b5f",
+                    "inverse-surface": "#233144",
+                    "primary-container": "#2dd4bf",
+                    "background": "#f8f9ff",
+                    "primary": "#006b5f",
+                    "inverse-primary": "#3cddc7",
+                    "on-surface-variant": "#3c4a46",
+                    "on-primary-fixed": "#00201c",
+                    "outline": "#6b7a76",
+                    "surface-dim": "#ccdbf3",
+                    "inverse-on-surface": "#eaf1ff",
+                    "surface": "#f8f9ff",
+                    "surface-container-highest": "#d5e3fc",
+                    "primary-fixed-dim": "#3cddc7",
+                    "tertiary-container": "#ffaa81",
+                    "surface-variant": "#d5e3fc",
+                    "on-secondary-fixed": "#301400",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#713700",
+                    "tertiary": "#944a23"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "container-max": "1200px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-lg": [
+                            "Quicksand"
+                    ],
+                    "label-md": [
+                            "Quicksand"
+                    ],
+                    "headline-xl": [
+                            "Quicksand"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg-mobile": [
+                            "Quicksand"
+                    ],
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-xl": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "20px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "34px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .squishy-btn {
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+            box-shadow: 0 4px 0 var(--tw-shadow-color);
+        }
+        .squishy-btn:active {
+            transform: translateY(4px);
+            box-shadow: 0 0 0 var(--tw-shadow-color);
+        }
+        .soft-shadow {
+            box-shadow: 0 4px 12px rgba(45, 212, 191, 0.15);
+        }
+        .sun-ray {
+            animation: pulse-ray 2s infinite ease-in-out alternate;
+        }
+        @keyframes pulse-ray {
+            0% { transform: scale(1); opacity: 0.7; }
+            100% { transform: scale(1.1); opacity: 1; }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-40 bg-background dark:bg-on-background flat no shadows">
+<div class="flex justify-between items-center px-gutter py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-primary">
+<img alt="Nara the Explorer mascot avatar" class="w-full h-full object-cover" data-alt="A cute, friendly cartoon mascot avatar of an Indonesian explorer character named Nara, designed in a vibrant, engaging style suitable for children. The illustration uses bright primary colors, soft rounded edges, and a cheerful expression, set against a solid teal background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk_HXmCfwf_15-ugQk-G0_YwMoxQcrso7OKSSbwqVrG1IxbbAJBWEjgVNwiJps80R-PDeWvEsE39uCFj2GI9TdMOnCVTRNBLtlMJV9tJGFtGYqqKPsJlzxANlev2B6MleL1rfvgGkmEvSP_f5XmQ1H0KCl-PYiBuRDxqzTfD3LgoCY-xf9fc0huv0ZNbx7t5G_-54pralv2obGdM9FpqJdSgsKJRyfipwEvFCJUxeD6pvf0Ipvfe0hrwxVe_Jl9uJIjXNQWttjUeY"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed tracking-tight">NusaPedia</h1>
+</div>
+<button aria-label="Settings" class="w-10 h-10 rounded-full flex items-center justify-center text-primary dark:text-primary-fixed hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow px-gutter md:px-margin-desktop py-6 max-w-container-max mx-auto w-full space-y-12">
+<!-- Hero Section -->
+<section class="relative rounded-xl overflow-hidden bg-gradient-to-br from-tertiary-fixed to-secondary-fixed p-6 md:p-12 soft-shadow flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1 space-y-4 z-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm">Sains untuk Cilik</span>
+<h2 class="font-headline-xl text-headline-xl text-on-tertiary-fixed">Energi Matahari</h2>
+<p class="font-body-lg text-body-lg text-on-tertiary-fixed-variant max-w-lg">
+                    Halo teman-teman! Tahukah kamu darimana datangnya cahaya yang membuat bumi kita terang benderang setiap hari? Ya, dari Matahari!
+                </p>
+</div>
+<div class="flex-1 relative flex justify-center items-center z-10 min-h-[250px]">
+<!-- Interactive Sun Graphic -->
+<div class="relative w-40 h-40 bg-secondary-container rounded-full shadow-[0_0_60px_rgba(253,147,61,0.6)] flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-6xl" style="font-variation-settings: 'FILL' 1;">light_mode</span>
+<!-- Rays -->
+<div class="absolute inset-0 sun-ray border-4 border-dashed border-secondary-container rounded-full opacity-50 scale-125"></div>
+<div class="absolute inset-0 sun-ray border-4 border-dashed border-secondary-fixed-dim rounded-full opacity-30 scale-150" style="animation-delay: 0.5s;"></div>
+</div>
+</div>
+<!-- Decorative Background Elements -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -translate-y-1/2 translate-x-1/4 blur-2xl"></div>
+</section>
+<!-- Bento Grid: Learnings -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-container-highest soft-shadow hover:-translate-y-1 transition-transform relative overflow-hidden">
+<div class="w-12 h-12 bg-tertiary-container rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-on-tertiary-container text-3xl" style="font-variation-settings: 'FILL' 1;">emoji_objects</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Cahaya &amp; Panas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Matahari adalah bintang raksasa yang sangat panas. Cahayanya menyeberangi luar angkasa yang gelap untuk sampai ke Bumi, memberi kita kehangatan.
+                </p>
+<img alt="Matahari bersinar di luar angkasa" class="w-full h-32 object-cover rounded-lg mt-4" data-alt="A vibrant, stylized illustration of a glowing yellow sun floating in a deep blue, starry outer space. The image is designed with a friendly, educational aesthetic suitable for a children's science app, featuring soft lighting and a warm, inviting tone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAzVv1G8yUEdVneeJ56wdI-hArvb9pHFGnkfwxpD23SaCEQmDNwlndIUsLe9C08VLMveHm5foURhPLBf6QfBH75LRnsrAH0Ig4jTXSXYPRpOLKUhd_P1q6jXRnrFuoE5YNEpgaIrzf_ryxwUeCa_urLVgcq5P75qQIoB-8ylR79c8TLtFyQhxY3-4rm4pclByw3N4kpFUSWPR66O39nuY2PXH0YEVCDXL3q_drtknOPAgAms3ZTH6FsdwAlvBxGoxi5shMIGev_BY"/>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-container-highest soft-shadow hover:-translate-y-1 transition-transform md:col-span-2 relative overflow-hidden flex flex-col md:flex-row gap-6 items-center">
+<div class="flex-1">
+<div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-on-primary-container text-3xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Makanan untuk Tanaman</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Tumbuhan sangat pintar! Mereka menggunakan cahaya matahari untuk memasak makanan mereka sendiri. Proses ajaib ini disebut <strong>Fotosintesis</strong>. Berkat matahari, tanaman bisa tumbuh besar dan memberi kita oksigen untuk bernapas.
+                    </p>
+</div>
+<div class="flex-1 w-full relative">
+<img alt="Tanaman yang terkena sinar matahari" class="w-full h-48 object-cover rounded-lg" data-alt="A beautifully lit photograph of small green plant sprouts growing from rich soil, bathed in warm, golden sunlight filtering through leaves. The image conveys growth, nature, and the vital role of solar energy in a bright, uplifting, and clear style appropriate for an educational science app." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATNOxeHgFhZsbYENOjgvY-WpwMes8P0N84FIY2qM3TCRdrQzZEXELVHXmlgotUCRy-8dLWoQz1C9eAP1kIsQJK8mkaE0-IaVmAtJAD2NcA0Zl-2tPOBkJip7o07-9Gl1GDb-y56nkByyIsWOT8tZk8pT5GslsQbisUxA2HQBSgKxawCSvwbvW-eVQtYsbNumqgu34uYmmBdbkcZQq_a6gp9E7o0BPtHgIpmGa_JbuMHmAKq9tRTcvz7TnkU26VjU49AFtJJMAeFHc"/>
+<!-- Nara Peeking -->
+<div class="absolute -top-4 -right-4 w-16 h-16 bg-white rounded-full border-2 border-outline-variant flex items-center justify-center z-10 shadow-sm overflow-hidden">
+<img alt="Nara" class="w-full h-full object-cover" data-alt="A cute, friendly cartoon mascot of an Indonesian explorer character holding a small green leaf. The design is vibrant, engaging, and suitable for children, with bright primary colors and a cheerful expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKkGS5htbT1EbREMOzb_AS4AZ5DgFtL_QIG9QuRhcJDCSKqqPBYwFLD8tY0slMyZpqpiHxx1XO-POxZE0aA9LWIUA3WpsHNROVGf9rpIdg3pdGE5HQCk5It-_WCfyaPIsQdLr4H_b03MsIjzGcaT1zNEC7uOptzwPfnt48ApE2N7Jkhrb5hOwM_V0RF5fizy--sjrIjiVX8aKSB2gOF3nuxsxq6HgIf6PzBYETk_qD9Is087cq3lBAE4kWfqbaYmqDmEovnGCB4Ak"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Mini Game: Charge the Battery -->
+<section class="bg-inverse-surface rounded-xl p-8 border-4 border-primary text-center relative overflow-hidden">
+<!-- Background Texture -->
+<div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 20px 20px;"></div>
+<div class="relative z-10 flex flex-col items-center">
+<h3 class="font-headline-xl text-headline-xl text-primary-fixed mb-2">Misi Hari Ini!</h3>
+<p class="font-body-lg text-body-lg text-inverse-on-surface mb-8">Tangkap sinar matahari untuk mengisi daya baterai BimoBot!</p>
+<!-- Battery Display -->
+<div class="w-64 h-24 border-4 border-outline rounded-lg bg-surface-container p-1 relative mb-8 flex">
+<div class="w-2 h-8 bg-outline rounded-r-md absolute -right-3 top-1/2 -translate-y-1/2"></div>
+<!-- Charge Level -->
+<div class="h-full bg-primary-container rounded-sm w-[10%] transition-all duration-300" id="battery-fill"></div>
+</div>
+<!-- Sun Catchers -->
+<div class="flex gap-4 justify-center flex-wrap" id="sun-container">
+<button class="sun-btn w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center squishy-btn shadow-secondary text-white hover:scale-110" style="--tw-shadow-color: #944a00;">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">light_mode</span>
+</button>
+<button class="sun-btn w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center squishy-btn shadow-secondary text-white hover:scale-110" style="--tw-shadow-color: #944a00;">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">light_mode</span>
+</button>
+<button class="sun-btn w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center squishy-btn shadow-secondary text-white hover:scale-110" style="--tw-shadow-color: #944a00;">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">light_mode</span>
+</button>
+</div>
+<div class="hidden mt-6 font-headline-lg-mobile text-headline-lg-mobile text-primary-fixed-dim bg-on-primary-fixed px-6 py-2 rounded-full" id="success-msg">
+                    Yeay! Baterai Penuh!
+                </div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface-container-lowest border-t-2 border-outline-variant/30 shadow-[0_-4px_12px_rgba(45,212,191,0.15)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-label-md text-label-md mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-2 translate-y-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md mt-1">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 0;">sports_esports</span>
+<span class="font-label-md text-label-md mt-1">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 0;">military_tech</span>
+<span class="font-label-md text-label-md mt-1">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 0;">smart_toy</span>
+<span class="font-label-md text-label-md mt-1">Tanya AI</span>
+</a>
+</nav>
+<script>
+        // Mini Game Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            let charge = 10;
+            const batteryFill = document.getElementById('battery-fill');
+            const sunBtns = document.querySelectorAll('.sun-btn');
+            const successMsg = document.getElementById('success-msg');
+
+            sunBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    if (charge < 100) {
+                        charge += 30;
+                        if (charge > 100) charge = 100;
+                        batteryFill.style.width = charge + '%';
+                        
+                        // Small animation on click
+                        this.style.transform = 'scale(0.9)';
+                        setTimeout(() => {
+                            this.style.transform = '';
+                            this.classList.add('opacity-50', 'pointer-events-none');
+                        }, 100);
+
+                        if (charge === 100) {
+                            setTimeout(() => {
+                                successMsg.classList.remove('hidden');
+                                successMsg.classList.add('animate-bounce');
+                            }, 300);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body></html>

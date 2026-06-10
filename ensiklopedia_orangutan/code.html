@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedia Bloom - Orangutan Kalimantan</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Guidelines -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#bacac5",
+                        "on-primary-container": "#00574d",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f8f9ff",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "tertiary": "#944a23",
+                        "surface-container": "#e6eeff",
+                        "on-primary-fixed": "#00201c",
+                        "surface-container-highest": "#d5e3fc",
+                        "on-surface": "#0d1c2e",
+                        "inverse-primary": "#3cddc7",
+                        "surface": "#f8f9ff",
+                        "outline": "#6b7a76",
+                        "surface-tint": "#006b5f",
+                        "surface-dim": "#ccdbf3",
+                        "on-surface-variant": "#3c4a46",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#005047",
+                        "inverse-on-surface": "#eaf1ff",
+                        "background": "#f8f9ff",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#713700",
+                        "on-background": "#0d1c2e",
+                        "secondary": "#944a00",
+                        "primary-fixed": "#62fae3",
+                        "secondary-fixed-dim": "#ffb783",
+                        "secondary-container": "#fd933d",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "secondary-fixed": "#ffdcc5",
+                        "primary": "#006b5f",
+                        "on-tertiary-container": "#7e3913",
+                        "on-secondary-fixed": "#301400",
+                        "primary-container": "#2dd4bf",
+                        "on-tertiary-fixed": "#351000",
+                        "inverse-surface": "#233144",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#d5e3fc",
+                        "on-secondary-container": "#693300",
+                        "tertiary-fixed": "#ffdbcc",
+                        "tertiary-container": "#ffaa81",
+                        "primary-fixed-dim": "#3cddc7",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "surface-container-low": "#eff4ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "label-md": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .bounce-effect:active {
+            transform: translateY(2px) scale(0.98);
+        }
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md antialiased pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-surface shadow-sm">
+<div class="flex items-center gap-2">
+<!-- Leading Avatar Placeholder (Nara the Explorer) -->
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container overflow-hidden border-2 border-primary-fixed" data-alt="A small, cute, cartoon-style avatar illustration of an Indonesian explorer child character named Nara. The character wears a small explorer hat and has a friendly, encouraging smile. The art style is vibrant, soft, and suitable for a children's educational app, using soft teal and orange tones.">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">face</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">Pedia Bloom</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-highest text-primary hover:opacity-80 active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined">search</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-20 px-margin-mobile flex flex-col gap-8 max-w-container-max mx-auto">
+<!-- Hero Section -->
+<section class="relative w-full h-[397px] rounded-3xl overflow-hidden shadow-[0_8px_20px_rgba(45,212,191,0.2)] bg-surface-container">
+<img alt="Orangutan" class="absolute inset-0 w-full h-full object-cover object-center" data-alt="A vibrant, highly stylized and cute illustration of a fluffy, orange baby orangutan hanging playfully from a thick green vine in a lush, stylized Indonesian jungle. The background features oversized, soft-focus monstera leaves and dappled sunlight filtering through the canopy. The color palette is rich in warm oranges, deep jungle greens, and soft teal highlights, creating a friendly and inviting atmosphere for a children's digital playground." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwjzBQ1llYGKzGC03Nz4pw26ztM_pKkS367gBLU5S0HQrBn16Uusec5IoB_SBwnIZ4cu5cg63cNm_njko5yoFIOXGucI4xMWSGk0MzffAc6ZSsJ9u8aYp1eg7UKT95yZBNliDrvOUmMmq7o8NF5vmgDnqPhJ0XkV3YaACpQJdtHvzRwN_SDTtmMYVQsPE1PUIfCVuXWNX1b6MdjzSKbwnNU7jS0B7l61zQ3BrM-60751XfPF6GyuC4F6uhuGOaw1JnJbo4cz8T1Fg"/>
+<!-- Gradient Overlay for Text Legibility -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-primary-fixed to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 text-on-primary">
+<div class="inline-flex items-center gap-1 bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-sm font-label-md mb-2">
+<span class="material-symbols-outlined text-[16px]">forest</span>
+<span>Hewan Nusantara</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-white mb-1 drop-shadow-md">Orangutan<br/>Kalimantan</h2>
+<p class="font-body-md text-surface-container-high opacity-90">Kera besar pintar penjaga hutan.</p>
+</div>
+</section>
+<!-- Quick Facts (Bento Grid) -->
+<section class="grid grid-cols-2 gap-4">
+<div class="col-span-2 bg-surface-bright rounded-2xl p-5 border-2 border-surface-variant shadow-[0_4px_15px_rgba(0,107,95,0.05)] relative overflow-hidden">
+<div class="absolute -right-4 -top-4 w-16 h-16 bg-primary-container rounded-full opacity-20 blur-xl"></div>
+<div class="flex items-center gap-3 mb-2">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface">Tempat Tinggal</h3>
+</div>
+<p class="font-body-md text-on-surface-variant">Mereka tinggal di atas pohon tinggi di hutan hujan <strong>Kalimantan</strong> dan <strong>Sumatra</strong>.</p>
+</div>
+<div class="col-span-1 bg-surface-bright rounded-2xl p-5 border-2 border-surface-variant shadow-[0_4px_15px_rgba(0,107,95,0.05)] flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-3">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">nutrition</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Makanan</h3>
+<p class="font-body-md text-on-surface-variant text-sm leading-tight">Suka makan buah manis dan daun segar!</p>
+</div>
+<div class="col-span-1 bg-surface-bright rounded-2xl p-5 border-2 border-surface-variant shadow-[0_4px_15px_rgba(0,107,95,0.05)] flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center mb-3">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Fakta Unik</h3>
+<p class="font-body-md text-on-surface-variant text-sm leading-tight">Sangat pintar, bisa pakai alat seperti payung daun!</p>
+</div>
+</section>
+<!-- Mini Story -->
+<section class="bg-surface-container-low rounded-3xl p-6 shadow-[0_4px_20px_rgba(0,107,95,0.08)] relative border border-surface-dim">
+<div class="absolute -top-5 left-6 w-12 h-12 bg-tertiary text-on-tertiary rounded-full flex items-center justify-center shadow-md border-4 border-surface">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mt-4 mb-3">Petualangan di Atas Pohon</h3>
+<p class="font-body-md text-on-surface-variant mb-4">
+                Suatu hari, Nara melihat seekor Orangutan kecil sedang berayun dari dahan ke dahan. "Wush! Wush!" Ia bergerak sangat lincah karena lengan panjangnya. Orangutan jarang sekali turun ke tanah, lho. Mereka tidur di atas sarang daun yang mereka buat sendiri setiap malam!
+            </p>
+<div class="w-full h-3 bg-surface-variant rounded-full overflow-hidden">
+<!-- Progress Path metaphor -->
+<div class="h-full bg-primary-container w-2/3 rounded-full relative">
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full border-2 border-white"></div>
+</div>
+</div>
+<p class="text-right text-xs text-outline mt-2 font-label-md">Cerita selesai dibaca!</p>
+</section>
+<!-- Quiz Section -->
+<section class="flex flex-col gap-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary flex items-center gap-2">
+<span class="material-symbols-outlined">quiz</span>
+                Kuis Penjelajah!
+            </h3>
+<div class="bg-white rounded-2xl border-2 border-outline-variant p-4 hover:border-primary transition-colors cursor-pointer active:scale-[0.98]">
+<p class="font-label-md text-label-md text-on-surface mb-3">1. Di mana Orangutan biasanya tinggal?</p>
+<div class="flex flex-col gap-2">
+<button class="w-full text-left px-4 py-3 rounded-xl bg-surface-container hover:bg-surface-dim font-body-md text-on-surface-variant transition-colors">Di dalam gua</button>
+<button class="w-full text-left px-4 py-3 rounded-xl bg-primary-container text-on-primary-container font-body-md transition-colors shadow-[0_2px_8px_rgba(45,212,191,0.4)]">Di atas pohon</button>
+</div>
+</div>
+</section>
+<!-- Reward Section -->
+<section class="mt-4 mb-8 bg-gradient-to-b from-surface-bright to-surface-container-highest rounded-3xl p-8 flex flex-col items-center text-center shadow-lg border-2 border-white relative overflow-hidden">
+<!-- Decorative background elements -->
+<div class="absolute -top-10 -left-10 w-32 h-32 bg-primary-fixed opacity-30 rounded-full blur-2xl"></div>
+<div class="absolute -bottom-10 -right-10 w-32 h-32 bg-tertiary-fixed-dim opacity-30 rounded-full blur-2xl"></div>
+<div class="w-24 h-24 mb-4 relative z-10 drop-shadow-[0_8px_16px_rgba(148,74,35,0.3)]">
+<img alt="Badge" class="w-full h-full rounded-full object-cover border-4 border-tertiary-container" data-alt="A detailed, colorful, shiny digital merit badge illustration. The badge features a cute stylized orangutan face in the center, surrounded by a golden wreath of jungle leaves. The overall aesthetic is tactile and skeuomorphic, resembling a premium embroidered or enameled pin suitable for a children's app reward system. Soft teal and vibrant orange colors dominate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzIesp1-rUZWTooyk5Ihyyg9fLdFHDBiyqeJnstbPnFQAabPbb2wX3xi3jCgh-s-vpV6P9b0kkuN8c_HkhmbLU_Ou2lD2eadnbNKByieBBna_SESjHaBlYNbj255YkNQeZDtt1so3G4QB8yqZfeglIraAQthGA1Pk8AJuxrpoH56PwLswgmMwX-kLHtdM9Yz2ZM1K_t09d6epzkTde9XtBOC7mfq1kFnDGAA63U6xXPJztt_qjDyTTXU2M26l5jhXNSBQ_27ZOWGM"/>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2 relative z-10">Kamu Hebat!</h3>
+<p class="font-body-md text-on-surface-variant mb-6 relative z-10">Selesaikan kuis untuk mendapatkan badge Sahabat Orangutan.</p>
+<button class="w-full max-w-[250px] bg-tertiary text-on-tertiary font-label-md text-label-md py-4 px-6 rounded-2xl border-b-4 border-on-tertiary-container active:border-b-0 active:translate-y-1 transition-all duration-150 relative z-10 flex justify-center items-center gap-2">
+<span class="material-symbols-outlined">military_tech</span>
+                Klaim Badge
+            </button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 pb-safe bg-surface-container-lowest shadow-[0_-4px_10px_rgba(0,107,95,0.1)] rounded-t-lg">
+<!-- Home (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-variant transition-colors rounded-xl">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md mt-1 text-[12px]">Home</span>
+</button>
+<!-- Jelajah (Active) -->
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1.5 transition-all duration-300 translate-y-0.5 scale-95 shadow-[0_4px_12px_rgba(45,212,191,0.3)]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md mt-1 text-[12px]">Jelajah</span>
+</button>
+<!-- Game (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-variant transition-colors rounded-xl">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-label-md mt-1 text-[12px]">Game</span>
+</button>
+<!-- Badge (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-variant transition-colors rounded-xl">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-label-md mt-1 text-[12px]">Badge</span>
+</button>
+<!-- Tanya AI (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-variant transition-colors rounded-xl">
+<span class="material-symbols-outlined">psychology_alt</span>
+<span class="font-label-md text-label-md mt-1 text-[12px]">Tanya AI</span>
+</button>
+</nav>
+</body></html>

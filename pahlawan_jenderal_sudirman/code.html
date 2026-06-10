@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jenderal Sudirman - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#ffdcc5",
+                        "primary-fixed": "#62fae3",
+                        "on-primary-fixed": "#00201c",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#d5e3fc",
+                        "surface-container-high": "#dce9ff",
+                        "tertiary": "#944a23",
+                        "surface-dim": "#ccdbf3",
+                        "inverse-on-surface": "#eaf1ff",
+                        "secondary-container": "#fd933d",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f8f9ff",
+                        "primary-container": "#2dd4bf",
+                        "outline-variant": "#bacac5",
+                        "on-secondary-fixed": "#301400",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "surface-container-highest": "#d5e3fc",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#351000",
+                        "on-secondary-fixed-variant": "#713700",
+                        "on-primary-container": "#00574d",
+                        "background": "#f8f9ff",
+                        "on-tertiary-container": "#7e3913",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#006b5f",
+                        "tertiary-container": "#ffaa81",
+                        "on-background": "#0d1c2e",
+                        "on-surface": "#0d1c2e",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#e6eeff",
+                        "secondary": "#944a00",
+                        "surface": "#f8f9ff",
+                        "on-primary-fixed-variant": "#005047",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-surface-variant": "#3c4a46",
+                        "inverse-surface": "#233144",
+                        "error-container": "#ffdad6",
+                        "outline": "#6b7a76",
+                        "inverse-primary": "#3cddc7",
+                        "tertiary-fixed": "#ffdbcc",
+                        "primary-fixed-dim": "#3cddc7",
+                        "on-secondary-container": "#693300",
+                        "surface-tint": "#006b5f",
+                        "secondary-fixed-dim": "#ffb783"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .bouncy { transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .bouncy:active { transform: translateY(2px) scale(0.98); }
+        .bouncy-hover:hover { transform: translateY(-2px); }
+        .shadow-colored { box-shadow: 0 4px 14px 0 rgba(45, 212, 191, 0.39); }
+        .shadow-colored-secondary { box-shadow: 0 4px 14px 0 rgba(253, 147, 61, 0.39); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background pb-[100px] antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-bright dark:bg-surface-dim shadow-sm flex justify-between items-center px-margin-mobile py-unit">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">face</span>
+</div>
+<span class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary dark:text-primary-fixed">Pedia Bloom</span>
+</div>
+<button class="w-10 h-10 rounded-full flex items-center justify-center hover:opacity-80 transition-transform active:scale-95 duration-200">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed">settings</span>
+</button>
+</header>
+<main class="pt-[80px] px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto space-y-8">
+<!-- Header & Badge -->
+<section class="mt-8 flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-2 bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full font-label-md text-label-md mb-4 shadow-colored-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+                Pahlawan Nasional
+            </div>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-2">Jenderal Sudirman</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Sang Panglima Besar yang memimpin Perang Gerilya demi mempertahankan kemerdekaan Indonesia.</p>
+</section>
+<!-- Hero Image -->
+<div class="w-full h-64 md:h-96 rounded-xl overflow-hidden relative shadow-lg">
+<img alt="Ilustrasi Jenderal Sudirman" class="w-full h-full object-cover" data-alt="A beautifully crafted, child-friendly 3D illustration of General Sudirman sitting on a traditional wooden palanquin (tandu) carried by loyal soldiers. The scene is set in a lush Indonesian jungle with dappled sunlight breaking through the canopy, creating a warm and courageous mood. The art style matches the Pedia Bloom tactile and skeuomorphic aesthetic with soft lighting, rounded edges, and vibrant greens and earthy browns, prioritizing a safe and inspiring educational feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRatp_exs0B92UL2elmQQTJVu4FlcY4IqEJYtkavUaouF5QVQCrCvHeL_E_mEwRsGSd_Fpwwm6bnIq-EDFL9jiSR5hL_4w_8b-tETTNq3SyEx5s0vPh0rRlovGXHzUjQQeaky8-jTOPAZEeEWynzHPMTEao6eAYQ__Br_vRlQLfnN-kjbQzOcDjA631dmEJNVZJq-k_Jk02Hw65UOoJfKEPP63fYaH-fQSovmPQbb-bVdGLW-xjGVLHlJoYEptjXjqmyDx0WNeQI8"/>
+</div>
+<!-- Story Section: Perang Gerilya -->
+<section class="bg-surface-container-lowest border-2 border-surface-variant rounded-xl p-6 shadow-[0_4px_14px_0_rgba(0,107,95,0.1)] relative">
+<div class="absolute -top-6 -right-4 w-16 h-16 bg-primary-container rounded-full flex items-center justify-center shadow-colored border-4 border-surface-container-lowest transform rotate-12">
+<span class="material-symbols-outlined text-on-primary-container text-3xl" style="font-variation-settings: 'FILL' 1;">directions_walk</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined">history_edu</span>
+                Perang Gerilya
+            </h2>
+<p class="font-body-md text-body-md text-on-surface mb-4">
+                Meskipun sedang sakit parah, Jenderal Sudirman tidak mau menyerah. Beliau memimpin pasukannya bergerilya masuk keluar hutan, naik turun gunung, demi mengelabui penjajah. Beliau ditandu oleh para prajurit setianya sejauh ratusan kilometer!
+            </p>
+<div class="bg-surface-container-low p-4 rounded-lg flex gap-4 items-start">
+<span class="material-symbols-outlined text-secondary text-2xl mt-1">lightbulb</span>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+                    "Tandu ini bukan tanda kelemahan, tapi bukti bahwa semangat juang tidak bisa dipatahkan oleh penyakit."
+                </p>
+</div>
+</section>
+<!-- Interactive Map Mission -->
+<section class="space-y-4">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">map</span>
+                Rute Gerilya
+            </h2>
+<div class="w-full h-80 rounded-xl overflow-hidden shadow-lg border-2 border-surface-variant relative">
+<img alt="Peta Rute Gerilya" class="w-full h-full object-cover" data-alt="A stylized, illustrative map of Central Java, Indonesia, designed for children. The map features a soft, vibrant color palette with tactile, squishy-looking mountains, forests, and villages. A clear, dotted path highlights the guerrilla route, with small, cute 3D icons marking key locations. The style is playful and educational, aligning with the Pedia Bloom aesthetic, using warm earthy tones and soft teal accents." data-location="Jawa Tengah" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMpzouiZhruqxz5vK-FVig4nDGf5ocRoT2augd2i5F3QfDSWNNOoeuZQy2wSm0O0FRXTlHG8tP8OADJYSV_rj00oTELGpOPYoWRsc8ajLEOi_Aq59hgWsG71XY-f8RIUN0AhIwqVsizs7O7Hka8Tgx19B9RJZawf9EnbLWkw4uqKK_cBrnYe0WxBoy2HKrj5cqyNNesHfY8nI-lExIuevTmuiMlYfIOHNpy9QOPDUntXLZiF9vnqGPgDIUt5Gh5O-2aWQlZEHQscc"/>
+<div class="absolute bottom-4 left-4 right-4 bg-surface-container-lowest/90 backdrop-blur-sm p-4 rounded-lg flex items-center justify-between shadow-colored">
+<span class="font-label-md text-label-md text-primary">Telusuri Jejak Panglima!</span>
+<button class="bouncy bg-secondary-container text-on-secondary-container px-6 py-2 rounded-full font-label-md text-label-md border-b-4 border-tertiary">
+                        Mulai Misi
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-lg bg-surface-container-lowest dark:bg-inverse-surface shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] md:hidden">
+<div class="fixed bottom-0 left-0 w-full h-20 flex justify-around items-center px-4 pb-safe">
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Beranda</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md">Jelajah</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-label-md">Main</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-label-md">Lencana</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md text-label-md">Tanya AI</span>
+</button>
+</div>
+</nav>
+</body></html>

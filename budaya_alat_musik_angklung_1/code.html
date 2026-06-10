@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedia Bloom - Angklung</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed-variant": "#005047",
+                      "secondary": "#944a00",
+                      "on-error-container": "#93000a",
+                      "tertiary": "#944a23",
+                      "secondary-fixed-dim": "#ffb783",
+                      "surface-tint": "#006b5f",
+                      "surface": "#f8f9ff",
+                      "surface-bright": "#f8f9ff",
+                      "on-tertiary-fixed": "#351000",
+                      "on-secondary-fixed": "#301400",
+                      "surface-container-high": "#dce9ff",
+                      "error-container": "#ffdad6",
+                      "inverse-primary": "#3cddc7",
+                      "error": "#ba1a1a",
+                      "primary-fixed": "#62fae3",
+                      "outline-variant": "#bacac5",
+                      "on-tertiary-container": "#7e3913",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-highest": "#d5e3fc",
+                      "surface-container": "#e6eeff",
+                      "on-primary": "#ffffff",
+                      "on-primary-fixed": "#00201c",
+                      "inverse-on-surface": "#eaf1ff",
+                      "on-background": "#0d1c2e",
+                      "primary-fixed-dim": "#3cddc7",
+                      "primary-container": "#2dd4bf",
+                      "outline": "#6b7a76",
+                      "background": "#f8f9ff",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "surface-dim": "#ccdbf3",
+                      "on-primary-container": "#00574d",
+                      "surface-container-low": "#eff4ff",
+                      "inverse-surface": "#233144",
+                      "secondary-fixed": "#ffdcc5",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "on-secondary-fixed-variant": "#713700",
+                      "surface-variant": "#d5e3fc",
+                      "tertiary-container": "#ffaa81",
+                      "on-surface-variant": "#3c4a46",
+                      "secondary-container": "#fd933d",
+                      "primary": "#006b5f",
+                      "on-surface": "#0d1c2e",
+                      "tertiary-fixed": "#ffdbcc",
+                      "on-secondary-container": "#693300"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1200px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-xl": [
+                              "Quicksand"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-md": [
+                              "Quicksand"
+                      ],
+                      "headline-lg-mobile": [
+                              "Quicksand"
+                      ],
+                      "headline-lg": [
+                              "Quicksand"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "34px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .shake-animation {
+            animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 1000px;
+        }
+
+        @keyframes shake {
+            10%, 90% { transform: translate3d(-1px, 0, 0) rotate(-1deg); }
+            20%, 80% { transform: translate3d(2px, 0, 0) rotate(1deg); }
+            30%, 50%, 70% { transform: translate3d(-4px, 0, 0) rotate(-3deg); }
+            40%, 60% { transform: translate3d(4px, 0, 0) rotate(3deg); }
+        }
+        
+        .bouncy-hover:hover {
+            transform: translateY(-2px);
+            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .bouncy-active:active {
+            transform: translateY(2px);
+        }
+
+        .squishy-shadow {
+            box-shadow: 0 8px 16px -4px rgba(45, 212, 191, 0.2);
+        }
+        
+        .squishy-shadow:active {
+            box-shadow: 0 2px 4px -1px rgba(45, 212, 191, 0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-dim docked full-width top-0 shadow-sm flex justify-between items-center w-full px-margin-mobile h-16 sticky z-40">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-surface-container-high">
+<img alt="Nara the Explorer Mascot" class="w-full h-full object-cover" data-alt="A stylized 3D illustration of a friendly explorer mascot named Nara. The mascot is a cute, animated character wearing a small scout hat and a bright teal scarf. The style is soft, round, and tactile, fitting a children's educational app. Lighting is bright, soft, and inviting. The background is a clean, neutral tone to make the character pop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcrXBTNEDsOT36I_4l48b74XS4cRfoDWsNS2GHZbukCPXVyD5C3ALfABeP1bLW6IUI7sDYavTU7iqM9MpnmiNdDQIdZaxiPLrbp-jqRJJtam-Y5CJ-QLK0ef6j9G6Afx7mB3DdXX9QRrtlSWrxaMHOmE7FJ2OtVhiS496wklos5vGxCL7f9v_ANT0Xu4V8bKCocD0ybrZTpKxM1AjBiK1jSREk6MzSu4vf4IjCvLDQsN9RyV_aRsRuI3JrTdCI0p_rUahxbKsg8aI"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed md:font-headline-lg md:text-headline-lg font-bold tracking-tight">Pedia Bloom</h1>
+</div>
+<button aria-label="Settings" class="w-10 h-10 rounded-full flex items-center justify-center text-primary dark:text-primary-fixed hover:bg-surface-variant transition-colors hover:scale-105 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 flex flex-col gap-8">
+<!-- Hero Section -->
+<section class="relative rounded-xl overflow-hidden shadow-lg squishy-shadow border-2 border-surface-container-high bg-white">
+<div class="h-64 md:h-96 w-full relative">
+<img alt="Angklung Instrument" class="w-full h-full object-cover" data-alt="A beautifully crafted traditional Indonesian Angklung musical instrument made of pale yellow bamboo tubes. The instrument is suspended in a wooden frame. It is photographed in bright, soft, natural daylight against a slightly blurred background of lush green tropical foliage, giving it an organic, vibrant feel. The image is high resolution with a shallow depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQptUgudhoKDQbgmAJyQu2Sz2aSpRN8_5bA9hp7fEC-Yif8EmV7s-bf3ggpqk6u-k3_iq8m9jjmiwEIelImSoTdygS7cLEoDRcZveHo5uEHY7XBTAuUkwPsrY6q_kaxGqzcunSPZQ9ft-QgA-v6hDnBupotDFRXnKufyEVUTK6Hq3j15N4cB3CLjuYdlyF98eiTHe4FxDj0W-7vq2beYa7-s6Gwn80M0uL2ilDLLqQGBsQSTPTitEG9fLJfI9P80sNWDywligNQkM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent flex flex-col justify-end p-6 md:p-10">
+<div class="flex gap-2 mb-3">
+<span class="bg-primary text-on-primary font-label-md text-label-md px-3 py-1 rounded-full text-xs shadow-sm">Alat Musik</span>
+<span class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-3 py-1 rounded-full text-xs shadow-sm">Jawa Barat</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-white mb-2">Angklung</h2>
+<p class="font-body-md text-body-md text-white/90 max-w-2xl">Alat musik tradisional yang terbuat dari bambu dan dimainkan dengan cara digoyangkan.</p>
+</div>
+</div>
+</section>
+<!-- Content Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Main Content -->
+<div class="md:col-span-2 flex flex-col gap-6">
+<!-- Info Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 md:p-8 border-2 border-surface-variant shadow-sm relative overflow-hidden">
+<div class="absolute -top-4 -right-4 w-24 h-24 bg-primary-container rounded-full opacity-20 blur-xl"></div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: 'FILL' 1;">music_note</span>
+                        Suara dari Bambu
+                    </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-4">
+                        Angklung adalah alat musik multitonal (bernada ganda) yang secara tradisional berkembang dalam masyarakat Sunda di Pulau Jawa bagian barat. Alat musik ini dibuat dari pipa-pipa bambu, yang dipotong ujungnya, menyerupai pipa-pipa dalam suatu organ, dan diikat bersama dalam suatu bingkai.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        Cara memainkannya sangat unik, yaitu dengan digoyangkan. Benturan tabung-tabung bambu tersebut menghasilkan nada yang indah. Setiap satu angklung biasanya hanya menghasilkan satu nada, sehingga diperlukan sekelompok orang untuk memainkan sebuah lagu utuh, menciptakan harmoni yang indah dan mengajarkan kerja sama.
+                    </p>
+<div class="bg-surface-container-low p-4 rounded-lg flex items-start gap-4 border border-surface-variant">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex-shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">award_star</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-bold mb-1">Warisan Dunia UNESCO</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+                                Sejak November 2010, Angklung telah diakui oleh UNESCO sebagai Karya Agung Warisan Budaya Lisan dan Nonbendawi Manusia (Masterpiece of the Oral and Intangible Heritage of Humanity).
+                            </p>
+</div>
+</div>
+</div>
+<!-- Interactive Section -->
+<div class="bg-primary-container rounded-xl p-6 md:p-8 border-2 border-primary-fixed shadow-md relative text-center">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary-container mb-2">Coba Goyangkan!</h3>
+<p class="font-body-md text-body-md text-on-primary-container/80 mb-6">Klik atau sentuh angklung di bawah untuk mendengar suaranya.</p>
+<button class="mx-auto block w-32 h-40 bg-surface-container-lowest rounded-lg border-4 border-secondary shadow-lg relative overflow-hidden transition-transform focus:outline-none focus:ring-4 focus:ring-primary-fixed" id="shake-button">
+<img alt="Icon Angklung" class="w-full h-full object-cover opacity-80" data-alt="A close-up icon-style illustration of a single Indonesian Angklung instrument made of bright yellow bamboo. The image is isolated on a soft teal background. The lighting is soft and playful, giving the bamboo a smooth, almost tactile quality suitable for a children's app interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuH1xzdCky8boLQGTlRmfdzwbOPq2o1HAgGlxOkgzsoVhpWMu2L-bzNM4rKi24S-Krxs5ha6d0p7kc-wW9eMFdzshC3ou4gk5a9QN2bMrgsZGNwJzuXddtOoHlKKKrjBueVRR8Xh8L1JdMayf52XiAqhZ_v5JlAT47HsxvRdMRQzPc2KoT2RiCzoGVa4nEcLMmJDediB_e1LXSidiWBYf7EQPzpjIuRvwv4UViRd_P9VoJK4SXMeY7ffxkDX5UE5wSrHVd_qQiLog"/>
+<div class="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/10 transition-colors">
+<span class="material-symbols-outlined text-white text-4xl shadow-sm" style="font-variation-settings: 'FILL' 1;">touch_app</span>
+</div>
+</button>
+<div class="mt-4 font-label-md text-label-md text-primary opacity-0 transition-opacity" id="sound-indicator">
+                        🎵 Klotak klotak klotak! 🎵
+                    </div>
+</div>
+</div>
+<!-- Sidebar -->
+<div class="flex flex-col gap-6">
+<!-- Mini Quiz -->
+<div class="bg-surface-container-high rounded-xl p-6 border-2 border-surface-variant shadow-sm">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-4 flex items-center gap-2 text-xl">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">quiz</span>
+                        Kuis Kilat
+                    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 font-bold">Terbuat dari apakah Angklung?</p>
+<div class="flex flex-col gap-3">
+<button class="quiz-btn w-full text-left px-4 py-3 bg-surface-container-lowest border-2 border-outline-variant rounded-lg font-body-md text-body-md hover:bg-surface-variant transition-colors hover:border-primary">Kayu Jati</button>
+<button class="quiz-btn w-full text-left px-4 py-3 bg-surface-container-lowest border-2 border-outline-variant rounded-lg font-body-md text-body-md hover:bg-surface-variant transition-colors hover:border-primary" data-correct="true">Bambu</button>
+<button class="quiz-btn w-full text-left px-4 py-3 bg-surface-container-lowest border-2 border-outline-variant rounded-lg font-body-md text-body-md hover:bg-surface-variant transition-colors hover:border-primary">Logam</button>
+</div>
+<div class="mt-4 hidden p-3 rounded-lg font-label-md text-label-md text-center" id="quiz-feedback"></div>
+</div>
+<!-- Related -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-variant shadow-sm">
+<h3 class="font-label-md text-label-md text-on-surface mb-4 uppercase tracking-wider text-sm text-outline">Pelajari Juga</h3>
+<ul class="flex flex-col gap-4">
+<li class="flex items-center gap-3 group cursor-pointer">
+<div class="w-12 h-12 rounded-lg bg-surface-container overflow-hidden">
+<img alt="Gamelan" class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="A close up shot of a traditional Indonesian Gamelan instrument made of polished bronze with intricate wooden carvings on the base. The setting is warm and inviting, highlighting the cultural richness of the instrument. Soft studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP2uI6yKo4SpMkFI3Xem1KUEY4JtiFbRV9Rdbkg8ZT48KcOIByKrSepShuR_Ms1a9OefN5FP0GVLy7SYCbVFUInYzMYy6hkWYygFfkhjKt0gz4IPmAsJ5jFgYM0MgwKnG2KZr7MViSi601LdnADkOvXFYNwA-dwRfTlaBnJEqHr6R8SNPLAxdqsLTC9JCTjUmEPsk10DvAUp5VkKs2GBlhWNC4yFFhwYJ-PBveV7t1ssxwfGE34GyLL4442h3Vh4wtBcTogdfPNpI"/>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">Gamelan</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs">Jawa &amp; Bali</p>
+</div>
+</li>
+<li class="flex items-center gap-3 group cursor-pointer">
+<div class="w-12 h-12 rounded-lg bg-surface-container overflow-hidden">
+<img alt="Sasando" class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="A beautiful Sasando, a traditional string instrument from Rote Island, Indonesia. It is made from a bamboo tube surrounded by a fan-like structure of dried lontar palm leaves. The lighting is soft and natural, emphasizing the texture of the woven leaves." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDetRWr3GXo07KVlVOrzoWM3Y8_u9KodEfJBFoP9h6ZOvbS4z14Uj8_A1B7qDQAuaqN8nxDrCmM_0lHlGNx3zEvFjjO2DdECpV495NQgk3W2PcprbqOueq_nAe54yaRux8v02WG08AvOJuHYqTs3VGXV2YShWmxdkNKC-3i3DbCvXUxWA0hunSZgTfc3Thbgh4tlnfJK0rkLogewpOnJjLXFXjtkIOE5QB4_Pm_tBRSQgZiHZYbRTeMNkvEObt7KbDZbknhNbe9Hxs"/>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">Sasando</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs">Nusa Tenggara Timur</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-surface-container dark:bg-surface-container-high fixed bottom-0 w-full z-50 rounded-t-xl shadow-[0_-4px_10px_rgba(0,107,95,0.1)] flex justify-around items-center px-2 pb-4 pt-2">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant p-2 hover:bg-surface-variant dark:hover:bg-surface-bright rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-label-md text-label-md text-xs mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-4 py-2 translate-y-0.5 shadow-sm scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md text-xs mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant p-2 hover:bg-surface-variant dark:hover:bg-surface-bright rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">sports_esports</span>
+<span class="font-label-md text-label-md text-xs mt-1">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant p-2 hover:bg-surface-variant dark:hover:bg-surface-bright rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">military_tech</span>
+<span class="font-label-md text-label-md text-xs mt-1">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant p-2 hover:bg-surface-variant dark:hover:bg-surface-bright rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">psychology</span>
+<span class="font-label-md text-label-md text-xs mt-1">Tanya AI</span>
+</a>
+</nav>
+<script>
+        // Interactive Angklung Shake
+        const shakeBtn = document.getElementById('shake-button');
+        const soundIndicator = document.getElementById('sound-indicator');
+        
+        shakeBtn.addEventListener('click', () => {
+            // Add animation class
+            shakeBtn.classList.add('shake-animation');
+            
+            // Show sound indicator
+            soundIndicator.classList.remove('opacity-0');
+            soundIndicator.classList.add('opacity-100');
+            
+            // Remove classes after animation completes
+            setTimeout(() => {
+                shakeBtn.classList.remove('shake-animation');
+                setTimeout(() => {
+                    soundIndicator.classList.remove('opacity-100');
+                    soundIndicator.classList.add('opacity-0');
+                }, 1000); // Keep text visible a bit longer
+            }, 500);
+        });
+
+        // Quiz Logic
+        const quizBtns = document.querySelectorAll('.quiz-btn');
+        const quizFeedback = document.getElementById('quiz-feedback');
+
+        quizBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Reset styles
+                quizBtns.forEach(b => {
+                    b.classList.remove('bg-primary-container', 'border-primary', 'bg-error-container', 'border-error', 'text-on-primary-container', 'text-on-error-container');
+                    b.classList.add('bg-surface-container-lowest', 'border-outline-variant');
+                });
+
+                quizFeedback.classList.remove('hidden', 'bg-primary-container', 'text-on-primary-container', 'bg-error-container', 'text-on-error-container');
+
+                if (this.dataset.correct === "true") {
+                    this.classList.remove('bg-surface-container-lowest', 'border-outline-variant');
+                    this.classList.add('bg-primary-container', 'border-primary', 'text-on-primary-container');
+                    quizFeedback.textContent = "Benar sekali! Angklung terbuat dari bambu.";
+                    quizFeedback.classList.add('bg-primary-container', 'text-on-primary-container');
+                } else {
+                    this.classList.remove('bg-surface-container-lowest', 'border-outline-variant');
+                    this.classList.add('bg-error-container', 'border-error', 'text-on-error-container');
+                    quizFeedback.textContent = "Oops, kurang tepat. Coba lagi ya!";
+                    quizFeedback.classList.add('bg-error-container', 'text-on-error-container');
+                }
+            });
+        });
+    </script>
+</body></html>

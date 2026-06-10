@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tari Saman - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#ffdcc5",
+                    "primary-fixed": "#62fae3",
+                    "on-primary-fixed": "#00201c",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#d5e3fc",
+                    "surface-container-high": "#dce9ff",
+                    "tertiary": "#944a23",
+                    "surface-dim": "#ccdbf3",
+                    "inverse-on-surface": "#eaf1ff",
+                    "secondary-container": "#fd933d",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f8f9ff",
+                    "primary-container": "#2dd4bf",
+                    "outline-variant": "#bacac5",
+                    "on-secondary-fixed": "#301400",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#76330d",
+                    "surface-container-highest": "#d5e3fc",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#351000",
+                    "on-secondary-fixed-variant": "#713700",
+                    "on-primary-container": "#00574d",
+                    "background": "#f8f9ff",
+                    "on-tertiary-container": "#7e3913",
+                    "surface-container-low": "#eff4ff",
+                    "on-tertiary": "#ffffff",
+                    "primary": "#006b5f",
+                    "tertiary-container": "#ffaa81",
+                    "on-background": "#0d1c2e",
+                    "on-surface": "#0d1c2e",
+                    "on-error-container": "#93000a",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#e6eeff",
+                    "secondary": "#944a00",
+                    "surface": "#f8f9ff",
+                    "on-primary-fixed-variant": "#005047",
+                    "tertiary-fixed-dim": "#ffb693",
+                    "on-surface-variant": "#3c4a46",
+                    "inverse-surface": "#233144",
+                    "error-container": "#ffdad6",
+                    "outline": "#6b7a76",
+                    "inverse-primary": "#3cddc7",
+                    "tertiary-fixed": "#ffdbcc",
+                    "primary-fixed-dim": "#3cddc7",
+                    "on-secondary-container": "#693300",
+                    "surface-tint": "#006b5f",
+                    "secondary-fixed-dim": "#ffb783"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1200px",
+                    "margin-mobile": "20px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "headline-xl": [
+                            "Quicksand"
+                    ],
+                    "headline-lg-mobile": [
+                            "Quicksand"
+                    ],
+                    "headline-lg": [
+                            "Quicksand"
+                    ],
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-md": [
+                            "Quicksand"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {
+                    "headline-xl": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "34px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "20px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "500"
+                            }
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        
+        .bouncy-button {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+        }
+        .bouncy-button:active {
+            transform: translateY(4px);
+            box-shadow: 0 0px 0px 0 theme('colors.secondary') !important;
+        }
+        
+        .soft-shadow-primary {
+            box-shadow: 0 10px 25px -5px rgba(45, 212, 191, 0.4), 0 8px 10px -6px rgba(45, 212, 191, 0.1);
+        }
+        
+        .soft-shadow-secondary {
+            box-shadow: 0 10px 25px -5px rgba(253, 147, 61, 0.4), 0 8px 10px -6px rgba(253, 147, 61, 0.1);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 2px solid theme('colors.surface-container');
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-safe antialiased">
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface-bright dark:bg-surface-dim shadow-sm flex justify-between items-center px-margin-mobile py-unit w-full">
+<div class="flex items-center gap-3">
+<button class="p-2 text-primary hover:opacity-80 transition-transform active:scale-95 duration-200 rounded-full bg-surface-container-low">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="face">face</span>
+</div>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary dark:text-primary-fixed">Pedia Bloom</h1>
+<button class="p-2 text-primary dark:text-primary-fixed hover:opacity-80 transition-transform active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-[88px] pb-[100px] max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero Section -->
+<section class="relative w-full rounded-3xl overflow-hidden mb-8 h-[530px] min-h-[400px] flex flex-col justify-end p-6 md:p-10">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Tari Saman" class="w-full h-full object-cover" data-alt="A highly detailed, vibrant photograph of traditional Acehnese dancers performing the Saman dance. They are wearing colorful, intricate traditional costumes with striking reds, golds, and blacks. The dancers are seated in a tight row, their hands captured mid-motion in perfect synchronization. The lighting is bright and warm, highlighting the rich textures of their clothing and creating a celebratory, cultural atmosphere in a light-mode friendly environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXJiNw8c1lH1V42B9GIVi6FjPt5ywKz8abHvhEG88IUhedQ0q7PHPDgGMgYYmXv2fiAuTWUgnjaWaVM97y7DZod1UqeuCC0irRiIAmToTjEaPd2E78FYWO4wmhi_8Iw8lmZdSedaem7iC1J9Is4g4HUCYNkB0MlU_UuxWPx850jthvdlUT9Dkf9ePh5TrsQQO3lvhpZaAjg05yjVY_ePE2Tqnt0BuVB9lVtGHwgHWSgKpIX-Dae8pl1y5MShsOhfDAMPIcz7heJrA"/>
+<!-- Gradient overlay for text readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-on-background/30 to-transparent"></div>
+</div>
+<!-- Content -->
+<div class="relative z-10 text-on-primary">
+<div class="flex gap-2 mb-4 flex-wrap">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] mr-1" data-icon="palette">palette</span>
+                        Budaya
+                    </span>
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] mr-1" data-icon="location_on">location_on</span>
+                        Aceh
+                    </span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-white mb-2">Tari Saman</h2>
+<p class="font-body-lg text-body-lg text-white/90 max-w-2xl">Tarian Seribu Tangan yang memukau dunia dengan kecepatan dan kekompakannya.</p>
+</div>
+</section>
+<!-- Bento Grid Content -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-12">
+<!-- Main Info Card -->
+<div class="md:col-span-8 glass-card rounded-2xl p-6 md:p-8 relative overflow-hidden soft-shadow-primary">
+<!-- Decorative Icon -->
+<div class="absolute -top-6 -right-6 w-32 h-32 bg-primary-container/20 rounded-full flex items-center justify-center rotate-12">
+<span class="material-symbols-outlined text-6xl text-primary opacity-50" data-icon="diversity_3">diversity_3</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4">Harmoni dalam Gerak</h3>
+<p class="font-body-md text-body-md text-on-surface mb-6">
+                    Tari Saman adalah salah satu media untuk menyampaikan pesan atau dakwah. Tarian ini mencerminkan pendidikan, keagamaan, sopan santun, kepahlawanan, kekompakan, dan kebersamaan. Menariknya, tarian ini tidak menggunakan instrumen musik, melainkan menggunakan suara dari para penari dan tepukan tangan mereka.
+                </p>
+<div class="flex items-center gap-4 bg-surface-container-low p-4 rounded-xl border border-surface-container-high">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="public">public</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Warisan UNESCO</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Diakui sebagai Warisan Budaya Takbenda Manusia sejak 2011.</p>
+</div>
+</div>
+</div>
+<!-- Side Card: Irama & Kerjasama -->
+<div class="md:col-span-4 glass-card rounded-2xl p-6 md:p-8 bg-gradient-to-br from-surface-bright to-surface-container-lowest soft-shadow-secondary flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-full bg-secondary-container flex items-center justify-center mb-4 text-on-secondary-container">
+<span class="material-symbols-outlined text-3xl" data-icon="groups">groups</span>
+</div>
+<h3 class="font-headline-lg-mobile text-[24px] font-bold text-on-surface mb-2">Kerja Sama Tim</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Saman sangat membutuhkan konsentrasi dan kekompakan tinggi. Satu penari salah gerak, seluruh ritme bisa terganggu!
+                    </p>
+</div>
+</div>
+</section>
+<!-- Interactive Section -->
+<section class="bg-surface-container-low rounded-3xl p-6 md:p-10 mb-12 text-center border-4 border-surface-container relative overflow-hidden">
+<!-- Decorative elements -->
+<div class="absolute top-4 left-4 text-tertiary-container/30">
+<span class="material-symbols-outlined text-5xl" data-icon="music_note">music_note</span>
+</div>
+<div class="absolute bottom-4 right-4 text-primary-container/30">
+<span class="material-symbols-outlined text-5xl" data-icon="hand_gesture">hand_gesture</span>
+</div>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-2">Ikuti Irama!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-xl mx-auto">
+                Coba ikuti ritme tepukan Tari Saman. Tekan tombol saat lingkaran menyentuh garis!
+            </p>
+<!-- Mini Game Placeholder -->
+<div class="w-full max-w-md mx-auto aspect-video bg-inverse-surface rounded-2xl shadow-inner relative flex items-center justify-center overflow-hidden mb-8 border-4 border-outline-variant">
+<!-- Simulate game track -->
+<div class="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiLz48L3N2Zz4=')]"></div>
+<div class="w-full h-1 bg-primary/50 absolute top-1/2 -translate-y-1/2 flex justify-between px-8">
+<div class="w-8 h-8 rounded-full border-4 border-primary-container bg-transparent -translate-y-1/2"></div>
+<div class="w-8 h-8 rounded-full border-4 border-secondary-container bg-transparent -translate-y-1/2"></div>
+<div class="w-8 h-8 rounded-full border-4 border-primary-container bg-transparent -translate-y-1/2"></div>
+</div>
+<!-- Moving dot simulation -->
+<div class="w-6 h-6 rounded-full bg-secondary-fixed shadow-[0_0_15px_rgba(255,220,197,0.8)] absolute left-10 top-1/2 -translate-y-1/2 animate-[ping_2s_infinite]"></div>
+<div class="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm rounded-xl">
+<button class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-6 py-3 rounded-xl bouncy-button flex items-center gap-2 border-b-4 border-secondary">
+<span class="material-symbols-outlined" data-icon="play_arrow">play_arrow</span>
+                          Mulai Main
+                      </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-lg bg-surface-container-lowest dark:bg-inverse-surface shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] h-20 flex justify-around items-center px-4 pb-safe">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200 rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-md text-[12px] mt-1">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="explore" data-weight="fill" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-[12px] mt-1">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200 rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="sports_esports">sports_esports</span>
+<span class="font-label-md text-[12px] mt-1">Main</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200 rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="military_tech">military_tech</span>
+<span class="font-label-md text-[12px] mt-1">Lencana</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200 rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="smart_toy">smart_toy</span>
+<span class="font-label-md text-[12px] mt-1">Tanya AI</span>
+</a>
+</nav>
+</body></html>

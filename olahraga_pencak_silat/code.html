@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedia Bloom - Pencak Silat</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#ffdbcc",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-primary-container": "#00574d",
+                        "background": "#f8f9ff",
+                        "tertiary-container": "#ffaa81",
+                        "on-secondary-fixed-variant": "#713700",
+                        "inverse-surface": "#233144",
+                        "on-tertiary-container": "#7e3913",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#00201c",
+                        "inverse-primary": "#3cddc7",
+                        "surface-container": "#e6eeff",
+                        "primary-container": "#2dd4bf",
+                        "primary": "#006b5f",
+                        "on-surface": "#0d1c2e",
+                        "surface-container-highest": "#d5e3fc",
+                        "surface-variant": "#d5e3fc",
+                        "on-secondary-fixed": "#301400",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "tertiary": "#944a23",
+                        "on-surface-variant": "#3c4a46",
+                        "on-tertiary-fixed": "#351000",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "primary-fixed": "#62fae3",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#693300",
+                        "on-primary-fixed-variant": "#005047",
+                        "surface-bright": "#f8f9ff",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#ccdbf3",
+                        "secondary": "#944a00",
+                        "surface-container-low": "#eff4ff",
+                        "primary-fixed-dim": "#3cddc7",
+                        "secondary-container": "#fd933d",
+                        "outline": "#6b7a76",
+                        "on-background": "#0d1c2e",
+                        "on-error": "#ffffff",
+                        "surface": "#f8f9ff",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#006b5f",
+                        "secondary-fixed": "#ffdcc5",
+                        "outline-variant": "#bacac5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "container-max": "1200px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .squishy-button {
+            transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-bottom-width: 4px;
+        }
+        .squishy-button:active {
+            transform: translateY(2px) scale(0.95);
+            border-bottom-width: 2px;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 0 0 rgba(0, 107, 95, 0.1);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top App Bar -->
+<header class="bg-surface dark:bg-surface-dim shadow-sm flex justify-between items-center w-full px-margin-mobile py-2 fixed top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden ring-2 ring-primary">
+<img alt="Nara" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo9YM8qqupM9nWqUMdAbPdjPhbP_8PBWEEdxT7aHeeJdMgPai1i3s-lbXo8bLqhBFnqTp0sKqvQBxB0MMKT2_Vl4-_Q_aEhewPfAGU2RXyBpbZUpfprJez73Nuvp1L4aYUQVdUHvMPNc27OLtr4nPy5jnerpxVYwwTikWb5buxcVf_ueblc7iSwYQ8SOvAvtV98SGA1n-5z5yz1x_maTb1wkUkFIYPUFE1_2-eWOPMD8MOvsne5nr5vdbEFqSgUJPH-MjPFQg2sPU"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary dark:text-primary-fixed">Pedia Bloom</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors active:scale-95">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed" data-icon="settings">settings</span>
+</button>
+</header>
+<main class="pt-16 pb-28 max-w-container-max mx-auto overflow-x-hidden">
+<!-- Hero Section -->
+<section class="relative px-margin-mobile pt-6 mb-12">
+<div class="relative rounded-lg overflow-hidden card-shadow bg-surface-container-lowest group">
+<img alt="Pencak Silat Hero" class="w-full aspect-[4/3] md:aspect-[21/9] object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpcWMh7i5SBgsNn4MuQjaEI_9ZcJpeayM80jUSDICOr4cFiAH91LtwzH23dUde8pGlPYofAdZPPARCMR3Uwui8Wy2K2Dxt1MMBV4n3yeIRWDC6CnnMUoBJK9Z6Fnwm3O08uCbhhZAHWeJnPEdcrpSvdFFzID4pha_gRPsMiXd9JGrovnGAVqyWxwuAeZgXTRtqxEveDzHakWDMh0Y44QQGlCXNfykKPYRsO9P02-RooOCCsofqRbq2Jblp9jdrP-CPP01rasUSzfM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-4 py-2 rounded-full shadow-lg">Olahraga &amp; Kesehatan</span>
+</div>
+<div class="absolute bottom-6 left-6 right-6 text-white">
+<h2 class="font-headline-xl text-headline-xl leading-tight mb-2 drop-shadow-md">Pencak Silat: Beladiri Asli Indonesia</h2>
+<p class="font-body-lg text-body-lg text-white/90 max-w-2xl drop-shadow-sm">Halo Pendekar Cilik! Tahukah kamu? Pencak Silat bukan hanya sekadar bela diri, tapi warisan indah dari leluhur kita yang menggabungkan gerak dan jiwa.</p>
+</div>
+</div>
+</section>
+<!-- Bento Grid Sections -->
+<div class="px-margin-mobile grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Apa Itu Section -->
+<section class="md:col-span-7 bg-surface-container-low p-8 rounded-lg relative overflow-hidden border border-outline-variant/30">
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-4">
+<span class="p-3 bg-primary-container text-on-primary-container rounded-2xl material-symbols-outlined" data-icon="help_outline">help_outline</span>
+<h3 class="font-headline-lg text-headline-lg text-primary">Apa Itu Pencak Silat?</h3>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">Pencak Silat adalah seni bela diri tradisional asli dari Kepulauan Nusantara. Ini adalah cara kita menjaga diri sambil tetap menghormati sesama. Di sini, gerakan yang lincah bertemu dengan ketenangan hati!</p>
+</div>
+<div class="absolute -right-8 -bottom-8 opacity-10">
+<span class="material-symbols-outlined text-[160px]" data-icon="sports_martial_arts">sports_martial_arts</span>
+</div>
+</section>
+<!-- 4 Rahasia (Aspects) -->
+<section class="md:col-span-5 bg-white p-6 rounded-lg border border-outline-variant/20 shadow-sm">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary mb-6 text-center">4 Rahasia Silat</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col items-center p-4 bg-tertiary-fixed rounded-xl hover:scale-105 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-2" data-icon="self_improvement">self_improvement</span>
+<span class="font-label-md text-label-md text-on-tertiary-fixed text-center">Mental Spiritual</span>
+</div>
+<div class="flex flex-col items-center p-4 bg-primary-fixed rounded-xl hover:scale-105 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-primary text-4xl mb-2" data-icon="palette">palette</span>
+<span class="font-label-md text-label-md text-on-primary-fixed text-center">Seni Gerak</span>
+</div>
+<div class="flex flex-col items-center p-4 bg-secondary-fixed rounded-xl hover:scale-105 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-secondary text-4xl mb-2" data-icon="shield">shield</span>
+<span class="font-label-md text-label-md text-on-secondary-fixed text-center">Beladiri</span>
+</div>
+<div class="flex flex-col items-center p-4 bg-surface-container-highest rounded-xl hover:scale-105 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-on-surface text-4xl mb-2" data-icon="fitness_center">fitness_center</span>
+<span class="font-label-md text-label-md text-on-surface-variant text-center">Olahraga</span>
+</div>
+</div>
+</section>
+<!-- UNESCO Recognition -->
+<section class="md:col-span-12 bg-primary text-on-primary p-10 rounded-lg flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
+<div class="md:w-2/3">
+<div class="inline-block px-4 py-1 bg-white/20 rounded-full font-label-md mb-4 uppercase tracking-wider">Warisan Dunia</div>
+<h3 class="font-headline-xl text-headline-xl mb-4">Kebanggaan Kita: Warisan UNESCO</h3>
+<p class="font-body-lg text-body-lg opacity-90">Pada tahun 2019, Pencak Silat resmi diakui sebagai **Warisan Budaya Takbenda Dunia** oleh UNESCO. Ini tandanya, seluruh dunia kagum dengan keindahan budaya kita!</p>
+</div>
+<div class="md:w-1/3 flex justify-center">
+<div class="w-48 h-48 bg-white/10 rounded-full flex items-center justify-center border-4 border-white/20 animate-pulse">
+<span class="material-symbols-outlined text-[100px]" data-icon="public">public</span>
+</div>
+</div>
+</section>
+<!-- Ragam Jurus & Indonesia Juara -->
+<section class="md:col-span-6 bg-surface-container-high p-8 rounded-lg">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="map">map</span> Ragam Jurus Nusantara
+                </h3>
+<ul class="space-y-4">
+<li class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border-l-4 border-secondary">
+<div class="font-bold text-secondary text-xl">01</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Minang (Silek)</p>
+<p class="text-on-surface-variant text-sm">Gerakannya unik, terinspirasi dari alam pegunungan.</p>
+</div>
+</li>
+<li class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border-l-4 border-primary">
+<div class="font-bold text-primary text-xl">02</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Betawi (Silat Cingkrik)</p>
+<p class="text-on-surface-variant text-sm">Lincah dan gesit, khas dari tanah Jakarta.</p>
+</div>
+</li>
+<li class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border-l-4 border-tertiary">
+<div class="font-bold text-tertiary text-xl">03</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Sunda (Cimande)</p>
+<p class="text-on-surface-variant text-sm">Terkenal dengan pertahanan yang kuat dan teknik tangan.</p>
+</div>
+</li>
+</ul>
+</section>
+<section class="md:col-span-6 bg-secondary-container p-8 rounded-lg text-on-secondary-container">
+<h3 class="font-headline-lg text-headline-lg mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="emoji_events">emoji_events</span> Indonesia Juara Dunia!
+                </h3>
+<div class="space-y-6">
+<div class="bg-white/30 p-6 rounded-2xl backdrop-blur-sm">
+<p class="font-body-lg text-body-lg mb-2">Para atlet Indonesia selalu membawa pulang medali emas di **SEA Games** dan **Asian Games** lho!</p>
+<div class="flex gap-2">
+<span class="bg-white/50 px-3 py-1 rounded-full text-xs font-bold">#JuaraUmum</span>
+<span class="bg-white/50 px-3 py-1 rounded-full text-xs font-bold">#SilatHebat</span>
+</div>
+</div>
+<div class="flex justify-center">
+<img alt="Trophy" class="w-32 h-32 animate-bounce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvsxX7AU6L3mTSsKG280xVN5JZRH22JddARy2Q0irf1lKu6tdAx5DVLrJ_Wvz9DqZfvXxUwd7uvqBNzfjCfF_1rQcBUzNkvwOgsmNlJkk1BrJNwLGvtc7SZxgZ1S5EyVWxKtcb5n0fTFi6sLvmBW3-je00nZn1E6A5D40gllstJEWAIgSyl8zS8jBo3TT_SNQZQSFaehbsYvbZ3DeXO3T15druaD5_23NNlqqv34JI6K8VNHePauDfcLR2WJpooZRloXN9ndjPaPg"/>
+</div>
+</div>
+</section>
+<!-- 5 Fakta Seru Carousel -->
+<section class="md:col-span-12 py-8">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-6 px-margin-mobile">5 Fakta Seru! 🌟</h3>
+<div class="flex overflow-x-auto hide-scrollbar gap-6 px-margin-mobile snap-x">
+<div class="min-w-[280px] snap-center bg-tertiary-container text-on-tertiary-container p-6 rounded-lg card-shadow">
+<span class="text-4xl mb-4 block">🤺</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile mb-2">Asal Kata</h4>
+<p>Pencak artinya gerak dasar, Silat artinya bela diri. Digabung jadi keren!</p>
+</div>
+<div class="min-w-[280px] snap-center bg-primary-container text-on-primary-container p-6 rounded-lg card-shadow">
+<span class="text-4xl mb-4 block">🗡️</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile mb-2">Senjata Unik</h4>
+<p>Ada Keris, Golok, hingga Sabit. Tapi ingat, hanya untuk seni ya!</p>
+</div>
+<div class="min-w-[280px] snap-center bg-secondary-fixed text-on-secondary-fixed p-6 rounded-lg card-shadow">
+<span class="text-4xl mb-4 block">🌍</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile mb-2">Mendunia</h4>
+<p>Dipelajari di lebih dari 40 negara di seluruh dunia. Hebat kan?</p>
+</div>
+<div class="min-w-[280px] snap-center bg-surface-container-highest text-on-surface p-6 rounded-lg card-shadow">
+<span class="text-4xl mb-4 block">🎥</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile mb-2">Masuk Film</h4>
+<p>Pencak Silat sering muncul di film aksi Hollywood lho!</p>
+</div>
+<div class="min-w-[280px] snap-center bg-tertiary-fixed text-on-tertiary-fixed p-6 rounded-lg card-shadow">
+<span class="text-4xl mb-4 block">🐅</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile mb-2">Gaya Hewan</h4>
+<p>Ada jurus Harimau, Monyet, hingga Elang. Seperti superhero!</p>
+</div>
+</div>
+</section>
+<!-- Quiz Section -->
+<section class="md:col-span-12 bg-white border-2 border-primary-container p-8 rounded-lg shadow-xl relative">
+<div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-primary text-white px-6 py-2 rounded-full font-bold shadow-lg">KUIS PENDEKAR CILIK</div>
+<div class="text-center mt-4">
+<p class="font-headline-lg text-headline-lg text-on-surface mb-8">Tahun berapakah Pencak Silat diakui oleh UNESCO?</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<button class="squishy-button bg-white border-2 border-outline-variant hover:border-primary p-4 rounded-xl font-bold text-on-surface transition-all">2015</button>
+<button class="squishy-button bg-white border-2 border-outline-variant hover:border-primary p-4 rounded-xl font-bold text-on-surface transition-all">2017</button>
+<button class="squishy-button bg-white border-2 border-outline-variant hover:border-primary p-4 rounded-xl font-bold text-on-surface transition-all" onclick="this.classList.add('bg-primary-container', 'border-primary')">2019 ✅</button>
+<button class="squishy-button bg-white border-2 border-outline-variant hover:border-primary p-4 rounded-xl font-bold text-on-surface transition-all">2021</button>
+</div>
+</div>
+</section>
+<!-- Challenge Section -->
+<section class="md:col-span-8 bg-gradient-to-br from-secondary to-secondary-container p-8 rounded-lg text-white">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-4xl" data-icon="star">star</span>
+<h3 class="font-headline-lg text-headline-lg">Tantangan Hari Ini</h3>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="bg-white/20 p-8 rounded-full border-4 border-white/30 animate-pulse">
+<span class="material-symbols-outlined text-8xl" data-icon="accessibility_new">accessibility_new</span>
+</div>
+<div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile mb-2">Ayo Coba Jurus Dasar!</h4>
+<p class="font-body-md text-body-md mb-6 opacity-90">Berdiri tegak, rentangkan tangan ke samping, dan tekuk lututmu sedikit. Kamu sedang mencoba 'Sikap Pasang'! Tahan selama 30 detik ya!</p>
+<button class="squishy-button bg-tertiary text-white px-8 py-3 rounded-full font-bold shadow-xl border-tertiary-container">Selesai Misi!</button>
+</div>
+</div>
+</section>
+<!-- Glossary -->
+<section class="md:col-span-4 bg-surface-container-low p-8 rounded-lg border border-outline-variant/30">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-6">Kamus Kecil 📖</h3>
+<dl class="space-y-4">
+<div>
+<dt class="font-bold text-on-surface">Pencak Silat</dt>
+<dd class="text-on-surface-variant text-sm">Seni bela diri asli Indonesia.</dd>
+</div>
+<div>
+<dt class="font-bold text-on-surface">Jurus</dt>
+<dd class="text-on-surface-variant text-sm">Rangkaian gerakan dasar atau serangan.</dd>
+</div>
+<div>
+<dt class="font-bold text-on-surface">Perguruan</dt>
+<dd class="text-on-surface-variant text-sm">Tempat berkumpul untuk belajar silat.</dd>
+</div>
+<div>
+<dt class="font-bold text-on-surface">Seni Beladiri</dt>
+<dd class="text-on-surface-variant text-sm">Cara menjaga diri dengan gerak indah.</dd>
+</div>
+</dl>
+</section>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pt-2 pb-6 bg-surface-container dark:bg-inverse-surface shadow-[0_-4px_10px_rgba(0,107,95,0.1)] rounded-t-lg">
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-3 py-1 transition-all duration-300 transform -translate-y-1 active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-label-md text-label-md">Jelajah</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="sports_esports">sports_esports</span>
+<span class="font-label-md text-label-md">Game</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="military_tech">military_tech</span>
+<span class="font-label-md text-label-md">Badge</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="smart_toy">smart_toy</span>
+<span class="font-label-md text-label-md">Tanya AI</span>
+</button>
+</nav>
+<script>
+        // Simple micro-interactions
+        document.querySelectorAll('.squishy-button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Flash effect or sound could go here
+            });
+        });
+
+        // Add small bounce to elements on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+<style>
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fade-in-up 0.6s ease-out forwards;
+        }
+    </style>
+</body></html>

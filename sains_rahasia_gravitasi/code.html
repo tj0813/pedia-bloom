@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Misi Sains: Gravitasi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#ffdcc5",
+                      "primary-fixed": "#62fae3",
+                      "on-primary-fixed": "#00201c",
+                      "on-error": "#ffffff",
+                      "surface-variant": "#d5e3fc",
+                      "surface-container-high": "#dce9ff",
+                      "tertiary": "#944a23",
+                      "surface-dim": "#ccdbf3",
+                      "inverse-on-surface": "#eaf1ff",
+                      "secondary-container": "#fd933d",
+                      "error": "#ba1a1a",
+                      "surface-bright": "#f8f9ff",
+                      "primary-container": "#2dd4bf",
+                      "outline-variant": "#bacac5",
+                      "on-secondary-fixed": "#301400",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "surface-container-highest": "#d5e3fc",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-fixed": "#351000",
+                      "on-secondary-fixed-variant": "#713700",
+                      "on-primary-container": "#00574d",
+                      "background": "#f8f9ff",
+                      "on-tertiary-container": "#7e3913",
+                      "surface-container-low": "#eff4ff",
+                      "on-tertiary": "#ffffff",
+                      "primary": "#006b5f",
+                      "tertiary-container": "#ffaa81",
+                      "on-background": "#0d1c2e",
+                      "on-surface": "#0d1c2e",
+                      "on-error-container": "#93000a",
+                      "on-primary": "#ffffff",
+                      "surface-container": "#e6eeff",
+                      "secondary": "#944a00",
+                      "surface": "#f8f9ff",
+                      "on-primary-fixed-variant": "#005047",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "on-surface-variant": "#3c4a46",
+                      "inverse-surface": "#233144",
+                      "error-container": "#ffdad6",
+                      "outline": "#6b7a76",
+                      "inverse-primary": "#3cddc7",
+                      "tertiary-fixed": "#ffdbcc",
+                      "primary-fixed-dim": "#3cddc7",
+                      "on-secondary-container": "#693300",
+                      "surface-tint": "#006b5f",
+                      "secondary-fixed-dim": "#ffb783"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1200px",
+                      "margin-mobile": "20px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-desktop": "64px",
+                      "pb-safe": "env(safe-area-inset-bottom)"
+              },
+              "fontFamily": {
+                      "headline-xl": [
+                              "Quicksand"
+                      ],
+                      "headline-lg-mobile": [
+                              "Quicksand"
+                      ],
+                      "headline-lg": [
+                              "Quicksand"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-md": [
+                              "Quicksand"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "34px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .bouncy-btn {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .bouncy-btn:active {
+            transform: translateY(4px) scale(0.98);
+        }
+        
+        .soft-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 107, 95, 0.1), 0 8px 10px -6px rgba(0, 107, 95, 0.1);
+        }
+        
+        .interactive-shadow {
+            box-shadow: 0 20px 25px -5px rgba(253, 147, 61, 0.2), 0 8px 10px -6px rgba(253, 147, 61, 0.1);
+            transition: box-shadow 0.2s ease, transform 0.2s ease;
+        }
+        
+        .interactive-shadow:active {
+            box-shadow: 0 4px 6px -1px rgba(253, 147, 61, 0.2), 0 2px 4px -2px rgba(253, 147, 61, 0.1);
+        }
+
+        /* Hide scrollbar for clean look */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        
+        body {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        
+        .apple-fall {
+            animation: fall 2s ease-in infinite;
+        }
+        
+        @keyframes fall {
+            0% { transform: translateY(-20px); opacity: 0; }
+            20% { opacity: 1; }
+            80% { transform: translateY(100px); opacity: 1; }
+            100% { transform: translateY(120px); opacity: 0; }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-bright dark:bg-surface-dim shadow-sm flex justify-between items-center px-margin-mobile py-unit w-full h-16">
+<div class="flex items-center gap-3">
+<!-- Back Button -->
+<button aria-label="Kembali" class="p-2 rounded-full hover:bg-surface-container-high transition-colors text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary dark:text-primary-fixed">Pedia Bloom</h1>
+</div>
+<button aria-label="Pengaturan" class="p-2 rounded-full hover:opacity-80 transition-transform active:scale-95 duration-200 text-primary dark:text-primary-fixed">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 px-margin-mobile max-w-container-max mx-auto">
+<!-- Mission Header -->
+<div class="flex flex-col items-center text-center mb-10">
+<div class="bg-primary-container text-on-primary-container font-label-md text-label-md px-4 py-2 rounded-full inline-flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">science</span>
+                Misi Sains
+            </div>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-4">Rahasia Gravitasi</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Kenapa apel jatuh ke bawah dan bukan ke atas? Yuk, kita cari tahu kekuatan ajaib yang menahan kita di Bumi!
+            </p>
+</div>
+<!-- Progress Tracker -->
+<div class="bg-surface-container-low rounded-xl p-4 mb-10 soft-shadow border-2 border-surface-container flex items-center gap-4">
+<div class="h-4 bg-surface-container-highest rounded-full flex-grow relative overflow-hidden">
+<div class="absolute top-0 left-0 h-full bg-primary-container w-1/3 rounded-full transition-all duration-500"></div>
+</div>
+<div class="font-label-md text-label-md text-primary whitespace-nowrap">
+                Langkah 1 dari 3
+            </div>
+</div>
+<!-- Section 1: The Apple Analogy -->
+<section class="bg-surface-container-lowest rounded-xl p-6 md:p-8 mb-8 border-2 border-surface-container soft-shadow relative overflow-hidden">
+<div class="grid md:grid-cols-2 gap-8 items-center relative z-10">
+<div class="space-y-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary-container">Kekuatan Tarik Bumi</h3>
+<p class="font-body-md text-body-md text-on-surface">
+                        Pernahkah kamu melompat dan langsung turun lagi? Itu karena Bumi kita punya kekuatan super yang tak terlihat bernama <strong>Gravitasi</strong>!
+                    </p>
+<p class="font-body-md text-body-md text-on-surface">
+                        Gravitasi bertindak seperti magnet raksasa di tengah Bumi yang menarik segala sesuatu—termasuk kamu, air laut, dan bahkan udara—agar tidak melayang ke luar angkasa.
+                    </p>
+</div>
+<div class="relative h-64 bg-surface-container-low rounded-lg flex items-center justify-center overflow-hidden border-2 border-primary-container/30">
+<!-- Simple CSS Animation for Apple -->
+<div class="absolute top-4 w-12 h-12 bg-error rounded-full apple-fall shadow-lg flex items-center justify-center text-on-error">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div class="absolute bottom-0 w-full h-1/3 bg-surface-container-highest rounded-t-[100%] border-t-4 border-primary"></div>
+<img alt="Apple tree illustration" class="w-full h-full object-cover opacity-20" data-alt="A stylized, colorful illustration of a vibrant green apple tree on a small curved patch of earth, set against a soft light-teal background. The style is 2D vector art, suitable for a children's educational app, featuring soft edges and a playful mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBDGow_ru6g9r7OIAEdIYCe9VV6JH_M0OlNRSbHy5zK6UHys2f46V3YePGPjy52_sNCpmNDFXsza3A5sPZt3x8lEGLNORuZOY0YJf8zPuZQUqxRWhuJPGWomAMpa4DEuz1ZXfbO_vH5c1kSxN7H5xRtzErBawBgP-4j3jfn1uHgau29YUEqefW4gVz3-itbwijR0-N3fOpSqTDYPxUMUGExtsq8WCSwZhu8HgdA1_yQL7PfF0eX9OmDZquNzgUK2DawtVZtqM2LzY"/>
+</div>
+</div>
+</section>
+<!-- Section 2: Gravity in Space -->
+<section class="bg-inverse-surface text-inverse-on-surface rounded-xl p-6 md:p-8 mb-8 shadow-xl relative overflow-hidden">
+<div class="grid md:grid-cols-2 gap-8 items-center relative z-10">
+<div class="order-2 md:order-1 relative h-64 rounded-lg overflow-hidden border-2 border-surface-variant/20">
+<img alt="Astronaut floating" class="w-full h-full object-cover" data-alt="A high-quality illustration of a cute, cartoonish astronaut floating playfully in outer space with glowing stars and small planets in the background. The aesthetic is magical and child-friendly, utilizing deep blues and bright teal accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHT9tUXLzMibSIGmPFlmRdPb4dWZGKgz5XeY9G4kMaz2LBqxUbRtUHwmJ_fUJ_zXFKiGmdNqsVDLHrVYwgNltf2vPK3n0jcPWfXhrQN1Y3pxzrbuRel3Acf_YF0MKqjwxfVxiQ6d2iYd8PdHlQWqLE8NcdqfC_jMm1ueP2RK3GEalKHfjc8q40tdkCd78J32i0CElmw1K-mgWYouf9BugylAjJmHE8HufTlZNPO2M1w8D5NyNG8Nd3JIy5xXoW6EHHSwzFn4zIqto"/>
+</div>
+<div class="order-1 md:order-2 space-y-4">
+<div class="bg-surface-variant text-on-surface-variant font-label-md text-label-md px-3 py-1 rounded-full inline-block">Fakta Menarik</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary-fixed">Bagaimana di Luar Angkasa?</h3>
+<p class="font-body-md text-body-md">
+                        Semakin jauh kita dari Bumi, kekuatan gravitasinya semakin lemah. Itulah sebabnya astronot bisa melayang-layang di dalam pesawat luar angkasa!
+                    </p>
+<p class="font-body-md text-body-md text-surface-variant">
+                        Tapi, gravitasi Bumi tetap cukup kuat untuk menahan Bulan agar terus mengelilingi kita seperti sahabat setia.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Interactive Section: Drop Experiment -->
+<section class="bg-surface-container-lowest rounded-xl p-6 md:p-8 mb-8 border-2 border-secondary-fixed soft-shadow">
+<div class="text-center mb-6">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary-container mb-2">Eksperimen: Benda Jatuh</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Pilih benda di bawah ini untuk melihat bagaimana ia jatuh!</p>
+</div>
+<div class="flex flex-col items-center">
+<!-- Drop Zone -->
+<div class="w-full max-w-md h-64 bg-surface-container rounded-xl border-4 border-dashed border-outline-variant relative mb-6 overflow-hidden flex flex-col justify-end" id="drop-zone">
+<div class="w-full h-4 bg-primary-container border-t-2 border-primary"></div>
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center text-4xl opacity-0 transition-transform ease-in" id="falling-object">
+                        🍎
+                    </div>
+</div>
+<!-- Controls -->
+<div class="flex gap-4 justify-center">
+<button class="bouncy-btn bg-surface-container-high hover:bg-surface-variant p-4 rounded-full border-b-4 border-outline-variant flex flex-col items-center gap-2" onclick="dropObject('🍎', 'apel')">
+<span class="text-3xl">🍎</span>
+<span class="font-label-md text-label-md text-on-surface">Apel</span>
+</button>
+<button class="bouncy-btn bg-surface-container-high hover:bg-surface-variant p-4 rounded-full border-b-4 border-outline-variant flex flex-col items-center gap-2" onclick="dropObject('🪶', 'bulu')">
+<span class="text-3xl">🪶</span>
+<span class="font-label-md text-label-md text-on-surface">Bulu</span>
+</button>
+<button class="bouncy-btn bg-surface-container-high hover:bg-surface-variant p-4 rounded-full border-b-4 border-outline-variant flex flex-col items-center gap-2" onclick="dropObject('🎳', 'bola')">
+<span class="text-3xl">🎳</span>
+<span class="font-label-md text-label-md text-on-surface">Bola</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Quiz Section -->
+<section class="bg-surface-bright rounded-xl p-6 md:p-8 mb-8 border-2 border-surface-container soft-shadow">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: 'FILL' 1;">psychology_alt</span>
+                Kuis Kilat
+            </h3>
+<div class="space-y-4">
+<p class="font-body-lg text-body-lg text-on-surface font-semibold">
+                    Apa yang membuat kita tetap menapak di tanah dan tidak melayang?
+                </p>
+<div class="grid gap-3">
+<button class="bouncy-btn w-full text-left bg-surface-container-lowest border-2 border-outline-variant p-4 rounded-lg font-body-md text-body-md hover:bg-surface-container transition-colors">
+                        A. Angin yang kencang
+                    </button>
+<button class="bouncy-btn w-full text-left bg-primary-container text-on-primary-container border-b-4 border-primary p-4 rounded-lg font-body-md text-body-md shadow-sm relative overflow-hidden group">
+<span class="relative z-10 font-bold">B. Gravitasi Bumi</span>
+<div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity"></div>
+</button>
+<button class="bouncy-btn w-full text-left bg-surface-container-lowest border-2 border-outline-variant p-4 rounded-lg font-body-md text-body-md hover:bg-surface-container transition-colors">
+                        C. Tali yang tidak terlihat
+                    </button>
+</div>
+</div>
+</section>
+<!-- Continue Action -->
+<div class="flex justify-center mt-12 mb-8">
+<button class="bouncy-btn bg-secondary-container text-on-secondary-container font-headline-lg-mobile text-headline-lg-mobile py-4 px-12 rounded-full border-b-[6px] border-secondary interactive-shadow flex items-center gap-3">
+                Lanjut Belajar
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar (Hidden on md, visible on mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full h-20 flex justify-around items-center px-4 pb-safe bg-surface-container-lowest dark:bg-inverse-surface shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] rounded-t-lg z-50">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-label-md text-label-md">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-3 py-1 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">sports_esports</span>
+<span class="font-label-md text-label-md">Main</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">military_tech</span>
+<span class="font-label-md text-label-md">Lencana</span>
+</a>
+</nav>
+<script>
+        function dropObject(emoji, type) {
+            const obj = document.getElementById('falling-object');
+            
+            // Reset
+            obj.style.transition = 'none';
+            obj.style.transform = 'translate(-50%, 0)';
+            obj.style.opacity = '0';
+            obj.innerText = emoji;
+            
+            // Force reflow
+            void obj.offsetWidth;
+            
+            // Animate
+            const duration = type === 'bulu' ? '2.5s' : '0.8s'; // Feather falls slower
+            obj.style.transition = `transform ${duration} cubic-bezier(0.55, 0.085, 0.68, 0.53), opacity 0.2s ease`;
+            obj.style.opacity = '1';
+            
+            // Need a slight delay to ensure transition applies
+            setTimeout(() => {
+                obj.style.transform = 'translate(-50%, 180px)'; // Fall to 'ground'
+            }, 50);
+        }
+    </script>
+</body></html>

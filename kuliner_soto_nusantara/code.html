@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedia Bloom - Soto Nusantara</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Bouncy Button Base Style */
+        .btn-bouncy {
+            transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .btn-bouncy:active {
+            transform: translateY(4px);
+            border-bottom-width: 0px !important;
+            margin-bottom: 4px; /* compensate for lost border height */
+        }
+        
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        
+        /* Hide scrollbar for horizontal scroll areas */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#ffaa81",
+                        "inverse-on-surface": "#eaf1ff",
+                        "surface-container": "#e6eeff",
+                        "on-secondary-fixed": "#301400",
+                        "background": "#f8f9ff",
+                        "secondary-container": "#fd933d",
+                        "outline-variant": "#bacac5",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "on-primary-fixed": "#00201c",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-surface-variant": "#3c4a46",
+                        "inverse-primary": "#3cddc7",
+                        "surface-tint": "#006b5f",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#ffdcc5",
+                        "primary-fixed": "#62fae3",
+                        "on-surface": "#0d1c2e",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#00574d",
+                        "surface-bright": "#f8f9ff",
+                        "on-secondary-fixed-variant": "#713700",
+                        "surface": "#f8f9ff",
+                        "on-background": "#0d1c2e",
+                        "inverse-surface": "#233144",
+                        "primary-fixed-dim": "#3cddc7",
+                        "on-tertiary-fixed": "#351000",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#006b5f",
+                        "primary-container": "#2dd4bf",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "surface-dim": "#ccdbf3",
+                        "outline": "#6b7a76",
+                        "on-secondary-container": "#693300",
+                        "secondary": "#944a00",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-container": "#7e3913",
+                        "on-primary-fixed-variant": "#005047",
+                        "tertiary": "#944a23",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#ffdbcc",
+                        "surface-variant": "#d5e3fc",
+                        "surface-container-highest": "#d5e3fc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "label-md": ["Quicksand"],
+                        "headline-xl": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "label-md": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background min-h-screen font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-container-high docked full-width top-0 shadow-sm flex justify-between items-center w-full px-margin-mobile py-unit sticky z-40">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center overflow-hidden border-2 border-surface-container-highest">
+<!-- Mascot Avatar Placeholder -->
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">face</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed">Pedia Bloom</h1>
+</div>
+<button aria-label="settings" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant dark:text-surface-variant hover:bg-surface-variant dark:hover:bg-on-surface-variant transition-all duration-200 active:scale-95">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-6 pb-[120px] md:pb-12 flex flex-col gap-10">
+<!-- Hero Section -->
+<section class="relative w-full rounded-xl overflow-hidden bg-surface-container-lowest border-2 border-outline-variant shadow-sm flex flex-col md:flex-row">
+<div class="w-full md:w-1/2 h-[300px] md:h-auto relative">
+<img alt="Soto Nusantara" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZdue1FyPtH8obQb2ypJDZwRBAIiwuNt5_ZX0aAwMjaMfUW4YUAUVIhpKGGNpWjglvbGs-tqCudJ_ZLR7cjKY7UkH-3f00FsX8V5VXPGCHIgGWZddG0lFExyj50H0wkDhADHB3rjI3Cl0u5fWNNz4fdlmZqsbydcd2H3KtcNVtU0GMHbrI3bHPDTriaYuxXhnNtoJ6Ew0C1TXSHOaO-Y6mlA0eQvEB6ScExPzeyWuU1WqoLY7ZIU4UZiUgdIEzgqaoep1O0ym7j_A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent md:hidden"></div>
+</div>
+<div class="w-full md:w-1/2 p-6 md:p-10 flex flex-col justify-center relative bg-surface-container-lowest z-10 md:-ml-4 rounded-t-xl md:rounded-l-none md:rounded-r-xl">
+<div class="inline-flex items-center gap-2 bg-secondary-container text-on-secondary-container font-label-md text-label-md px-4 py-2 rounded-full w-max mb-4 shadow-[0_4px_10px_rgba(253,147,61,0.2)]">
+<span class="material-symbols-outlined text-[18px]">restaurant_menu</span>
+                    Kuliner Nusantara
+                </div>
+<h2 class="font-headline-xl text-headline-xl text-primary leading-tight mb-4">Soto: Sup Hangat Sejuta Rasa</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Jelajahi kelezatan kuah rempah yang menghangatkan perut dari berbagai pulau di Indonesia!</p>
+</div>
+</section>
+<!-- Intro Story -->
+<section class="bg-surface-container rounded-lg p-6 md:p-8 shadow-sm border border-white/50 relative overflow-hidden">
+<div class="absolute -right-10 -top-10 w-40 h-40 bg-primary-container rounded-full blur-3xl opacity-30"></div>
+<div class="absolute -left-10 -bottom-10 w-40 h-40 bg-secondary-container rounded-full blur-3xl opacity-30"></div>
+<p class="font-body-lg text-body-lg text-on-surface relative z-10 leading-relaxed">
+                Pernahkah kamu pulang sekolah saat hujan deras, lalu disajikan semangkuk sup kuning yang mengepul hangat? Wah, perut langsung terasa nyaman! Itulah pesona Soto, makanan kebanggaan Nusantara yang selalu berhasil membuat kita tersenyum.
+            </p>
+</section>
+<!-- Apa itu Soto? (Glassmorphism Card) -->
+<section class="flex flex-col gap-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: 'FILL' 1;">help_center</span>
+                Apa itu Soto?
+            </h3>
+<div class="bg-surface-container-lowest/80 backdrop-blur-sm rounded-lg p-6 border-2 border-outline-variant shadow-[0_8px_30px_rgb(0,107,95,0.05)] flex gap-6 items-start">
+<div class="w-16 h-16 shrink-0 bg-primary-container rounded-full flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-on-primary-container text-[32px]">soup_kitchen</span>
+</div>
+<div class="flex-1">
+<p class="font-body-md text-body-md text-on-surface">
+                        Soto adalah sup tradisional Indonesia yang terbuat dari kaldu daging (biasanya ayam atau sapi) yang dimasak perlahan dengan berbagai rempah-rempah harum seperti kunyit, jahe, dan serai. Biasanya disajikan dengan nasi atau bihun, ditambah topping segar seperti tauge, daun seledri, dan perasan jeruk nipis!
+                    </p>
+</div>
+</div>
+</section>
+<!-- Soto dari Berbagai Daerah (Bento Grid) -->
+<section class="flex flex-col gap-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: 'FILL' 1;">map</span>
+                Soto dari Berbagai Daerah
+            </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Lamongan -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden border-2 border-outline-variant shadow-sm hover:shadow-md transition-shadow group">
+<div class="h-40 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A child-friendly, colorful illustration of Soto Ayam Lamongan in a decorated bowl. The soup features a bright yellow clear broth, shredded chicken, cabbage, and a generous sprinkle of golden 'koya' powder on top. The style is soft, tactile, and minimalist with a bright light-mode aesthetic and warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuElSsmgCfM59CUTqemSSS-bTAUvNUeMe0aHtUgJdMXptn3injwxHiWMiMhL-o2j5kg7-klX3Ugdldwcx9sLIRA8mfi0uOy3pVNIGoMCY09uA6QZsTZWh8T9fGFEu-o-2vsY3XPHeTdAS-NGTCBanlMM0x16ttMJ5yQI5c2gdSHDW-PBmENm2aKbPSQf9hhCEMvxIMXjYFjPy0Y8iaW_WLZpTLO4azQiGC6h2EfF6fDKsVE7z6rXR4F7Z08JsABgF2Go1CGs_lrM8"/>
+</div>
+<div class="p-4">
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Soto Ayam Lamongan</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Kuah kuning bening dengan taburan rahasia 'Koya' yang gurih!</p>
+</div>
+</div>
+<!-- Betawi -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden border-2 border-outline-variant shadow-sm hover:shadow-md transition-shadow group">
+<div class="h-40 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A child-friendly, colorful illustration of Soto Betawi. The soup has a rich, creamy, slightly reddish-white broth made from coconut milk and cow's milk, containing chunks of beef and tomatoes. Served with crispy emping crackers. The style is soft, tactile, and minimalist with a bright light-mode aesthetic and warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV4A8h6YZO-L6fGfIZgd4XEovEUBzTeiyoOsMR7X9tAiWNPmqArbs9TcxrE7UYOrRGqeOh6AAtdSygx64XbbFqpGjeOh8uwG1F_dDKbrSYeFdj3mrTYFltACzfmS67mcS6wk2P8s8bCAIWII5R7_Xst2HKYva1rJ_9mXCezFuU_Zou5WU14XiWYXijyoxM4Tn_FFXeGBI9QYBa3R55M4doIOCTZZjLopHUGfkI57kWLWwA9F_X43fxm-eQzSI_a9_GxAstx7hIgtw"/>
+</div>
+<div class="p-4">
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Soto Betawi</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Kaya rasa karena memakai santan atau susu. Gurih dan kental!</p>
+</div>
+</div>
+<!-- Madura -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden border-2 border-outline-variant shadow-sm hover:shadow-md transition-shadow group">
+<div class="h-40 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A child-friendly, colorful illustration of Soto Madura. The soup features a hearty, slightly dark savory broth containing chunks of beef, served with a sprinkle of fried shallots and a side of lime. The style is soft, tactile, and minimalist with a bright light-mode aesthetic and warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFbEcLKaxrlkH-bFrAZkIeoJHirEhosngLiYjfABTorCziol15YMuEwvTsJMIeoj1n73Lu2lyjgoltK_otwIxkg4JMm7aIAbSG0m_yKCdQzzBLu1Jk_KUPJk5IUf0cGlz7C9JAjSdwf3npuWeAa5LHrD2DB62Dd1PNm-H5TQzVnJj3BT6BtEMUxLIbtAbg1x9co9LwZTzU9qp12wfbrqJ7HZZF-ZtilsjJzQmclqxDHYa4uZWZMC2q5SU7oyYFNm4NgvIOyr8_nbY"/>
+</div>
+<div class="p-4">
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Soto Madura</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Berkuah kaldu sapi pekat yang gurih meresap dengan rempah gelap.</p>
+</div>
+</div>
+<!-- Makassar -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden border-2 border-outline-variant shadow-sm hover:shadow-md transition-shadow group">
+<div class="h-40 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A child-friendly, colorful illustration of Coto Makassar in a small traditional bowl. The soup has a thick, dark, hearty broth filled with beef and offal, served next to 'buras' (rice cooked in banana leaves). The style is soft, tactile, and minimalist with a bright light-mode aesthetic and warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuaU-ay_3AjFN-bZwmjL9u3oIkUAudo1XZlzIgMpNK-nPv3wQurpGb0q3ej7ukswv4DDZPGKu1iCZF-JK5BcAj7xR4ngRShVLabKiS1IIorDsjMgYcs6NLR-fx86JKYe1evvVkxdudzHUJNGE-4UDgmTIU3GOEJTL7Jo_668rr9BUL36xh2vuLLntQeXVJ2BT3tB-vlc0IMhlJAkg7X3QPdpofOuMI9GsXgo8PzGBctQqNTS-3jLc6Ownw3PRVEDbvS8g72sVcm84"/>
+</div>
+<div class="p-4">
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Coto Makassar</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Menggunakan air cucian beras untuk kaldu kental yang khas dari Sulawesi.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5 Fakta Seru! (Pills) -->
+<section class="bg-surface-dim rounded-xl p-6 md:p-8">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+                5 Fakta Seru!
+            </h3>
+<div class="flex flex-wrap gap-3">
+<div class="bg-surface-container-lowest text-on-surface border-2 border-primary-container rounded-full px-5 py-3 font-label-md text-label-md shadow-sm flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center text-sm">1</span>
+                    Lebih dari 75 jenis di Indonesia!
+                </div>
+<div class="bg-surface-container-lowest text-on-surface border-2 border-secondary-container rounded-full px-5 py-3 font-label-md text-label-md shadow-sm flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center text-sm">2</span>
+                    Mirip Pho dari Vietnam, tapi khas Nusantara.
+                </div>
+<div class="bg-surface-container-lowest text-on-surface border-2 border-tertiary-container rounded-full px-5 py-3 font-label-md text-label-md shadow-sm flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center text-sm">3</span>
+                    Menu sarapan favorit banyak orang.
+                </div>
+<div class="bg-surface-container-lowest text-on-surface border-2 border-primary-container rounded-full px-5 py-3 font-label-md text-label-md shadow-sm flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center text-sm">4</span>
+                    Koya terbuat dari kerupuk udang yang dihancurkan.
+                </div>
+<div class="bg-surface-container-lowest text-on-surface border-2 border-secondary-container rounded-full px-5 py-3 font-label-md text-label-md shadow-sm flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center text-sm">5</span>
+                    Soto Betawi kadang pakai susu sapi lho!
+                </div>
+</div>
+</section>
+<!-- Misi: Racik Soto-mu! (Interactive) -->
+<section class="bg-surface-container-high rounded-xl p-6 md:p-8 border-2 border-outline-variant relative">
+<!-- Decorative character peeking -->
+<div class="absolute -top-12 right-6 w-24 h-24 bg-surface-container-lowest rounded-full border-4 border-surface-container-high flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[48px] text-tertiary" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2 mt-4 md:mt-0">Misi: Racik Soto-mu!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Pilih bahan kesukaanmu untuk membuat soto super lezat!</p>
+<div class="space-y-6">
+<!-- Pilihan Kuah -->
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-3">1. Pilih Kuah</h4>
+<div class="flex flex-wrap gap-3" id="kuah-options">
+<button class="btn-bouncy bg-surface-container-lowest text-on-surface border-2 border-outline-variant border-b-[6px] border-b-outline rounded-lg px-6 py-4 font-label-md flex flex-col items-center gap-2 w-32 focus:bg-primary-container focus:border-primary focus:border-b-primary focus:text-on-primary-container outline-none" onclick="selectOption(this, 'kuah')">
+<span class="material-symbols-outlined text-[32px] text-secondary">water_drop</span>
+                            Bening
+                        </button>
+<button class="btn-bouncy bg-surface-container-lowest text-on-surface border-2 border-outline-variant border-b-[6px] border-b-outline rounded-lg px-6 py-4 font-label-md flex flex-col items-center gap-2 w-32 focus:bg-primary-container focus:border-primary focus:border-b-primary focus:text-on-primary-container outline-none" onclick="selectOption(this, 'kuah')">
+<span class="material-symbols-outlined text-[32px] text-tertiary-container">water_drop</span>
+                            Santan
+                        </button>
+</div>
+</div>
+<!-- Pilihan Protein -->
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-3">2. Pilih Lauk</h4>
+<div class="flex flex-wrap gap-3" id="lauk-options">
+<button class="btn-bouncy bg-surface-container-lowest text-on-surface border-2 border-outline-variant border-b-[6px] border-b-outline rounded-lg px-6 py-4 font-label-md flex flex-col items-center gap-2 w-32 focus:bg-secondary-container focus:border-secondary focus:border-b-secondary focus:text-on-secondary-container outline-none" onclick="selectOption(this, 'lauk')">
+<span class="material-symbols-outlined text-[32px] text-secondary">set_meal</span>
+                            Ayam Suwir
+                        </button>
+<button class="btn-bouncy bg-surface-container-lowest text-on-surface border-2 border-outline-variant border-b-[6px] border-b-outline rounded-lg px-6 py-4 font-label-md flex flex-col items-center gap-2 w-32 focus:bg-secondary-container focus:border-secondary focus:border-b-secondary focus:text-on-secondary-container outline-none" onclick="selectOption(this, 'lauk')">
+<span class="material-symbols-outlined text-[32px] text-tertiary">kebab_dining</span>
+                            Daging Sapi
+                        </button>
+</div>
+</div>
+<div class="pt-4 border-t-2 border-outline-variant/30 flex justify-end">
+<button class="btn-bouncy bg-secondary-container text-on-secondary-container font-label-md text-label-md px-8 py-3 rounded-full border-b-[4px] border-secondary flex items-center gap-2 hover:bg-secondary-fixed-dim">
+<span class="material-symbols-outlined">skillet</span>
+                        Masak Sekarang!
+                    </button>
+</div>
+</div>
+<script>
+                function selectOption(btn, group) {
+                    // Reset others in group
+                    const parent = btn.parentElement;
+                    const buttons = parent.querySelectorAll('button');
+                    buttons.forEach(b => b.blur()); // Remove focus styling
+                    btn.focus(); // Apply focus styling to simulate active state
+                }
+            </script>
+</section>
+<!-- Kuis Kilat -->
+<section class="bg-primary text-on-primary rounded-xl p-6 md:p-8 shadow-lg relative overflow-hidden">
+<!-- Background pattern -->
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 2px, transparent 2px); background-size: 20px 20px;"></div>
+<div class="relative z-10">
+<div class="inline-flex items-center gap-2 bg-on-primary text-primary font-label-md text-label-md px-4 py-1 rounded-full mb-6">
+<span class="material-symbols-outlined text-[18px]">quiz</span>
+                    Kuis Kilat
+                </div>
+<h3 class="font-headline-lg text-headline-lg mb-6">Soto Betawi terkenal menggunakan kuah apa?</h3>
+<div class="flex flex-col gap-3" id="quiz-container">
+<button class="quiz-btn bg-primary-fixed-dim/20 hover:bg-primary-fixed/40 text-on-primary border-2 border-primary-fixed rounded-lg p-4 text-left font-body-lg text-body-lg transition-colors flex justify-between items-center" onclick="checkAnswer(this, true)">
+                        Santan
+                        <span class="material-symbols-outlined hidden result-icon"></span>
+</button>
+<button class="quiz-btn bg-primary-fixed-dim/20 hover:bg-primary-fixed/40 text-on-primary border-2 border-primary-fixed rounded-lg p-4 text-left font-body-lg text-body-lg transition-colors flex justify-between items-center" onclick="checkAnswer(this, false)">
+                        Kaldu bening
+                        <span class="material-symbols-outlined hidden result-icon"></span>
+</button>
+<button class="quiz-btn bg-primary-fixed-dim/20 hover:bg-primary-fixed/40 text-on-primary border-2 border-primary-fixed rounded-lg p-4 text-left font-body-lg text-body-lg transition-colors flex justify-between items-center" onclick="checkAnswer(this, false)">
+                        Kaldu merah
+                        <span class="material-symbols-outlined hidden result-icon"></span>
+</button>
+</div>
+</div>
+<script>
+                function checkAnswer(btn, isCorrect) {
+                    const container = document.getElementById('quiz-container');
+                    const buttons = container.querySelectorAll('.quiz-btn');
+                    
+                    // Disable all
+                    buttons.forEach(b => {
+                        b.disabled = true;
+                        b.classList.remove('hover:bg-primary-fixed/40');
+                        b.style.opacity = '0.7';
+                    });
+
+                    // Highlight clicked
+                    btn.style.opacity = '1';
+                    const icon = btn.querySelector('.result-icon');
+                    icon.classList.remove('hidden');
+
+                    if (isCorrect) {
+                        btn.classList.add('bg-secondary-container', 'text-on-secondary-container', 'border-secondary-container');
+                        btn.classList.remove('bg-primary-fixed-dim/20', 'text-on-primary', 'border-primary-fixed');
+                        icon.textContent = 'check_circle';
+                        icon.style.fontVariationSettings = "'FILL' 1";
+                    } else {
+                        btn.classList.add('bg-error', 'border-error');
+                        icon.textContent = 'cancel';
+                        icon.style.fontVariationSettings = "'FILL' 1";
+                        
+                        // Show correct answer too
+                        setTimeout(() => {
+                            buttons[0].style.opacity = '1'; // Assuming first is always correct in this static DOM for simplicity, otherwise search for data attribute
+                            buttons[0].classList.add('border-secondary-container', 'text-secondary-fixed');
+                        }, 500);
+                    }
+                }
+            </script>
+</section>
+<!-- Kamus Cilik -->
+<section class="bg-surface-container-lowest rounded-xl p-6 md:p-8 shadow-sm border-2 border-outline-variant">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-container" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+                Kamus Cilik
+            </h3>
+<ul class="space-y-4">
+<li class="flex gap-4 items-start">
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-[18px]">water</span>
+</div>
+<div>
+<strong class="font-label-md text-label-md text-on-surface block">Kuah</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">Air kaldu bumbu yang menjadi isi utama soto.</span>
+</div>
+</li>
+<li class="flex gap-4 items-start">
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-[18px]">content_cut</span>
+</div>
+<div>
+<strong class="font-label-md text-label-md text-on-surface block">Suwir</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">Daging ayam yang disobek-sobek kecil agar mudah dimakan.</span>
+</div>
+</li>
+<li class="flex gap-4 items-start">
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-[18px]">cookie</span>
+</div>
+<div>
+<strong class="font-label-md text-label-md text-on-surface block">Emping</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">Kerupuk sedikit pahit tapi enak, terbuat dari biji melinjo.</span>
+</div>
+</li>
+<li class="flex gap-4 items-start">
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-[18px]">grass</span>
+</div>
+<div>
+<strong class="font-label-md text-label-md text-on-surface block">Koya</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">Bubuk gurih dari kerupuk udang dan bawang putih goreng yang ditumbuk.</span>
+</div>
+</li>
+</ul>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-surface-container-lowest dark:bg-surface-container shadow-[0_-4px_10px_rgba(0,0,0,0.05)] fixed bottom-0 w-full z-50 rounded-t-lg shadow-lg fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-4 pt-2">
+<!-- Beranda -->
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant px-4 py-2 hover:bg-surface-variant/50 transition-all duration-300 active:scale-90 active:translate-y-0 group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform">home</span>
+<span class="font-label-md text-label-md text-[12px]">Beranda</span>
+</a>
+<!-- Jelajah (ACTIVE) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-4 py-1 translate-y-[-2px] border-b-4 border-secondary/20 transition-all duration-300 active:scale-90 active:translate-y-0" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md text-[12px] font-bold">Jelajah</span>
+</a>
+<!-- Main -->
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant px-4 py-2 hover:bg-surface-variant/50 transition-all duration-300 active:scale-90 active:translate-y-0 group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform">sports_esports</span>
+<span class="font-label-md text-label-md text-[12px]">Main</span>
+</a>
+<!-- Lencana -->
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant px-4 py-2 hover:bg-surface-variant/50 transition-all duration-300 active:scale-90 active:translate-y-0 group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform">military_tech</span>
+<span class="font-label-md text-label-md text-[12px]">Lencana</span>
+</a>
+<!-- Tanya AI -->
+<a class="flex flex-col items-center justify-center text-outline dark:text-outline-variant px-4 py-2 hover:bg-surface-variant/50 transition-all duration-300 active:scale-90 active:translate-y-0 group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform">smart_toy</span>
+<span class="font-label-md text-label-md text-[12px]">Tanya AI</span>
+</a>
+</nav>
+</body></html>

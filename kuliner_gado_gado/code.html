@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gado-Gado: Salad Nusantara | Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&family=Quicksand:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#2dd4bf",
+                        "surface-container-highest": "#d5e3fc",
+                        "on-tertiary-fixed": "#351000",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#233144",
+                        "on-secondary-container": "#693300",
+                        "on-primary-container": "#00574d",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#62fae3",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-primary-fixed": "#00201c",
+                        "on-secondary-fixed-variant": "#713700",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#005047",
+                        "surface-bright": "#f8f9ff",
+                        "on-surface": "#0d1c2e",
+                        "background": "#f8f9ff",
+                        "outline-variant": "#bacac5",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#ffaa81",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "outline": "#6b7a76",
+                        "secondary-fixed": "#ffdcc5",
+                        "secondary-fixed-dim": "#ffb783",
+                        "inverse-primary": "#3cddc7",
+                        "surface-container": "#e6eeff",
+                        "tertiary": "#944a23",
+                        "tertiary-fixed": "#ffdbcc",
+                        "secondary": "#944a00",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "surface-dim": "#ccdbf3",
+                        "primary-fixed-dim": "#3cddc7",
+                        "secondary-container": "#fd933d",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#d5e3fc",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#eff4ff",
+                        "on-background": "#0d1c2e",
+                        "surface-tint": "#006b5f",
+                        "surface": "#f8f9ff",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-tertiary-container": "#7e3913",
+                        "on-surface-variant": "#3c4a46",
+                        "primary": "#006b5f",
+                        "on-secondary-fixed": "#301400"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Quicksand"],
+                        "headline-xl": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bouncy {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .bouncy:active {
+            transform: scale(0.95) translateY(2px);
+        }
+        .bouncy-shadow {
+            box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+        }
+        .bouncy-shadow:active {
+            box-shadow: 0 0px 0 0 rgba(0, 0, 0, 0.1);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .oxygen-zone {
+            padding: 2.5rem 1.25rem;
+        }
+        @media (min-width: 768px) {
+            .oxygen-zone {
+                padding: 4rem 4rem;
+            }
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface dark:bg-on-surface shadow-sm flex justify-between items-center px-margin-mobile py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-white shadow-sm">
+<img alt="Nara" class="w-full h-full object-cover" data-alt="A friendly, expressive mascot character named Nara the Explorer, designed for children's educational content. Nara is a small, curious robot-like creature with large expressive eyes and soft teal accents, standing in a heroic and encouraging pose. The art style is high-quality 3D render with soft lighting and rounded shapes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhUJkbxXQWBVJUbDWS94R2jXXmaa4GYpm3bYRZ9dYvjeCPlp0JMv2mD8c3WOveuxdsnqKGtt8nIin1aPBa2MCmwTmhrtJHDDKpZ3Ht0o9EMYlfxCYP2QzU1J0IQaFxcBehdy71IXMkmwLGrSm4LtqiLsw103X_YFHjueotAoClvfqAp_A7lfeQzHw4rI-7cofDw5vq_ZK9JyiWe_7Met0vBl8wJXq7jUcFAueTL1-KMencCqoCoIdNXEGMcEqU0XteFvZLyQItcUc"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary dark:text-primary-fixed">Pedia Bloom</h1>
+</div>
+<button class="material-symbols-outlined text-primary dark:text-primary-fixed text-2xl hover:bg-surface-variant/50 p-2 rounded-full transition-colors active:scale-95 duration-150" data-icon="search">search</button>
+</nav>
+<main class="pt-20 pb-32">
+<!-- Hero Section -->
+<section class="relative w-full h-[45vh] md:h-[60vh] overflow-hidden">
+<img alt="Gado-Gado Hero" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAy0P4nJV6QeUob1U2IxwByQMlmC8Jl0l3FTb8OojKdDOVaWW-RftrldydE4VqT0fQjd3kIRTXP93QSeVK__KxJ7VWpg1LymJ7luKMuDv5Ieh0Lqof3qxiKrjOtVhtrLHl-DxUM8XZdrFSpx-CisGMI46F2zZTavYW4EEnIknOBlJgVcZbk5CFL6eTvIN-609MSstIIeq8qpCqNsBaIDsQCmcxzafmhCQIUQkTR5IZvcbCb83vD9vUK-ecK__qYh7FQnPERRk3tzg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-margin-mobile">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md w-fit mb-2">Kuliner Nusantara</span>
+<h2 class="font-headline-xl text-headline-xl text-white drop-shadow-md">Gado-Gado: Salad Nusantara</h2>
+</div>
+</section>
+<!-- Opening Story -->
+<section class="oxygen-zone">
+<div class="max-w-container-max mx-auto">
+<div class="bg-surface-container-low p-8 rounded-lg relative overflow-hidden shadow-sm">
+<div class="absolute -top-6 -right-6 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="auto_stories">auto_stories</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+                        Cerita Budi
+                    </h3>
+<p class="font-body-lg text-body-lg leading-relaxed text-on-surface-variant">
+                        Siang itu, perut Budi keroncongan di sekolah. Di kantin, aroma kacang yang gurih memanggilnya. Pak Kumis sedang menuangkan saus cokelat kental di atas tumpukan sayur hijau, tempe, dan telur rebus. "Ini namanya Gado-Gado, Budi. Salad rahasia dari Indonesia!" kata Pak Kumis. Begitu menyuap sesendok, Budi langsung jatuh cinta! Rasanya manis, gurih, dan segar sekali!
+                    </p>
+</div>
+</div>
+</section>
+<!-- Apa itu & Nutrisi (Bento Grid) -->
+<section class="oxygen-zone bg-surface-bright">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- What is it? -->
+<div class="bg-white p-8 rounded-lg border-2 border-primary-container/20 shadow-[0_4px_12px_rgba(45,212,191,0.1)] flex flex-col justify-center">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Apa itu Gado-Gado?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Gado-gado adalah hidangan ajaib yang mencampurkan berbagai sayuran sehat yang sudah direbus (blanched) dengan protein lezat. Semuanya kemudian "digado" atau dicampur dengan saus kacang yang kental dan istimewa. Ini adalah cara paling enak makan sayur!
+                    </p>
+</div>
+<!-- Nutrition -->
+<div class="bg-tertiary-container/20 p-8 rounded-lg border-2 border-tertiary-container/30 flex items-center gap-6">
+<div class="hidden sm:flex w-24 h-24 rounded-full bg-tertiary-container items-center justify-center text-on-tertiary-container shadow-md">
+<span class="material-symbols-outlined text-4xl" data-icon="bolt">bolt</span>
+</div>
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-tertiary-container mb-2">Nutrisi Juara!</h3>
+<p class="font-body-md text-body-md text-on-tertiary-container/80 italic">
+                            Serat dari sayur buat perut happy, Protein dari telur & tempe buat otot kuat, dan Lemak baik dari kacang buat otak pintar!
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Ingredients Section -->
+<section class="oxygen-zone">
+<div class="max-w-container-max mx-auto">
+<h3 class="font-headline-lg text-headline-lg text-center mb-12">Bahan Sehat & Lezat</h3>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-gutter">
+<!-- Veggies -->
+<div class="group flex flex-col items-center text-center p-6 rounded-lg hover:bg-primary-container/10 transition-all duration-300">
+<div class="w-32 h-32 rounded-full bg-primary-container/20 mb-6 flex items-center justify-center group-hover:scale-110 transition-transform bouncy">
+<span class="material-symbols-outlined text-5xl text-primary" data-icon="eco">eco</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Sayuran Segar</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Bayam, tauge, dan kacang panjang yang penuh vitamin.</p>
+</div>
+<!-- Protein -->
+<div class="group flex flex-col items-center text-center p-6 rounded-lg hover:bg-secondary-container/10 transition-all duration-300">
+<div class="w-32 h-32 rounded-full bg-secondary-container/20 mb-6 flex items-center justify-center group-hover:scale-110 transition-transform bouncy">
+<span class="material-symbols-outlined text-5xl text-secondary" data-icon="egg_alt">egg_alt</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Protein Hebat</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Tahu, Tempe, dan Telur rebus yang bikin kamu bertenaga.</p>
+</div>
+<!-- Sauce -->
+<div class="group flex flex-col items-center text-center p-6 rounded-lg hover:bg-tertiary-container/10 transition-all duration-300">
+<div class="w-32 h-32 rounded-full bg-tertiary-container/20 mb-6 flex items-center justify-center group-hover:scale-110 transition-transform bouncy">
+<span class="material-symbols-outlined text-5xl text-tertiary" data-icon="restaurant_menu">restaurant_menu</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Bumbu Rahasia</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Saus kacang kental yang gurih dan manis tak tertandingi.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Fun Facts Carousel -->
+<section class="oxygen-zone bg-surface-container-low overflow-hidden">
+<div class="max-w-container-max mx-auto">
+<h3 class="font-headline-lg text-headline-lg mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="stars">stars</span>
+                    5 Fakta Seru!
+                </h3>
+<div class="flex gap-6 overflow-x-auto hide-scrollbar pb-6 snap-x">
+<div class="snap-center min-w-[280px] md:min-w-[400px] bg-white p-8 rounded-lg shadow-sm border-l-8 border-primary-container">
+<h5 class="text-primary font-bold mb-2">#1 Arti Nama</h5>
+<p class="font-body-lg text-body-lg">"Gado-gado" berarti "campur-campur" atau dimakan tanpa nasi.</p>
+</div>
+<div class="snap-center min-w-[280px] md:min-w-[400px] bg-white p-8 rounded-lg shadow-sm border-l-8 border-secondary-container">
+<h5 class="text-secondary font-bold mb-2">#2 Lontong vs Nasi</h5>
+<p class="font-body-lg text-body-lg">Biasanya dimakan pakai Lontong, nasi yang dibungkus daun pisang!</p>
+</div>
+<div class="snap-center min-w-[280px] md:min-w-[400px] bg-white p-8 rounded-lg shadow-sm border-l-8 border-tertiary-container">
+<h5 class="text-tertiary font-bold mb-2">#3 Kerupuk Wajib</h5>
+<p class="font-body-lg text-body-lg">Tak lengkap tanpa kerupuk udang atau emping yang renyah!</p>
+</div>
+<div class="snap-center min-w-[280px] md:min-w-[400px] bg-white p-8 rounded-lg shadow-sm border-l-8 border-primary">
+<h5 class="text-primary font-bold mb-2">#4 Warisan Dunia</h5>
+<p class="font-body-lg text-body-lg">Gado-gado sangat populer sampai ke luar negeri, lho!</p>
+</div>
+<div class="snap-center min-w-[280px] md:min-w-[400px] bg-white p-8 rounded-lg shadow-sm border-l-8 border-secondary">
+<h5 class="text-secondary font-bold mb-2">#5 Beda Daerah</h5>
+<p class="font-body-lg text-body-lg">Ada Gado-gado Jakarta, Surabaya, dan masih banyak lagi!</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mini Game Section -->
+<section class="oxygen-zone">
+<div class="max-w-container-max mx-auto">
+<div class="bg-primary-container/10 p-8 md:p-12 rounded-lg border-dashed border-4 border-primary-container flex flex-col items-center text-center">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-2">Misi: Racik Bumbu Kacang!</h3>
+<p class="font-body-md text-body-md mb-8">Tap semua bahan di bawah ini untuk membuat saus kacang yang lezat!</p>
+<div class="flex flex-wrap justify-center gap-6 mb-8" id="sauce-game">
+<button class="bouncy bg-white p-4 rounded-lg shadow-md border-b-4 border-secondary/30 flex flex-col items-center w-24" onclick="mixIngredient(this, 'peanuts')">
+<span class="material-symbols-outlined text-4xl text-secondary" data-icon="bakery_dining">bakery_dining</span>
+<span class="text-sm font-bold mt-2">Kacang</span>
+</button>
+<button class="bouncy bg-white p-4 rounded-lg shadow-md border-b-4 border-tertiary/30 flex flex-col items-center w-24" onclick="mixIngredient(this, 'sugar')">
+<span class="material-symbols-outlined text-4xl text-tertiary" data-icon="hive">hive</span>
+<span class="text-sm font-bold mt-2">Gula Jawa</span>
+</button>
+<button class="bouncy bg-white p-4 rounded-lg shadow-md border-b-4 border-error/30 flex flex-col items-center w-24" onclick="mixIngredient(this, 'chili')">
+<span class="material-symbols-outlined text-4xl text-error" data-icon="local_fire_department">local_fire_department</span>
+<span class="text-sm font-bold mt-2">Cabai</span>
+</button>
+<button class="bouncy bg-white p-4 rounded-lg shadow-md border-b-4 border-primary/30 flex flex-col items-center w-24" onclick="mixIngredient(this, 'lime')">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="nest_eco_leaf">nest_eco_leaf</span>
+<span class="text-sm font-bold mt-2">Jeruk Limau</span>
+</button>
+</div>
+<div class="h-16 flex items-center justify-center" id="sauce-status">
+<div class="w-64 h-4 bg-white rounded-full overflow-hidden hidden border border-primary-container/30" id="progress-container">
+<div class="h-full bg-primary-container w-0 transition-all duration-500" id="sauce-progress"></div>
+</div>
+<p class="hidden font-headline-lg-mobile text-headline-lg-mobile text-primary animate-bounce" id="congrats-msg">Nyammm! Sausnya sudah jadi! 🥜✨</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Quiz -->
+<section class="oxygen-zone bg-surface-container">
+<div class="max-w-2xl mx-auto">
+<h3 class="font-headline-lg text-headline-lg text-center mb-10">Kuis Kilat ⚡</h3>
+<div class="space-y-6">
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<p class="font-body-lg text-body-lg mb-4">1. Apa arti kata "Gado-Gado"?</p>
+<div class="grid grid-cols-1 gap-3">
+<button class="text-left p-4 rounded-lg border-2 border-outline-variant hover:border-primary transition-colors font-body-md" onclick="checkQuiz(this, true)">A. Campur-campur</button>
+<button class="text-left p-4 rounded-lg border-2 border-outline-variant hover:border-primary transition-colors font-body-md" onclick="checkQuiz(this, false)">B. Goreng-goreng</button>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<p class="font-body-lg text-body-lg mb-4">2. Apa bahan utama saus Gado-gado?</p>
+<div class="grid grid-cols-1 gap-3">
+<button class="text-left p-4 rounded-lg border-2 border-outline-variant hover:border-primary transition-colors font-body-md" onclick="checkQuiz(this, false)">A. Saus Tomat</button>
+<button class="text-left p-4 rounded-lg border-2 border-outline-variant hover:border-primary transition-colors font-body-md" onclick="checkQuiz(this, true)">B. Saus Kacang</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Glossary -->
+<section class="oxygen-zone">
+<div class="max-w-container-max mx-auto">
+<h3 class="font-headline-lg text-headline-lg mb-6">Kamus Kecil</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="p-4 bg-white rounded-lg border border-outline-variant">
+<strong class="text-primary block mb-1">Gado-gado</strong>
+<span class="text-sm text-on-surface-variant">Makanan khas Indonesia berisi sayuran dan saus kacang.</span>
+</div>
+<div class="p-4 bg-white rounded-lg border border-outline-variant">
+<strong class="text-primary block mb-1">Bumbu Kacang</strong>
+<span class="text-sm text-on-surface-variant">Saus lezat berbahan kacang tanah goreng yang dihaluskan.</span>
+</div>
+<div class="p-4 bg-white rounded-lg border border-outline-variant">
+<strong class="text-primary block mb-1">Lontong</strong>
+<span class="text-sm text-on-surface-variant">Nasi yang dimasak dalam bungkusan daun pisang.</span>
+</div>
+<div class="p-4 bg-white rounded-lg border border-outline-variant">
+<strong class="text-primary block mb-1">Tempe</strong>
+<span class="text-sm text-on-surface-variant">Makanan sehat dari kedelai hasil fermentasi.</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 bg-surface-container dark:bg-inverse-surface shadow-[0_-4px_12px_rgba(0,107,95,0.1)] flex justify-around items-center px-4 py-2 rounded-t-lg">
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:bg-surface-variant/30 bouncy">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl px-4 py-1.5 transition-all duration-300 bouncy">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-label-md text-label-md">Jelajah</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:bg-surface-variant/30 bouncy">
+<span class="material-symbols-outlined" data-icon="sports_esports">sports_esports</span>
+<span class="font-label-md text-label-md">Game</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:bg-surface-variant/30 bouncy">
+<span class="material-symbols-outlined" data-icon="military_tech">military_tech</span>
+<span class="font-label-md text-label-md">Badge</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:bg-surface-variant/30 bouncy">
+<span class="material-symbols-outlined" data-icon="smart_toy">smart_toy</span>
+<span class="font-label-md text-label-md">Tanya AI</span>
+</button>
+</nav>
+<script>
+        // Mini Game Logic
+        const ingredients = new Set();
+        const totalIngredients = 4;
+        
+        function mixIngredient(btn, type) {
+            if (ingredients.has(type)) return;
+            
+            ingredients.add(type);
+            btn.classList.add('opacity-40', 'scale-90');
+            btn.classList.remove('bouncy');
+            btn.disabled = true;
+            
+            const progressContainer = document.getElementById('progress-container');
+            const progressBar = document.getElementById('sauce-progress');
+            const congratsMsg = document.getElementById('congrats-msg');
+            
+            progressContainer.classList.remove('hidden');
+            const percentage = (ingredients.size / totalIngredients) * 100;
+            progressBar.style.width = percentage + '%';
+            
+            if (ingredients.size === totalIngredients) {
+                setTimeout(() => {
+                    progressContainer.classList.add('hidden');
+                    congratsMsg.classList.remove('hidden');
+                }, 600);
+            }
+        }
+
+        // Quiz Logic
+        function checkQuiz(btn, isCorrect) {
+            const parent = btn.parentElement;
+            const buttons = parent.querySelectorAll('button');
+            
+            buttons.forEach(b => {
+                b.disabled = true;
+                b.classList.remove('hover:border-primary');
+            });
+
+            if (isCorrect) {
+                btn.classList.add('bg-primary-container/20', 'border-primary', 'text-primary');
+                btn.innerHTML += ' ✅';
+            } else {
+                btn.classList.add('bg-error/10', 'border-error', 'text-error');
+                btn.innerHTML += ' ❌';
+            }
+        }
+    </script>
+</body></html>

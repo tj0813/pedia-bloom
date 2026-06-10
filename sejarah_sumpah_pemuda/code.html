@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sumpah Pemuda - NusaPedia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-secondary-container": "#693300",
+                        "on-tertiary-fixed": "#351000",
+                        "on-surface": "#0d1c2e",
+                        "on-error-container": "#93000a",
+                        "secondary": "#944a00",
+                        "tertiary-fixed": "#ffdbcc",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-primary-container": "#00574d",
+                        "secondary-fixed": "#ffdcc5",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#62fae3",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#e6eeff",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#bacac5",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f8f9ff",
+                        "secondary-container": "#fd933d",
+                        "on-primary-fixed-variant": "#005047",
+                        "on-background": "#0d1c2e",
+                        "surface-dim": "#ccdbf3",
+                        "surface": "#f8f9ff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-surface-variant": "#3c4a46",
+                        "outline": "#6b7a76",
+                        "on-primary-fixed": "#00201c",
+                        "on-secondary-fixed": "#301400",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#944a23",
+                        "on-secondary-fixed-variant": "#713700",
+                        "tertiary-container": "#ffaa81",
+                        "surface-variant": "#d5e3fc",
+                        "surface-container-highest": "#d5e3fc",
+                        "primary-fixed-dim": "#3cddc7",
+                        "surface-tint": "#006b5f",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-container": "#7e3913",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "inverse-primary": "#3cddc7",
+                        "primary": "#006b5f",
+                        "primary-container": "#2dd4bf",
+                        "inverse-surface": "#233144",
+                        "background": "#f8f9ff",
+                        "history-red": "#e63946", // Custom thematic color for History
+                        "history-red-container": "#f8d7da"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "container-max": "1200px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Quicksand"],
+                        "headline-xl": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Custom Bouncy Button Interaction */
+        .btn-bouncy {
+            border-bottom-width: 4px;
+            transition: all 0.15s ease-in-out;
+        }
+        .btn-bouncy:active {
+            transform: translateY(4px);
+            border-bottom-width: 0px;
+            margin-top: 4px; /* Compensate for lost border to keep total height */
+        }
+
+        /* Glassmorphism utility */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        /* Ambient Shadows */
+        .shadow-ambient-primary {
+            box-shadow: 0 10px 25px -5px rgba(45, 212, 191, 0.3); /* primary-container color */
+        }
+        .shadow-ambient-history {
+            box-shadow: 0 10px 25px -5px rgba(230, 57, 70, 0.3); /* history-red color */
+        }
+        
+        /* Progress Path Animation */
+        @keyframes walk {
+            0% { left: 0%; transform: translateX(0) scale(1) rotate(-5deg); }
+            50% { transform: translateX(0) scale(1.1) rotate(5deg); }
+            100% { left: 33%; transform: translateX(-50%) scale(1) rotate(-5deg); } /* Hardcoded to 33% for visual */
+        }
+        .avatar-walk {
+            animation: walk 2s ease-in-out forwards;
+        }
+
+        /* Responsive hiding based on guidelines */
+        @media (min-width: 768px) {
+            .mobile-only-nav { display: none !important; }
+        }
+        @media (max-width: 767px) {
+            .desktop-only-nav { display: none !important; }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-24 md:pb-0 overflow-x-hidden font-body-md text-body-md">
+<!-- TopAppBar (Web & Mobile Hybrid) -->
+<header class="bg-surface docked full-width top-0 sticky z-50 transition-shadow duration-300" id="top-nav">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max mx-auto">
+<!-- Leading: Avatar -->
+<button aria-label="Profil Pengguna" class="flex items-center gap-3 hover:scale-105 transition-transform group">
+<div class="relative w-12 h-12 rounded-full overflow-hidden border-2 border-primary-container shadow-sm group-hover:border-primary transition-colors">
+<img alt="Avatar Pengguna" class="w-full h-full object-cover" data-alt="A cheerful 3D cartoon avatar of an Indonesian child explorer wearing a traditional batik bandana and a friendly smile, set against a bright, warm teal background. The lighting is soft and inviting, emphasizing a playful and educational tone suitable for a digital playground aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk-EXQE4wLPuFJAulNc5RlQ6uDkVocBVS0lIijK1ySK2JBgQBbTcYMOuPzKCWqqdqbjVfYeabYCm-C7pHz2Uo6IB1JEfmThzzZcSjrDvxWRFdzBrM-yPS9miPS0psD6Wz6sqE-Evobk6b31r0TmWP59s2n_nRhlEmIWcA6hG86r276esDiIsZVP_EBGlSjeQ3U50XUjkcRdi1Wi3V6SyU9fV42KuLkps0f19Ax4fThlb5o0DVMzi3GGu5V_QW-Z2ZswuUbDKH6bPU"/>
+</div>
+<span class="font-label-md text-label-md text-primary hidden md:block">Halo, Pahlawan!</span>
+</button>
+<!-- Headline/Brand -->
+<a class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-xl md:text-headline-xl text-primary tracking-tight text-center absolute left-1/2 -translate-x-1/2" href="#">
+                NusaPedia
+            </a>
+<!-- Desktop Navigation (Hidden on Mobile) -->
+<nav class="desktop-only-nav flex items-center gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:scale-105 transition-transform flex items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:text-primary transition-colors">home</span> Home
+                </a>
+<a class="font-label-md text-label-md text-on-surface font-bold hover:scale-105 transition-transform flex items-center gap-1 relative text-history-red" href="#">
+<span class="material-symbols-outlined filled text-[20px]">explore</span> Jelajah
+                    <!-- Active Indicator -->
+<span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-8 h-1 bg-history-red rounded-full"></span>
+</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:scale-105 transition-transform flex items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:text-primary transition-colors">sports_esports</span> Game
+                </a>
+</nav>
+<!-- Trailing: Icon -->
+<button aria-label="Pengaturan" class="text-primary hover:scale-105 transition-transform w-12 h-12 flex items-center justify-center rounded-full hover:bg-surface-variant">
+<span class="material-symbols-outlined text-[28px]">settings</span>
+</button>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-8 pb-16 space-y-12">
+<!-- Breadcrumb / Topic Tag -->
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 bg-history-red-container text-history-red font-label-md text-label-md px-4 py-2 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[18px]">history_edu</span> Sejarah
+            </span>
+<span class="text-outline material-symbols-outlined text-[20px]">chevron_right</span>
+<span class="text-on-surface-variant font-label-md text-label-md">Perjuangan Bangsa</span>
+</div>
+<!-- Hero Section: Heroic Illustration -->
+<section class="relative w-full rounded-xl overflow-hidden shadow-ambient-history min-h-[530px] md:min-h-[500px] flex items-end">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Ilustrasi Sumpah Pemuda" class="w-full h-full object-cover object-center" data-alt="A dramatic, kid-friendly 3D illustration of the 1928 Sumpah Pemuda gathering in Indonesia. Young boys and girls in varied traditional Indonesian clothing from different regions (Java, Sumatra, Bali, etc.) stand proudly together holding a giant, gently waving red and white flag. The scene is illuminated by warm, hopeful golden hour sunlight, creating a majestic but accessible 'digital playground' feel. The style is slightly skeuomorphic and squishy, reminiscent of modern educational animations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjm5hCbEhUmJKnwfM44zHT4mRAEn8tG56KPnU00jErPfZeX4DGkRET9jeuLn2cCJ5b9ZQGsuGYJOk7408p1lFpsLIXU3gllxWyBZOILUGb1TZSnNX7f9RSI6qqffGKQVWU_87oOouqNAS-AzaE7w5VnzSfnhDdPZPmjAwk91-ZEH_XK2Deyahg95QD7p3vVhDIh3AxLPAcYiK866M_9dlciG2SJtZi06Dv70jkG5KWiOwRVMF1DO6hRHS6PvoeZVxh1f2TLoa5S6o"/>
+<!-- Gradient Overlay for text readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 p-6 md:p-12 w-full max-w-3xl">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-xl md:text-headline-xl text-on-primary mb-4 drop-shadow-md">
+                    Sumpah Pemuda: Tiga Janji Hebat!
+                </h1>
+<p class="font-body-md text-body-md text-surface-container-low mb-6">
+                    Pada tanggal 28 Oktober 1928, pemuda-pemudi dari seluruh Nusantara berkumpul. Mereka berjanji untuk bersatu, meski berasal dari pulau yang berbeda-beda.
+                </p>
+<button class="bg-history-red border-history-red-dark text-on-primary font-label-md text-label-md py-3 px-8 rounded-full btn-bouncy inline-flex items-center gap-2 shadow-ambient-history">
+<span class="material-symbols-outlined">play_arrow</span> Mulai Petualangan
+                </button>
+</div>
+</section>
+<!-- Progress Track (Metaphorical) -->
+<section class="bg-surface-bright rounded-lg p-6 shadow-sm border border-outline-variant/30 text-center relative overflow-hidden">
+<h2 class="font-label-md text-label-md text-on-surface-variant mb-4 uppercase tracking-widest text-sm">Jejak Penjelajahanmu</h2>
+<div class="relative h-6 bg-surface-variant rounded-full mt-8 mx-auto max-w-2xl">
+<!-- Track Fill -->
+<div class="absolute top-0 left-0 h-full bg-history-red/30 rounded-full w-1/3 transition-all duration-1000"></div>
+<!-- Path line -->
+<div class="absolute top-1/2 left-0 w-full border-t-2 border-dashed border-outline-variant -translate-y-1/2 z-0"></div>
+<!-- Avatar on track -->
+<div class="absolute top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full border-4 border-surface bg-history-red flex items-center justify-center text-on-primary shadow-md avatar-walk" style="left: 0%;">
+<span class="material-symbols-outlined text-[24px]">hiking</span>
+</div>
+<!-- Milestones -->
+<div class="absolute top-1/2 left-0 -translate-y-1/2 z-0 flex justify-between w-full px-2">
+<div class="w-4 h-4 rounded-full bg-history-red border-2 border-surface"></div>
+<div class="w-4 h-4 rounded-full bg-surface-container-high border-2 border-surface"></div>
+<div class="w-4 h-4 rounded-full bg-surface-container-high border-2 border-surface"></div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-secondary mt-6 font-medium">Bagus! Kamu sudah memulai perjalanan sejarah ini.</p>
+</section>
+<!-- Bento Grid: The Three Pillars -->
+<section>
+<div class="flex items-center gap-3 mb-8">
+<div class="w-12 h-12 rounded-full bg-history-red flex items-center justify-center text-on-primary shadow-ambient-history">
+<span class="material-symbols-outlined filled text-[28px]">flag</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">
+                    Isi Sumpah Pemuda
+                </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-container shadow-sm hover:-translate-y-1 transition-transform relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-history-red-container rounded-full opacity-50 group-hover:scale-150 transition-transform duration-500 z-0"></div>
+<div class="relative z-10">
+<div class="w-14 h-14 rounded-full bg-history-red-container text-history-red flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[32px]">public</span>
+</div>
+<h3 class="font-label-md text-label-md text-history-red uppercase mb-2">Janji Pertama</h3>
+<p class="font-body-lg text-body-lg text-on-surface font-bold mb-3 italic">"Satu Tanah Air, Tanah Air Indonesia"</p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Meski kita tinggal di pulau yang berbeda-beda, dari Sumatera hingga Papua, kita semua hidup di satu rumah besar bernama Indonesia.
+                        </p>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-container shadow-sm hover:-translate-y-1 transition-transform relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-history-red-container rounded-full opacity-50 group-hover:scale-150 transition-transform duration-500 z-0"></div>
+<div class="relative z-10">
+<div class="w-14 h-14 rounded-full bg-history-red-container text-history-red flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[32px]">groups</span>
+</div>
+<h3 class="font-label-md text-label-md text-history-red uppercase mb-2">Janji Kedua</h3>
+<p class="font-body-lg text-body-lg text-on-surface font-bold mb-3 italic">"Satu Bangsa, Bangsa Indonesia"</p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Beragam suku, tarian, dan warna kulit. Tapi kita adalah saudara. Kita adalah satu keluarga besar, Bangsa Indonesia.
+                        </p>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border-2 border-surface-container shadow-sm hover:-translate-y-1 transition-transform relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-history-red-container rounded-full opacity-50 group-hover:scale-150 transition-transform duration-500 z-0"></div>
+<div class="relative z-10">
+<div class="w-14 h-14 rounded-full bg-history-red-container text-history-red flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[32px]">record_voice_over</span>
+</div>
+<h3 class="font-label-md text-label-md text-history-red uppercase mb-2">Janji Ketiga</h3>
+<p class="font-body-lg text-body-lg text-on-surface font-bold mb-3 italic">"Satu Bahasa, Bahasa Indonesia"</p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Agar bisa mengobrol dan bermain bersama teman dari pulau lain, kita sepakat menggunakan satu bahasa pengantar: Bahasa Indonesia!
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Section: Games -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Game 1: Tebak Kata Rahasia -->
+<div class="glass-card rounded-xl p-8 relative overflow-hidden bg-surface-container-lowest">
+<!-- Decorative background elements -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container rounded-bl-full opacity-20 -z-10"></div>
+<div class="absolute bottom-0 left-0 w-24 h-24 bg-secondary-container rounded-tr-full opacity-20 -z-10"></div>
+<div class="flex items-start justify-between mb-6">
+<div>
+<span class="inline-block bg-primary text-on-primary font-label-md text-[12px] px-3 py-1 rounded-full mb-2 uppercase tracking-wide">Mini Game</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-1">Tebak Kata Rahasia</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Lengkapi kalimat sumpah pemuda ini!</p>
+</div>
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center shadow-ambient-primary">
+<span class="material-symbols-outlined text-[28px]">extension</span>
+</div>
+</div>
+<div class="bg-surface p-6 rounded-lg border-2 border-outline-variant/30 text-center space-y-6">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                        Kami putra dan putri Indonesia, mengaku bertumpah darah yang satu, tanah air <span class="inline-block border-b-4 border-primary border-dashed w-32 h-8 translate-y-2"></span>.
+                    </p>
+<div class="flex flex-wrap justify-center gap-4 mt-6">
+<button class="bg-surface-container-highest hover:bg-surface-variant text-on-surface font-label-md text-label-md py-2 px-6 rounded-full border-2 border-transparent hover:border-primary transition-all">Belanda</button>
+<button class="bg-primary hover:bg-primary/90 text-on-primary font-label-md text-label-md py-2 px-6 rounded-full shadow-md hover:-translate-y-1 transition-all">Indonesia</button>
+<button class="bg-surface-container-highest hover:bg-surface-variant text-on-surface font-label-md text-label-md py-2 px-6 rounded-full border-2 border-transparent hover:border-primary transition-all">Jepang</button>
+</div>
+</div>
+</div>
+<!-- Quiz: Pahlawan Muda -->
+<div class="bg-history-red text-on-primary rounded-xl p-8 relative overflow-hidden shadow-ambient-history">
+<!-- Character peeking out -->
+<div class="absolute -bottom-4 -right-4 w-40 h-40 opacity-90 z-0">
+<img alt="Maskot Pahlawan" class="w-full h-full object-contain filter drop-shadow-lg rounded-full" data-alt="A cute, 3D rendered mascot of a young Indonesian boy wearing a red and white peci (cap) and a scout uniform, giving a cheerful thumbs-up. The lighting is soft and studio-like, complementing the minimal, tactile 'digital playground' UI style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmwQ2xo_mp0P_TnZqmFTUbf3V0w3ABLX-PdkpSgt0B0T344S-3VYwZD0rHiZdi_sUnj9MSynzaReW1SdI5F2Zv-amhFRHmY567dVO0-h7dmFEcI7nT5qiBnYiSx2P8Bj_yx9ugXqy-yCMqCPWAr1xI1_DoHb2AOIPKCi_eqT2ZL2s45idFT7-NscjUuvhUDIu3aqpnNUuqQEFhgMx-pDRkJRrjRppyB0HYhilDafNlIhI7JCjDzha-FBMyiyzPr9zXedjETTIMGiE"/>
+</div>
+<div class="relative z-10">
+<span class="inline-block bg-on-primary/20 text-on-primary font-label-md text-[12px] px-3 py-1 rounded-full mb-2 uppercase tracking-wide backdrop-blur-sm">Kuis Singkat</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile mb-1">Kuis Pahlawan Muda</h3>
+<p class="font-body-md text-body-md text-white/90 mb-8 max-w-[80%]">Tunjukkan seberapa jauh kamu mengenal sejarah bangsamu!</p>
+<div class="space-y-4 max-w-[90%]">
+<p class="font-label-md text-label-md mb-2">Siapa yang pertama kali mengumandangkan lagu Indonesia Raya pada peristiwa Sumpah Pemuda?</p>
+<label class="flex items-center gap-4 bg-white/10 hover:bg-white/20 p-4 rounded-lg cursor-pointer transition-colors border border-white/20 hover:border-white/50 group">
+<div class="w-6 h-6 rounded-full border-2 border-white flex items-center justify-center group-hover:bg-white/30">
+<!-- empty radio -->
+</div>
+<span class="font-body-md text-body-md">Soekarno</span>
+</label>
+<label class="flex items-center gap-4 bg-white/20 p-4 rounded-lg cursor-pointer transition-colors border-2 border-white shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+<div class="w-6 h-6 rounded-full bg-white flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-history-red">check</span>
+</div>
+<span class="font-body-md text-body-md font-bold">W.R. Supratman</span>
+</label>
+<label class="flex items-center gap-4 bg-white/10 hover:bg-white/20 p-4 rounded-lg cursor-pointer transition-colors border border-white/20 hover:border-white/50 group">
+<div class="w-6 h-6 rounded-full border-2 border-white flex items-center justify-center group-hover:bg-white/30">
+<!-- empty radio -->
+</div>
+<span class="font-body-md text-body-md">Mohammad Hatta</span>
+</label>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="mobile-only-nav fixed bottom-0 w-full rounded-t-lg bg-surface-container-lowest shadow-[0_-4px_20px_-5px_rgba(0,107,95,0.2)] z-50 flex justify-around items-center px-2 pb-4 pt-2">
+<button aria-label="Home" class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group transition-colors">
+<span class="material-symbols-outlined text-[24px] group-hover:scale-110 transition-transform">home</span>
+<span class="font-label-md text-[12px] mt-1">Home</span>
+</button>
+<!-- Active Tab: Jelajah -->
+<button aria-label="Jelajah" class="flex flex-col items-center justify-center bg-history-red-container text-history-red rounded-full px-4 py-2 mb-1 shadow-[0_4px_0_0_#ba1a1a] translate-y-[-4px] transition-all">
+<span class="material-symbols-outlined filled text-[24px]">explore</span>
+<span class="font-label-md text-[12px] mt-1 font-bold">Jelajah</span>
+</button>
+<button aria-label="Game" class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group transition-colors">
+<span class="material-symbols-outlined text-[24px] group-hover:scale-110 transition-transform">sports_esports</span>
+<span class="font-label-md text-[12px] mt-1">Game</span>
+</button>
+<button aria-label="Badge" class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group transition-colors">
+<span class="material-symbols-outlined text-[24px] group-hover:scale-110 transition-transform">military_tech</span>
+<span class="font-label-md text-[12px] mt-1">Badge</span>
+</button>
+<button aria-label="Tanya AI" class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group transition-colors">
+<span class="material-symbols-outlined text-[24px] group-hover:scale-110 transition-transform">smart_toy</span>
+<span class="font-label-md text-[12px] mt-1">Tanya AI</span>
+</button>
+</nav>
+<!-- Simple Scroll Effect for Top Nav -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const nav = document.getElementById('top-nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 10) {
+                    nav.classList.add('shadow-md');
+                } else {
+                    nav.classList.remove('shadow-md');
+                }
+            });
+        });
+    </script>
+</body></html>

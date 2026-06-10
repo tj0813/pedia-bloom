@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pangeran Diponegoro - Nusantara Explorers</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#ffdbcc",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-tertiary-fixed": "#351000",
+                        "on-surface": "#0d1c2e",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-secondary-container": "#693300",
+                        "secondary": "#944a00",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#ffdcc5",
+                        "on-primary-container": "#00574d",
+                        "outline-variant": "#bacac5",
+                        "primary-fixed": "#62fae3",
+                        "on-error": "#ffffff",
+                        "surface-container": "#e6eeff",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-background": "#0d1c2e",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f8f9ff",
+                        "secondary-container": "#fd933d",
+                        "on-primary-fixed-variant": "#005047",
+                        "on-surface-variant": "#3c4a46",
+                        "on-primary-fixed": "#00201c",
+                        "outline": "#6b7a76",
+                        "surface-dim": "#ccdbf3",
+                        "inverse-on-surface": "#eaf1ff",
+                        "surface": "#f8f9ff",
+                        "surface-container-highest": "#d5e3fc",
+                        "primary-fixed-dim": "#3cddc7",
+                        "tertiary-container": "#ffaa81",
+                        "surface-variant": "#d5e3fc",
+                        "on-secondary-fixed": "#301400",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#713700",
+                        "tertiary": "#944a23",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-container": "#7e3913",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "surface-tint": "#006b5f",
+                        "inverse-surface": "#233144",
+                        "primary-container": "#2dd4bf",
+                        "background": "#f8f9ff",
+                        "primary": "#006b5f",
+                        "inverse-primary": "#3cddc7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "headline-lg": ["Quicksand"],
+                        "label-md": ["Quicksand"],
+                        "headline-xl": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "label-md": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .bouncy-button:active { transform: translateY(4px); transition: transform 0.1s; }
+        .bouncy-button { box-shadow: 0 4px 0 #944a00; transition: transform 0.1s; }
+        .soft-glow-primary { box-shadow: 0 8px 32px -8px rgba(45, 212, 191, 0.5); }
+        .soft-glow-secondary { box-shadow: 0 8px 32px -8px rgba(253, 147, 61, 0.5); }
+        
+        /* Drag and Drop Styles */
+        .draggable { cursor: grab; }
+        .draggable:active { cursor: grabbing; }
+        .dropzone.dragover { background-color: theme('colors.primary-container'); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-lg min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-container docked full-width top-0 bg-surface dark:bg-surface-container flat no shadows flex justify-between items-center px-margin-mobile py-4 w-full z-40 sticky">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-outline-variant hover:scale-105 transition-transform">
+<img alt="Nara the Explorer mascot smiling" class="w-full h-full object-cover" data-alt="A friendly, cartoon-style illustration of a cute, adventurous child mascot named Nara, wearing a small explorer hat and a warm smile. The mascot has bright eyes and a welcoming expression, suitable for a children's educational app. The background is a solid, soft teal color, creating a bright and safe mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnfJVuOVwgQedNYwmrdtoKvw79kfy-yOEPosVa-OwVcobt8k58NZgxy0dXm7t5kzBogto1RY_atIy78iS0UR7gozk_tP4EY-qJ7gRa-EcebTFOFcGZV6_IDjYLpms-sl9toUQmD3-LUpBLFa9ijGtSN5SP2TLf5hXrDHEnIej7Ig84CxqhlZtL54d_jWBm6Im-2JmuV0rtSvYg5zlLpMmlzrucNsklV6lf9skmyPdPLwco0W1T-NbwRpYXnOVUbAmi31tz1PGj4_s"/>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary dark:text-primary-fixed tracking-tight hover:scale-105 transition-transform">NusaPedia</h1>
+</div>
+<button class="w-12 h-12 flex items-center justify-center rounded-full text-primary dark:text-primary-fixed-dim hover:bg-surface-variant hover:scale-105 transition-transform">
+<span class="material-symbols-outlined" data-icon="settings" data-weight="fill">settings</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pb-[100px] md:pb-8 pt-4 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full flex flex-col gap-8">
+<!-- Hero Section -->
+<section class="relative w-full rounded-3xl overflow-hidden shadow-lg border-2 border-outline-variant bg-surface-container-low min-h-[400px] flex items-end p-8">
+<div class="absolute inset-0 z-0">
+<img alt="Hero background" class="w-full h-full object-cover opacity-80" data-alt="A vibrant, stylized illustration of a historical Indonesian landscape at sunrise. Lush green hills roll into the distance under a warm, golden sky. In the foreground, a silhouette of a majestic hero on a horse stands proudly, overlooking the land. The style is slightly painterly but clear and child-friendly, evoking a sense of epic adventure and history." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkMZKRzd7g897FvO9Lb3LJ0qx0eeunou3f2CzY0pey3aO6dOO3PtTXbdtwNJ_kqPCPMAjD8hIXUyvSgzpnrZMLHi6piqtnsSzeIkqNDfv5A53t36VhpP4W48XliDqdEvkJfXfc3Wh3vKuTGl7ZK_ZnD6I_NFL6ZN8fqUY49V58ysRlu3ZBEdquVpOWumZOPCRRnQC5Pg0SXnQorna10tIZHFaHzjEo4jvvtNnmtKS8fwnCa4FcOh5pMbJeRZYaRRRNRICN8ojotKM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 to-transparent"></div>
+</div>
+<div class="relative z-10 text-on-primary w-full max-w-2xl">
+<div class="inline-flex items-center bg-tertiary-container text-on-tertiary-container px-4 py-1.5 rounded-full font-label-md text-label-md mb-4 shadow-sm">
+<span class="material-symbols-outlined mr-2 text-sm" data-icon="history">history</span>
+                    Pahlawan Nasional
+                </div>
+<h2 class="font-headline-xl text-headline-xl mb-2 text-white">Pangeran Diponegoro</h2>
+<p class="font-body-lg text-surface-container-highest mb-6">Sang pangeran pemberani yang memimpin Perang Jawa demi membela rakyat kecil. Yuk, ikuti kisah heroiknya!</p>
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-label-md text-label-md bouncy-button flex items-center gap-2 w-fit" onclick="document.getElementById('story-section').scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+                    Mulai Membaca
+                </button>
+</div>
+</section>
+<!-- Story Section (Bento Grid) -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6" id="story-section">
+<!-- Intro Card -->
+<div class="md:col-span-2 bg-surface rounded-2xl p-8 border-2 border-surface-container-high soft-glow-primary relative overflow-hidden">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-primary-container rounded-full opacity-50 blur-xl"></div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-4">Siapa itu Pangeran Diponegoro?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                    Lahir dengan nama Raden Mas Ontowiryo, beliau adalah seorang pangeran dari Keraton Yogyakarta. Tapi, Pangeran Diponegoro lebih suka tinggal di desa bersama rakyat biasa lho, daripada di istana yang mewah.
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Beliau sangat sedih melihat rakyat yang menderita karena penjajah Belanda. Kesedihan itu berubah menjadi keberanian untuk melawan, memicu perang besar yang dikenal sebagai <strong>Perang Diponegoro</strong> (1825-1830).
+                </p>
+</div>
+<!-- Fun Fact Card -->
+<div class="md:col-span-1 bg-tertiary-container rounded-2xl p-8 border-2 border-tertiary-fixed flex flex-col justify-center items-center text-center relative shadow-md">
+<span class="material-symbols-outlined text-6xl text-on-tertiary-container mb-4" data-icon="lightbulb" data-weight="fill">lightbulb</span>
+<h4 class="font-label-md text-label-md text-on-tertiary-container mb-2 uppercase tracking-wider">Tahukah Kamu?</h4>
+<p class="font-body-md text-body-md text-on-tertiary-container">
+                    Pangeran Diponegoro sering memakai sorban putih dan jubah, mirip dengan pakaian para ulama. Beliau juga sangat jago bela diri dan berkuda!
+                </p>
+</div>
+<!-- Kyai Gentayu Focus -->
+<div class="md:col-span-3 bg-surface-container-lowest rounded-2xl border-2 border-outline-variant overflow-hidden flex flex-col md:flex-row shadow-sm mt-4">
+<div class="md:w-2/5 h-64 md:h-auto relative">
+<img alt="Kyai Gentayu the horse" class="w-full h-full object-cover" data-alt="A stylized, majestic black horse galloping through a grassy field. The horse looks strong and fast, with a flowing mane. The art style is bright, clean, and friendly, appealing to children, with a soft depth of field separating the horse from a slightly blurred, warm green background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4pCIE8s6sVZUfyApOKxZfu_6jxphVNpmi8FskYHlFpA6daBrtbSYynuvUDqTH44GIGWRYYbNzuwgcZ6gRCRnWWurBkFJ9LbPO4RTWa2kDooB7_HyRo6MgY1l4pDhpFk4xav3rBJL_gWOafKfHKjy2GywxdzkK7tIbDc3MhKP26KBBp8O3MH1hBTOjh1lHYvSMMdoEu1oGgiBsgJIbcoC5hz8aO_DzltcFjkFYmylZ9BGb8hEBNjIlG3EGyktgxUlGse7n5PUkk5U"/>
+</div>
+<div class="p-8 md:w-3/5 flex flex-col justify-center">
+<div class="inline-flex items-center bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-md text-label-md mb-4 w-fit">
+<span class="material-symbols-outlined mr-2 text-sm" data-icon="pets">pets</span>
+                        Kuda Kesayangan
+                    </div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-4">Kyai Gentayu</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        Dalam setiap pertempuran, Pangeran Diponegoro selalu ditemani oleh kuda kesayangannya yang berwarna hitam legam, bernama <strong>Kyai Gentayu</strong>. Konon, kuda ini sangat cepat dan tangguh, bisa menghindari peluru musuh!
+                    </p>
+<!-- Quick Quiz -->
+<div class="bg-surface-dim rounded-xl p-4 border border-outline-variant">
+<h4 class="font-label-md text-label-md text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="help">help</span>
+                            Kuis Cepat!
+                        </h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-3">Siapa nama kuda kesayangan Pangeran Diponegoro?</p>
+<div class="flex flex-wrap gap-2">
+<button class="bg-surface text-on-surface px-4 py-2 rounded-lg border border-outline hover:bg-surface-variant transition-colors" onclick="alert('Coba lagi! Kyai Slamet adalah kerbau pusaka.')">Kyai Slamet</button>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-lg border border-primary-fixed shadow-md hover:bg-surface-tint transition-colors" onclick="alert('Benar sekali! Kamu hebat!')">Kyai Gentayu</button>
+<button class="bg-surface text-on-surface px-4 py-2 rounded-lg border border-outline hover:bg-surface-variant transition-colors" onclick="alert('Hmm, bukan itu namanya. Coba ingat-ingat lagi!')">Si Hitam</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Play Section: Timeline -->
+<section class="bg-surface-container rounded-3xl p-8 border-2 border-outline-variant soft-glow-secondary mt-4">
+<div class="text-center mb-8">
+<span class="inline-block bg-primary text-on-primary p-3 rounded-full mb-4 shadow-md">
+<span class="material-symbols-outlined text-3xl" data-icon="extension" data-weight="fill">extension</span>
+</span>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Susun Sejarahnya!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto mt-2">Tarik kotak peristiwa ke kotak tahun yang benar untuk melihat perjalanan Pangeran Diponegoro.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-8">
+<!-- Draggable Items -->
+<div class="flex-1 flex flex-col gap-4" id="draggable-container">
+<div class="draggable bg-surface p-4 rounded-xl border-2 border-primary-container shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing" data-year="1785" draggable="true" id="event1">
+<p class="font-label-md text-label-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="child_care">child_care</span>
+                            Lahir di Yogyakarta
+                        </p>
+</div>
+<div class="draggable bg-surface p-4 rounded-xl border-2 border-tertiary-container shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing" data-year="1825" draggable="true" id="event2">
+<p class="font-label-md text-label-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary" data-icon="swords">swords</span>
+                            Perang Diponegoro Dimulai
+                        </p>
+</div>
+<div class="draggable bg-surface p-4 rounded-xl border-2 border-error-container shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing" data-year="1830" draggable="true" id="event3">
+<p class="font-label-md text-label-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-error" data-icon="flag">flag</span>
+                            Ditangkap Belanda
+                        </p>
+</div>
+</div>
+<!-- Drop Zones -->
+<div class="flex-1 flex flex-col gap-4 border-l-4 border-outline-variant pl-4 md:pl-8 relative">
+<!-- Path track effect -->
+<div class="absolute left-[14px] md:left-[30px] top-4 bottom-4 w-2 bg-primary-container rounded-full z-0"></div>
+<div class="dropzone bg-surface-container-lowest h-20 rounded-xl border-2 border-dashed border-outline-variant flex items-center justify-center relative z-10 transition-colors" data-target="1785">
+<div class="absolute -left-6 md:-left-10 bg-primary text-on-primary w-12 h-12 rounded-full flex items-center justify-center font-bold shadow-md">1785</div>
+<span class="text-outline font-label-md text-label-md pointer-events-none">Tarik kesini...</span>
+</div>
+<div class="dropzone bg-surface-container-lowest h-20 rounded-xl border-2 border-dashed border-outline-variant flex items-center justify-center relative z-10 transition-colors" data-target="1825">
+<div class="absolute -left-6 md:-left-10 bg-tertiary text-on-tertiary w-12 h-12 rounded-full flex items-center justify-center font-bold shadow-md">1825</div>
+<span class="text-outline font-label-md text-label-md pointer-events-none">Tarik kesini...</span>
+</div>
+<div class="dropzone bg-surface-container-lowest h-20 rounded-xl border-2 border-dashed border-outline-variant flex items-center justify-center relative z-10 transition-colors" data-target="1830">
+<div class="absolute -left-6 md:-left-10 bg-error text-on-error w-12 h-12 rounded-full flex items-center justify-center font-bold shadow-md">1830</div>
+<span class="text-outline font-label-md text-label-md pointer-events-none">Tarik kesini...</span>
+</div>
+</div>
+</div>
+<div class="hidden mt-8 text-center bg-primary-container text-on-primary-container p-4 rounded-xl font-label-md text-label-md animate-bounce" id="success-message">
+                🎉 Hore! Kamu berhasil menyusun sejarah Pangeran Diponegoro! 🎉
+            </div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-surface-container-lowest dark:bg-inverse-surface shadow-[0_-4px_20px_-5px_rgba(0,107,95,0.2)] dark:shadow-none shadow-lg fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-4 pt-2 rounded-t-lg">
+<button class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group">
+<span class="material-symbols-outlined text-2xl mb-1 group-hover:scale-110 transition-transform" data-icon="home">home</span>
+<span class="font-label-md text-label-md text-[10px]">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-2 mb-1 shadow-[0_4px_0_0_#005047] translate-y-1 transition-all">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="explore" data-weight="fill">explore</span>
+<span class="font-label-md text-label-md text-[10px] font-bold">Jelajah</span>
+</button>
+<button class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group">
+<span class="material-symbols-outlined text-2xl mb-1 group-hover:scale-110 transition-transform" data-icon="sports_esports">sports_esports</span>
+<span class="font-label-md text-label-md text-[10px]">Game</span>
+</button>
+<button class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group">
+<span class="material-symbols-outlined text-2xl mb-1 group-hover:scale-110 transition-transform" data-icon="military_tech">military_tech</span>
+<span class="font-label-md text-label-md text-[10px]">Badge</span>
+</button>
+<button class="flex flex-col items-center justify-center text-outline p-2 hover:bg-surface-variant rounded-full group">
+<span class="material-symbols-outlined text-2xl mb-1 group-hover:scale-110 transition-transform" data-icon="smart_toy">smart_toy</span>
+<span class="font-label-md text-label-md text-[10px]">Tanya AI</span>
+</button>
+</nav>
+<script>
+        // Simple Drag and Drop Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const draggables = document.querySelectorAll('.draggable');
+            const dropzones = document.querySelectorAll('.dropzone');
+            let correctCount = 0;
+
+            draggables.forEach(draggable => {
+                draggable.addEventListener('dragstart', () => {
+                    draggable.classList.add('opacity-50');
+                    draggable.dataset.dragging = 'true';
+                });
+
+                draggable.addEventListener('dragend', () => {
+                    draggable.classList.remove('opacity-50');
+                    delete draggable.dataset.dragging;
+                });
+            });
+
+            dropzones.forEach(zone => {
+                zone.addEventListener('dragover', e => {
+                    e.preventDefault();
+                    zone.classList.add('dragover');
+                });
+
+                zone.addEventListener('dragleave', () => {
+                    zone.classList.remove('dragover');
+                });
+
+                zone.addEventListener('drop', e => {
+                    e.preventDefault();
+                    zone.classList.remove('dragover');
+                    
+                    const draggingItem = document.querySelector('.draggable[data-dragging="true"]');
+                    if (!draggingItem) return;
+
+                    const expectedYear = zone.dataset.target;
+                    const itemYear = draggingItem.dataset.year;
+
+                    if (expectedYear === itemYear) {
+                        // Success
+                        zone.innerHTML = '';
+                        zone.appendChild(draggingItem);
+                        draggingItem.setAttribute('draggable', 'false');
+                        draggingItem.classList.remove('cursor-grab', 'active:cursor-grabbing');
+                        draggingItem.classList.add('border-primary', 'bg-surface-bright');
+                        
+                        zone.classList.replace('border-dashed', 'border-solid');
+                        zone.classList.replace('border-outline-variant', 'border-primary-container');
+                        
+                        correctCount++;
+                        if (correctCount === 3) {
+                            document.getElementById('success-message').classList.remove('hidden');
+                        }
+                    } else {
+                        // Shake animation for incorrect drop
+                        zone.classList.add('animate-pulse');
+                        setTimeout(() => zone.classList.remove('animate-pulse'), 500);
+                    }
+                });
+            });
+        });
+    </script>
+</body></html>

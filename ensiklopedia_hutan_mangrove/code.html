@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ekosistem Mangrove - Penjaga Pantai</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "on-surface-variant": "#3c4a46",
+                      "on-tertiary-container": "#7e3913",
+                      "surface": "#f8f9ff",
+                      "on-error-container": "#93000a",
+                      "surface-variant": "#d5e3fc",
+                      "on-secondary-fixed": "#301400",
+                      "on-secondary-container": "#693300",
+                      "primary-fixed-dim": "#3cddc7",
+                      "primary-fixed": "#62fae3",
+                      "tertiary-fixed": "#ffdbcc",
+                      "tertiary-container": "#ffaa81",
+                      "on-surface": "#0d1c2e",
+                      "on-primary-container": "#00574d",
+                      "surface-tint": "#006b5f",
+                      "surface-container": "#e6eeff",
+                      "on-primary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "secondary-fixed-dim": "#ffb783",
+                      "secondary": "#944a00",
+                      "surface-container-highest": "#d5e3fc",
+                      "on-tertiary-fixed": "#351000",
+                      "primary": "#006b5f",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "on-tertiary": "#ffffff",
+                      "secondary-fixed": "#ffdcc5",
+                      "outline-variant": "#bacac5",
+                      "surface-container-low": "#eff4ff",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "tertiary": "#944a23",
+                      "outline": "#6b7a76",
+                      "surface-dim": "#ccdbf3",
+                      "surface-bright": "#f8f9ff",
+                      "primary-container": "#2dd4bf",
+                      "on-primary-fixed-variant": "#005047",
+                      "on-background": "#0d1c2e",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed": "#00201c",
+                      "inverse-surface": "#233144",
+                      "inverse-on-surface": "#eaf1ff",
+                      "surface-container-high": "#dce9ff",
+                      "on-secondary-fixed-variant": "#713700",
+                      "on-error": "#ffffff",
+                      "inverse-primary": "#3cddc7",
+                      "secondary-container": "#fd933d",
+                      "background": "#f8f9ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "container-max": "1200px",
+                      "margin-mobile": "20px",
+                      "gutter": "24px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "label-md": ["Quicksand"],
+                      "headline-xl": ["Quicksand"],
+                      "headline-lg": ["Quicksand"],
+                      "headline-lg-mobile": ["Quicksand"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "body-lg": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                      "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                      "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .squishy-btn {
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .squishy-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 0 0 rgba(0,0,0,0);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(45, 212, 191, 0.2);
+        }
+        .colored-shadow {
+            box-shadow: 0 4px 12px rgba(45, 212, 191, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md antialiased pb-24 md:pb-0 pt-20">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 bg-background dark:bg-on-background flex justify-between items-center px-gutter py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden flex items-center justify-center border-2 border-primary">
+<img alt="Nara the Explorer mascot avatar" class="w-full h-full object-cover" data-alt="A cheerful, stylized 2D illustration of a young Indonesian explorer mascot named Nara, wearing a safari hat and a bright green vest, smiling warmly against a soft teal background. The art style is friendly, child-appropriate, and colorful, suitable for an educational app's avatar." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiuMjPxnGhBV7Zbj4foBMNLjvQiyU9KaLp_VtYoeAKlaIz4T1fFsif1abZQVxQ6Si6tTVBzqF164GyZ7yp8GhntHve6qfPlWv9EXCoCtUmER3NQBoFaQLmlYtE5_C3CtBbxhBEvZv7SSira8yhWr8r_TXZ4lhIfWpLj9x7F0RWcPGQy3E5SE8VFWr20J9uKieOZuENWLoc_ARXG8Qm_QzGsCZvTJgNJcx47euQZhbISxjDM6hQPAwrgzSY3U8sM1VS4sdzBUpOylA"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed">NusaPedia</h1>
+</div>
+<button class="w-12 h-12 rounded-full flex items-center justify-center text-primary dark:text-primary-fixed hover:bg-surface-container-low transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-12">
+<!-- Hero Section -->
+<section class="relative rounded-xl overflow-hidden min-h-[300px] md:min-h-[400px] flex items-end p-6 md:p-10 colored-shadow">
+<img alt="Mangrove Ecosystem" class="absolute inset-0 w-full h-full object-cover" data-alt="A stunning, high-quality photograph of a vibrant mangrove forest ecosystem in Indonesia during golden hour. The sunlight filters through the lush green leaves, casting dappled light on the complex, tangled stilt roots emerging from the calm coastal water. The scene is peaceful, educational, and visually engaging for a children's app, emphasizing earthy greens and warm sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxXo9KdXPULZ1LlhOmV_RoqwmRtDT4LGS5h4jsGyqh03lYZO9PAdg1GQ3R5R3pAfPzqp0esfFPkvdmfZC04MPT78exaWngC14YTZi2S_acXjMGtMJd8ldW7OE0cnOW_bx8YZdK_b_Q65UG47UO2c7qqOIyHhhXkRO1_cU50iqnmmd6u7i_neDHC_wDQr0V9rK-cF3TF7WjBSrl1qdSgoT_Muh_ZmFJ9tiyQ3TCAO3plRkFPKvLqyP3lbwaxsr6FVZh-Vd109YJzJs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface via-on-surface/50 to-transparent"></div>
+<div class="relative z-10 text-on-primary">
+<span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container font-label-md text-label-md rounded-full mb-3">Ekosistem</span>
+<h2 class="font-headline-xl text-headline-xl mb-2 text-white">Hutan Mangrove</h2>
+<p class="font-body-lg text-body-lg text-surface-bright max-w-2xl">Sang Penjaga Pantai yang melindungi daratan dan menjadi rumah bagi ribuan makhluk unik.</p>
+</div>
+</section>
+<!-- Why Penjaga Pantai -->
+<section class="bg-surface-container-lowest rounded-xl p-6 md:p-8 border-2 border-outline-variant/30 colored-shadow">
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1 space-y-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-4xl icon-filled" data-icon="shield">shield</span>
+<h3 class="font-headline-lg text-headline-lg">Kenapa disebut Penjaga Pantai?</h3>
+</div>
+<p class="text-on-surface-variant">
+                        Akar pohon mangrove yang kuat dan saling menganyam bertindak seperti jaring raksasa. Mereka memecah ombak besar sebelum mencapai daratan, melindungi pantai dari abrasi (pengikisan) dan bahkan badai tsuanami!
+                    </p>
+</div>
+<div class="flex-1 w-full relative rounded-lg overflow-hidden h-64 border-4 border-surface-variant">
+<img alt="Waves hitting mangrove roots" class="w-full h-full object-cover" data-alt="A close-up educational illustration or photo showing strong ocean waves gently breaking against the dense, sturdy stilt roots of a mangrove tree. The water is a clear, inviting blue-green, and the roots are a rich, earthy brown. The image conveys strength, protection, and the natural barrier function of the ecosystem." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJYxhT63LaBqDvxCn0cxmHmOHrV9nNJl0WTgH6QeRMEJVW2YBzURprsECOeN7IHKieEFgYlxqgijk04yfnzFS3qBqr7ChPyMWmEfJbArllmZvFsBffGlq0wmWTywH30rauQpKB8O0by8Z4Ix7AqV6xuSsriNrqPcQO9gRohyoe0qaTZOKBta1N9ypiMUDMNjuaQ2eM5AN_mmlU9w2Hm_I4GyF1tD_UTDTb74xI50DithxetShitLIEeIezo0IKOlQneTmpXiaJ4QI"/>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface-container-lowest border-t-2 border-outline-variant/30 shadow-[0_-4px_12px_rgba(45,212,191,0.15)] md:hidden rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-md text-label-md mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-2 hover:bg-surface-container-high transition-all translate-y-1" href="#">
+<span class="material-symbols-outlined icon-filled" data-icon="explore">explore</span>
+<span class="font-label-md text-label-md mt-1 font-bold">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="sports_esports">sports_esports</span>
+<span class="font-label-md text-label-md mt-1">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="military_tech">military_tech</span>
+<span class="font-label-md text-label-md mt-1">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="smart_toy">smart_toy</span>
+<span class="font-label-md text-label-md mt-1">Tanya AI</span>
+</a>
+</nav>
+</body></html>

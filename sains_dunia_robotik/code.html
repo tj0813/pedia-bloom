@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedia Bloom - Misi Robotik</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#ffdcc5",
+                      "primary-fixed": "#62fae3",
+                      "on-primary-fixed": "#00201c",
+                      "on-error": "#ffffff",
+                      "surface-variant": "#d5e3fc",
+                      "surface-container-high": "#dce9ff",
+                      "tertiary": "#944a23",
+                      "surface-dim": "#ccdbf3",
+                      "inverse-on-surface": "#eaf1ff",
+                      "secondary-container": "#fd933d",
+                      "error": "#ba1a1a",
+                      "surface-bright": "#f8f9ff",
+                      "primary-container": "#2dd4bf",
+                      "outline-variant": "#bacac5",
+                      "on-secondary-fixed": "#301400",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "surface-container-highest": "#d5e3fc",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-fixed": "#351000",
+                      "on-secondary-fixed-variant": "#713700",
+                      "on-primary-container": "#00574d",
+                      "background": "#f8f9ff",
+                      "on-tertiary-container": "#7e3913",
+                      "surface-container-low": "#eff4ff",
+                      "on-tertiary": "#ffffff",
+                      "primary": "#006b5f",
+                      "tertiary-container": "#ffaa81",
+                      "on-background": "#0d1c2e",
+                      "on-surface": "#0d1c2e",
+                      "on-error-container": "#93000a",
+                      "on-primary": "#ffffff",
+                      "surface-container": "#e6eeff",
+                      "secondary": "#944a00",
+                      "surface": "#f8f9ff",
+                      "on-primary-fixed-variant": "#005047",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "on-surface-variant": "#3c4a46",
+                      "inverse-surface": "#233144",
+                      "error-container": "#ffdad6",
+                      "outline": "#6b7a76",
+                      "inverse-primary": "#3cddc7",
+                      "tertiary-fixed": "#ffdbcc",
+                      "primary-fixed-dim": "#3cddc7",
+                      "on-secondary-container": "#693300",
+                      "surface-tint": "#006b5f",
+                      "secondary-fixed-dim": "#ffb783"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1200px",
+                      "margin-mobile": "20px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-desktop": "64px"
+              },
+              "fontFamily": {
+                      "headline-xl": [
+                              "Quicksand"
+                      ],
+                      "headline-lg-mobile": [
+                              "Quicksand"
+                      ],
+                      "headline-lg": [
+                              "Quicksand"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-md": [
+                              "Quicksand"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "34px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        body { background-color: #f8f9ff; }
+        .bouncy-btn { transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .bouncy-btn:active { transform: translateY(4px); }
+        .glass-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-background font-body-md bg-surface antialiased pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-bright dark:bg-surface-dim shadow-sm flex justify-between items-center px-margin-mobile py-unit">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden border-2 border-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">face</span>
+</div>
+</div>
+<div class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary dark:text-primary-fixed">
+            Pedia Bloom
+        </div>
+<button class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center hover:opacity-80 transition-transform active:scale-95 duration-200">
+<span class="material-symbols-outlined text-primary" data-icon="settings">settings</span>
+</button>
+</header>
+<main class="pt-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto space-y-12">
+<!-- Header & Intro -->
+<section class="text-center space-y-4">
+<span class="inline-block bg-tertiary-container text-on-tertiary-container font-label-md text-label-md px-4 py-1 rounded-full shadow-sm">
+                Misi: Teknologi
+            </span>
+<h1 class="font-headline-xl text-headline-xl text-primary">Mengenal Robotik</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Halo Explorer! Hari ini kita akan belajar bagaimana BimoBot dan teman-teman robotnya bisa bergerak dan berpikir.
+            </p>
+</section>
+<!-- Bento Grid: Robot Parts -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Part 1 -->
+<div class="glass-card rounded-xl p-6 border-2 border-surface-container shadow-sm hover:shadow-lg transition-shadow relative overflow-hidden">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center mb-4 shadow-[0_4px_12px_rgba(45,212,191,0.3)]">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">memory</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Otak (Kode)</h3>
+<p class="text-on-surface-variant">Robot butuh instruksi. Kode komputer adalah bahasa yang mereka mengerti untuk melakukan tugas.</p>
+</div>
+<!-- Part 2 -->
+<div class="glass-card rounded-xl p-6 border-2 border-surface-container shadow-sm hover:shadow-lg transition-shadow relative overflow-hidden">
+<div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center mb-4 shadow-[0_4px_12px_rgba(253,147,61,0.3)]">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">visibility</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Mata (Sensor)</h3>
+<p class="text-on-surface-variant">Sensor membantu robot melihat halangan, mengukur jarak, dan merasakan lingkungan sekitarnya.</p>
+</div>
+<!-- Part 3 -->
+<div class="glass-card rounded-xl p-6 border-2 border-surface-container shadow-sm hover:shadow-lg transition-shadow relative overflow-hidden">
+<div class="w-12 h-12 bg-tertiary-container rounded-full flex items-center justify-center mb-4 shadow-[0_4px_12px_rgba(255,170,129,0.3)]">
+<span class="material-symbols-outlined text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">directions_run</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Otot (Motor)</h3>
+<p class="text-on-surface-variant">Motor mengubah energi listrik menjadi gerakan, sehingga robot bisa berjalan atau memutar lengan.</p>
+</div>
+</section>
+<!-- Interactive: Program BimoBot -->
+<section class="bg-surface-container-low rounded-xl p-8 border-2 border-surface-container shadow-sm">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-6">Program BimoBot!</h2>
+<p class="text-center text-on-surface-variant mb-8">Pilih panah untuk memindahkan BimoBot ke kotak hijau.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<!-- Code Area -->
+<div class="space-y-6 bg-white p-6 rounded-lg shadow-inner">
+<h3 class="font-label-md text-label-md text-outline">Blok Perintah:</h3>
+<div class="flex gap-4">
+<button class="bouncy-btn bg-primary-container text-on-primary-container p-4 rounded-lg shadow-[0_4px_0_#006b5f] border border-primary/20">
+<span class="material-symbols-outlined text-3xl">arrow_upward</span>
+</button>
+<button class="bouncy-btn bg-primary-container text-on-primary-container p-4 rounded-lg shadow-[0_4px_0_#006b5f] border border-primary/20">
+<span class="material-symbols-outlined text-3xl">arrow_downward</span>
+</button>
+<button class="bouncy-btn bg-primary-container text-on-primary-container p-4 rounded-lg shadow-[0_4px_0_#006b5f] border border-primary/20">
+<span class="material-symbols-outlined text-3xl">arrow_forward</span>
+</button>
+</div>
+<div class="min-h-[100px] border-2 border-dashed border-outline-variant rounded-lg p-4 flex gap-2 items-center text-on-surface-variant">
+                        Seret perintah ke sini...
+                    </div>
+</div>
+<!-- Run Area -->
+<div class="aspect-square bg-surface-variant rounded-lg relative grid grid-cols-3 grid-rows-3 border-4 border-outline-variant p-2 gap-1">
+<!-- Grid cells -->
+<div class="bg-white/50 rounded flex items-center justify-center relative">
+<span class="material-symbols-outlined text-primary text-5xl absolute z-10" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+</div>
+<div class="bg-white/50 rounded"></div>
+<div class="bg-white/50 rounded"></div>
+<div class="bg-white/50 rounded"></div>
+<div class="bg-white/50 rounded bg-secondary-fixed/30">
+<span class="material-symbols-outlined text-secondary opacity-50 block text-center mt-6">warning</span>
+</div>
+<div class="bg-white/50 rounded"></div>
+<div class="bg-white/50 rounded"></div>
+<div class="bg-white/50 rounded"></div>
+<div class="bg-primary-container rounded flex items-center justify-center border-2 border-primary">
+<span class="material-symbols-outlined text-on-primary-container">flag</span>
+</div>
+</div>
+</div>
+<div class="mt-8 flex justify-center">
+<button class="bouncy-btn bg-secondary-container text-on-secondary-container font-label-md text-label-md px-8 py-4 rounded-xl shadow-[0_4px_0_#944a00] hover:bg-opacity-90 flex items-center gap-2">
+<span class="material-symbols-outlined">play_arrow</span> Jalankan Kode
+                </button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-lg bg-surface-container-lowest dark:bg-inverse-surface shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] fixed bottom-0 left-0 w-full h-20 flex justify-around items-center px-4 pb-safe md:hidden">
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md text-[10px]">Beranda</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-label-md text-[10px]">Jelajah</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-label-md text-[10px]">Main</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-label-md text-[10px]">Lencana</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:bg-surface-container-high transition-colors transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md text-label-md text-[10px]">Tanya AI</span>
+</button>
+</nav>
+</body></html>

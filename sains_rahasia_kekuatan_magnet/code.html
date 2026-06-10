@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NusaPedia - Lab Sains: Magnet</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline-variant": "#bacac5",
+                        "primary-fixed": "#62fae3",
+                        "on-error": "#ffffff",
+                        "surface-container": "#e6eeff",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-background": "#0d1c2e",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f8f9ff",
+                        "secondary-container": "#fd933d",
+                        "on-primary-fixed-variant": "#005047",
+                        "tertiary-fixed": "#ffdbcc",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-tertiary-fixed": "#351000",
+                        "on-surface": "#0d1c2e",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "on-secondary-container": "#693300",
+                        "secondary": "#944a00",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#ffdcc5",
+                        "on-primary-container": "#00574d",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-container": "#7e3913",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "surface-tint": "#006b5f",
+                        "inverse-surface": "#233144",
+                        "primary-container": "#2dd4bf",
+                        "background": "#f8f9ff",
+                        "primary": "#006b5f",
+                        "inverse-primary": "#3cddc7",
+                        "on-surface-variant": "#3c4a46",
+                        "on-primary-fixed": "#00201c",
+                        "outline": "#6b7a76",
+                        "surface-dim": "#ccdbf3",
+                        "inverse-on-surface": "#eaf1ff",
+                        "surface": "#f8f9ff",
+                        "surface-container-highest": "#d5e3fc",
+                        "primary-fixed-dim": "#3cddc7",
+                        "tertiary-container": "#ffaa81",
+                        "surface-variant": "#d5e3fc",
+                        "on-secondary-fixed": "#301400",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#713700",
+                        "tertiary": "#944a23"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "container-max": "1200px",
+                        "gutter": "24px"
+                    },
+                    fontFamily: {
+                        "headline-lg": ["Quicksand"],
+                        "label-md": ["Quicksand"],
+                        "headline-xl": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    fontSize: {
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #f8f9ff; /* bg-background fallback */ }
+        .bouncy-btn { transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1); }
+        .bouncy-btn:active { transform: translateY(4px); }
+        
+        /* Ambient Shadows */
+        .shadow-ambient-teal { box-shadow: 0 8px 24px -4px rgba(45, 212, 191, 0.25); }
+        .shadow-ambient-orange { box-shadow: 0 8px 24px -4px rgba(253, 147, 61, 0.25); }
+        .shadow-ambient-error { box-shadow: 0 8px 24px -4px rgba(186, 26, 26, 0.2); }
+        
+        /* Hide scrollbar for neatness */
+        ::-webkit-scrollbar { display: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen pb-[100px]">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky bg-background dark:bg-on-background z-40">
+<div class="flex justify-between items-center px-gutter py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden border-2 border-primary-container">
+<img alt="Nara Avatar" class="w-full h-full object-cover" data-alt="A 3D stylized, cute avatar of an adventurous young Indonesian explorer character named Nara, wearing a tiny explorer hat and a green vest. The rendering is bright, Pixar-style, with soft lighting and a warm, encouraging smile. Set against a solid light blue background. High resolution, colorful, and playful." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ4iE1gfJBjfJSpSMbav2gs6fXvBYfKWhvHDf42vJm9dpJkvlOQWBSvboLUhIg8OCDU9NcEogtpbgYQkRge6i09RhVYDovuHpjQEXNGTDz1baQPjBWQBUsjWkjWRbimfoFNuDo9mTpTPkClTONMZ9FTwkLD2yXXifF1-JMXakO7_Ymep0KT1HNKUtzEepYKAfIkHDvGiaLMPB3s8wtXi14oSMOXH2T2xAgGMug1GjzE8W6KmSARWprVhs8HxPdC3tgzAC9RQvnu1A"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed">NusaPedia</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+</button>
+</div>
+</header>
+<main class="max-w-[600px] mx-auto px-margin-mobile flex flex-col gap-8 mt-4">
+<!-- Hero Section -->
+<section class="bg-surface rounded-xl p-6 shadow-ambient-teal border-2 border-surface-container-highest relative overflow-hidden">
+<!-- Decorative Background Element -->
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary-container rounded-full opacity-20 blur-2xl"></div>
+<div class="flex flex-col items-center text-center gap-4 relative z-10">
+<div class="w-24 h-24 bg-surface-container-highest rounded-full flex items-center justify-center mb-2 shadow-inner">
+<span class="material-symbols-outlined text-[64px] text-primary" style="font-variation-settings: 'FILL' 1;">faucet</span>
+</div>
+<div>
+<span class="inline-block px-3 py-1 bg-surface-container text-primary font-label-md text-label-md rounded-full mb-2">Lab Sains</span>
+<h2 class="font-headline-xl text-headline-xl text-on-background">Keajaiban Magnet</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Batu ajaib yang bisa menarik benda-benda tertentu tanpa menyentuhnya! Ayo kita selidiki.</p>
+</div>
+</div>
+</section>
+<!-- Section: What does it attract? (Bento Grid) -->
+<section>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-4">Benda Apa Saja yang Ditarik?</h3>
+<div class="grid grid-cols-2 gap-4">
+<!-- Attracted -->
+<div class="bg-surface rounded-lg p-4 shadow-[0_4px_12px_rgba(45,212,191,0.1)] border-2 border-primary-container flex flex-col items-center text-center gap-2">
+<div class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px] text-primary">hardware</span>
+</div>
+<span class="font-label-md text-label-md text-primary">Besi &amp; Baja</span>
+<p class="text-[14px] text-on-surface-variant">Paku, klip kertas</p>
+<div class="mt-auto pt-2">
+<span class="inline-flex items-center justify-center bg-primary-container text-on-primary-container w-8 h-8 rounded-full">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</span>
+</div>
+</div>
+<!-- Not Attracted -->
+<div class="bg-surface rounded-lg p-4 shadow-[0_4px_12px_rgba(186,26,26,0.05)] border-2 border-surface-container-highest flex flex-col items-center text-center gap-2 opacity-80">
+<div class="w-16 h-16 bg-surface-bright rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px] text-outline">description</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Kertas &amp; Plastik</span>
+<p class="text-[14px] text-on-surface-variant">Buku, mainan karet</p>
+<div class="mt-auto pt-2">
+<span class="inline-flex items-center justify-center bg-surface-container-highest text-on-surface-variant w-8 h-8 rounded-full">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: North & South Poles -->
+<section class="bg-surface-bright rounded-[2rem] p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)] border-2 border-surface-container">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-2">Kutub Utara &amp; Selatan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Setiap magnet punya ujung yang disebut <strong>Kutub</strong>. Coba perhatikan warnanya!</p>
+<div class="flex justify-center items-center gap-2 mb-4">
+<!-- Visual Magnet -->
+<div class="flex w-48 h-16 rounded-lg overflow-hidden shadow-ambient-teal border-2 border-surface-container-highest">
+<!-- North Pole -->
+<div class="flex-1 bg-error flex items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 bg-white opacity-10 w-1/2"></div>
+<span class="font-headline-lg text-headline-lg text-on-error relative z-10">U</span>
+</div>
+<!-- South Pole -->
+<div class="flex-1 bg-primary flex items-center justify-center relative overflow-hidden">
+<div class="absolute right-0 top-0 bottom-0 bg-white opacity-10 w-1/2"></div>
+<span class="font-headline-lg text-headline-lg text-on-primary relative z-10">S</span>
+</div>
+</div>
+</div>
+<div class="flex justify-between text-center gap-4 mt-6">
+<div class="flex-1">
+<div class="w-3 h-3 rounded-full bg-error mx-auto mb-1"></div>
+<span class="font-label-md text-label-md text-on-background">Kutub Utara (U)</span>
+</div>
+<div class="flex-1">
+<div class="w-3 h-3 rounded-full bg-primary mx-auto mb-1"></div>
+<span class="font-label-md text-label-md text-on-background">Kutub Selatan (S)</span>
+</div>
+</div>
+</section>
+<!-- Section: Interactive Game -->
+<section class="bg-surface rounded-[2rem] p-6 shadow-ambient-orange border-2 border-secondary-container/30">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background">Misi: Tarik atau Tolak?</h3>
+<span class="material-symbols-outlined text-secondary-container text-[32px] bounce-animation">sports_esports</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Apa yang terjadi jika dua kutub ini didekatkan?</p>
+<!-- Game Display Area -->
+<div class="bg-surface-bright rounded-xl h-32 flex items-center justify-center gap-4 relative mb-6 shadow-inner border-2 border-surface-container" id="game-display">
+<!-- Left Magnet -->
+<div class="w-16 h-12 bg-primary rounded-l-md flex items-center justify-center text-on-primary font-headline-lg-mobile shadow-md transition-transform duration-300" id="magnet-left">S</div>
+<!-- Center Spacer/Action area -->
+<div class="w-8 flex justify-center">
+<span class="material-symbols-outlined text-surface-container-highest animate-pulse">compare_arrows</span>
+</div>
+<!-- Right Magnet -->
+<div class="w-16 h-12 bg-primary rounded-r-md flex items-center justify-center text-on-primary font-headline-lg-mobile shadow-md transition-transform duration-300" id="magnet-right">S</div>
+</div>
+<div class="text-center font-label-md text-label-md text-primary mb-4 min-h-[24px] opacity-0 transition-opacity duration-300" id="feedback-message">
+                Pilih jawabanmu!
+            </div>
+<!-- Action Buttons (Tactile Heritage Orange style) -->
+<div class="grid grid-cols-2 gap-4">
+<button class="bouncy-btn bg-secondary text-on-secondary font-label-md text-label-md py-4 rounded-xl border-b-4 border-[#693300] shadow-[0_4px_12px_rgba(148,74,0,0.3)] active:border-b-0 active:mt-1 flex flex-col items-center gap-1" onclick="checkAnswer('Tarik')">
+<span class="material-symbols-outlined">join_inner</span>
+                    Tarik!
+                </button>
+<button class="bouncy-btn bg-surface-container text-on-surface font-label-md text-label-md py-4 rounded-xl border-b-4 border-outline-variant shadow-sm active:border-b-0 active:mt-1 flex flex-col items-center gap-1" onclick="checkAnswer('Tolak')">
+<span class="material-symbols-outlined">open_in_full</span>
+                    Tolak!
+                </button>
+</div>
+<button class="mt-6 w-full py-3 rounded-full text-primary font-label-md text-label-md hover:bg-surface-container-low transition-colors flex justify-center items-center gap-2" onclick="nextRound()">
+                Coba Kutub Lain <span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface-container-lowest rounded-t-xl border-t-2 border-outline-variant/30 shadow-[0_-4px_12px_rgba(45,212,191,0.15)] md:hidden">
+<div class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-label-md text-[12px]">Home</span>
+</div>
+<!-- Active Tab: Jelajah (Explore) conceptually fits Lab Sains -->
+<div class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-2 hover:bg-surface-container-high transition-all transform -translate-y-1 shadow-sm">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-[12px] font-bold">Jelajah</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl">
+<span class="material-symbols-outlined mb-1">sports_esports</span>
+<span class="font-label-md text-[12px]">Game</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl">
+<span class="material-symbols-outlined mb-1">military_tech</span>
+<span class="font-label-md text-[12px]">Badge</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-container-high transition-all rounded-xl">
+<span class="material-symbols-outlined mb-1">smart_toy</span>
+<span class="font-label-md text-[12px]">Tanya AI</span>
+</div>
+</nav>
+<style>
+        @keyframes bounce-subtle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-4px); }
+        }
+        .bounce-animation {
+            animation: bounce-subtle 2s infinite ease-in-out;
+        }
+    </style>
+<script>
+        // Simple Game Logic
+        const states = [
+            { left: { label: 'S', color: 'bg-primary' }, right: { label: 'S', color: 'bg-primary' }, answer: 'Tolak' }, // Same poles repel
+            { left: { label: 'U', color: 'bg-error' }, right: { label: 'U', color: 'bg-error' }, answer: 'Tolak' }, // Same poles repel
+            { left: { label: 'U', color: 'bg-error' }, right: { label: 'S', color: 'bg-primary' }, answer: 'Tarik' }, // Diff poles attract
+            { left: { label: 'S', color: 'bg-primary' }, right: { label: 'U', color: 'bg-error' }, answer: 'Tarik' }  // Diff poles attract
+        ];
+        
+        let currentStateIndex = 0;
+        
+        const magnetLeft = document.getElementById('magnet-left');
+        const magnetRight = document.getElementById('magnet-right');
+        const feedbackMessage = document.getElementById('feedback-message');
+
+        function updateUI() {
+            const state = states[currentStateIndex];
+            
+            // Reset transforms
+            magnetLeft.style.transform = 'translateX(0)';
+            magnetRight.style.transform = 'translateX(0)';
+            feedbackMessage.style.opacity = '0';
+            
+            // Update classes
+            magnetLeft.className = `w-16 h-12 rounded-l-md flex items-center justify-center text-white font-headline-lg-mobile shadow-md transition-transform duration-300 ${state.left.color}`;
+            magnetLeft.textContent = state.left.label;
+            
+            magnetRight.className = `w-16 h-12 rounded-r-md flex items-center justify-center text-white font-headline-lg-mobile shadow-md transition-transform duration-300 ${state.right.color}`;
+            magnetRight.textContent = state.right.label;
+        }
+
+        function checkAnswer(guess) {
+            const correctAnswer = states[currentStateIndex].answer;
+            feedbackMessage.style.opacity = '1';
+            
+            if (guess === correctAnswer) {
+                feedbackMessage.textContent = "Wah, Hebat! Jawabanmu Benar! 🎉";
+                feedbackMessage.className = "text-center font-label-md text-label-md text-primary mb-4 min-h-[24px] opacity-100 transition-opacity duration-300";
+                
+                // Animate based on physical reality
+                if (correctAnswer === 'Tarik') {
+                    magnetLeft.style.transform = 'translateX(20px)';
+                    magnetRight.style.transform = 'translateX(-20px)';
+                } else {
+                    magnetLeft.style.transform = 'translateX(-15px)';
+                    magnetRight.style.transform = 'translateX(15px)';
+                }
+            } else {
+                feedbackMessage.textContent = "Ups, coba pikir lagi! Kutub yang sama akan...";
+                feedbackMessage.className = "text-center font-label-md text-label-md text-error mb-4 min-h-[24px] opacity-100 transition-opacity duration-300";
+            }
+        }
+
+        function nextRound() {
+            currentStateIndex = (currentStateIndex + 1) % states.length;
+            updateUI();
+        }
+
+        // Initialize first state
+        updateUI();
+    </script>
+</body></html>

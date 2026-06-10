@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedia Bloom - Polusi Udara</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#ffb783",
+                        "inverse-surface": "#233144",
+                        "surface-container-low": "#eff4ff",
+                        "on-secondary-fixed-variant": "#713700",
+                        "background": "#f8f9ff",
+                        "on-secondary-fixed": "#301400",
+                        "inverse-on-surface": "#eaf1ff",
+                        "tertiary-container": "#ffaa81",
+                        "on-surface-variant": "#3c4a46",
+                        "inverse-primary": "#3cddc7",
+                        "secondary": "#944a00",
+                        "secondary-fixed": "#ffdcc5",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdbcc",
+                        "outline": "#6b7a76",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#00201c",
+                        "secondary-container": "#fd933d",
+                        "surface-container-highest": "#d5e3fc",
+                        "surface-bright": "#f8f9ff",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-tertiary-fixed-variant": "#76330d",
+                        "primary-fixed": "#62fae3",
+                        "surface": "#f8f9ff",
+                        "on-secondary-container": "#693300",
+                        "primary-container": "#2dd4bf",
+                        "outline-variant": "#bacac5",
+                        "surface-container": "#e6eeff",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#944a23",
+                        "primary-fixed-dim": "#3cddc7",
+                        "on-primary-fixed-variant": "#005047",
+                        "on-tertiary-fixed": "#351000",
+                        "on-background": "#0d1c2e",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#006b5f",
+                        "on-primary-container": "#00574d",
+                        "surface-variant": "#d5e3fc",
+                        "on-surface": "#0d1c2e",
+                        "surface-dim": "#ccdbf3",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#006b5f",
+                        "on-tertiary-container": "#7e3913",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#dce9ff",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Quicksand"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "label-md": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "label-md": ["16px", { "lineHeight": "20px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .font-headline-lg, .font-headline-lg-mobile, .font-headline-xl, .font-label-md { font-family: 'Quicksand', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background pb-24 md:pb-0 pt-16">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-inverse-surface shadow-[0_4px_12px_rgba(0,107,95,0.1)] flex justify-between items-center px-4 h-16 w-full fixed top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden">
+<img alt="Nara the Explorer mascot smiling" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8lg1SGlbEwCQfnyqYOi1qt0C_uw_BzjaPI3dElYtSzcjJ_5eoCwwmQ2Aq_JMy8iF3DK6McIw4qECraCnu8GNdtsjU5W5CqRWBHZ_Lp8FuT3Iao7P37llBGAqm1Jsv6woxW15nuTQDfA11Gxk8vgA7xeAKvzTy4J-y-IHCiAsZzZklc2eiphp1Cy4Xm42x6RPMiRfDgQU_GzXRnfY_xfTMWLWfYsQdRqJti5mmO2GK4H0m4rDm6c-laulQUwqIRY3fxFoMWxxjZSk"/>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed font-bold">Pedia Bloom</h1>
+</div>
+<button aria-label="Settings" class="text-primary dark:text-primary-fixed hover:scale-105 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+</button>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 flex flex-col gap-8">
+<!-- Hero Section -->
+<section class="flex flex-col gap-4">
+<div class="relative w-full aspect-video rounded-xl overflow-hidden shadow-sm">
+<img alt="Split illustration showing clean air and polluted air" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjjK8PuS-ftlHYer4JRgVZAo3NQrF-nqQ1QR98HyDa5Vwr0BIsBg45OtrP4o0khoqpCA3zDhb0sFnLi2JH_pK79__YNgs5EQNlVK8OZmXvBdEFNrX4moq_8XsL12NNuLi0GJ235vHjPkqWx83eso59MCi9CANhJCslF8kf6bYqoKIyq-0_yr-FAdoNmPapRtZD00ZrSU2JvPaSJvPQnV8M2uKNFiyAxCLCjI7QYDLc2OAgjUMH9l2_UR-E_MfRfTqyw7oOhE2885g"/>
+<div class="absolute top-4 left-4">
+<span class="inline-block bg-secondary-container text-on-secondary-container font-label-md text-label-md px-3 py-1 rounded-full">Lingkungan</span>
+</div>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary text-center">Udara Bersih untuk Indonesia Sehat</h2>
+</section>
+<!-- Story Opener -->
+<section class="bg-surface-container-low rounded-xl p-6 flex items-start gap-4 shadow-sm border border-surface-container-high relative overflow-hidden">
+<div class="w-16 h-16 rounded-full bg-primary-container flex-shrink-0 flex items-center justify-center border-4 border-white shadow-md z-10">
+<img alt="Nara sneezing" class="w-full h-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcyPZOQKGDRt3lMR8rQO0GUTU8965OoWdLijUdghmRPARgzcXoxrszVHrN958C05eiPJ0tP2zTlLv1vHphTZg6Phx9KTzUuQ6CnaM313ArjpjtKDMmMFR1wtlWRpI5Iqa-uB3AP2yUVScyRMp5VCK0Xe3dn32oimzFiTYThOv9d3D2-LTkXgYRej50tRF67RSN5mEC5deC3g0WvhHlE-pFVAgjDEgAW9NjPKCUeOBQm6PzokP6_yujKsTUlEvnGmTcpmgxtti8-rg"/>
+</div>
+<div class="relative z-10">
+<div class="bg-white rounded-2xl rounded-tl-none p-4 shadow-sm text-body-md text-on-surface">
+<p><strong>"Hatchi!</strong> Aduh, asapnya tebal sekali. Teman-teman, tahu tidak kenapa udara bersih itu penting?"</p>
+</div>
+</div>
+<!-- Decorative blur -->
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary-container opacity-20 blur-2xl rounded-full"></div>
+</section>
+<!-- Section 1: Apa itu Polusi Udara? -->
+<section class="bg-white rounded-xl p-6 shadow-sm border-2 border-surface-container-lowest">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-4">Apa itu Polusi Udara?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Polusi udara terjadi ketika ada partikel atau gas berbahaya yang masuk ke udara yang kita hirup. Udara yang kotor ini bisa membuat kita sakit dan merusak alam.
+            </p>
+</section>
+<!-- Section 2: Penyebab Polusi -->
+<section class="flex flex-col gap-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Penyebab Polusi</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="bg-surface-container rounded-xl p-4 flex flex-col items-center text-center gap-2 hover:scale-105 transition-transform shadow-sm">
+<img alt="Asap Kendaraan icon" class="w-16 h-16 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApN5tcxD6LTdle4S_JxncUA3F5yecnltzQUhxUEJy7kgqIQPHWx0aVWt308Ocimba-HUVRDLGpK55cLkX4FJTAVIgHVFK0DMsevrvujlwjj810YgF9xnwaexbLhNvTEipC1yHx5R0kY6WieZotzP_NBdp7xeOzdqu0uGTyenv-ycOVMN_nF1lS6YfCkbMt66X6jW4wc_C4oLrS79hjoaxqWgEbrGWko4G3BI5aVsAYE72o1-_iGL6ADBCWMB-cXXd1bR2qyN6W3rs" style="clip-path: inset(0 66% 66% 0);"/>
+<span class="font-label-md text-label-md text-on-surface">Asap Kendaraan</span>
+</div>
+<div class="bg-surface-container rounded-xl p-4 flex flex-col items-center text-center gap-2 hover:scale-105 transition-transform shadow-sm">
+<img alt="Pabrik icon" class="w-16 h-16 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApN5tcxD6LTdle4S_JxncUA3F5yecnltzQUhxUEJy7kgqIQPHWx0aVWt308Ocimba-HUVRDLGpK55cLkX4FJTAVIgHVFK0DMsevrvujlwjj810YgF9xnwaexbLhNvTEipC1yHx5R0kY6WieZotzP_NBdp7xeOzdqu0uGTyenv-ycOVMN_nF1lS6YfCkbMt66X6jW4wc_C4oLrS79hjoaxqWgEbrGWko4G3BI5aVsAYE72o1-_iGL6ADBCWMB-cXXd1bR2qyN6W3rs" style="clip-path: inset(0 0 66% 66%);"/>
+<span class="font-label-md text-label-md text-on-surface">Pabrik</span>
+</div>
+<div class="bg-surface-container rounded-xl p-4 flex flex-col items-center text-center gap-2 hover:scale-105 transition-transform shadow-sm">
+<img alt="Pembakaran Sampah icon" class="w-16 h-16 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApN5tcxD6LTdle4S_JxncUA3F5yecnltzQUhxUEJy7kgqIQPHWx0aVWt308Ocimba-HUVRDLGpK55cLkX4FJTAVIgHVFK0DMsevrvujlwjj810YgF9xnwaexbLhNvTEipC1yHx5R0kY6WieZotzP_NBdp7xeOzdqu0uGTyenv-ycOVMN_nF1lS6YfCkbMt66X6jW4wc_C4oLrS79hjoaxqWgEbrGWko4G3BI5aVsAYE72o1-_iGL6ADBCWMB-cXXd1bR2qyN6W3rs" style="clip-path: inset(33% 66% 33% 0);"/>
+<span class="font-label-md text-label-md text-on-surface">Bakar Sampah</span>
+</div>
+<div class="bg-surface-container rounded-xl p-4 flex flex-col items-center text-center gap-2 hover:scale-105 transition-transform shadow-sm">
+<img alt="Asap Rokok icon" class="w-16 h-16 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApN5tcxD6LTdle4S_JxncUA3F5yecnltzQUhxUEJy7kgqIQPHWx0aVWt308Ocimba-HUVRDLGpK55cLkX4FJTAVIgHVFK0DMsevrvujlwjj810YgF9xnwaexbLhNvTEipC1yHx5R0kY6WieZotzP_NBdp7xeOzdqu0uGTyenv-ycOVMN_nF1lS6YfCkbMt66X6jW4wc_C4oLrS79hjoaxqWgEbrGWko4G3BI5aVsAYE72o1-_iGL6ADBCWMB-cXXd1bR2qyN6W3rs" style="clip-path: inset(33% 0 33% 66%);"/>
+<span class="font-label-md text-label-md text-on-surface">Asap Rokok</span>
+</div>
+<div class="bg-surface-container rounded-xl p-4 flex flex-col items-center text-center gap-2 hover:scale-105 transition-transform shadow-sm">
+<img alt="Debu Konstruksi icon" class="w-16 h-16 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApN5tcxD6LTdle4S_JxncUA3F5yecnltzQUhxUEJy7kgqIQPHWx0aVWt308Ocimba-HUVRDLGpK55cLkX4FJTAVIgHVFK0DMsevrvujlwjj810YgF9xnwaexbLhNvTEipC1yHx5R0kY6WieZotzP_NBdp7xeOzdqu0uGTyenv-ycOVMN_nF1lS6YfCkbMt66X6jW4wc_C4oLrS79hjoaxqWgEbrGWko4G3BI5aVsAYE72o1-_iGL6ADBCWMB-cXXd1bR2qyN6W3rs" style="clip-path: inset(66% 33% 0 33%);"/>
+<span class="font-label-md text-label-md text-on-surface">Debu Konstruksi</span>
+</div>
+</div>
+</section>
+<!-- Section 3: Dampak Polusi -->
+<section class="flex flex-col gap-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Dampak Polusi</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-error-container text-on-error-container rounded-xl p-6 shadow-sm">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+<h4 class="font-label-md text-label-md">Kesehatan Kita</h4>
+</div>
+<ul class="list-disc pl-5 font-body-md text-body-md space-y-1">
+<li>Sesak napas</li>
+<li>Mata perih</li>
+<li>Asma</li>
+<li>ISPA (Infeksi Saluran Pernapasan Akut)</li>
+</ul>
+</div>
+<div class="bg-surface-variant text-on-surface-variant rounded-xl p-6 shadow-sm">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">public</span>
+<h4 class="font-label-md text-label-md">Lingkungan Bumi</h4>
+</div>
+<ul class="list-disc pl-5 font-body-md text-body-md space-y-1">
+<li>Hujan asam yang merusak tanaman</li>
+<li>Pemanasan global</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Section 4: Cara Mengurangi Polusi -->
+<section class="flex flex-col gap-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Cara Mengurangi Polusi</h3>
+<div class="flex overflow-x-auto gap-4 pb-4 snap-x">
+<div class="min-w-[160px] bg-primary-container text-on-primary-container rounded-xl p-4 flex flex-col items-center text-center gap-3 shadow-md snap-center shrink-0">
+<div class="w-20 h-20 bg-white rounded-full flex items-center justify-center p-2">
+<img alt="Naik sepeda icon" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUxWbSKf_ucwoagXZGM43R9OhyrDLNmfu5r9BlA8cuJZ7XNZPzyuOHUU-JMnof_2RmJNGugE6IeeJFYPPNOBOwXJDrFTdGVW_Tv-VPbiDTe7hmU_64_LUUMxZ9rYs04_X62VBWwZLFlQVmdHaU7VYzQ33-ndwhD2fj36tZ9Xsm7jOU7wbqMA7KcBYvLk5ORhemcCPH1VNW_sZ2D7ImQR8vNggskc_niJSQag9YyGX9QrUDzvBm5c9y7iko7jYFHBH-MMA7OUnZg-g" style="clip-path: inset(0 66% 66% 0);"/>
+</div>
+<span class="font-label-md text-label-md">Naik Sepeda</span>
+</div>
+<div class="min-w-[160px] bg-primary-container text-on-primary-container rounded-xl p-4 flex flex-col items-center text-center gap-3 shadow-md snap-center shrink-0">
+<div class="w-20 h-20 bg-white rounded-full flex items-center justify-center p-2">
+<img alt="Tidak membakar sampah icon" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUxWbSKf_ucwoagXZGM43R9OhyrDLNmfu5r9BlA8cuJZ7XNZPzyuOHUU-JMnof_2RmJNGugE6IeeJFYPPNOBOwXJDrFTdGVW_Tv-VPbiDTe7hmU_64_LUUMxZ9rYs04_X62VBWwZLFlQVmdHaU7VYzQ33-ndwhD2fj36tZ9Xsm7jOU7wbqMA7KcBYvLk5ORhemcCPH1VNW_sZ2D7ImQR8vNggskc_niJSQag9YyGX9QrUDzvBm5c9y7iko7jYFHBH-MMA7OUnZg-g" style="clip-path: inset(0 33% 66% 33%);"/>
+</div>
+<span class="font-label-md text-label-md">Jangan Bakar Sampah</span>
+</div>
+<div class="min-w-[160px] bg-primary-container text-on-primary-container rounded-xl p-4 flex flex-col items-center text-center gap-3 shadow-md snap-center shrink-0">
+<div class="w-20 h-20 bg-white rounded-full flex items-center justify-center p-2">
+<img alt="Tanam pohon icon" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUxWbSKf_ucwoagXZGM43R9OhyrDLNmfu5r9BlA8cuJZ7XNZPzyuOHUU-JMnof_2RmJNGugE6IeeJFYPPNOBOwXJDrFTdGVW_Tv-VPbiDTe7hmU_64_LUUMxZ9rYs04_X62VBWwZLFlQVmdHaU7VYzQ33-ndwhD2fj36tZ9Xsm7jOU7wbqMA7KcBYvLk5ORhemcCPH1VNW_sZ2D7ImQR8vNggskc_niJSQag9YyGX9QrUDzvBm5c9y7iko7jYFHBH-MMA7OUnZg-g" style="clip-path: inset(0 0 66% 66%);"/>
+</div>
+<span class="font-label-md text-label-md">Tanam Pohon</span>
+</div>
+<div class="min-w-[160px] bg-primary-container text-on-primary-container rounded-xl p-4 flex flex-col items-center text-center gap-3 shadow-md snap-center shrink-0">
+<div class="w-20 h-20 bg-white rounded-full flex items-center justify-center p-2">
+<img alt="Pilih angkutan umum icon" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUxWbSKf_ucwoagXZGM43R9OhyrDLNmfu5r9BlA8cuJZ7XNZPzyuOHUU-JMnof_2RmJNGugE6IeeJFYPPNOBOwXJDrFTdGVW_Tv-VPbiDTe7hmU_64_LUUMxZ9rYs04_X62VBWwZLFlQVmdHaU7VYzQ33-ndwhD2fj36tZ9Xsm7jOU7wbqMA7KcBYvLk5ORhemcCPH1VNW_sZ2D7ImQR8vNggskc_niJSQag9YyGX9QrUDzvBm5c9y7iko7jYFHBH-MMA7OUnZg-g" style="clip-path: inset(50% 66% 0 0);"/>
+</div>
+<span class="font-label-md text-label-md">Naik Angkutan Umum</span>
+</div>
+<div class="min-w-[160px] bg-primary-container text-on-primary-container rounded-xl p-4 flex flex-col items-center text-center gap-3 shadow-md snap-center shrink-0">
+<div class="w-20 h-20 bg-white rounded-full flex items-center justify-center p-2">
+<img alt="Hemat listrik icon" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUxWbSKf_ucwoagXZGM43R9OhyrDLNmfu5r9BlA8cuJZ7XNZPzyuOHUU-JMnof_2RmJNGugE6IeeJFYPPNOBOwXJDrFTdGVW_Tv-VPbiDTe7hmU_64_LUUMxZ9rYs04_X62VBWwZLFlQVmdHaU7VYzQ33-ndwhD2fj36tZ9Xsm7jOU7wbqMA7KcBYvLk5ORhemcCPH1VNW_sZ2D7ImQR8vNggskc_niJSQag9YyGX9QrUDzvBm5c9y7iko7jYFHBH-MMA7OUnZg-g" style="clip-path: inset(50% 0 0 66%);"/>
+</div>
+<span class="font-label-md text-label-md">Hemat Listrik</span>
+</div>
+</div>
+</section>
+<!-- Section 5: Indeks Kualitas Udara (AQI) -->
+<section class="bg-white rounded-xl p-6 shadow-sm border border-surface-container-highest">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-4">Indeks Kualitas Udara (AQI)</h3>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3 p-2 rounded-lg bg-[#e8f5e9]">
+<div class="w-6 h-6 rounded-full bg-[#4caf50]"></div>
+<span class="font-label-md text-label-md text-[#2e7d32]">Hijau (Baik)</span>
+</div>
+<div class="flex items-center gap-3 p-2 rounded-lg bg-[#fff8e1]">
+<div class="w-6 h-6 rounded-full bg-[#ffeb3b]"></div>
+<span class="font-label-md text-label-md text-[#f57f17]">Kuning (Sedang)</span>
+</div>
+<div class="flex items-center gap-3 p-2 rounded-lg bg-[#fff3e0]">
+<div class="w-6 h-6 rounded-full bg-[#ff9800]"></div>
+<span class="font-label-md text-label-md text-[#e65100]">Jingga (Tidak Sehat untuk Kelompok Sensitif)</span>
+</div>
+<div class="flex items-center gap-3 p-2 rounded-lg bg-[#ffebee]">
+<div class="w-6 h-6 rounded-full bg-[#f44336]"></div>
+<span class="font-label-md text-label-md text-[#c62828]">Merah (Tidak Sehat)</span>
+</div>
+<div class="flex items-center gap-3 p-2 rounded-lg bg-[#f3e5f5]">
+<div class="w-6 h-6 rounded-full bg-[#9c27b0]"></div>
+<span class="font-label-md text-label-md text-[#6a1b9a]">Ungu (Sangat Tidak Sehat/Berbahaya)</span>
+</div>
+</div>
+</section>
+<!-- Section 6: Kuis Kilat -->
+<section class="bg-tertiary-container text-on-tertiary-container rounded-xl p-6 shadow-md border-b-4 border-tertiary">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">quiz</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile">Kuis Kilat</h3>
+</div>
+<p class="font-body-md text-body-md mb-4 font-bold">Apa yang bisa kita lakukan untuk mengurangi polusi udara?</p>
+<div class="flex flex-col gap-3">
+<button class="bg-white text-on-surface font-label-md text-label-md py-3 px-4 rounded-lg text-left hover:bg-surface-container-low transition-colors shadow-sm active:translate-y-1">
+                    A. Membakar Sampah
+                </button>
+<button class="bg-white text-on-surface font-label-md text-label-md py-3 px-4 rounded-lg text-left hover:bg-surface-container-low transition-colors shadow-sm active:translate-y-1" onclick="this.classList.replace('bg-white', 'bg-primary-container'); this.classList.add('text-on-primary-container');">
+                    B. Naik Sepeda
+                </button>
+<button class="bg-white text-on-surface font-label-md text-label-md py-3 px-4 rounded-lg text-left hover:bg-surface-container-low transition-colors shadow-sm active:translate-y-1">
+                    C. Naik banyak kendaraan
+                </button>
+</div>
+</section>
+<!-- Glossary -->
+<section class="flex flex-col gap-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Kamus Kecil</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+<div class="bg-surface-container-low p-3 rounded-lg border border-surface-container">
+<span class="font-label-md text-label-md text-primary block">Polusi</span>
+<span class="text-sm text-on-surface-variant">Kotoran yang masuk ke lingkungan.</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg border border-surface-container">
+<span class="font-label-md text-label-md text-primary block">Emisi</span>
+<span class="text-sm text-on-surface-variant">Gas buang dari mesin.</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg border border-surface-container">
+<span class="font-label-md text-label-md text-primary block">AQI</span>
+<span class="text-sm text-on-surface-variant">Angka kualitas udara.</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg border border-surface-container">
+<span class="font-label-md text-label-md text-primary block">ISPA</span>
+<span class="text-sm text-on-surface-variant">Penyakit saluran napas.</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg border border-surface-container">
+<span class="font-label-md text-label-md text-primary block">Smog</span>
+<span class="text-sm text-on-surface-variant">Asap campur kabut tebal.</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-surface-container-lowest dark:bg-inverse-surface border-t-2 border-surface-container shadow-[0_-4px_12px_rgba(0,0,0,0.05)] fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:bg-surface-container-high dark:hover:bg-surface-container rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-[10px] mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-3 py-1 scale-105 active:scale-95 transition-all duration-150 ease-out" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-[10px] mt-1">Jelajah</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:bg-surface-container-high dark:hover:bg-surface-container rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="font-label-md text-[10px] mt-1">Game</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:bg-surface-container-high dark:hover:bg-surface-container rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-md text-[10px] mt-1">Badge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:bg-surface-container-high dark:hover:bg-surface-container rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md text-[10px] mt-1">Tanya AI</span>
+</a>
+</nav>
+</body></html>

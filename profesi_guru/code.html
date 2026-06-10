@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guru: Pahlawan Kesehatan - Pedia Bloom</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#00201c",
+                    "outline-variant": "#bacac5",
+                    "on-secondary-fixed": "#301400",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-background": "#0d1c2e",
+                    "surface-container-highest": "#d5e3fc",
+                    "primary-fixed-dim": "#3cddc7",
+                    "primary": "#006b5f",
+                    "surface-tint": "#006b5f",
+                    "on-surface-variant": "#3c4a46",
+                    "background": "#f8f9ff",
+                    "on-error": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#005047",
+                    "surface": "#f8f9ff",
+                    "surface-dim": "#ccdbf3",
+                    "on-error-container": "#93000a",
+                    "outline": "#6b7a76",
+                    "on-secondary-fixed-variant": "#713700",
+                    "primary-container": "#2dd4bf",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed": "#62fae3",
+                    "surface-container-low": "#eff4ff",
+                    "on-surface": "#0d1c2e",
+                    "error-container": "#ffdad6",
+                    "secondary": "#944a00",
+                    "surface-bright": "#f8f9ff",
+                    "tertiary-fixed": "#ffdbcc",
+                    "surface-container-high": "#dce9ff",
+                    "secondary-fixed-dim": "#ffb783",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#233144",
+                    "secondary-fixed": "#ffdcc5",
+                    "secondary-container": "#fd933d",
+                    "tertiary-fixed-dim": "#ffb693",
+                    "on-tertiary-fixed": "#351000",
+                    "on-secondary-container": "#693300",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#944a23",
+                    "on-tertiary-fixed-variant": "#76330d",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#3cddc7",
+                    "surface-container": "#e6eeff",
+                    "tertiary-container": "#ffaa81",
+                    "surface-variant": "#d5e3fc",
+                    "on-tertiary-container": "#7e3913",
+                    "on-primary-container": "#00574d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "container-max": "1200px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-md": [
+                            "Quicksand"
+                    ],
+                    "headline-lg": [
+                            "Quicksand"
+                    ],
+                    "headline-xl": [
+                            "Quicksand"
+                    ],
+                    "headline-lg-mobile": [
+                            "Quicksand"
+                    ],
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {
+                    "body-lg": [
+                            "20px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "label-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-xl": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "34px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        /* Custom styles for specific interactions */
+        .tactile-button {
+            border-bottom-width: 4px;
+            border-bottom-color: rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+        }
+        .tactile-button:active {
+            transform: translateY(2px);
+            border-bottom-width: 2px;
+            margin-top: 2px;
+        }
+        .colored-shadow-primary {
+            box-shadow: 0 8px 24px -8px rgba(45, 212, 191, 0.5); /* primary-container tint */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body-md text-on-surface antialiased pb-24">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky bg-surface-bright dark:bg-surface-dim shadow-sm z-40">
+<div class="flex justify-between items-center px-margin-mobile h-16 w-full max-w-container-max mx-auto">
+<!-- Leading Avatar -->
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container border-2 border-surface flex-shrink-0">
+<img alt="Nara the Explorer Mascot" class="w-full h-full object-cover" data-alt="A stylized 3D avatar icon of a cute, friendly Indonesian child mascot named Nara, wearing an explorer outfit with a tiny safari hat. The background is a soft teal color. The style is Pixar-like, bright, and appealing to young children." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH5jTR_vhmqmW7ZwPeZZW8pl8N-N2Jz84cafdCixl-eVGTZGel8XN7bM_krz5yGLGHQJt5qba-YcEbS9Km7769AHFc-67CkgLQuHjv9Pwrbyr8d14_ZREmiukddjpdoNMu4P2E0_CfkHDStuP3uRTSH4KZFLq74NU80xRhJGEuFOYRrr4IqhEMSfg6NtBbtUwe4t21FNnqjm-U0I-K_IN2znRdlkPBbiVPgxnUQc4rRUVQ3ufu0ytydFyjGF0rU58Fw03fgoqSpas"/>
+</div>
+<!-- Headline -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed-dim text-center flex-grow truncate px-4">
+                Pedia Bloom
+            </h1>
+<!-- Trailing Icon -->
+<button class="w-10 h-10 flex items-center justify-center text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity active:scale-95">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-[768px] mx-auto px-margin-mobile pt-6 space-y-8">
+<!-- Hero Section -->
+<section class="relative w-full rounded-DEFAULT overflow-hidden colored-shadow-primary bg-surface-container-highest">
+<div class="aspect-[4/3] md:aspect-[16/9] w-full relative">
+<img alt="Guru di kelas" class="w-full h-full object-cover" data-alt="A vibrant, child-friendly illustration of an enthusiastic Indonesian female teacher wearing a hijab and modern batik dress, standing in a bright, colorful classroom. She is smiling warmly at a group of happy students. The classroom features warm yellow walls, a chalkboard with drawings, and cute educational posters. The style is soft, flat-vector illustration with rounded shapes, cheerful colors, and a high-key light mode aesthetic, typical of a modern digital encyclopedia for kids." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA84QGx0jYwMvrDvxKBkvL56BIyFlIvt6eRltoRwC5zJz3LpfFhOCVBPNfr7fHF5rUskligvpsaxWGzNMMJbMcUnxDLzRmWhCbw5kH5UmfjZMRie30LBuJGvGsARiREyjt2BCeVzs7s4e_ceUK_1eahbh15aSxqk22Zkcx4E16o82piTRxQUTLMPRRfOctwhDLEqV8YyN_rVlyxVbdUBejDPhyVDH6J5of2ViA89Hx8wSzwG77Xvx7ZIxeUaKVF1WyDit6ZNgkn3lg"/>
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-primary-fixed/80 via-transparent to-transparent"></div>
+<!-- Overlay Content -->
+<div class="absolute bottom-0 left-0 w-full p-4 md:p-6 flex flex-col items-start gap-2">
+<span class="bg-tertiary-container text-on-tertiary-container font-label-md text-label-md px-3 py-1 rounded-full shadow-sm">
+                        Ekonomi dan Profesi
+                    </span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary drop-shadow-md">
+                        Guru: Pahlawan yang Mencerdaskan Bangsa
+                    </h2>
+</div>
+</div>
+</section>
+<!-- Introduction -->
+<section class="bg-surface-container-low rounded-DEFAULT p-6 shadow-sm border border-outline-variant/30 relative">
+<!-- Decorative Blob -->
+<div class="absolute top-0 right-0 -mt-4 -mr-4 w-12 h-12 bg-secondary-container rounded-full opacity-50 blur-xl"></div>
+<p class="font-body-md text-on-surface leading-relaxed">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary block mb-2">Halo Penjelajah Cilik!</span>
+                Pernahkah kamu membayangkan sekolah tanpa bapak dan ibu guru? Guru adalah pahlawan hebat yang membimbing kita setiap hari agar kita menjadi anak yang cerdas dan berbudi pekerti luhur!
+            </p>
+</section>
+<!-- Section 1: Apa yang Dilakukan Guru? -->
+<section class="space-y-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Apa yang Dilakukan Guru?</h3>
+<div class="grid grid-cols-2 gap-4">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-4 shadow-sm flex flex-col items-center text-center gap-2 border border-outline-variant/20 hover:bg-surface-container-low transition-colors">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-3xl">school</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Mengajar pelajaran</span>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-4 shadow-sm flex flex-col items-center text-center gap-2 border border-outline-variant/20 hover:bg-surface-container-low transition-colors">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-3xl">fact_check</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Menilai tugas</span>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container-lowest rounded-lg p-4 shadow-sm flex flex-col items-center text-center gap-2 border border-outline-variant/20 hover:bg-surface-container-low transition-colors">
+<div class="w-12 h-12 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Membimbing siswa</span>
+</div>
+<!-- Item 4 -->
+<div class="bg-surface-container-lowest rounded-lg p-4 shadow-sm flex flex-col items-center text-center gap-2 border border-outline-variant/20 hover:bg-surface-container-low transition-colors">
+<div class="w-12 h-12 rounded-full bg-[#fde047] text-[#854d0e] flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-3xl">lightbulb</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Memberi inspirasi</span>
+</div>
+</div>
+</section>
+<!-- Section 2: Jenis-jenis Guru -->
+<section class="space-y-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Jenis-jenis Guru</h3>
+<div class="flex overflow-x-auto pb-4 -mx-margin-mobile px-margin-mobile gap-3 snap-x hide-scrollbar" style="scrollbar-width: none;">
+<!-- Cards -->
+<div class="snap-center shrink-0 w-32 bg-primary text-on-primary rounded-xl p-4 flex flex-col items-center justify-center text-center shadow-md colored-shadow-primary">
+<span class="material-symbols-outlined text-4xl mb-2">child_care</span>
+<span class="font-label-md text-label-md">Guru SD</span>
+</div>
+<div class="snap-center shrink-0 w-32 bg-secondary text-on-secondary rounded-xl p-4 flex flex-col items-center justify-center text-center shadow-md">
+<span class="material-symbols-outlined text-4xl mb-2">menu_book</span>
+<span class="font-label-md text-label-md">Guru SMP</span>
+</div>
+<div class="snap-center shrink-0 w-32 bg-tertiary text-on-tertiary rounded-xl p-4 flex flex-col items-center justify-center text-center shadow-md">
+<span class="material-symbols-outlined text-4xl mb-2">biotech</span>
+<span class="font-label-md text-label-md">Guru SMA</span>
+</div>
+<div class="snap-center shrink-0 w-32 bg-surface-container-high text-on-surface rounded-xl p-4 flex flex-col items-center justify-center text-center shadow-sm border border-outline-variant/50">
+<span class="material-symbols-outlined text-4xl mb-2 text-primary">sports_soccer</span>
+<span class="font-label-md text-label-md">Guru Olahraga</span>
+</div>
+<div class="snap-center shrink-0 w-32 bg-surface-container-high text-on-surface rounded-xl p-4 flex flex-col items-center justify-center text-center shadow-sm border border-outline-variant/50">
+<span class="material-symbols-outlined text-4xl mb-2 text-tertiary">music_note</span>
+<span class="font-label-md text-label-md">Guru Musik</span>
+</div>
+</div>
+</section>
+<!-- Section 3: Langkah Menjadi Guru -->
+<section class="space-y-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Langkah Menjadi Guru</h3>
+<div class="bg-surface-container-lowest rounded-DEFAULT p-6 shadow-sm border border-outline-variant/20">
+<div class="relative pl-6 space-y-6">
+<!-- Vertical Line -->
+<div class="absolute left-[11px] top-2 bottom-2 w-1 bg-surface-container-highest rounded-full"></div>
+<!-- Steps -->
+<div class="relative flex items-center gap-4">
+<div class="absolute -left-[29px] w-6 h-6 rounded-full bg-primary-container border-4 border-surface-container-lowest shadow-sm z-10"></div>
+<span class="font-label-md text-label-md text-on-surface bg-surface-container px-3 py-1 rounded-full">SD, SMP, SMA</span>
+</div>
+<div class="relative flex items-center gap-4">
+<div class="absolute -left-[29px] w-6 h-6 rounded-full bg-primary-container border-4 border-surface-container-lowest shadow-sm z-10"></div>
+<span class="font-label-md text-label-md text-on-surface bg-surface-container px-3 py-1 rounded-full">Kuliah S1 Pendidikan (4 tahun)</span>
+</div>
+<div class="relative flex items-center gap-4">
+<div class="absolute -left-[29px] w-6 h-6 rounded-full bg-primary-container border-4 border-surface-container-lowest shadow-sm z-10"></div>
+<span class="font-label-md text-label-md text-on-surface bg-surface-container px-3 py-1 rounded-full">PPG (Profesi Guru)</span>
+</div>
+<div class="relative flex items-center gap-4">
+<div class="absolute -left-[29px] w-6 h-6 rounded-full bg-secondary-container border-4 border-surface-container-lowest shadow-sm z-10"></div>
+<span class="font-label-md text-label-md text-on-surface bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">workspace_premium</span>
+                            Sertifikasi
+                        </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Tokoh Inspiratif -->
+<section class="space-y-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Tokoh Inspiratif</h3>
+<div class="bg-tertiary-fixed rounded-DEFAULT p-6 shadow-md relative overflow-hidden flex flex-col md:flex-row items-center gap-4">
+<div class="w-24 h-24 rounded-full bg-surface-container-lowest p-1 shadow-sm flex-shrink-0 z-10">
+<img alt="Portrait icon" class="w-full h-full rounded-full object-cover grayscale sepia-[.3]" data-alt="A stylized, respectful digital portrait of an Indonesian historical figure, representing Ki Hajar Dewantara. He wears traditional Javanese attire including a blangkon (headgear). The portrait is framed in a circle against a warm, soft peach background. The style is illustrative, child-friendly, yet dignified, suitable for a historical profile in a modern app." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtQSv_hZqIioTofuErESCveLXvBwG2DYxUFZ7l1YPHbJrauAbDP7QGdHUtxWxIxKUKZD01t1ZujMLqLwnFp-qSwqtAr5_dT4MIDD1g_xX6jLE6biuA_jhjNcgX8lwqfuIHlYQQCPu7lz2-Df4mG_8fNyQF4y6YEoqzsRo6TdmzRvwAwP8Byhnp7ISTU3-H_ji9jeZgwtMPA34meLC5f_7IQmhw7P-d_w0-NkTKklOE_AHPJ_aoqkNm-1Tp0i-S4ReSWk7FMc6tGro"/>
+</div>
+<div class="text-center md:text-left z-10">
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-tertiary-fixed mb-1">Ki Hajar Dewantara</h4>
+<p class="font-label-md text-label-md text-on-tertiary-fixed-variant mb-2">Bapak Pendidikan Indonesia</p>
+<div class="bg-surface-container-lowest/80 px-4 py-2 rounded-lg inline-block">
+<p class="font-body-md text-tertiary italic">"Tut Wuri Handayani"</p>
+</div>
+</div>
+<!-- Decor -->
+<span class="material-symbols-outlined absolute -bottom-4 -right-4 text-9xl text-white/20 select-none">local_library</span>
+</div>
+</section>
+<!-- Section 6: Misi -->
+<section class="space-y-4">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-10 h-10 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined">flag</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Misi: Janji Murid Hebat</h3>
+</div>
+<div class="bg-surface-container-lowest rounded-DEFAULT p-4 shadow-sm border border-outline-variant/20 space-y-3">
+<label class="flex items-start gap-4 p-3 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer group">
+<input class="w-6 h-6 rounded text-primary focus:ring-primary mt-1 border-outline-variant cursor-pointer form-checkbox" type="checkbox"/>
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Mendengarkan saat dijelaskan.</span>
+</label>
+<label class="flex items-start gap-4 p-3 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer group">
+<input class="w-6 h-6 rounded text-primary focus:ring-primary mt-1 border-outline-variant cursor-pointer form-checkbox" type="checkbox"/>
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Menyapa dengan sopan.</span>
+</label>
+<label class="flex items-start gap-4 p-3 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer group">
+<input class="w-6 h-6 rounded text-primary focus:ring-primary mt-1 border-outline-variant cursor-pointer form-checkbox" type="checkbox"/>
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Mengerjakan tugas tepat waktu.</span>
+</label>
+</div>
+</section>
+<!-- Section 7: Kuis Kilat -->
+<section class="bg-primary-container rounded-DEFAULT p-6 shadow-lg colored-shadow-primary text-center">
+<span class="material-symbols-outlined text-5xl text-on-primary-container mb-2 block">quiz</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary-container mb-6">Kuis Kilat</h3>
+<p class="font-body-lg text-on-primary-container mb-6">Kapan Hari Guru Nasional Indonesia?</p>
+<div class="space-y-3">
+<button class="w-full bg-surface-container-lowest text-on-surface font-label-md text-label-md py-4 px-6 rounded-xl tactile-button flex items-center justify-between group hover:bg-surface-bright">
+<span>A. 25 November</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary opacity-0 group-hover:opacity-100 transition-opacity">check_circle</span>
+</button>
+<button class="w-full bg-surface-container-lowest text-on-surface font-label-md text-label-md py-4 px-6 rounded-xl tactile-button flex items-center justify-between group hover:bg-surface-bright">
+<span>B. 17 Agustus</span>
+<span class="material-symbols-outlined text-outline opacity-0 transition-opacity">cancel</span>
+</button>
+<button class="w-full bg-surface-container-lowest text-on-surface font-label-md text-label-md py-4 px-6 rounded-xl tactile-button flex items-center justify-between group hover:bg-surface-bright">
+<span>C. 2 Mei</span>
+<span class="material-symbols-outlined text-outline opacity-0 transition-opacity">cancel</span>
+</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-2 h-20 bg-surface-container-low dark:bg-surface-container-highest shadow-[0_-4px_10px_rgba(0,0,0,0.05)] rounded-t-lg md:hidden">
+<!-- Tab 0: Home -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 group rounded-xl">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">home</span>
+<span class="font-label-md text-[12px] leading-tight mt-1">Home</span>
+</button>
+<!-- Tab 1: Jelajah (ACTIVE - mapped from intents/labels) -->
+<button class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-xl px-4 py-1 translate-y-[-2px] transition-all hover:bg-surface-variant/50 Active: scale-90 transition-all duration-200 ease-out">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-md text-[12px] leading-tight mt-1">Jelajah</span>
+</button>
+<!-- Tab 2: Game -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 group rounded-xl">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">sports_esports</span>
+<span class="font-label-md text-[12px] leading-tight mt-1">Game</span>
+</button>
+<!-- Tab 3: Badge -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 group rounded-xl">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">military_tech</span>
+<span class="font-label-md text-[12px] leading-tight mt-1">Badge</span>
+</button>
+<!-- Tab 4: Tanya AI -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-variant/50 group rounded-xl">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">smart_toy</span>
+<span class="font-label-md text-[12px] leading-tight mt-1">Tanya AI</span>
+</button>
+</nav>
+<!-- Script for basic interactions (Quiz mock) -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const quizButtons = document.querySelectorAll('.tactile-button');
+            quizButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Reset all
+                    quizButtons.forEach(b => {
+                        b.classList.remove('bg-primary-fixed', 'text-on-primary-fixed', 'border-primary');
+                        b.classList.add('bg-surface-container-lowest', 'text-on-surface');
+                        const icon = b.querySelector('.material-symbols-outlined');
+                        if(icon) icon.style.opacity = '0';
+                    });
+                    
+                    // Simple logic for visual feedback (A is correct)
+                    if(this.textContent.includes('A.')) {
+                        this.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+                        this.classList.add('bg-primary-fixed', 'text-on-primary-fixed', 'border-primary');
+                        const icon = this.querySelector('.material-symbols-outlined');
+                        if(icon) {
+                            icon.style.opacity = '1';
+                            icon.textContent = 'check_circle';
+                        }
+                    } else {
+                        this.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+                        this.classList.add('bg-error-container', 'text-on-error-container');
+                        const icon = this.querySelector('.material-symbols-outlined');
+                        if(icon) {
+                            icon.style.opacity = '1';
+                            icon.textContent = 'cancel';
+                            icon.classList.remove('text-outline');
+                            icon.classList.add('text-error');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body></html>

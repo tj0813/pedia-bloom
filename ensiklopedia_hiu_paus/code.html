@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hiu Paus - Pedia Bloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#ffdcc5",
+                      "primary-fixed": "#62fae3",
+                      "on-primary-fixed": "#00201c",
+                      "on-error": "#ffffff",
+                      "surface-variant": "#d5e3fc",
+                      "surface-container-high": "#dce9ff",
+                      "tertiary": "#944a23",
+                      "surface-dim": "#ccdbf3",
+                      "inverse-on-surface": "#eaf1ff",
+                      "secondary-container": "#fd933d",
+                      "error": "#ba1a1a",
+                      "surface-bright": "#f8f9ff",
+                      "primary-container": "#2dd4bf",
+                      "outline-variant": "#bacac5",
+                      "on-secondary-fixed": "#301400",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed-variant": "#76330d",
+                      "surface-container-highest": "#d5e3fc",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-fixed": "#351000",
+                      "on-secondary-fixed-variant": "#713700",
+                      "on-primary-container": "#00574d",
+                      "background": "#f8f9ff",
+                      "on-tertiary-container": "#7e3913",
+                      "surface-container-low": "#eff4ff",
+                      "on-tertiary": "#ffffff",
+                      "primary": "#006b5f",
+                      "tertiary-container": "#ffaa81",
+                      "on-background": "#0d1c2e",
+                      "on-surface": "#0d1c2e",
+                      "on-error-container": "#93000a",
+                      "on-primary": "#ffffff",
+                      "surface-container": "#e6eeff",
+                      "secondary": "#944a00",
+                      "surface": "#f8f9ff",
+                      "on-primary-fixed-variant": "#005047",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "on-surface-variant": "#3c4a46",
+                      "inverse-surface": "#233144",
+                      "error-container": "#ffdad6",
+                      "outline": "#6b7a76",
+                      "inverse-primary": "#3cddc7",
+                      "tertiary-fixed": "#ffdbcc",
+                      "primary-fixed-dim": "#3cddc7",
+                      "on-secondary-container": "#693300",
+                      "surface-tint": "#006b5f",
+                      "secondary-fixed-dim": "#ffb783"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1200px",
+                      "margin-mobile": "20px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-desktop": "64px"
+              },
+              "fontFamily": {
+                      "headline-xl": ["Quicksand"],
+                      "headline-lg-mobile": ["Quicksand"],
+                      "headline-lg": ["Quicksand"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "label-md": ["Quicksand"],
+                      "body-lg": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                      "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-md": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                      "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "500"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .squishy-button {
+            transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border-bottom: 4px solid var(--tw-colors-secondary);
+        }
+        .squishy-button:active {
+            transform: translateY(2px);
+            border-bottom-width: 2px;
+            margin-top: 2px;
+        }
+        .plankton-particle {
+            position: absolute;
+            background-color: var(--tw-colors-primary-container);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: float-up 2s ease-in-out forwards;
+        }
+        @keyframes float-up {
+            0% { transform: translateY(0) scale(1); opacity: 1; }
+            100% { transform: translateY(-100px) scale(0); opacity: 0; }
+        }
+        .card-blur-shadow {
+            box-shadow: 0 4px 20px -2px rgba(0, 107, 95, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen pb-32">
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface-bright shadow-sm flex justify-between items-center px-margin-mobile py-unit transition-transform duration-200">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">arrow_back_ios_new</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary">Pedia Bloom</h1>
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined">settings</span>
+</div>
+</header>
+<main class="pt-24 px-margin-mobile max-w-container-max mx-auto md:px-margin-desktop">
+<!-- Hero Section -->
+<section class="relative rounded-xl overflow-hidden mb-8 h-64 md:h-96 card-blur-shadow border-2 border-surface-container">
+<img alt="Whale Shark" class="w-full h-full object-cover" data-alt="A magnificent whale shark swimming gracefully in crystal clear, vibrant teal tropical waters. Sunlight filters down from the surface, creating dappled light patterns on the gentle giant's spotted back. The scene is shot from slightly below, emphasizing the shark's massive yet peaceful nature. The overall color palette is dominated by bright, cheerful oceanic teals and warm sunlight, matching an educational children's encyclopedia style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8E6ILbYFmvwEQwTIzbOcwBwqOqA7Ut94dMvpO2wHq4WwrToQKSvDGg2E5JmMOMcxoJUrgCr0VxcY-q2RhD2fzhs0JmGv0pIatGaTG2Nidgxvzxrv9y871ALh_m2LmtojzxT4IEgMyP7Dg9T96YET64k_b4q5ZJ1MujeSRoZzisXTNVXq0l0J5iSlHMYehm1rE7cRydEnLwVM_S2iACXAVrpx8gyKVqChymkoZiR-xb4TqLCZ0TRgt33avL6VZhczRlVEmRWb86vU"/>
+<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-on-background/80 to-transparent">
+<div class="flex gap-2 mb-2">
+<span class="bg-surface-container-high text-primary px-3 py-1 rounded-full font-label-md text-sm border border-primary-container">Hewan Laut</span>
+<span class="bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-md text-sm border border-error">Dilindungi</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-primary drop-shadow-md">Hiu Paus</h1>
+<p class="font-body-md text-on-primary opacity-90 drop-shadow-sm">Raksasa Ramah dari Talisayan</p>
+</div>
+</section>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Left Column: Details -->
+<div class="md:col-span-8 space-y-8">
+<!-- Introduction Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 card-blur-shadow border-2 border-surface-container relative">
+<div class="absolute -top-6 -right-4 w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center shadow-lg border-4 border-surface-container-lowest">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl">waving_hand</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4">Si Raksasa yang Baik Hati</h2>
+<p class="mb-4">Tahukah kamu? Meskipun namanya "hiu", Hiu Paus tidak menakutkan sama sekali! Mereka adalah ikan terbesar di lautan, tapi mereka sangat jinak dan berenang dengan lambat.</p>
+<p>Di tempat seperti Talisayan atau Gorontalo, kamu bisa melihat mereka berenang santai di dekat perahu nelayan, mencari makan berupa makhluk-makhluk kecil di laut.</p>
+</div>
+<!-- Spot Pattern Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 card-blur-shadow border-2 border-surface-container">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 bg-surface-variant rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-2xl">fingerprint</span>
+</div>
+<div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">Sidik Jari Lautan</h2>
+<p class="mb-4">Coba perhatikan bintik-bintik putih di tubuhnya. Setiap Hiu Paus memiliki pola bintik yang berbeda-beda, sama seperti sidik jari manusia! Ilmuwan menggunakan pola ini untuk mengenali dan melacak setiap Hiu Paus di dunia.</p>
+<div class="grid grid-cols-2 gap-4 mt-4">
+<img class="rounded-lg h-32 w-full object-cover border-2 border-surface-container" data-alt="Close up macro shot of the unique white spot patterns on the dark blue skin of a whale shark underwater. The spots resemble a constellation of stars against a deep oceanic background. Soft, diffused lighting highlights the texture of the skin. The style is clear, educational, and visually engaging for children, emphasizing the 'fingerprint' concept." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3h2-mXGO2USbWl35gUKRpnfnMpqjW-dD4VxqphW5PKjbFcPCNqpaGt7AjErPFAELZkGpDcoPq7LxenOlJ_hr69e6V36jvINtJ4g5-mPeXNrnhJ445XNjAbX8pAwyC1PNEHJzoBxMpRFvLK651Vw8FeZXfraeVJt3MD37v1rpKQ7cSCpW1kh09DWPId1w72IIurrgOUdAc7sd09FT2YPOhLbeAx6dntp98BAVwHJV_j0r07c_xpoPBYlb8yhr0CfQYWBXBnZu-YIQ"/>
+<img class="rounded-lg h-32 w-full object-cover border-2 border-surface-container" data-alt="Another close up of a different whale shark's spot pattern, clearly showing a different arrangement of white dots and lines on blueish-grey skin. The water slightly distorts the light, adding an underwater ambiance. Bright, engaging colors suitable for a kids' learning app." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2IVLEGt6zOR8yts4TXHtYrZO4vAa5FmxrONsfPNwKd_uoozWZq89nBst_1JjQf_aV2pWJIravSSOBxGGbkOmvzR8GaeDtd6WlXIMZhbMUO9TUyypZkZBRE3rP4ZOaFwdMCBpzn8z6sqgHJzPXXBgE8e-KcQA9d4I6jjUjFrwHZYCZCIvAefOEEcNMO9nzlS1PKKCN2roY0e_il1A8OkhO2mhqsQxISTk6d50_mawHjnjN816aEw25mj-zEoedtAbpx1RE2WG85xs"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Mini Game Card -->
+<div class="bg-primary-container rounded-xl p-6 card-blur-shadow text-on-primary-container relative overflow-hidden" id="mini-game-container">
+<!-- Decorative background elements -->
+<span class="material-symbols-outlined absolute top-4 right-4 text-primary opacity-20 text-6xl">water</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile mb-2 relative z-10">Beri Makan Plankton!</h2>
+<p class="mb-6 relative z-10 font-body-lg">Hiu Paus makan dengan menyaring air laut untuk menangkap makhluk kecil bernama plankton. Coba ketuk layar untuk memberinya makan!</p>
+<div class="bg-surface-container-lowest/50 rounded-lg h-40 flex items-center justify-center relative border-2 border-primary/20 backdrop-blur-sm cursor-pointer" id="feed-area">
+<img class="w-24 h-24 rounded-full object-cover border-4 border-surface-container-lowest shadow-md z-10 transition-transform duration-200" data-alt="A cartoonish, friendly, and cute illustration of a whale shark with its wide mouth open, ready to eat plankton. The illustration is in a bright, vector style with soft curves, matching an educational digital playground aesthetic. Colors are predominantly soft teals and oceanic blues." id="shark-mouth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoJe0OIDj1KCvkr85RLDiub8ZHxVPoTDggRCYYXA7Ni1a8BPM9HVHp5XHzt2CwGKnuObrnt_PfBNqd2iPY20mPkpOkbUQLgSj3btUHdDOTqV952bauUzeQF9gXR2_i9UL6QzEvhrJA3B_hrEDcjnc4fGiAqIT4ouDGWbW8VunwYjhUw-Z4koakKrRda-wxUid6j5IIuRpjt4ntSha-RXI8Cc9SA8jPpjWWT230FFLCVezz2G9kZu3xPccLeTEkQYAVGzWil-E3Kj0"/>
+<p class="absolute bottom-2 text-sm font-label-md opacity-70">Ketuk di sini!</p>
+</div>
+<div class="mt-4 flex justify-between items-center relative z-10">
+<span class="font-label-md">Plankton dimakan: <span class="font-bold text-xl" id="plankton-count">0</span></span>
+</div>
+</div>
+</div>
+<!-- Right Column: Sidebar -->
+<div class="md:col-span-4 space-y-6">
+<!-- Quick Facts -->
+<div class="bg-surface-container-low rounded-xl p-6 card-blur-shadow border-2 border-surface-container">
+<h3 class="font-label-md text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined">info</span> Info Cepat
+                    </h3>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-sm">straighten</span>
+</div>
+<div>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider">Panjang</p>
+<p class="font-label-md">Hingga 12 Meter</p>
+</div>
+</li>
+<li class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-sm">monitor_weight</span>
+</div>
+<div>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider">Berat</p>
+<p class="font-label-md">Bisa 20 Ton lebih!</p>
+</div>
+</li>
+<li class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-sm">restaurant</span>
+</div>
+<div>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider">Makanan Utama</p>
+<p class="font-label-md">Plankton &amp; Ikan kecil</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Quiz Prompt -->
+<div class="bg-secondary-fixed rounded-xl p-6 text-on-secondary-fixed card-blur-shadow">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile mb-2">Kuis Hiu Paus</h3>
+<p class="text-sm mb-4">Uji pengetahuanmu tentang Raksasa Baik Hati ini!</p>
+<button class="w-full bg-secondary text-on-secondary py-3 rounded-lg font-label-md squishy-button flex justify-center items-center gap-2">
+                        Mulai Kuis <span class="material-symbols-outlined">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<script>
+        // Mini Game Logic
+        const feedArea = document.getElementById('feed-area');
+        const sharkMouth = document.getElementById('shark-mouth');
+        const countDisplay = document.getElementById('plankton-count');
+        let count = 0;
+
+        feedArea.addEventListener('click', (e) => {
+            // Increment count
+            count++;
+            countDisplay.textContent = count;
+
+            // Animate shark
+            sharkMouth.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                sharkMouth.style.transform = 'scale(1)';
+            }, 150);
+
+            // Create plankton particle
+            const particle = document.createElement('div');
+            particle.classList.add('plankton-particle');
+            
+            // Random size between 4px and 12px
+            const size = Math.random() * 8 + 4;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+
+            // Position at click coordinates relative to feedArea
+            const rect = feedArea.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            particle.style.left = `${x}px`;
+            particle.style.top = `${y}px`;
+
+            feedArea.appendChild(particle);
+
+            // Remove particle after animation
+            setTimeout(() => {
+                particle.remove();
+            }, 2000);
+        });
+    </script>
+</body></html>
