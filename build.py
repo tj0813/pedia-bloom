@@ -132,6 +132,26 @@ def extract_fragment(raw: str, url_map: dict):
     return frag
 
 
+# Curated thumbnail overrides (content audit, 2026-06-10). first_image() picks the FIRST
+# <img> in a fragment, which on these screens is a decorative element (mascot/boy) or the
+# wrong AI-generated asset (a lion on the rhino page) — point the card at the correct hero.
+# Image filenames are sha1(url)[:16], stable across rebuilds, so these survive regeneration.
+THUMB_OVERRIDE = {
+    "ensiklopedia_candi_borobudur_2": "app/assets/img/d3971614de970c9e.png",  # temple, not the boy mascot
+    "ensiklopedia_badak_jawa":        "app/assets/img/ea85c637d8dea96d.png",  # Javan rhino, not a lion
+    "ensiklopedia_burung_maleo_2":    "app/assets/img/f1c3b8ab84b64f49.png",  # Maleo bird, not the bare egg
+}
+
+
+def thumb_for(folder: str, frag: str) -> str:
+    # Use the override only if its file actually exists (it may live in another screen,
+    # e.g. the Maleo bird), otherwise fall back so we never point a card at a missing image.
+    override = THUMB_OVERRIDE.get(folder)
+    if override and os.path.exists(os.path.join(ROOT, override.replace("/", os.sep))):
+        return override
+    return first_image(frag)
+
+
 def first_image(frag: str) -> str:
     m = re.search(r'src="(app/assets/img/[^"]+)"', frag)
     return m.group(1) if m else PLACEHOLDER_REL
@@ -204,7 +224,7 @@ def main():
             "title": title_of(raw, name.replace("_", " ").title()),
             "category": cat,
             "icon": icon,
-            "thumb": first_image(frag),
+            "thumb": thumb_for(name, frag),
             "html": frag,
             "scripts": scripts,
         }
