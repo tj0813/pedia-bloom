@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#006e1c" />
+<meta name="description" content="Pedia Bloom — ensiklopedia interaktif Indonesia untuk anak 5–13 tahun. Indonesia's interactive encyclopedia for kids, bilingual and offline-ready." />
+<!-- CSP: everything is self-hosted (no CDN). 'unsafe-eval' + 'unsafe-inline' are required
+     by the bundled-Stitch architecture (per-screen inline scripts run via indirect eval, and
+     fragments use inline onclick/style attributes). No external origins are allowed. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'none'" />
+<meta name="referrer" content="no-referrer" />
+<title>Pedia Bloom — Jelajah Nusantara</title>
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="apple-touch-icon" href="app/assets/icons/apple-touch-icon-180.png" />
+<link rel="stylesheet" href="app/assets/fonts/fonts.css" />
+<link rel="stylesheet" href="app/assets/styles.css" />
+</head>
+<body class="bg-background text-on-background">
+
+<noscript>
+  <div style="position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;background:#f5fbef;color:#171d16;font-family:Quicksand,system-ui,sans-serif;text-align:center;padding:24px">
+    <div>
+      <div style="font-size:56px">🧭</div>
+      <h1 style="font-size:24px;font-weight:700;color:#006e1c;margin:8px 0">Aktifkan JavaScript untuk mulai menjelajah</h1>
+      <p style="color:#0d9488">Please enable JavaScript to explore Pedia Bloom.</p>
+    </div>
+  </div>
+</noscript>
+
+<!-- ===== Top App Bar ===== -->
+<header class="fixed top-0 inset-x-0 z-50 h-[72px] bg-surface-bright/95 backdrop-blur shadow-sm flex items-center justify-between px-margin-mobile border-b-2 border-surface-variant">
+  <!-- Detail Header Layout (shown when back button is active) -->
+  <div id="header-detail" class="hidden flex items-center gap-3 min-w-0">
+    <button id="back-btn" aria-label="Kembali" class="text-primary p-2 -ml-2 rounded-full hover:bg-surface-variant transition-colors shrink-0">
+      <span class="material-symbols-outlined">arrow_back</span>
+    </button>
+    <h1 id="topbar-title" class="font-headline-lg-mobile text-[20px] font-bold text-primary truncate">PediaBloom</h1>
+  </div>
+
+  <!-- Shell Header Layout (shown on home/explore/etc.) -->
+  <div id="header-shell" class="flex items-center justify-between w-full">
+    <div class="flex items-center gap-2">
+      <button id="settings-btn" aria-label="Menu" class="text-primary p-2 -ml-2 rounded-full hover:bg-surface-variant transition-colors shrink-0">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <span class="font-headline-lg-mobile text-[22px] font-bold text-primary tracking-tight">Pedia<span class="text-secondary">Bloom</span></span>
+    </div>
+    <div class="flex items-center gap-3">
+      <!-- Profile Chip -->
+      <a href="#/badges" class="flex items-center gap-2 bg-surface-container-high hover:bg-surface-variant px-3 py-1.5 rounded-full border-2 border-surface-variant transition-colors">
+        <img src="app/assets/img/explorer_mascot.png" alt="Avatar" class="w-6 h-6 rounded-full object-cover border border-primary-container" />
+        <div class="hidden xs:block text-left">
+          <p id="chip-name" class="font-label-md text-[12px] text-on-surface font-bold leading-none">Penjelajah</p>
+          <p id="chip-level" class="text-[9px] text-on-surface-variant leading-none mt-0.5">Lvl 1</p>
+        </div>
+      </a>
+      <!-- Notification Icon (badge = earned achievements; hidden when none) -->
+      <a href="#/badges" aria-label="Lencana / Badges" class="relative text-primary p-2 rounded-full hover:bg-surface-variant transition-colors shrink-0">
+        <span class="material-symbols-outlined">notifications</span>
+        <span id="notif-badge" class="hidden absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 bg-error text-on-error text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-surface-bright"></span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Router View ===== -->
+<main id="view" aria-live="polite"></main>
+
+<!-- ===== Bottom Navigation ===== -->
+<nav id="bottomnav" class="fixed bottom-0 inset-x-0 z-50 h-[80px] bg-[rgb(var(--nav-surface))] rounded-t-2xl shadow-[0_-4px_16px_rgba(23,29,22,0.18)] flex justify-around items-end pb-2 px-2" aria-label="Navigasi utama / Main navigation">
+  <!-- Beranda -->
+  <a href="#/home" data-route="home" class="nav-item flex flex-col items-center justify-center gap-0.5 min-w-[64px] py-1" aria-label="Beranda">
+    <span class="nav-icon material-symbols-outlined text-[26px]">home</span>
+    <span class="font-label-md text-[11px] font-bold">Beranda</span>
+  </a>
+  <!-- Eksplorasi -->
+  <a href="#/explore" data-route="explore" class="nav-item flex flex-col items-center justify-center gap-0.5 min-w-[64px] py-1" aria-label="Eksplorasi">
+    <span class="nav-icon material-symbols-outlined text-[26px]">explore</span>
+    <span class="font-label-md text-[11px] font-bold">Eksplorasi</span>
+  </a>
+  <!-- Sprout Center (Petualangan) -->
+  <a href="#/map" data-route="map" class="nav-item relative -top-5 flex flex-col items-center justify-center gap-0.5 min-w-[68px]" aria-label="Petualangan">
+    <div class="w-16 h-16 rounded-full bg-gradient-to-b from-tertiary-fixed-dim to-tertiary-container border-4 border-[rgb(var(--nav-surface))] shadow-[0_4px_12px_rgba(225,133,0,0.45)] flex items-center justify-center transition-transform hover:scale-105 active:scale-95">
+      <span class="material-symbols-outlined text-on-tertiary-container text-[32px]" style="font-variation-settings:'FILL' 1;">local_florist</span>
+    </div>
+    <span class="font-label-md text-[11px] font-bold -mt-1">Petualangan</span>
+  </a>
+  <!-- Game -->
+  <a href="#/games" data-route="games" class="nav-item flex flex-col items-center justify-center gap-0.5 min-w-[64px] py-1" aria-label="Game">
+    <span class="nav-icon material-symbols-outlined text-[26px]">sports_esports</span>
+    <span class="font-label-md text-[11px] font-bold">Game</span>
+  </a>
+  <!-- Profil -->
+  <a href="#/badges" data-route="badges" class="nav-item flex flex-col items-center justify-center gap-0.5 min-w-[64px] py-1" aria-label="Profil">
+    <span class="nav-icon material-symbols-outlined text-[26px]">person</span>
+    <span class="font-label-md text-[11px] font-bold">Profil</span>
+  </a>
+</nav>
+
+<script src="app/screens-data.js"></script>
+<script src="app/i18n/topics.js"></script>
+<script src="app/app.js"></script>
+<script>
+  if ("serviceWorker" in navigator && location.protocol !== "file:") {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("sw.js").catch(() => {});
+    });
+    let refreshing = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (!refreshing) {
+        refreshing = true;
+        window.location.reload();
+      }
+    });
+  }
+</script>
+</body>
+</html>
