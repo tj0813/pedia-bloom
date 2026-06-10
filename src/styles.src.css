@@ -1,0 +1,86 @@
+/* Pedia Bloom stylesheet source — compiled to app/assets/styles.css by `npm run build:css`.
+ * Design tokens (DESIGN.md) as RGB channels: light in :root, derived M3 dark in html.dark.
+ * One class flip on <html> re-skins the shell AND all bundled fragments. */
+:root {
+  --background: 245 251 239; --on-background: 23 29 22;
+  --surface: 245 251 239; --surface-dim: 214 220 208; --surface-bright: 245 251 239;
+  --surface-container-lowest: 255 255 255; --surface-container-low: 240 246 234;
+  --surface-container: 234 240 228; --surface-container-high: 228 234 222; --surface-container-highest: 222 228 217;
+  --on-surface: 23 29 22; --on-surface-variant: 63 74 60; --surface-variant: 222 228 217;
+  --inverse-surface: 44 50 42; --inverse-on-surface: 237 243 231;
+  --outline: 111 122 107; --outline-variant: 190 202 185; --surface-tint: 0 110 28;
+  --primary: 0 110 28; --on-primary: 255 255 255; --primary-container: 76 175 80; --on-primary-container: 0 60 11;
+  --inverse-primary: 120 220 119;
+  --secondary: 0 97 164; --on-secondary: 255 255 255; --secondary-container: 51 160 253; --on-secondary-container: 0 53 92;
+  --tertiary: 139 80 0; --on-tertiary: 255 255 255; --tertiary-container: 225 133 0; --on-tertiary-container: 77 43 0;
+  --error: 186 26 26; --on-error: 255 255 255; --error-container: 255 218 214; --on-error-container: 147 0 10;
+  --primary-fixed: 148 249 144; --primary-fixed-dim: 120 220 119; --on-primary-fixed: 0 34 4; --on-primary-fixed-variant: 0 83 19;
+  --secondary-fixed: 209 228 255; --secondary-fixed-dim: 158 202 255; --on-secondary-fixed: 0 29 54; --on-secondary-fixed-variant: 0 73 125;
+  --tertiary-fixed: 255 220 190; --tertiary-fixed-dim: 255 184 112; --on-tertiary-fixed: 44 22 0; --on-tertiary-fixed-variant: 105 60 0;
+  --fresh-teal: 13 148 136;
+  --shadow-tint: 23 29 22; --nav-surface: 28 38 26; --nav-active: 255 199 79;
+}
+html.dark {
+  --background: 15 21 14; --on-background: 223 228 216;
+  --surface: 15 21 14; --surface-dim: 15 21 14; --surface-bright: 53 59 50;
+  --surface-container-lowest: 10 15 9; --surface-container-low: 23 29 22;
+  --surface-container: 27 33 26; --surface-container-high: 38 44 36; --surface-container-highest: 48 53 41;
+  --on-surface: 223 228 216; --on-surface-variant: 194 205 187; --surface-variant: 66 73 64;
+  --inverse-surface: 222 228 217; --inverse-on-surface: 44 50 42;
+  --outline: 140 149 138; --outline-variant: 66 73 64; --surface-tint: 120 220 119;
+  --primary: 120 220 119; --on-primary: 0 57 10; --primary-container: 0 83 19; --on-primary-container: 148 249 144;
+  --inverse-primary: 0 110 28;
+  --secondary: 158 202 255; --on-secondary: 0 50 88; --secondary-container: 0 73 125; --on-secondary-container: 209 228 255;
+  --tertiary: 255 184 112; --on-tertiary: 74 40 0; --tertiary-container: 105 60 0; --on-tertiary-container: 255 220 190;
+  --error: 255 180 171; --on-error: 105 0 5; --error-container: 147 0 10; --on-error-container: 255 218 214;
+  --fresh-teal: 94 224 208;
+  --shadow-tint: 0 0 0; --nav-surface: 10 15 9; --nav-active: 255 199 79;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body { min-height: 100dvh; background: rgb(var(--background)); color: rgb(var(--on-background)); }
+  body { font-family: "Quicksand", system-ui, sans-serif; }
+  /* Subtle Nusantara flora texture — low opacity, behind content (DESIGN.md motif). */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: 0.5;
+    background:
+      radial-gradient(rgba(var(--primary)/0.05) 1.5px, transparent 1.5px) 0 0 / 26px 26px,
+      radial-gradient(120% 80% at 100% 0%, rgba(var(--secondary)/0.05), transparent 60%),
+      radial-gradient(120% 80% at 0% 100%, rgba(var(--tertiary)/0.05), transparent 60%);
+  }
+  .material-symbols-outlined { font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 24; }
+  #view { padding-top: 80px; padding-bottom: 96px; min-height: 100dvh; }
+  :focus-visible { outline: 3px solid rgb(var(--primary)); outline-offset: 2px; border-radius: 8px; }
+}
+
+@layer components {
+  /* Cardstock surface: cream, warm ambient shadow, soft rounded frame. */
+  .story-card {
+    background: rgb(var(--surface-container-lowest)); border: 2px solid rgb(var(--outline-variant) / 0.55);
+    border-radius: 1.5rem; box-shadow: 0 8px 20px -6px rgb(var(--shadow-tint) / 0.12);
+  }
+  /* Raised, tactile button: darker bottom edge + convex top highlight; sinks on press. */
+  .squishy-button {
+    transition: all 0.18s cubic-bezier(0.34, 1.56, 0.64, 1); border-bottom-width: 4px;
+    box-shadow: inset 0 2px 0 rgb(255 255 255 / 0.28), 0 6px 14px -6px rgb(var(--shadow-tint) / 0.30);
+  }
+  .squishy-button:active { transform: translateY(2px) scale(0.985); border-bottom-width: 0; margin-top: 4px; box-shadow: inset 0 2px 0 rgb(255 255 255 / 0.18); }
+  /* Bilingual heading: Indonesian primary + English subtitle (fresh-teal, 60% size). */
+  .bi-en { display: block; font-weight: 500; font-size: 0.6em; line-height: 1.2; margin-top: 2px; color: rgb(var(--fresh-teal)); letter-spacing: 0; }
+  .nav-item { color: rgb(var(--inverse-on-surface) / 0.55); transition: all 0.2s ease; }
+  .nav-item:hover { color: rgb(var(--inverse-on-surface)); }
+  .nav-item[aria-current="page"] { color: rgb(var(--nav-active)); }
+  .nav-item[aria-current="page"] .nav-icon { font-variation-settings: "FILL" 1; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+.pop-in { animation: popIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+@keyframes popIn { from { opacity: 0; transform: translateY(12px) scale(0.98); } to { opacity: 1; transform: none; } }
+.slide-up { animation: slideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+@keyframes slideUp { from { opacity: 0; transform: translateY(100%); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .pop-in, .slide-up { animation: none; } * { scroll-behavior: auto !important; } }

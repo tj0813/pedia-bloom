@@ -1,0 +1,126 @@
+// Auto-curated EN titles/subtitles for all Pedia Bloom topics (DESIGN.md bilingual requirement).
+// Key = topic folder-id. `en` = base subject's English name (no "Part 1/2" or "Animated" variants).
+// `sub` = warm, kid-friendly, factually-correct one-line subtitle (ages 5-13).
+window.PEDIA_I18N_TOPICS = {
+  // --- Ensiklopedia: animals, plants, nature, landmarks ---
+  "ensiklopedia_harimau_sumatra_1": { en: "Sumatran Tiger", sub: "Indonesia's striped big cat" },
+  "ensiklopedia_harimau_sumatra_2": { en: "Sumatran Tiger", sub: "Indonesia's striped big cat" },
+  "ensiklopedia_gajah_sumatra": { en: "Sumatran Elephant", sub: "A gentle forest giant" },
+  "ensiklopedia_gajah_sumatra_beranimasi": { en: "Sumatran Elephant", sub: "A gentle forest giant" },
+  "ensiklopedia_badak_jawa": { en: "Javan Rhino", sub: "One of the rarest animals" },
+  "ensiklopedia_orangutan": { en: "Orangutan", sub: "The red ape of the trees" },
+  "ensiklopedia_bekantan": { en: "Proboscis Monkey", sub: "The long-nosed monkey of Borneo" },
+  "ensiklopedia_anoa_sulawesi_1": { en: "Anoa", sub: "Sulawesi's tiny wild buffalo" },
+  "ensiklopedia_anoa_sulawesi_2": { en: "Anoa", sub: "Sulawesi's tiny wild buffalo" },
+  "ensiklopedia_tarsius": { en: "Tarsier", sub: "A tiny primate with huge eyes" },
+  "ensiklopedia_komodo_2": { en: "Komodo Dragon", sub: "Indonesia's giant lizard" },
+  "ensiklopedia_hiu_paus": { en: "Whale Shark", sub: "The biggest fish in the sea" },
+  "ensiklopedia_penyu_hijau_1": { en: "Green Sea Turtle", sub: "A gentle traveler of the ocean" },
+  "ensiklopedia_penyu_hijau_2": { en: "Green Sea Turtle", sub: "A gentle traveler of the ocean" },
+  "ensiklopedia_cendrawasih": { en: "Bird of Paradise", sub: "Papua's bird of dazzling feathers" },
+  "ensiklopedia_burung_cendrawasih": { en: "Bird of Paradise", sub: "Papua's bird of dazzling feathers" },
+  "ensiklopedia_jalak_bali_1": { en: "Bali Myna", sub: "Bali's snow-white songbird" },
+  "ensiklopedia_jalak_bali_2": { en: "Bali Myna", sub: "Bali's snow-white songbird" },
+  "ensiklopedia_burung_maleo_1": { en: "Maleo Bird", sub: "Sulawesi's egg-burying bird" },
+  "ensiklopedia_burung_maleo_2": { en: "Maleo Bird", sub: "Sulawesi's egg-burying bird" },
+  "ensiklopedia_rafflesia_arnoldii": { en: "Rafflesia", sub: "The world's largest flower" },
+  "ensiklopedia_bunga_bangkai": { en: "Corpse Flower", sub: "A giant flower that smells strong" },
+  "ensiklopedia_anggrek_macan": { en: "Tiger Orchid", sub: "The world's largest orchid" },
+  "ensiklopedia_kantong_semar": { en: "Pitcher Plant", sub: "A plant that traps insects" },
+  "ensiklopedia_hutan_mangrove": { en: "Mangrove Forest", sub: "Trees that guard our coasts" },
+  "ensiklopedia_candi_borobudur_1": { en: "Borobudur Temple", sub: "The world's biggest Buddhist temple" },
+  "ensiklopedia_candi_borobudur_2": { en: "Borobudur Temple", sub: "The world's biggest Buddhist temple" },
+  "ensiklopedia_rumah_gadang": { en: "Rumah Gadang", sub: "The Minangkabau big house" },
+
+  // --- Budaya: culture, arts, music, dance ---
+  "budaya_candi_prambanan": { en: "Prambanan Temple", sub: "A grand Hindu temple in Java" },
+  "budaya_tari_kecak_bali": { en: "Kecak Dance", sub: "Bali's chanting fire dance" },
+  "budaya_tari_kecak_bali_beranimasi": { en: "Kecak Dance", sub: "Bali's chanting fire dance" },
+  "budaya_tari_saman": { en: "Saman Dance", sub: "Aceh's fast clapping dance" },
+  "budaya_wayang_kulit": { en: "Wayang Kulit", sub: "Shadow puppets that tell stories" },
+  "budaya_alat_musik_angklung_1": { en: "Angklung", sub: "A bamboo instrument you shake" },
+  "budaya_alat_musik_angklung_2": { en: "Angklung", sub: "A bamboo instrument you shake" },
+  "budaya_batik_indonesia": { en: "Batik", sub: "Indonesia's beautiful patterned cloth" },
+
+  // --- Pahlawan / Sejarah / Galeri: heroes and history ---
+  "pahlawan_ra_kartini": { en: "R.A. Kartini", sub: "Hero of women's education" },
+  "pahlawan_pangeran_diponegoro_1": { en: "Prince Diponegoro", sub: "A brave Javanese war hero" },
+  "pahlawan_pangeran_diponegoro_2": { en: "Prince Diponegoro", sub: "A brave Javanese war hero" },
+  "pahlawan_pangeran_diponegoro_beranimasi": { en: "Prince Diponegoro", sub: "A brave Javanese war hero" },
+  "pahlawan_ki_hajar_dewantara_1": { en: "Ki Hajar Dewantara", sub: "Father of Indonesian education" },
+  "pahlawan_ki_hajar_dewantara_2": { en: "Ki Hajar Dewantara", sub: "Father of Indonesian education" },
+  "pahlawan_jenderal_sudirman": { en: "General Sudirman", sub: "A great independence war general" },
+  "pahlawan_bung_tomo": { en: "Bung Tomo", sub: "Hero of the Surabaya battle" },
+  "pahlawan_pattimura": { en: "Pattimura", sub: "A brave hero from Maluku" },
+  "sejarah_proklamasi_kemerdekaan": { en: "Proclamation of Independence", sub: "The day Indonesia became free" },
+  "sejarah_sumpah_pemuda": { en: "Youth Pledge", sub: "When youth vowed one nation" },
+  "galeri_sejarah_pahlawan": { en: "History & Heroes Gallery", sub: "Meet Indonesia's heroes" },
+  "galeri_lencana_kebanggaan": { en: "Badge Gallery", sub: "Collect your proud badges" },
+
+  // --- Sains / Lab / Misi / Arena: science, missions, activities ---
+  "sains_gunung_berapi_ring_of_fire_1": { en: "Volcanoes", sub: "Indonesia's Ring of Fire" },
+  "sains_gunung_berapi_ring_of_fire_2": { en: "Volcanoes", sub: "Indonesia's Ring of Fire" },
+  "sains_gunung_berapi_ring_of_fire_3": { en: "Volcanoes", sub: "Indonesia's Ring of Fire" },
+  "sains_keajaiban_energi_matahari_1": { en: "Solar Energy", sub: "Power from the sun" },
+  "sains_keajaiban_energi_matahari_2": { en: "Solar Energy", sub: "Power from the sun" },
+  "sains_keajaiban_siklus_air": { en: "Water Cycle", sub: "How water travels around Earth" },
+  "sains_menjelajah_luar_angkasa": { en: "Outer Space", sub: "Explore the stars and planets" },
+  "sains_rahasia_gravitasi": { en: "Gravity", sub: "The force that pulls us down" },
+  "sains_rahasia_kekuatan_magnet": { en: "Magnets", sub: "The pulling power of magnets" },
+  "sains_dunia_robotik": { en: "Robotics", sub: "The world of robots" },
+  "lab_sains_teknologi_2": { en: "Science & Tech Lab", sub: "Explore science and the future" },
+  "misi_menjelajah_tata_surya": { en: "Solar System", sub: "Journey through our planets" },
+  "misi_satelit_palapa": { en: "Palapa Satellite", sub: "The satellite that united Indonesia" },
+  "misi_gigi_sehat_kuat": { en: "Healthy Teeth", sub: "Keep your teeth strong" },
+  "misi_piring_gizi_pelangi": { en: "Balanced Plate", sub: "Eat a rainbow of food" },
+  "misi_rahasia_tidur_nyenyak": { en: "Healthy Sleep", sub: "Rest well for a strong body" },
+  "misi_password_super_kuat": { en: "Strong Passwords", sub: "Make passwords hackers can't guess" },
+  "misi_netiket_pahlawan_digital": { en: "Internet Manners", sub: "Be kind and polite online" },
+  "misi_mengenal_rupiah": { en: "Getting to Know the Rupiah", sub: "Indonesia's money" },
+  "misi_sejarah_rupiah_kita": { en: "History of the Rupiah", sub: "The story of Indonesia's money" },
+
+  // --- Hub / Jelajah / Pusat: themed hubs and exploration ---
+  "hub_luar_angkasa": { en: "Space Hub", sub: "Start your cosmic adventure" },
+  "hub_aman_berinternet": { en: "Internet Safety Hub", sub: "Stay safe online" },
+  "hub_sehat_ceria": { en: "Health & Happiness Hub", sub: "Be healthy and cheerful" },
+  "hub_tabungan_pintar": { en: "Smart Savings Hub", sub: "Learn to save money wisely" },
+  "jelajah_sumatra_barat": { en: "West Sumatra", sub: "Explore the Minangkabau land" },
+  "pusat_alam_flora_fauna": { en: "Nature, Plants & Animals", sub: "Discover Indonesia's wildlife" },
+  "pusat_budaya_tradisi": { en: "Culture & Tradition", sub: "Explore Indonesian traditions" },
+
+  // --- Kuliner: food ---
+  "kuliner_rendang": { en: "Rendang", sub: "A rich, spicy beef dish" },
+  "kuliner_sate": { en: "Satay", sub: "Grilled meat skewers" },
+  "kuliner_nasi_goreng": { en: "Fried Rice", sub: "Indonesia's favorite fried rice" },
+  "kuliner_gado_gado": { en: "Gado-Gado", sub: "Veggie salad with peanut sauce" },
+  "kuliner_soto_nusantara": { en: "Soto", sub: "A warm Indonesian soup" },
+
+  // --- Cerita: folktales and stories ---
+  "cerita_malin_kundang": { en: "Malin Kundang", sub: "The boy who turned to stone" },
+  "cerita_timun_mas": { en: "Timun Mas", sub: "The brave golden cucumber girl" },
+  "cerita_sangkuriang": { en: "Sangkuriang", sub: "The legend of Mount Tangkuban Perahu" },
+  "cerita_roro_jonggrang": { en: "Roro Jonggrang", sub: "The legend of Prambanan Temple" },
+  "cerita_si_pitung": { en: "Si Pitung", sub: "A hero of old Jakarta" },
+
+  // --- Lingkungan: environment and nature care ---
+  "lingkungan_sampah_plastik": { en: "Plastic Waste", sub: "Why we reduce plastic" },
+  "lingkungan_terumbu_karang": { en: "Coral Reefs", sub: "Colorful gardens of the sea" },
+  "lingkungan_polusi_udara": { en: "Air Pollution", sub: "Keeping our air clean" },
+  "lingkungan_perubahan_iklim": { en: "Climate Change", sub: "How Earth's weather is changing" },
+  "lingkungan_hutan_tropis": { en: "Rainforest", sub: "Indonesia's lush green jungles" },
+
+  // --- Ekonomi / Profesi / Olahraga / Kewarganegaraan: daily life and civics ---
+  "ekonomi_uang_rupiah": { en: "The Rupiah", sub: "Indonesia's money" },
+  "profesi_dokter": { en: "Doctor", sub: "A helper who keeps us healthy" },
+  "profesi_guru": { en: "Teacher", sub: "A helper who teaches us" },
+  "profesi_petani": { en: "Farmer", sub: "A helper who grows our food" },
+  "olahraga_sepak_bola": { en: "Football", sub: "The world's favorite ball game" },
+  "olahraga_bulu_tangkis": { en: "Badminton", sub: "Indonesia's beloved racket sport" },
+  "olahraga_pencak_silat": { en: "Pencak Silat", sub: "Indonesia's martial art" },
+  "kewarganegaraan_pancasila": { en: "Pancasila", sub: "Indonesia's five guiding principles" },
+  "kewarganegaraan_pancasila_dasar_negara": { en: "Pancasila", sub: "Indonesia's five guiding principles" },
+  "kewarganegaraan_hak_anak": { en: "Children's Rights", sub: "Rights every child should have" },
+
+  // --- Tanya: AI assistant ---
+  "tanya_bimobot_ai_chat": { en: "Ask BimoBot", sub: "Your friendly learning helper" },
+};
