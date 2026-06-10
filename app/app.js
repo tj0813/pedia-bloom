@@ -166,98 +166,94 @@
 
   /* Home / Beranda */
   function viewHome() {
-    var fact = DAILY_FACTS[new Date().getDate() % DAILY_FACTS.length];
     var visited = store.read("visited", {});
     var cont = Object.keys(visited).filter(function (k) { return SCREENS[k]; }).slice(-6).reverse();
+    var starter = ["ensiklopedia_komodo_1", "sains_keajaiban_siklus_air", "budaya_batik_indonesia", "sejarah_sumpah_pemuda"].filter(function (id) { return SCREENS[id]; });
+    var learnIds = cont.length ? cont : starter;
     var stats = computeStats();
+    var name = store.profile().name;
 
     topbar("Pedia Bloom", false);
     setActiveNav("home");
 
-    // Render the beautiful gamified home screen dashboard
+    // Stitch-inspired mobile-first home: illustrated storybook scene, frosted page,
+    // large search, pastel topic tiles, and light bottom navigation.
     view.innerHTML =
-      '<div class="px-margin-mobile max-w-container-max mx-auto space-y-6 pt-4 pb-12">' +
-        
-        // 1. Fact & Character Hero Banner (leaf-green storybook gradient)
-        '<section class="relative rounded-xl overflow-hidden bg-gradient-to-br from-primary to-[rgb(var(--on-primary-container))] text-white p-5 flex flex-col md:flex-row items-center gap-5 shadow-storybook-lg pop-in">' +
-          // Left: Fact Card
-          '<div class="flex-1 bg-black/20 border border-white/15 rounded-xl p-4 space-y-3 relative z-10 w-full">' +
-            '<span class="inline-block bg-tertiary-container text-on-tertiary-container text-[11px] font-label-md font-bold px-2 py-0.5 rounded-md uppercase tracking-wider">Fakta Hari Ini<span class="bi-en">Today\'s Fact</span></span>' +
-            '<div class="flex gap-3 items-center">' +
-              '<img src="app/assets/img/komodo_fact.png" alt="Komodo" class="w-20 h-20 rounded-md object-cover border border-white/20 shrink-0" />' +
-              '<p class="text-[13px] font-body-md text-white/90 leading-relaxed">' + esc(fact.t) + '</p>' +
-            '</div>' +
-            '<div class="flex items-center gap-1 text-tertiary-fixed-dim font-label-md text-[13px] font-bold"><span class="material-symbols-outlined text-[16px]">lightbulb</span> Tahukah kamu? <span class="text-white/60 font-normal">/ Did you know?</span></div>' +
-          '</div>' +
-
-          // Right: Indonesia Map & Kid Explorer Mascot
-          '<div class="flex-1 flex items-center justify-center relative w-full h-[140px] md:h-full min-h-[140px] overflow-hidden">' +
-            '<div class="absolute inset-0 opacity-20 bg-[radial-gradient(#ffffff_1.5px,transparent_1.5px)] [background-size:16px_16px]"></div>' +
-            '<img src="app/assets/img/explorer_mascot.png" alt="Explorer Girl" class="absolute right-0 bottom-0 h-[150px] object-contain z-10 hover:scale-105 transition-transform duration-300" />' +
-            '<div class="absolute left-4 top-1/2 -translate-y-1/2 text-left z-0 pr-20">' +
-              '<p class="text-[18px] font-bold font-headline-lg-mobile text-tertiary-fixed-dim drop-shadow-sm leading-tight">Halo, Penjelajah!<span class="bi-en text-white/70">Hello, Explorer!</span></p>' +
-              '<p class="text-[13px] text-white/85 leading-snug mt-1">Ayo cari tahu rahasia alam & budaya Indonesia di sekitarmu!</p>' +
-            '</div>' +
-          '</div>' +
-        '</section>' +
-
-        // 2. Stats Bar
-        '<section class="story-card p-4 flex flex-wrap items-center justify-between gap-4 pop-in">' +
-          '<div class="flex items-center gap-3 min-w-[200px] flex-1">' +
-            '<div class="w-12 h-12 rounded-full bg-gradient-to-tr from-primary to-primary-container grid place-items-center text-on-primary shadow-storybook-sm"><span class="material-symbols-outlined text-2xl" style="font-variation-settings:\'FILL\' 1;">grade</span></div>' +
-            '<div class="flex-1 min-w-0 text-left">' +
-              '<p class="font-label-md text-[14px] font-bold text-on-surface leading-tight">Level ' + stats.level + '</p>' +
-              '<p class="text-[11px] text-on-surface-variant leading-none">Penjelajah Cilik <span class="text-fresh-teal">· Young Explorer</span></p>' +
-              '<div class="w-full bg-surface-variant rounded-full h-2 mt-1.5 overflow-hidden">' +
-                '<div class="bg-primary h-full rounded-full" style="width:' + stats.xpPct + '%"></div>' +
+      '<div class="storybook-home px-5 max-w-[960px] mx-auto space-y-4 pt-3 pb-8">' +
+        '<section class="home-page-card pop-in">' +
+          '<div class="flex items-center justify-between gap-3 mb-3">' +
+            '<button aria-label="Pengaturan" onclick="location.hash=\'#/settings\'" class="home-round-control"><span class="material-symbols-outlined text-[22px]">settings</span></button>' +
+            '<div class="flex items-center gap-2 min-w-0">' +
+              '<img src="app/assets/img/explorer_mascot.png" alt="Avatar penjelajah" class="w-11 h-11 rounded-full object-cover border-2 border-white shadow-storybook-sm" />' +
+              '<div class="min-w-0">' +
+                '<p class="font-label-md text-[16px] font-bold text-on-surface truncate">Halo, ' + esc(name) + '!</p>' +
+                '<p class="text-[13px] font-bold text-fresh-teal leading-tight">Level ' + stats.level + ' · ' + stats.xpInLevel + '/' + stats.xpPerLevel + ' XP</p>' +
               '</div>' +
-              '<p class="text-[9px] font-bold text-on-surface-variant mt-1 leading-none">' + stats.xpInLevel + ' / ' + stats.xpPerLevel + ' XP</p>' +
             '</div>' +
+            '<a href="#/badges" aria-label="Lencana" class="home-round-control"><span class="material-symbols-outlined text-[22px]" style="font-variation-settings:\'FILL\' 1;">military_tech</span></a>' +
           '</div>' +
-          '<div class="flex items-center justify-around gap-6 flex-wrap font-label-md font-bold text-[14px] text-on-surface">' +
-            '<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-tertiary text-[20px]" style="font-variation-settings:\'FILL\' 1;">local_fire_department</span> ' + stats.streak + ' Streak</div>' +
-            '<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-tertiary-container text-[20px]" style="font-variation-settings:\'FILL\' 1;">military_tech</span> ' + stats.badges + ' Piala</div>' +
-            '<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings:\'FILL\' 1;">diamond</span> ' + stats.coins + ' Koin</div>' +
-            '<a href="#/badges" class="squishy-button bg-surface-container text-primary border-primary-container px-4 py-1.5 rounded-full text-[13px] font-bold">Lihat Semua &gt;</a>' +
+
+          '<label class="relative block mb-4">' +
+            '<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary text-[22px]">search</span>' +
+            '<input id="home-search" type="search" inputmode="search" placeholder="Search for wonders..." aria-label="Cari topik / Search topics" class="home-search-input" />' +
+          '</label>' +
+
+          '<div class="grid grid-cols-2 md:grid-cols-3 gap-3">' +
+            homeTile("#/category/" + encodeURIComponent("Alam & Hewan Indonesia"), "pets", "Animals", "Hewan", "bg-[#ffe2a8]", "text-[#754300]") +
+            homeTile("#/map/Bali%20%26%20Nusa%20Tenggara", "rocket_launch", "Space", "Antariksa", "bg-[#d9e6ff]", "text-[#00497d]") +
+            homeTile("#/screen/ensiklopedia_komodo_1", "cruelty_free", "Dinosaurs", "Komodo", "bg-[#d9f5bf]", "text-[#1d5d20]") +
+            homeTile("#/library", "water_drop", "Ocean Life", "Laut", "bg-[#c9eff8]", "text-[#00536a]") +
+            homeTile("#/category/" + encodeURIComponent("Sains Seru"), "science", "Science", "Sains", "bg-[#e9d5ff]", "text-[#5b2484]") +
+            homeTile("#/category/" + encodeURIComponent("Sejarah & Pahlawan"), "history_edu", "History", "Sejarah", "bg-[#ffe1d2]", "text-[#8a3b00]") +
           '</div>' +
-        '</section>' +
 
-        // 3. Three Feature Grid Cards (green = explore, blue = learn, orange = play)
-        '<section class="grid grid-cols-1 md:grid-cols-3 gap-4 pop-in">' +
-          featureCard("#/map", "map_indonesia_icon.png", "Map", "primary-container", "primary", "JELAJAH PETA", "Explore the Map", "Jelajahi Indonesia dari Sabang sampai Merauke!") +
-          featureCard("#/explore", "open_book_icon.png", "Book", "secondary-container", "secondary", "LANJUT BELAJAR", "Keep Learning", "Lanjutkan materi yang sedang kamu pelajari") +
-          featureCard("#/games", "chest_icon.png", "Chest", "tertiary-container", "tertiary", "MISI HARI INI", "Today's Mission", "Selesaikan misi harian dan dapatkan hadiahnya!") +
-        '</section>' +
-
-        // Continue learning horizontal rail (if any)
-        (cont.length ? section("Lanjut Belajar", "Continue Learning", "history", railHtml(cont)) : "") +
-
-        // 4. Kategori Populer (Consolidated 5 categories)
-        '<section class="space-y-3 pop-in">' +
-          '<div class="flex justify-between items-center">' +
-            biHead("h3", "font-headline-lg-mobile text-[20px] font-bold text-on-background", "Kategori Populer", "Popular Categories") +
-            '<a href="#/explore" class="text-[13px] font-label-md font-bold text-primary flex items-center gap-1 shrink-0">Lihat Semua <span class="material-symbols-outlined text-[16px]">chevron_right</span></a></div>' +
-          '<div class="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-5 gap-3">' +
-            categoryBubbleCard("Alam & Hewan Indonesia", "Nature & Animals", "pets", "from-primary-container to-primary") +
-            categoryBubbleCard("Sains Seru", "Fun Science", "science", "from-secondary-container to-secondary") +
-            categoryBubbleCard("Budaya Nusantara", "Culture", "festival", "from-tertiary-container to-tertiary") +
-            categoryBubbleCard("Sejarah & Pahlawan", "History & Heroes", "military_tech", "from-rose-400 to-error") +
-            categoryBubbleCard("Lingkungan & Kehidupan Sehari-hari", "Daily Life", "eco", "from-fresh-teal to-secondary") +
+          '<div class="mt-4 grid grid-cols-3 gap-2 text-center">' +
+            miniStat(stats.streak, "Streak", "local_fire_department", "text-tertiary") +
+            miniStat(stats.badges, "Badges", "military_tech", "text-primary") +
+            miniStat(stats.coins, "Coins", "diamond", "text-secondary") +
           '</div>' +
         '</section>' +
 
-        // 5. Owl Companion AI Banner (discovery blue)
-        '<section class="relative overflow-hidden rounded-xl p-5 bg-gradient-to-r from-secondary to-secondary-container text-white flex flex-col md:flex-row items-center gap-4 shadow-storybook-lg pop-in">' +
-          '<div class="absolute -left-10 -bottom-10 w-32 h-32 bg-white/10 rounded-full blur-2xl z-0"></div>' +
-          '<img src="app/assets/img/smart_owl_helper.png" alt="Smart Owl" class="h-24 object-contain relative z-10 shrink-0 transform -rotate-3 hover:rotate-3 transition-transform" />' +
-          '<div class="text-left relative z-10 flex-1 space-y-2">' +
-            '<h4 class="font-headline-lg-mobile text-[18px] font-bold leading-tight">Belajar jadi lebih seru dengan Teman Pintar!<span class="block font-medium text-[12px] mt-0.5 text-white/75">Learning is more fun with your Smart Friend!</span></h4>' +
-            '<p class="text-[12px] text-white/85 max-w-lg leading-relaxed">Tanya apa saja tentang Indonesia ke BimoBot dan dapatkan jawaban serunya langsung!</p>' +
-          '</div>' +
-          '<a href="#/ai" class="squishy-button inline-flex items-center gap-1.5 bg-tertiary-container text-on-tertiary-container border-tertiary px-5 py-2.5 rounded-full font-label-md font-bold relative z-10">Tanya Teman Pintar <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:\'FILL\' 1;">smart_toy</span></a>' +
+        '<section class="home-page-card p-4 pop-in">' +
+          '<div class="flex items-center justify-between mb-3">' +
+            biHead("h3", "font-headline-lg-mobile text-[18px] font-bold text-on-surface", cont.length ? "Lanjut Belajar" : "Mulai Jelajah", cont.length ? "Continue" : "Start Exploring") +
+            '<a href="#/library" class="home-small-link">All</a>' +
+          '</div>' + railHtml(learnIds.slice(0, 4)) +
         '</section>' +
 
+        '<section class="home-page-card p-4 pop-in">' +
+          '<div class="flex items-center gap-3">' +
+            '<img src="app/assets/img/smart_owl_helper.png" alt="BimoBot" class="w-20 h-20 object-contain rounded-xl bg-[#f5d1ff]" />' +
+            '<div class="min-w-0 flex-1">' +
+              '<h3 class="font-headline-lg-mobile text-[18px] leading-tight font-bold text-on-surface">Ask BimoBot<span class="bi-en">Tanya teman pintar</span></h3>' +
+              '<p class="text-[14px] leading-snug text-on-surface-variant mt-1">Temukan jawaban aman tentang Indonesia.</p>' +
+            '</div>' +
+            '<a href="#/ai" aria-label="Tanya BimoBot" class="home-round-control bg-tertiary-container text-on-tertiary-container"><span class="material-symbols-outlined" style="font-variation-settings:\'FILL\' 1;">smart_toy</span></a>' +
+          '</div>' +
+        '</section>' +
       '</div>';
+
+    document.getElementById("home-search").addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        var q = e.currentTarget.value.trim();
+        location.hash = q ? "#/library?search=" + encodeURIComponent(q) : "#/library";
+      }
+    });
+  }
+
+  function homeTile(href, icon, title, subtitle, bg, fg) {
+    return '<a href="' + href + '" class="home-topic-tile ' + bg + " " + fg + '">' +
+      '<span class="home-topic-icon material-symbols-outlined" style="font-variation-settings:\'FILL\' 1;">' + icon + "</span>" +
+      '<span class="font-label-md text-[15px] font-bold leading-tight">' + esc(title) + '<span class="block text-[12px] opacity-70 mt-0.5">' + esc(subtitle) + "</span></span>" +
+      "</a>";
+  }
+
+  function miniStat(n, label, icon, color) {
+    return '<a href="#/badges" class="rounded-xl bg-white/60 dark:bg-surface-container p-2 min-h-[56px] flex flex-col items-center justify-center border border-white/70 dark:border-outline-variant/50">' +
+      '<span class="material-symbols-outlined text-[20px] ' + color + '" style="font-variation-settings:\'FILL\' 1;">' + icon + '</span>' +
+      '<span class="text-[13px] font-bold text-on-surface leading-tight">' + n + '</span>' +
+      '<span class="text-[11px] font-bold text-on-surface-variant leading-tight">' + esc(label) + '</span>' +
+      '</a>';
   }
 
   // Big gamified entry card on Home; bilingual title, storybook shadow.
@@ -369,6 +365,11 @@
       document.getElementById("lib-count").textContent = shown + " topik";
       document.getElementById("lib-empty").classList.toggle("hidden", shown > 0);
     });
+    var queryMatch = location.hash.match(/[?&]search=([^&]+)/);
+    if (queryMatch) {
+      input.value = decodeURIComponent(queryMatch[1].replace(/\+/g, " "));
+      input.dispatchEvent(new Event("input"));
+    }
   }
 
   /* Stitch fragment renderer */
@@ -799,8 +800,10 @@
   /* --------------------------------------------------------------- router */
   function router() {
     var hash = location.hash.replace(/^#\/?/, "");
-    var parts = hash.split("/").filter(Boolean).map(decodeURIComponent);
+    var route = hash.split("?")[0];
+    var parts = route.split("/").filter(Boolean).map(decodeURIComponent);
     var base = parts[0] || "home";
+    document.documentElement.classList.toggle("home-storybook", base === "home");
     window.scrollTo(0, 0);
     updateProfileChip();
     // Error boundary: a broken screen shows a friendly message, never a blank page.

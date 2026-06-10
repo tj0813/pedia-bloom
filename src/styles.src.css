@@ -18,7 +18,7 @@
   --secondary-fixed: 209 228 255; --secondary-fixed-dim: 158 202 255; --on-secondary-fixed: 0 29 54; --on-secondary-fixed-variant: 0 73 125;
   --tertiary-fixed: 255 220 190; --tertiary-fixed-dim: 255 184 112; --on-tertiary-fixed: 44 22 0; --on-tertiary-fixed-variant: 105 60 0;
   --fresh-teal: 13 148 136;
-  --shadow-tint: 23 29 22; --nav-surface: 28 38 26; --nav-active: 255 199 79;
+  --shadow-tint: 23 29 22; --nav-surface: 255 255 255; --nav-active: 0 110 28;
 }
 html.dark {
   --background: 15 21 14; --on-background: 223 228 216;
@@ -34,7 +34,7 @@ html.dark {
   --tertiary: 255 184 112; --on-tertiary: 74 40 0; --tertiary-container: 105 60 0; --on-tertiary-container: 255 220 190;
   --error: 255 180 171; --on-error: 105 0 5; --error-container: 147 0 10; --on-error-container: 255 218 214;
   --fresh-teal: 94 224 208;
-  --shadow-tint: 0 0 0; --nav-surface: 10 15 9; --nav-active: 255 199 79;
+  --shadow-tint: 0 0 0; --nav-surface: 23 29 22; --nav-active: 120 220 119;
 }
 
 @tailwind base;
@@ -43,7 +43,7 @@ html.dark {
 
 @layer base {
   html, body { min-height: 100dvh; background: rgb(var(--background)); color: rgb(var(--on-background)); }
-  body { font-family: "Quicksand", system-ui, sans-serif; }
+  body { font-family: "Quicksand", system-ui, sans-serif !important; }
   /* Subtle Nusantara flora texture — low opacity, behind content (DESIGN.md motif). */
   body::before {
     content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: 0.5;
@@ -57,10 +57,35 @@ html.dark {
   :focus-visible { outline: 3px solid rgb(var(--primary)); outline-offset: 2px; border-radius: 8px; }
 }
 
+html.home-storybook body {
+  background:
+    radial-gradient(80% 45% at 50% 0%, rgb(255 250 209 / 0.75), transparent 70%),
+    radial-gradient(55% 40% at 0% 18%, rgb(var(--primary-container) / 0.23), transparent 70%),
+    radial-gradient(55% 42% at 100% 22%, rgb(var(--tertiary-container) / 0.18), transparent 72%),
+    linear-gradient(180deg, rgb(237 247 221), rgb(var(--background)) 45%, rgb(232 245 224));
+  background-color: rgb(var(--background));
+}
+
+html.home-storybook body::before {
+  opacity: 0.9;
+  background:
+    radial-gradient(ellipse at 6% 12%, rgb(60 127 68 / 0.20) 0 11%, transparent 12%),
+    radial-gradient(ellipse at 95% 18%, rgb(225 133 0 / 0.18) 0 10%, transparent 11%),
+    radial-gradient(ellipse at 10% 88%, rgb(60 127 68 / 0.18) 0 13%, transparent 14%),
+    radial-gradient(ellipse at 92% 92%, rgb(0 97 164 / 0.14) 0 12%, transparent 13%),
+    radial-gradient(rgb(var(--primary) / 0.10) 1.2px, transparent 1.2px) 0 0 / 18px 18px;
+}
+
+html.home-storybook header {
+  background: rgb(var(--surface-bright) / 0.72) !important;
+  border-bottom-color: rgb(255 255 255 / 0.6) !important;
+  box-shadow: 0 6px 24px -18px rgb(var(--shadow-tint) / 0.45);
+}
+
 @layer components {
   /* Cardstock surface: cream, warm ambient shadow, soft rounded frame. */
   .story-card {
-    background: rgb(var(--surface-container-lowest)); border: 2px solid rgb(var(--outline-variant) / 0.55);
+    background: rgb(var(--surface-container-lowest)) !important; border: 2px solid rgb(var(--outline-variant) / 0.55);
     border-radius: 1.5rem; box-shadow: 0 8px 20px -6px rgb(var(--shadow-tint) / 0.12);
   }
   /* Raised, tactile button: darker bottom edge + convex top highlight; sinks on press. */
@@ -71,12 +96,58 @@ html.dark {
   .squishy-button:active { transform: translateY(2px) scale(0.985); border-bottom-width: 0; margin-top: 4px; box-shadow: inset 0 2px 0 rgb(255 255 255 / 0.18); }
   /* Bilingual heading: Indonesian primary + English subtitle (fresh-teal, 60% size). */
   .bi-en { display: block; font-weight: 500; font-size: 0.6em; line-height: 1.2; margin-top: 2px; color: rgb(var(--fresh-teal)); letter-spacing: 0; }
-  .nav-item { color: rgb(var(--inverse-on-surface) / 0.55); transition: all 0.2s ease; }
-  .nav-item:hover { color: rgb(var(--inverse-on-surface)); }
+  .nav-item { color: rgb(var(--on-surface-variant) / 0.72); transition: all 0.2s ease; min-height: 48px; }
+  .nav-item:hover { color: rgb(var(--on-surface)); }
   .nav-item[aria-current="page"] { color: rgb(var(--nav-active)); }
   .nav-item[aria-current="page"] .nav-icon { font-variation-settings: "FILL" 1; }
+  .home-page-card {
+    position: relative; overflow: hidden; padding: 16px;
+    background: rgb(255 255 255 / 0.72);
+    border: 1px solid rgb(255 255 255 / 0.78);
+    border-radius: 28px;
+    box-shadow: 0 16px 42px -24px rgb(var(--shadow-tint) / 0.42), inset 0 1px 0 rgb(255 255 255 / 0.74);
+    backdrop-filter: blur(16px);
+  }
+  html.dark .home-page-card {
+    background: rgb(var(--surface-container) / 0.86);
+    border-color: rgb(var(--outline-variant) / 0.42);
+  }
+  .home-round-control {
+    width: 48px; height: 48px; min-width: 48px; display: inline-flex; align-items: center; justify-content: center;
+    border-radius: 9999px; color: rgb(var(--primary)); background: rgb(255 255 255 / 0.76);
+    box-shadow: 0 6px 14px -9px rgb(var(--shadow-tint) / 0.55), inset 0 1px 0 rgb(255 255 255 / 0.7);
+  }
+  html.dark .home-round-control { background: rgb(var(--surface-container-high)); }
+  .home-search-input {
+    width: 100%; min-height: 52px; border-radius: 9999px; border: 2px solid rgb(var(--outline-variant) / 0.55);
+    background: rgb(255 255 255 / 0.86); padding: 12px 18px 12px 48px;
+    font: 600 16px/22px "Quicksand", system-ui, sans-serif; color: rgb(var(--on-surface));
+    box-shadow: inset 0 2px 0 rgb(255 255 255 / 0.75);
+  }
+  html.dark .home-search-input { background: rgb(var(--surface-container-high)); }
+  .home-topic-tile {
+    min-height: 96px; border-radius: 18px; padding: 12px; display: grid; grid-template-columns: 42px 1fr;
+    align-items: center; gap: 10px; border: 2px solid rgb(255 255 255 / 0.82);
+    box-shadow: 0 7px 16px -10px rgb(var(--shadow-tint) / 0.42), inset 0 1px 0 rgb(255 255 255 / 0.65);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .home-topic-tile:hover { transform: translateY(-2px); box-shadow: 0 11px 22px -12px rgb(var(--shadow-tint) / 0.5); }
+  .home-topic-tile:active { transform: translateY(1px) scale(0.99); }
+  .home-topic-icon {
+    width: 42px; height: 42px; border-radius: 14px; display: grid; place-items: center;
+    background: rgb(255 255 255 / 0.58); font-size: 25px;
+  }
+  .home-small-link {
+    min-height: 48px; display: inline-flex; align-items: center; color: rgb(var(--primary));
+    font: 700 14px/18px "Quicksand", system-ui, sans-serif;
+  }
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+#settings-btn, #back-btn, #header-shell a[aria-label], #header-shell > div:last-child > a {
+  min-width: 48px;
+  min-height: 48px;
 }
 
 .pop-in { animation: popIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both; }

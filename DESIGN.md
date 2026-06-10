@@ -143,6 +143,17 @@ This design system uses a **Fluid Grid** with exaggerated safe areas to accommod
 - **Touch Targets:** All interactive elements must maintain a minimum 48x48px hit area.
 - **Vertical Rhythm:** Use the `lg` (40px) spacing between distinct content sections to create a sense of "breathing room" reminiscent of a physical book layout.
 
+### Home Screen Master Layout
+The home screen follows the approved Stitch-derived "storybook activity sheet" pattern. This is the master direction for the first screen and should override generic dashboard layouts.
+
+- **Scene Background:** The home route uses a soft illustrated storybook backdrop with low-contrast flora/leaf atmosphere and warm cream/green light. The background should fill the whole viewport and must not leave large empty side gutters on tablet or desktop widths.
+- **Main Page Panel:** Primary home content sits inside a frosted, rounded page panel with soft white/cream translucency, subtle border, and ambient shadow. The panel may narrow on phone screens, but should expand up to a wider stage on tablet/desktop.
+- **Search First:** Search appears near the top of the panel as a large rounded field with a clear icon and child-readable placeholder. It is the main discovery affordance.
+- **Topic Tile Grid:** Topic/category entry points use pastel tactile tiles with icon blocks, rounded corners, and 2-column layout on mobile. On wider viewports the grid may expand to 3 columns while keeping the same Stitch tile language.
+- **New User Fallback:** When there is no learning history, the home screen must show a curated "Mulai Jelajah / Start Exploring" section instead of leaving blank space before the bottom navigation.
+- **Progress Summary:** Streak, badges, coins, or level stats should be compact, visual, and secondary to discovery. These stats must not turn the first screen into a dense dashboard.
+- **Companion Card:** BimoBot or mascot guidance appears as a compact storybook helper card, not as a large marketing banner.
+
 ## Elevation & Depth
 Depth is created through **Ambient Shadows** and **Tonal Layering**. The system uses "Soft Volume" to imply physical presence.
 
@@ -163,6 +174,9 @@ The shape language is **Rounded** and friendly, moving away from ultra-rounded p
 Buttons are the primary "toys" of the UI. 
 - **Primary:** Leaf Green with a 3px bottom "border-shadow" of a darker green to create a 3D effect.
 - **Label:** White, Bold Quicksand.
+
+### Bottom Navigation
+The primary mobile navigation follows the Stitch home pattern: a light, rounded, floating bottom bar with a raised center action. Active icons use Leaf Green or Warm Orange depending on role. The nav must keep 48x48px tap targets, avoid covering required content, and remain legible in dark mode.
 
 ### Cards
 Cards act as storybook chapters.

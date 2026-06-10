@@ -2,7 +2,7 @@
  * Precaches the full app shell (now fully self-hosted: no CDN). Local images are
  * cached at runtime (stale-while-revalidate). Navigations fall back to the cached
  * shell when offline so the app always boots. */
-var VERSION = "pedia-bloom-v5";
+var VERSION = "pedia-bloom-v6";
 var SHELL = VERSION + "-shell";
 var RUNTIME = VERSION + "-runtime";
 
