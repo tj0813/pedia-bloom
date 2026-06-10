@@ -28,7 +28,11 @@ function attachErrorCollector(page, bag) {
   page.on("pageerror", (e) => bag.push("pageerror: " + e.message));
   page.on("requestfailed", (r) => {
     const u = r.url();
-    if (!IGNORED.some((re) => re.test(u))) bag.push("requestfailed: " + u + " — " + (r.failure()?.errorText || ""));
+    const err = r.failure()?.errorText || "";
+    // ERR_ABORTED = the browser cancelled an in-flight request (e.g. images still loading
+    // when the SPA navigates to the next screen). Benign — not a real load failure.
+    if (err.includes("ERR_ABORTED")) return;
+    if (!IGNORED.some((re) => re.test(u))) bag.push("requestfailed: " + u + " — " + err);
   });
 }
 
