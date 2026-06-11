@@ -1,0 +1,75 @@
+{
+  "id": "olahraga_pencak_silat",
+  "title_id": "Pencak Silat",
+  "title_en": "Pencak Silat",
+  "subtitle_id": "Bela diri asli Indonesia yang memadukan kekuatan, kelincahan, dan keindahan gerak!",
+  "subtitle_en": "Indonesia's own martial art blending strength, agility, and beautiful movement!",
+  "data_card": [
+    { "icon": "sports_martial_arts", "label_id": "Jenis", "label_en": "Type", "value_id": "Seni bela diri", "value_en": "Martial art" },
+    { "icon": "public", "label_id": "Asal", "label_en": "Origin", "value_id": "Asli dari Indonesia (Nusantara)", "value_en": "Native to Indonesia (the archipelago)" },
+    { "icon": "groups", "label_id": "Pemain", "label_en": "Players", "value_id": "Sendiri atau berpasangan", "value_en": "Solo or in pairs" },
+    { "icon": "sports_martial_arts", "label_id": "Latihan", "label_en": "Training", "value_id": "Jurus, kuda-kuda, dan senjata", "value_en": "Moves, stances, and weapons" },
+    { "icon": "emoji_events", "label_id": "Kebanggaan Indonesia", "label_en": "Indonesia's pride", "value_id": "Warisan Budaya Dunia UNESCO", "value_en": "UNESCO World Cultural Heritage" }
+  ],
+  "sections": [
+    {
+      "icon": "sports_martial_arts",
+      "h_id": "Apa Itu Pencak Silat?",
+      "h_en": "What Is Pencak Silat?",
+      "body_id": "Pencak silat adalah seni bela diri asli Indonesia. Bela diri ini melatih seluruh tubuh untuk menyerang, menangkis, mengelak, dan menjaga diri. Pencak silat bukan hanya soal bertarung, tetapi juga soal keindahan gerak dan kesabaran hati. Orang yang ahli pencak silat disebut pesilat. Ada ratusan aliran pencak silat yang berbeda-beda di seluruh Indonesia.",
+      "body_en": "Pencak silat is a martial art native to Indonesia. It trains the whole body to attack, block, dodge, and protect oneself. Pencak silat is not only about fighting but also about beautiful movement and a patient heart. A person skilled in pencak silat is called a pesilat. There are hundreds of different pencak silat styles all across Indonesia."
+    },
+    {
+      "icon": "self_improvement",
+      "h_id": "Gerakan dan Jurus",
+      "h_en": "Movements and Moves",
+      "body_id": "Dalam pencak silat, pesilat belajar kuda-kuda, yaitu cara berdiri yang kuat dan seimbang. Lalu mereka berlatih jurus, yaitu rangkaian gerakan menyerang dan bertahan. Banyak gerakan silat terinspirasi dari binatang seperti harimau, ular, monyet, dan burung elang. Semua gerakan ini dilatih berulang-ulang sampai menjadi cepat, kuat, dan indah dipandang.",
+      "body_en": "In pencak silat, a pesilat learns stances, which are strong and balanced ways of standing. Then they practice jurus, which are sequences of attacking and defending movements. Many silat movements are inspired by animals such as the tiger, snake, monkey, and eagle. All of these moves are practiced over and over until they become fast, strong, and beautiful to watch."
+    },
+    {
+      "icon": "groups",
+      "h_id": "Seni, Olahraga, dan Pertandingan",
+      "h_en": "Art, Sport, and Competition",
+      "body_id": "Pencak silat punya banyak sisi. Sebagai seni, gerakannya yang indah sering ditampilkan dengan iringan musik dalam acara adat dan pernikahan. Sebagai olahraga, pencak silat dipertandingkan; dua pesilat bertanding di atas gelanggang dengan memakai pelindung tubuh dan diawasi wasit. Pencak silat dipertandingkan di Pekan Olahraga Nasional (PON) dan SEA Games sejak tahun 1987.",
+      "body_en": "Pencak silat has many sides. As an art, its beautiful movements are often performed with music at traditional ceremonies and weddings. As a sport, pencak silat is contested; two pesilat compete on a mat wearing body protectors and watched by a referee. Pencak silat has been a competition sport at the National Sports Week (PON) and the SEA Games since 1987."
+    },
+    {
+      "icon": "emoji_events",
+      "h_id": "Kebanggaan Indonesia",
+      "h_en": "Indonesia's Pride",
+      "body_id": "Pencak silat adalah warisan asli dari nenek moyang bangsa Indonesia. Pada 13 Desember 2019, UNESCO menetapkan pencak silat sebagai Warisan Budaya Tak Benda Dunia. Pengakuan ini membuat seluruh rakyat Indonesia bangga. Pencak silat juga menjadi alat pemersatu, karena di setiap daerah ada aliran khasnya sendiri, dari Cimande di Jawa Barat sampai Merpati Putih di Jawa Tengah.",
+      "body_en": "Pencak silat is a heritage handed down from the ancestors of the Indonesian people. On 13 December 2019, UNESCO named pencak silat a World Intangible Cultural Heritage. This recognition made all of Indonesia proud. Pencak silat is also a uniting force, because every region has its own special style, from Cimande in West Java to Merpati Putih in Central Java."
+    },
+    {
+      "icon": "lightbulb",
+      "h_id": "Tahukah Kamu?",
+      "h_en": "Did You Know?",
+      "body_id": "Dahulu, pencak silat diajarkan bersama pelajaran agama di surau dan pesantren. Latihan silat dianggap melatih bukan hanya tubuh yang kuat, tetapi juga hati yang sabar dan sopan. Sampai sekarang, banyak perguruan silat mengajarkan murid-muridnya untuk rendah hati, menghormati guru, dan hanya menggunakan ilmunya untuk kebaikan.",
+      "body_en": "Long ago, pencak silat was taught together with religious lessons in prayer houses and Islamic schools. Silat training was believed to build not only a strong body but also a patient and polite heart. Even today, many silat schools teach their students to be humble, to respect their teacher, and to use their skill only for good."
+    }
+  ],
+  "facts": [
+    { "id": "Pencak silat adalah seni bela diri yang asli berasal dari Indonesia.", "en": "Pencak silat is a martial art that originated in Indonesia." },
+    { "id": "UNESCO menetapkan pencak silat sebagai Warisan Budaya Dunia pada tahun 2019.", "en": "UNESCO named pencak silat a World Cultural Heritage in 2019." },
+    { "id": "Banyak gerakan silat meniru binatang seperti harimau, ular, dan elang.", "en": "Many silat movements imitate animals such as the tiger, snake, and eagle." },
+    { "id": "Orang yang ahli pencak silat disebut pesilat.", "en": "A person skilled in pencak silat is called a pesilat." },
+    { "id": "Pencak silat dipertandingkan di SEA Games sejak tahun 1987.", "en": "Pencak silat has been a competition sport at the SEA Games since 1987." },
+    { "id": "Ada ratusan aliran pencak silat yang berbeda di seluruh Indonesia.", "en": "There are hundreds of different pencak silat styles across Indonesia." }
+  ],
+  "glossary": [
+    { "term": "Pesilat", "def_id": "Orang yang berlatih dan ahli dalam pencak silat.", "def_en": "A person who trains in and is skilled at pencak silat." },
+    { "term": "Jurus", "def_id": "Rangkaian gerakan menyerang dan bertahan dalam silat.", "def_en": "A sequence of attacking and defending movements in silat." },
+    { "term": "Kuda-kuda", "def_id": "Cara berdiri yang kuat dan seimbang sebagai dasar gerakan silat.", "def_en": "A strong, balanced stance that is the base for silat movements." },
+    { "term": "Aliran", "def_id": "Gaya atau jenis pencak silat yang khas dari suatu daerah atau perguruan.", "def_en": "A style or type of pencak silat special to a region or school." },
+    { "term": "Bela diri", "def_id": "Ilmu dan keterampilan untuk melindungi diri dari bahaya.", "def_en": "The knowledge and skill of protecting oneself from danger." },
+    { "term": "Warisan budaya", "def_id": "Sesuatu yang berharga dari nenek moyang yang harus kita jaga.", "def_en": "Something precious from our ancestors that we must protect." }
+  ],
+  "gallery": [
+    { "src": "app/assets/img/wiki/bb33cdd110b409cc.jpg", "caption_id": "Pertandingan pencak silat putri Indonesia melawan Malaysia di atas gelanggang.", "caption_en": "A women's pencak silat match between Indonesia and Malaysia on the contest mat.", "credit": "Gunawan Kartapranata", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/cfbb4f7e01254e6a.jpg", "caption_id": "Seorang pesilat berseragam hitam memperagakan kuda-kuda rendah yang kokoh.", "caption_en": "A pesilat in black uniform shows a low, sturdy stance.", "credit": "Agus Triyanto", "license": "CC0" },
+    { "src": "app/assets/img/wiki/2061aab71dd601db.jpg", "caption_id": "Peragaan pencak silat Betawi dengan golok dalam tradisi 'palang pintu'.", "caption_en": "A Betawi pencak silat demonstration with a machete in the 'palang pintu' tradition.", "credit": "Gunawan Kartapranata", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/b3525b0ef765f807.jpg", "caption_id": "Tari Randai dari Minangkabau yang gerakannya berasal dari silek (silat).", "caption_en": "The Randai dance from Minangkabau, whose moves come from silek (silat).", "credit": "MichaelJLowe", "license": "CC BY-SA 2.5" },
+    { "src": "app/assets/img/wiki/97e0c2e403ce7a46.jpg", "caption_id": "Murid-murid satu perguruan silat berseragam hitam dengan sabuk berwarna.", "caption_en": "Students of one silat school in black uniforms with colored belts.", "credit": "prsh", "license": "CC BY-SA 4.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Pencak_silat"
+}

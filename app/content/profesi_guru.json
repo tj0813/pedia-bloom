@@ -1,0 +1,114 @@
+{
+  "id": "profesi_guru",
+  "title_id": "Guru",
+  "title_en": "Teacher",
+  "subtitle_id": "Orang yang mengajar dan mendidik kita agar pintar dan menjadi anak yang baik.",
+  "subtitle_en": "The person who teaches and guides us to become smart and kind.",
+  "data_card": [
+    {
+      "icon": "menu_book",
+      "label_id": "Tugas",
+      "label_en": "Job",
+      "value_id": "Mengajar, mendidik, dan membimbing murid",
+      "value_en": "Teaches, educates, and guides students"
+    },
+    {
+      "icon": "school",
+      "label_id": "Tempat kerja",
+      "label_en": "Workplace",
+      "value_id": "Sekolah dan ruang kelas",
+      "value_en": "Schools and classrooms"
+    },
+    {
+      "icon": "edit",
+      "label_id": "Alat",
+      "label_en": "Tools",
+      "value_id": "Papan tulis, buku, dan spidol",
+      "value_en": "Whiteboard, books, and markers"
+    },
+    {
+      "icon": "cast_for_education",
+      "label_id": "Pendidikan",
+      "label_en": "Training",
+      "value_id": "Kuliah keguruan di perguruan tinggi",
+      "value_en": "Teacher training at university"
+    },
+    {
+      "icon": "volunteer_activism",
+      "label_id": "Jasa",
+      "label_en": "Why important",
+      "value_id": "Membuat kita pandai dan berbudi baik",
+      "value_en": "Helps us become clever and good-hearted"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "menu_book",
+      "h_id": "Apa Itu Guru?",
+      "h_en": "What Is a Teacher?",
+      "body_id": "Guru adalah orang yang mengajarkan ilmu kepada kita. Di sekolah, guru membantu kita belajar membaca, menulis, berhitung, dan banyak hal menarik lainnya. Tetapi guru tidak hanya mengajar pelajaran. Mereka juga mendidik kita agar menjadi anak yang jujur, sopan, dan suka menolong. Karena itu guru sering disebut pahlawan tanpa tanda jasa.",
+      "body_en": "A teacher is someone who shares knowledge with us. At school, teachers help us learn to read, write, count, and many other interesting things. But teachers do not only teach lessons. They also guide us to become honest, polite, and helpful children. That is why teachers are often called heroes without medals."
+    },
+    {
+      "icon": "school",
+      "h_id": "Di Mana Guru Bekerja?",
+      "h_en": "Where Do Teachers Work?",
+      "body_id": "Kebanyakan guru bekerja di sekolah, di dalam ruang kelas bersama murid-muridnya. Ada guru taman kanak-kanak, guru sekolah dasar, sampai guru sekolah menengah. Ada juga guru yang mengajar di tempat lain, seperti tempat les atau di rumah. Di mana pun mereka mengajar, guru selalu berusaha agar setiap murid bisa mengerti pelajaran.",
+      "body_en": "Most teachers work in schools, inside classrooms together with their students. There are kindergarten teachers, primary school teachers, and high school teachers. Some teachers also teach in other places, such as tutoring centers or at home. Wherever they teach, teachers always try to help every student understand the lesson."
+    },
+    {
+      "icon": "edit",
+      "h_id": "Alat dan Sekolahnya",
+      "h_en": "Tools and Schooling",
+      "body_id": "Untuk mengajar, guru memakai papan tulis, buku, kapur atau spidol, dan kadang gambar serta layar. Dengan alat-alat itu, pelajaran menjadi lebih mudah dimengerti. Sebelum menjadi guru, seseorang harus kuliah dulu di sekolah keguruan agar pandai mengajar. Mereka belajar cara menjelaskan pelajaran dengan sabar dan menyenangkan.",
+      "body_en": "To teach, teachers use a whiteboard, books, chalk or markers, and sometimes pictures and screens. With these tools, lessons become easier to understand. Before becoming a teacher, a person must first study at a teaching college so they can teach well. They learn how to explain lessons with patience and in a fun way."
+    },
+    {
+      "icon": "favorite",
+      "h_id": "Mengapa Guru Penting?",
+      "h_en": "Why Are Teachers Important?",
+      "body_id": "Guru sangat penting karena merekalah yang membuat kita pandai. Hampir semua orang hebat, seperti dokter, pilot, dan ilmuwan, dulu diajar oleh seorang guru. Guru membuka pintu ilmu untuk kita dan menolong kita menggapai cita-cita. Tanpa guru, kita akan sulit belajar membaca, menulis, dan memahami dunia di sekitar kita.",
+      "body_en": "Teachers are very important because they are the ones who make us clever. Almost every great person, such as doctors, pilots, and scientists, was once taught by a teacher. Teachers open the door of knowledge for us and help us reach our dreams. Without teachers, it would be hard for us to learn to read, write, and understand the world around us."
+    },
+    {
+      "icon": "diversity_3",
+      "h_id": "Cara Kita Berterima Kasih",
+      "h_en": "How We Can Say Thank You",
+      "body_id": "Kita bisa membahagiakan guru dengan rajin belajar dan mendengarkan saat mereka mengajar. Bersikap sopan, mengerjakan tugas, dan tidak ribut di kelas adalah cara menghormati guru. Di Indonesia, setiap tanggal 25 November kita merayakan Hari Guru untuk berterima kasih atas semua jasa mereka. Ucapan terima kasih yang tulus pun sangat berarti bagi guru.",
+      "body_en": "We can make teachers happy by studying hard and listening when they teach. Being polite, doing our homework, and not being noisy in class are ways to respect teachers. In Indonesia, every 25th of November we celebrate Teacher's Day to thank them for all they do. Even a sincere thank-you means a great deal to a teacher."
+    }
+  ],
+  "facts": [
+    { "id": "Kata \"guru\" berasal dari bahasa Sanskerta yang artinya \"berat\" atau dihormati.", "en": "The word \"guru\" comes from Sanskrit and means \"heavy\" or respected." },
+    { "id": "Guru sering disebut pahlawan tanpa tanda jasa karena jasanya sangat besar.", "en": "Teachers are often called heroes without medals because they do so much." },
+    { "id": "Di Indonesia, Hari Guru dirayakan setiap tanggal 25 November.", "en": "In Indonesia, Teacher's Day is celebrated every 25th of November." },
+    { "id": "Hampir semua pekerjaan hebat dimulai dari belajar bersama seorang guru.", "en": "Almost every great job begins with learning from a teacher." },
+    { "id": "Guru tidak hanya mengajar ilmu, tetapi juga mengajarkan sopan santun.", "en": "Teachers do not only teach knowledge, but also good manners." },
+    { "id": "Seorang guru harus kuliah dulu sebelum boleh mengajar di sekolah.", "en": "A teacher must study at college first before being allowed to teach at school." }
+  ],
+  "glossary": [
+    { "term": "Guru", "def_id": "Orang yang mengajar ilmu dan mendidik murid agar menjadi baik.", "def_en": "A person who teaches knowledge and guides students to be good." },
+    { "term": "Murid", "def_id": "Anak atau orang yang sedang belajar dari seorang guru.", "def_en": "A child or person who is learning from a teacher." },
+    { "term": "Kelas", "def_id": "Ruang di sekolah tempat guru mengajar para murid.", "def_en": "A room at school where a teacher teaches the students." },
+    { "term": "Papan tulis", "def_id": "Papan tempat guru menulis pelajaran agar dilihat semua murid.", "def_en": "A board where a teacher writes lessons for all students to see." },
+    { "term": "Mendidik", "def_id": "Membimbing seseorang agar pandai dan berperilaku baik.", "def_en": "To guide someone to become clever and behave well." },
+    { "term": "Hari Guru", "def_id": "Hari khusus untuk menghormati dan berterima kasih kepada guru.", "def_en": "A special day to honor and thank teachers." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/2579f0e657ceb61a.jpg",
+      "caption_id": "Seorang guru di Indonesia mengajar para murid berseragam di dalam kelas.",
+      "caption_en": "A teacher in Indonesia teaches uniformed students inside a classroom.",
+      "credit": "Achmad Fazeri",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/9439ef773aef2681.jpg",
+      "caption_id": "Seorang guru menjelaskan pelajaran sambil menunjuk papan tulis di depan kelas.",
+      "caption_en": "A teacher explains a lesson while pointing at the whiteboard in front of the class.",
+      "credit": "Harrison Keely",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Guru"
+}

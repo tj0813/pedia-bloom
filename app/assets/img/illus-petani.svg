@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="ptSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33a0fd"/>
+      <stop offset="0.6" stop-color="#d1e4ff"/>
+      <stop offset="1" stop-color="#eaf6e6"/>
+    </linearGradient>
+    <linearGradient id="ptField" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#94f990"/>
+      <stop offset="1" stop-color="#4caf50"/>
+    </linearGradient>
+    <radialGradient id="ptSun" cx="0.42" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#ffd54a"/>
+      <stop offset="0.7" stop-color="#e18500"/>
+      <stop offset="1" stop-color="#8b5000"/>
+    </radialGradient>
+    <radialGradient id="ptSunGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd54a" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#ffd54a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ptHat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffdcbe"/>
+      <stop offset="1" stop-color="#e18500"/>
+    </linearGradient>
+    <linearGradient id="ptSkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffdcbe"/>
+      <stop offset="1" stop-color="#c98b5e"/>
+    </linearGradient>
+    <linearGradient id="ptShirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33a0fd"/>
+      <stop offset="1" stop-color="#0061a4"/>
+    </linearGradient>
+    <radialGradient id="ptShadow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#171d16" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#171d16" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="400" height="300" fill="url(#ptSky)"/>
+
+  <!-- distant hills -->
+  <path d="M0 188 Q70 158 150 178 Q230 196 400 168 V210 H0 Z" fill="#4caf50" opacity="0.45"/>
+
+  <!-- sun glow + rays -->
+  <circle cx="64" cy="66" r="66" fill="url(#ptSunGlow)"/>
+  <g stroke="#ffd54a" stroke-width="6" stroke-linecap="round">
+    <line x1="64" y1="4" x2="64" y2="22"/>
+    <line x1="64" y1="110" x2="64" y2="128"/>
+    <line x1="2" y1="66" x2="20" y2="66"/>
+    <line x1="108" y1="66" x2="126" y2="66"/>
+    <line x1="20" y1="22" x2="33" y2="35"/>
+    <line x1="95" y1="97" x2="108" y2="110"/>
+    <line x1="108" y1="22" x2="95" y2="35"/>
+    <line x1="33" y1="97" x2="20" y2="110"/>
+  </g>
+  <!-- friendly smiling sun -->
+  <circle cx="64" cy="66" r="38" fill="url(#ptSun)" stroke="#8b5000" stroke-width="3.5"/>
+  <g fill="#8b5000">
+    <circle cx="52" cy="60" r="4"/>
+    <circle cx="76" cy="60" r="4"/>
+  </g>
+  <g fill="#ba1a1a" opacity="0.3">
+    <circle cx="48" cy="74" r="5.5"/>
+    <circle cx="80" cy="74" r="5.5"/>
+  </g>
+  <path d="M52 76 q12 14 24 0" fill="none" stroke="#8b5000" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- green rice field -->
+  <path d="M0 196 q90 -16 200 -8 q110 8 200 -4 V300 H0 Z" fill="url(#ptField)"/>
+
+  <!-- rice plant rows (curved furrows + tufts) -->
+  <g stroke="#006e1c" stroke-width="2.4" stroke-linecap="round" opacity="0.55" fill="none">
+    <path d="M0 224 Q200 214 400 222"/>
+    <path d="M0 248 Q200 238 400 246"/>
+    <path d="M0 276 Q200 268 400 274"/>
+  </g>
+  <!-- little rice tufts -->
+  <g stroke="#006e1c" stroke-width="2.6" stroke-linecap="round" fill="none">
+    <g opacity="0.9">
+      <path d="M40 226 l0 -10 M36 226 l-3 -8 M44 226 l3 -8"/>
+      <path d="M120 224 l0 -10 M116 224 l-3 -8 M124 224 l3 -8"/>
+      <path d="M300 224 l0 -10 M296 224 l-3 -8 M304 224 l3 -8"/>
+      <path d="M360 226 l0 -10 M356 226 l-3 -8 M364 226 l3 -8"/>
+    </g>
+    <g opacity="0.85">
+      <path d="M70 252 l0 -12 M65 252 l-4 -9 M75 252 l4 -9"/>
+      <path d="M150 250 l0 -12 M145 250 l-4 -9 M155 250 l4 -9"/>
+      <path d="M330 250 l0 -12 M325 250 l-4 -9 M335 250 l4 -9"/>
+      <path d="M250 250 l0 -12 M245 250 l-4 -9 M255 250 l4 -9"/>
+    </g>
+  </g>
+  <!-- golden rice grain tips -->
+  <g fill="#ffd54a" opacity="0.9">
+    <circle cx="40" cy="214" r="2.4"/><circle cx="120" cy="212" r="2.4"/>
+    <circle cx="300" cy="212" r="2.4"/><circle cx="360" cy="214" r="2.4"/>
+    <circle cx="70" cy="238" r="2.4"/><circle cx="150" cy="236" r="2.4"/>
+    <circle cx="250" cy="236" r="2.4"/><circle cx="330" cy="236" r="2.4"/>
+  </g>
+
+  <!-- soft shadow under farmer -->
+  <ellipse cx="200" cy="288" rx="92" ry="14" fill="url(#ptShadow)"/>
+
+  <!-- farmer body / rolled-sleeve shirt -->
+  <path d="M138 300
+           Q138 232 190 216
+           Q200 222 210 216
+           Q262 232 262 300 Z"
+        fill="url(#ptShirt)" stroke="#0061a4" stroke-width="3.5" stroke-linejoin="round"/>
+  <!-- collar -->
+  <path d="M186 218 L200 248 L214 218 L208 212 Q200 220 192 212 Z" fill="#94f990" stroke="#006e1c" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- button placket -->
+  <path d="M200 240 L200 300" fill="none" stroke="#0061a4" stroke-width="2.6" stroke-linecap="round"/>
+  <g fill="#d1e4ff"><circle cx="200" cy="258" r="2.4"/><circle cx="200" cy="276" r="2.4"/></g>
+
+  <!-- left arm holding rice stalks -->
+  <g stroke="#0061a4" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M150 240 Q120 252 116 286 L132 290 Q140 262 168 256 Z" fill="url(#ptShirt)"/>
+  </g>
+  <!-- forearm + hand -->
+  <path d="M116 282 Q108 270 116 262 L134 268 Q132 290 120 292 Z" fill="url(#ptSkin)" stroke="#c98b5e" stroke-width="3" stroke-linejoin="round"/>
+  <!-- rice stalks in hand -->
+  <g stroke="#006e1c" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M120 274 Q108 244 102 214"/>
+    <path d="M124 274 Q120 246 122 216"/>
+    <path d="M128 274 Q134 246 142 220"/>
+  </g>
+  <g fill="#ffd54a" stroke="#e18500" stroke-width="1.6">
+    <ellipse cx="100" cy="210" rx="4" ry="8" transform="rotate(-14 100 210)"/>
+    <ellipse cx="122" cy="212" rx="4" ry="8"/>
+    <ellipse cx="145" cy="216" rx="4" ry="8" transform="rotate(16 145 216)"/>
+  </g>
+
+  <!-- right arm relaxed -->
+  <g stroke="#0061a4" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M250 240 Q280 252 282 286 L266 290 Q260 262 234 256 Z" fill="url(#ptShirt)"/>
+  </g>
+  <ellipse cx="276" cy="288" rx="9" ry="11" fill="url(#ptSkin)" stroke="#c98b5e" stroke-width="3"/>
+
+  <!-- neck -->
+  <path d="M186 198 L186 220 Q200 230 214 220 L214 198 Z" fill="url(#ptSkin)" stroke="#c98b5e" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- ears -->
+  <ellipse cx="158" cy="152" rx="8" ry="12" fill="url(#ptSkin)" stroke="#c98b5e" stroke-width="2.5"/>
+  <ellipse cx="242" cy="152" rx="8" ry="12" fill="url(#ptSkin)" stroke="#c98b5e" stroke-width="2.5"/>
+
+  <!-- face -->
+  <path d="M162 138
+           Q162 106 200 104
+           Q238 106 238 138
+           Q238 182 200 196
+           Q162 182 162 138 Z"
+        fill="url(#ptSkin)" stroke="#c98b5e" stroke-width="3.5" stroke-linejoin="round"/>
+
+  <!-- conical straw hat (caping) -->
+  <ellipse cx="200" cy="118" rx="98" ry="22" fill="url(#ptHat)" stroke="#8b5000" stroke-width="3.5"/>
+  <path d="M118 116 Q200 18 282 116 Q200 96 118 116 Z" fill="url(#ptHat)" stroke="#8b5000" stroke-width="3.5" stroke-linejoin="round"/>
+  <!-- straw weave lines -->
+  <g stroke="#8b5000" stroke-width="2" stroke-linecap="round" opacity="0.55" fill="none">
+    <path d="M152 92 Q200 78 248 92"/>
+    <path d="M134 106 Q200 90 266 106"/>
+    <path d="M200 30 L200 116"/>
+    <path d="M170 50 L182 116"/>
+    <path d="M230 50 L218 116"/>
+  </g>
+  <ellipse cx="200" cy="28" rx="7" ry="5" fill="#e18500" stroke="#8b5000" stroke-width="2.5"/>
+
+  <!-- eyebrows -->
+  <path d="M172 142 Q183 137 194 142" fill="none" stroke="#3a2410" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M206 142 Q217 137 228 142" fill="none" stroke="#3a2410" stroke-width="3.2" stroke-linecap="round"/>
+
+  <!-- eyes -->
+  <circle cx="183" cy="154" r="4.5" fill="#171d16"/>
+  <circle cx="217" cy="154" r="4.5" fill="#171d16"/>
+  <circle cx="181.6" cy="152.6" r="1.6" fill="#ffffff"/>
+  <circle cx="215.6" cy="152.6" r="1.6" fill="#ffffff"/>
+
+  <!-- cheeks -->
+  <g fill="#ba1a1a" opacity="0.22">
+    <circle cx="174" cy="170" r="8"/>
+    <circle cx="226" cy="170" r="8"/>
+  </g>
+
+  <!-- nose -->
+  <path d="M200 158 L196 172 Q200 176 204 172 Z" fill="#e8b88a" stroke="#c98b5e" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- big warm smile -->
+  <path d="M182 180 Q200 196 218 180" fill="none" stroke="#b07a4a" stroke-width="3.4" stroke-linecap="round"/>
+</svg>

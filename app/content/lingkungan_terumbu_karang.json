@@ -1,0 +1,147 @@
+{
+  "id": "lingkungan_terumbu_karang",
+  "title_id": "Terumbu Karang",
+  "title_en": "Coral Reef",
+  "subtitle_id": "Hutan hujan di dalam laut yang penuh warna",
+  "subtitle_en": "A colorful rainforest beneath the sea",
+  "data_card": [
+    {
+      "icon": "phishing",
+      "label_id": "Apa itu",
+      "label_en": "What it is",
+      "value_id": "Hewan kecil bernama polip yang membentuk karang",
+      "value_en": "Tiny animals called polyps that build the reef"
+    },
+    {
+      "icon": "water",
+      "label_id": "Lokasi",
+      "label_en": "Where",
+      "value_id": "Laut tropis yang dangkal, hangat, dan jernih",
+      "value_en": "Shallow tropical seas that are warm and clear"
+    },
+    {
+      "icon": "set_meal",
+      "label_id": "Penghuni",
+      "label_en": "Life",
+      "value_id": "Rumah bagi ikan, kepiting, dan banyak satwa laut",
+      "value_en": "Home to fish, crabs, and many sea creatures"
+    },
+    {
+      "icon": "shield",
+      "label_id": "Manfaat",
+      "label_en": "Benefit",
+      "value_id": "Melindungi pantai dan menjadi tempat ikan hidup",
+      "value_en": "Protects the coast and gives fish a place to live"
+    },
+    {
+      "icon": "thermostat",
+      "label_id": "Ancaman",
+      "label_en": "Threat",
+      "value_id": "Pemutihan karang saat air laut terlalu panas",
+      "value_en": "Coral bleaching when the sea gets too hot"
+    },
+    {
+      "icon": "public",
+      "label_id": "Daerah",
+      "label_en": "Range",
+      "value_id": "Banyak terdapat di perairan Indonesia",
+      "value_en": "Found in great numbers in Indonesian waters"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "phishing",
+      "h_id": "Apa Itu Terumbu Karang?",
+      "h_en": "What Is a Coral Reef?",
+      "body_id": "Banyak orang mengira terumbu karang adalah batu atau tumbuhan, padahal sebenarnya ia dibangun oleh hewan! Hewan kecil mungil itu bernama polip. Ribuan polip hidup bersama dan membentuk koloni yang besar. Setiap polip membuat rumah keras dari kapur, dan rumah-rumah ini bertumpuk selama bertahun-tahun hingga menjadi terumbu karang yang indah.",
+      "body_en": "Many people think a coral reef is rock or a plant, but it is actually built by animals! These tiny little animals are called polyps. Thousands of polyps live together and form a large colony. Each polyp builds a hard house of limestone, and these houses stack up over many years to become a beautiful coral reef."
+    },
+    {
+      "icon": "water",
+      "h_id": "Di Mana Karang Tumbuh?",
+      "h_en": "Where Do Corals Grow?",
+      "body_id": "Terumbu karang suka tempat yang hangat, jadi mereka tumbuh di laut tropis yang dangkal. Air di sana harus jernih dan bersih supaya sinar matahari bisa menembus sampai ke karang. Indonesia berada di daerah tropis, sehingga negara kita punya terumbu karang yang sangat banyak dan beraneka warna. Beruntung sekali kita memilikinya!",
+      "body_en": "Coral reefs love warm places, so they grow in shallow tropical seas. The water there must be clear and clean so that sunlight can reach the coral. Indonesia lies in the tropics, so our country has a great many colorful coral reefs. How lucky we are to have them!"
+    },
+    {
+      "icon": "set_meal",
+      "h_id": "Hutan Hujan di Dalam Laut",
+      "h_en": "A Rainforest Under the Sea",
+      "body_id": "Terumbu karang sering disebut hutan hujan lautan karena penuh dengan kehidupan. Walaupun luasnya sangat kecil di lautan dunia, terumbu karang menjadi rumah bagi seperempat dari semua hewan laut! Ikan badut, ikan warna-warni, bintang laut, kepiting, dan udang semuanya hidup berdampingan di celah-celah karang yang aman.",
+      "body_en": "A coral reef is often called the rainforest of the sea because it is full of life. Even though it covers only a tiny part of the world's oceans, a coral reef is home to a quarter of all sea animals! Clownfish, colorful fish, starfish, crabs, and shrimp all live together in the safe nooks of the reef."
+    },
+    {
+      "icon": "shield",
+      "h_id": "Penjaga Pantai dan Penyedia Ikan",
+      "h_en": "Coast Guard and Fish Provider",
+      "body_id": "Selain indah, terumbu karang juga sangat berguna bagi manusia. Karang yang kokoh memecah ombak besar sebelum sampai ke pantai, sehingga melindungi desa-desa di tepi laut. Terumbu karang juga menjadi tempat ikan-ikan berkembang biak, sehingga para nelayan bisa menangkap ikan untuk makanan. Karang adalah sahabat baik bagi laut dan manusia.",
+      "body_en": "Besides being beautiful, coral reefs are also very useful to people. Sturdy coral breaks big waves before they reach the shore, protecting seaside villages. Coral reefs are also where fish breed, so fishers can catch fish for food. Coral is a good friend to both the sea and people."
+    },
+    {
+      "icon": "thermostat",
+      "h_id": "Menjaga Karang Tetap Sehat",
+      "h_en": "Keeping Corals Healthy",
+      "body_id": "Karang sangat peka terhadap perubahan air laut. Jika air menjadi terlalu panas atau kotor, karang bisa kehilangan warnanya dan berubah pucat. Peristiwa ini disebut pemutihan karang. Kita bisa membantu dengan menjaga laut tetap bersih, tidak membuang sampah ke laut, dan tidak menginjak karang saat berenang. Dengan begitu, terumbu karang akan tetap berwarna-warni untuk kita semua.",
+      "body_en": "Coral is very sensitive to changes in seawater. If the water becomes too hot or dirty, coral can lose its color and turn pale. This is called coral bleaching. We can help by keeping the sea clean, not throwing trash into the ocean, and not stepping on coral while swimming. That way, coral reefs will stay colorful for us all."
+    }
+  ],
+  "facts": [
+    { "id": "Terumbu karang dibangun oleh hewan kecil bernama polip.", "en": "Coral reefs are built by tiny animals called polyps." },
+    { "id": "Terumbu karang disebut hutan hujan lautan karena penuh kehidupan.", "en": "Coral reefs are called the rainforest of the sea because they are full of life." },
+    { "id": "Seperempat dari semua hewan laut tinggal di terumbu karang.", "en": "A quarter of all sea animals live in coral reefs." },
+    { "id": "Karang melindungi pantai dengan memecah ombak besar.", "en": "Coral protects the coast by breaking big waves." },
+    { "id": "Saat air laut terlalu panas, karang bisa memutih dan kehilangan warnanya.", "en": "When the sea gets too hot, coral can bleach and lose its color." },
+    { "id": "Indonesia memiliki terumbu karang yang sangat banyak dan beragam.", "en": "Indonesia has very many and very diverse coral reefs." }
+  ],
+  "glossary": [
+    {
+      "term": "Polip",
+      "def_id": "Hewan laut kecil bertentakel yang membangun terumbu karang.",
+      "def_en": "A tiny sea animal with tentacles that builds the coral reef."
+    },
+    {
+      "term": "Koloni",
+      "def_id": "Kumpulan banyak polip yang hidup bersama menjadi satu karang.",
+      "def_en": "A group of many polyps living together as one coral."
+    },
+    {
+      "term": "Tropis",
+      "def_id": "Daerah di bumi yang hangat sepanjang tahun, seperti Indonesia.",
+      "def_en": "A part of the Earth that is warm all year round, like Indonesia."
+    },
+    {
+      "term": "Pemutihan karang",
+      "def_id": "Saat karang berubah pucat karena air laut terlalu panas atau kotor.",
+      "def_en": "When coral turns pale because the seawater is too hot or dirty."
+    },
+    {
+      "term": "Ekosistem",
+      "def_id": "Tempat tumbuhan, hewan, dan alam hidup bersama dan saling membutuhkan.",
+      "def_en": "A place where plants, animals, and nature live together and need each other."
+    }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/3bd8d9fdc6fa533b.jpg",
+      "caption_id": "Terumbu karang berwarna-warni dipenuhi kawanan ikan yang berenang di air laut yang biru jernih.",
+      "caption_en": "A colorful coral reef filled with schools of fish swimming in clear blue seawater.",
+      "credit": "Dr. Randi Rotjan, New England Aquarium",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/b01546972cd71381.jpg",
+      "caption_id": "Bintang laut biru cerah beristirahat di antara karang bercabang sementara ikan-ikan oranye berenang di sekitarnya.",
+      "caption_en": "A bright blue starfish rests among branching coral while orange fish swim nearby.",
+      "credit": "Richard Ling",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/54988b62c3cfa7af.jpg",
+      "caption_id": "Ikan badut oranye bersembunyi dengan aman di antara tentakel anemon laut, salah satu penghuni terumbu karang.",
+      "caption_en": "An orange clownfish hides safely among the tentacles of a sea anemone, one of the reef's residents.",
+      "credit": "Janderk",
+      "license": "Public domain"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Terumbu_karang"
+}

@@ -1,0 +1,128 @@
+{
+  "id": "ekonomi_uang_rupiah",
+  "title_id": "Uang Rupiah",
+  "title_en": "The Rupiah",
+  "subtitle_id": "Uang resmi Indonesia yang kita pakai untuk membeli barang dan menabung.",
+  "subtitle_en": "Indonesia's official money that we use to buy things and to save.",
+  "data_card": [
+    {
+      "icon": "public",
+      "label_id": "Negara",
+      "label_en": "Country",
+      "value_id": "Indonesia",
+      "value_en": "Indonesia"
+    },
+    {
+      "icon": "payments",
+      "label_id": "Simbol",
+      "label_en": "Symbol",
+      "value_id": "Rp (kode IDR)",
+      "value_en": "Rp (code IDR)"
+    },
+    {
+      "icon": "account_balance",
+      "label_id": "Penerbit",
+      "label_en": "Issued by",
+      "value_id": "Bank Indonesia",
+      "value_en": "Bank Indonesia"
+    },
+    {
+      "icon": "toll",
+      "label_id": "Bentuk",
+      "label_en": "Forms",
+      "value_id": "Uang kertas dan uang logam",
+      "value_en": "Paper notes and metal coins"
+    },
+    {
+      "icon": "military_tech",
+      "label_id": "Gambar",
+      "label_en": "Pictures",
+      "value_id": "Wajah pahlawan nasional",
+      "value_en": "Faces of national heroes"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "payments",
+      "h_id": "Apa Itu Uang Rupiah?",
+      "h_en": "What Is the Rupiah?",
+      "body_id": "Rupiah adalah uang resmi yang dipakai di seluruh Indonesia. Kita memakainya untuk membeli makanan, baju, buku, dan banyak hal lain. Tanda atau lambang rupiah adalah \"Rp\". Nama rupiah berasal dari kata Sanskerta \"rupya\" yang artinya perak, karena dahulu uang dibuat dari logam perak. Dengan uang, kita bisa menukarnya dengan barang yang kita butuhkan.",
+      "body_en": "The rupiah is the official money used all over Indonesia. We use it to buy food, clothes, books, and many other things. The sign or symbol for the rupiah is \"Rp\". The name rupiah comes from the Sanskrit word \"rupya\", which means silver, because long ago money was made from silver metal. With money, we can trade it for the things we need."
+    },
+    {
+      "icon": "account_balance",
+      "h_id": "Siapa yang Membuat Uang?",
+      "h_en": "Who Makes the Money?",
+      "body_id": "Tidak sembarang orang boleh membuat uang. Di Indonesia, hanya Bank Indonesia yang berhak mencetak dan mengeluarkan uang rupiah. Bank Indonesia menjaga agar jumlah uang pas dan nilainya tetap terjaga. Setiap lembar uang dibuat dengan tanda pengaman khusus agar tidak mudah dipalsukan. Karena itu, uang asli harus selalu berasal dari Bank Indonesia.",
+      "body_en": "Not just anyone is allowed to make money. In Indonesia, only Bank Indonesia has the right to print and issue the rupiah. Bank Indonesia makes sure the amount of money is just right and its value stays steady. Each piece of money is made with special safety marks so it cannot easily be copied. That is why real money must always come from Bank Indonesia."
+    },
+    {
+      "icon": "toll",
+      "h_id": "Uang Kertas dan Uang Logam",
+      "h_en": "Notes and Coins",
+      "body_id": "Uang rupiah ada dalam dua bentuk. Yang pertama adalah uang kertas, yang lembut dan berwarna-warni, seperti seribu, lima ribu, sepuluh ribu, sampai seratus ribu rupiah. Yang kedua adalah uang logam, yang keras dan bulat, biasanya bernilai kecil seperti lima ratus atau seribu rupiah. Keduanya sama-sama uang yang sah dan bisa dipakai berbelanja.",
+      "body_en": "The rupiah comes in two forms. The first is paper money, which is soft and colorful, such as one thousand, five thousand, ten thousand, up to one hundred thousand rupiah. The second is coins, which are hard and round, usually worth small amounts like five hundred or one thousand rupiah. Both are legal money and can be used for shopping."
+    },
+    {
+      "icon": "military_tech",
+      "h_id": "Pahlawan di Uang Kita",
+      "h_en": "The Heroes on Our Money",
+      "body_id": "Coba perhatikan gambar di uang kertas rupiah. Wajah-wajah yang ada di sana adalah pahlawan nasional Indonesia, orang-orang yang berjasa besar bagi negara kita. Ada juga gambar pemandangan indah, tarian daerah, dan bunga khas Indonesia. Lewat gambar-gambar ini, uang rupiah membantu kita mengenal dan mengenang sejarah serta kekayaan budaya bangsa.",
+      "body_en": "Take a look at the pictures on the rupiah notes. The faces there are Indonesia's national heroes, people who did great things for our country. There are also pictures of beautiful scenery, traditional dances, and Indonesian flowers. Through these pictures, the rupiah helps us learn about and remember our nation's history and rich culture."
+    },
+    {
+      "icon": "savings",
+      "h_id": "Menabung Uang",
+      "h_en": "Saving Money",
+      "body_id": "Uang sebaiknya tidak dihabiskan sekaligus. Kita bisa menyimpan sebagian uang dengan menabung, misalnya di celengan atau di bank. Sedikit demi sedikit, tabungan kita akan tumbuh menjadi banyak. Dengan menabung, kita bisa membeli barang yang kita inginkan kelak atau memakainya saat membutuhkan. Menabung mengajarkan kita untuk hidup hemat dan bijak.",
+      "body_en": "Money should not be spent all at once. We can keep some of our money by saving, for example in a piggy bank or at a bank. Little by little, our savings will grow into a lot. By saving, we can buy something we want later or use it when we need it. Saving teaches us to live thriftily and wisely."
+    }
+  ],
+  "facts": [
+    { "id": "Lambang uang rupiah adalah \"Rp\" dan kode resminya adalah IDR.", "en": "The symbol for the rupiah is \"Rp\" and its official code is IDR." },
+    { "id": "Hanya Bank Indonesia yang boleh mencetak dan mengeluarkan uang rupiah.", "en": "Only Bank Indonesia is allowed to print and issue the rupiah." },
+    { "id": "Kata \"rupiah\" berasal dari bahasa Sanskerta yang berarti perak.", "en": "The word \"rupiah\" comes from Sanskrit and means silver." },
+    { "id": "Wajah di uang kertas rupiah adalah para pahlawan nasional Indonesia.", "en": "The faces on rupiah notes are Indonesia's national heroes." },
+    { "id": "Uang rupiah ada dua bentuk: uang kertas dan uang logam.", "en": "The rupiah comes in two forms: paper notes and coins." },
+    { "id": "Setiap uang asli memiliki tanda pengaman agar tidak mudah dipalsukan.", "en": "Every real banknote has safety marks so it cannot easily be faked." }
+  ],
+  "glossary": [
+    { "term": "Rupiah", "def_id": "Uang resmi yang dipakai di seluruh Indonesia, berlambang Rp.", "def_en": "The official money used all over Indonesia, with the symbol Rp." },
+    { "term": "Bank Indonesia", "def_id": "Lembaga yang berhak mencetak dan mengatur uang rupiah.", "def_en": "The body that has the right to print and manage the rupiah." },
+    { "term": "Uang kertas", "def_id": "Uang yang terbuat dari bahan lembut dan berwarna-warni.", "def_en": "Money made from a soft material and printed in colors." },
+    { "term": "Uang logam", "def_id": "Uang keras berbentuk bulat dari logam, biasanya bernilai kecil.", "def_en": "Hard, round money made of metal, usually of small value." },
+    { "term": "Pahlawan nasional", "def_id": "Orang yang sangat berjasa bagi Indonesia dan dikenang bangsa.", "def_en": "A person who did great things for Indonesia and is remembered." },
+    { "term": "Menabung", "def_id": "Menyimpan sebagian uang agar terkumpul dan bisa dipakai nanti.", "def_en": "Keeping some money so it adds up and can be used later." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/b06a638c2740c2bf.jpg",
+      "caption_id": "Satu set lengkap uang kertas rupiah terbaru, dari seribu sampai seratus ribu rupiah.",
+      "caption_en": "A full set of the newest rupiah notes, from one thousand to one hundred thousand rupiah.",
+      "credit": "Rizardianz2",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/045410260c06f650.jpg",
+      "caption_id": "Uang seribu rupiah dengan gambar pahlawan nasional Cut Meutia.",
+      "caption_en": "A one-thousand-rupiah note showing the national hero Cut Meutia.",
+      "credit": "Bank Indonesia",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/6aa01f6df908c8ed.jpg",
+      "caption_id": "Beberapa uang kertas rupiah lama yang menampilkan wajah para pahlawan.",
+      "caption_en": "Several older rupiah notes showing the faces of national heroes.",
+      "credit": "EvanC0912 / Davidelit",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/2ae58535b3707c6c.jpg",
+      "caption_id": "Bagian belakang uang sepuluh ribu rupiah lama bergambar Candi Borobudur.",
+      "caption_en": "The back of an older ten-thousand-rupiah note picturing Borobudur Temple.",
+      "credit": "Bank Indonesia",
+      "license": "Public domain"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Rupiah"
+}

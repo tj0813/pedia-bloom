@@ -1,0 +1,107 @@
+{
+  "id": "profesi_dokter",
+  "title_id": "Dokter",
+  "title_en": "Doctor",
+  "subtitle_id": "Orang yang menolong dan merawat kita ketika sakit agar bisa sehat kembali.",
+  "subtitle_en": "The person who helps and cares for us when we are sick so we can get well again.",
+  "data_card": [
+    {
+      "icon": "medical_services",
+      "label_id": "Tugas",
+      "label_en": "Job",
+      "value_id": "Memeriksa dan menyembuhkan orang sakit",
+      "value_en": "Checks and heals people who are sick"
+    },
+    {
+      "icon": "local_hospital",
+      "label_id": "Tempat kerja",
+      "label_en": "Workplace",
+      "value_id": "Rumah sakit, klinik, dan puskesmas",
+      "value_en": "Hospitals, clinics, and health centers"
+    },
+    {
+      "icon": "stethoscope",
+      "label_id": "Alat",
+      "label_en": "Tools",
+      "value_id": "Stetoskop, termometer, dan obat",
+      "value_en": "Stethoscope, thermometer, and medicine"
+    },
+    {
+      "icon": "school",
+      "label_id": "Pendidikan",
+      "label_en": "Training",
+      "value_id": "Sekolah kedokteran bertahun-tahun",
+      "value_en": "Many years of medical school"
+    },
+    {
+      "icon": "volunteer_activism",
+      "label_id": "Jasa",
+      "label_en": "Why important",
+      "value_id": "Menolong orang agar sehat kembali",
+      "value_en": "Helps people become healthy again"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "medical_services",
+      "h_id": "Apa Itu Dokter?",
+      "h_en": "What Is a Doctor?",
+      "body_id": "Dokter adalah orang yang belajar khusus untuk menyembuhkan orang yang sakit. Ketika kita demam, batuk, atau terluka, dokterlah yang memeriksa tubuh kita dan mencari tahu apa yang salah. Setelah itu dokter memberi obat atau saran agar kita cepat sembuh. Dokter selalu berusaha membuat kita merasa lebih baik dan tetap sehat.",
+      "body_en": "A doctor is someone who has studied specially to heal people who are sick. When we have a fever, a cough, or a wound, it is the doctor who examines our body and finds out what is wrong. After that the doctor gives medicine or advice so we get better quickly. A doctor always tries to make us feel better and stay healthy."
+    },
+    {
+      "icon": "local_hospital",
+      "h_id": "Di Mana Dokter Bekerja?",
+      "h_en": "Where Do Doctors Work?",
+      "body_id": "Dokter bekerja di banyak tempat. Ada yang bertugas di rumah sakit besar, ada juga yang di klinik atau puskesmas dekat rumah kita. Beberapa dokter pergi ke desa-desa yang jauh untuk menolong orang yang tinggal di sana. Di mana pun mereka berada, dokter siap membantu siapa saja yang membutuhkan, baik anak-anak maupun orang dewasa.",
+      "body_en": "Doctors work in many places. Some serve in big hospitals, while others are at clinics or health centers near our home. Some doctors travel to faraway villages to help the people who live there. Wherever they are, doctors are ready to help anyone in need, both children and grown-ups."
+    },
+    {
+      "icon": "stethoscope",
+      "h_id": "Alat dan Sekolahnya",
+      "h_en": "Tools and Schooling",
+      "body_id": "Untuk memeriksa pasien, dokter memakai alat seperti stetoskop untuk mendengar detak jantung dan termometer untuk mengukur suhu tubuh. Mereka juga memberi obat yang tepat. Menjadi dokter tidaklah mudah. Mereka harus bersekolah di sekolah kedokteran selama bertahun-tahun dan banyak berlatih sebelum boleh merawat pasien sendiri.",
+      "body_en": "To examine patients, doctors use tools such as a stethoscope to listen to the heartbeat and a thermometer to measure body temperature. They also give the right medicine. Becoming a doctor is not easy. They must study at medical school for many years and practice a lot before they are allowed to care for patients on their own."
+    },
+    {
+      "icon": "favorite",
+      "h_id": "Mengapa Dokter Penting?",
+      "h_en": "Why Are Doctors Important?",
+      "body_id": "Dokter sangat penting karena mereka menjaga kesehatan kita semua. Mereka menolong orang yang sakit agar sembuh dan mengajari kita cara hidup sehat, seperti rajin mencuci tangan dan makan makanan bergizi. Berkat dokter, banyak penyakit bisa dicegah dan disembuhkan, sehingga kita bisa terus bermain dan belajar dengan ceria.",
+      "body_en": "Doctors are very important because they keep us all healthy. They help sick people recover and teach us how to live healthily, such as washing our hands often and eating nutritious food. Thanks to doctors, many illnesses can be prevented and cured, so we can keep playing and learning happily."
+    },
+    {
+      "icon": "diversity_3",
+      "h_id": "Cara Kita Berterima Kasih",
+      "h_en": "How We Can Say Thank You",
+      "body_id": "Kita bisa berterima kasih kepada dokter dengan menjaga tubuh kita sendiri agar tetap sehat. Saat berkunjung ke dokter, kita sebaiknya bersikap tenang, menjawab pertanyaan dengan jujur, dan menuruti nasihatnya. Tidak lupa, kita bisa mengucapkan terima kasih dengan senyuman karena mereka telah bekerja keras menolong kita.",
+      "body_en": "We can thank doctors by taking care of our own body so it stays healthy. When we visit a doctor, we should stay calm, answer questions honestly, and follow their advice. And we must not forget to say thank you with a smile, because they have worked hard to help us."
+    }
+  ],
+  "facts": [
+    { "id": "Kata \"dokter\" berasal dari bahasa Latin yang berarti guru atau pengajar.", "en": "The word \"doctor\" comes from a Latin word that means teacher." },
+    { "id": "Dokter memakai stetoskop untuk mendengarkan detak jantung dan napas kita.", "en": "Doctors use a stethoscope to listen to our heartbeat and breathing." },
+    { "id": "Di Indonesia, seseorang harus belajar sekitar lima tahun untuk menjadi dokter.", "en": "In Indonesia, a person must study for about five years to become a doctor." },
+    { "id": "Dokter mengucapkan janji khusus untuk selalu menolong orang sakit.", "en": "Doctors take a special promise to always help sick people." },
+    { "id": "Ada dokter gigi yang khusus merawat dan menjaga kesehatan gigi kita.", "en": "There are dentists who especially care for and protect our teeth." },
+    { "id": "Beberapa dokter bahkan menolong pasien dari jarak jauh lewat layar.", "en": "Some doctors even help patients from far away through a screen." }
+  ],
+  "glossary": [
+    { "term": "Dokter", "def_id": "Orang yang belajar khusus untuk menyembuhkan orang yang sakit.", "def_en": "A person trained specially to heal people who are sick." },
+    { "term": "Stetoskop", "def_id": "Alat yang dipakai dokter untuk mendengar detak jantung dan napas.", "def_en": "A tool doctors use to listen to the heartbeat and breathing." },
+    { "term": "Pasien", "def_id": "Orang sakit yang sedang diperiksa atau dirawat oleh dokter.", "def_en": "A sick person who is being examined or cared for by a doctor." },
+    { "term": "Rumah sakit", "def_id": "Tempat besar untuk merawat orang sakit dengan banyak dokter dan perawat.", "def_en": "A large place to care for sick people with many doctors and nurses." },
+    { "term": "Puskesmas", "def_id": "Pusat kesehatan kecil di dekat rumah untuk berobat sehari-hari.", "def_en": "A small health center near home for everyday medical care." },
+    { "term": "Obat", "def_id": "Sesuatu yang diminum atau dipakai agar tubuh cepat sembuh.", "def_en": "Something taken or used to help the body heal quickly." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/97c64c2e2155c589.jpg",
+      "caption_id": "Seorang dokter berjas putih sedang berbincang di halaman sebuah rumah sakit.",
+      "caption_en": "A doctor in a white coat talking in the yard of a hospital.",
+      "credit": "IICD from The Hague, The Netherlands",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Dokter"
+}

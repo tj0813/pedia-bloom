@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="dkBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d1e4ff"/>
+      <stop offset="0.7" stop-color="#eef5ff"/>
+      <stop offset="1" stop-color="#f5fbef"/>
+    </linearGradient>
+    <radialGradient id="dkHalo" cx="0.5" cy="0.45" r="0.62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#d1e4ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dkSkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffdcbe"/>
+      <stop offset="1" stop-color="#e8b88a"/>
+    </linearGradient>
+    <linearGradient id="dkHair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2410"/>
+      <stop offset="1" stop-color="#171d16"/>
+    </linearGradient>
+    <linearGradient id="dkCoat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dbe7d6"/>
+    </linearGradient>
+    <linearGradient id="dkScrub" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33a0fd"/>
+      <stop offset="1" stop-color="#0061a4"/>
+    </linearGradient>
+    <radialGradient id="dkShadow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#171d16" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#171d16" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="400" height="300" fill="url(#dkBg)"/>
+  <circle cx="200" cy="138" r="150" fill="url(#dkHalo)"/>
+
+  <!-- floating heart + cross accents -->
+  <g opacity="0.8">
+    <path d="M58 70 q-9 -11 -18 -2 q-9 -9 -18 2 q0 11 18 20 q18 -9 18 -20 Z" fill="#ba1a1a"/>
+  </g>
+  <g transform="translate(340 60)" stroke="#33a0fd" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.7">
+    <path d="M0 -9 L0 9 M-9 0 L9 0"/>
+  </g>
+
+  <!-- soft shadow -->
+  <ellipse cx="200" cy="284" rx="118" ry="16" fill="url(#dkShadow)"/>
+
+  <!-- white coat / shoulders -->
+  <path d="M92 300
+           Q94 226 150 208
+           Q175 222 200 222
+           Q225 222 250 208
+           Q306 226 308 300 Z"
+        fill="url(#dkCoat)" stroke="#9aa593" stroke-width="3.5" stroke-linejoin="round"/>
+
+  <!-- coat lapels + blue scrub V-neck -->
+  <path d="M172 214 L200 268 L228 214 L218 208 Q200 222 182 208 Z"
+        fill="url(#dkScrub)" stroke="#0061a4" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M168 210 L186 300" fill="none" stroke="#9aa593" stroke-width="3" stroke-linecap="round"/>
+  <path d="M232 210 L214 300" fill="none" stroke="#9aa593" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- coat pocket with red cross -->
+  <rect x="246" y="248" width="40" height="34" rx="5" fill="#f5fbef" stroke="#9aa593" stroke-width="2.5"/>
+  <g transform="translate(266 265)" stroke="#ba1a1a" stroke-width="5" stroke-linecap="round">
+    <path d="M0 -8 L0 8 M-8 0 L8 0"/>
+  </g>
+
+  <!-- neck -->
+  <path d="M184 196 L184 220 Q200 232 216 220 L216 196 Z" fill="url(#dkSkin)" stroke="#c98b5e" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- ears -->
+  <ellipse cx="151" cy="146" rx="9" ry="13" fill="url(#dkSkin)" stroke="#c98b5e" stroke-width="2.5"/>
+  <ellipse cx="249" cy="146" rx="9" ry="13" fill="url(#dkSkin)" stroke="#c98b5e" stroke-width="2.5"/>
+
+  <!-- face -->
+  <path d="M156 128
+           Q156 92 200 90
+           Q244 92 244 128
+           Q244 178 200 194
+           Q156 178 156 128 Z"
+        fill="url(#dkSkin)" stroke="#c98b5e" stroke-width="3.5" stroke-linejoin="round"/>
+
+  <!-- hair -->
+  <path d="M150 120
+           Q146 74 200 70
+           Q254 74 250 120
+           Q244 100 224 96
+           Q210 92 200 92
+           Q178 92 158 104
+           Q152 110 150 120 Z"
+        fill="url(#dkHair)" stroke="#0a0d09" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M160 100 Q200 84 240 100" fill="none" stroke="#4a3018" stroke-width="2.4" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- eyebrows -->
+  <path d="M166 132 Q177 127 188 132" fill="none" stroke="#3a2410" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M212 132 Q223 127 234 132" fill="none" stroke="#3a2410" stroke-width="3.2" stroke-linecap="round"/>
+
+  <!-- eyes -->
+  <circle cx="178" cy="144" r="4.5" fill="#171d16"/>
+  <circle cx="222" cy="144" r="4.5" fill="#171d16"/>
+  <circle cx="176.5" cy="142.5" r="1.6" fill="#ffffff"/>
+  <circle cx="220.5" cy="142.5" r="1.6" fill="#ffffff"/>
+
+  <!-- cheeks -->
+  <g fill="#ba1a1a" opacity="0.18">
+    <circle cx="170" cy="160" r="8"/>
+    <circle cx="230" cy="160" r="8"/>
+  </g>
+
+  <!-- nose -->
+  <path d="M200 148 L196 162 Q200 166 204 162 Z" fill="#e8b88a" stroke="#c98b5e" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- warm smile -->
+  <path d="M184 172 Q200 186 216 172" fill="none" stroke="#b07a4a" stroke-width="3.2" stroke-linecap="round"/>
+
+  <!-- stethoscope around neck -->
+  <g fill="none" stroke="#171d16" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M172 206 Q150 248 162 274"/>
+    <path d="M228 206 Q252 246 240 270"/>
+  </g>
+  <!-- earpieces/tubes shine -->
+  <g fill="none" stroke="#3a4038" stroke-width="2" stroke-linecap="round" opacity="0.6">
+    <path d="M172 210 Q154 246 163 270"/>
+  </g>
+  <!-- chest piece -->
+  <circle cx="240" cy="276" r="13" fill="#33a0fd" stroke="#171d16" stroke-width="4"/>
+  <circle cx="240" cy="276" r="6" fill="#d1e4ff" stroke="#0061a4" stroke-width="2"/>
+
+  <!-- thumbs-up hand at lower left -->
+  <g transform="translate(118 244) rotate(-8)" stroke="#c98b5e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M0 18 Q-2 6 8 4 Q16 2 22 4 L36 4 Q44 4 44 12 Q44 20 36 20 L24 20 Q34 22 34 30 Q34 38 24 38 L8 38 Q0 36 0 26 Z" fill="url(#dkSkin)"/>
+    <path d="M8 4 Q8 -8 16 -8 Q24 -8 22 6" fill="url(#dkSkin)"/>
+  </g>
+  <!-- coat cuff on the arm -->
+  <path d="M96 282 Q108 250 132 258 L138 274 Q116 300 96 300 Z" fill="url(#dkCoat)" stroke="#9aa593" stroke-width="3" stroke-linejoin="round"/>
+</svg>

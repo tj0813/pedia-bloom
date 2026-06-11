@@ -1,0 +1,135 @@
+{
+  "id": "profesi_petani",
+  "title_id": "Petani",
+  "title_en": "Farmer",
+  "subtitle_id": "Orang yang menanam padi, sayur, dan buah agar kita semua punya makanan.",
+  "subtitle_en": "The person who grows rice, vegetables, and fruit so we all have food.",
+  "data_card": [
+    {
+      "icon": "agriculture",
+      "label_id": "Tugas",
+      "label_en": "Job",
+      "value_id": "Menanam dan merawat tanaman pangan",
+      "value_en": "Plants and cares for food crops"
+    },
+    {
+      "icon": "grass",
+      "label_id": "Tempat kerja",
+      "label_en": "Workplace",
+      "value_id": "Sawah, ladang, dan kebun",
+      "value_en": "Rice fields, farms, and gardens"
+    },
+    {
+      "icon": "construction",
+      "label_id": "Alat",
+      "label_en": "Tools",
+      "value_id": "Cangkul, sabit, dan traktor",
+      "value_en": "Hoe, sickle, and tractor"
+    },
+    {
+      "icon": "wb_sunny",
+      "label_id": "Cara kerja",
+      "label_en": "How they work",
+      "value_id": "Bekerja keras mengikuti musim",
+      "value_en": "Works hard following the seasons"
+    },
+    {
+      "icon": "restaurant",
+      "label_id": "Jasa",
+      "label_en": "Why important",
+      "value_id": "Menanam makanan untuk kita semua",
+      "value_en": "Grows the food for all of us"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "agriculture",
+      "h_id": "Apa Itu Petani?",
+      "h_en": "What Is a Farmer?",
+      "body_id": "Petani adalah orang yang mengolah tanah untuk menanam tanaman, seperti padi, jagung, sayur, dan buah. Mereka menanam benih, menyiramnya, dan merawatnya sampai tumbuh besar. Setelah masak, hasil panen itu dipanen lalu dikirim ke pasar. Berkat petani, kita bisa makan nasi setiap hari dan menikmati banyak makanan lezat lainnya.",
+      "body_en": "A farmer is a person who works the land to grow plants, such as rice, corn, vegetables, and fruit. They plant seeds, water them, and care for them until they grow big. Once ripe, the harvest is gathered and sent to the market. Thanks to farmers, we can eat rice every day and enjoy many other delicious foods."
+    },
+    {
+      "icon": "grass",
+      "h_id": "Di Mana Petani Bekerja?",
+      "h_en": "Where Do Farmers Work?",
+      "body_id": "Petani bekerja di luar ruangan, di sawah, ladang, dan kebun. Di Indonesia, banyak petani menanam padi di sawah yang berair dan berwarna hijau. Ada juga petani yang menanam sayur di ladang, berkebun buah, atau bahkan memanen rumput laut di tepi laut. Mereka bekerja di bawah sinar matahari, mengikuti musim hujan dan musim kemarau.",
+      "body_en": "Farmers work outdoors, in rice fields, farms, and gardens. In Indonesia, many farmers grow rice in green, watery paddy fields. There are also farmers who grow vegetables in the fields, tend fruit gardens, or even harvest seaweed by the sea. They work under the sun, following the rainy and dry seasons."
+    },
+    {
+      "icon": "construction",
+      "h_id": "Alat-Alat Petani",
+      "h_en": "A Farmer's Tools",
+      "body_id": "Petani memakai banyak alat untuk bekerja. Cangkul dipakai untuk menggemburkan tanah, dan sabit untuk memotong padi saat panen. Dahulu, petani membajak sawah dengan bantuan kerbau atau sapi. Sekarang banyak petani memakai mesin yang disebut traktor agar pekerjaan menjadi lebih cepat dan ringan. Alat-alat ini sangat membantu petani.",
+      "body_en": "Farmers use many tools to work. A hoe is used to loosen the soil, and a sickle to cut the rice at harvest time. Long ago, farmers plowed the fields with the help of a buffalo or an ox. Now many farmers use a machine called a tractor so the work becomes faster and easier. These tools are a great help to farmers."
+    },
+    {
+      "icon": "favorite",
+      "h_id": "Mengapa Petani Penting?",
+      "h_en": "Why Are Farmers Important?",
+      "body_id": "Petani sangat penting karena mereka menanam makanan untuk kita semua. Hampir semua yang kita makan, seperti nasi, sayur, dan buah, berasal dari kerja keras petani. Tanpa petani, akan sulit bagi kita untuk mendapatkan makanan. Karena itu kita patut menghargai petani yang setiap hari bekerja keras agar piring kita selalu terisi.",
+      "body_en": "Farmers are very important because they grow the food for all of us. Almost everything we eat, such as rice, vegetables, and fruit, comes from the hard work of farmers. Without farmers, it would be hard for us to get food. That is why we should appreciate farmers, who work hard every day so that our plates are always full."
+    },
+    {
+      "icon": "diversity_3",
+      "h_id": "Cara Kita Berterima Kasih",
+      "h_en": "How We Can Say Thank You",
+      "body_id": "Kita bisa berterima kasih kepada petani dengan menghabiskan makanan di piring kita dan tidak membuangnya. Setiap butir nasi adalah hasil jerih payah petani. Kita juga bisa menghargai mereka dengan membeli hasil panen lokal dan menjaga lingkungan agar tanah tetap subur. Sikap hemat dan tidak menyia-nyiakan makanan adalah cara terbaik berterima kasih.",
+      "body_en": "We can thank farmers by finishing the food on our plate and not wasting it. Every grain of rice is the result of a farmer's hard work. We can also appreciate them by buying local harvests and protecting the environment so the soil stays fertile. Being thrifty and not wasting food is the best way to say thank you."
+    }
+  ],
+  "facts": [
+    { "id": "Hampir semua nasi yang kita makan ditanam oleh petani di sawah.", "en": "Almost all the rice we eat is grown by farmers in the fields." },
+    { "id": "Manusia sudah bercocok tanam sejak ribuan tahun yang lalu.", "en": "People have been growing crops for thousands of years." },
+    { "id": "Dahulu petani membajak sawah dengan bantuan kerbau atau sapi.", "en": "Long ago, farmers plowed fields with the help of a buffalo or ox." },
+    { "id": "Banyak petani modern memakai traktor agar bekerja lebih cepat.", "en": "Many modern farmers use a tractor so they can work faster." },
+    { "id": "Petani topi caping melindungi kepala mereka dari panas matahari.", "en": "Farmers wear a cone-shaped hat to shield their heads from the sun." },
+    { "id": "Selain di sawah, ada petani yang memanen rumput laut di tepi laut.", "en": "Besides rice fields, some farmers harvest seaweed by the sea." }
+  ],
+  "glossary": [
+    { "term": "Petani", "def_id": "Orang yang mengolah tanah untuk menanam tanaman pangan.", "def_en": "A person who works the land to grow food crops." },
+    { "term": "Sawah", "def_id": "Lahan berair tempat petani menanam padi.", "def_en": "A watery field where farmers grow rice." },
+    { "term": "Panen", "def_id": "Memetik atau mengumpulkan tanaman yang sudah siap diambil hasilnya.", "def_en": "To pick or gather crops that are ready to be collected." },
+    { "term": "Cangkul", "def_id": "Alat bergagang panjang untuk menggali dan menggemburkan tanah.", "def_en": "A long-handled tool for digging and loosening soil." },
+    { "term": "Traktor", "def_id": "Mesin besar yang membantu petani membajak dan mengolah lahan.", "def_en": "A big machine that helps farmers plow and work the land." },
+    { "term": "Caping", "def_id": "Topi lebar berbentuk kerucut dari anyaman bambu pelindung matahari.", "def_en": "A wide cone-shaped hat woven from bamboo to block the sun." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/d75cf545ea17e071.jpg",
+      "caption_id": "Petani bertopi caping sedang memanen padi di sawah bersama petani lain.",
+      "caption_en": "A farmer in a cone-shaped hat harvests rice in a paddy field with others.",
+      "credit": "ESCapade",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/4605bbdaf07eba94.jpg",
+      "caption_id": "Seorang petani membajak ladang yang luas dengan traktor hijau.",
+      "caption_en": "A farmer plows a wide field with a green tractor.",
+      "credit": "Jesster79",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/2f1efd40a067b821.jpg",
+      "caption_id": "Petani membajak sawah berlumpur dengan bantuan dua ekor sapi.",
+      "caption_en": "A farmer plows a muddy paddy field with the help of two oxen.",
+      "credit": "Krish Dulal",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/ece7269a3a052fcf.jpg",
+      "caption_id": "Dua petani memanggul ikatan jerami di tengah sawah yang hijau segar.",
+      "caption_en": "Two farmers carry bundles of straw in the middle of a fresh green field.",
+      "credit": "Ingo Mehling",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/e03e2561aba992c5.jpg",
+      "caption_id": "Petani memanen rumput laut di air laut yang dangkal dan jernih.",
+      "caption_en": "Farmers harvest seaweed in shallow, clear sea water.",
+      "credit": "Yann Macherez",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Petani"
+}

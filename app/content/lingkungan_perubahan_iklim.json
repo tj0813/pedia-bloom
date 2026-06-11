@@ -1,0 +1,140 @@
+{
+  "id": "lingkungan_perubahan_iklim",
+  "title_id": "Perubahan Iklim",
+  "title_en": "Climate Change",
+  "subtitle_id": "Bumi makin hangat, dan kita bisa membantunya",
+  "subtitle_en": "The Earth is getting warmer, and we can help it",
+  "data_card": [
+    {
+      "icon": "factory",
+      "label_id": "Penyebab",
+      "label_en": "Cause",
+      "value_id": "Terlalu banyak gas rumah kaca di udara",
+      "value_en": "Too many greenhouse gases in the air"
+    },
+    {
+      "icon": "thermostat",
+      "label_id": "Dampak",
+      "label_en": "Effects",
+      "value_id": "Bumi makin panas dan cuaca jadi tidak menentu",
+      "value_en": "The Earth gets hotter and weather gets unpredictable"
+    },
+    {
+      "icon": "ac_unit",
+      "label_id": "Tanda",
+      "label_en": "Signs",
+      "value_id": "Es di kutub mencair dan air laut naik",
+      "value_en": "Polar ice melts and the sea rises"
+    },
+    {
+      "icon": "eco",
+      "label_id": "Penolong",
+      "label_en": "Helpers",
+      "value_id": "Pohon dan energi bersih dari matahari serta angin",
+      "value_en": "Trees and clean energy from sun and wind"
+    },
+    {
+      "icon": "volunteer_activism",
+      "label_id": "Yang Bisa Kita Lakukan",
+      "label_en": "What We Can Do",
+      "value_id": "Hemat energi, tanam pohon, dan kurangi sampah",
+      "value_en": "Save energy, plant trees, and make less waste"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "thermostat",
+      "h_id": "Apa Itu Perubahan Iklim?",
+      "h_en": "What Is Climate Change?",
+      "body_id": "Iklim adalah pola cuaca di suatu tempat selama waktu yang sangat lama. Perubahan iklim berarti pola cuaca itu perlahan berubah, dan saat ini bumi kita menjadi semakin hangat. Perubahan ini terjadi pelan-pelan selama bertahun-tahun. Kabar baiknya, banyak orang di seluruh dunia bekerja sama untuk membantu bumi tetap sehat.",
+      "body_en": "Climate is the pattern of weather in a place over a very long time. Climate change means that pattern is slowly changing, and right now our Earth is getting warmer. This change happens slowly over many years. The good news is that many people around the world are working together to help keep the Earth healthy."
+    },
+    {
+      "icon": "factory",
+      "h_id": "Kenapa Bumi Makin Hangat?",
+      "h_en": "Why Is the Earth Getting Warmer?",
+      "body_id": "Di sekeliling bumi ada selimut udara yang menjaga kita tetap hangat. Selimut ini terbuat dari gas rumah kaca. Saat manusia membakar bahan bakar seperti bensin dan batu bara, selimut ini menjadi semakin tebal. Akibatnya, panas dari matahari lebih banyak tertahan, dan bumi pun menjadi lebih hangat dari biasanya.",
+      "body_en": "Around the Earth is a blanket of air that keeps us warm. This blanket is made of greenhouse gases. When people burn fuels like gasoline and coal, the blanket gets thicker. Because of this, more of the sun's heat is trapped, and the Earth becomes warmer than usual."
+    },
+    {
+      "icon": "ac_unit",
+      "h_id": "Tanda-tanda di Sekitar Kita",
+      "h_en": "Signs Around Us",
+      "body_id": "Karena bumi makin hangat, es tebal di kutub utara dan selatan perlahan mencair, sehingga air laut naik sedikit demi sedikit. Cuaca juga jadi lebih sulit ditebak: kadang hujan sangat lebat, kadang panas yang panjang. Para ilmuwan mengamati tanda-tanda ini agar kita semua bisa bersiap dan saling menjaga.",
+      "body_en": "Because the Earth is getting warmer, the thick ice at the north and south poles is slowly melting, so the sea rises little by little. The weather also becomes harder to predict: sometimes very heavy rain, sometimes long heat. Scientists watch for these signs so we can all get ready and look after each other."
+    },
+    {
+      "icon": "eco",
+      "h_id": "Penolong Bumi",
+      "h_en": "The Earth's Helpers",
+      "body_id": "Pohon adalah penolong hebat! Pohon menyerap gas rumah kaca dan memberi kita udara segar, jadi makin banyak pohon, makin baik. Manusia juga membuat energi bersih dari matahari, angin, dan air, yang tidak membuat udara kotor. Energi bersih ini bisa menyalakan lampu dan menggerakkan mobil tanpa mengganggu selimut udara bumi.",
+      "body_en": "Trees are great helpers! Trees soak up greenhouse gases and give us fresh air, so the more trees the better. People also make clean energy from the sun, wind, and water, which does not make the air dirty. This clean energy can light up our lamps and move our cars without disturbing the Earth's blanket of air."
+    },
+    {
+      "icon": "volunteer_activism",
+      "h_id": "Aksi Kecil dari Kita",
+      "h_en": "Small Actions from Us",
+      "body_id": "Kamu bisa ikut membantu bumi setiap hari! Matikan lampu dan keran air saat tidak dipakai, jalan kaki atau bersepeda untuk jarak dekat, dan kurangi sampah. Ajak temanmu menanam pohon dan menyayangi alam. Kalau kita semua melakukan hal-hal baik bersama-sama, bumi akan menjadi tempat yang sejuk dan nyaman untuk semua.",
+      "body_en": "You can help the Earth every day! Turn off lights and taps when they are not in use, walk or bike for short trips, and make less waste. Invite your friends to plant trees and love nature. If we all do good things together, the Earth will become a cool and comfortable home for everyone."
+    }
+  ],
+  "facts": [
+    { "id": "Bumi punya \"selimut\" gas yang menjaganya tetap hangat.", "en": "The Earth has a 'blanket' of gas that keeps it warm." },
+    { "id": "Pohon menyerap gas rumah kaca dan memberi kita udara segar.", "en": "Trees soak up greenhouse gases and give us fresh air." },
+    { "id": "Matahari, angin, dan air bisa menjadi sumber energi bersih.", "en": "The sun, wind, and water can be sources of clean energy." },
+    { "id": "Es di kutub mencair perlahan saat bumi makin hangat.", "en": "Polar ice melts slowly as the Earth gets warmer." },
+    { "id": "Mematikan lampu yang tidak dipakai membantu menghemat energi.", "en": "Turning off unused lights helps save energy." },
+    { "id": "Negara-negara di dunia bekerja sama menjaga bumi tetap sejuk.", "en": "Countries around the world work together to keep the Earth cool." }
+  ],
+  "glossary": [
+    {
+      "term": "Iklim",
+      "def_id": "Pola cuaca di suatu tempat selama waktu yang sangat lama.",
+      "def_en": "The pattern of weather in a place over a very long time."
+    },
+    {
+      "term": "Gas rumah kaca",
+      "def_id": "Gas di udara yang menahan panas matahari agar bumi tetap hangat.",
+      "def_en": "Gas in the air that traps the sun's heat to keep the Earth warm."
+    },
+    {
+      "term": "Pemanasan global",
+      "def_id": "Naiknya suhu rata-rata bumi sehingga menjadi lebih hangat.",
+      "def_en": "The rise in the Earth's average temperature so it becomes warmer."
+    },
+    {
+      "term": "Energi bersih",
+      "def_id": "Tenaga dari matahari, angin, atau air yang tidak mengotori udara.",
+      "def_en": "Power from the sun, wind, or water that does not make the air dirty."
+    },
+    {
+      "term": "Kutub",
+      "def_id": "Daerah paling utara dan paling selatan bumi yang dingin dan penuh es.",
+      "def_en": "The far north and far south of the Earth, which are cold and icy."
+    }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/76111cf0823863f6.jpg",
+      "caption_id": "Dasar danau yang mengering dan tanahnya retak-retak saat cuaca panas yang panjang.",
+      "caption_en": "A dried lakebed with cracked soil during a long spell of hot weather.",
+      "credit": "National Oceanic and Atmospheric Administration",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/f00c08a36b1b10ae.jpg",
+      "caption_id": "Ladang jagung yang mengering karena kekurangan hujan di bawah langit berawan.",
+      "caption_en": "A corn field dried out from a lack of rain under a cloudy sky.",
+      "credit": "USDA photo by Bob Nichols",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/e28d72973f7a7113.jpg",
+      "caption_id": "Karang yang memutih di laut yang menghangat; karang sehat biasanya berwarna-warni.",
+      "caption_en": "A coral turned white in warming seas; healthy coral is usually colorful.",
+      "credit": "Vardhanjp",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Perubahan_iklim"
+}

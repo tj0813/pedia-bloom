@@ -16,6 +16,7 @@ import os
 import re
 import json
 import html
+import time
 import hashlib
 import urllib.parse
 import urllib.request
@@ -75,6 +76,20 @@ TOPICS = {
     "sains_rahasia_gravitasi":            {"wiki": "Gravitasi", "search": "Gravity planet Earth space"},
     "sains_rahasia_kekuatan_magnet":      {"wiki": "Magnet", "search": "Magnet horseshoe iron filings"},
     "sains_dunia_robotik":                {"wiki": "Robot", "search": "Robot technology humanoid"},
+
+    # --- Lingkungan & Kehidupan Sehari-hari (environment, sports, professions) ---
+    "lingkungan_hutan_tropis":     {"wiki": "Hutan hujan tropis", "search": "Tropical rainforest Indonesia"},
+    "lingkungan_perubahan_iklim":  {"wiki": "Perubahan iklim", "search": "Climate change Earth"},
+    "lingkungan_polusi_udara":     {"wiki": "Pencemaran udara", "search": "Air pollution city"},
+    "lingkungan_sampah_plastik":   {"wiki": "Pencemaran plastik", "search": "Plastic pollution ocean"},
+    "lingkungan_terumbu_karang":   {"wiki": "Terumbu karang", "search": "Coral reef fish"},
+    "olahraga_bulu_tangkis":       {"wiki": "Bulu tangkis", "search": "Badminton player shuttlecock"},
+    "olahraga_pencak_silat":       {"wiki": "Pencak silat", "search": "Pencak silat martial art"},
+    "olahraga_sepak_bola":         {"wiki": "Sepak bola", "search": "Football soccer match"},
+    "profesi_dokter":              {"wiki": "Dokter", "search": "Doctor physician hospital"},
+    "profesi_guru":                {"wiki": "Guru", "search": "Teacher classroom students"},
+    "profesi_petani":              {"wiki": "Petani", "search": "Farmer rice field Indonesia"},
+    "ekonomi_uang_rupiah":         {"wiki": "Rupiah", "search": "Indonesian rupiah banknote"},
 }
 
 FREE_LICENSE = re.compile(r"public domain|^pd|cc0|cc[\s-]?by", re.I)
@@ -82,10 +97,26 @@ SKIP_FILE = re.compile(r"(distribution|locator|range|map|\.svg|\.ogg|\.ogv|\.web
                        r"icon|logo|commons-|wiki|flag|signature|stamp|coat_of_arms|sound)", re.I)
 
 
-def get(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=40) as r:
-        return r.read()
+_last_req = [0.0]
+
+
+def get(url, attempts=5):
+    """Throttled GET with retry — Wikimedia returns HTTP 429 if we request too fast."""
+    last = None
+    for i in range(attempts):
+        gap = time.time() - _last_req[0]
+        if gap < 0.35:               # ~3 requests/sec, politely
+            time.sleep(0.35 - gap)
+        _last_req[0] = time.time()
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=40) as r:
+                return r.read()
+        except Exception as exc:
+            last = exc
+            code = getattr(exc, "code", None)
+            time.sleep((4 if code == 429 else 1.5) * (i + 1))
+    raise last
 
 
 def get_json(url):

@@ -1,0 +1,133 @@
+{
+  "id": "lingkungan_polusi_udara",
+  "title_id": "Pencemaran Udara",
+  "title_en": "Air Pollution",
+  "subtitle_id": "Menjaga udara tetap bersih dan segar untuk dihirup",
+  "subtitle_en": "Keeping the air clean and fresh to breathe",
+  "data_card": [
+    {
+      "icon": "directions_car",
+      "label_id": "Penyebab",
+      "label_en": "Cause",
+      "value_id": "Asap dari kendaraan, pabrik, dan pembakaran sampah",
+      "value_en": "Smoke from vehicles, factories, and burning trash"
+    },
+    {
+      "icon": "masks",
+      "label_id": "Dampak",
+      "label_en": "Effects",
+      "value_id": "Udara jadi kotor dan bisa membuat napas sesak",
+      "value_en": "Air gets dirty and can make breathing hard"
+    },
+    {
+      "icon": "eco",
+      "label_id": "Pelindung",
+      "label_en": "Helpers",
+      "value_id": "Pohon menyaring udara, masker menjaga hidung",
+      "value_en": "Trees filter the air, masks protect the nose"
+    },
+    {
+      "icon": "air",
+      "label_id": "Solusi",
+      "label_en": "Solution",
+      "value_id": "Transportasi bersih dan menanam banyak pohon",
+      "value_en": "Clean transport and planting many trees"
+    },
+    {
+      "icon": "volunteer_activism",
+      "label_id": "Yang Bisa Kita Lakukan",
+      "label_en": "What We Can Do",
+      "value_id": "Jalan kaki, bersepeda, dan tidak membakar sampah",
+      "value_en": "Walk, bike, and don't burn trash"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "air",
+      "h_id": "Apa Itu Pencemaran Udara?",
+      "h_en": "What Is Air Pollution?",
+      "body_id": "Udara yang sehat itu bersih dan segar untuk dihirup. Pencemaran udara terjadi ketika ada zat kotor, seperti asap dan debu, yang bercampur di udara. Zat ini bisa berupa gas atau partikel kecil yang melayang. Udara yang kotor bisa kita temui di luar maupun di dalam ruangan. Untungnya, kita bisa membantu menjaga udara tetap bersih!",
+      "body_en": "Healthy air is clean and fresh to breathe. Air pollution happens when dirty things, like smoke and dust, mix into the air. These can be gases or tiny floating bits. Dirty air can be found both outdoors and indoors. Luckily, we can help keep the air clean!"
+    },
+    {
+      "icon": "directions_car",
+      "h_id": "Dari Mana Asalnya?",
+      "h_en": "Where Does It Come From?",
+      "body_id": "Sebagian besar pencemaran udara berasal dari pembakaran bahan bakar. Asap keluar dari knalpot mobil dan motor saat mesinnya menyala. Cerobong pabrik juga mengeluarkan asap saat membuat barang. Membakar sampah dan kayu di rumah ikut mengotori udara. Debu dari jalan dan tanah yang kering juga bisa beterbangan ke udara.",
+      "body_en": "Most air pollution comes from burning fuel. Smoke comes out of car and motorbike exhausts when their engines run. Factory chimneys also release smoke while making things. Burning trash and wood at home dirties the air too. Dust from roads and dry soil can also blow into the air."
+    },
+    {
+      "icon": "masks",
+      "h_id": "Mengapa Udara Bersih Penting?",
+      "h_en": "Why Is Clean Air Important?",
+      "body_id": "Setiap hari kita bernapas ribuan kali, jadi kita butuh udara yang bersih agar tubuh kita sehat. Udara yang kotor bisa membuat hidung gatal, mata perih, atau napas terasa sesak. Saat udara sedang berdebu, kita bisa memakai masker untuk melindungi hidung dan mulut. Udara yang segar membuat kita merasa nyaman dan penuh tenaga.",
+      "body_en": "Every day we breathe thousands of times, so we need clean air to keep our bodies healthy. Dirty air can make the nose itchy, the eyes sting, or breathing feel hard. When the air is dusty, we can wear a mask to protect our nose and mouth. Fresh air makes us feel comfortable and full of energy."
+    },
+    {
+      "icon": "eco",
+      "h_id": "Pohon, Sang Penyaring Udara",
+      "h_en": "Trees, the Air Filters",
+      "body_id": "Pohon adalah pahlawan udara bersih! Daun-daunnya menangkap debu dan mengubah udara kotor menjadi segar kembali. Semakin banyak pohon dan taman di sekitar kita, semakin bersih udara yang kita hirup. Itulah sebabnya kota-kota menanam pohon di tepi jalan dan membuat taman hijau yang rindang untuk semua orang.",
+      "body_en": "Trees are the heroes of clean air! Their leaves catch dust and turn dirty air fresh again. The more trees and parks around us, the cleaner the air we breathe. That is why cities plant trees along the roads and build shady green parks for everyone."
+    },
+    {
+      "icon": "volunteer_activism",
+      "h_id": "Yuk, Jaga Udara Kita!",
+      "h_en": "Let's Protect Our Air!",
+      "body_id": "Ada banyak cara seru untuk menjaga udara tetap bersih. Untuk jarak dekat, kita bisa jalan kaki atau bersepeda agar tidak menambah asap kendaraan. Kita juga sebaiknya tidak membakar sampah, tetapi membuangnya pada tempatnya. Yang paling menyenangkan, kita bisa menanam dan merawat pohon. Udara bersih membuat semua orang lebih sehat dan bahagia!",
+      "body_en": "There are many fun ways to keep the air clean. For short trips, we can walk or bike so we don't add vehicle smoke. We should also not burn trash, but throw it away properly instead. Best of all, we can plant and care for trees. Clean air makes everyone healthier and happier!"
+    }
+  ],
+  "facts": [
+    { "id": "Setiap hari kita bernapas ribuan kali, jadi udara bersih itu penting!", "en": "Every day we breathe thousands of times, so clean air is important!" },
+    { "id": "Daun pohon bisa menangkap debu dan menyegarkan udara.", "en": "Tree leaves can catch dust and freshen the air." },
+    { "id": "Mobil listrik tidak mengeluarkan asap dari knalpot.", "en": "Electric cars don't release smoke from an exhaust pipe." },
+    { "id": "Memakai masker melindungi hidung saat udara berdebu.", "en": "Wearing a mask protects the nose when the air is dusty." },
+    { "id": "Jalan kaki dan bersepeda membuat udara tetap bersih.", "en": "Walking and biking help keep the air clean." },
+    { "id": "Menanam pohon di kota membuat udara lebih segar untuk dihirup.", "en": "Planting trees in the city makes the air fresher to breathe." }
+  ],
+  "glossary": [
+    {
+      "term": "Polutan",
+      "def_id": "Zat kotor seperti asap atau debu yang mencemari udara.",
+      "def_en": "A dirty substance like smoke or dust that pollutes the air."
+    },
+    {
+      "term": "Partikel",
+      "def_id": "Butiran sangat kecil yang melayang di udara dan sulit terlihat.",
+      "def_en": "Very tiny bits that float in the air and are hard to see."
+    },
+    {
+      "term": "Knalpot",
+      "def_id": "Saluran di kendaraan tempat keluarnya asap dari mesin.",
+      "def_en": "The pipe on a vehicle where smoke comes out of the engine."
+    },
+    {
+      "term": "Cerobong",
+      "def_id": "Pipa tinggi di pabrik tempat asap dilepaskan ke udara.",
+      "def_en": "A tall pipe on a factory where smoke is released into the air."
+    },
+    {
+      "term": "Transportasi bersih",
+      "def_id": "Cara bepergian yang tidak mengotori udara, seperti sepeda atau mobil listrik.",
+      "def_en": "Ways of traveling that don't dirty the air, like bikes or electric cars."
+    }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/4611669cf371e9a2.jpg",
+      "caption_id": "Sebuah cerobong mengeluarkan asap gelap ke langit saat matahari terbenam di balik bukit.",
+      "caption_en": "A chimney puffs dark smoke into the sky as the sun sets behind the hills.",
+      "credit": "Janak Bhatta",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/565ec3c2b168e6d0.jpg",
+      "caption_id": "Cerobong-cerobong pabrik mengeluarkan asap tebal yang naik ke langit biru.",
+      "caption_en": "Factory chimneys release thick smoke that rises into the blue sky.",
+      "credit": "NPS",
+      "license": "Public domain"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Polusi_udara"
+}

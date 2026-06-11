@@ -1,0 +1,161 @@
+{
+  "id": "lingkungan_hutan_tropis",
+  "title_id": "Hutan Hujan Tropis",
+  "title_en": "Tropical Rainforest",
+  "subtitle_id": "Hutan hijau yang selalu basah, paru-paru dunia",
+  "subtitle_en": "Always-wet green forest, the lungs of the world",
+  "data_card": [
+    {
+      "icon": "public",
+      "label_id": "Lokasi",
+      "label_en": "Where",
+      "value_id": "Di daerah hangat dekat garis khatulistiwa",
+      "value_en": "Warm places near the equator"
+    },
+    {
+      "icon": "rainy",
+      "label_id": "Iklim",
+      "label_en": "Climate",
+      "value_id": "Panas dan lembap, dengan hujan yang banyak",
+      "value_en": "Hot and humid, with lots of rain"
+    },
+    {
+      "icon": "pets",
+      "label_id": "Penghuni",
+      "label_en": "Life",
+      "value_id": "Rumah bagi separuh jenis hewan dan tumbuhan dunia",
+      "value_en": "Home to half the world's animals and plants"
+    },
+    {
+      "icon": "eco",
+      "label_id": "Manfaat",
+      "label_en": "Benefit",
+      "value_id": "\"Paru-paru dunia\", membuat udara bersih dan oksigen",
+      "value_en": "\"Lungs of the world\", makes clean air and oxygen"
+    },
+    {
+      "icon": "forest",
+      "label_id": "Di Indonesia",
+      "label_en": "In Indonesia",
+      "value_id": "Sumatra, Kalimantan, Sulawesi, Maluku, dan Papua",
+      "value_en": "Sumatra, Kalimantan, Sulawesi, Maluku, and Papua"
+    },
+    {
+      "icon": "volunteer_activism",
+      "label_id": "Cara Menjaga",
+      "label_en": "How to Help",
+      "value_id": "Menanam pohon dan tidak menebang sembarangan",
+      "value_en": "Plant trees and don't cut them carelessly"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "forest",
+      "h_id": "Apa Itu Hutan Hujan Tropis?",
+      "h_en": "What Is a Tropical Rainforest?",
+      "body_id": "Hutan hujan tropis adalah hutan yang selalu basah dan lembap sepanjang tahun. Hutan ini tumbuh di daerah hangat dekat garis khatulistiwa, tempat matahari bersinar terang dan hujan turun hampir setiap hari. Pohon-pohonnya hijau terus tanpa musim gugur. Karena hujannya sangat banyak, hutan ini disebut hutan hujan!",
+      "body_en": "A tropical rainforest is a forest that stays wet and damp all year round. It grows in warm places near the equator, where the sun shines bright and rain falls almost every day. Its trees stay green without a falling-leaf season. Because it rains so much, this forest is called a rainforest!"
+    },
+    {
+      "icon": "public",
+      "h_id": "Di Mana Letaknya?",
+      "h_en": "Where Is It Found?",
+      "body_id": "Hutan hujan tropis ada di Asia, Afrika, Amerika Selatan, dan Kepulauan Pasifik. Indonesia sangat beruntung karena punya banyak hutan hujan! Kita bisa menemukannya di Sumatra, Kalimantan, sebagian Sulawesi, Maluku, dan Papua. Hutan-hutan ini tumbuh di dataran rendah sampai ke perbukitan yang sering tertutup awan dan kabut.",
+      "body_en": "Tropical rainforests are found in Asia, Africa, South America, and the Pacific Islands. Indonesia is very lucky to have many rainforests! We can find them in Sumatra, Kalimantan, part of Sulawesi, Maluku, and Papua. These forests grow from the lowlands up to the hills, which are often covered in clouds and mist."
+    },
+    {
+      "icon": "eco",
+      "h_id": "Pohon Berlapis-lapis",
+      "h_en": "Trees in Many Layers",
+      "body_id": "Di hutan hujan tropis, pohon-pohon tumbuh berlapis-lapis seperti gedung bertingkat. Pohon yang paling tinggi bisa mencapai 45 meter, lebih tinggi dari rumah berlantai sepuluh! Di bagian atas ada kanopi, yaitu atap hijau dari dedaunan yang rapat. Di lapisan paling bawah, lantai hutan agak gelap karena cahaya matahari sulit menembusnya.",
+      "body_en": "In a tropical rainforest, the trees grow in layers like a tall building. The tallest trees can reach 45 meters, higher than a ten-story house! At the top is the canopy, a green roof of thick leaves. On the lowest level, the forest floor is a bit dark because sunlight has trouble getting through."
+    },
+    {
+      "icon": "pets",
+      "h_id": "Rumah Banyak Makhluk Hidup",
+      "h_en": "Home to Many Living Things",
+      "body_id": "Hutan hujan tropis adalah rumah bagi separuh dari semua jenis hewan dan tumbuhan di seluruh dunia! Orangutan berayun di antara pohon, burung-burung berkicau, dan ribuan jenis serangga sibuk bekerja. Banyak bunga, anggrek, dan lumut menempel di dahan. Hutan ini seperti taman raksasa yang penuh kejutan.",
+      "body_en": "The tropical rainforest is home to half of all the kinds of animals and plants in the whole world! Orangutans swing between the trees, birds sing, and thousands of kinds of insects are busy at work. Many flowers, orchids, and mosses cling to the branches. This forest is like a giant garden full of surprises."
+    },
+    {
+      "icon": "volunteer_activism",
+      "h_id": "Paru-paru Dunia, Yuk Kita Jaga!",
+      "h_en": "Lungs of the World, Let's Protect It!",
+      "body_id": "Hutan hujan tropis dijuluki \"paru-paru dunia\" karena pohon-pohonnya membuat udara bersih dan oksigen yang kita hirup. Hutan ini juga jadi \"apotek\" alam, karena banyak obat berasal dari tumbuhannya. Kita bisa membantu dengan menanam pohon, hemat kertas, dan menyayangi hewan. Setiap tindakan kecilmu sangat berarti untuk bumi!",
+      "body_en": "The tropical rainforest is nicknamed the \"lungs of the world\" because its trees make the clean air and oxygen we breathe. It is also nature's \"pharmacy\", because many medicines come from its plants. We can help by planting trees, saving paper, and loving animals. Every small thing you do means a lot to the Earth!"
+    }
+  ],
+  "facts": [
+    { "id": "Hutan hujan tropis adalah rumah bagi separuh jenis makhluk hidup di dunia!", "en": "Tropical rainforests are home to half the world's living things!" },
+    { "id": "Pohon tertingginya bisa mencapai 45 meter, setinggi gedung sepuluh lantai.", "en": "Its tallest trees can reach 45 meters, as tall as a ten-story building." },
+    { "id": "Hampir seperempat obat modern berasal dari tumbuhan hutan hujan.", "en": "Almost a quarter of modern medicines come from rainforest plants." },
+    { "id": "Di hutan ini hujan turun hampir setiap hari sepanjang tahun.", "en": "In this forest, rain falls almost every day all year long." },
+    { "id": "Indonesia punya hutan hujan di Sumatra, Kalimantan, dan Papua.", "en": "Indonesia has rainforests in Sumatra, Kalimantan, and Papua." },
+    { "id": "Pohon-pohonnya menghasilkan oksigen yang kita hirup setiap hari.", "en": "Its trees make the oxygen we breathe every day." }
+  ],
+  "glossary": [
+    {
+      "term": "Khatulistiwa",
+      "def_id": "Garis khayal di tengah bumi tempat daerah paling panas berada.",
+      "def_en": "An imaginary line around the middle of the Earth where the hottest places are."
+    },
+    {
+      "term": "Kanopi",
+      "def_id": "Atap hijau hutan yang dibentuk oleh dedaunan pohon-pohon tinggi.",
+      "def_en": "The green roof of the forest made by the leaves of tall trees."
+    },
+    {
+      "term": "Oksigen",
+      "def_id": "Gas dari tumbuhan yang kita hirup agar bisa bernapas dan hidup.",
+      "def_en": "A gas from plants that we breathe in so we can live."
+    },
+    {
+      "term": "Lembap",
+      "def_id": "Keadaan udara yang basah dan terasa banyak airnya.",
+      "def_en": "Air that is damp and feels full of moisture."
+    },
+    {
+      "term": "Keanekaragaman hayati",
+      "def_id": "Banyaknya jenis tumbuhan dan hewan yang hidup di satu tempat.",
+      "def_en": "The many different kinds of plants and animals living in one place."
+    }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/c31a8589fe0d2d82.jpg",
+      "caption_id": "Hutan hujan tropis yang lebat di Pegunungan Mugajah, Aceh, tertutup sentuhan awan dan kabut.",
+      "caption_en": "A lush tropical rainforest in the Mugajah Mountains, Aceh, touched by clouds and mist.",
+      "credit": "Hugo Rio Aditya",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/1626c77020c45013.jpg",
+      "caption_id": "Induk orangutan Sumatra sedang memberi makan anaknya sambil bergantung di pohon hutan.",
+      "caption_en": "A Sumatran orangutan mother feeds her baby while hanging from a forest tree.",
+      "credit": "Pratechno",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/91f6ce7261833523.jpg",
+      "caption_id": "Dilihat dari atas, kanopi hijau hutan hujan Amazon terbentang sejauh mata memandang.",
+      "caption_en": "Seen from above, the green canopy of the Amazon rainforest stretches as far as the eye can see.",
+      "credit": "The original uploader was בן הטבע at Hebrew Wikipedia.",
+      "license": "CC BY-SA 2.5"
+    },
+    {
+      "src": "app/assets/img/wiki/cf38805f3b0c5bb7.jpg",
+      "caption_id": "Pohon-pohon tinggi hutan hujan asli di Khao Sok, Thailand, berdiri di depan perbukitan berkabut.",
+      "caption_en": "Tall trees of the primary rainforest in Khao Sok, Thailand, stand before misty hills.",
+      "credit": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/8c4cbed287ef6c23.jpg",
+      "caption_id": "Sungai cokelat mengalir tenang melewati tepi hutan hujan yang hijau di Peru.",
+      "caption_en": "A brown river flows calmly past the green edge of the rainforest in Peru.",
+      "credit": "Roosevelt Garcia",
+      "license": "Public domain"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Hutan_hujan_tropika"
+}

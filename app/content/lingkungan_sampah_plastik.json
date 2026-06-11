@@ -1,0 +1,152 @@
+{
+  "id": "lingkungan_sampah_plastik",
+  "title_id": "Sampah Plastik",
+  "title_en": "Plastic Waste",
+  "subtitle_id": "Masalah besar yang bisa kita atasi bersama",
+  "subtitle_en": "A big problem we can solve together",
+  "data_card": [
+    {
+      "icon": "delete",
+      "label_id": "Sumber",
+      "label_en": "Source",
+      "value_id": "Botol, kantong, sedotan, dan kemasan makanan",
+      "value_en": "Bottles, bags, straws, and food packaging"
+    },
+    {
+      "icon": "water",
+      "label_id": "Masalah",
+      "label_en": "Problem",
+      "value_id": "Mencemari laut, sungai, dan tanah",
+      "value_en": "Pollutes the sea, rivers, and soil"
+    },
+    {
+      "icon": "schedule",
+      "label_id": "Lama terurai",
+      "label_en": "Decompose time",
+      "value_id": "Sangat lama, sulit hancur secara alami",
+      "value_en": "Very long, hard to break down naturally"
+    },
+    {
+      "icon": "pets",
+      "label_id": "Korban",
+      "label_en": "Affected",
+      "value_id": "Hewan laut seperti penyu dan burung laut",
+      "value_en": "Sea animals like turtles and seabirds"
+    },
+    {
+      "icon": "recycling",
+      "label_id": "Solusi",
+      "label_en": "Solution",
+      "value_id": "Kurangi, pakai ulang, dan daur ulang (3R)",
+      "value_en": "Reduce, reuse, and recycle (3R)"
+    },
+    {
+      "icon": "eco",
+      "label_id": "Harapan",
+      "label_en": "Hope",
+      "value_id": "Setiap orang bisa membantu, termasuk kamu!",
+      "value_en": "Everyone can help, including you!"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "delete",
+      "h_id": "Apa Itu Sampah Plastik?",
+      "h_en": "What Is Plastic Waste?",
+      "body_id": "Plastik ada di mana-mana di sekitar kita. Botol minuman, kantong belanja, sedotan, dan bungkus makanan banyak yang terbuat dari plastik. Plastik dibuat manusia karena murah, ringan, dan kuat. Tetapi ketika kita membuangnya sembarangan, plastik berubah menjadi sampah yang menumpuk dan mengotori lingkungan kita.",
+      "body_en": "Plastic is everywhere around us. Drink bottles, shopping bags, straws, and food wrappers are often made of plastic. People make plastic because it is cheap, light, and strong. But when we throw it away carelessly, plastic turns into waste that piles up and dirties our environment."
+    },
+    {
+      "icon": "schedule",
+      "h_id": "Mengapa Plastik Sulit Hilang?",
+      "h_en": "Why Is Plastic Hard to Get Rid Of?",
+      "body_id": "Daun dan sisa makanan bisa membusuk dan menyatu kembali dengan tanah dalam waktu singkat. Tetapi plastik berbeda. Bahan plastik sangat kuat sehingga alam butuh waktu yang amat lama untuk menguraikannya. Karena itu, satu botol plastik yang kita buang hari ini bisa tetap ada jauh lebih lama daripada usia kita.",
+      "body_en": "Leaves and food scraps can rot and return to the soil quickly. But plastic is different. Plastic is so tough that nature needs a very long time to break it down. That is why one plastic bottle we throw away today can stay around far longer than we live."
+    },
+    {
+      "icon": "water",
+      "h_id": "Plastik dan Lautan",
+      "h_en": "Plastic and the Ocean",
+      "body_id": "Sampah plastik sering terbawa angin dan air hujan ke selokan, lalu mengalir ke sungai dan akhirnya sampai ke laut. Di sana plastik mengapung dan berkumpul menjadi sangat banyak. Para peneliti khawatir, jika kita tidak bertindak, suatu hari nanti bisa ada lebih banyak plastik daripada ikan di laut. Itulah mengapa kita harus menjaga laut sejak sekarang.",
+      "body_en": "Plastic waste is often carried by wind and rain into drains, then flows into rivers and finally reaches the sea. There it floats and gathers into huge amounts. Researchers worry that if we do nothing, one day there could be more plastic than fish in the ocean. That is why we must protect the sea starting now."
+    },
+    {
+      "icon": "pets",
+      "h_id": "Hewan yang Terancam",
+      "h_en": "Animals in Danger",
+      "body_id": "Banyak hewan laut tidak bisa membedakan plastik dengan makanan. Penyu kadang mengira kantong plastik adalah ubur-ubur, lalu memakannya. Burung laut juga bisa menelan potongan plastik kecil. Plastik juga bisa menjerat tubuh hewan sehingga mereka sulit bergerak. Dengan menjaga sampah kita, kita ikut melindungi sahabat-sahabat di lautan.",
+      "body_en": "Many sea animals cannot tell plastic from food. Turtles sometimes mistake a plastic bag for a jellyfish and eat it. Seabirds can also swallow tiny pieces of plastic. Plastic can even tangle around an animal's body so it cannot move well. By caring for our trash, we help protect our friends in the ocean."
+    },
+    {
+      "icon": "recycling",
+      "h_id": "Yuk, Lakukan 3R!",
+      "h_en": "Let's Do the 3R!",
+      "body_id": "Kabar baiknya, kita semua bisa membantu dengan 3R: Reduce, Reuse, Recycle! Reduce artinya kurangi plastik, misalnya membawa tas kain dan botol minum sendiri. Reuse artinya pakai ulang barang plastik yang masih bagus. Recycle artinya daur ulang, yaitu memilah sampah agar bisa diolah menjadi barang baru. Mulailah dari hal kecil, dan ajak teman serta keluargamu ikut menjaga bumi!",
+      "body_en": "The good news is, we can all help with the 3R: Reduce, Reuse, Recycle! Reduce means using less plastic, like bringing a cloth bag and your own water bottle. Reuse means using plastic items again while they are still good. Recycle means sorting trash so it can be made into new things. Start with small steps, and invite your friends and family to care for the Earth too!"
+    }
+  ],
+  "facts": [
+    { "id": "Satu botol plastik bisa bertahan jauh lebih lama daripada usia kita.", "en": "One plastic bottle can last far longer than we live." },
+    { "id": "Penyu sering mengira kantong plastik adalah ubur-ubur dan memakannya.", "en": "Turtles often mistake plastic bags for jellyfish and eat them." },
+    { "id": "Sampah plastik bisa terbawa dari selokan sampai ke laut.", "en": "Plastic waste can travel from drains all the way to the sea." },
+    { "id": "3R berarti Reduce, Reuse, dan Recycle.", "en": "3R means Reduce, Reuse, and Recycle." },
+    { "id": "Membawa tas kain dan botol minum sendiri mengurangi banyak sampah.", "en": "Bringing a cloth bag and your own bottle cuts down a lot of waste." },
+    { "id": "Setiap orang, termasuk anak-anak, bisa membantu menjaga bumi.", "en": "Everyone, including children, can help protect the Earth." }
+  ],
+  "glossary": [
+    {
+      "term": "Plastik",
+      "def_id": "Bahan buatan manusia yang ringan dan kuat, tetapi sulit terurai di alam.",
+      "def_en": "A human-made material that is light and strong, but hard for nature to break down."
+    },
+    {
+      "term": "Terurai",
+      "def_id": "Hancur dan menyatu kembali dengan tanah secara alami.",
+      "def_en": "To break apart and return to the soil naturally."
+    },
+    {
+      "term": "Mencemari",
+      "def_id": "Membuat air, tanah, atau udara menjadi kotor dan tidak sehat.",
+      "def_en": "To make water, soil, or air dirty and unhealthy."
+    },
+    {
+      "term": "Daur ulang",
+      "def_id": "Mengolah sampah lama menjadi barang baru yang bisa dipakai lagi.",
+      "def_en": "Turning old waste into new items that can be used again."
+    },
+    {
+      "term": "3R",
+      "def_id": "Tiga cara menjaga lingkungan: Reduce (kurangi), Reuse (pakai ulang), Recycle (daur ulang).",
+      "def_en": "Three ways to care for the environment: Reduce, Reuse, and Recycle."
+    },
+    {
+      "term": "Lingkungan",
+      "def_id": "Semua yang ada di sekeliling kita, seperti tanah, air, udara, tumbuhan, dan hewan.",
+      "def_en": "Everything around us, such as land, water, air, plants, and animals."
+    }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/afd95d4975886c08.jpg",
+      "caption_id": "Barang-barang plastik sehari-hari seperti botol susu, gelas takar, dan keping CD. Banyak benda di rumah kita terbuat dari plastik.",
+      "caption_en": "Everyday plastic items like a milk jug, measuring cup, and a CD. Many things in our homes are made of plastic.",
+      "credit": "Marek Slusarczyk (Tupungato)",
+      "license": "CC BY 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/d2856e4ea50c9047.jpg",
+      "caption_id": "Botol-botol plastik tersangkut di antara batu di sebuah sungai kecil. Sampah seperti ini bisa mengalir hingga ke laut.",
+      "caption_en": "Plastic bottles caught among the rocks of a small stream. Trash like this can flow all the way to the sea.",
+      "credit": "Vysotsky",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/d129f5d4353e022b.jpg",
+      "caption_id": "Serpihan plastik berwarna-warni terdampar di pantai pasir putih, terbawa arus laut dari tempat yang jauh.",
+      "caption_en": "Colorful bits of plastic washed up on a white sandy beach, carried by ocean currents from far away.",
+      "credit": "American at German Wikipedia",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Polusi_plastik"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "olahraga_bulu_tangkis",
+  "title_id": "Bulu Tangkis",
+  "title_en": "Badminton",
+  "subtitle_id": "Olahraga raket cepat memukul kok melewati jaring, kebanggaan juara Indonesia!",
+  "subtitle_en": "A fast racket sport hitting a shuttlecock over the net, the pride of Indonesia's champions!",
+  "data_card": [
+    { "icon": "sports_tennis", "label_id": "Jenis", "label_en": "Type", "value_id": "Olahraga raket", "value_en": "Racket sport" },
+    { "icon": "groups", "label_id": "Pemain", "label_en": "Players", "value_id": "1 lawan 1, atau 2 lawan 2", "value_en": "1 vs 1, or 2 vs 2" },
+    { "icon": "sports_tennis", "label_id": "Peralatan", "label_en": "Equipment", "value_id": "Raket dan kok (shuttlecock)", "value_en": "Racket and shuttlecock" },
+    { "icon": "public", "label_id": "Tempat", "label_en": "Where", "value_id": "Lapangan dengan jaring di tengah", "value_en": "A court with a net in the middle" },
+    { "icon": "emoji_events", "label_id": "Kebanggaan Indonesia", "label_en": "Indonesia's pride", "value_id": "Juara dunia dan emas Olimpiade", "value_en": "World and Olympic gold champions" }
+  ],
+  "sections": [
+    {
+      "icon": "sports_tennis",
+      "h_id": "Apa Itu Bulu Tangkis?",
+      "h_en": "What Is Badminton?",
+      "body_id": "Bulu tangkis adalah olahraga raket yang dimainkan dengan memukul kok melewati jaring. Kok bukanlah bola biasa, melainkan benda ringan berbulu yang melayang di udara. Dua pemain atau dua pasangan berdiri di sisi yang berlawanan, lalu saling memukul kok bolak-balik. Olahraga ini sangat digemari di Indonesia dan dimainkan di sekolah, kampung, sampai gelanggang besar.",
+      "body_en": "Badminton is a racket sport played by hitting a shuttlecock over a net. The shuttlecock is not an ordinary ball but a light, feathered object that floats through the air. Two players or two pairs stand on opposite sides and hit the shuttlecock back and forth. This sport is very popular in Indonesia and is played in schools, villages, and big arenas alike."
+    },
+    {
+      "icon": "groups",
+      "h_id": "Cara Bermain",
+      "h_en": "How to Play",
+      "body_id": "Permainan dimulai dengan servis, yaitu memukul kok pertama kali ke sisi lawan. Setiap pemain berusaha memukul kok agar jatuh di lapangan lawan, dan menjaga agar kok tidak jatuh di lapangannya sendiri. Kalau kok menyangkut di jaring atau jatuh di luar garis, lawan mendapat poin. Bulu tangkis bisa dimainkan tunggal (satu lawan satu) atau ganda (dua lawan dua).",
+      "body_en": "The game begins with a serve, the first hit of the shuttlecock to the other side. Each player tries to make the shuttlecock land in the opponent's court while keeping it from landing in their own. If the shuttlecock hits the net or falls outside the lines, the opponent gets a point. Badminton can be played as singles (one against one) or doubles (two against two)."
+    },
+    {
+      "icon": "sports_tennis",
+      "h_id": "Raket dan Kok",
+      "h_en": "Racket and Shuttlecock",
+      "body_id": "Alat utama bulu tangkis adalah raket dan kok. Raket modern sangat ringan karena dibuat dari serat karbon, dengan senar yang dianyam rapat di kepalanya. Kok yang asli dibuat dari bulu angsa yang disusun seperti kerucut, dengan gabus di ujungnya. Untuk latihan, sering dipakai kok dari plastik yang lebih awet. Pemain juga memakai sepatu khusus bersol karet agar tidak mudah tergelincir.",
+      "body_en": "The main gear in badminton is the racket and the shuttlecock. A modern racket is very light because it is made of carbon fiber, with strings woven tightly across its head. A real shuttlecock is made from goose feathers arranged like a cone, with cork at the tip. For practice, plastic shuttlecocks that last longer are often used. Players also wear special rubber-soled shoes so they do not slip easily."
+    },
+    {
+      "icon": "emoji_events",
+      "h_id": "Kebanggaan Indonesia",
+      "h_en": "Indonesia's Pride",
+      "body_id": "Bulu tangkis adalah olahraga yang paling membanggakan bagi Indonesia. Para atlet kita sudah berkali-kali menjadi juara dunia dan meraih medali emas di Olimpiade. Saat pemain Indonesia bertanding, banyak keluarga berkumpul di depan televisi untuk mendukung. Nama-nama pebulu tangkis hebat seperti Taufik Hidayat dikenal di seluruh dunia dan menjadi pahlawan olahraga bangsa.",
+      "body_en": "Badminton is the sport that makes Indonesia most proud. Our athletes have become world champions and won Olympic gold medals many times. When Indonesian players compete, many families gather in front of the television to cheer. Great badminton players such as Taufik Hidayat are known all over the world and are heroes of the nation's sport."
+    },
+    {
+      "icon": "lightbulb",
+      "h_id": "Tahukah Kamu?",
+      "h_en": "Did You Know?",
+      "body_id": "Kok bulu tangkis bisa terbang sangat kencang! Saat dipukul keras dengan pukulan smash, kok dapat melaju lebih cepat daripada mobil di jalan tol. Itulah mengapa pemain bulu tangkis harus punya mata yang awas, kaki yang lincah, dan tangan yang cepat untuk mengejar kok ke segala arah lapangan.",
+      "body_en": "A badminton shuttlecock can fly incredibly fast! When struck hard with a smash, it can travel faster than a car on the highway. That is why badminton players must have sharp eyes, nimble feet, and quick hands to chase the shuttlecock to every corner of the court."
+    }
+  ],
+  "facts": [
+    { "id": "Saat di-smash, kok bisa melaju lebih cepat daripada mobil di jalan tol.", "en": "When smashed, a shuttlecock can fly faster than a car on the highway." },
+    { "id": "Kok asli dibuat dari bulu angsa yang disusun membentuk kerucut.", "en": "A real shuttlecock is made from goose feathers arranged into a cone." },
+    { "id": "Bulu tangkis bisa dimainkan tunggal (satu lawan satu) atau ganda (dua lawan dua).", "en": "Badminton can be played as singles (one vs one) or doubles (two vs two)." },
+    { "id": "Indonesia sudah berkali-kali meraih medali emas Olimpiade dari bulu tangkis.", "en": "Indonesia has won Olympic gold medals in badminton many times." },
+    { "id": "Raket bulu tangkis modern dibuat dari serat karbon agar sangat ringan.", "en": "Modern badminton rackets are made of carbon fiber to be very light." },
+    { "id": "Kejuaraan bulu tangkis tertua di dunia bernama All England.", "en": "The oldest badminton championship in the world is called the All England." }
+  ],
+  "glossary": [
+    { "term": "Kok", "def_id": "Bola berbulu ringan yang dipukul dalam bulu tangkis; disebut juga shuttlecock.", "def_en": "The light feathered ball hit in badminton; also called the shuttlecock." },
+    { "term": "Raket", "def_id": "Alat pemukul bertangkai dengan senar di kepalanya untuk memukul kok.", "def_en": "A handled bat with strings on its head used to hit the shuttlecock." },
+    { "term": "Servis", "def_id": "Pukulan pertama untuk memulai permainan ke sisi lawan.", "def_en": "The first hit that starts the game to the opponent's side." },
+    { "term": "Smash", "def_id": "Pukulan keras dan cepat ke arah bawah untuk mengejutkan lawan.", "def_en": "A hard, fast downward hit to surprise the opponent." },
+    { "term": "Tunggal", "def_id": "Permainan satu pemain melawan satu pemain.", "def_en": "A game of one player against one player." },
+    { "term": "Ganda", "def_id": "Permainan dua pemain berpasangan melawan dua pemain lain.", "def_en": "A game of two players as a pair against two other players." }
+  ],
+  "gallery": [
+    { "src": "app/assets/img/wiki/f103935b838e11d4.jpg", "caption_id": "Pertandingan ganda campuran di Olimpiade London 2012; pemain melompat memukul kok.", "caption_en": "A mixed doubles match at the London 2012 Olympics; a player jumps to hit the shuttlecock.", "credit": "Peter", "license": "CC BY-SA 2.0" },
+    { "src": "app/assets/img/wiki/ced8abc8eb66b706.jpg", "caption_id": "Taufik Hidayat, juara bulu tangkis Indonesia, mengangkat raket setelah bermain.", "caption_en": "Taufik Hidayat, an Indonesian badminton champion, raises his racket after playing.", "credit": "Mayeres", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/6d09c60c471b7629.jpg", "caption_id": "Raket bulu tangkis modern yang ringan dengan senar dianyam rapat di kepalanya.", "caption_en": "A light modern badminton racket with strings woven tightly across its head.", "credit": "hvshop", "license": "CC BY-SA 4.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Bulu_tangkis"
+}

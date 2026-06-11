@@ -1,0 +1,72 @@
+{
+  "id": "olahraga_sepak_bola",
+  "title_id": "Sepak Bola",
+  "title_en": "Football (Soccer)",
+  "subtitle_id": "Olahraga paling populer di dunia, dimainkan dua tim sebelas pemain demi mencetak gol!",
+  "subtitle_en": "The world's most popular sport, played by two teams of eleven to score goals!",
+  "data_card": [
+    { "icon": "sports_soccer", "label_id": "Jenis", "label_en": "Type", "value_id": "Olahraga tim dengan bola", "value_en": "A team ball sport" },
+    { "icon": "groups", "label_id": "Pemain", "label_en": "Players", "value_id": "11 pemain di tiap tim", "value_en": "11 players on each team" },
+    { "icon": "sports_soccer", "label_id": "Peralatan", "label_en": "Equipment", "value_id": "Satu bola dan dua gawang", "value_en": "One ball and two goals" },
+    { "icon": "public", "label_id": "Tempat", "label_en": "Where", "value_id": "Lapangan rumput persegi panjang", "value_en": "A rectangular grass field" },
+    { "icon": "emoji_events", "label_id": "Kebanggaan dunia", "label_en": "World's pride", "value_id": "Olahraga paling populer di dunia", "value_en": "The most popular sport on Earth" }
+  ],
+  "sections": [
+    {
+      "icon": "sports_soccer",
+      "h_id": "Apa Itu Sepak Bola?",
+      "h_en": "What Is Football?",
+      "body_id": "Sepak bola adalah olahraga yang dimainkan oleh dua tim, masing-masing terdiri dari sebelas pemain. Tujuannya sederhana: memasukkan bola ke gawang lawan sebanyak mungkin. Tim yang mencetak gol paling banyak menjadi pemenang. Sepak bola dimainkan di lapangan rumput yang luas berbentuk persegi panjang, dengan satu gawang di setiap ujungnya.",
+      "body_en": "Football is a sport played by two teams, each with eleven players. The goal is simple: put the ball into the opponent's goal as many times as possible. The team that scores the most goals wins. Football is played on a large rectangular grass field, with one goal at each end."
+    },
+    {
+      "icon": "directions_run",
+      "h_id": "Cara Bermain",
+      "h_en": "How to Play",
+      "body_id": "Dalam sepak bola, pemain hanya boleh menggunakan kaki, dada, dan kepala untuk menggerakkan bola. Tangan tidak boleh dipakai sama sekali! Hanya satu pemain istimewa, yaitu penjaga gawang, yang boleh menangkap bola dengan tangan, tetapi hanya di dekat gawangnya sendiri. Pemain mengoper bola kepada teman setim, menggiringnya melewati lawan, lalu menendangnya ke gawang untuk mencetak gol.",
+      "body_en": "In football, players may only use their feet, chest, and head to move the ball. Hands may not be used at all! Only one special player, the goalkeeper, may catch the ball with their hands, and only near their own goal. Players pass the ball to teammates, dribble it past opponents, then kick it into the goal to score."
+    },
+    {
+      "icon": "schedule",
+      "h_id": "Aturan dan Waktu Bermain",
+      "h_en": "Rules and Playing Time",
+      "body_id": "Satu pertandingan sepak bola berlangsung dua babak, masing-masing 45 menit, jadi total 90 menit. Di tengah ada waktu istirahat. Seorang wasit memimpin pertandingan dan memastikan semua pemain bermain jujur. Kalau ada pemain melanggar aturan, wasit bisa meniup peluit dan memberi hukuman. Bola yang keluar lapangan harus dimainkan kembali dari pinggir.",
+      "body_en": "A football match has two halves of 45 minutes each, so 90 minutes in total. There is a rest break in the middle. A referee leads the match and makes sure all players play fairly. If a player breaks the rules, the referee can blow the whistle and give a punishment. A ball that goes out of the field must be brought back into play from the side."
+    },
+    {
+      "icon": "public",
+      "h_id": "Sepak Bola dan Indonesia",
+      "h_en": "Football and Indonesia",
+      "body_id": "Sepak bola adalah olahraga paling populer di dunia, dengan lebih dari 250 juta pemain di lebih dari 200 negara. Pertandingan terbesarnya adalah Piala Dunia FIFA, yang ditonton oleh miliaran orang. Di Indonesia, sepak bola sangat dicintai. Anak-anak bermain bola di mana saja, di lapangan, di gang, bahkan di tanah kosong. Banyak orang Indonesia setia mendukung tim kesayangannya.",
+      "body_en": "Football is the most popular sport in the world, with more than 250 million players in over 200 countries. Its biggest tournament is the FIFA World Cup, watched by billions of people. In Indonesia, football is deeply loved. Children play it everywhere, on fields, in alleys, and even on empty land. Many Indonesians loyally support their favorite team."
+    },
+    {
+      "icon": "lightbulb",
+      "h_id": "Tahukah Kamu?",
+      "h_en": "Did You Know?",
+      "body_id": "Permainan menendang bola sudah ada sejak ribuan tahun lalu! Di Tiongkok kuno ada permainan bernama cuju, yaitu menendang bola ke dalam jaring tanpa memakai tangan, mirip sepak bola sekarang. Aturan sepak bola modern yang kita kenal mulai ditulis di Inggris pada tahun 1863, dan sejak itu olahraga ini menyebar ke seluruh dunia.",
+      "body_en": "Kicking-ball games have existed for thousands of years! In ancient China there was a game called cuju, kicking a ball into a net without using the hands, much like football today. The modern football rules we know were first written in England in 1863, and since then the sport has spread all over the world."
+    }
+  ],
+  "facts": [
+    { "id": "Sepak bola adalah olahraga paling populer di dunia, dengan sekitar 250 juta pemain.", "en": "Football is the most popular sport in the world, with about 250 million players." },
+    { "id": "Setiap tim sepak bola terdiri dari sebelas pemain di lapangan.", "en": "Each football team has eleven players on the field." },
+    { "id": "Hanya penjaga gawang yang boleh menangkap bola dengan tangan.", "en": "Only the goalkeeper is allowed to catch the ball with their hands." },
+    { "id": "Satu pertandingan berlangsung 90 menit, dibagi dua babak 45 menit.", "en": "A match lasts 90 minutes, split into two halves of 45 minutes." },
+    { "id": "Aturan sepak bola modern mulai ditulis di Inggris pada tahun 1863.", "en": "The modern rules of football were first written in England in 1863." },
+    { "id": "Piala Dunia FIFA adalah acara olahraga yang paling banyak ditonton di dunia.", "en": "The FIFA World Cup is the most watched sporting event in the world." }
+  ],
+  "glossary": [
+    { "term": "Gol", "def_id": "Saat bola masuk ke gawang lawan dan tim mendapat satu angka.", "def_en": "When the ball goes into the opponent's goal and the team gets a point." },
+    { "term": "Gawang", "def_id": "Bingkai tempat bola harus masuk untuk mencetak gol.", "def_en": "The frame the ball must enter to score a goal." },
+    { "term": "Penjaga gawang", "def_id": "Pemain yang menjaga gawang dan boleh memakai tangan di dekat gawangnya.", "def_en": "The player who guards the goal and may use their hands near it." },
+    { "term": "Wasit", "def_id": "Orang yang memimpin pertandingan dan menjaga agar permainan adil.", "def_en": "The person who leads the match and keeps the game fair." },
+    { "term": "Babak", "def_id": "Bagian waktu permainan; sepak bola punya dua babak masing-masing 45 menit.", "def_en": "A part of the playing time; football has two halves of 45 minutes each." },
+    { "term": "Mengoper", "def_id": "Menendang bola kepada teman satu tim.", "def_en": "Kicking the ball to a teammate." }
+  ],
+  "gallery": [
+    { "src": "app/assets/img/wiki/2d512f5f5b56435e.jpg", "caption_id": "Dua pemain berlari berebut bola di lapangan rumput saat pertandingan.", "caption_en": "Two players run and chase the ball on the grass field during a match.", "credit": "U.S. Navy photo by Photographer's Mate 2nd Class Damon J. Moritz.", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/e14b6b837ec42fda.jpg", "caption_id": "Anak-anak di Jakarta memegang bola sepak; sepak bola bisa dimainkan di mana saja.", "caption_en": "Children in Jakarta hold a football; the game can be played anywhere.", "credit": "Jonathan McIntosh", "license": "CC BY 2.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Sepak_bola"
+}
