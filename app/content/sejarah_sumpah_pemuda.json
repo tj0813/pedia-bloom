@@ -1,0 +1,41 @@
+{
+  "id": "sejarah_sumpah_pemuda",
+  "title_id": "Sumpah Pemuda",
+  "title_en": "The Youth Pledge",
+  "subtitle_id": "Satu tanah air, satu bangsa, satu bahasa",
+  "subtitle_en": "One homeland, one nation, one language",
+  "data_card": [
+    { "icon": "calendar_today", "label_id": "Kapan", "label_en": "When", "value_id": "28 Oktober 1928", "value_en": "28 October 1928" },
+    { "icon": "public", "label_id": "Di mana", "label_en": "Where", "value_id": "Batavia (Jakarta)", "value_en": "Batavia (Jakarta)" },
+    { "icon": "groups", "label_id": "Tokoh", "label_en": "By", "value_id": "Pemuda-pemudi Indonesia", "value_en": "Indonesia's young people" },
+    { "icon": "handshake", "label_id": "Makna", "label_en": "Meaning", "value_id": "Persatuan bangsa Indonesia", "value_en": "The unity of the Indonesian nation" },
+    { "icon": "flag", "label_id": "Diperingati", "label_en": "Remembered as", "value_id": "Hari Sumpah Pemuda", "value_en": "Youth Pledge Day" }
+  ],
+  "sections": [
+    { "icon": "auto_stories", "h_id": "Apa Itu Sumpah Pemuda?", "h_en": "What Is the Youth Pledge?", "body_id": "Sumpah Pemuda adalah janji yang diucapkan pemuda-pemudi Indonesia pada 28 Oktober 1928. Saat itu Indonesia belum merdeka dan masih terpecah dalam banyak suku dan daerah. Para pemuda berkumpul dan berjanji untuk bersatu sebagai satu bangsa.", "body_en": "The Youth Pledge is a promise spoken by young Indonesians on 28 October 1928. Back then Indonesia was not yet free and was split into many tribes and regions. The youth gathered and promised to unite as one nation." },
+    { "icon": "groups", "h_id": "Kongres Pemuda", "h_en": "The Youth Congress", "body_id": "Para pemuda dari berbagai daerah mengadakan pertemuan besar bernama Kongres Pemuda di Jakarta. Mereka berasal dari Jawa, Sumatra, Sulawesi, dan banyak pulau lain, tapi mereka punya satu mimpi: Indonesia yang bersatu dan merdeka.", "body_en": "Young people from many regions held a big meeting called the Youth Congress in Jakarta. They came from Java, Sumatra, Sulawesi, and many other islands, but they shared one dream: a united and free Indonesia." },
+    { "icon": "format_list_numbered", "h_id": "Tiga Janji Penting", "h_en": "Three Important Promises", "body_id": "Isi Sumpah Pemuda ada tiga: (1) Kami bertumpah darah yang satu, tanah air Indonesia; (2) Kami berbangsa yang satu, bangsa Indonesia; (3) Kami menjunjung bahasa persatuan, bahasa Indonesia. Inilah awal mula Bahasa Indonesia menjadi bahasa kita bersama.", "body_en": "The Youth Pledge has three promises: (1) We have one homeland, Indonesia; (2) We are one nation, the Indonesian nation; (3) We uphold one language of unity, the Indonesian language. This was the beginning of Indonesian becoming our shared language." },
+    { "icon": "music_note", "h_id": "Lagu Indonesia Raya", "h_en": "The Song Indonesia Raya", "body_id": "Pada kongres itulah lagu 'Indonesia Raya' ciptaan Wage Rudolf Supratman pertama kali diperdengarkan dengan biola. Lagu ini kelak menjadi lagu kebangsaan Indonesia yang kita nyanyikan sampai sekarang.", "body_en": "It was at this congress that the song 'Indonesia Raya' by Wage Rudolf Supratman was first played on the violin. This song later became Indonesia's national anthem, which we still sing today." },
+    { "icon": "volunteer_activism", "h_id": "Maknanya untuk Kita", "h_en": "What It Means for Us", "body_id": "Sumpah Pemuda mengajarkan kita untuk bersatu walaupun berbeda suku, bahasa daerah, dan agama. Kita bisa meneladaninya dengan saling menghargai teman dari mana pun asalnya.", "body_en": "The Youth Pledge teaches us to stay united even though we have different tribes, local languages, and religions. We can follow its spirit by respecting friends no matter where they come from." }
+  ],
+  "facts": [
+    { "id": "Sumpah Pemuda diucapkan pada 28 Oktober 1928.", "en": "The Youth Pledge was spoken on 28 October 1928." },
+    { "id": "Isinya tiga: satu tanah air, satu bangsa, satu bahasa.", "en": "It has three parts: one homeland, one nation, one language." },
+    { "id": "Lagu 'Indonesia Raya' pertama kali dimainkan di kongres ini.", "en": "'Indonesia Raya' was first played at this congress." },
+    { "id": "Rumusannya ditulis oleh Mohammad Yamin.", "en": "Its words were written by Mohammad Yamin." },
+    { "id": "28 Oktober kini diperingati sebagai Hari Sumpah Pemuda.", "en": "28 October is now Youth Pledge Day." }
+  ],
+  "glossary": [
+    { "term": "Ikrar", "def_id": "Janji atau sumpah yang diucapkan dengan sungguh-sungguh.", "def_en": "A promise or oath spoken seriously." },
+    { "term": "Kongres", "def_id": "Pertemuan besar untuk membahas hal penting.", "def_en": "A big meeting to discuss important matters." },
+    { "term": "Persatuan", "def_id": "Keadaan bersatu menjadi satu, tidak terpecah-pecah.", "def_en": "Being united as one, not divided." },
+    { "term": "Tanah air", "def_id": "Negeri tempat kita lahir dan tinggal, yaitu Indonesia.", "def_en": "The land where we are born and live — Indonesia." },
+    { "term": "Bahasa persatuan", "def_id": "Bahasa yang dipakai bersama agar semua bisa saling mengerti.", "def_en": "A shared language so everyone can understand each other." }
+  ],
+  "gallery": [
+    { "src": "app/assets/img/wiki/9aebb87ef3050252.jpg", "caption_id": "Naskah bersejarah Sumpah Pemuda tahun 1928.", "caption_en": "The historic text of the 1928 Youth Pledge.", "credit": "Edogang1", "license": "CC BY 4.0" },
+    { "src": "app/assets/img/wiki/fe10c7c37ef6d465.jpg", "caption_id": "Tugu 'Api Sumpah Pemuda' yang mengenang peristiwa ini.", "caption_en": "The 'Flame of the Youth Pledge' monument honoring this event.", "credit": "Edogang1", "license": "CC0" },
+    { "src": "app/assets/img/wiki/32f9640fce401c44.jpg", "caption_id": "Lukisan yang menggambarkan semangat persatuan dan kemerdekaan.", "caption_en": "A painting showing the spirit of unity and independence.", "credit": "Henk van Rinsum", "license": "CC BY 4.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Sumpah_Pemuda"
+}

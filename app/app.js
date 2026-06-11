@@ -17,7 +17,9 @@
     "ensiklopedia_burung_cendrawasih": 1, "ensiklopedia_candi_borobudur_1": 1,
     "budaya_alat_musik_angklung_2": 1, "budaya_tari_kecak_bali_beranimasi": 1,
     "sains_gunung_berapi_ring_of_fire_2": 1, "sains_gunung_berapi_ring_of_fire_3": 1,
-    "sains_keajaiban_energi_matahari_2": 1
+    "sains_keajaiban_energi_matahari_2": 1,
+    "pahlawan_pangeran_diponegoro_2": 1, "pahlawan_pangeran_diponegoro_beranimasi": 1,
+    "pahlawan_ki_hajar_dewantara_2": 1, "kewarganegaraan_pancasila_dasar_negara": 1
   };
   var geval = eval; // indirect eval -> runs screen scripts in global scope
 

@@ -1,0 +1,121 @@
+{
+  "id": "sejarah_proklamasi_kemerdekaan",
+  "title_id": "Proklamasi Kemerdekaan",
+  "title_en": "The Proclamation of Independence",
+  "subtitle_id": "Hari Indonesia menjadi negara merdeka!",
+  "subtitle_en": "The day Indonesia became a free country!",
+  "data_card": [
+    {
+      "icon": "calendar_today",
+      "label_id": "Kapan",
+      "label_en": "When",
+      "value_id": "Jumat, 17 Agustus 1945",
+      "value_en": "Friday, 17 August 1945"
+    },
+    {
+      "icon": "public",
+      "label_id": "Di Mana",
+      "label_en": "Where",
+      "value_id": "Jalan Pegangsaan Timur No. 56, Jakarta",
+      "value_en": "Pegangsaan Timur Street No. 56, Jakarta"
+    },
+    {
+      "icon": "groups",
+      "label_id": "Tokoh",
+      "label_en": "By",
+      "value_id": "Soekarno & Mohammad Hatta",
+      "value_en": "Soekarno & Mohammad Hatta"
+    },
+    {
+      "icon": "flag",
+      "label_id": "Makna",
+      "label_en": "Meaning",
+      "value_id": "Indonesia merdeka & berdiri sendiri",
+      "value_en": "Indonesia is free and stands on its own"
+    },
+    {
+      "icon": "celebration",
+      "label_id": "Diperingati",
+      "label_en": "Celebrated",
+      "value_id": "Setiap HUT RI, 17 Agustus",
+      "value_en": "Every Independence Day, 17 August"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "flag",
+      "h_id": "Apa Itu Proklamasi?",
+      "h_en": "What Is the Proclamation?",
+      "body_id": "Proklamasi adalah pengumuman bahwa Indonesia sudah merdeka. Pada pagi hari tanggal 17 Agustus 1945, Soekarno membacakan sebuah naskah pendek di depan banyak orang. Di sampingnya berdiri Mohammad Hatta. Sejak hari itu, Indonesia bukan lagi negara jajahan, melainkan bangsa yang bebas mengatur dirinya sendiri.",
+      "body_en": "The Proclamation is the announcement that Indonesia was now free. On the morning of 17 August 1945, Soekarno read out a short text in front of many people. Beside him stood Mohammad Hatta. From that day on, Indonesia was no longer a colony, but a nation free to govern itself."
+    },
+    {
+      "icon": "history_edu",
+      "h_id": "Mengapa Terjadi Saat Itu?",
+      "h_en": "Why Did It Happen Then?",
+      "body_id": "Selama ratusan tahun, Indonesia dijajah oleh bangsa lain. Pada tahun 1945, Jepang yang sedang berkuasa kalah dalam perang besar dunia. Para pemuda mendesak Soekarno dan Hatta agar segera memproklamasikan kemerdekaan. Mereka tidak mau menunggu pemberian dari siapa pun. Kemerdekaan harus diraih oleh bangsa Indonesia sendiri.",
+      "body_en": "For hundreds of years, Indonesia was ruled by other nations. In 1945, Japan, who was in power, lost a great world war. Young people urged Soekarno and Hatta to declare independence right away. They did not want to wait for it to be handed to them. Freedom had to be won by the Indonesian people themselves."
+    },
+    {
+      "icon": "groups",
+      "h_id": "Soekarno & Hatta",
+      "h_en": "Soekarno & Hatta",
+      "body_id": "Soekarno dan Mohammad Hatta adalah dua pemimpin pergerakan. Mereka berdua menandatangani naskah Proklamasi atas nama bangsa Indonesia. Sehari kemudian, Soekarno diangkat menjadi presiden pertama dan Hatta menjadi wakil presiden pertama. Mereka sering disebut sebagai Bapak Proklamator Indonesia.",
+      "body_en": "Soekarno and Mohammad Hatta were two leaders of the freedom movement. The two of them signed the Proclamation text in the name of the Indonesian people. A day later, Soekarno became the first president and Hatta the first vice-president. They are often called the Founding Fathers, the Proclaimers of Indonesia."
+    },
+    {
+      "icon": "edit_note",
+      "h_id": "Naskah yang Bersejarah",
+      "h_en": "A Historic Text",
+      "body_id": "Naskah Proklamasi sangat pendek, hanya dua kalimat. Mula-mula tulisan itu dibuat dengan tangan, lalu diketik dengan mesin tik. Walaupun pendek, kalimat itu mengubah sejarah selamanya. Kata-katanya berisi pernyataan bahwa rakyat Indonesia menyatakan kemerdekaannya.",
+      "body_en": "The Proclamation text is very short, only two sentences. At first it was written by hand, then typed on a typewriter. Even though it is short, those sentences changed history forever. The words declare that the people of Indonesia announce their independence."
+    },
+    {
+      "icon": "celebration",
+      "h_id": "Dirayakan Setiap Tahun",
+      "h_en": "Celebrated Every Year",
+      "body_id": "Setiap tanggal 17 Agustus, seluruh Indonesia merayakan Hari Ulang Tahun Kemerdekaan. Bendera Merah Putih dikibarkan di mana-mana. Anak-anak ikut lomba balap karung, panjat pinang, dan makan kerupuk. Upacara bendera diadakan untuk mengenang jasa para pahlawan.",
+      "body_en": "Every 17 August, all of Indonesia celebrates Independence Day. The Red-and-White flag is raised everywhere. Children join sack races, the greasy-pole climb, and the cracker-eating game. A flag ceremony is held to remember the heroes' sacrifices."
+    }
+  ],
+  "facts": [
+    { "id": "Proklamasi dibacakan oleh Soekarno pada pukul 10 pagi, 17 Agustus 1945.", "en": "The Proclamation was read by Soekarno at 10 in the morning on 17 August 1945." },
+    { "id": "Naskah Proklamasi hanya terdiri dari dua kalimat pendek.", "en": "The Proclamation text is made up of only two short sentences." },
+    { "id": "Soekarno menjadi presiden pertama dan Hatta wakil presiden pertama Indonesia.", "en": "Soekarno became the first president and Hatta the first vice-president of Indonesia." },
+    { "id": "Bendera Merah Putih pertama dijahit oleh Fatmawati, istri Soekarno.", "en": "The first Red-and-White flag was sewn by Fatmawati, Soekarno's wife." },
+    { "id": "Tanggal 17 Agustus dirayakan sebagai HUT Kemerdekaan Republik Indonesia.", "en": "17 August is celebrated as the Independence Day of the Republic of Indonesia." },
+    { "id": "Foto Soekarno membaca Proklamasi diam-diam diabadikan oleh fotografer Frans Mendur.", "en": "The photo of Soekarno reading the Proclamation was secretly captured by photographer Frans Mendur." }
+  ],
+  "glossary": [
+    { "term": "Proklamasi", "def_id": "Pengumuman resmi kepada dunia bahwa sebuah bangsa sudah merdeka.", "def_en": "An official announcement to the world that a nation is now free." },
+    { "term": "Kemerdekaan", "def_id": "Keadaan bebas dari penjajahan dan bisa mengatur diri sendiri.", "def_en": "Being free from colonial rule and able to govern oneself." },
+    { "term": "Penjajahan", "def_id": "Saat sebuah negara dikuasai dan diperintah oleh bangsa lain.", "def_en": "When a country is controlled and ruled by another nation." },
+    { "term": "Naskah", "def_id": "Tulisan atau teks penting, seperti teks Proklamasi.", "def_en": "An important piece of writing or text, like the Proclamation text." },
+    { "term": "Merah Putih", "def_id": "Nama bendera Indonesia yang berwarna merah dan putih.", "def_en": "The name of Indonesia's flag, colored red and white." },
+    { "term": "Proklamator", "def_id": "Orang yang membacakan dan menyatakan proklamasi kemerdekaan.", "def_en": "The person who reads out and declares the proclamation of independence." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/32cf4b60930174d0.jpg",
+      "caption_id": "Soekarno membacakan teks Proklamasi pada 17 Agustus 1945, dengan Mohammad Hatta berdiri di kanannya.",
+      "caption_en": "Soekarno reads the Proclamation text on 17 August 1945, with Mohammad Hatta standing to his right.",
+      "credit": "Frans Mendur (1913-1971)",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/70f001e6664e3b71.jpg",
+      "caption_id": "Gedung tempat naskah Proklamasi disusun, kini menjadi Museum Perumusan Naskah Proklamasi di Jakarta.",
+      "caption_en": "The building where the Proclamation text was drafted, now the Museum of the Drafting of the Proclamation in Jakarta.",
+      "credit": "Davidelit",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/d8e56554ff015153.jpg",
+      "caption_id": "Tugu peringatan Proklamasi di Pegangsaan Timur, Jakarta, pada foto lama sekitar tahun 1950-an.",
+      "caption_en": "The Proclamation monument at Pegangsaan Timur, Jakarta, in an old photo from around the 1950s.",
+      "credit": "Kementerian Penerangan (KEMPEN)",
+      "license": "Public domain"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Proklamasi_Kemerdekaan_Indonesia"
+}

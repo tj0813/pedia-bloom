@@ -1,0 +1,41 @@
+{
+  "id": "pahlawan_bung_tomo",
+  "title_id": "Bung Tomo",
+  "title_en": "Bung Tomo",
+  "subtitle_id": "Pembakar semangat arek-arek Surabaya",
+  "subtitle_en": "The fiery voice of Surabaya's youth",
+  "data_card": [
+    { "icon": "cake", "label_id": "Lahir", "label_en": "Born", "value_id": "3 Oktober 1920, Surabaya", "value_en": "3 October 1920, Surabaya" },
+    { "icon": "public", "label_id": "Asal", "label_en": "From", "value_id": "Surabaya, Jawa Timur", "value_en": "Surabaya, East Java" },
+    { "icon": "campaign", "label_id": "Dikenal", "label_en": "Known for", "value_id": "Orasi yang membakar semangat", "value_en": "His rousing speeches" },
+    { "icon": "history_edu", "label_id": "Peristiwa", "label_en": "Event", "value_id": "Pertempuran 10 November 1945", "value_en": "Battle of Surabaya, 10 Nov 1945" },
+    { "icon": "military_tech", "label_id": "Gelar", "label_en": "Title", "value_id": "Pahlawan Nasional (2008)", "value_en": "National Hero (2008)" }
+  ],
+  "sections": [
+    { "icon": "person", "h_id": "Siapa Bung Tomo?", "h_en": "Who Was Bung Tomo?", "body_id": "Bung Tomo bernama asli Sutomo. Ia adalah pejuang dari Surabaya yang terkenal saat Indonesia berjuang mempertahankan kemerdekaan. Suaranya yang lantang di radio membuat rakyat berani melawan penjajah. Karena itu ia dijuluki 'pembakar semangat'.", "body_en": "Bung Tomo's real name was Sutomo. He was a fighter from Surabaya, famous when Indonesia struggled to keep its freedom. His powerful voice on the radio gave people the courage to stand up to the colonizers. That is why he was called the one who 'lit the fire of spirit'." },
+    { "icon": "school", "h_id": "Masa Muda yang Gigih", "h_en": "A Hard-working Youth", "body_id": "Bung Tomo tumbuh dalam keluarga yang menghargai pendidikan, tapi sempat berhenti sekolah dan bekerja untuk membantu keluarga. Ia rajin dan pemberani. Saat berusia 17 tahun, ia menjadi salah satu anak Indonesia pertama yang meraih tingkat Pramuka Garuda, tingkat tertinggi dalam kepanduan.", "body_en": "Bung Tomo grew up in a family that valued education, but he had to stop school and work to help his family. He was hard-working and brave. At age 17 he became one of the first Indonesian children to reach Garuda Scout, the highest rank in scouting." },
+    { "icon": "campaign", "h_id": "Pertempuran 10 November", "h_en": "The Battle of 10 November", "body_id": "Pada November 1945, pasukan asing datang ke Surabaya. Lewat radio, Bung Tomo berseru agar rakyat tidak menyerah. Arek-arek (anak-anak muda) Surabaya pun berjuang dengan gagah berani. Peristiwa ini menjadi salah satu pertempuran paling penting dalam sejarah Indonesia.", "body_en": "In November 1945, foreign troops came to Surabaya. Over the radio, Bung Tomo called on people not to give up. The young people of Surabaya fought bravely. This became one of the most important battles in Indonesian history." },
+    { "icon": "military_tech", "h_id": "Hari Pahlawan", "h_en": "Heroes' Day", "body_id": "Karena keberaniannya, tanggal 10 November diperingati sebagai Hari Pahlawan setiap tahun. Bung Tomo diangkat menjadi Pahlawan Nasional pada tahun 2008. Sebuah stadion besar di Surabaya juga diberi nama Gelora Bung Tomo untuk mengenangnya.", "body_en": "Because of his bravery, 10 November is remembered as Heroes' Day every year. Bung Tomo was named a National Hero in 2008. A big stadium in Surabaya is also named Gelora Bung Tomo in his honor." },
+    { "icon": "volunteer_activism", "h_id": "Yang Bisa Kita Teladani", "h_en": "What We Can Learn", "body_id": "Dari Bung Tomo kita belajar keberanian dan cinta tanah air. Ia menunjukkan bahwa kata-kata yang baik bisa menyemangati banyak orang. Kita bisa meneladaninya dengan berani membela kebenaran dan mencintai Indonesia.", "body_en": "From Bung Tomo we learn courage and love for our homeland. He showed that good words can inspire many people. We can follow his example by bravely standing up for what is right and loving Indonesia." }
+  ],
+  "facts": [
+    { "id": "Nama asli Bung Tomo adalah Sutomo.", "en": "Bung Tomo's real name was Sutomo." },
+    { "id": "Usia 17 tahun ia meraih Pramuka Garuda, tingkat tertinggi kepanduan.", "en": "At 17 he reached Garuda Scout, scouting's highest rank." },
+    { "id": "Suaranya di radio membakar semangat rakyat Surabaya.", "en": "His radio voice fired up the people of Surabaya." },
+    { "id": "10 November diperingati sebagai Hari Pahlawan.", "en": "10 November is remembered as Heroes' Day." },
+    { "id": "Stadion Gelora Bung Tomo di Surabaya dinamai untuk mengenangnya.", "en": "Surabaya's Gelora Bung Tomo Stadium is named in his honor." },
+    { "id": "Ia menjadi Pahlawan Nasional pada tahun 2008.", "en": "He was named a National Hero in 2008." }
+  ],
+  "glossary": [
+    { "term": "Pahlawan Nasional", "def_id": "Gelar kehormatan untuk orang yang sangat berjasa bagi bangsa dan negara.", "def_en": "An honorary title for someone who served the nation greatly." },
+    { "term": "Orasi", "def_id": "Pidato yang berapi-api untuk membangkitkan semangat.", "def_en": "A fiery speech meant to stir up spirit." },
+    { "term": "Kemerdekaan", "def_id": "Keadaan bebas dari penjajahan dan menentukan nasib sendiri.", "def_en": "Being free from colonial rule and choosing one's own path." },
+    { "term": "Arek", "def_id": "Sebutan khas Surabaya untuk anak muda.", "def_en": "A Surabaya word for young people." }
+  ],
+  "gallery": [
+    { "src": "app/assets/img/wiki/dbf0432c3c7bb06b.jpg", "caption_id": "Foto terkenal Bung Tomo, sang pembakar semangat.", "caption_en": "The famous photo of Bung Tomo, who fired up the people's spirit.", "credit": "Alex Mendur", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/2136c5c0c3c67da2.jpg", "caption_id": "Bung Tomo saat menjadi wakil rakyat tahun 1955.", "caption_en": "Bung Tomo as a people's representative in 1955.", "credit": "People's Representative Council of Indonesia", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/683b5803f350922d.jpg", "caption_id": "Stadion Gelora Bung Tomo di Surabaya, dinamai untuk menghormatinya.", "caption_en": "Gelora Bung Tomo Stadium in Surabaya, named in his honor.", "credit": "d.limantara", "license": "CC BY-SA 4.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Sutomo"
+}

@@ -1,0 +1,121 @@
+{
+  "id": "pahlawan_pangeran_diponegoro_1",
+  "title_id": "Pangeran Diponegoro",
+  "title_en": "Prince Diponegoro",
+  "subtitle_id": "Pangeran Jawa pemberani yang memimpin Perang Jawa melawan penjajah Belanda demi membela rakyatnya.",
+  "subtitle_en": "A brave Javanese prince who led the Java War against Dutch colonizers to defend his people.",
+  "data_card": [
+    {
+      "icon": "cake",
+      "label_id": "Lahir",
+      "label_en": "Born",
+      "value_id": "11 November 1785 di Yogyakarta",
+      "value_en": "11 November 1785 in Yogyakarta"
+    },
+    {
+      "icon": "public",
+      "label_id": "Asal",
+      "label_en": "From",
+      "value_id": "Yogyakarta, Pulau Jawa",
+      "value_en": "Yogyakarta, Java Island"
+    },
+    {
+      "icon": "military_tech",
+      "label_id": "Dikenal sebagai",
+      "label_en": "Known as",
+      "value_id": "Pemimpin Perang Jawa (1825-1830)",
+      "value_en": "Leader of the Java War (1825-1830)"
+    },
+    {
+      "icon": "volunteer_activism",
+      "label_id": "Jasa",
+      "label_en": "Legacy",
+      "value_id": "Lima tahun berjuang membela rakyat dari penjajah",
+      "value_en": "Five years of fighting to defend the people from colonizers"
+    },
+    {
+      "icon": "account_balance",
+      "label_id": "Gelar",
+      "label_en": "Title",
+      "value_id": "Pahlawan Nasional Indonesia",
+      "value_en": "National Hero of Indonesia"
+    },
+    {
+      "icon": "history_edu",
+      "label_id": "Wafat",
+      "label_en": "Died",
+      "value_id": "8 Januari 1855 di Makassar",
+      "value_en": "8 January 1855 in Makassar"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "person",
+      "h_id": "Siapakah Pangeran Diponegoro?",
+      "h_en": "Who Was Prince Diponegoro?",
+      "body_id": "Pangeran Diponegoro adalah seorang pangeran dari Keraton Yogyakarta yang lahir pada tahun 1785. Ayahnya adalah Sultan Hamengkubuwana III, raja Yogyakarta. Walaupun ia seorang bangsawan, Diponegoro lebih suka tinggal bersama rakyat biasa di desa Tegalrejo daripada di istana yang mewah. Ia dikenal sebagai pribadi yang cerdas, taat beragama, dan sangat peduli kepada rakyat kecil.",
+      "body_en": "Prince Diponegoro was a prince of the Yogyakarta palace, born in 1785. His father was Sultan Hamengkubuwana III, the king of Yogyakarta. Even though he was a nobleman, Diponegoro preferred to live among ordinary people in the village of Tegalrejo rather than in the grand palace. He was known as a clever, deeply religious person who cared greatly for ordinary people."
+    },
+    {
+      "icon": "favorite",
+      "h_id": "Dekat dengan Rakyat",
+      "h_en": "Close to the People",
+      "body_id": "Sejak kecil, Diponegoro diasuh oleh nenek buyutnya di Tegalrejo. Di sana ia diajari menanam padi dan ikut bekerja bersama para petani. Karena itulah ia mengerti betul betapa berat hidup rakyat Jawa di bawah tekanan pemerintah penjajah. Ia juga sangat pandai menunggang kuda. Kuda hitamnya yang gagah bernama Kiai Gentayu, dan keahliannya berkuda kelak sangat membantunya saat berperang.",
+      "body_en": "From childhood, Diponegoro was raised by his great-grandmother in Tegalrejo. There he was taught to plant rice and worked alongside the farmers. That is why he understood so well how hard life was for the Javanese people under the colonial government. He was also a skilled horse rider. His mighty black horse was named Kiai Gentayu, and his riding skill would later help him greatly in battle."
+    },
+    {
+      "icon": "military_tech",
+      "h_id": "Perang Jawa Dimulai",
+      "h_en": "The Java War Begins",
+      "body_id": "Pada tahun 1825, Diponegoro merasa marah karena Belanda memperlakukan rakyat dengan tidak adil dan membuat jalan melewati tanah miliknya tanpa izin. Maka ia bangkit memimpin perlawanan yang disebut Perang Jawa. Ribuan rakyat bergabung di bawah panji-panjinya. Selama lima tahun, dari 1825 sampai 1830, pasukan Diponegoro bertempur dengan berani melawan tentara Belanda di berbagai pelosok Pulau Jawa.",
+      "body_en": "In 1825, Diponegoro became angry because the Dutch treated the people unfairly and built a road across his land without permission. So he rose to lead a resistance called the Java War. Thousands of people joined under his banner. For five years, from 1825 to 1830, Diponegoro's forces fought bravely against the Dutch army across many corners of Java Island."
+    },
+    {
+      "icon": "flag",
+      "h_id": "Pemimpin yang Cerdik",
+      "h_en": "A Clever Leader",
+      "body_id": "Diponegoro adalah pemimpin yang cerdik dan sulit ditangkap. Ia hafal seluruh medan, hutan, dan sungai di Jawa. Saat dikejar musuh, ia bisa menyeberangi Sungai Progo yang lebar lewat tempat-tempat dangkal yang hanya ia ketahui. Karena keberaniannya, ia menjadi pemimpin yang sangat dicintai rakyat dan ditakuti penjajah. Perjuangannya membuat pasukan Belanda kewalahan selama bertahun-tahun.",
+      "body_en": "Diponegoro was a clever leader who was hard to capture. He knew by heart all the terrain, forests, and rivers of Java. When chased by the enemy, he could cross the wide Progo River through shallow spots that only he knew. Because of his courage, he became a leader deeply loved by the people and feared by the colonizers. His struggle kept the Dutch troops in difficulty for many years."
+    },
+    {
+      "icon": "auto_stories",
+      "h_id": "Pahlawan yang Dikenang",
+      "h_en": "A Hero Remembered",
+      "body_id": "Setelah lima tahun berjuang, Diponegoro akhirnya ditangkap melalui sebuah perundingan dan diasingkan jauh ke Manado, lalu ke Makassar. Ia wafat di Makassar pada tahun 1855. Meskipun begitu, semangatnya tidak pernah padam. Pangeran Diponegoro dihormati sebagai Pahlawan Nasional Indonesia, dan kisah keberaniannya menjadi sumber semangat bagi para pejuang kemerdekaan Indonesia hingga hari ini.",
+      "body_en": "After five years of struggle, Diponegoro was finally captured through a negotiation and exiled far away to Manado, then to Makassar. He passed away in Makassar in 1855. Even so, his spirit never faded. Prince Diponegoro is honored as a National Hero of Indonesia, and the story of his courage became a source of inspiration for Indonesia's freedom fighters to this day."
+    }
+  ],
+  "facts": [
+    { "id": "Perang Jawa yang dipimpin Diponegoro berlangsung selama lima tahun, dari 1825 sampai 1830.", "en": "The Java War led by Diponegoro lasted five years, from 1825 to 1830." },
+    { "id": "Nama \"Diponegoro\" berarti seseorang yang memberi pencerahan dan kemakmuran kepada negara.", "en": "The name \"Diponegoro\" means a person who brings enlightenment and prosperity to the country." },
+    { "id": "Kuda hitam kesayangannya yang gagah bernama Kiai Gentayu.", "en": "His beloved mighty black horse was named Kiai Gentayu." },
+    { "id": "Walaupun seorang pangeran, ia lebih suka tinggal bersama rakyat di desa Tegalrejo.", "en": "Although he was a prince, he preferred to live among the people in the village of Tegalrejo." },
+    { "id": "Diponegoro diasingkan ke Manado dan Makassar setelah tertangkap pada tahun 1830.", "en": "Diponegoro was exiled to Manado and Makassar after being captured in 1830." },
+    { "id": "Ia dihormati sebagai salah satu Pahlawan Nasional Indonesia yang paling terkenal.", "en": "He is honored as one of Indonesia's most famous National Heroes." }
+  ],
+  "glossary": [
+    { "term": "Pangeran", "def_id": "Anak laki-laki seorang raja atau sultan dari keluarga kerajaan.", "def_en": "The son of a king or sultan, a member of the royal family." },
+    { "term": "Penjajah", "def_id": "Bangsa asing yang menguasai dan menindas negeri lain.", "def_en": "A foreign nation that takes control of and oppresses another land." },
+    { "term": "Perang Jawa", "def_id": "Perlawanan besar rakyat Jawa melawan Belanda yang dipimpin Diponegoro.", "def_en": "The great resistance of the Javanese people against the Dutch, led by Diponegoro." },
+    { "term": "Keraton", "def_id": "Istana tempat tinggal raja atau sultan di Jawa.", "def_en": "The palace where a king or sultan lives in Java." },
+    { "term": "Diasingkan", "def_id": "Dipaksa pergi jauh dari kampung halaman sebagai hukuman.", "def_en": "Forced to live far away from one's homeland as a punishment." },
+    { "term": "Pahlawan Nasional", "def_id": "Gelar kehormatan untuk orang yang sangat berjasa bagi bangsa.", "def_en": "An honorary title for someone who has greatly served the nation." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/2bad97a1315842df.jpg",
+      "caption_id": "Potret Pangeran Diponegoro mengenakan sorban dan keris di pinggangnya, gambar terkenal dari tahun 1835.",
+      "caption_en": "A portrait of Prince Diponegoro wearing a turban with a kris dagger at his waist, a famous image from 1835.",
+      "credit": "Lithograph by C. C. A. Last (1835), after a drawing by A. J. Bik",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/b316a77cff52a889.jpg",
+      "caption_id": "Lukisan terkenal karya Raden Saleh yang menggambarkan saat Pangeran Diponegoro (berjubah putih di tengah) ditangkap Belanda.",
+      "caption_en": "A famous painting by Raden Saleh showing the moment Prince Diponegoro (in white robes at the center) was captured by the Dutch.",
+      "credit": "Raden Saleh",
+      "license": "Public domain"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Diponegoro"
+}

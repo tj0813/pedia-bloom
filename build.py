@@ -166,6 +166,11 @@ THUMB_OVERRIDE = {
     "profesi_dokter":                     "app/assets/img/illus-dokter.svg",
     "profesi_guru":                       "app/assets/img/illus-guru.svg",
     "profesi_petani":                     "app/assets/img/illus-petani.svg",
+    # Heroes: real public-domain portrait as hero (accurate likeness for real people).
+    "pahlawan_ra_kartini":                "app/assets/img/wiki/5e77550865536d42.jpg",
+    "pahlawan_jenderal_sudirman":         "app/assets/img/wiki/9f71f5a427d3deff.jpg",
+    "pahlawan_bung_tomo":                 "app/assets/img/wiki/dbf0432c3c7bb06b.jpg",
+    "pahlawan_pangeran_diponegoro_1":     "app/assets/img/wiki/2bad97a1315842df.jpg",
     "hub_luar_angkasa":                "app/assets/img/illus-luar-angkasa.svg",
     "misi_netiket_pahlawan_digital":   "app/assets/img/illus-netiket.svg",
     "pusat_budaya_tradisi":            "app/assets/img/illus-budaya.svg",

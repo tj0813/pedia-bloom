@@ -1,0 +1,44 @@
+{
+  "id": "pahlawan_ki_hajar_dewantara_1",
+  "title_id": "Ki Hajar Dewantara",
+  "title_en": "Ki Hajar Dewantara",
+  "subtitle_id": "Bapak Pendidikan Nasional Indonesia",
+  "subtitle_en": "Father of Indonesia's national education",
+  "data_card": [
+    { "icon": "cake", "label_id": "Lahir", "label_en": "Born", "value_id": "2 Mei 1889, Yogyakarta", "value_en": "2 May 1889, Yogyakarta" },
+    { "icon": "account_balance", "label_id": "Asal", "label_en": "From", "value_id": "Keluarga bangsawan Pakualaman", "value_en": "The Pakualaman noble family" },
+    { "icon": "school", "label_id": "Dikenal", "label_en": "Known as", "value_id": "Bapak Pendidikan Nasional", "value_en": "Father of National Education" },
+    { "icon": "history_edu", "label_id": "Jasa", "label_en": "Legacy", "value_id": "Pendiri Taman Siswa", "value_en": "Founder of Taman Siswa schools" },
+    { "icon": "format_quote", "label_id": "Semboyan", "label_en": "Motto", "value_id": "Tut Wuri Handayani", "value_en": "Tut Wuri Handayani" },
+    { "icon": "military_tech", "label_id": "Gelar", "label_en": "Title", "value_id": "Pahlawan Nasional", "value_en": "National Hero" }
+  ],
+  "sections": [
+    { "icon": "person", "h_id": "Siapa Ki Hajar Dewantara?", "h_en": "Who Was Ki Hajar Dewantara?", "body_id": "Nama aslinya Raden Mas Soewardi Soerjaningrat. Ia lahir dari keluarga bangsawan, tapi ia berjuang agar SEMUA anak Indonesia bisa bersekolah, bukan hanya anak orang kaya atau bangsawan. Karena jasanya, ia disebut Bapak Pendidikan Nasional.", "body_en": "His real name was Raden Mas Soewardi Soerjaningrat. He was born into a noble family, but he fought so that ALL Indonesian children could go to school, not only the rich or the nobles. For this, he is called the Father of National Education." },
+    { "icon": "edit", "h_id": "Berjuang Lewat Tulisan", "h_en": "Fighting With Words", "body_id": "Saat muda, Ki Hajar adalah wartawan yang berani. Ia menulis kritik terkenal berjudul 'Seandainya Aku Seorang Belanda'. Tulisannya membuat penjajah marah, sehingga ia diasingkan ke negeri Belanda bersama dua sahabatnya — mereka dikenal sebagai 'Tiga Serangkai'.", "body_en": "As a young man, Ki Hajar was a brave journalist. He wrote a famous criticism titled 'If I Were a Dutchman'. His writing angered the colonizers, so he was exiled to the Netherlands with two friends — together they were known as the 'Three Comrades'." },
+    { "icon": "school", "h_id": "Mendirikan Taman Siswa", "h_en": "Founding Taman Siswa", "body_id": "Sepulang dari pengasingan, ia mendirikan sekolah bernama Taman Siswa pada tahun 1922. Ini sekolah pertama yang memberi anak-anak pribumi kesempatan belajar. Baginya, pendidikan adalah jalan untuk memerdekakan bangsa.", "body_en": "After returning from exile, he founded a school called Taman Siswa in 1922. It was the first school that gave native Indonesian children the chance to learn. To him, education was the path to freeing the nation." },
+    { "icon": "format_quote", "h_id": "Tut Wuri Handayani", "h_en": "Tut Wuri Handayani", "body_id": "Ki Hajar menciptakan semboyan 'Tut Wuri Handayani', artinya 'dari belakang memberi dorongan'. Seorang guru sebaiknya mendukung muridnya dari belakang. Semboyan ini sekarang menjadi lambang pendidikan Indonesia. Hari lahirnya, 2 Mei, diperingati sebagai Hari Pendidikan Nasional.", "body_en": "Ki Hajar created the motto 'Tut Wuri Handayani', meaning 'from behind, giving encouragement'. A teacher should support students from behind. This motto is now the symbol of Indonesian education. His birthday, 2 May, is celebrated as National Education Day." },
+    { "icon": "volunteer_activism", "h_id": "Yang Bisa Kita Teladani", "h_en": "What We Can Learn", "body_id": "Dari Ki Hajar kita belajar bahwa belajar itu hak setiap anak. Kita bisa meneladaninya dengan rajin belajar, menghargai guru, dan menolong teman agar sama-sama pintar.", "body_en": "From Ki Hajar we learn that learning is every child's right. We can follow his example by studying hard, respecting teachers, and helping friends so everyone can grow smart together." }
+  ],
+  "facts": [
+    { "id": "Nama aslinya Raden Mas Soewardi Soerjaningrat.", "en": "His real name was Raden Mas Soewardi Soerjaningrat." },
+    { "id": "Ia mendirikan sekolah Taman Siswa pada tahun 1922.", "en": "He founded the Taman Siswa schools in 1922." },
+    { "id": "Hari lahirnya, 2 Mei, menjadi Hari Pendidikan Nasional.", "en": "His birthday, 2 May, is National Education Day." },
+    { "id": "Semboyannya 'Tut Wuri Handayani' menjadi lambang pendidikan Indonesia.", "en": "His motto 'Tut Wuri Handayani' is the symbol of Indonesian education." },
+    { "id": "Potretnya pernah dipakai pada uang kertas Rp20.000.", "en": "His portrait once appeared on the 20,000-rupiah banknote." },
+    { "id": "Ia menjadi Pahlawan Nasional Indonesia yang ke-2.", "en": "He was Indonesia's 2nd-ever National Hero." }
+  ],
+  "glossary": [
+    { "term": "Taman Siswa", "def_id": "Sekolah yang didirikan Ki Hajar agar anak pribumi bisa belajar.", "def_en": "The schools Ki Hajar founded so native children could learn." },
+    { "term": "Semboyan", "def_id": "Kalimat pendek yang menjadi pegangan atau semangat.", "def_en": "A short saying that becomes a guiding spirit." },
+    { "term": "Pribumi", "def_id": "Penduduk asli suatu daerah atau negeri.", "def_en": "The native people of a land." },
+    { "term": "Pengasingan", "def_id": "Dijauhkan atau dibuang ke tempat lain sebagai hukuman.", "def_en": "Being sent far away to another place as punishment." },
+    { "term": "Pahlawan Nasional", "def_id": "Gelar kehormatan bagi orang yang sangat berjasa bagi bangsa.", "def_en": "An honorary title for someone who served the nation greatly." }
+  ],
+  "gallery": [
+    { "src": "app/assets/img/wiki/22d3507f2d88dc56.jpg", "caption_id": "Ki Hajar Dewantara dengan peci dan kacamata bundar khasnya.", "caption_en": "Ki Hajar Dewantara with his trademark cap and round glasses.", "credit": "Uncredited", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/973afd69a6198ea5.jpg", "caption_id": "Ki Hajar bersama murid-muridnya di Taman Siswa.", "caption_en": "Ki Hajar with his students at Taman Siswa.", "credit": "Uncredited", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/c0c9ce6dcc0de3c1.jpg", "caption_id": "Foto Ki Hajar Dewantara di masa mudanya.", "caption_en": "A photo of Ki Hajar Dewantara in his younger years.", "credit": "Uncredited", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/368d392ac84e5b40.jpg", "caption_id": "'Tiga Serangkai': Douwes Dekker, Tjipto Mangoenkoesoemo, dan Soewardi.", "caption_en": "The 'Three Comrades': Douwes Dekker, Tjipto Mangoenkoesoemo, and Soewardi.", "credit": "Uncredited", "license": "Public domain" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Ki_Hadjar_Dewantara"
+}

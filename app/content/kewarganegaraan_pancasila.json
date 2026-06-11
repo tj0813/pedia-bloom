@@ -1,0 +1,40 @@
+{
+  "id": "kewarganegaraan_pancasila",
+  "title_id": "Pancasila",
+  "title_en": "Pancasila",
+  "subtitle_id": "Lima dasar negara Indonesia",
+  "subtitle_en": "The five foundations of Indonesia",
+  "data_card": [
+    { "icon": "account_balance", "label_id": "Apa itu", "label_en": "What it is", "value_id": "Dasar negara Indonesia", "value_en": "The foundation of the Indonesian state" },
+    { "icon": "looks_5", "label_id": "Jumlah sila", "label_en": "Number of principles", "value_id": "5 sila", "value_en": "5 principles" },
+    { "icon": "shield", "label_id": "Lambang", "label_en": "Symbol", "value_id": "Garuda Pancasila", "value_en": "Garuda Pancasila" },
+    { "icon": "person", "label_id": "Pencetus", "label_en": "Proposed by", "value_id": "Soekarno, 1 Juni 1945", "value_en": "Soekarno, 1 June 1945" },
+    { "icon": "translate", "label_id": "Arti nama", "label_en": "Name meaning", "value_id": "Panca = lima, Sila = asas", "value_en": "Panca = five, Sila = principle" }
+  ],
+  "sections": [
+    { "icon": "auto_stories", "h_id": "Apa Itu Pancasila?", "h_en": "What Is Pancasila?", "body_id": "Pancasila adalah dasar negara Republik Indonesia. Kata 'Pancasila' berasal dari bahasa Sanskerta: 'panca' artinya lima dan 'sila' artinya asas atau dasar. Jadi Pancasila berarti lima dasar yang menjadi pedoman hidup berbangsa dan bernegara.", "body_en": "Pancasila is the foundation of the Republic of Indonesia. The word 'Pancasila' comes from Sanskrit: 'panca' means five and 'sila' means principle. So Pancasila means the five principles that guide our life as a nation." },
+    { "icon": "history_edu", "h_id": "Lahirnya Pancasila", "h_en": "The Birth of Pancasila", "body_id": "Saat menyiapkan kemerdekaan tahun 1945, para tokoh bangsa memikirkan apa dasar negara Indonesia. Pada 1 Juni 1945, Soekarno menyampaikan gagasan lima dasar dan menamainya 'Pancasila'. Karena itu, 1 Juni diperingati sebagai Hari Lahir Pancasila.", "body_en": "While preparing for independence in 1945, the nation's leaders thought about what Indonesia's foundation should be. On 1 June 1945, Soekarno presented the idea of five principles and named it 'Pancasila'. That is why 1 June is celebrated as Pancasila Day." },
+    { "icon": "format_list_numbered", "h_id": "Lima Sila Pancasila", "h_en": "The Five Principles", "body_id": "Sila 1: Ketuhanan Yang Maha Esa. Sila 2: Kemanusiaan yang adil dan beradab. Sila 3: Persatuan Indonesia. Sila 4: Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan. Sila 5: Keadilan sosial bagi seluruh rakyat Indonesia.", "body_en": "1st: Belief in the one almighty God. 2nd: A just and civilized humanity. 3rd: The unity of Indonesia. 4th: Democracy led by wisdom through deliberation. 5th: Social justice for all Indonesians." },
+    { "icon": "shield", "h_id": "Lambang Garuda", "h_en": "The Garuda Symbol", "body_id": "Lambang Pancasila adalah burung Garuda yang gagah. Di dadanya ada perisai berisi lima gambar yang mewakili kelima sila: bintang, rantai, pohon beringin, kepala banteng, serta padi dan kapas. Garuda juga membawa pita bertuliskan 'Bhinneka Tunggal Ika' — berbeda-beda tetapi tetap satu.", "body_en": "The symbol of Pancasila is the mighty Garuda bird. On its chest is a shield with five pictures for the five principles: a star, a chain, a banyan tree, a buffalo head, and rice with cotton. The Garuda also carries a ribbon reading 'Bhinneka Tunggal Ika' — different yet still one." },
+    { "icon": "volunteer_activism", "h_id": "Pancasila dalam Hidup Kita", "h_en": "Pancasila in Our Lives", "body_id": "Kita bisa mengamalkan Pancasila setiap hari: berdoa, menyayangi sesama, menjaga persatuan, suka bermusyawarah, dan berlaku adil. Pancasila membuat Indonesia yang beragam tetap rukun dan bersatu.", "body_en": "We can live out Pancasila every day: praying, caring for others, keeping unity, discussing together, and being fair. Pancasila keeps our diverse Indonesia peaceful and united." }
+  ],
+  "facts": [
+    { "id": "'Pancasila' berasal dari bahasa Sanskerta: panca (lima) + sila (asas).", "en": "'Pancasila' comes from Sanskrit: panca (five) + sila (principle)." },
+    { "id": "1 Juni diperingati sebagai Hari Lahir Pancasila.", "en": "1 June is celebrated as the Birthday of Pancasila." },
+    { "id": "Soekarno yang pertama memperkenalkan nama 'Pancasila'.", "en": "Soekarno was the first to introduce the name 'Pancasila'." },
+    { "id": "Lambangnya adalah burung Garuda Pancasila.", "en": "Its symbol is the Garuda Pancasila bird." },
+    { "id": "Garuda membawa semboyan 'Bhinneka Tunggal Ika'.", "en": "The Garuda carries the motto 'Bhinneka Tunggal Ika' (unity in diversity)." }
+  ],
+  "glossary": [
+    { "term": "Dasar negara", "def_id": "Pedoman utama yang menjadi pegangan sebuah negara.", "def_en": "The main guide a country is built upon." },
+    { "term": "Sila", "def_id": "Asas atau dasar; Pancasila punya lima sila.", "def_en": "A principle; Pancasila has five of them." },
+    { "term": "Garuda", "def_id": "Burung gagah yang menjadi lambang negara Indonesia.", "def_en": "The mighty bird that is Indonesia's national emblem." },
+    { "term": "Bhinneka Tunggal Ika", "def_id": "Semboyan yang berarti 'berbeda-beda tetapi tetap satu'.", "def_en": "A motto meaning 'different yet still one'." },
+    { "term": "Musyawarah", "def_id": "Berunding bersama untuk mencapai keputusan.", "def_en": "Discussing together to reach a decision." }
+  ],
+  "gallery": [
+    { "src": "app/assets/img/wiki/cde6430545ee68c5.jpg", "caption_id": "Garuda Pancasila dengan lima lambang sila di perisainya.", "caption_en": "The Garuda Pancasila with the five principle symbols on its shield.", "credit": "Government of Indonesia", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/82d54b3a965df50a.png", "caption_id": "Lambang Garuda Pancasila, lambang negara Indonesia.", "caption_en": "The Garuda Pancasila emblem, Indonesia's national symbol.", "credit": "M. Rizky Fathoni", "license": "CC0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Pancasila"
+}

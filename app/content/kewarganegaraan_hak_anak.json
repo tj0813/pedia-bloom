@@ -1,0 +1,40 @@
+{
+  "id": "kewarganegaraan_hak_anak",
+  "title_id": "Hak Anak",
+  "title_en": "Children's Rights",
+  "subtitle_id": "Hal yang berhak dimiliki setiap anak",
+  "subtitle_en": "Things every child deserves to have",
+  "data_card": [
+    { "icon": "child_care", "label_id": "Apa itu", "label_en": "What it is", "value_id": "Hak yang dimiliki setiap anak", "value_en": "Rights that belong to every child" },
+    { "icon": "school", "label_id": "Contoh", "label_en": "Examples", "value_id": "Belajar, bermain, sehat, dilindungi", "value_en": "To learn, play, be healthy, be protected" },
+    { "icon": "family_restroom", "label_id": "Pelindung", "label_en": "Protected by", "value_id": "Keluarga, negara, dan PBB", "value_en": "Family, the state, and the UN" },
+    { "icon": "gavel", "label_id": "Aturan dunia", "label_en": "World agreement", "value_id": "Konvensi Hak Anak", "value_en": "Convention on the Rights of the Child" },
+    { "icon": "celebration", "label_id": "Hari Anak", "label_en": "Children's Day", "value_id": "23 Juli (Indonesia)", "value_en": "23 July (Indonesia)" }
+  ],
+  "sections": [
+    { "icon": "auto_stories", "h_id": "Apa Itu Hak Anak?", "h_en": "What Are Children's Rights?", "body_id": "Hak anak adalah hal-hal baik yang berhak dimiliki dan didapat oleh setiap anak, di mana pun mereka tinggal. Setiap anak — laki-laki atau perempuan, kaya atau sederhana — punya hak yang sama. Orang dewasa bertugas menjaga dan memenuhi hak ini.", "body_en": "Children's rights are the good things that every child deserves to have and receive, wherever they live. Every child — boy or girl, rich or simple — has the same rights. Grown-ups have the job of protecting and fulfilling these rights." },
+    { "icon": "school", "h_id": "Hak untuk Belajar dan Bermain", "h_en": "The Right to Learn and Play", "body_id": "Setiap anak berhak bersekolah dan belajar agar menjadi pintar dan siap menggapai cita-cita. Anak juga berhak bermain dan beristirahat, karena bermain membuat anak tumbuh sehat, gembira, dan kreatif.", "body_en": "Every child has the right to go to school and learn, to grow smart and ready to reach their dreams. Children also have the right to play and rest, because playing helps them grow healthy, happy, and creative." },
+    { "icon": "health_and_safety", "h_id": "Hak untuk Sehat dan Dilindungi", "h_en": "The Right to Be Healthy and Safe", "body_id": "Anak berhak mendapat makanan bergizi, air bersih, dan perawatan saat sakit. Anak juga berhak merasa aman dan dilindungi dari kekerasan atau perlakuan kasar. Setiap anak berhak punya nama dan keluarga yang menyayanginya.", "body_en": "Children have the right to healthy food, clean water, and care when they are sick. They also have the right to feel safe and be protected from violence or harsh treatment. Every child has the right to a name and a loving family." },
+    { "icon": "diversity_3", "h_id": "Siapa yang Menjaga Hak Anak?", "h_en": "Who Protects Children's Rights?", "body_id": "Keluarga, sekolah, dan pemerintah bersama-sama menjaga hak anak. Hampir semua negara di dunia juga menyepakati aturan bersama bernama Konvensi Hak Anak dari PBB. Di Indonesia, Hari Anak Nasional dirayakan setiap 23 Juli.", "body_en": "Families, schools, and the government work together to protect children's rights. Almost every country in the world also agreed on shared rules called the UN Convention on the Rights of the Child. In Indonesia, National Children's Day is celebrated every 23 July." },
+    { "icon": "volunteer_activism", "h_id": "Kamu Juga Punya Kewajiban", "h_en": "You Have Duties Too", "body_id": "Selain hak, anak juga punya kewajiban: belajar dengan rajin, menghormati orang tua dan guru, serta menyayangi teman. Dengan begitu, semua anak bisa tumbuh bahagia dan saling menghargai.", "body_en": "Besides rights, children also have duties: to study hard, to respect parents and teachers, and to be kind to friends. That way, all children can grow up happy and respect one another." }
+  ],
+  "facts": [
+    { "id": "Setiap anak berhak punya nama dan keluarga.", "en": "Every child has the right to a name and a family." },
+    { "id": "Belajar dan bermain sama-sama merupakan hak anak.", "en": "Both learning and playing are children's rights." },
+    { "id": "Hampir semua negara menyepakati Konvensi Hak Anak.", "en": "Almost every country agreed to the Convention on the Rights of the Child." },
+    { "id": "Di Indonesia, Hari Anak Nasional jatuh pada 23 Juli.", "en": "In Indonesia, National Children's Day is on 23 July." },
+    { "id": "Selain hak, anak juga punya kewajiban untuk dijalankan.", "en": "Besides rights, children also have duties to carry out." }
+  ],
+  "glossary": [
+    { "term": "Hak", "def_id": "Sesuatu yang berhak kita miliki atau dapatkan.", "def_en": "Something we deserve to have or receive." },
+    { "term": "Kewajiban", "def_id": "Sesuatu yang harus kita lakukan.", "def_en": "Something we must do." },
+    { "term": "Konvensi", "def_id": "Kesepakatan atau perjanjian bersama antarnegara.", "def_en": "A shared agreement among countries." },
+    { "term": "Perlindungan", "def_id": "Penjagaan agar anak aman dari bahaya.", "def_en": "Keeping a child safe from harm." },
+    { "term": "PBB", "def_id": "Perserikatan Bangsa-Bangsa, perkumpulan negara-negara di dunia.", "def_en": "The United Nations, an organization of the world's countries." }
+  ],
+  "gallery": [
+    { "src": "app/assets/img/wiki/7ce65f94fddbc1cb.jpg", "caption_id": "Anak-anak bermain riang — bermain adalah salah satu hak anak.", "caption_en": "Children playing joyfully — playing is one of every child's rights.", "credit": "Jubair Ahmed Arnob", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/a889df1738e77843.jpg", "caption_id": "Anak-anak yang mendapat hak untuk belajar dan bersekolah.", "caption_en": "Children enjoying their right to learn and go to school.", "credit": "Tropical Research and Development Centre", "license": "CC BY-SA 4.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Hak-hak_anak"
+}

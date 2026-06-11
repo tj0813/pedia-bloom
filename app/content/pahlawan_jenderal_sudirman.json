@@ -1,0 +1,134 @@
+{
+  "id": "pahlawan_jenderal_sudirman",
+  "title_id": "Jenderal Sudirman",
+  "title_en": "General Sudirman",
+  "subtitle_id": "Panglima Besar pertama TNI dan teladan keberanian",
+  "subtitle_en": "The first Commander-in-Chief of the Indonesian army and a model of courage",
+  "data_card": [
+    {
+      "icon": "cake",
+      "label_id": "Lahir",
+      "label_en": "Born",
+      "value_id": "24 Januari 1916, Purbalingga",
+      "value_en": "24 January 1916, Purbalingga"
+    },
+    {
+      "icon": "public",
+      "label_id": "Asal",
+      "label_en": "From",
+      "value_id": "Purbalingga, Jawa Tengah",
+      "value_en": "Purbalingga, Central Java"
+    },
+    {
+      "icon": "military_tech",
+      "label_id": "Dikenal sebagai",
+      "label_en": "Known as",
+      "value_id": "Panglima Besar TNI pertama",
+      "value_en": "First Commander-in-Chief of the army"
+    },
+    {
+      "icon": "volunteer_activism",
+      "label_id": "Jasa",
+      "label_en": "Legacy",
+      "value_id": "Memimpin perang gerilya kemerdekaan",
+      "value_en": "Led the guerrilla war for independence"
+    },
+    {
+      "icon": "history_edu",
+      "label_id": "Gelar",
+      "label_en": "Title",
+      "value_id": "Pahlawan Nasional Indonesia",
+      "value_en": "National Hero of Indonesia"
+    },
+    {
+      "icon": "campaign",
+      "label_id": "Wafat",
+      "label_en": "Died",
+      "value_id": "29 Januari 1950, Magelang",
+      "value_en": "29 January 1950, Magelang"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "person",
+      "h_id": "Siapakah Jenderal Sudirman?",
+      "h_en": "Who Was General Sudirman?",
+      "body_id": "Jenderal Sudirman adalah Panglima Besar pertama tentara Indonesia, yang sekarang kita kenal sebagai TNI. Ia memimpin para pejuang membela kemerdekaan Indonesia dari penjajah yang ingin kembali berkuasa. Walau usianya masih muda saat menjadi panglima, ia sangat dihormati karena berani, jujur, dan taat beragama.",
+      "body_en": "General Sudirman was the first Commander-in-Chief of the Indonesian army, which we now know as the TNI. He led the fighters to defend Indonesia's independence from colonizers who wanted to rule again. Although he was still young when he became commander, he was greatly respected for being brave, honest, and devout."
+    },
+    {
+      "icon": "school",
+      "h_id": "Masa Kecil & Guru",
+      "h_en": "Childhood & Teaching",
+      "body_id": "Sudirman lahir tahun 1916 di Purbalingga, Jawa Tengah, dari keluarga sederhana. Sejak kecil ia rajin belajar dan suka memimpin teman-temannya dalam kegiatan kepanduan (pramuka). Sebelum menjadi tentara, Sudirman bekerja sebagai guru dan bahkan menjadi kepala sekolah. Ia sangat dicintai murid-muridnya karena sabar dan baik hati.",
+      "body_en": "Sudirman was born in 1916 in Purbalingga, Central Java, into a simple family. From a young age he studied hard and loved leading his friends in scouting activities. Before becoming a soldier, Sudirman worked as a teacher and even became a school principal. His students loved him very much because he was patient and kind."
+    },
+    {
+      "icon": "military_tech",
+      "h_id": "Perang Gerilya yang Gagah Berani",
+      "h_en": "The Brave Guerrilla War",
+      "body_id": "Saat Belanda menyerang kota Yogyakarta, Sudirman sedang sangat sakit karena penyakit di paru-parunya. Tetapi ia tidak mau menyerah. Sambil ditandu para prajuritnya, ia memimpin perang gerilya berpindah-pindah di hutan dan gunung selama tujuh bulan. Keberaniannya membuat semangat rakyat dan tentara semakin berkobar.",
+      "body_en": "When the Dutch attacked the city of Yogyakarta, Sudirman was very ill from a disease in his lungs. But he refused to give up. Carried on a stretcher by his soldiers, he led a guerrilla war, moving through forests and mountains for seven months. His courage made the spirit of the people and the army burn even brighter."
+    },
+    {
+      "icon": "history_edu",
+      "h_id": "Dikenang Sepanjang Masa",
+      "h_en": "Remembered Forever",
+      "body_id": "Jenderal Sudirman wafat tahun 1950, tak lama setelah Indonesia merdeka sepenuhnya. Seluruh rakyat berduka dan mengenangnya sebagai pahlawan sejati. Namanya kini dipakai untuk jalan-jalan besar, universitas, museum, dan monumen di banyak kota. Taruna tentara bahkan harus menapaki kembali rute gerilyanya sebelum lulus.",
+      "body_en": "General Sudirman passed away in 1950, not long after Indonesia became fully independent. The whole nation mourned and remembered him as a true hero. His name is now used for major streets, a university, museums, and monuments in many cities. Army cadets even have to retrace his guerrilla route before they graduate."
+    },
+    {
+      "icon": "volunteer_activism",
+      "h_id": "Apa yang Bisa Kita Pelajari?",
+      "h_en": "What Can We Learn?",
+      "body_id": "Dari Jenderal Sudirman kita belajar untuk pantang menyerah, walau keadaan sulit dan tubuh sedang lemah. Ia mengajarkan kita mencintai tanah air dan selalu setia pada apa yang kita percayai. Semangat, kejujuran, dan keberaniannya bisa kita tiru dalam belajar dan membantu sesama setiap hari.",
+      "body_en": "From General Sudirman we learn never to give up, even when things are hard and the body is weak. He teaches us to love our homeland and to always stay loyal to what we believe in. We can copy his spirit, honesty, and courage in our studies and in helping others every day."
+    }
+  ],
+  "facts": [
+    { "id": "Sudirman menjadi Panglima Besar tentara Indonesia di usia yang masih muda, sekitar 29 tahun.", "en": "Sudirman became Commander-in-Chief of the Indonesian army at a young age, around 29 years old." },
+    { "id": "Sebelum jadi tentara, ia adalah seorang guru dan kepala sekolah.", "en": "Before becoming a soldier, he was a teacher and a school principal." },
+    { "id": "Ia memimpin perang gerilya selama tujuh bulan sambil sakit dan ditandu prajuritnya.", "en": "He led the guerrilla war for seven months while sick and carried on a stretcher." },
+    { "id": "Rute gerilyanya sepanjang sekitar 100 kilometer kini diikuti oleh taruna militer.", "en": "His roughly 100-kilometer guerrilla route is now retraced by military cadets." },
+    { "id": "Wajah Jenderal Sudirman pernah ditampilkan pada uang kertas rupiah tahun 1968.", "en": "General Sudirman's face once appeared on a rupiah banknote in 1968." },
+    { "id": "Banyak jalan utama di kota-kota Indonesia diberi nama Jalan Jenderal Sudirman.", "en": "Many main streets in Indonesian cities are named Jalan Jenderal Sudirman." }
+  ],
+  "glossary": [
+    { "term": "Panglima Besar", "def_id": "Pemimpin tertinggi seluruh pasukan tentara dalam sebuah negara.", "def_en": "The highest leader of all the army's troops in a country." },
+    { "term": "Gerilya", "def_id": "Cara berperang dengan berpindah-pindah secara diam-diam, lalu menyerang dengan tiba-tiba.", "def_en": "A way of fighting by moving secretly from place to place, then attacking suddenly." },
+    { "term": "TNI", "def_id": "Tentara Nasional Indonesia, pasukan yang menjaga keamanan negara Indonesia.", "def_en": "The Indonesian National Army, the force that guards Indonesia's safety." },
+    { "term": "Pahlawan Nasional", "def_id": "Gelar kehormatan tertinggi bagi orang yang sangat berjasa bagi bangsa Indonesia.", "def_en": "The highest honorary title for someone who served the Indonesian nation greatly." },
+    { "term": "Tandu", "def_id": "Alat untuk membawa orang yang sakit dengan cara dipikul oleh beberapa orang.", "def_en": "A device for carrying a sick person, lifted on the shoulders of several people." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/9f71f5a427d3deff.jpg",
+      "caption_id": "Potret Jenderal Sudirman, Panglima Besar pertama tentara Indonesia.",
+      "caption_en": "A portrait of General Sudirman, the first Commander-in-Chief of the Indonesian army.",
+      "credit": "IPPHOS / Indonesian Ministry of Defense",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/b5c8b2bcf9474449.jpg",
+      "caption_id": "Jenderal Sudirman memberi hormat, foto tahun 1946.",
+      "caption_en": "General Sudirman gives a salute, photographed in 1946.",
+      "credit": "IPPHOS (Indonesia Press Photo Service)",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/12fc6a4f65864a39.jpg",
+      "caption_id": "Sudirman dikelilingi rakyat yang bersemangat di Jakarta, tahun 1946.",
+      "caption_en": "Sudirman surrounded by an enthusiastic crowd in Jakarta, 1946.",
+      "credit": "IPPHOS (Indonesia Press Photo Service)",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/93cff07d10b42672.jpg",
+      "caption_id": "Museum Sasmitaloka Panglima Besar Jenderal Sudirman, lengkap dengan patungnya menunggang kuda.",
+      "caption_en": "The Sasmitaloka Museum of Commander Sudirman, complete with his statue riding a horse.",
+      "credit": "Orangescale Studio",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Soedirman"
+}

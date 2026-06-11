@@ -90,6 +90,17 @@ TOPICS = {
     "profesi_guru":                {"wiki": "Guru", "search": "Teacher classroom students"},
     "profesi_petani":              {"wiki": "Petani", "search": "Farmer rice field Indonesia"},
     "ekonomi_uang_rupiah":         {"wiki": "Rupiah", "search": "Indonesian rupiah banknote"},
+
+    # --- Sejarah & Pahlawan (heroes — real photos; + civics) ---
+    "pahlawan_ra_kartini":            {"wiki": "Kartini", "search": "Raden Ajeng Kartini", "portrait": True},
+    "pahlawan_jenderal_sudirman":     {"wiki": "Soedirman", "search": "General Sudirman Indonesia", "portrait": True},
+    "pahlawan_bung_tomo":             {"wiki": "Bung Tomo", "search": "Bung Tomo Surabaya", "portrait": True},
+    "pahlawan_pangeran_diponegoro_1": {"wiki": "Pangeran Diponegoro", "search": "Pangeran Diponegoro", "portrait": True},
+    "pahlawan_pattimura":             {"wiki": "Pattimura", "search": "Kapitan Pattimura Maluku", "portrait": True},
+    "sejarah_proklamasi_kemerdekaan": {"wiki": "Proklamasi Kemerdekaan Indonesia", "search": "Indonesian independence proclamation 1945"},
+    "sejarah_sumpah_pemuda":          {"wiki": "Sumpah Pemuda", "search": "Sumpah Pemuda 1928 youth"},
+    "kewarganegaraan_pancasila":      {"wiki": "Pancasila", "search": "Pancasila Garuda emblem Indonesia"},
+    "kewarganegaraan_hak_anak":       {"wiki": "Hak-hak anak", "search": "children rights"},
 }
 
 FREE_LICENSE = re.compile(r"public domain|^pd|cc0|cc[\s-]?by", re.I)

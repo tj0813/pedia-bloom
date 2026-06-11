@@ -1,0 +1,134 @@
+{
+  "id": "pahlawan_ra_kartini",
+  "title_id": "R.A. Kartini",
+  "title_en": "R.A. Kartini",
+  "subtitle_id": "Pelopor emansipasi dan pendidikan untuk anak perempuan Indonesia",
+  "subtitle_en": "Pioneer of women's rights and education for Indonesian girls",
+  "data_card": [
+    {
+      "icon": "cake",
+      "label_id": "Lahir",
+      "label_en": "Born",
+      "value_id": "21 April 1879, Jepara",
+      "value_en": "21 April 1879, Jepara"
+    },
+    {
+      "icon": "public",
+      "label_id": "Asal",
+      "label_en": "From",
+      "value_id": "Jepara, Jawa Tengah",
+      "value_en": "Jepara, Central Java"
+    },
+    {
+      "icon": "campaign",
+      "label_id": "Dikenal sebagai",
+      "label_en": "Known as",
+      "value_id": "Pelopor emansipasi wanita",
+      "value_en": "Pioneer of women's emancipation"
+    },
+    {
+      "icon": "school",
+      "label_id": "Jasa",
+      "label_en": "Legacy",
+      "value_id": "Pendidikan untuk anak perempuan",
+      "value_en": "Education for girls"
+    },
+    {
+      "icon": "military_tech",
+      "label_id": "Gelar",
+      "label_en": "Title",
+      "value_id": "Pahlawan Nasional Indonesia",
+      "value_en": "National Hero of Indonesia"
+    },
+    {
+      "icon": "history_edu",
+      "label_id": "Wafat",
+      "label_en": "Died",
+      "value_id": "17 September 1904, Rembang",
+      "value_en": "17 September 1904, Rembang"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "person",
+      "h_id": "Siapakah Kartini?",
+      "h_en": "Who Was Kartini?",
+      "body_id": "Raden Ajeng Kartini adalah seorang pahlawan nasional Indonesia yang berjuang agar perempuan punya hak yang sama dengan laki-laki, terutama hak untuk belajar. Ia lahir tahun 1879 di Jepara, Jawa Tengah, dari keluarga bangsawan Jawa. Pada zamannya, anak perempuan tidak boleh sekolah tinggi, tetapi Kartini berani bermimpi besar untuk mengubahnya.",
+      "body_en": "Raden Ajeng Kartini was a national hero of Indonesia who fought so that women could have the same rights as men, especially the right to learn. She was born in 1879 in Jepara, Central Java, into a Javanese noble family. In her time, girls were not allowed to attend higher school, but Kartini bravely dreamed big to change that."
+    },
+    {
+      "icon": "auto_stories",
+      "h_id": "Masa Kecil & Cita-cita",
+      "h_en": "Childhood & Dreams",
+      "body_id": "Sejak kecil, Kartini sangat suka membaca buku, koran, dan majalah dari Eropa. Ia boleh bersekolah sampai umur 12 tahun, lalu harus tinggal di rumah karena adat 'pingitan'. Walau begitu, ia tetap belajar sendiri dan menulis surat kepada teman-temannya. Dari buku-buku itu, Kartini ingin perempuan Indonesia menjadi pintar dan bebas memilih masa depannya.",
+      "body_en": "From a young age, Kartini loved reading books, newspapers, and magazines from Europe. She was allowed to go to school until she was 12, then had to stay at home because of the custom of 'pingitan' (seclusion). Even so, she kept studying on her own and wrote letters to her friends. From those books, Kartini wished for Indonesian women to become smart and free to choose their own future."
+    },
+    {
+      "icon": "campaign",
+      "h_id": "Perjuangan Kartini",
+      "h_en": "Kartini's Struggle",
+      "body_id": "Kartini menulis banyak surat tentang impiannya agar anak perempuan boleh bersekolah dan hidup setara. Ia bahkan mendirikan sekolah kecil untuk perempuan di rumahnya. Surat-suratnya penuh harapan dan keberanian. Setelah ia wafat, surat-surat itu dikumpulkan menjadi sebuah buku terkenal berjudul 'Habis Gelap Terbitlah Terang'.",
+      "body_en": "Kartini wrote many letters about her dream that girls could go to school and live as equals. She even started a small school for women in her own home. Her letters were full of hope and courage. After she passed away, those letters were collected into a famous book called 'Habis Gelap Terbitlah Terang' (After Darkness Comes Light)."
+    },
+    {
+      "icon": "school",
+      "h_id": "Warisan untuk Indonesia",
+      "h_en": "A Legacy for Indonesia",
+      "body_id": "Berkat semangat Kartini, makin banyak sekolah dibuka untuk anak perempuan di seluruh Indonesia. Banyak sekolah bahkan diberi nama 'Sekolah Kartini' untuk menghormatinya. Wajahnya pernah dicetak di uang kertas Indonesia. Setiap tanggal 21 April, seluruh Indonesia merayakan Hari Kartini untuk mengenang jasanya.",
+      "body_en": "Thanks to Kartini's spirit, more and more schools opened for girls all across Indonesia. Many schools were even named 'Kartini Schools' in her honor. Her face once appeared on Indonesian banknotes. Every 21 April, all of Indonesia celebrates Kartini Day to remember her good deeds."
+    },
+    {
+      "icon": "volunteer_activism",
+      "h_id": "Apa yang Bisa Kita Pelajari?",
+      "h_en": "What Can We Learn?",
+      "body_id": "Dari Kartini kita belajar bahwa setiap anak, laki-laki maupun perempuan, berhak untuk belajar dan bermimpi besar. Ia mengajarkan kita untuk berani memperjuangkan apa yang benar, walau keadaan terasa sulit. Seperti judul bukunya, sesudah gelap pasti akan terbit terang. Ayo terus belajar dan saling membantu!",
+      "body_en": "From Kartini we learn that every child, boy or girl, has the right to learn and dream big. She teaches us to bravely stand up for what is right, even when things feel hard. Just like the title of her book, after darkness, light will always come. Let's keep learning and helping one another!"
+    }
+  ],
+  "facts": [
+    { "id": "Kartini lahir pada 21 April 1879, dan tanggal itu kini dirayakan sebagai Hari Kartini.", "en": "Kartini was born on 21 April 1879, and that date is now celebrated as Kartini Day." },
+    { "id": "Karena bisa berbahasa Belanda, Kartini bersahabat lewat surat dengan teman-teman di Eropa.", "en": "Because she could speak Dutch, Kartini made friends in Europe through letters." },
+    { "id": "Surat-suratnya dibukukan menjadi 'Habis Gelap Terbitlah Terang' pada tahun 1911.", "en": "Her letters became the book 'After Darkness Comes Light' in 1911." },
+    { "id": "Kartini mendirikan sekolah untuk anak perempuan di Jepara dan kemudian di Rembang.", "en": "Kartini founded schools for girls in Jepara and later in Rembang." },
+    { "id": "Banyak sekolah di Indonesia diberi nama 'Sekolah Kartini' untuk menghormatinya.", "en": "Many schools in Indonesia are named 'Kartini Schools' to honor her." },
+    { "id": "Wajah Kartini pernah muncul di uang kertas 5 rupiah keluaran tahun 1952.", "en": "Kartini's face once appeared on the 5-rupiah banknote issued in 1952." }
+  ],
+  "glossary": [
+    { "term": "Emansipasi", "def_id": "Perjuangan agar perempuan punya hak dan kesempatan yang sama dengan laki-laki.", "def_en": "The struggle for women to have the same rights and chances as men." },
+    { "term": "Pahlawan Nasional", "def_id": "Gelar kehormatan tertinggi bagi orang yang sangat berjasa bagi bangsa Indonesia.", "def_en": "The highest honorary title for someone who served the Indonesian nation greatly." },
+    { "term": "Bangsawan", "def_id": "Keluarga keturunan raja atau pejabat tinggi, seperti keluarga Kartini.", "def_en": "A family descended from kings or high officials, like Kartini's family." },
+    { "term": "Pingitan", "def_id": "Adat lama yang mengharuskan anak perempuan tinggal di rumah dan tidak keluar bebas.", "def_en": "An old custom that required girls to stay at home and not go out freely." },
+    { "term": "Hari Kartini", "def_id": "Hari peringatan setiap 21 April untuk mengenang jasa R.A. Kartini.", "def_en": "A day of remembrance every 21 April to honor R.A. Kartini's service." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/5e77550865536d42.jpg",
+      "caption_id": "Potret Raden Ajeng Kartini, pahlawan emansipasi perempuan Indonesia.",
+      "caption_en": "A portrait of Raden Ajeng Kartini, hero of Indonesian women's emancipation.",
+      "credit": "Tropenmuseum (fotografer tidak diketahui)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/90c76ad81eca510a.jpg",
+      "caption_id": "Sampul buku 'Door Duisternis tot Licht' (Habis Gelap Terbitlah Terang), kumpulan surat Kartini.",
+      "caption_en": "Cover of 'Door Duisternis tot Licht' (After Darkness Comes Light), the collection of Kartini's letters.",
+      "credit": "G.C.T. van Dorp & Co.",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/1db5e7847bf8e055.jpg",
+      "caption_id": "Gedung Sekolah Kartini, salah satu sekolah yang dinamai untuk menghormati Kartini.",
+      "caption_en": "A Kartini School building, one of the schools named in Kartini's honor.",
+      "credit": "Tropenmuseum (fotografer tidak diketahui)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/e9522d7e9f14dd85.jpg",
+      "caption_id": "Wajah Kartini pada uang kertas 5 rupiah Indonesia tahun 1952.",
+      "caption_en": "Kartini's face on the Indonesian 5-rupiah banknote of 1952.",
+      "credit": "Bank Indonesia",
+      "license": "Public domain"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Kartini"
+}
