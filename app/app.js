@@ -218,23 +218,25 @@
 
           '<label class="relative block mb-4">' +
             '<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary text-[22px]">search</span>' +
-            '<input id="home-search" type="search" inputmode="search" placeholder="Search for wonders..." aria-label="Cari topik / Search topics" class="home-search-input" />' +
+            '<input id="home-search" type="search" inputmode="search" placeholder="Cari keajaiban..." aria-label="Cari topik / Search topics" class="home-search-input" />' +
           '</label>' +
 
           '<div class="grid grid-cols-2 md:grid-cols-3 gap-3">' +
-            homeTile("#/category/" + encodeURIComponent("Alam & Hewan Indonesia"), "pets", "Animals", "Hewan", "bg-[#ffe2a8]", "text-[#754300]") +
-            homeTile("#/map/Bali%20%26%20Nusa%20Tenggara", "rocket_launch", "Space", "Antariksa", "bg-[#d9e6ff]", "text-[#00497d]") +
-            homeTile("#/screen/ensiklopedia_komodo_1", "cruelty_free", "Dinosaurs", "Komodo", "bg-[#d9f5bf]", "text-[#1d5d20]") +
-            homeTile("#/library", "water_drop", "Ocean Life", "Laut", "bg-[#c9eff8]", "text-[#00536a]") +
-            homeTile("#/category/" + encodeURIComponent("Sains Seru"), "science", "Science", "Sains", "bg-[#e9d5ff]", "text-[#5b2484]") +
-            homeTile("#/category/" + encodeURIComponent("Sejarah & Pahlawan"), "history_edu", "History", "Sejarah", "bg-[#ffe1d2]", "text-[#8a3b00]") +
+            homeTile("#/category/" + encodeURIComponent("Alam & Hewan Indonesia"), "pets", "Hewan", "Animals", "bg-[#ffe2a8]", "text-[#754300]") +
+            homeTile("#/map/Bali%20%26%20Nusa%20Tenggara", "rocket_launch", "Antariksa", "Space", "bg-[#d9e6ff]", "text-[#00497d]") +
+            homeTile("#/screen/ensiklopedia_komodo_1", "cruelty_free", "Komodo", "Dinosaurs", "bg-[#d9f5bf]", "text-[#1d5d20]") +
+            homeTile("#/library", "water_drop", "Laut", "Ocean Life", "bg-[#c9eff8]", "text-[#00536a]") +
+            homeTile("#/category/" + encodeURIComponent("Sains Seru"), "science", "Sains", "Science", "bg-[#e9d5ff]", "text-[#5b2484]") +
+            homeTile("#/category/" + encodeURIComponent("Sejarah & Pahlawan"), "history_edu", "Sejarah", "History", "bg-[#ffe1d2]", "text-[#8a3b00]") +
           '</div>' +
 
           '<div class="mt-4 grid grid-cols-3 gap-2 text-center">' +
-            miniStat(stats.streak, "Streak", "local_fire_department", "text-tertiary") +
-            miniStat(stats.badges, "Badges", "military_tech", "text-primary") +
-            miniStat(stats.coins, "Coins", "diamond", "text-secondary") +
+            miniStat(stats.streak, "Beruntun", "Streak", "local_fire_department", "text-tertiary") +
+            miniStat(stats.badges, "Lencana", "Badges", "military_tech", "text-primary") +
+            miniStat(stats.coins, "Koin", "Coins", "diamond", "text-secondary") +
           '</div>' +
+          ((stats.streak + stats.badges + stats.coins) === 0 ?
+            '<p class="mt-2 text-center text-[12px] text-on-surface-variant">Baca materi pertamamu untuk dapat lencana! ⭐<span class="block text-fresh-teal">Read your first wonder to earn a badge!</span></p>' : "") +
         '</section>' +
 
         '<section class="home-page-card p-4 pop-in">' +
@@ -248,7 +250,7 @@
           '<div class="flex items-center gap-3">' +
             '<img src="app/assets/img/smart_owl_helper.png" alt="BimoBot" class="w-20 h-20 object-contain rounded-xl bg-[#f5d1ff]" />' +
             '<div class="min-w-0 flex-1">' +
-              '<h3 class="font-headline-lg-mobile text-[18px] leading-tight font-bold text-on-surface">Ask BimoBot<span class="bi-en">Tanya teman pintar</span></h3>' +
+              '<h3 class="font-headline-lg-mobile text-[18px] leading-tight font-bold text-on-surface">Tanya BimoBot<span class="bi-en">Ask your smart friend</span></h3>' +
               '<p class="text-[14px] leading-snug text-on-surface-variant mt-1">Temukan jawaban aman tentang Indonesia.</p>' +
             '</div>' +
             '<a href="#/ai" aria-label="Tanya BimoBot" class="home-round-control bg-tertiary-container text-on-tertiary-container"><span class="material-symbols-outlined" style="font-variation-settings:\'FILL\' 1;">smart_toy</span></a>' +
@@ -271,11 +273,11 @@
       "</a>";
   }
 
-  function miniStat(n, label, icon, color) {
-    return '<a href="#/badges" class="rounded-xl bg-white/60 dark:bg-surface-container p-2 min-h-[56px] flex flex-col items-center justify-center border border-white/70 dark:border-outline-variant/50">' +
+  function miniStat(n, labelId, labelEn, icon, color) {
+    return '<a href="#/badges" class="rounded-xl bg-white/60 dark:bg-surface-container p-2 min-h-[60px] flex flex-col items-center justify-center border border-white/70 dark:border-outline-variant/50">' +
       '<span class="material-symbols-outlined text-[20px] ' + color + '" style="font-variation-settings:\'FILL\' 1;">' + icon + '</span>' +
       '<span class="text-[13px] font-bold text-on-surface leading-tight">' + n + '</span>' +
-      '<span class="text-[11px] font-bold text-on-surface-variant leading-tight">' + esc(label) + '</span>' +
+      '<span class="text-[11px] font-bold text-on-surface-variant leading-tight">' + esc(labelId) + '<span class="block text-[9px] font-medium text-fresh-teal leading-none">' + esc(labelEn) + '</span></span>' +
       '</a>';
   }
 
@@ -396,12 +398,10 @@
   }
 
   /* Stitch fragment renderer */
+  // Compact round secondary action (kept small so it doesn't compete with the nav's center FAB).
   function floatingAi(name) {
-    return '<div class="fixed bottom-24 right-6 z-40">' +
-      '<a href="#/ai?topic=' + encodeURIComponent(name) + '" class="squishy-button flex items-center gap-2 bg-primary text-on-primary border-on-primary-container px-4 py-3 rounded-full shadow-[0_4px_16px_rgba(0,110,28,0.4)] hover:bg-on-primary-container hover:scale-105 transition-all duration-300">' +
-        '<span class="material-symbols-outlined text-[20px]" style="font-variation-settings:\'FILL\' 1;">smart_toy</span>' +
-        '<span class="font-label-md font-bold text-sm">Tanya Bloom AI</span>' +
-      '</a></div>';
+    return '<a href="#/ai?topic=' + encodeURIComponent(name) + '" aria-label="Tanya BimoBot tentang topik ini" title="Tanya BimoBot" class="squishy-button fixed bottom-24 right-5 z-40 w-14 h-14 grid place-items-center bg-primary text-on-primary rounded-full shadow-[0_4px_16px_rgba(0,110,28,0.4)] hover:scale-105 active:scale-95 transition-transform">' +
+      '<span class="material-symbols-outlined text-[26px]" style="font-variation-settings:\'FILL\' 1;">smart_toy</span></a>';
   }
 
   function viewScreen(id) {
@@ -461,7 +461,7 @@
 
     var topbarRow =
       '<div class="flex items-center justify-between gap-2">' +
-        '<button id="read-aloud" class="flex items-center gap-1.5 bg-surface-container text-primary rounded-full px-3 py-1.5 text-[12px] font-bold"><span class="material-symbols-outlined text-[18px]">volume_up</span>' + (richLang === "en" ? "Listen" : "Dengarkan") + "</button>" +
+        '<button id="read-aloud" aria-label="Bacakan halaman ini / Read this page aloud" class="flex items-center gap-1.5 bg-primary text-on-primary rounded-full pl-2 pr-4 py-2 text-[14px] font-bold shadow-storybook-sm active:scale-95 transition-transform"><span class="material-symbols-outlined text-[24px]" style="font-variation-settings:\'FILL\' 1;">play_circle</span>' + (richLang === "en" ? "Listen" : "Dengarkan") + "</button>" +
         '<div class="flex items-center gap-1 bg-surface-container rounded-full p-1 text-[12px] font-bold shrink-0">' +
           '<button data-lang="id" class="px-3 py-1 rounded-full ' + (richLang === "id" ? "bg-primary text-on-primary" : "text-on-surface-variant") + '">ID</button>' +
           '<button data-lang="en" class="px-3 py-1 rounded-full ' + (richLang === "en" ? "bg-primary text-on-primary" : "text-on-surface-variant") + '">EN</button>' +
@@ -489,9 +489,10 @@
         '<p class="font-body-md text-[15px] text-on-surface leading-relaxed">' + tL(s.body_id, s.body_en) + "</p></section>";
     }).join("");
 
-    var facts = (c.facts || []).map(function (f) {
+    var FACT_ICONS = ["auto_awesome", "lightbulb", "star", "emoji_objects", "interests", "celebration", "favorite", "bolt"];
+    var facts = (c.facts || []).map(function (f, i) {
       return '<div class="bg-secondary-fixed rounded-xl p-3 flex gap-2">' +
-        '<span class="material-symbols-outlined text-secondary text-[20px] shrink-0" style="font-variation-settings:\'FILL\' 1;">lightbulb</span>' +
+        '<span class="material-symbols-outlined text-secondary text-[20px] shrink-0" style="font-variation-settings:\'FILL\' 1;">' + FACT_ICONS[i % FACT_ICONS.length] + '</span>' +
         '<p class="text-[13px] text-on-secondary-fixed leading-snug font-medium">' + tL(f.id, f.en) + "</p></div>";
     }).join("");
 
@@ -570,16 +571,23 @@
   /* Offline read-aloud (Web Speech API) — reads the page in the current language. */
   var raSpeaking = false;
   function stopReadAloud() { try { if (window.speechSynthesis) window.speechSynthesis.cancel(); } catch (e) {} raSpeaking = false; }
+  function setRaBtn(playing) {
+    var btn = document.getElementById("read-aloud");
+    if (!btn) return;
+    var icon = playing ? "stop_circle" : "play_circle";
+    var label = playing ? (richLang === "en" ? "Stop" : "Berhenti") : (richLang === "en" ? "Listen" : "Dengarkan");
+    btn.innerHTML = '<span class="material-symbols-outlined text-[24px]" style="font-variation-settings:\'FILL\' 1;">' + icon + "</span>" + label;
+  }
   function toggleReadAloud(c) {
     if (!window.speechSynthesis) return;
-    if (raSpeaking) { stopReadAloud(); return; }
+    if (raSpeaking) { stopReadAloud(); setRaBtn(false); return; }
     var parts = [richLang === "en" ? c.title_en : c.title_id];
     (c.sections || []).forEach(function (s) { parts.push(richLang === "en" ? s.body_en : s.body_id); });
     var u = new SpeechSynthesisUtterance(parts.join(". "));
     u.lang = richLang === "en" ? "en-US" : "id-ID";
     u.rate = 0.95;
-    u.onend = function () { raSpeaking = false; };
-    raSpeaking = true;
+    u.onend = function () { raSpeaking = false; setRaBtn(false); };
+    raSpeaking = true; setRaBtn(true);
     window.speechSynthesis.speak(u);
   }
 
