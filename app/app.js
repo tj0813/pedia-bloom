@@ -124,8 +124,8 @@
     var name = rich ? rich.title_id : d.name;
     var en = rich ? rich.title_en : d.en;
     var sub = rich ? rich.subtitle_id : d.sub;
-    var g0 = rich && rich.gallery && rich.gallery[0];
-    var thumb = g0 ? (typeof g0 === "string" ? g0 : g0.src) : s.thumb;
+    // Keep each topic's original image as its card cover; Wikipedia photos live in the gallery.
+    var thumb = s.thumb;
     var variantLabel = (!rich && d.variant) ? d.variant + (d.variantEn ? " · " + d.variantEn : "") : "";
     var badge = rich ? '<span class="absolute top-2 right-2 bg-primary text-on-primary text-[10px] font-label-md font-bold px-2 py-0.5 rounded-md shadow flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px]">menu_book</span>Lengkap</span>' :
       (variantLabel ? '<span class="absolute top-2 right-2 bg-tertiary-container text-on-tertiary-container text-[11px] font-label-md font-bold px-2 py-0.5 rounded-md shadow">' + esc(variantLabel) + "</span>" : "");
@@ -451,7 +451,8 @@
     setActiveNav("explore");
 
     var gallery = (c.gallery || []).filter(Boolean);
-    var hero = gallery.length ? gSrc(gallery[0]) : "app/assets/placeholder.svg";
+    // Hero = the topic's ORIGINAL image (kept as its "face"); Wikipedia photos sit in the gallery.
+    var hero = (SCREENS[id] && SCREENS[id].thumb) || (gallery.length ? gSrc(gallery[0]) : "app/assets/placeholder.svg");
 
     var topbarRow =
       '<div class="flex items-center justify-between gap-2">' +
