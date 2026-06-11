@@ -1,0 +1,74 @@
+{
+  "id": "budaya_tari_saman",
+  "title_id": "Tari Saman",
+  "title_en": "Saman Dance",
+  "subtitle_id": "Tarian Aceh dengan tepuk tangan cepat dan gerak kompak",
+  "subtitle_en": "An Aceh dance with fast claps and perfect teamwork",
+  "data_card": [
+    { "icon": "public", "label_id": "Asal", "label_en": "Origin", "value_id": "Aceh (Suku Gayo)", "value_en": "Aceh (Gayo people)" },
+    { "icon": "groups", "label_id": "Penari", "label_en": "Performers", "value_id": "Belasan penari, berjajar", "value_en": "Many dancers, in a row" },
+    { "icon": "campaign", "label_id": "Iringan", "label_en": "Music", "value_id": "Tepuk tangan & nyanyian", "value_en": "Claps & singing" },
+    { "icon": "diversity_3", "label_id": "Ciri khas", "label_en": "Famous for", "value_id": "Gerak kompak & cepat", "value_en": "Fast, united moves" },
+    { "icon": "shield", "label_id": "Status", "label_en": "Status", "value_id": "Warisan UNESCO", "value_en": "UNESCO Heritage" }
+  ],
+  "sections": [
+    {
+      "icon": "diversity_3",
+      "h_id": "Apa Itu Tari Saman?",
+      "h_en": "What Is the Saman Dance?",
+      "body_id": "Tari Saman adalah tarian tradisional dari Suku Gayo di Provinsi Aceh. Tarian ini terkenal di seluruh dunia karena gerakannya yang sangat cepat dan kompak. Para penari duduk berjajar rapat bahu-membahu, lalu bergerak bersama-sama seolah-olah satu tubuh. Tari Saman sering disebut 'Tari Seribu Tangan' karena banyaknya tangan yang bergerak serempak.",
+      "body_en": "The Saman dance is a traditional dance from the Gayo people in Aceh Province. It is famous all over the world because of its very fast and united movements. The dancers sit in a tight row, shoulder to shoulder, and move together as if they were one body. The Saman dance is often called the 'Dance of a Thousand Hands' because so many hands move at the same time."
+    },
+    {
+      "icon": "back_hand",
+      "h_id": "Tepuk Tangan dan Tepuk Dada",
+      "h_en": "Clapping Hands and Chest",
+      "body_id": "Yang paling seru dari Tari Saman adalah gerakan tangannya. Para penari bertepuk tangan, menepuk dada, dan menepuk paha dengan sangat cepat. Mereka juga menggoyangkan badan dan kepala ke kiri dan ke kanan. Semua gerakan ini harus dilakukan dengan tepat dan serempak. Kalau satu penari saja salah, gerakannya bisa terlihat tidak kompak.",
+      "body_en": "The most exciting part of the Saman dance is its hand movements. The dancers clap their hands, slap their chests, and pat their thighs very fast. They also sway their bodies and heads to the left and right. All of these moves must be done exactly and at the same time. If even one dancer makes a mistake, the dance can look out of step."
+    },
+    {
+      "icon": "campaign",
+      "h_id": "Nyanyian dan Pemimpin",
+      "h_en": "Singing and the Leader",
+      "body_id": "Tari Saman tidak memakai alat musik. Musiknya berasal dari tepuk tangan para penari dan nyanyian mereka. Ada seorang pemimpin yang disebut syekh. Syekh bertugas menyanyikan syair dan mengatur kapan gerakan harus cepat atau lambat. Para penari lalu menjawab nyanyian itu bersama-sama, sehingga terdengar sangat merdu dan bersemangat.",
+      "body_en": "The Saman dance uses no musical instruments. Its music comes from the dancers' claps and their singing. There is a leader called the syekh. The syekh sings the verses and decides when the moves should be fast or slow. The dancers then answer the song together, so it sounds very sweet and full of spirit."
+    },
+    {
+      "icon": "history_edu",
+      "h_id": "Pesan dalam Tarian",
+      "h_en": "A Message in the Dance",
+      "body_id": "Dahulu, Tari Saman dipakai untuk menyampaikan pesan-pesan yang baik kepada masyarakat. Syair lagunya berisi nasihat tentang kebaikan, sopan santun, dan kebersamaan. Tarian ini juga mengajarkan kita untuk kompak dan saling bekerja sama. Sampai sekarang, Tari Saman sering ditampilkan dalam acara-acara penting dan perayaan di Aceh.",
+      "body_en": "Long ago, the Saman dance was used to share good messages with the people. Its song verses contain advice about kindness, good manners, and togetherness. The dance also teaches us to work as a team and help one another. Even today, the Saman dance is often performed at important events and celebrations in Aceh."
+    },
+    {
+      "icon": "shield",
+      "h_id": "Kebanggaan Indonesia",
+      "h_en": "Indonesia's Pride",
+      "body_id": "Pada tahun 2011, UNESCO mengakui Tari Saman sebagai Warisan Budaya Dunia. Pengakuan ini membuat masyarakat Indonesia sangat bangga. Sekarang Tari Saman dipelajari oleh banyak anak dan ditampilkan sampai ke luar negeri. Ayo kita ikut menjaga dan melestarikan tarian yang penuh semangat ini agar tidak pernah hilang!",
+      "body_en": "In 2011, UNESCO recognized the Saman dance as a World Cultural Heritage. This recognition made Indonesian people very proud. Today the Saman dance is learned by many children and performed all the way to other countries. Let's help protect and keep this spirited dance alive so it is never lost!"
+    }
+  ],
+  "facts": [
+    { "id": "Tari Saman sering disebut 'Tari Seribu Tangan' karena gerakan tangannya yang banyak dan serempak.", "en": "The Saman dance is often called the 'Dance of a Thousand Hands' for its many hands moving at once." },
+    { "id": "Tarian ini tidak memakai alat musik, hanya tepuk tangan dan nyanyian.", "en": "The dance uses no instruments, only claps and singing." },
+    { "id": "Para penari duduk berjajar rapat dan bergerak seperti satu tubuh.", "en": "The dancers sit in a tight row and move like one body." },
+    { "id": "UNESCO mengakui Tari Saman sebagai Warisan Budaya Dunia pada tahun 2011.", "en": "UNESCO recognized the Saman dance as a World Heritage in 2011." },
+    { "id": "Pemimpin Tari Saman yang menyanyi dan memberi aba-aba disebut syekh.", "en": "The leader of the Saman dance who sings and gives signals is called the syekh." },
+    { "id": "Tari Saman berasal dari Suku Gayo di Provinsi Aceh.", "en": "The Saman dance comes from the Gayo people in Aceh Province." }
+  ],
+  "glossary": [
+    { "term": "Suku Gayo", "def_id": "Kelompok masyarakat yang tinggal di dataran tinggi Provinsi Aceh.", "def_en": "A group of people who live in the highlands of Aceh Province." },
+    { "term": "Syekh", "def_id": "Pemimpin Tari Saman yang menyanyi dan mengatur gerakan penari.", "def_en": "The leader of the Saman dance who sings and guides the dancers' moves." },
+    { "term": "Syair", "def_id": "Kata-kata indah yang dinyanyikan dalam sebuah lagu atau tarian.", "def_en": "Beautiful words that are sung in a song or dance." },
+    { "term": "Kompak", "def_id": "Bergerak atau bekerja bersama-sama dengan rapi dan serempak.", "def_en": "Moving or working together neatly and at the same time." },
+    { "term": "Warisan budaya", "def_id": "Sesuatu yang berharga dari nenek moyang yang harus kita jaga.", "def_en": "Something precious from our ancestors that we must protect." }
+  ],
+  "gallery": [
+    { "src": "app/assets/img/wiki/cf3e3f9a0adcac15.jpg", "caption_id": "Para penari mengangkat tangan serempak dengan pakaian warna-warni yang cerah.", "caption_en": "Dancers raise their hands together in bright, colorful costumes.", "credit": "Herusutimbul", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/7add58c305f10a61.jpg", "caption_id": "Penari laki-laki berjajar bertepuk tangan dengan busana adat Gayo merah-hitam.", "caption_en": "Male dancers in a row clap their hands in red-and-black Gayo costume.", "credit": "Winara al gayo", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/c716b9089d1b40c5.jpg", "caption_id": "Ribuan penari menampilkan Tari Saman bersama dalam satu pertunjukan besar.", "caption_en": "Thousands of dancers perform the Saman dance together in one huge show.", "credit": "Adearmanda", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/83001be976af9ce4.jpg", "caption_id": "Sekelompok penari berpose dengan busana adat Gayo yang indah.", "caption_en": "A group of dancers pose in their beautiful Gayo costumes.", "credit": "Fajriboy", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/6bf9be7327a5f3ed.jpg", "caption_id": "Foto lama masyarakat Gayo berkumpul lebih dari seratus tahun yang lalu.", "caption_en": "An old photo of the Gayo people gathering more than a hundred years ago.", "credit": "Unknown author", "license": "CC BY-SA 3.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Tari_Saman"
+}

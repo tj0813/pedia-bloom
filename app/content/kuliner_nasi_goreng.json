@@ -1,0 +1,121 @@
+{
+  "id": "kuliner_nasi_goreng",
+  "title_id": "Nasi Goreng",
+  "title_en": "Nasi Goreng (Fried Rice)",
+  "subtitle_id": "Nasi yang digoreng dengan kecap manis, makanan favorit sejuta orang Indonesia!",
+  "subtitle_en": "Rice fried with sweet soy sauce, a favorite food of millions in Indonesia!",
+  "data_card": [
+    {
+      "icon": "public",
+      "label_id": "Asal",
+      "label_en": "Origin",
+      "value_id": "Indonesia (populer se-Asia)",
+      "value_en": "Indonesia (popular across Asia)"
+    },
+    {
+      "icon": "restaurant",
+      "label_id": "Bahan utama",
+      "label_en": "Main ingredients",
+      "value_id": "Nasi, kecap manis, dan bumbu",
+      "value_en": "Rice, sweet soy sauce, and spices"
+    },
+    {
+      "icon": "local_fire_department",
+      "label_id": "Rasa",
+      "label_en": "Taste",
+      "value_id": "Gurih dan sedikit manis",
+      "value_en": "Savory with a touch of sweet"
+    },
+    {
+      "icon": "soup_kitchen",
+      "label_id": "Jenis",
+      "label_en": "Type",
+      "value_id": "Makanan utama sehari-hari",
+      "value_en": "An everyday main dish"
+    },
+    {
+      "icon": "storefront",
+      "label_id": "Dijual",
+      "label_en": "Sold by",
+      "value_id": "Gerobak & warung pinggir jalan",
+      "value_en": "Carts and roadside stalls"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "restaurant",
+      "h_id": "Apa Itu Nasi Goreng?",
+      "h_en": "What Is Nasi Goreng?",
+      "body_id": "Nasi goreng adalah nasi yang digoreng di dalam wajan bersama bumbu-bumbu. Di Indonesia, yang membuatnya istimewa adalah kecap manis, yang memberi warna cokelat dan rasa gurih-manis. Biasanya ditambah telur, sayuran, ayam, atau makanan laut. Nasi goreng adalah salah satu makanan yang paling disukai di Indonesia dan bisa dimakan pagi, siang, atau malam.",
+      "body_en": "Nasi goreng is rice fried in a pan together with seasonings. In Indonesia, what makes it special is sweet soy sauce, which gives it a brown color and a sweet-savory taste. It is usually mixed with egg, vegetables, chicken, or seafood. Nasi goreng is one of the most loved foods in Indonesia and can be eaten morning, noon, or night."
+    },
+    {
+      "icon": "eco",
+      "h_id": "Dari Mana Asalnya?",
+      "h_en": "Where Does It Come From?",
+      "body_id": "Nasi goreng populer di banyak negara Asia, tetapi versi Indonesia punya ciri khas sendiri karena memakai kecap manis. Dahulu nasi goreng sering dibuat dari nasi sisa kemarin agar tidak terbuang. Nasi yang sudah dingin justru lebih enak digoreng karena tidak lembek. Dari kebiasaan hemat inilah lahir banyak sekali ragam nasi goreng.",
+      "body_en": "Nasi goreng is popular in many Asian countries, but the Indonesian version has its own character because it uses sweet soy sauce. Long ago, nasi goreng was often made from yesterday's leftover rice so it would not be wasted. Cold rice is actually better for frying because it does not get mushy. From this thrifty habit, many kinds of nasi goreng were born."
+    },
+    {
+      "icon": "soup_kitchen",
+      "h_id": "Bagaimana Dimasak?",
+      "h_en": "How Is It Cooked?",
+      "body_id": "Membuat nasi goreng cukup cepat. Pertama, bawang putih dan bawang merah ditumis sampai harum. Lalu telur diorak-arik, ditambah ayam atau sayuran. Setelah itu nasi dimasukkan dan diaduk cepat dengan kecap manis dan sedikit garam. Semua diaduk di atas api besar sampai panas merata dan wangi. Nasi goreng pun siap dihidangkan selagi hangat.",
+      "body_en": "Making nasi goreng is quite fast. First, garlic and shallots are stir-fried until fragrant. Then an egg is scrambled in, with chicken or vegetables added. After that the rice goes in and is stirred quickly with sweet soy sauce and a little salt. Everything is tossed over high heat until it is evenly hot and smells wonderful. The nasi goreng is then ready to serve while warm."
+    },
+    {
+      "icon": "diversity_3",
+      "h_id": "Banyak Sekali Ragamnya",
+      "h_en": "So Many Kinds",
+      "body_id": "Hampir setiap daerah di Indonesia punya nasi goreng sendiri. Ada nasi goreng kampung, nasi goreng seafood, dan nasi goreng ikan asin. Ada juga nasi goreng Jawa yang gurih, dan di Jawa Timur ada nasi goreng merah yang memakai saus tomat, bukan kecap. Jadi nasi goreng bisa berbeda rasa dan warna di setiap tempat.",
+      "body_en": "Almost every region in Indonesia has its own nasi goreng. There is village nasi goreng, seafood nasi goreng, and salted-fish nasi goreng. There is also savory Javanese nasi goreng, and in East Java there is red nasi goreng that uses tomato sauce instead of soy sauce. So nasi goreng can taste and look different in each place."
+    },
+    {
+      "icon": "storefront",
+      "h_id": "Jajanan Kaki Lima",
+      "h_en": "Street-Food Favorite",
+      "body_id": "Di kota-kota Indonesia, penjual nasi goreng sering berkeliling membawa gerobak. Pada malam hari mereka berhenti di jalan dan memasak langsung di tempat. Suara sendok yang dipukulkan ke wajan menjadi tanda bahwa tukang nasi goreng sudah datang. Nasi goreng biasa disajikan dengan telur ceplok, kerupuk, acar, dan irisan timun.",
+      "body_en": "In Indonesian cities, nasi goreng sellers often roam around pushing a cart. At night they stop along the street and cook right on the spot. The sound of a spoon tapping the pan is a sign that the nasi goreng seller has arrived. Nasi goreng is usually served with a fried egg, crackers, pickles, and slices of cucumber."
+    }
+  ],
+  "facts": [
+    { "id": "Kecap manis adalah bahan yang membuat nasi goreng Indonesia berbeda.", "en": "Sweet soy sauce is what makes Indonesian nasi goreng different." },
+    { "id": "Nasi goreng paling enak dibuat dari nasi dingin sisa kemarin.", "en": "Nasi goreng tastes best when made from cold, leftover rice." },
+    { "id": "Penjual nasi goreng keliling memukul wajan agar orang tahu mereka datang.", "en": "Roaming nasi goreng sellers tap the pan so people know they have arrived." },
+    { "id": "Setiap daerah di Indonesia punya nasi goreng dengan rasa khasnya sendiri.", "en": "Each region in Indonesia has nasi goreng with its own special taste." },
+    { "id": "Nasi goreng sering ditemani telur ceplok, kerupuk, dan acar.", "en": "Nasi goreng is often paired with a fried egg, crackers, and pickles." },
+    { "id": "Nasi goreng terkenal sampai ke Belanda dan negara-negara tetangga.", "en": "Nasi goreng is famous all the way to the Netherlands and neighboring countries." }
+  ],
+  "glossary": [
+    { "term": "Nasi goreng", "def_id": "Nasi yang digoreng di wajan bersama bumbu, telur, dan lauk.", "def_en": "Rice fried in a pan together with seasonings, egg, and toppings." },
+    { "term": "Kecap manis", "def_id": "Saus kedelai kental dan manis khas Indonesia, pemberi warna cokelat.", "def_en": "A thick, sweet Indonesian soy sauce that gives a brown color." },
+    { "term": "Menumis", "def_id": "Menggoreng cepat dengan sedikit minyak sambil diaduk-aduk.", "def_en": "To stir-fry quickly with a little oil while tossing the food." },
+    { "term": "Telur ceplok", "def_id": "Telur yang digoreng utuh dengan kuning di tengahnya.", "def_en": "An egg fried whole with the yolk in the middle." },
+    { "term": "Kerupuk", "def_id": "Camilan tipis yang renyah, sering jadi teman makan nasi goreng.", "def_en": "A thin, crunchy cracker often eaten alongside nasi goreng." },
+    { "term": "Kaki lima", "def_id": "Pedagang makanan di pinggir jalan, sering memakai gerobak.", "def_en": "A street food vendor by the roadside, often using a cart." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/5801720d4ba9466e.jpg",
+      "caption_id": "Nasi goreng merah dengan telur ceplok, kerupuk, ayam suwir, dan kol di atas daun pisang.",
+      "caption_en": "Reddish nasi goreng with a fried egg, cracker, shredded chicken, and cabbage on a banana leaf.",
+      "credit": "Crisco 1492",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/18f7e40acb18e954.jpg",
+      "caption_id": "Nasi goreng kecap berwarna cokelat dengan acar timun dan wortel di piring putih.",
+      "caption_en": "Brown soy-sauce nasi goreng with cucumber and carrot pickles on a white plate.",
+      "credit": "Midori",
+      "license": "CC BY 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/2437def0744ad284.jpg",
+      "caption_id": "Nasi goreng dalam mangkuk cokelat, ditaburi gulungan telur dadar yang diiris tipis.",
+      "caption_en": "Nasi goreng in a brown bowl, topped with thin slices of rolled omelette.",
+      "credit": "Luca Nebuloni",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Nasi_goreng"
+}

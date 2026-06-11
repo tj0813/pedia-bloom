@@ -1,0 +1,135 @@
+{
+  "id": "budaya_candi_prambanan",
+  "title_id": "Candi Prambanan",
+  "title_en": "Prambanan Temple",
+  "subtitle_id": "Candi Hindu terbesar di Indonesia!",
+  "subtitle_en": "The biggest Hindu temple in Indonesia!",
+  "data_card": [
+    {
+      "icon": "public",
+      "label_id": "Lokasi",
+      "label_en": "Location",
+      "value_id": "Perbatasan Yogyakarta & Jawa Tengah",
+      "value_en": "Border of Yogyakarta & Central Java"
+    },
+    {
+      "icon": "schedule",
+      "label_id": "Dibangun",
+      "label_en": "Built",
+      "value_id": "Sekitar tahun 850 M (abad ke-9)",
+      "value_en": "Around 850 CE (9th century)"
+    },
+    {
+      "icon": "temple_hindu",
+      "label_id": "Agama",
+      "label_en": "Religion",
+      "value_id": "Hindu (untuk Trimurti)",
+      "value_en": "Hindu (for the Trimurti)"
+    },
+    {
+      "icon": "height",
+      "label_id": "Tinggi",
+      "label_en": "Height",
+      "value_id": "Candi Siwa setinggi 47 meter",
+      "value_en": "Shiva temple is 47 meters tall"
+    },
+    {
+      "icon": "account_balance",
+      "label_id": "Nama Asli",
+      "label_en": "Original Name",
+      "value_id": "Siwagrha ('Rumah Siwa')",
+      "value_en": "Shivagrha ('House of Shiva')"
+    },
+    {
+      "icon": "shield",
+      "label_id": "Status",
+      "label_en": "Status",
+      "value_id": "Warisan Dunia UNESCO",
+      "value_en": "UNESCO World Heritage"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "temple_hindu",
+      "h_id": "Apa Itu Prambanan?",
+      "h_en": "What Is Prambanan?",
+      "body_id": "Candi Prambanan adalah candi Hindu terbesar di Indonesia. Bentuknya tinggi, ramping, dan runcing seperti gunung-gunung batu yang menjulang ke langit. Candi ini juga disebut Candi Rara Jonggrang. Banyak orang menyebutnya salah satu candi terindah di Asia Tenggara!",
+      "body_en": "Prambanan is the biggest Hindu temple in Indonesia. It is tall, slim, and pointy, like stone mountains reaching up to the sky. The temple is also called Rara Jonggrang Temple. Many people call it one of the most beautiful temples in all of Southeast Asia!"
+    },
+    {
+      "icon": "groups",
+      "h_id": "Rumah Tiga Dewa",
+      "h_en": "Home of Three Gods",
+      "body_id": "Prambanan dibangun untuk memuliakan Trimurti, yaitu tiga dewa utama Hindu. Mereka adalah Brahma sang pencipta, Wisnu sang pemelihara, dan Siwa sang pemusnah. Candi yang paling besar dan tinggi adalah Candi Siwa di tengah. Di dalamnya ada patung Siwa setinggi tiga meter.",
+      "body_en": "Prambanan was built to honor the Trimurti, the three main Hindu gods. They are Brahma the creator, Vishnu the keeper, and Shiva the destroyer. The biggest and tallest building is the Shiva temple in the middle. Inside it stands a three-meter-tall statue of Shiva."
+    },
+    {
+      "icon": "history_edu",
+      "h_id": "Kapan & Siapa Pembangunnya?",
+      "h_en": "When and Who Built It?",
+      "body_id": "Prambanan mulai dibangun sekitar tahun 850 Masehi, lebih dari 1.000 tahun yang lalu. Raja Rakai Pikatan memulainya pada masa Kerajaan Medang Mataram. Raja-raja sesudahnya terus memperbesar dan memperindah candi ini. Nama aslinya adalah Siwagrha, yang berarti 'Rumah Siwa'.",
+      "body_en": "Prambanan began to be built around 850 CE, more than 1,000 years ago. King Rakai Pikatan started it during the Medang Mataram Kingdom. The kings who came after kept making the temple bigger and more beautiful. Its original name was Shivagrha, which means 'House of Shiva'."
+    },
+    {
+      "icon": "festival",
+      "h_id": "Tarian di Bawah Cahaya",
+      "h_en": "Dancing Under the Lights",
+      "body_id": "Sampai hari ini Prambanan menjadi tempat pertunjukan dan wisata. Pada malam hari, candi disinari lampu dan penari menampilkan kisah Ramayana di depannya. Wisatawan dari seluruh dunia datang untuk melihat keindahannya. Candi ini membuat banyak orang kagum pada budaya Indonesia.",
+      "body_en": "To this day Prambanan is a place for shows and visits. At night, the temple is lit up and dancers perform the Ramayana story in front of it. Tourists from all over the world come to see its beauty. The temple makes many people admire Indonesian culture."
+    },
+    {
+      "icon": "shield",
+      "h_id": "Runtuh, Lalu Dibangun Lagi",
+      "h_en": "Fallen, Then Rebuilt",
+      "body_id": "Dahulu Prambanan pernah runtuh dan berubah menjadi tumpukan batu selama ratusan tahun. Gempa bumi dan waktu membuat banyak candinya roboh. Lalu orang-orang menyusun kembali batu-batunya dengan hati-hati. Sekarang Prambanan dilindungi sebagai Warisan Dunia UNESCO.",
+      "body_en": "Long ago Prambanan fell down and turned into piles of stone for hundreds of years. Earthquakes and time made many of its temples collapse. Then people carefully put the stones back together. Today Prambanan is protected as a UNESCO World Heritage site."
+    }
+  ],
+  "facts": [
+    { "id": "Prambanan adalah candi Hindu terbesar di Indonesia!", "en": "Prambanan is the biggest Hindu temple in Indonesia!" },
+    { "id": "Candi Siwa di tengah tingginya mencapai 47 meter, setinggi gedung belasan lantai.", "en": "The Shiva temple in the middle is 47 meters tall, like a building over ten floors high." },
+    { "id": "Candi ini dipersembahkan untuk tiga dewa Hindu: Brahma, Wisnu, dan Siwa.", "en": "The temple is dedicated to three Hindu gods: Brahma, Vishnu, and Shiva." },
+    { "id": "Nama aslinya, Siwagrha, berarti 'Rumah Siwa'.", "en": "Its original name, Shivagrha, means 'House of Shiva'." },
+    { "id": "Prambanan dibangun lebih dari 1.000 tahun yang lalu dari batu yang disusun tanpa semen.", "en": "Prambanan was built more than 1,000 years ago from stones stacked without cement." },
+    { "id": "Pada malam hari, kisah Ramayana ditarikan di depan candi yang bercahaya.", "en": "At night, the Ramayana story is danced in front of the glowing temple." }
+  ],
+  "glossary": [
+    { "term": "Candi", "def_id": "Bangunan suci dari batu peninggalan zaman Hindu-Buddha di Nusantara.", "def_en": "A stone holy building left from the Hindu-Buddhist era in the Indonesian islands." },
+    { "term": "Trimurti", "def_id": "Tiga dewa utama Hindu: Brahma, Wisnu, dan Siwa.", "def_en": "The three main Hindu gods: Brahma, Vishnu, and Shiva." },
+    { "term": "Hindu", "def_id": "Salah satu agama tertua di dunia yang memuja banyak dewa.", "def_en": "One of the world's oldest religions, which worships many gods." },
+    { "term": "Ramayana", "def_id": "Cerita kuno tentang Pangeran Rama yang sering ditarikan dan dimainkan.", "def_en": "An ancient story about Prince Rama, often danced and performed." },
+    { "term": "Relief", "def_id": "Gambar atau cerita yang dipahat timbul pada permukaan batu candi.", "def_en": "A picture or story carved so it stands out on a temple's stone surface." },
+    { "term": "Warisan Dunia", "def_id": "Tempat istimewa yang dilindungi UNESCO untuk seluruh umat manusia.", "def_en": "A special place protected by UNESCO for all of humanity." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/42287c7242816945.jpg",
+      "caption_id": "Menara-menara Candi Prambanan yang tinggi dan runcing, berdiri megah di antara rumput hijau.",
+      "caption_en": "The tall, pointy towers of Prambanan Temple, standing grandly among green grass.",
+      "credit": "CEphoto, Uwe Aranas",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/92c42f475f93bd84.jpg",
+      "caption_id": "Puncak Prambanan menyembul di antara kabut pagi dan pohon-pohon kelapa.",
+      "caption_en": "Prambanan's peaks rise through the morning mist and coconut trees.",
+      "credit": "Dwi Oblo of Reuters Indonesia",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/69edac8c406826da.jpg",
+      "caption_id": "Penari membawakan kisah Ramayana pada malam hari, dengan candi yang bercahaya di belakang.",
+      "caption_en": "Dancers perform the Ramayana story at night, with the glowing temple behind them.",
+      "credit": "Maria Ismawi",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "app/assets/img/wiki/82f3e41268621818.jpg",
+      "caption_id": "Foto lama tahun 1895 saat Prambanan masih berupa reruntuhan batu sebelum diperbaiki.",
+      "caption_en": "An old 1895 photo when Prambanan was still a pile of ruins before it was repaired.",
+      "credit": "William Henry Jackson",
+      "license": "Public domain"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Candi_Prambanan"
+}

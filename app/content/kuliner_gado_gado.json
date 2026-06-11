@@ -1,0 +1,128 @@
+{
+  "id": "kuliner_gado_gado",
+  "title_id": "Gado-gado",
+  "title_en": "Gado-gado",
+  "subtitle_id": "Salad sayur Indonesia yang disiram bumbu kacang!",
+  "subtitle_en": "An Indonesian vegetable salad drizzled with peanut sauce!",
+  "data_card": [
+    {
+      "icon": "public",
+      "label_id": "Asal",
+      "label_en": "Origin",
+      "value_id": "Jakarta & Pulau Jawa",
+      "value_en": "Jakarta & the island of Java"
+    },
+    {
+      "icon": "eco",
+      "label_id": "Jenis",
+      "label_en": "Type",
+      "value_id": "Salad sayur + bumbu kacang",
+      "value_en": "Vegetable salad + peanut sauce"
+    },
+    {
+      "icon": "restaurant",
+      "label_id": "Bahan utama",
+      "label_en": "Main ingredients",
+      "value_id": "Sayur, tahu, tempe, telur, kentang",
+      "value_en": "Vegetables, tofu, tempeh, egg, potato"
+    },
+    {
+      "icon": "local_dining",
+      "label_id": "Rasa",
+      "label_en": "Taste",
+      "value_id": "Gurih, sedikit manis, segar",
+      "value_en": "Savory, a little sweet, fresh"
+    },
+    {
+      "icon": "rice_bowl",
+      "label_id": "Disajikan",
+      "label_en": "Served with",
+      "value_id": "Lontong & kerupuk",
+      "value_en": "Lontong & crackers"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "eco",
+      "h_id": "Apa Itu Gado-gado?",
+      "h_en": "What Is Gado-gado?",
+      "body_id": "Gado-gado adalah salad sayur khas Indonesia yang disiram bumbu kacang yang gurih. Isinya bermacam sayuran seperti kangkung, kacang panjang, kol, dan tauge, ditambah tahu, tempe, telur rebus, dan kentang. Karena penuh sayuran, gado-gado sering disebut salad-nya Indonesia. Makanan ini sehat sekaligus mengenyangkan.",
+      "body_en": "Gado-gado is an Indonesian vegetable salad covered with a savory peanut sauce. It is filled with many vegetables such as water spinach, long beans, cabbage, and bean sprouts, plus tofu, tempeh, boiled egg, and potato. Because it is full of vegetables, gado-gado is often called Indonesia's salad. This dish is healthy and filling at the same time."
+    },
+    {
+      "icon": "public",
+      "h_id": "Dari Mana Asalnya?",
+      "h_en": "Where Does It Come From?",
+      "body_id": "Nama 'gado-gado' berasal dari kata 'gado' atau 'digado', yang dalam bahasa Jawa berarti makan lauk tanpa nasi. Makanan ini berkembang di Pulau Jawa dan menjadi sangat terkenal di Jakarta. Karena bahannya sederhana dan mudah didapat, gado-gado dengan cepat disukai banyak orang di seluruh Indonesia.",
+      "body_en": "The name 'gado-gado' comes from the word 'gado' or 'digado', which in Javanese means eating the side dishes without rice. This food grew up on the island of Java and became very famous in Jakarta. Because its ingredients are simple and easy to find, gado-gado quickly became loved by many people across Indonesia."
+    },
+    {
+      "icon": "soup_kitchen",
+      "h_id": "Bahan & Cara Membuatnya",
+      "h_en": "Ingredients & How It's Made",
+      "body_id": "Sayuran seperti tauge, kacang panjang, dan kol direbus sebentar, sementara mentimun dipakai mentah. Sayuran lalu ditata bersama tahu, tempe, telur rebus, dan kentang. Bumbu kacang dibuat dengan menghaluskan kacang tanah goreng, bawang putih, cabai, gula merah, dan air jeruk. Bumbu itu disiramkan di atas sayuran, lalu ditaburi kerupuk atau emping.",
+      "body_en": "Vegetables like bean sprouts, long beans, and cabbage are boiled briefly, while cucumber is used raw. The vegetables are then arranged together with tofu, tempeh, boiled egg, and potato. The peanut sauce is made by grinding fried peanuts, garlic, chili, palm sugar, and lime juice. The sauce is poured over the vegetables, then topped with crackers or emping chips."
+    },
+    {
+      "icon": "local_dining",
+      "h_id": "Rasa & Cara Menyantapnya",
+      "h_en": "Taste & How It's Eaten",
+      "body_id": "Gado-gado terasa gurih dan sedikit manis dari bumbu kacang, segar dari sayuran, dan renyah dari kerupuk. Semua isi diaduk rata supaya setiap suapan penuh rasa. Gado-gado bisa dimakan begitu saja, atau bersama lontong dan nasi agar lebih kenyang. Makanan ini enak disantap kapan saja, baik siang maupun malam.",
+      "body_en": "Gado-gado tastes savory and a little sweet from the peanut sauce, fresh from the vegetables, and crunchy from the crackers. Everything is mixed together so each bite is full of flavor. Gado-gado can be eaten on its own, or with lontong and rice to be more filling. This dish is tasty any time, whether at lunch or in the evening."
+    },
+    {
+      "icon": "diversity_3",
+      "h_id": "Makanan Saudara Gado-gado",
+      "h_en": "Gado-gado's Cousins",
+      "body_id": "Gado-gado punya banyak 'saudara' di Indonesia yang juga memakai bumbu kacang. Ada pecel dari Jawa Timur, lotek dan karedok dari Jawa Barat, serta rujak yang lebih manis dan pedas. Setiap daerah punya cara sendiri membuat bumbu kacangnya, sehingga rasanya berbeda-beda walau sama-sama lezat.",
+      "body_en": "Gado-gado has many 'cousins' in Indonesia that also use peanut sauce. There is pecel from East Java, lotek and karedok from West Java, and rujak which is sweeter and spicier. Each region has its own way of making the peanut sauce, so the taste is different even though they are all delicious."
+    }
+  ],
+  "facts": [
+    { "id": "Nama 'gado-gado' artinya makan lauk saja tanpa nasi.", "en": "The name 'gado-gado' means eating just the side dishes without rice." },
+    { "id": "Gado-gado sering disebut sebagai salad khas Indonesia.", "en": "Gado-gado is often called Indonesia's very own salad." },
+    { "id": "Bumbu kacangnya dibuat dari kacang tanah yang dihaluskan dengan gula merah dan jeruk.", "en": "Its peanut sauce is made from ground peanuts with palm sugar and lime." },
+    { "id": "Di sebagian daerah, bumbu kacang diulek dadakan tepat sebelum disajikan.", "en": "In some areas, the peanut sauce is ground fresh right before serving." },
+    { "id": "Gado-gado penuh sayuran, jadi termasuk makanan yang sehat.", "en": "Gado-gado is full of vegetables, so it is a healthy dish." },
+    { "id": "Pecel, lotek, dan karedok adalah saudara gado-gado yang juga pakai bumbu kacang.", "en": "Pecel, lotek, and karedok are gado-gado's cousins that also use peanut sauce." }
+  ],
+  "glossary": [
+    { "term": "Gado-gado", "def_id": "Salad sayur Indonesia yang disiram bumbu kacang.", "def_en": "An Indonesian vegetable salad drizzled with peanut sauce." },
+    { "term": "Bumbu kacang", "def_id": "Saus kental dan gurih dari kacang tanah yang dihaluskan.", "def_en": "A thick, savory sauce made from ground peanuts." },
+    { "term": "Tempe", "def_id": "Makanan dari kedelai yang difermentasi dan dipadatkan, khas Indonesia.", "def_en": "A food made from fermented, pressed soybeans, special to Indonesia." },
+    { "term": "Tahu", "def_id": "Makanan lembut berwarna putih yang dibuat dari sari kacang kedelai.", "def_en": "A soft white food made from soybean milk." },
+    { "term": "Tauge", "def_id": "Tunas muda kacang hijau yang renyah, sering dipakai di gado-gado.", "def_en": "Crunchy young sprouts of mung beans, often used in gado-gado." },
+    { "term": "Kerupuk", "def_id": "Camilan tipis dan renyah yang digoreng, sebagai pelengkap makanan.", "def_en": "A thin, crispy fried snack served alongside food." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/5822ba951dec9719.jpg",
+      "caption_id": "Sepiring gado-gado dengan bumbu kacang kental, telur rebus, tahu, kacang panjang, dan kerupuk.",
+      "caption_en": "A plate of gado-gado with thick peanut sauce, boiled egg, tofu, long beans, and crackers.",
+      "credit": "Takeaway",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/b808de8db32fec33.jpg",
+      "caption_id": "Gado-gado lengkap dengan sayuran segar, mentimun, telur, dan emping yang renyah.",
+      "caption_en": "A full gado-gado with fresh vegetables, cucumber, egg, and crispy emping chips.",
+      "credit": "Sakurai Midori",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/825176f2be8f19e1.jpg",
+      "caption_id": "Gado-gado dalam wadah besar, dihias telur rebus dan irisan mentimun untuk disantap bersama.",
+      "caption_en": "Gado-gado in a big tray, topped with boiled eggs and cucumber slices to share.",
+      "credit": "Supardisahabu",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/73d86bcd259f22c6.jpg",
+      "caption_id": "Gado-gado diaduk di atas cobek batu agar sayuran tercampur rata dengan bumbu kacang.",
+      "caption_en": "Gado-gado being mixed on a stone mortar so the vegetables blend well with the peanut sauce.",
+      "credit": "Sakurai Midori",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Gado-gado"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "budaya_tari_kecak_bali",
+  "title_id": "Tari Kecak",
+  "title_en": "Kecak Dance",
+  "subtitle_id": "Tarian Bali dengan paduan suara 'cak' dari puluhan penari",
+  "subtitle_en": "A Balinese dance with the 'cak' chant of dozens of dancers",
+  "data_card": [
+    { "icon": "public", "label_id": "Asal", "label_en": "Origin", "value_id": "Bali, Indonesia", "value_en": "Bali, Indonesia" },
+    { "icon": "groups", "label_id": "Penari", "label_en": "Performers", "value_id": "Puluhan pria", "value_en": "Dozens of men" },
+    { "icon": "campaign", "label_id": "Iringan", "label_en": "Music", "value_id": "Suara 'cak', tanpa alat musik", "value_en": "The 'cak' chant, no instruments" },
+    { "icon": "theater_comedy", "label_id": "Cerita", "label_en": "Story", "value_id": "Kisah Ramayana", "value_en": "The Ramayana story" },
+    { "icon": "local_fire_department", "label_id": "Suasana", "label_en": "Setting", "value_id": "Sering di sore atau malam", "value_en": "Often at sunset or night" }
+  ],
+  "sections": [
+    {
+      "icon": "theater_comedy",
+      "h_id": "Apa Itu Tari Kecak?",
+      "h_en": "What Is the Kecak Dance?",
+      "body_id": "Tari Kecak adalah tarian sekaligus drama khas dari Pulau Bali. Tarian ini sangat terkenal karena dimainkan oleh puluhan penari laki-laki yang duduk melingkar. Mereka tidak memakai alat musik sama sekali. Sebagai gantinya, para penari berseru 'cak-cak-cak' bersama-sama dengan irama yang cepat. Dari seruan itulah tarian ini mendapat nama 'Kecak'.",
+      "body_en": "The Kecak dance is a dance and drama from the island of Bali. It is very famous because it is performed by dozens of male dancers sitting in a circle. They do not use any musical instruments at all. Instead, the dancers chant 'cak-cak-cak' together in a fast rhythm. That chant is how the dance got the name 'Kecak'."
+    },
+    {
+      "icon": "campaign",
+      "h_id": "Suara Manusia Jadi Musik",
+      "h_en": "Voices Become the Music",
+      "body_id": "Yang membuat Kecak istimewa adalah musiknya yang berasal dari suara manusia. Para penari yang duduk melingkar menyerukan 'cak' berulang-ulang dengan irama berbeda-beda. Ada yang berseru cepat, ada yang lambat, sehingga terdengar seperti orkestra. Sambil bersuara, mereka mengangkat dan menggerakkan kedua tangan ke atas. Suara puluhan orang ini terdengar sangat menggetarkan hati.",
+      "body_en": "What makes Kecak special is that its music comes from human voices. The dancers sitting in a circle chant 'cak' over and over in different rhythms. Some chant fast and some slow, so it sounds like an orchestra. While chanting, they raise and wave their arms up high. The sound of dozens of people together feels very powerful and exciting."
+    },
+    {
+      "icon": "auto_stories",
+      "h_id": "Kisah Ramayana",
+      "h_en": "The Ramayana Story",
+      "body_id": "Tari Kecak menceritakan kisah lama yang bernama Ramayana. Dalam cerita ini, Putri Shinta diculik oleh raksasa jahat bernama Rahwana. Pangeran Rama lalu berjuang untuk menyelamatkannya. Ia dibantu oleh pasukan kera dan kera putih yang gagah berani bernama Hanoman. Para penari yang duduk melingkar berperan sebagai pasukan kera dalam cerita seru ini.",
+      "body_en": "The Kecak dance tells an old story called the Ramayana. In this story, Princess Sinta is taken away by an evil giant named Ravana. Prince Rama then fights to rescue her. He is helped by an army of monkeys and a brave white monkey named Hanoman. The dancers sitting in the circle play the monkey army in this exciting story."
+    },
+    {
+      "icon": "history_edu",
+      "h_id": "Dari Mana Asalnya?",
+      "h_en": "Where Did It Come From?",
+      "body_id": "Tari Kecak tumbuh dari sebuah ritual lama di Bali yang disebut Sanghyang. Pada tahun 1930-an, seorang seniman Bali bernama Wayan Limbak bekerja sama dengan pelukis dari Jerman, Walter Spies. Mereka mengubah ritual itu menjadi pertunjukan tari yang menceritakan Ramayana. Wayan Limbak lalu memperkenalkan Tari Kecak ke berbagai negara di dunia.",
+      "body_en": "The Kecak dance grew out of an old Balinese ritual called Sanghyang. In the 1930s, a Balinese artist named Wayan Limbak worked together with a German painter, Walter Spies. They turned the ritual into a dance show that tells the Ramayana. Wayan Limbak then introduced the Kecak dance to many countries around the world."
+    },
+    {
+      "icon": "favorite",
+      "h_id": "Pertunjukan yang Memukau",
+      "h_en": "An Amazing Show",
+      "body_id": "Sekarang, Tari Kecak menjadi pertunjukan yang sangat digemari, terutama oleh wisatawan di Bali. Pertunjukan sering diadakan saat matahari terbenam di tepi pantai, seperti di Pura Uluwatu yang indah. Beberapa pertunjukan bahkan menampilkan tarian api yang menegangkan. Tari Kecak membuat banyak orang kagum pada keindahan budaya Bali.",
+      "body_en": "Today, the Kecak dance is a very popular show, especially for visitors in Bali. Performances are often held at sunset by the sea, such as at the beautiful Uluwatu Temple. Some shows even feature a thrilling fire dance. The Kecak dance makes many people amazed by the beauty of Balinese culture."
+    }
+  ],
+  "facts": [
+    { "id": "Tari Kecak tidak memakai alat musik sama sekali, hanya suara penari!", "en": "The Kecak dance uses no instruments at all, only the dancers' voices!" },
+    { "id": "Nama 'Kecak' berasal dari seruan 'cak-cak-cak' yang dinyanyikan penari.", "en": "The name 'Kecak' comes from the 'cak-cak-cak' chant the dancers sing." },
+    { "id": "Tarian ini dimainkan oleh puluhan penari laki-laki yang duduk melingkar.", "en": "The dance is performed by dozens of male dancers sitting in a circle." },
+    { "id": "Tari Kecak menceritakan kisah Ramayana tentang Rama dan Shinta.", "en": "The Kecak dance tells the Ramayana story about Rama and Sinta." },
+    { "id": "Kera putih pemberani dalam cerita ini bernama Hanoman.", "en": "The brave white monkey in the story is named Hanoman." },
+    { "id": "Tari Kecak diciptakan sekitar tahun 1930-an di Bali.", "en": "The Kecak dance was created around the 1930s in Bali." }
+  ],
+  "glossary": [
+    { "term": "Ramayana", "def_id": "Cerita lama tentang Pangeran Rama yang menyelamatkan Putri Shinta.", "def_en": "An old story about Prince Rama rescuing Princess Sinta." },
+    { "term": "Hanoman", "def_id": "Kera putih gagah berani yang membantu Rama dalam cerita Ramayana.", "def_en": "The brave white monkey who helps Rama in the Ramayana story." },
+    { "term": "Paduan suara", "def_id": "Banyak orang yang bersuara atau bernyanyi bersama-sama.", "def_en": "Many people making sounds or singing together at the same time." },
+    { "term": "Ritual", "def_id": "Upacara khusus yang dilakukan dengan cara tertentu sejak dahulu.", "def_en": "A special ceremony done in a certain way since long ago." },
+    { "term": "Pura", "def_id": "Tempat ibadah umat Hindu di Bali.", "def_en": "A Hindu place of worship in Bali." }
+  ],
+  "gallery": [
+    { "src": "app/assets/img/wiki/434a268d42c0bbcb.jpg", "caption_id": "Puluhan penari Kecak duduk melingkar mengelilingi nyala api saat malam.", "caption_en": "Dozens of Kecak dancers sit in a circle around a flame at night.", "credit": "Jeong seolah", "license": "CC0" },
+    { "src": "app/assets/img/wiki/70caa26bf68f5173.jpg", "caption_id": "Para penari mengangkat tangan tinggi-tinggi sambil menyerukan 'cak'.", "caption_en": "The dancers raise their arms high while chanting 'cak'.", "credit": "Mr Aaron", "license": "CC BY-SA 2.0" },
+    { "src": "app/assets/img/wiki/fa7dc6c738c04f2e.jpg", "caption_id": "Tokoh Hanoman si kera putih tampil di tengah penonton.", "caption_en": "The character Hanoman, the white monkey, performs among the audience.", "credit": "NarayaIsIyoSoup", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/9abe45cd2fb19fe7.jpg", "caption_id": "Tarian api yang menegangkan menjadi bagian seru dari pertunjukan Kecak.", "caption_en": "A thrilling fire dance is an exciting part of the Kecak show.", "credit": "Yuma patarihan79", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/18ef104a014c5287.jpg", "caption_id": "Dilihat dari atas, ratusan penari membentuk lingkaran besar yang rapi.", "caption_en": "Seen from above, hundreds of dancers form one big, neat circle.", "credit": "Unknown author", "license": "CC BY-SA 3.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Kecak"
+}

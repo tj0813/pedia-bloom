@@ -51,6 +51,21 @@ TOPICS = {
     "ensiklopedia_tarsius":           {"wiki": "Tarsius", "search": "Tarsius spectrum"},
     # Not flora/fauna, but the user asked to fix his image: fetch the real portrait too.
     "pahlawan_ki_hajar_dewantara_1":  {"wiki": "Ki Hadjar Dewantara", "search": "Ki Hadjar Dewantara portrait", "portrait": True},
+
+    # --- Budaya Nusantara (culture, crafts, food) ---
+    "ensiklopedia_candi_borobudur_2": {"wiki": "Borobudur", "search": "Borobudur temple"},
+    "budaya_candi_prambanan":         {"wiki": "Prambanan", "search": "Prambanan temple"},
+    "budaya_wayang_kulit":            {"wiki": "Wayang kulit", "search": "Wayang kulit shadow puppet"},
+    "budaya_alat_musik_angklung_1":   {"wiki": "Angklung", "search": "Angklung instrument"},
+    "budaya_batik_indonesia":         {"wiki": "Batik", "search": "Batik Indonesia"},
+    "budaya_tari_kecak_bali":         {"wiki": "Tari Kecak", "search": "Kecak dance Bali"},
+    "budaya_tari_saman":              {"wiki": "Tari Saman", "search": "Saman dance Aceh"},
+    "ensiklopedia_rumah_gadang":      {"wiki": "Rumah Gadang", "search": "Rumah Gadang Minangkabau"},
+    "kuliner_rendang":                {"wiki": "Rendang", "search": "Rendang food"},
+    "kuliner_nasi_goreng":            {"wiki": "Nasi goreng", "search": "Nasi goreng"},
+    "kuliner_sate":                   {"wiki": "Sate", "search": "Satay Indonesia"},
+    "kuliner_gado_gado":              {"wiki": "Gado-gado", "search": "Gado-gado"},
+    "kuliner_soto_nusantara":         {"wiki": "Soto", "search": "Soto Indonesia"},
 }
 
 FREE_LICENSE = re.compile(r"public domain|^pd|cc0|cc[\s-]?by", re.I)
@@ -183,6 +198,9 @@ def main():
     os.makedirs(RESEARCH_DIR, exist_ok=True)
     summary = []
     for tid, topic in TOPICS.items():
+        # Idempotent: skip topics already fetched (so re-runs only fetch new ones).
+        if os.path.exists(os.path.join(RESEARCH_DIR, tid + ".json")):
+            continue
         print(f"- {tid}  <-  {topic['wiki']}")
         try:
             resolved, extract = wiki_extract(topic["wiki"])

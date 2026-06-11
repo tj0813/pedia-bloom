@@ -1,0 +1,114 @@
+{
+  "id": "kuliner_soto_nusantara",
+  "title_id": "Soto Nusantara",
+  "title_en": "Soto of the Archipelago",
+  "subtitle_id": "Sup berkuah hangat dengan ratusan resep dari seluruh Indonesia!",
+  "subtitle_en": "A warm soupy dish with hundreds of recipes from all over Indonesia!",
+  "data_card": [
+    {
+      "icon": "public",
+      "label_id": "Asal",
+      "label_en": "Origin",
+      "value_id": "Pesisir utara Jawa Tengah",
+      "value_en": "North coast of Central Java"
+    },
+    {
+      "icon": "soup_kitchen",
+      "label_id": "Jenis",
+      "label_en": "Type",
+      "value_id": "Sup berkuah dari kaldu",
+      "value_en": "A soup made from broth"
+    },
+    {
+      "icon": "restaurant",
+      "label_id": "Bahan utama",
+      "label_en": "Main ingredients",
+      "value_id": "Kaldu daging ayam atau sapi & sayur",
+      "value_en": "Chicken or beef broth & vegetables"
+    },
+    {
+      "icon": "local_fire_department",
+      "label_id": "Rasa",
+      "label_en": "Taste",
+      "value_id": "Gurih, hangat, harum rempah",
+      "value_en": "Savory, warm, fragrant with spices"
+    },
+    {
+      "icon": "rice_bowl",
+      "label_id": "Disajikan",
+      "label_en": "Served with",
+      "value_id": "Nasi, lontong, atau bihun",
+      "value_en": "Rice, lontong, or rice vermicelli"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "soup_kitchen",
+      "h_id": "Apa Itu Soto?",
+      "h_en": "What Is Soto?",
+      "body_id": "Soto adalah makanan berkuah khas Indonesia yang mirip sup. Kuahnya dibuat dari kaldu daging yang dimasak bersama rempah-rempah sampai harum, lalu diisi potongan daging dan sayuran. Daging yang paling sering dipakai adalah ayam dan sapi. Soto disajikan hangat dan cocok dimakan kapan saja, terutama saat cuaca dingin.",
+      "body_en": "Soto is an Indonesian soupy dish that is like a soup. Its broth is made from meat stock cooked with spices until fragrant, then filled with pieces of meat and vegetables. The meats most often used are chicken and beef. Soto is served warm and is great to eat any time, especially when the weather is cool."
+    },
+    {
+      "icon": "public",
+      "h_id": "Dari Mana Asalnya?",
+      "h_en": "Where Does It Come From?",
+      "body_id": "Soto banyak ditemukan pertama kali di kota-kota pelabuhan di pesisir utara Jawa Tengah, seperti Tegal, Pekalongan, Semarang, dan Kudus. Karena ramai oleh pedagang dari berbagai bangsa, resep soto pun ikut menyebar dan berubah-ubah. Dari sana, soto berkembang ke seluruh Nusantara dan setiap daerah membuat versinya sendiri.",
+      "body_en": "Soto was first found in port cities on the north coast of Central Java, such as Tegal, Pekalongan, Semarang, and Kudus. Because these cities were busy with traders from many nations, soto recipes spread and changed along the way. From there, soto grew across the whole archipelago and each region made its own version."
+    },
+    {
+      "icon": "local_fire_department",
+      "h_id": "Bahan & Cara Membuatnya",
+      "h_en": "Ingredients & How It's Made",
+      "body_id": "Untuk membuat soto, daging direbus lama hingga menghasilkan kaldu yang gurih. Bumbu seperti kunyit, jahe, serai, bawang putih, dan bawang merah dihaluskan, ditumis, lalu dimasukkan ke dalam kuah. Daging yang sudah empuk disuwir atau dipotong kecil. Saat disajikan, soto dituang di atas nasi atau bihun dan ditaburi bawang goreng serta seledri.",
+      "body_en": "To make soto, the meat is boiled for a long time to create a savory broth. Spices like turmeric, ginger, lemongrass, garlic, and shallots are ground, fried, then added to the broth. The tender meat is shredded or cut small. When served, soto is poured over rice or vermicelli and topped with fried shallots and celery."
+    },
+    {
+      "icon": "rice_bowl",
+      "h_id": "Rasa & Cara Menyantapnya",
+      "h_en": "Taste & How It's Eaten",
+      "body_id": "Soto terasa gurih dan hangat, dengan aroma rempah yang harum. Banyak orang menambahkan perasan jeruk nipis, sambal, dan kecap supaya rasanya makin segar dan sesuai selera. Soto biasa dimakan bersama nasi, lontong, atau bihun, ditambah pelengkap seperti kerupuk, perkedel, telur, dan emping yang renyah.",
+      "body_en": "Soto tastes savory and warm, with a fragrant smell of spices. Many people add a squeeze of lime, chili sauce, and sweet soy sauce to make it fresher and just right for their taste. Soto is usually eaten with rice, lontong, or vermicelli, plus sides like crackers, potato patties, egg, and crispy emping chips."
+    },
+    {
+      "icon": "diversity_3",
+      "h_id": "Soto dari Berbagai Daerah",
+      "h_en": "Soto from Many Regions",
+      "body_id": "Hampir setiap daerah di Indonesia punya soto sendiri! Soto Ayam Lamongan berkuah kuning dan ditaburi koya, Soto Betawi dari Jakarta memakai santan atau susu sehingga gurih, Soto Banjar dari Kalimantan harum oleh kayu manis dan cengkih, sedangkan Coto Makassar dari Sulawesi berkuah kental dan kaya rempah. Karena begitu banyak ragamnya, soto disebut Soto Nusantara.",
+      "body_en": "Almost every region in Indonesia has its own soto! Soto Ayam Lamongan has a yellow broth sprinkled with koya, Soto Betawi from Jakarta uses coconut milk or dairy to make it creamy, Soto Banjar from Kalimantan is fragrant with cinnamon and cloves, while Coto Makassar from Sulawesi has a thick, spice-rich broth. Because there are so many kinds, soto is called Soto Nusantara, the soto of the archipelago."
+    }
+  ],
+  "facts": [
+    { "id": "Hampir setiap kota di Indonesia punya jenis soto khasnya sendiri.", "en": "Almost every city in Indonesia has its own special kind of soto." },
+    { "id": "Soto punya banyak nama daerah, seperti sroto, sauto, tauto, dan coto.", "en": "Soto has many local names, such as sroto, sauto, tauto, and coto." },
+    { "id": "Soto Betawi dibuat gurih dengan santan atau susu.", "en": "Soto Betawi is made creamy with coconut milk or dairy." },
+    { "id": "Warna kuning pada banyak soto berasal dari kunyit.", "en": "The yellow color in many sotos comes from turmeric." },
+    { "id": "Koya, taburan dari kerupuk dan bawang putih, membuat Soto Lamongan makin gurih.", "en": "Koya, a topping of crushed crackers and garlic, makes Soto Lamongan even tastier." },
+    { "id": "Soto paling enak disantap selagi hangat, apalagi saat hujan.", "en": "Soto is best enjoyed while warm, especially when it rains." }
+  ],
+  "glossary": [
+    { "term": "Soto", "def_id": "Makanan berkuah khas Indonesia yang dibuat dari kaldu daging dan rempah.", "def_en": "An Indonesian soupy dish made from meat broth and spices." },
+    { "term": "Kaldu", "def_id": "Air rebusan daging atau tulang yang gurih, menjadi dasar kuah soto.", "def_en": "The savory liquid from boiling meat or bones, used as the base of soto broth." },
+    { "term": "Kunyit", "def_id": "Rempah berwarna kuning yang membuat kuah soto berwarna dan harum.", "def_en": "A yellow spice that gives soto broth its color and aroma." },
+    { "term": "Bawang goreng", "def_id": "Irisan bawang merah yang digoreng renyah dan ditaburkan di atas soto.", "def_en": "Slices of shallot fried until crispy and sprinkled on top of soto." },
+    { "term": "Koya", "def_id": "Taburan gurih dari kerupuk dan bawang putih yang dihaluskan.", "def_en": "A savory topping of crackers and garlic ground together." },
+    { "term": "Lontong", "def_id": "Nasi yang dipadatkan dan dibungkus daun, sering dimakan dengan soto.", "def_en": "Rice pressed and wrapped in leaves, often eaten with soto." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/068a2245a5a30674.jpg",
+      "caption_id": "Soto ayam berkuah kuning dengan suwiran ayam, bawang goreng, emping, dan irisan tomat.",
+      "caption_en": "Chicken soto with a yellow broth, shredded chicken, fried shallots, emping chips, and sliced tomato.",
+      "credit": "Sakurai Midori",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/a2dbe61a12196d14.jpg",
+      "caption_id": "Soto Banjar dari Kalimantan dengan perasan jeruk nipis, suwiran ayam, dan perkedel.",
+      "caption_en": "Soto Banjar from Kalimantan with a squeeze of lime, shredded chicken, and a potato patty.",
+      "credit": "Midori",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Soto"
+}

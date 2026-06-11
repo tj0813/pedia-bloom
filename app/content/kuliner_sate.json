@@ -1,0 +1,107 @@
+{
+  "id": "kuliner_sate",
+  "title_id": "Sate",
+  "title_en": "Satay",
+  "subtitle_id": "Daging ditusuk dan dibakar di atas bara, disiram bumbu kacang!",
+  "subtitle_en": "Skewered meat grilled over coals, drizzled with peanut sauce!",
+  "data_card": [
+    {
+      "icon": "public",
+      "label_id": "Asal",
+      "label_en": "Origin",
+      "value_id": "Jawa, Indonesia (Ponorogo)",
+      "value_en": "Java, Indonesia (Ponorogo)"
+    },
+    {
+      "icon": "kebab_dining",
+      "label_id": "Jenis",
+      "label_en": "Type",
+      "value_id": "Daging tusuk yang dibakar",
+      "value_en": "Grilled meat on skewers"
+    },
+    {
+      "icon": "restaurant",
+      "label_id": "Bahan utama",
+      "label_en": "Main ingredients",
+      "value_id": "Ayam, kambing, atau sapi",
+      "value_en": "Chicken, goat, or beef"
+    },
+    {
+      "icon": "local_fire_department",
+      "label_id": "Rasa",
+      "label_en": "Taste",
+      "value_id": "Gurih, manis, sedikit berasap",
+      "value_en": "Savory, sweet, a little smoky"
+    },
+    {
+      "icon": "rice_bowl",
+      "label_id": "Disajikan",
+      "label_en": "Served with",
+      "value_id": "Bumbu kacang, nasi atau lontong",
+      "value_en": "Peanut sauce, rice or lontong"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "kebab_dining",
+      "h_id": "Apa Itu Sate?",
+      "h_en": "What Is Satay?",
+      "body_id": "Sate adalah makanan dari potongan daging kecil yang ditusuk dengan lidi atau tusuk bambu, lalu dibakar di atas bara arang sampai matang dan harum. Setelah matang, sate biasanya disiram bumbu kacang atau kecap manis. Sate sangat terkenal di seluruh Indonesia dan dianggap salah satu masakan nasional kita.",
+      "body_en": "Satay is a food made from small pieces of meat threaded onto thin sticks or bamboo skewers, then grilled over hot charcoal until cooked and fragrant. Once done, satay is usually drizzled with peanut sauce or sweet soy sauce. Satay is famous all over Indonesia and is seen as one of our national dishes."
+    },
+    {
+      "icon": "public",
+      "h_id": "Dari Mana Asalnya?",
+      "h_en": "Where Does It Come From?",
+      "body_id": "Sate berasal dari Pulau Jawa, Indonesia. Banyak orang percaya kota asalnya adalah Ponorogo di Jawa Timur. Dari Jawa, sate menyebar ke seluruh Nusantara, lalu ke negara tetangga seperti Malaysia, Singapura, dan Thailand. Sate bahkan terkenal sampai ke Belanda. Setiap daerah membuat sate dengan resep khasnya sendiri.",
+      "body_en": "Satay comes from the island of Java, Indonesia. Many people believe its home town is Ponorogo in East Java. From Java, satay spread across the whole archipelago, then to neighboring countries like Malaysia, Singapore, and Thailand. Satay even became famous as far away as the Netherlands. Each region makes satay with its own special recipe."
+    },
+    {
+      "icon": "local_fire_department",
+      "h_id": "Bahan & Cara Membuatnya",
+      "h_en": "Ingredients & How It's Made",
+      "body_id": "Daging untuk sate bisa berupa ayam, kambing, sapi, atau yang lain. Daging dipotong kecil, diberi bumbu seperti kunyit atau kecap manis, lalu ditusuk satu per satu. Tusukan daging itu dibakar di atas arang sambil dikipas, supaya matang merata dan keluar bau harum yang menggoda. Asap dari bara inilah yang membuat sate terasa istimewa.",
+      "body_en": "The meat for satay can be chicken, goat, beef, or others. The meat is cut into small pieces, seasoned with spices like turmeric or sweet soy sauce, then threaded onto skewers one by one. The skewers are grilled over charcoal while being fanned, so they cook evenly and give off a tempting aroma. The smoke from the coals is what makes satay taste so special."
+    },
+    {
+      "icon": "rice_bowl",
+      "h_id": "Rasa & Cara Menyantapnya",
+      "h_en": "Taste & How It's Eaten",
+      "body_id": "Sate terasa gurih, sedikit manis, dan harum oleh asap arang. Paling enak disantap saat masih hangat, dengan siraman bumbu kacang yang kental atau kecap manis. Biasanya sate dimakan bersama nasi hangat atau lontong, ditambah irisan bawang merah, mentimun, dan kadang sambal. Kita bisa menemukan sate dari gerobak keliling sampai restoran besar.",
+      "body_en": "Satay tastes savory, a little sweet, and smells wonderful from the charcoal smoke. It is best enjoyed while still warm, with thick peanut sauce or sweet soy sauce poured over it. Satay is usually eaten with warm rice or lontong (rice cake), plus slices of shallot, cucumber, and sometimes chili sauce. You can find satay everywhere, from pushcart sellers to big restaurants."
+    },
+    {
+      "icon": "diversity_3",
+      "h_id": "Aneka Sate Nusantara",
+      "h_en": "Many Kinds of Satay",
+      "body_id": "Indonesia punya koleksi jenis sate paling banyak di dunia! Ada Sate Ponorogo dengan daging ayam yang dipotong memanjang, Sate Madura dengan bumbu kacang manis, Sate Padang dengan kuah kuning kental, dan Sate Lilit dari Bali yang dililitkan pada batang serai. Setiap sate punya rasa dan cerita yang berbeda.",
+      "body_en": "Indonesia has the biggest collection of satay types in the world! There is Satay Ponorogo with long-sliced chicken, Satay Madura with sweet peanut sauce, Satay Padang with a thick yellow gravy, and Satay Lilit from Bali that is wrapped around lemongrass sticks. Each satay has its own flavor and story."
+    }
+  ],
+  "facts": [
+    { "id": "Sate dipilih sebagai peringkat ke-14 dalam daftar '50 Makanan Terlezat di Dunia' versi CNN.", "en": "Satay was ranked 14th on CNN's list of the 'World's 50 Most Delicious Foods'." },
+    { "id": "Hampir semua jenis daging bisa dibuat sate, bahkan udang dan telur puyuh!", "en": "Almost any kind of meat can be made into satay, even shrimp and quail eggs!" },
+    { "id": "Indonesia punya jenis sate paling banyak di dunia, lebih dari 50 macam.", "en": "Indonesia has the most types of satay in the world, more than 50 kinds." },
+    { "id": "Pada Sate Ponorogo, setiap tusuk berisi satu potong daging ayam yang diiris panjang.", "en": "In Satay Ponorogo, each skewer holds one piece of chicken sliced long." },
+    { "id": "Kantor gubernur di Bandung dijuluki 'Gedung Sate' karena hiasan atapnya mirip tusuk sate.", "en": "A government building in Bandung is nicknamed 'Gedung Sate' because its roof ornament looks like a satay skewer." },
+    { "id": "Banyak makanan di dunia mirip sate, seperti yakitori dari Jepang dan kebab dari Turki.", "en": "Many foods around the world are like satay, such as yakitori from Japan and kebab from Turkey." }
+  ],
+  "glossary": [
+    { "term": "Sate", "def_id": "Potongan daging yang ditusuk dan dibakar di atas bara arang.", "def_en": "Pieces of meat threaded on a skewer and grilled over charcoal." },
+    { "term": "Tusuk sate", "def_id": "Lidi atau batang bambu tipis tempat daging ditusuk.", "def_en": "A thin stick or bamboo skewer that the meat is threaded onto." },
+    { "term": "Bumbu kacang", "def_id": "Saus kental dan gurih yang dibuat dari kacang tanah yang dihaluskan.", "def_en": "A thick, savory sauce made from ground peanuts." },
+    { "term": "Bara arang", "def_id": "Potongan arang yang membara dan panas, dipakai untuk membakar sate.", "def_en": "Glowing, hot pieces of charcoal used to grill the satay." },
+    { "term": "Lontong", "def_id": "Nasi yang dipadatkan dan dibungkus daun, dipotong untuk teman makan sate.", "def_en": "Rice pressed and wrapped in leaves, sliced to eat alongside satay." },
+    { "term": "Kecap manis", "def_id": "Saus kedelai berwarna cokelat tua yang manis dan kental, khas Indonesia.", "def_en": "A dark, sweet, thick soybean sauce that is special to Indonesia." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/ab984e0f411917f6.jpg",
+      "caption_id": "Sate ayam Ponorogo di atas bumbu kacang, dengan irisan bawang merah dan jeruk nipis.",
+      "caption_en": "Ponorogo chicken satay over peanut sauce, with sliced shallots and lime.",
+      "credit": "Gunawan Kartapranata",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Sate"
+}

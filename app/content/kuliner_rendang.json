@@ -1,0 +1,135 @@
+{
+  "id": "kuliner_rendang",
+  "title_id": "Rendang",
+  "title_en": "Rendang",
+  "subtitle_id": "Daging berbumbu Minangkabau yang dimasak berjam-jam sampai empuk dan hitam!",
+  "subtitle_en": "Minangkabau spiced meat slow-cooked for hours until tender and dark!",
+  "data_card": [
+    {
+      "icon": "public",
+      "label_id": "Asal",
+      "label_en": "Origin",
+      "value_id": "Minangkabau, Sumatra Barat",
+      "value_en": "Minangkabau, West Sumatra"
+    },
+    {
+      "icon": "restaurant",
+      "label_id": "Bahan utama",
+      "label_en": "Main ingredients",
+      "value_id": "Daging sapi, santan, dan rempah",
+      "value_en": "Beef, coconut milk, and spices"
+    },
+    {
+      "icon": "local_fire_department",
+      "label_id": "Rasa",
+      "label_en": "Taste",
+      "value_id": "Gurih, pedas, dan kaya rempah",
+      "value_en": "Savory, spicy, and rich with spices"
+    },
+    {
+      "icon": "soup_kitchen",
+      "label_id": "Jenis",
+      "label_en": "Type",
+      "value_id": "Lauk untuk teman nasi",
+      "value_en": "A side dish to go with rice"
+    },
+    {
+      "icon": "schedule",
+      "label_id": "Lama masak",
+      "label_en": "Cooking time",
+      "value_id": "Sekitar 4-5 jam",
+      "value_en": "About 4-5 hours"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "restaurant",
+      "h_id": "Apa Itu Rendang?",
+      "h_en": "What Is Rendang?",
+      "body_id": "Rendang adalah lauk daging berbumbu yang berasal dari Minangkabau, Sumatra Barat. Daging dimasak pelan-pelan dengan santan dan banyak rempah sampai bumbunya meresap dan berwarna cokelat kehitaman. Rasanya gurih, sedikit pedas, dan sangat kaya. Rendang biasa dimakan bersama nasi hangat dan menjadi salah satu makanan kebanggaan Indonesia.",
+      "body_en": "Rendang is a spiced meat dish from Minangkabau in West Sumatra. The meat is cooked slowly with coconut milk and many spices until the flavor soaks in and it turns dark brown. It tastes savory, a little spicy, and very rich. Rendang is usually eaten with warm rice and is one of Indonesia's most beloved foods."
+    },
+    {
+      "icon": "public",
+      "h_id": "Dari Mana Asalnya?",
+      "h_en": "Where Does It Come From?",
+      "body_id": "Rendang lahir di tanah Minangkabau. Dahulu orang Minang gemar merantau, yaitu pergi jauh ke daerah lain. Mereka butuh bekal makanan yang awet dan tahan lama. Karena rendang dimasak sampai kering, ia bisa bertahan berminggu-minggu tanpa basi. Maka rendang menjadi bekal sempurna untuk perjalanan jauh, dan kini terkenal sampai ke luar negeri.",
+      "body_en": "Rendang was born in the Minangkabau land. Long ago the Minang people loved to merantau, which means to travel far to other regions. They needed food supplies that would last a long time. Because rendang is cooked until dry, it can keep for weeks without spoiling. So rendang became the perfect food to carry on long journeys, and now it is famous even in other countries."
+    },
+    {
+      "icon": "soup_kitchen",
+      "h_id": "Bagaimana Dimasak?",
+      "h_en": "How Is It Cooked?",
+      "body_id": "Memasak rendang butuh kesabaran. Mula-mula santan dan bumbu dimasak bersama daging sampai mendidih, warnanya masih kuning. Lalu api dikecilkan dan terus diaduk pelan-pelan. Lama-kelamaan santan mengental menjadi cokelat keemasan, disebut kalio. Kalau diteruskan sampai kering dan hitam, barulah jadi rendang. Semua proses ini bisa memakan waktu empat sampai lima jam!",
+      "body_en": "Cooking rendang takes patience. First the coconut milk and spices are cooked with the meat until it boils, and it is still yellow. Then the heat is lowered and it is stirred slowly. Little by little the coconut milk thickens into golden brown, called kalio. If you keep going until it is dry and dark, only then does it become rendang. All of this can take four to five hours!"
+    },
+    {
+      "icon": "eco",
+      "h_id": "Bumbu Ajaib Rendang",
+      "h_en": "Rendang's Magic Spices",
+      "body_id": "Rendang memakai banyak rempah seperti cabai, serai, lengkuas, kunyit, jahe, bawang putih, dan bawang merah. Bumbu-bumbu ini bukan hanya membuat rasanya enak, tetapi juga bekerja seperti pengawet alami yang melawan kuman. Itulah rahasianya kenapa rendang bisa tahan lama. Karena gizinya terjaga, rendang sering dikirim sebagai bantuan makanan untuk korban bencana.",
+      "body_en": "Rendang uses many spices such as chili, lemongrass, galangal, turmeric, ginger, garlic, and shallots. These spices not only make it delicious but also work like a natural preserver that fights germs. That is the secret of why rendang lasts so long. Because it stays nutritious, rendang is often sent as food aid for disaster victims."
+    },
+    {
+      "icon": "emoji_events",
+      "h_id": "Rendang Juara Dunia",
+      "h_en": "World-Champion Rendang",
+      "body_id": "Pada tahun 2011, rendang dipilih sebagai makanan terlezat nomor satu di dunia oleh CNN International. Pada tahun 2018, rendang resmi menjadi salah satu dari lima makanan nasional Indonesia. Bagi masyarakat Minangkabau, rendang juga punya makna khusus dan selalu hadir di acara adat, pesta, dan saat menyambut tamu istimewa.",
+      "body_en": "In 2011, rendang was chosen as the number one most delicious food in the world by CNN International. In 2018, rendang officially became one of Indonesia's five national dishes. For the Minangkabau people, rendang also has a special meaning and is always served at traditional ceremonies, feasts, and when welcoming honored guests."
+    }
+  ],
+  "facts": [
+    { "id": "Pada 2011, rendang dinobatkan sebagai makanan terlezat di dunia oleh CNN.", "en": "In 2011, rendang was named the most delicious food in the world by CNN." },
+    { "id": "Rendang dimasak sangat lama, sekitar empat sampai lima jam.", "en": "Rendang is cooked for a very long time, about four to five hours." },
+    { "id": "Karena dimasak sampai kering, rendang bisa tahan berminggu-minggu.", "en": "Because it is cooked until dry, rendang can last for weeks." },
+    { "id": "Rempah dalam rendang bekerja seperti pengawet alami melawan kuman.", "en": "The spices in rendang work like a natural preserver against germs." },
+    { "id": "Dahulu rendang dibuat dari daging rusa sebelum memakai daging sapi.", "en": "Long ago rendang was made from deer meat before using beef." },
+    { "id": "Rendang adalah salah satu dari lima makanan nasional Indonesia.", "en": "Rendang is one of Indonesia's five national dishes." }
+  ],
+  "glossary": [
+    { "term": "Rendang", "def_id": "Lauk daging Minangkabau yang dimasak lama dengan santan dan rempah.", "def_en": "A Minangkabau meat dish cooked slowly with coconut milk and spices." },
+    { "term": "Santan", "def_id": "Cairan putih dari kelapa parut yang membuat masakan gurih.", "def_en": "The white liquid from grated coconut that makes food creamy and savory." },
+    { "term": "Rempah", "def_id": "Bumbu dari tumbuhan seperti cabai, jahe, dan kunyit yang menambah rasa.", "def_en": "Seasonings from plants such as chili, ginger, and turmeric that add flavor." },
+    { "term": "Kalio", "def_id": "Rendang setengah jadi yang masih basah dan berwarna cokelat keemasan.", "def_en": "Half-cooked rendang that is still moist and golden brown." },
+    { "term": "Merantau", "def_id": "Pergi jauh meninggalkan kampung halaman, kebiasaan orang Minang.", "def_en": "To travel far away from one's home village, a Minangkabau custom." },
+    { "term": "Lauk", "def_id": "Makanan pendamping yang dimakan bersama nasi.", "def_en": "A side dish eaten together with rice." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/2d2d80ccc29f7c5b.jpg",
+      "caption_id": "Rendang sapi yang sudah matang, berwarna cokelat hitam, disajikan dengan ketupat.",
+      "caption_en": "Finished beef rendang, dark brown in color, served with woven rice cakes.",
+      "credit": "Midori",
+      "license": "CC BY 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/9994fb623f08aa04.jpg",
+      "caption_id": "Ibu-ibu berpakaian adat Minang memasak rendang dalam kuali besar di depan Rumah Gadang.",
+      "caption_en": "Women in Minangkabau dress cook rendang in big pots in front of a Rumah Gadang.",
+      "credit": "Government of West Sumatra Province",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/e877670c14e66af2.jpg",
+      "caption_id": "Tahap awal: santan kuning mendidih bersama daging dan bumbu di dalam kuali.",
+      "caption_en": "Early stage: yellow coconut milk boils together with the meat and spices in the pan.",
+      "credit": "Sakurai Midori",
+      "license": "CC BY 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/b3dfb3a7a76ee4a9.jpg",
+      "caption_id": "Tahap tengah: santan mulai mengental dan berwarna oranye kecokelatan, disebut kalio.",
+      "caption_en": "Middle stage: the coconut milk thickens and turns orange-brown, called kalio.",
+      "credit": "Sakurai Midori",
+      "license": "CC BY 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/04d8bc802340047b.jpg",
+      "caption_id": "Tahap akhir: bumbu mengering dan menghitam, daging pun siap menjadi rendang.",
+      "caption_en": "Final stage: the spices dry and darken, and the meat is ready to become rendang.",
+      "credit": "Sakurai Midori",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Rendang"
+}

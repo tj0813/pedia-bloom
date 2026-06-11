@@ -1,0 +1,74 @@
+{
+  "id": "budaya_batik_indonesia",
+  "title_id": "Batik",
+  "title_en": "Batik",
+  "subtitle_id": "Kain bergambar indah yang dilukis dengan lilin malam",
+  "subtitle_en": "Beautiful patterned cloth drawn with wax",
+  "data_card": [
+    { "icon": "public", "label_id": "Asal", "label_en": "Origin", "value_id": "Jawa, Indonesia", "value_en": "Java, Indonesia" },
+    { "icon": "brush", "label_id": "Teknik", "label_en": "Technique", "value_id": "Canting & malam (lilin)", "value_en": "Canting & wax" },
+    { "icon": "checkroom", "label_id": "Bahan", "label_en": "Material", "value_id": "Kain (katun/sutra)", "value_en": "Cloth (cotton/silk)" },
+    { "icon": "palette", "label_id": "Ciri khas", "label_en": "Special for", "value_id": "Motif beraneka ragam", "value_en": "Many kinds of patterns" },
+    { "icon": "shield", "label_id": "Status", "label_en": "Status", "value_id": "Warisan UNESCO", "value_en": "UNESCO Heritage" }
+  ],
+  "sections": [
+    {
+      "icon": "brush",
+      "h_id": "Apa Itu Batik?",
+      "h_en": "What Is Batik?",
+      "body_id": "Batik adalah kain bergambar indah yang berasal dari Indonesia, terutama dari Pulau Jawa. Gambar atau pola pada batik dibuat dengan cara yang sangat khusus, yaitu menggunakan lilin malam yang panas. Batik bukan hanya kain biasa, melainkan sebuah karya seni. Orang Indonesia memakai batik untuk ke sekolah, ke kantor, ke pesta, sampai acara penting lainnya.",
+      "body_en": "Batik is beautiful patterned cloth that comes from Indonesia, especially from the island of Java. The pictures or patterns on batik are made in a very special way, using hot wax. Batik is not just ordinary cloth; it is a work of art. Indonesian people wear batik to school, to the office, to parties, and to other important events."
+    },
+    {
+      "icon": "edit",
+      "h_id": "Canting dan Malam",
+      "h_en": "The Canting and the Wax",
+      "body_id": "Untuk membuat batik tulis, pengrajin memakai alat kecil bernama canting. Canting punya wadah kecil dan ujung pipa untuk mengeluarkan lilin malam yang panas. Lilin dilukiskan di atas kain mengikuti pola gambar. Setelah kering, kain dicelup ke pewarna. Bagian yang tertutup lilin tidak akan terkena warna, sehingga muncullah gambar yang cantik.",
+      "body_en": "To make hand-drawn batik, the crafter uses a small tool called a canting. The canting has a tiny cup and a thin spout to pour out hot wax. The wax is drawn onto the cloth following the pattern. After it dries, the cloth is dipped into dye. The parts covered by wax do not catch the color, so a beautiful picture appears."
+    },
+    {
+      "icon": "format_paint",
+      "h_id": "Batik Tulis dan Batik Cap",
+      "h_en": "Hand-Drawn and Stamped Batik",
+      "body_id": "Ada dua cara utama membuat batik. Yang pertama adalah batik tulis, yaitu pola dilukis satu per satu dengan canting. Batik tulis butuh waktu lama dan sangat teliti, kadang sampai berminggu-minggu. Yang kedua adalah batik cap, yaitu pola dibuat dengan stempel tembaga, sehingga lebih cepat. Keduanya sama-sama indah dan disukai orang.",
+      "body_en": "There are two main ways to make batik. The first is hand-drawn batik, where the pattern is drawn one piece at a time with a canting. Hand-drawn batik takes a long time and great care, sometimes many weeks. The second is stamped batik, where the pattern is made with a copper stamp, so it is faster. Both are equally beautiful and loved by people."
+    },
+    {
+      "icon": "auto_awesome",
+      "h_id": "Motif Penuh Makna",
+      "h_en": "Patterns Full of Meaning",
+      "body_id": "Setiap motif batik punya nama dan cerita sendiri. Ada motif Parang yang bergaris miring seperti ombak, ada motif Kawung, Mega Mendung, dan banyak motif bunga serta hewan. Dahulu, beberapa motif hanya boleh dipakai oleh keluarga raja. Sekarang siapa saja boleh memakai batik dan menikmati keindahannya.",
+      "body_en": "Every batik pattern has its own name and story. There is the Parang pattern with slanted lines like waves, there is the Kawung pattern, Mega Mendung, and many flower and animal patterns. Long ago, some patterns could only be worn by the royal family. Today anyone may wear batik and enjoy its beauty."
+    },
+    {
+      "icon": "shield",
+      "h_id": "Kebanggaan Indonesia",
+      "h_en": "Indonesia's Pride",
+      "body_id": "Pada tanggal 2 Oktober 2009, UNESCO menetapkan batik sebagai Warisan Budaya Dunia dari Indonesia. Karena itu, setiap tanggal 2 Oktober kita rayakan sebagai Hari Batik Nasional. Pada hari itu, banyak orang memakai baju batik dengan bangga. Ayo kita cintai dan lestarikan batik agar tidak hilang ditelan zaman!",
+      "body_en": "On October 2, 2009, UNESCO declared batik a World Cultural Heritage from Indonesia. Because of this, every October 2 is celebrated as National Batik Day. On that day, many people proudly wear batik clothes. Let's love and protect batik so it is never lost to time!"
+    }
+  ],
+  "facts": [
+    { "id": "Batik dibuat dengan melukis lilin malam panas di atas kain.", "en": "Batik is made by drawing hot wax onto cloth." },
+    { "id": "Alat kecil untuk melukis lilin disebut canting.", "en": "The small tool for drawing the wax is called a canting." },
+    { "id": "Setiap tanggal 2 Oktober dirayakan sebagai Hari Batik Nasional.", "en": "Every October 2 is celebrated as National Batik Day." },
+    { "id": "UNESCO mengakui batik sebagai Warisan Budaya Dunia pada tahun 2009.", "en": "UNESCO recognized batik as a World Heritage in 2009." },
+    { "id": "Batik tulis bisa memakan waktu berminggu-minggu untuk satu kain.", "en": "One hand-drawn batik cloth can take many weeks to finish." },
+    { "id": "Setiap motif batik, seperti Parang, punya nama dan ceritanya sendiri.", "en": "Each batik pattern, like Parang, has its own name and story." }
+  ],
+  "glossary": [
+    { "term": "Canting", "def_id": "Alat kecil dengan ujung pipa untuk melukis lilin malam di atas kain.", "def_en": "A small tool with a thin spout for drawing wax onto cloth." },
+    { "term": "Malam", "def_id": "Lilin khusus yang dipanaskan untuk membuat pola batik.", "def_en": "A special wax that is heated to make batik patterns." },
+    { "term": "Motif", "def_id": "Pola atau gambar berulang yang menghiasi kain batik.", "def_en": "A repeating pattern or picture that decorates batik cloth." },
+    { "term": "Batik tulis", "def_id": "Batik yang polanya dilukis satu per satu dengan tangan memakai canting.", "def_en": "Batik whose pattern is drawn by hand, piece by piece, with a canting." },
+    { "term": "Batik cap", "def_id": "Batik yang polanya dibuat dengan stempel tembaga sehingga lebih cepat.", "def_en": "Batik whose pattern is made with a copper stamp, so it is faster." }
+  ],
+  "gallery": [
+    { "src": "app/assets/img/wiki/09d194fb586a5d23.jpg", "caption_id": "Seorang nenek pengrajin melukis pola batik tulis dengan canting.", "caption_en": "An elderly crafter draws a batik pattern by hand with a canting.", "credit": "Stephen Kennedy", "license": "CC BY 2.0" },
+    { "src": "app/assets/img/wiki/24231244229c8455.jpg", "caption_id": "Beberapa pembatik bekerja bersama membuat kain batik.", "caption_en": "Several batik makers work together on a piece of cloth.", "credit": "Mw.Prof.Dr. C.H.M. (Hetty) Nooy-Palm", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/b2dcc550e068e505.jpg", "caption_id": "Canting dipakai dari dekat untuk menorehkan lilin malam ke kain.", "caption_en": "A close look at a canting laying down hot wax onto the cloth.", "credit": "essenziale", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/7dc2f7001835484f.jpg", "caption_id": "Kain batik kuno dengan motif Parang yang bergaris miring.", "caption_en": "An antique batik cloth with the slanted Parang pattern.", "credit": "Unknown author", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/f6103348bd747575.jpg", "caption_id": "Gedung Museum Batik tempat kain-kain batik dijaga dan dipamerkan.", "caption_en": "A Batik Museum building, where batik cloths are kept and shown.", "credit": "JV03 Novia Rochmawati", "license": "CC BY-SA 3.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Batik"
+}

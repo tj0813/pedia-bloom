@@ -1,0 +1,149 @@
+{
+  "id": "ensiklopedia_candi_borobudur_2",
+  "title_id": "Candi Borobudur",
+  "title_en": "Borobudur Temple",
+  "subtitle_id": "Candi Buddha terbesar di dunia!",
+  "subtitle_en": "The biggest Buddhist temple in the world!",
+  "data_card": [
+    {
+      "icon": "public",
+      "label_id": "Lokasi",
+      "label_en": "Location",
+      "value_id": "Magelang, Jawa Tengah",
+      "value_en": "Magelang, Central Java"
+    },
+    {
+      "icon": "schedule",
+      "label_id": "Dibangun",
+      "label_en": "Built",
+      "value_id": "Sekitar tahun 800-an M",
+      "value_en": "Around the 800s CE"
+    },
+    {
+      "icon": "self_improvement",
+      "label_id": "Agama",
+      "label_en": "Religion",
+      "value_id": "Buddha Mahayana",
+      "value_en": "Mahayana Buddhism"
+    },
+    {
+      "icon": "account_balance",
+      "label_id": "Bentuk",
+      "label_en": "Design",
+      "value_id": "6 teras persegi & 3 pelataran bundar",
+      "value_en": "6 square terraces & 3 round platforms"
+    },
+    {
+      "icon": "filter_drama",
+      "label_id": "Stupa",
+      "label_en": "Stupas",
+      "value_id": "72 stupa berlubang + 1 stupa utama",
+      "value_en": "72 holed stupas + 1 main stupa"
+    },
+    {
+      "icon": "shield",
+      "label_id": "Status",
+      "label_en": "Status",
+      "value_id": "Warisan Dunia UNESCO",
+      "value_en": "UNESCO World Heritage"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "account_balance",
+      "h_id": "Apa Itu Borobudur?",
+      "h_en": "What Is Borobudur?",
+      "body_id": "Borobudur adalah candi Buddha raksasa di Pulau Jawa, Indonesia. Candi ini adalah candi Buddha terbesar di seluruh dunia! Bentuknya seperti gunung batu bertingkat dengan banyak stupa berbentuk lonceng di puncaknya. Kita patut bangga karena bangunan menakjubkan ini ada di negeri kita.",
+      "body_en": "Borobudur is a giant Buddhist temple on the island of Java, Indonesia. It is the biggest Buddhist temple in the whole world! It looks like a stepped stone mountain with many bell-shaped stupas at the top. We can be proud that this amazing building stands in our country."
+    },
+    {
+      "icon": "history_edu",
+      "h_id": "Siapa yang Membangunnya?",
+      "h_en": "Who Built It?",
+      "body_id": "Borobudur dibangun lebih dari 1.200 tahun yang lalu, sekitar tahun 800-an Masehi. Yang membangunnya adalah para penganut agama Buddha pada masa wangsa Syailendra. Candi ini terletak di Magelang, Jawa Tengah, tak jauh dari Kota Yogyakarta. Membangunnya butuh waktu bertahun-tahun dan ribuan batu yang disusun rapi.",
+      "body_en": "Borobudur was built more than 1,200 years ago, around the 800s CE. It was built by Buddhists during the time of the Sailendra dynasty. The temple sits in Magelang, Central Java, not far from the city of Yogyakarta. Building it took many years and thousands of carefully stacked stones."
+    },
+    {
+      "icon": "auto_stories",
+      "h_id": "Cerita di Dindingnya",
+      "h_en": "Stories on Its Walls",
+      "body_id": "Dinding Borobudur dihiasi 2.672 panel relief, yaitu gambar yang dipahat pada batu. Relief ini bercerita tentang ajaran Buddha, seperti buku batu raksasa! Dahulu ada 504 patung Buddha di candi ini. Di puncaknya, 72 patung Buddha duduk bersila di dalam stupa berlubang seperti lonceng.",
+      "body_en": "Borobudur's walls are decorated with 2,672 relief panels, which are pictures carved into stone. These carvings tell stories from the Buddha's teachings, like a giant stone book! Long ago there were 504 Buddha statues here. At the top, 72 Buddha statues sit cross-legged inside holed, bell-shaped stupas."
+    },
+    {
+      "icon": "hiking",
+      "h_id": "Tempat untuk Berziarah",
+      "h_en": "A Place for Pilgrimage",
+      "body_id": "Borobudur dibuat sebagai tempat suci untuk berziarah. Peziarah masuk dari sisi timur, lalu berjalan mengelilingi candi searah jarum jam sambil naik ke tingkat berikutnya. Naik dari bawah ke atas melambangkan perjalanan menuju kebijaksanaan. Setiap tahun umat Buddha berkumpul di sini untuk merayakan Hari Waisak.",
+      "body_en": "Borobudur was made as a holy place for pilgrimage. Pilgrims enter from the east, then walk around the temple clockwise while climbing to the next level. Going from the bottom to the top stands for a journey toward wisdom. Every year Buddhists gather here to celebrate Vesak Day."
+    },
+    {
+      "icon": "construction",
+      "h_id": "Ditemukan & Dirawat Kembali",
+      "h_en": "Found and Cared For Again",
+      "body_id": "Borobudur pernah ditinggalkan dan tertutup tanah serta tanaman selama ratusan tahun. Pada tahun 1814, candi ini ditemukan kembali dan mulai dibersihkan. Pemerintah Indonesia dan UNESCO memperbaikinya besar-besaran pada tahun 1975 sampai 1982. Sekarang Borobudur dijaga sebagai Warisan Dunia agar bisa dinikmati anak cucu kita.",
+      "body_en": "Borobudur was once abandoned and covered by soil and plants for hundreds of years. In 1814, the temple was found again and people began cleaning it. The Indonesian government and UNESCO repaired it in a big project from 1975 to 1982. Today Borobudur is protected as a World Heritage site so our grandchildren can enjoy it too."
+    }
+  ],
+  "facts": [
+    { "id": "Borobudur adalah candi Buddha terbesar di dunia!", "en": "Borobudur is the biggest Buddhist temple in the world!" },
+    { "id": "Dindingnya punya 2.672 panel relief, koleksi relief Buddha terlengkap di dunia.", "en": "Its walls have 2,672 relief panels, the most complete collection of Buddhist reliefs in the world." },
+    { "id": "Di puncaknya ada 72 stupa berlubang, masing-masing berisi satu patung Buddha.", "en": "At the top are 72 holed stupas, each holding one Buddha statue." },
+    { "id": "Candi ini dibangun lebih dari 1.200 tahun yang lalu tanpa semen.", "en": "The temple was built more than 1,200 years ago without any cement." },
+    { "id": "Borobudur sempat hilang dan tertutup tanah, lalu ditemukan lagi tahun 1814.", "en": "Borobudur was once lost under soil, then found again in 1814." },
+    { "id": "Borobudur adalah tempat wisata yang paling banyak dikunjungi di Indonesia.", "en": "Borobudur is the most visited tourist spot in Indonesia." }
+  ],
+  "glossary": [
+    { "term": "Candi", "def_id": "Bangunan suci dari batu peninggalan zaman Hindu-Buddha di Nusantara.", "def_en": "A stone holy building left from the Hindu-Buddhist era in the Indonesian islands." },
+    { "term": "Stupa", "def_id": "Bangunan berbentuk lonceng atau kubah yang suci dalam agama Buddha.", "def_en": "A bell- or dome-shaped structure that is holy in Buddhism." },
+    { "term": "Relief", "def_id": "Gambar atau cerita yang dipahat timbul pada permukaan batu.", "def_en": "A picture or story carved so it stands out on a stone surface." },
+    { "term": "Ziarah", "def_id": "Kunjungan ke tempat suci untuk berdoa dan beribadah.", "def_en": "A visit to a holy place to pray and worship." },
+    { "term": "Waisak", "def_id": "Hari raya umat Buddha yang dirayakan setiap tahun di Borobudur.", "def_en": "A Buddhist holy day celebrated every year at Borobudur." },
+    { "term": "Warisan Dunia", "def_id": "Tempat istimewa yang dilindungi UNESCO untuk seluruh umat manusia.", "def_en": "A special place protected by UNESCO for all of humanity." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/be4bf279d82901a3.jpg",
+      "caption_id": "Para biksu dan peziarah berbaju putih berjalan mengelilingi Borobudur, persis seperti ritual ziarah.",
+      "caption_en": "Monks and white-robed pilgrims walk around Borobudur, just like the pilgrimage ritual.",
+      "credit": "Heri nugroho",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/8d64b52a927e9f09.jpg",
+      "caption_id": "Stupa-stupa Borobudur saat fajar, dengan Gunung Merapi mengepulkan asap di kejauhan.",
+      "caption_en": "Borobudur's stupas at dawn, with Mount Merapi puffing smoke in the distance.",
+      "credit": "ctsnow",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "app/assets/img/wiki/4c76caf7d05112a1.jpg",
+      "caption_id": "Stupa berlubang seperti lonceng di teras atas, menghadap bukit hijau dan pohon kelapa.",
+      "caption_en": "Holed, bell-shaped stupas on the upper terrace, facing green hills and coconut trees.",
+      "credit": "Heaven's Army (uploader at EN.Wikipedia)",
+      "license": "CC BY 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/6beb87baaa96d37c.jpg",
+      "caption_id": "Borobudur terlihat dari kejauhan, dikelilingi hutan rimbun dan perbukitan.",
+      "caption_en": "Borobudur seen from afar, surrounded by lush forest and rolling hills.",
+      "credit": "Gunkarta (en.wikipedia)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/401e6f0d2546f4f2.jpg",
+      "caption_id": "Lukisan lama menggambarkan orang berziarah ke Borobudur dengan gajah dan payung warna-warni.",
+      "caption_en": "An old painting shows people making a pilgrimage to Borobudur with elephants and colorful parasols.",
+      "credit": "Gijsbert Brandt Hooijer (1848-1934)",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/32d1ddcf8e637aa0.jpg",
+      "caption_id": "Foto hitam-putih tertua Borobudur, diambil tak lama setelah candi ditemukan kembali.",
+      "caption_en": "A very old black-and-white photo of Borobudur, taken not long after the temple was rediscovered.",
+      "credit": "Isidore van Kinsbergen",
+      "license": "Public domain"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Borobudur"
+}

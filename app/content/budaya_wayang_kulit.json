@@ -1,0 +1,142 @@
+{
+  "id": "budaya_wayang_kulit",
+  "title_id": "Wayang Kulit",
+  "title_en": "Shadow Puppets",
+  "subtitle_id": "Boneka kulit yang bercerita lewat bayangan!",
+  "subtitle_en": "Leather puppets that tell stories with shadows!",
+  "data_card": [
+    {
+      "icon": "public",
+      "label_id": "Asal",
+      "label_en": "Origin",
+      "value_id": "Budaya Jawa, Indonesia",
+      "value_en": "Javanese culture, Indonesia"
+    },
+    {
+      "icon": "texture",
+      "label_id": "Bahan",
+      "label_en": "Material",
+      "value_id": "Kulit kerbau atau sapi",
+      "value_en": "Buffalo or cow leather"
+    },
+    {
+      "icon": "auto_stories",
+      "label_id": "Cerita",
+      "label_en": "Stories",
+      "value_id": "Ramayana & Mahabharata",
+      "value_en": "Ramayana & Mahabharata"
+    },
+    {
+      "icon": "person",
+      "label_id": "Pemain",
+      "label_en": "Performer",
+      "value_id": "Dalang (memainkan semua tokoh)",
+      "value_en": "Dalang (plays all characters)"
+    },
+    {
+      "icon": "music_note",
+      "label_id": "Musik",
+      "label_en": "Music",
+      "value_id": "Gamelan & nyanyian pesinden",
+      "value_en": "Gamelan & singer's songs"
+    },
+    {
+      "icon": "shield",
+      "label_id": "Status",
+      "label_en": "Status",
+      "value_id": "Warisan Budaya UNESCO (2003)",
+      "value_en": "UNESCO Cultural Heritage (2003)"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "theater_comedy",
+      "h_id": "Apa Itu Wayang Kulit?",
+      "h_en": "What Is Wayang Kulit?",
+      "body_id": "Wayang kulit adalah boneka pipih yang dibuat dari kulit hewan. Boneka ini dipakai untuk memainkan cerita di balik layar putih. Wayang kulit berasal dari budaya Jawa di Indonesia. Kata 'wayang' berarti 'bayangan', karena penonton melihat bayangan boneka di layar.",
+      "body_en": "Wayang kulit is a flat puppet made from animal leather. These puppets are used to act out stories behind a white screen. Wayang kulit comes from Javanese culture in Indonesia. The word 'wayang' means 'shadow', because the audience watches the puppets' shadows on the screen."
+    },
+    {
+      "icon": "person",
+      "h_id": "Dalang Sang Pencerita",
+      "h_en": "The Dalang, the Storyteller",
+      "body_id": "Wayang kulit dimainkan oleh satu orang hebat bernama dalang. Dalang menggerakkan semua boneka sambil mengisi suara setiap tokoh. Ia duduk di balik kelir, yaitu layar kain putih, dengan lampu menyala di belakangnya. Sebuah dalang bisa bercerita semalam suntuk tanpa lelah!",
+      "body_en": "Wayang kulit is performed by one amazing person called the dalang. The dalang moves all the puppets while giving each character a voice. The dalang sits behind the kelir, a white cloth screen, with a lamp shining behind it. A dalang can tell a story all night long without getting tired!"
+    },
+    {
+      "icon": "auto_stories",
+      "h_id": "Cerita yang Dimainkan",
+      "h_en": "The Stories Performed",
+      "body_id": "Cerita wayang disebut lakon. Cerita yang paling terkenal berasal dari kisah Ramayana dan Mahabharata. Kisah-kisah ini bercerita tentang ksatria, raja, raksasa, dan kebaikan melawan kejahatan. Ada juga tokoh lucu bernama punakawan: Semar, Gareng, Petruk, dan Bagong.",
+      "body_en": "A wayang story is called a lakon. The most famous stories come from the Ramayana and Mahabharata. These tales are about knights, kings, giants, and good against evil. There are also funny characters called the punakawan: Semar, Gareng, Petruk, and Bagong."
+    },
+    {
+      "icon": "brush",
+      "h_id": "Bagaimana Wayang Dibuat?",
+      "h_en": "How a Puppet Is Made",
+      "body_id": "Wayang kulit dibuat dari kulit kerbau, sapi, atau kambing yang sudah dikeringkan. Pengrajin memahat lubang-lubang kecil dengan alat besi tajam supaya wayang terlihat berhias indah. Tangan wayang disambung agar bisa digerakkan. Lalu wayang diberi warna emas dan cat yang cantik.",
+      "body_en": "Wayang kulit is made from dried buffalo, cow, or goat leather. Craftspeople carve tiny holes with sharp iron tools so the puppet looks beautifully decorated. The puppet's arms are joined so they can move. Then the puppet is colored with gold and pretty paint."
+    },
+    {
+      "icon": "shield",
+      "h_id": "Harta Budaya Kita",
+      "h_en": "Our Cultural Treasure",
+      "body_id": "Wayang kulit sudah ada sejak lebih dari seribu tahun yang lalu. Dahulu, Sunan Kalijaga memakai wayang untuk mengajarkan kebaikan kepada masyarakat. Pada tahun 2003, UNESCO mengakui wayang kulit sebagai warisan budaya dunia yang indah dan berharga. Ayo kita ikut menjaga seni asli Indonesia ini!",
+      "body_en": "Wayang kulit has existed for more than a thousand years. Long ago, Sunan Kalijaga used wayang to teach good values to the people. In 2003, UNESCO recognized wayang kulit as a beautiful and precious world cultural heritage. Let's all help protect this original Indonesian art!"
+    }
+  ],
+  "facts": [
+    { "id": "Kata 'wayang' berarti 'bayangan' dalam bahasa Jawa.", "en": "The word 'wayang' means 'shadow' in Javanese." },
+    { "id": "Satu dalang bisa memainkan dan menyuarakan puluhan tokoh sendirian!", "en": "A single dalang can play and voice dozens of characters all alone!" },
+    { "id": "Wayang dibuat dari kulit kerbau atau sapi, bukan dari kertas.", "en": "Puppets are made from buffalo or cow leather, not from paper." },
+    { "id": "Pertunjukan wayang diiringi musik gamelan dan nyanyian pesinden.", "en": "A wayang show is accompanied by gamelan music and a singer's songs." },
+    { "id": "Punakawan seperti Semar dan Petruk adalah tokoh lucu kesukaan penonton.", "en": "The punakawan, like Semar and Petruk, are funny characters the audience loves." },
+    { "id": "UNESCO menetapkan wayang kulit sebagai warisan budaya dunia pada tahun 2003.", "en": "UNESCO named wayang kulit a world cultural heritage in 2003." }
+  ],
+  "glossary": [
+    { "term": "Dalang", "def_id": "Orang yang memainkan wayang, mengisi suara, dan menceritakan kisahnya.", "def_en": "The person who moves the puppets, voices them, and tells the story." },
+    { "term": "Kelir", "def_id": "Layar kain putih tempat bayangan wayang ditampilkan.", "def_en": "The white cloth screen where the puppets' shadows appear." },
+    { "term": "Lakon", "def_id": "Cerita atau kisah yang dimainkan dalam pertunjukan wayang.", "def_en": "The story or tale acted out in a wayang show." },
+    { "term": "Gamelan", "def_id": "Kelompok alat musik Jawa yang mengiringi pertunjukan wayang.", "def_en": "A set of Javanese musical instruments that accompanies a wayang show." },
+    { "term": "Punakawan", "def_id": "Tokoh-tokoh pelayan yang lucu dan bijak: Semar, Gareng, Petruk, Bagong.", "def_en": "The funny, wise servant characters: Semar, Gareng, Petruk, and Bagong." },
+    { "term": "Pesinden", "def_id": "Penyanyi wanita yang menyanyikan tembang saat pertunjukan wayang.", "def_en": "A female singer who sings songs during a wayang show." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/30caf2d89435c2c5.jpg",
+      "caption_id": "Seorang dalang cilik mengangkat wayang kulit yang berhias rumit di balik lampu pertunjukan.",
+      "caption_en": "A young dalang lifts an intricately decorated wayang puppet behind the show's lamp.",
+      "credit": "Badroe Zaman, Semarang, Central Java",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "app/assets/img/wiki/88fcf4bc4917deb0.jpg",
+      "caption_id": "Inilah bayangan wayang di layar; karena inilah wayang disebut seni 'bayangan'.",
+      "caption_en": "These are the puppets' shadows on the screen; this is why wayang is called the art of 'shadows'.",
+      "credit": "Jpatokal (English Wikipedia)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/018084a5b2063f22.jpg",
+      "caption_id": "Dalang menggerakkan beberapa wayang sekaligus di depan layar yang bercahaya.",
+      "caption_en": "A dalang moves several puppets at once in front of the glowing screen.",
+      "credit": "Gunawan Kartapranata",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/934d4dd073fedc8b.jpg",
+      "caption_id": "Dalang mengangkat dua gunungan berbentuk daun, biasanya untuk membuka cerita wayang.",
+      "caption_en": "A dalang raises two leaf-shaped gunungan puppets, usually to open the wayang story.",
+      "credit": "FaizAttariqi",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/198af794fca34940.jpg",
+      "caption_id": "Gambar wayang berwarna-warni memperlihatkan hiasan rumit dan bentuk khas sebuah tokoh.",
+      "caption_en": "A colorful drawing of a puppet shows the detailed decoration and special shape of one character.",
+      "credit": "Mangkunagara VII",
+      "license": "Public domain"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Wayang_kulit"
+}

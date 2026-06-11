@@ -1,0 +1,74 @@
+{
+  "id": "budaya_alat_musik_angklung_1",
+  "title_id": "Angklung",
+  "title_en": "Angklung",
+  "subtitle_id": "Alat musik bambu Sunda yang dimainkan dengan digoyang",
+  "subtitle_en": "The Sundanese bamboo instrument you play by shaking",
+  "data_card": [
+    { "icon": "public", "label_id": "Asal", "label_en": "Origin", "value_id": "Jawa Barat (Sunda)", "value_en": "West Java (Sundanese)" },
+    { "icon": "park", "label_id": "Bahan", "label_en": "Material", "value_id": "Bambu", "value_en": "Bamboo" },
+    { "icon": "music_note", "label_id": "Cara main", "label_en": "How to play", "value_id": "Digoyang-goyang", "value_en": "Shaken" },
+    { "icon": "groups", "label_id": "Dimainkan", "label_en": "Played", "value_id": "Bersama-sama", "value_en": "Together as a team" },
+    { "icon": "shield", "label_id": "Status", "label_en": "Status", "value_id": "Warisan UNESCO", "value_en": "UNESCO Heritage" }
+  ],
+  "sections": [
+    {
+      "icon": "music_note",
+      "h_id": "Apa Itu Angklung?",
+      "h_en": "What Is Angklung?",
+      "body_id": "Angklung adalah alat musik tradisional dari masyarakat Sunda di Jawa Barat. Alat musik ini dibuat dari tabung-tabung bambu yang diikat pada sebuah bingkai. Kamu memainkannya dengan cara menggoyangkannya, lalu tabung bambu akan berbenturan dan menghasilkan bunyi yang merdu. Setiap angklung punya nada sendiri, jadi semua orang harus bermain bersama agar lagunya lengkap dan indah.",
+      "body_en": "Angklung is a traditional instrument from the Sundanese people of West Java. It is made from bamboo tubes tied onto a frame. You play it by shaking it, and the bamboo tubes knock together to make a sweet, ringing sound. Each angklung has only its own note, so everyone has to play together to make the whole song complete and beautiful."
+    },
+    {
+      "icon": "build",
+      "h_id": "Terbuat dari Bambu",
+      "h_en": "Made from Bamboo",
+      "body_id": "Angklung dibuat dari bambu pilihan, seperti bambu hitam dan bambu ater. Bambu dipotong dan diraut dengan hati-hati supaya menghasilkan nada yang tepat. Tabung yang besar berbunyi rendah, dan tabung yang kecil berbunyi tinggi. Setiap angklung biasanya punya 2 sampai 4 tabung yang berbunyi serempak dalam satu nada.",
+      "body_en": "Angklung is made from special bamboo, such as black bamboo and ater bamboo. The bamboo is cut and shaped very carefully so it makes exactly the right note. A big tube makes a low sound, and a small tube makes a high sound. Each angklung usually has 2 to 4 tubes that ring together as one note."
+    },
+    {
+      "icon": "groups",
+      "h_id": "Bermain Bersama",
+      "h_en": "Playing Together",
+      "body_id": "Karena satu angklung hanya bisa membunyikan satu nada, alat musik ini paling seru dimainkan beramai-ramai. Setiap pemain memegang satu atau dua angklung dan menggoyangkannya saat gilirannya tiba. Seorang pemimpin di depan memberi aba-aba dengan tangannya. Kalau semua kompak, banyak angklung kecil bisa berubah menjadi satu lagu yang utuh dan indah.",
+      "body_en": "Because one angklung can only make one note, this instrument is most fun when played in a big group. Each player holds one or two angklung and shakes it when it is their turn. A leader at the front gives signals with their hands. When everyone works together, many little angklung turn into one complete, beautiful song."
+    },
+    {
+      "icon": "history_edu",
+      "h_id": "Cerita Lama Angklung",
+      "h_en": "The Old Story of Angklung",
+      "body_id": "Sudah ratusan tahun lalu, orang Sunda memainkan angklung. Dahulu angklung dibunyikan dalam upacara padi untuk menghormati Dewi Sri, dewi padi, agar tanaman tumbuh subur. Angklung juga pernah dipakai untuk membangkitkan semangat para pejuang. Lama-kelamaan, angklung berkembang menjadi musik yang menghibur dan dimainkan di mana-mana.",
+      "body_en": "For hundreds of years, the Sundanese people have played angklung. Long ago, angklung was played in rice ceremonies to honor Dewi Sri, the rice goddess, so the crops would grow well. Angklung was also once used to lift the spirits of warriors. Over time, angklung grew into joyful music played in many places."
+    },
+    {
+      "icon": "shield",
+      "h_id": "Kebanggaan Indonesia",
+      "h_en": "Indonesia's Pride",
+      "body_id": "Pada tahun 2010, UNESCO mengakui angklung sebagai Warisan Budaya Dunia. Artinya, angklung dianggap istimewa dan harus dijaga oleh semua orang. Sekarang angklung diajarkan di sekolah-sekolah dan dimainkan sampai ke luar negeri. Ayo kita ikut bangga dan terus melestarikan musik bambu yang ceria ini!",
+      "body_en": "In 2010, UNESCO recognized angklung as a World Cultural Heritage. That means angklung is seen as very special and should be protected by everyone. Today angklung is taught in schools and played all the way to other countries. Let's be proud and keep this cheerful bamboo music alive!"
+    }
+  ],
+  "facts": [
+    { "id": "Satu angklung hanya bisa membunyikan satu nada, jadi harus dimainkan beramai-ramai!", "en": "One angklung can only make one note, so it must be played in a big group!" },
+    { "id": "Kamu memainkan angklung cukup dengan menggoyang-goyangkannya.", "en": "You play angklung simply by shaking it." },
+    { "id": "Angklung dibuat dari bambu, bukan dari logam atau kayu.", "en": "Angklung is made from bamboo, not metal or wood." },
+    { "id": "UNESCO mengakui angklung sebagai Warisan Budaya Dunia pada tahun 2010.", "en": "UNESCO recognized angklung as a World Heritage in 2010." },
+    { "id": "Nama 'angklung' berasal dari bunyi 'klung' yang terdengar saat dimainkan.", "en": "The name 'angklung' comes from the 'klung' sound it makes when played." },
+    { "id": "Dahulu angklung dibunyikan dalam upacara padi untuk Dewi Sri.", "en": "Long ago angklung was played in rice ceremonies for Dewi Sri." }
+  ],
+  "glossary": [
+    { "term": "Bambu", "def_id": "Tanaman tinggi berongga yang batangnya kuat dan dipakai membuat angklung.", "def_en": "A tall, hollow plant with a strong stem used to make angklung." },
+    { "term": "Nada", "def_id": "Bunyi tinggi atau rendah dalam musik.", "def_en": "A high or low sound in music." },
+    { "term": "Tabung", "def_id": "Potongan bambu berbentuk pipa yang menghasilkan bunyi pada angklung.", "def_en": "A pipe-shaped piece of bamboo that makes the sound in an angklung." },
+    { "term": "Sunda", "def_id": "Suku dan budaya yang berasal dari Jawa Barat.", "def_en": "An ethnic group and culture from West Java." },
+    { "term": "Warisan budaya", "def_id": "Sesuatu yang berharga dari nenek moyang yang harus kita jaga.", "def_en": "Something precious from our ancestors that we must protect." }
+  ],
+  "gallery": [
+    { "src": "app/assets/img/wiki/3678684be69ee7c3.jpg", "caption_id": "Deretan angklung bambu siap dimainkan di sebuah sanggar musik.", "caption_en": "Rows of bamboo angklung ready to be played at a music studio.", "credit": "dicky satarman from bandung, indonesia", "license": "CC BY-SA 2.0" },
+    { "src": "app/assets/img/wiki/4473eefddbfe418b.jpg", "caption_id": "Angklung digantung berjajar, memperlihatkan tabung-tabung bambunya.", "caption_en": "Angklung hung in a row, showing off their bamboo tubes.", "credit": "Terry Ballard from Merrick, New York, USA", "license": "CC BY 2.0" },
+    { "src": "app/assets/img/wiki/18c7b883c75fd11f.jpg", "caption_id": "Satu buah angklung dengan tabung besar dan kecil pada bingkainya.", "caption_en": "A single angklung with big and small tubes on its frame.", "credit": "Putri siska", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/3d7fcc87f64c8054.jpg", "caption_id": "Foto lama anak-anak Jawa Barat memegang angklung lebih dari seratus tahun lalu.", "caption_en": "An old photo of West Javanese children holding angklung over a hundred years ago.", "credit": "Unknown author", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/23ccd8e4cc6ddccd.jpg", "caption_id": "Satu set angklung lengkap yang dipajang di museum musik.", "caption_en": "A complete set of angklung on display in a music museum.", "credit": "Malibugalz", "license": "CC BY 4.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Angklung"
+}

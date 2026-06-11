@@ -1,0 +1,135 @@
+{
+  "id": "ensiklopedia_rumah_gadang",
+  "title_id": "Rumah Gadang",
+  "title_en": "Rumah Gadang",
+  "subtitle_id": "Rumah adat Minangkabau dengan atap melengkung seperti tanduk kerbau!",
+  "subtitle_en": "The Minangkabau traditional house with a roof curved like buffalo horns!",
+  "data_card": [
+    {
+      "icon": "public",
+      "label_id": "Asal",
+      "label_en": "Origin",
+      "value_id": "Minangkabau, Sumatra Barat",
+      "value_en": "Minangkabau, West Sumatra"
+    },
+    {
+      "icon": "home",
+      "label_id": "Ciri khas",
+      "label_en": "Feature",
+      "value_id": "Atap gonjong (tanduk kerbau)",
+      "value_en": "Gonjong roof (buffalo horns)"
+    },
+    {
+      "icon": "forest",
+      "label_id": "Bahan",
+      "label_en": "Material",
+      "value_id": "Kayu, ijuk, dan bambu",
+      "value_en": "Wood, palm fiber, and bamboo"
+    },
+    {
+      "icon": "festival",
+      "label_id": "Fungsi",
+      "label_en": "Use",
+      "value_id": "Rumah adat keluarga besar",
+      "value_en": "Home for the extended family"
+    },
+    {
+      "icon": "diversity_3",
+      "label_id": "Pemilik",
+      "label_en": "Owner",
+      "value_id": "Diwariskan kepada perempuan",
+      "value_en": "Passed down to women"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "home",
+      "h_id": "Apa Itu Rumah Gadang?",
+      "h_en": "What Is the Rumah Gadang?",
+      "body_id": "Rumah Gadang adalah rumah adat suku Minangkabau di Sumatra Barat, Indonesia. Namanya berarti 'rumah besar'. Yang paling istimewa adalah atapnya yang melengkung runcing ke atas, mirip tanduk kerbau. Karena bentuk atap ini, rumah ini juga disebut Rumah Bagonjong. Sebuah rumah gadang bisa menjadi tempat tinggal satu keluarga besar bersama-sama.",
+      "body_en": "The Rumah Gadang is the traditional house of the Minangkabau people in West Sumatra, Indonesia. Its name means 'big house'. The most special part is its roof, which curves up into sharp points like a buffalo's horns. Because of this roof, the house is also called Rumah Bagonjong. One rumah gadang can be home to a whole big family living together."
+    },
+    {
+      "icon": "public",
+      "h_id": "Dari Mana Asalnya?",
+      "h_en": "Where Does It Come From?",
+      "body_id": "Rumah Gadang berasal dari Alam Minangkabau di Sumatra Barat. Rumah ini hanya boleh dibangun di sebuah desa adat yang disebut nagari. Di halaman depannya biasanya ada bangunan kecil bernama rangkiang, yaitu lumbung untuk menyimpan padi. Tidak jauh dari rumah, sering dibangun pula sebuah surau sebagai tempat ibadah dan belajar.",
+      "body_en": "The Rumah Gadang comes from the Minangkabau homeland in West Sumatra. It may only be built in a traditional village called a nagari. In front of the house there are usually small buildings called rangkiang, which are barns for storing rice. Not far from the house, a small prayer house called a surau is often built for worship and study."
+    },
+    {
+      "icon": "build",
+      "h_id": "Bagaimana Dibangun?",
+      "h_en": "How Is It Built?",
+      "body_id": "Rumah Gadang dibuat dari tiang-tiang kayu yang panjang dan kuat. Dindingnya dari papan kayu, lalu dinding bagian belakang dari bambu. Atapnya dahulu dibuat dari ijuk, yaitu serat hitam dari pohon enau, yang bisa tahan puluhan tahun. Yang hebat, untuk menyambung kayu tidak dipakai paku, melainkan pasak kayu, jadi rumah ini dibangun seperti menyusun balok raksasa.",
+      "body_en": "The Rumah Gadang is built from long, strong wooden posts. Its walls are made of wooden planks, while the back wall is made of bamboo. Long ago its roof was made of ijuk, the black fiber from the sugar palm tree, which could last for tens of years. Amazingly, the wood is joined with wooden pegs instead of nails, so the house is built like stacking giant building blocks."
+    },
+    {
+      "icon": "auto_awesome",
+      "h_id": "Tahan Gempa & Penuh Ukiran",
+      "h_en": "Earthquake-Safe & Full of Carvings",
+      "body_id": "Sumatra Barat sering terkena gempa, jadi Rumah Gadang dibuat tahan gempa. Tiangnya tidak ditanam ke tanah, tetapi hanya berdiri di atas batu datar yang lebar. Saat gempa, rumah bergoyang pelan seperti sedang menari, lalu kembali tegak lagi. Dinding depannya juga penuh ukiran indah bermotif bunga, daun, dan akar yang melingkar-lingkar.",
+      "body_en": "West Sumatra often has earthquakes, so the Rumah Gadang is built to be earthquake-safe. Its posts are not planted in the ground but simply stand on wide, flat stones. During an earthquake, the house sways gently as if it is dancing, then stands tall again. The front wall is also covered with beautiful carvings of flowers, leaves, and curling vines."
+    },
+    {
+      "icon": "diversity_3",
+      "h_id": "Rumah Milik Perempuan",
+      "h_en": "A House That Belongs to Women",
+      "body_id": "Di adat Minangkabau, Rumah Gadang diwariskan dari ibu kepada anak perempuan. Jumlah kamar tidur mengikuti jumlah perempuan dewasa yang tinggal di sana. Bagian sayap kanan dan kiri rumah disebut anjung, dipakai untuk tempat pengantin duduk atau saat menobatkan kepala adat. Karena itu rumah ini juga dijuluki Rumah Baanjuang.",
+      "body_en": "In Minangkabau custom, the Rumah Gadang is passed down from mother to daughter. The number of bedrooms matches the number of grown-up women living there. The right and left wings of the house are called anjung, used as a seat for a bride or for crowning the customary leader. That is why the house is also nicknamed Rumah Baanjuang."
+    }
+  ],
+  "facts": [
+    { "id": "Atap Rumah Gadang melengkung runcing seperti tanduk kerbau.", "en": "The Rumah Gadang roof curves into sharp points like buffalo horns." },
+    { "id": "Rumah ini dibangun tanpa paku, hanya memakai pasak dari kayu.", "en": "The house is built without nails, using only wooden pegs." },
+    { "id": "Tiangnya berdiri di atas batu, jadi rumah ini tahan gempa.", "en": "Its posts stand on stones, making the house earthquake-safe." },
+    { "id": "Dinding depannya penuh ukiran bunga, daun, dan akar.", "en": "Its front wall is covered with carvings of flowers, leaves, and vines." },
+    { "id": "Rumah Gadang diwariskan kepada anak perempuan dalam keluarga.", "en": "The Rumah Gadang is passed down to the daughters in the family." },
+    { "id": "Di halaman ada rangkiang, lumbung kecil untuk menyimpan padi.", "en": "In the yard there is a rangkiang, a small barn for storing rice." }
+  ],
+  "glossary": [
+    { "term": "Rumah adat", "def_id": "Rumah tradisional khas suatu daerah yang dibangun menurut adat setempat.", "def_en": "A traditional house of a region, built according to local custom." },
+    { "term": "Gonjong", "def_id": "Puncak atap yang runcing dan melengkung ke atas seperti tanduk kerbau.", "def_en": "The roof peak that is pointed and curves upward like a buffalo's horn." },
+    { "term": "Minangkabau", "def_id": "Suku asli dari Sumatra Barat yang membangun Rumah Gadang.", "def_en": "The native people of West Sumatra who build the Rumah Gadang." },
+    { "term": "Rangkiang", "def_id": "Bangunan lumbung kecil di depan rumah untuk menyimpan padi.", "def_en": "A small barn building in front of the house for storing rice." },
+    { "term": "Ijuk", "def_id": "Serat hitam dari pohon enau yang dahulu dipakai untuk atap.", "def_en": "Black fiber from the sugar palm tree once used for roofing." },
+    { "term": "Pasak", "def_id": "Paku dari kayu untuk menyambung bagian-bagian rumah.", "def_en": "A wooden peg used to join the parts of the house together." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/e814415018eb952f.jpg",
+      "caption_id": "Rumah Gadang berwarna-warni dengan atap gonjong runcing dan dinding penuh ukiran, terpantul di kolam.",
+      "caption_en": "A colorful Rumah Gadang with pointed gonjong roofs and carved walls, reflected in a pond.",
+      "credit": "MichaelJLowe",
+      "license": "CC BY-SA 2.5"
+    },
+    {
+      "src": "app/assets/img/wiki/98c629ac8c0d3521.jpg",
+      "caption_id": "Deretan Rumah Gadang tua di sebuah desa, atapnya menjulang di bawah langit mendung.",
+      "caption_en": "A row of old Rumah Gadang in a village, their roofs rising under a cloudy sky.",
+      "credit": "RaiyaniM",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/104ecd45492b3bb0.jpg",
+      "caption_id": "Foto lama keluarga Minangkabau berpakaian adat di depan Rumah Gadang mereka.",
+      "caption_en": "An old photo of a Minangkabau family in traditional dress in front of their Rumah Gadang.",
+      "credit": "Christiaan Benjamin Nieuwenhuis",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/c904235336bebf18.jpg",
+      "caption_id": "Model mini Rumah Gadang memperlihatkan tiang-tiang kayu dan atap ijuk dari dekat.",
+      "caption_en": "A small model of a Rumah Gadang shows the wooden posts and palm-fiber roof up close.",
+      "credit": "Tropenmuseum",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/622c0db0fbcccceb.jpg",
+      "caption_id": "Rumah Gadang dengan atap seng dan dinding tembok, perpaduan gaya lama dan baru.",
+      "caption_en": "A Rumah Gadang with a tin roof and plastered wall, mixing old and new styles.",
+      "credit": "Alfatajri",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Rumah_Gadang"
+}
