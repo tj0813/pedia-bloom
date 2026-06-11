@@ -502,11 +502,12 @@
           '<p class="text-[13px] text-on-surface leading-snug mt-0.5">' + tL(gl.def_id, gl.def_en) + "</p></div>";
       }).join("") + "</div></section>" : "";
 
-    // Folk-tale "moral of the story" — a warm, prominent card (only when content provides one).
+    // Folk-tale "moral of the story" — cream card + bold orange accent so the most
+    // important sentence is always high-contrast and easy to read (no colored-fill text).
     var moral = (c.moral_id || c.moral_en) ?
-      '<section class="rounded-2xl p-5 bg-tertiary-container shadow-storybook">' +
-        '<h3 class="font-headline-lg-mobile text-[18px] font-bold text-on-tertiary-container flex items-center gap-2"><span class="material-symbols-outlined" style="font-variation-settings:\'FILL\' 1;">favorite</span><span>Pesan Moral<span class="bi-en">Moral of the Story</span></span></h3>' +
-        '<p class="font-body-md text-[15px] text-on-tertiary-container leading-relaxed mt-1">' + tL(c.moral_id, c.moral_en) + "</p></section>" : "";
+      '<section class="story-card p-5" style="border-left:6px solid rgb(var(--tertiary))">' +
+        '<h3 class="font-headline-lg-mobile text-[18px] font-bold text-tertiary flex items-center gap-2"><span class="material-symbols-outlined" style="font-variation-settings:\'FILL\' 1;">favorite</span><span>Pesan Moral<span class="bi-en">Moral of the Story</span></span></h3>' +
+        '<p class="font-body-md text-[15px] text-on-surface leading-relaxed mt-1">' + tL(c.moral_id, c.moral_en) + "</p></section>" : "";
 
     var names = {};
     gallery.forEach(function (g) { if (g && g.credit) names[g.credit + (g.license ? " (" + g.license + ")" : "")] = 1; });
