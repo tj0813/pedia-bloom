@@ -1,93 +1,73 @@
 {
- "id": "ensiklopedia_badak_jawa",
- "title_id": "Badak Jawa",
- "title_en": "Javan Rhinoceros",
- "subtitle_id": "Badak bercula satu paling langka di dunia.",
- "subtitle_en": "The rarest one-horned rhino in the world.",
- "sections": [
-  {
-   "icon": "pets",
-   "h_id": "Apa Itu Badak Jawa?",
-   "h_en": "What Is the Javan Rhino?",
-   "body_id": "Badak jawa adalah badak bercula satu yang tubuhnya cukup kecil di antara badak lainnya. Kulitnya tebal dan berlipat-lipat, seperti memakai baju pelindung dari baja. Hewan ini adalah salah satu badak paling langka di seluruh dunia. Culanya pendek, biasanya tidak lebih panjang dari sejengkal tangan.",
-   "body_en": "The Javan rhino is a one-horned rhino with a smaller body than most other rhinos. Its skin is thick and folded, like it is wearing armor made of steel. This animal is one of the rarest rhinos in the whole world. Its horn is short, usually no longer than a hand's span."
-  },
-  {
-   "icon": "forest",
-   "h_id": "Di Mana Hidupnya?",
-   "h_en": "Where Does It Live?",
-   "body_id": "Hari ini, semua badak jawa liar hanya tinggal di satu tempat: Taman Nasional Ujung Kulon. Tempat ini berada di ujung paling barat Pulau Jawa, Indonesia. Dulu badak jawa hidup di banyak negara Asia, tapi sekarang tinggal sedikit. Ujung Kulon bahkan diakui dunia sebagai Situs Warisan Dunia UNESCO.",
-   "body_en": "Today, all wild Javan rhinos live in just one place: Ujung Kulon National Park. This park is on the far western tip of Java Island, Indonesia. Long ago Javan rhinos lived in many Asian countries, but now only a few remain. Ujung Kulon is even recognized as a UNESCO World Heritage Site."
-  },
-  {
-   "icon": "water_drop",
-   "h_id": "Makanan & Kebiasaan",
-   "h_en": "Food & Habits",
-   "body_id": "Badak jawa suka tinggal di hutan dataran rendah yang lebat dan padang rumput yang basah. Hewan ini senang menyendiri dan biasanya berjalan-jalan sendirian. Mereka suka berkubang di lumpur untuk mendinginkan tubuh. Badak dewasa hampir tidak punya musuh, dan bisa hidup sampai 30 hingga 45 tahun!",
-   "body_en": "The Javan rhino loves thick lowland forests and wet grasslands. This animal enjoys being alone and usually wanders by itself. It likes to wallow in mud to cool down its body. Adult rhinos have almost no enemies, and can live up to 30 to 45 years!"
-  },
-  {
-   "icon": "photo_camera",
-   "h_id": "Kenapa Istimewa?",
-   "h_en": "Why Is It Special?",
-   "body_id": "Badak jawa sangat langka, jadi para ilmuwan jarang melihatnya langsung. Mereka memakai kamera jebakan yang memotret saat badak lewat. Pada tahun 2011, kamera berhasil merekam ibu-ibu badak bersama anaknya. Itu berita yang membahagiakan, karena membuktikan badak jawa masih punya bayi di alam liar!",
-   "body_en": "The Javan rhino is so rare that scientists rarely see it in person. They use camera traps that take photos when a rhino walks by. In 2011, cameras filmed mother rhinos with their babies. That was happy news, because it proved Javan rhinos still have babies in the wild!"
-  },
-  {
-   "icon": "volunteer_activism",
-   "h_id": "Ayo Lindungi!",
-   "h_en": "Let's Protect It!",
-   "body_id": "Karena jumlahnya tinggal sedikit, badak jawa sangat butuh perlindungan kita. Para penjaga taman bekerja keras menjaga mereka tetap aman. Menjaga hutan Ujung Kulon tetap sehat sangat penting bagi badak. Kalau kita semua peduli, badak jawa bisa terus hidup untuk waktu yang lama.",
-   "body_en": "Because so few are left, the Javan rhino really needs our protection. Park rangers work hard to keep them safe. Keeping the Ujung Kulon forest healthy is very important for the rhinos. If we all care, the Javan rhino can keep living for a long time."
-  }
- ],
- "facts": [
-  {
-   "id": "Badak jawa adalah salah satu badak paling langka di dunia!",
-   "en": "The Javan rhino is one of the rarest rhinos in the world!"
-  },
-  {
-   "id": "Semua badak jawa liar hanya hidup di Taman Nasional Ujung Kulon.",
-   "en": "All wild Javan rhinos live only in Ujung Kulon National Park."
-  },
-  {
-   "id": "Kulitnya berlipat-lipat seperti memakai baju zirah dari baja.",
-   "en": "Its folded skin looks like armor made of steel."
-  },
-  {
-   "id": "Badak jawa bisa hidup sampai 30 hingga 45 tahun di alam liar.",
-   "en": "The Javan rhino can live 30 to 45 years in the wild."
-  },
-  {
-   "id": "Para ilmuwan memakai kamera jebakan untuk mengintip badak.",
-   "en": "Scientists use camera traps to peek at the rhinos."
-  },
-  {
-   "id": "Tahun 2011, kamera merekam bayi badak bersama ibunya!",
-   "en": "In 2011, cameras filmed baby rhinos with their moms!"
-  }
- ],
- "gallery": [
-  "app/assets/img/wiki/360d5dadfb2dfc50.jpg",
-  "app/assets/img/wiki/01c213da6cb774ae.jpg",
-  "app/assets/img/wiki/17b1a5b62b81d39f.jpg"
- ],
- "credits": [
-  {
-   "src": "app/assets/img/wiki/01c213da6cb774ae.jpg",
-   "credit": "T.Dixon. The Zoological Society of London",
-   "license": "Public domain"
-  },
-  {
-   "src": "app/assets/img/wiki/360d5dadfb2dfc50.jpg",
-   "credit": "Jo Oh 21:38, 19 January 2006 (UTC)",
-   "license": "CC BY-SA 3.0"
-  },
-  {
-   "src": "app/assets/img/wiki/17b1a5b62b81d39f.jpg",
-   "credit": "Wikimedia Commons",
-   "license": "CC BY-SA 3.0"
-  }
- ],
- "source": "https://id.wikipedia.org/wiki/Badak_jawa"
+  "id": "ensiklopedia_badak_jawa",
+  "title_id": "Badak Jawa",
+  "title_en": "Javan Rhinoceros",
+  "subtitle_id": "Badak bercula satu paling langka di dunia.",
+  "subtitle_en": "The rarest one-horned rhino in the world.",
+  "data_card": [
+    { "icon": "pets", "label_id": "Kelompok", "label_en": "Class", "value_id": "Mamalia besar", "value_en": "Large mammal" },
+    { "icon": "forest", "label_id": "Habitat", "label_en": "Habitat", "value_id": "Hutan hujan dataran rendah", "value_en": "Lowland rainforest" },
+    { "icon": "public", "label_id": "Daerah", "label_en": "Region", "value_id": "Taman Nasional Ujung Kulon", "value_en": "Ujung Kulon National Park" },
+    { "icon": "eco", "label_id": "Makanan", "label_en": "Diet", "value_id": "Daun & pucuk tumbuhan", "value_en": "Leaves & plant shoots" },
+    { "icon": "schedule", "label_id": "Usia", "label_en": "Lifespan", "value_id": "30-45 tahun", "value_en": "30-45 years" },
+    { "icon": "shield", "label_id": "Status", "label_en": "Status", "value_id": "Sangat langka (kritis)", "value_en": "Critically endangered" }
+  ],
+  "sections": [
+    {
+      "icon": "pets",
+      "h_id": "Apa Itu Badak Jawa?",
+      "h_en": "What Is the Javan Rhino?",
+      "body_id": "Badak jawa adalah badak bercula satu yang tubuhnya cukup kecil di antara badak lainnya. Kulitnya tebal dan berlipat-lipat, seperti memakai baju pelindung dari baja. Hewan ini adalah salah satu badak paling langka di seluruh dunia. Culanya pendek, biasanya tidak lebih panjang dari sejengkal tangan.",
+      "body_en": "The Javan rhino is a one-horned rhino with a smaller body than most other rhinos. Its skin is thick and folded, like it is wearing armor made of steel. This animal is one of the rarest rhinos in the whole world. Its horn is short, usually no longer than a hand's span."
+    },
+    {
+      "icon": "forest",
+      "h_id": "Di Mana Hidupnya?",
+      "h_en": "Where Does It Live?",
+      "body_id": "Hari ini, semua badak jawa liar hanya tinggal di satu tempat: Taman Nasional Ujung Kulon. Tempat ini berada di ujung paling barat Pulau Jawa, Indonesia. Dulu badak jawa hidup di banyak negara Asia, tapi sekarang tinggal sedikit. Ujung Kulon bahkan diakui dunia sebagai Situs Warisan Dunia UNESCO.",
+      "body_en": "Today, all wild Javan rhinos live in just one place: Ujung Kulon National Park. This park is on the far western tip of Java Island, Indonesia. Long ago Javan rhinos lived in many Asian countries, but now only a few remain. Ujung Kulon is even recognized as a UNESCO World Heritage Site."
+    },
+    {
+      "icon": "water_drop",
+      "h_id": "Makanan & Kebiasaan",
+      "h_en": "Food & Habits",
+      "body_id": "Badak jawa suka tinggal di hutan dataran rendah yang lebat dan padang rumput yang basah. Hewan ini senang menyendiri dan biasanya berjalan-jalan sendirian. Mereka suka berkubang di lumpur untuk mendinginkan tubuh. Badak dewasa hampir tidak punya musuh, dan bisa hidup sampai 30 hingga 45 tahun!",
+      "body_en": "The Javan rhino loves thick lowland forests and wet grasslands. This animal enjoys being alone and usually wanders by itself. It likes to wallow in mud to cool down its body. Adult rhinos have almost no enemies, and can live up to 30 to 45 years!"
+    },
+    {
+      "icon": "photo_camera",
+      "h_id": "Kenapa Istimewa?",
+      "h_en": "Why Is It Special?",
+      "body_id": "Badak jawa sangat langka, jadi para ilmuwan jarang melihatnya langsung. Mereka memakai kamera jebakan yang memotret saat badak lewat. Pada tahun 2011, kamera berhasil merekam ibu-ibu badak bersama anaknya. Itu berita yang membahagiakan, karena membuktikan badak jawa masih punya bayi di alam liar!",
+      "body_en": "The Javan rhino is so rare that scientists rarely see it in person. They use camera traps that take photos when a rhino walks by. In 2011, cameras filmed mother rhinos with their babies. That was happy news, because it proved Javan rhinos still have babies in the wild!"
+    },
+    {
+      "icon": "volunteer_activism",
+      "h_id": "Ayo Lindungi!",
+      "h_en": "Let's Protect It!",
+      "body_id": "Karena jumlahnya tinggal sedikit, badak jawa sangat butuh perlindungan kita. Para penjaga taman bekerja keras menjaga mereka tetap aman. Menjaga hutan Ujung Kulon tetap sehat sangat penting bagi badak. Kalau kita semua peduli, badak jawa bisa terus hidup untuk waktu yang lama.",
+      "body_en": "Because so few are left, the Javan rhino really needs our protection. Park rangers work hard to keep them safe. Keeping the Ujung Kulon forest healthy is very important for the rhinos. If we all care, the Javan rhino can keep living for a long time."
+    }
+  ],
+  "facts": [
+    { "id": "Badak jawa adalah salah satu badak paling langka di dunia!", "en": "The Javan rhino is one of the rarest rhinos in the world!" },
+    { "id": "Semua badak jawa liar hanya hidup di Taman Nasional Ujung Kulon.", "en": "All wild Javan rhinos live only in Ujung Kulon National Park." },
+    { "id": "Kulitnya berlipat-lipat seperti memakai baju zirah dari baja.", "en": "Its folded skin looks like armor made of steel." },
+    { "id": "Badak jawa bisa hidup sampai 30 hingga 45 tahun di alam liar.", "en": "The Javan rhino can live 30 to 45 years in the wild." },
+    { "id": "Para ilmuwan memakai kamera jebakan untuk mengintip badak.", "en": "Scientists use camera traps to peek at the rhinos." },
+    { "id": "Tahun 2011, kamera merekam bayi badak bersama ibunya!", "en": "In 2011, cameras filmed baby rhinos with their moms!" }
+  ],
+  "glossary": [
+    { "term": "Cula", "def_id": "Tanduk keras di hidung badak; badak jawa hanya punya satu cula.", "def_en": "The hard horn on a rhino's nose; the Javan rhino has just one." },
+    { "term": "Endemik", "def_id": "Hewan yang hidup hanya di satu tempat di dunia.", "def_en": "An animal that lives in only one place in the world." },
+    { "term": "Kamera jebakan", "def_id": "Kamera di hutan yang memotret sendiri saat ada hewan lewat.", "def_en": "A camera in the forest that snaps a photo by itself when an animal passes." },
+    { "term": "Berkubang", "def_id": "Berguling-guling di lumpur agar tubuh tetap sejuk.", "def_en": "Rolling in mud to keep the body cool." },
+    { "term": "Situs Warisan Dunia", "def_id": "Tempat istimewa yang dilindungi dunia karena sangat penting bagi alam.", "def_en": "A special place protected by the world because it is so important to nature." }
+  ],
+  "gallery": [
+    { "src": "app/assets/img/wiki/01c213da6cb774ae.jpg", "caption_id": "Foto lama seekor badak jawa, memperlihatkan kulit tebal berlipat seperti baju zirah.", "caption_en": "An old photo of a Javan rhino, showing its thick folded skin like armor.", "credit": "T.Dixon. The Zoological Society of London", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/360d5dadfb2dfc50.jpg", "caption_id": "Seekor induk badak bercula satu menjaga anaknya, mirip cara badak jawa merawat bayinya.", "caption_en": "A one-horned rhino mother guards her calf, much like how Javan rhinos care for their babies.", "credit": "Jo Oh", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/17b1a5b62b81d39f.jpg", "caption_id": "Hutan hijau Taman Nasional Ujung Kulon, rumah terakhir badak jawa di alam liar.", "caption_en": "The green forest of Ujung Kulon National Park, the last wild home of the Javan rhino.", "credit": "Wikimedia Commons", "license": "CC BY-SA 3.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Badak_jawa"
 }

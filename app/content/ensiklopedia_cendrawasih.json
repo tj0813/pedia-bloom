@@ -4,27 +4,35 @@
   "title_en": "Bird-of-Paradise",
   "subtitle_id": "Burung surga cantik dari tanah Papua!",
   "subtitle_en": "The beautiful bird of paradise from Papua!",
+  "data_card": [
+    { "icon": "forest", "label_id": "Habitat", "label_en": "Habitat", "value_id": "Hutan hujan tropis Papua", "value_en": "Papuan tropical rainforest" },
+    { "icon": "straighten", "label_id": "Ukuran", "label_en": "Size", "value_id": "Burung pengicau kecil-sedang", "value_en": "Small-to-medium songbird" },
+    { "icon": "restaurant", "label_id": "Makanan", "label_en": "Food", "value_id": "Buah-buahan & serangga kecil", "value_en": "Fruits & small insects" },
+    { "icon": "public", "label_id": "Daerah", "label_en": "Region", "value_id": "Papua & pulau sekitarnya", "value_en": "Papua & nearby islands" },
+    { "icon": "category", "label_id": "Kelompok", "label_en": "Group", "value_id": "Famili Paradisaeidae", "value_en": "Family Paradisaeidae" },
+    { "icon": "shield", "label_id": "Status", "label_en": "Status", "value_id": "Dilindungi", "value_en": "Protected" }
+  ],
   "sections": [
     {
       "icon": "pets",
       "h_id": "Apa Itu Cendrawasih?",
       "h_en": "What Is the Bird-of-Paradise?",
-      "body_id": "Cendrawasih adalah burung pengicau cantik dari keluarga Paradisaeidae. Banyak orang menyebutnya 'burung surga' karena bulunya yang indah dan berwarna-warni. Ada banyak jenisnya, seperti cendrawasih merah, kuning, raja, dan kaisar.",
-      "body_en": "The bird-of-paradise is a beautiful songbird from the Paradisaeidae family. Many people call it the 'bird of heaven' because of its lovely, colorful feathers. There are many kinds, like the red, yellow, king, and emperor birds-of-paradise."
+      "body_id": "Cendrawasih adalah burung pengicau cantik dari keluarga Paradisaeidae. Banyak orang menyebutnya 'burung surga' karena bulunya yang indah dan berwarna-warni. Ada banyak jenisnya, seperti cendrawasih merah, kuning, raja, kaisar, dan raggiana.",
+      "body_en": "The bird-of-paradise is a beautiful songbird from the Paradisaeidae family. Many people call it the 'bird of heaven' because of its lovely, colorful feathers. There are many kinds, like the red, yellow, king, emperor, and raggiana birds-of-paradise."
     },
     {
       "icon": "public",
       "h_id": "Di Mana Hidupnya?",
       "h_en": "Where Does It Live?",
-      "body_id": "Cendrawasih hidup di hutan-hutan lebat di Papua, Indonesia, dan pulau-pulau di sekitarnya. Mereka suka tinggal tinggi di atas pepohonan hutan hujan tropis. Karena keindahannya, burung ini menjadi kebanggaan tanah Papua.",
-      "body_en": "Birds-of-paradise live in the thick forests of Papua, Indonesia, and nearby islands. They like to stay high up in the trees of the tropical rainforest. Because of their beauty, these birds are the pride of Papua."
+      "body_id": "Cendrawasih hidup di hutan-hutan lebat di Papua, Indonesia, dan pulau-pulau di sekitarnya. Mereka suka tinggal tinggi di atas pepohonan hutan hujan tropis. Karena keindahannya, burung ini menjadi kebanggaan tanah Papua dan namanya dipakai untuk teluk serta universitas di sana.",
+      "body_en": "Birds-of-paradise live in the thick forests of Papua, Indonesia, and nearby islands. They like to stay high up in the trees of the tropical rainforest. Because of their beauty, these birds are the pride of Papua, and their name is even used for a bay and a university there."
     },
     {
       "icon": "visibility",
       "h_id": "Tubuh & Ciri Khas",
       "h_en": "Body & Features",
-      "body_id": "Cendrawasih jantan memiliki bulu yang sangat indah dengan warna-warna cerah seperti merah, kuning, dan hijau. Beberapa punya bulu panjang yang menjuntai seperti pita atau kawat. Bulu cantik ini hanya dimiliki oleh burung jantan.",
-      "body_en": "Male birds-of-paradise have very beautiful feathers in bright colors like red, yellow, and green. Some have long feathers that flow like ribbons or wires. These lovely feathers belong only to the male birds."
+      "body_id": "Cendrawasih jantan memiliki bulu yang sangat indah dengan warna-warna cerah seperti merah, kuning, dan hijau. Beberapa punya bulu panjang yang menjuntai seperti pita atau kawat. Bulu cantik ini hanya dimiliki oleh burung jantan; betinanya berwarna lebih kalem.",
+      "body_en": "Male birds-of-paradise have very beautiful feathers in bright colors like red, yellow, and green. Some have long feathers that flow like ribbons or wires. These lovely feathers belong only to the male birds; the females have plainer colors."
     },
     {
       "icon": "favorite",
@@ -48,21 +56,14 @@
     { "id": "Cendrawasih adalah lambang kebanggaan tanah Papua.", "en": "The bird-of-paradise is a symbol of pride for Papua." },
     { "id": "Ada belasan jenis cendrawasih di Indonesia.", "en": "There are over a dozen kinds of birds-of-paradise in Indonesia." }
   ],
-  "gallery": [
-    "app/assets/img/wiki/47ba731e94dfca1a.jpg",
-    "app/assets/img/wiki/1a13738e3075d8d5.jpg",
-    "app/assets/img/wiki/b137ef678195257f.jpg",
-    "app/assets/img/wiki/892238c9389bd6e6.jpg",
-    "app/assets/img/wiki/92e7f1db2270f296.png",
-    "app/assets/img/wiki/b545725c50aa8cab.jpg"
+  "glossary": [
+    { "term": "Paradisaeidae", "def_id": "Nama keluarga ilmiah untuk semua jenis burung cendrawasih.", "def_en": "The scientific family name for all kinds of birds-of-paradise." },
+    { "term": "Pengicau", "def_id": "Kelompok burung yang pandai bersuara dan berkicau, seperti cendrawasih.", "def_en": "A group of birds that are good at singing and chirping, like the bird-of-paradise." },
+    { "term": "Endemik", "def_id": "Hewan atau tumbuhan yang hanya hidup di satu daerah tertentu saja.", "def_en": "An animal or plant that lives only in one particular area." },
+    { "term": "Punah", "def_id": "Keadaan ketika suatu jenis hewan habis dan tidak ada lagi di dunia.", "def_en": "When a kind of animal runs out and no longer exists in the world." }
   ],
-  "credits": [
-    { "src": "app/assets/img/wiki/1a13738e3075d8d5.jpg", "credit": "Albertus Seba (1665 - 1736) – Artist (German) Born in Etzel, Germany. Died in Am", "license": "Public domain" },
-    { "src": "app/assets/img/wiki/47ba731e94dfca1a.jpg", "credit": "Philip Nalangan", "license": "CC BY 4.0" },
-    { "src": "app/assets/img/wiki/b137ef678195257f.jpg", "credit": "Ulisse Aldrovandi", "license": "Public domain" },
-    { "src": "app/assets/img/wiki/92e7f1db2270f296.png", "credit": "Houseplants Nook", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/892238c9389bd6e6.jpg", "credit": "Author unknown", "license": "Public domain" },
-    { "src": "app/assets/img/wiki/b545725c50aa8cab.jpg", "credit": "H. Zell", "license": "CC BY-SA 3.0" }
+  "gallery": [
+    { "src": "app/assets/img/wiki/47ba731e94dfca1a.jpg", "caption_id": "Cendrawasih jantan bertengger gagah, memamerkan bulu cokelat keemasan dan ekor putih panjang yang menjuntai.", "caption_en": "A male bird-of-paradise perches proudly, showing off its golden-brown plumage and long flowing white tail.", "credit": "Philip Nalangan", "license": "CC BY 4.0" }
   ],
   "source": "https://id.wikipedia.org/wiki/Cenderawasih_%28disambiguasi%29"
 }

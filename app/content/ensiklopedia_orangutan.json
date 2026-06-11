@@ -4,6 +4,50 @@
   "title_en": "Orangutan",
   "subtitle_id": "Kera cerdas penghuni pohon hutan hujan!",
   "subtitle_en": "The clever ape of the rainforest trees!",
+  "data_card": [
+    {
+      "icon": "forest",
+      "label_id": "Habitat",
+      "label_en": "Habitat",
+      "value_id": "Hutan hujan tropis",
+      "value_en": "Tropical rainforest"
+    },
+    {
+      "icon": "straighten",
+      "label_id": "Ukuran",
+      "label_en": "Size",
+      "value_id": "Jantan ~75 kg, betina ~37 kg",
+      "value_en": "Male ~75 kg, female ~37 kg"
+    },
+    {
+      "icon": "restaurant",
+      "label_id": "Makanan",
+      "label_en": "Food",
+      "value_id": "Buah, daun, madu, serangga",
+      "value_en": "Fruit, leaves, honey, insects"
+    },
+    {
+      "icon": "public",
+      "label_id": "Daerah",
+      "label_en": "Region",
+      "value_id": "Kalimantan & Sumatra",
+      "value_en": "Borneo & Sumatra"
+    },
+    {
+      "icon": "warning",
+      "label_id": "Status",
+      "label_en": "Status",
+      "value_id": "Terancam kritis",
+      "value_en": "Critically endangered"
+    },
+    {
+      "icon": "groups",
+      "label_id": "Kelompok",
+      "label_en": "Group",
+      "value_id": "Kera besar (Pongo)",
+      "value_en": "Great apes (Pongo)"
+    }
+  ],
   "sections": [
     {
       "icon": "pets",
@@ -49,21 +93,35 @@
     { "id": "Orang utan bisa hidup lebih dari 30 tahun.", "en": "Orangutans can live more than 30 years." },
     { "id": "Lengan orang utan lebih panjang daripada kakinya untuk berayun.", "en": "An orangutan's arms are longer than its legs for swinging." }
   ],
-  "gallery": [
-    "app/assets/img/wiki/b30a1e77d5d9e4fc.jpg",
-    "app/assets/img/wiki/c430a7d4906c53b7.jpg",
-    "app/assets/img/wiki/63fb91ec52199d0b.jpg",
-    "app/assets/img/wiki/479e288fefe8bc8c.jpg",
-    "app/assets/img/wiki/53d9f15b8104e8b9.jpg",
-    "app/assets/img/wiki/6a5563ea6efb2051.jpg"
+  "glossary": [
+    { "term": "Kera besar", "def_id": "Kelompok primata bertubuh besar tanpa ekor, seperti orang utan dan gorila.", "def_en": "A group of large, tailless primates, like orangutans and gorillas." },
+    { "term": "Arboreal", "def_id": "Hewan yang menghabiskan sebagian besar hidupnya di atas pohon.", "def_en": "An animal that spends most of its life up in the trees." },
+    { "term": "Bantalan pipi", "def_id": "Lipatan lebar di pipi orang utan jantan dewasa.", "def_en": "The wide cheek pads on an adult male orangutan." },
+    { "term": "Primata", "def_id": "Kelompok hewan pintar seperti kera, monyet, dan manusia.", "def_en": "A group of clever animals like apes, monkeys, and humans." },
+    { "term": "Terancam punah", "def_id": "Hewan yang jumlahnya sangat sedikit dan bisa hilang dari bumi.", "def_en": "An animal so few in number that it could vanish from the Earth." }
   ],
-  "credits": [
-    { "src": "app/assets/img/wiki/b30a1e77d5d9e4fc.jpg", "credit": "Eleifert", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/53d9f15b8104e8b9.jpg", "credit": "George Edwards", "license": "Public domain" },
-    { "src": "app/assets/img/wiki/c430a7d4906c53b7.jpg", "credit": "Eric Kilby, Aiwok, Tim Laman", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/6a5563ea6efb2051.jpg", "credit": "Ghedoghedo", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/63fb91ec52199d0b.jpg", "credit": "Tim Laman", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/479e288fefe8bc8c.jpg", "credit": "Michel wal", "license": "CC BY-SA 3.0" }
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/b30a1e77d5d9e4fc.jpg",
+      "caption_id": "Orang utan duduk di dahan sambil memegang kelapa dengan jari-jarinya yang lihai.",
+      "caption_en": "An orangutan sits on a branch, holding a coconut with its clever fingers.",
+      "credit": "Eleifert",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/c430a7d4906c53b7.jpg",
+      "caption_id": "Tiga jenis orang utan jantan: Kalimantan, Sumatra, dan Tapanuli.",
+      "caption_en": "The three kinds of male orangutan: Bornean, Sumatran, and Tapanuli.",
+      "credit": "Eric Kilby, Aiwok, Tim Laman",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/63fb91ec52199d0b.jpg",
+      "caption_id": "Orang utan Tapanuli jantan (kiri) dan betina (kanan) di hutan Sumatra.",
+      "caption_en": "A male (left) and female (right) Tapanuli orangutan in the Sumatran forest.",
+      "credit": "Tim Laman",
+      "license": "CC BY-SA 4.0"
+    }
   ],
   "source": "https://id.wikipedia.org/wiki/Orang_utan"
 }

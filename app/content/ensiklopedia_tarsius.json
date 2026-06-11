@@ -4,27 +4,71 @@
   "title_en": "Tarsier",
   "subtitle_id": "Primata mungil bermata besar dari Sulawesi",
   "subtitle_en": "A tiny big-eyed primate from Sulawesi",
+  "data_card": [
+    {
+      "icon": "forest",
+      "label_id": "Habitat",
+      "label_en": "Habitat",
+      "value_id": "Pohon-pohon di hutan yang rimbun",
+      "value_en": "Trees in leafy forests"
+    },
+    {
+      "icon": "straighten",
+      "label_id": "Ukuran",
+      "label_en": "Size",
+      "value_id": "Sangat kecil, muat di telapak tangan",
+      "value_en": "Very small, fits in your palm"
+    },
+    {
+      "icon": "bug_report",
+      "label_id": "Makanan",
+      "label_en": "Food",
+      "value_id": "Serangga seperti jangkrik & belalang",
+      "value_en": "Insects like crickets & grasshoppers"
+    },
+    {
+      "icon": "public",
+      "label_id": "Daerah",
+      "label_en": "Range",
+      "value_id": "Pulau Sulawesi, Indonesia",
+      "value_en": "The island of Sulawesi, Indonesia"
+    },
+    {
+      "icon": "dark_mode",
+      "label_id": "Aktif",
+      "label_en": "Active",
+      "value_id": "Malam hari (nokturnal)",
+      "value_en": "At night (nocturnal)"
+    },
+    {
+      "icon": "category",
+      "label_id": "Kelompok",
+      "label_en": "Group",
+      "value_id": "Primata kecil, famili Tarsiidae",
+      "value_en": "Small primate, family Tarsiidae"
+    }
+  ],
   "sections": [
     {
       "icon": "pets",
       "h_id": "Apa Itu Tarsius?",
       "h_en": "What Is a Tarsier?",
-      "body_id": "Tarsius adalah primata yang sangat kecil, kerabat jauh dari monyet dan manusia. Tubuhnya mungil dan bisa muat di telapak tangan orang dewasa. Walau kecil, tarsius punya mata yang sangat besar dan menggemaskan!",
-      "body_en": "The tarsier is a very small primate, a distant relative of monkeys and humans. Its tiny body can fit in an adult's palm. Even though it is small, the tarsier has huge, adorable eyes!"
+      "body_id": "Tarsius adalah primata yang sangat kecil, kerabat jauh dari monyet dan manusia. Tubuhnya mungil dan bisa muat di telapak tangan orang dewasa. Tarsius termasuk famili Tarsiidae. Walau kecil, tarsius punya mata yang sangat besar dan menggemaskan!",
+      "body_en": "The tarsier is a very small primate, a distant relative of monkeys and humans. Its tiny body can fit in an adult's palm. The tarsier belongs to the family Tarsiidae. Even though it is small, the tarsier has huge, adorable eyes!"
     },
     {
       "icon": "public",
       "h_id": "Di Mana Hidupnya?",
       "h_en": "Where Does It Live?",
-      "body_id": "Tarsius berasal dari pulau-pulau di Asia Tenggara. Genus Tarsius ini ditemukan di Pulau Sulawesi, Indonesia. Mereka tinggal di pohon-pohon dalam hutan yang rimbun.",
-      "body_en": "Tarsiers come from islands in Southeast Asia. The genus Tarsius is found on the island of Sulawesi, Indonesia. They live up in the trees of leafy forests."
+      "body_id": "Tarsius berasal dari pulau-pulau di Asia Tenggara. Semua spesies dalam genus Tarsius ditemukan di Pulau Sulawesi, Indonesia. Mereka tinggal di pohon-pohon dalam hutan yang rimbun dan berpegangan erat pada dahan.",
+      "body_en": "Tarsiers come from islands in Southeast Asia. Every species in the genus Tarsius is found on the island of Sulawesi, Indonesia. They live up in the trees of leafy forests and cling tightly to the branches."
     },
     {
       "icon": "visibility",
       "h_id": "Mata Raksasa & Tubuh",
       "h_en": "Giant Eyes & Body",
-      "body_id": "Mata tarsius sangat besar dibanding tubuhnya, membantunya melihat dalam gelap. Ia punya jari-jari panjang untuk berpegangan erat di dahan pohon. Tarsius juga bisa memutar kepalanya jauh ke belakang untuk melihat sekeliling.",
-      "body_en": "A tarsier's eyes are huge compared to its body, helping it see in the dark. It has long fingers for gripping tree branches tightly. A tarsier can also turn its head far around to look behind itself."
+      "body_id": "Mata tarsius sangat besar dibanding tubuhnya, membantunya melihat dalam gelap. Ia punya jari-jari panjang untuk berpegangan erat di dahan pohon. Tarsius juga bisa memutar kepalanya jauh ke belakang untuk melihat sekeliling tanpa menggerakkan tubuhnya.",
+      "body_en": "A tarsier's eyes are huge compared to its body, helping it see in the dark. It has long fingers for gripping tree branches tightly. A tarsier can also turn its head far around to look behind itself without moving its body."
     },
     {
       "icon": "dark_mode",
@@ -46,23 +90,46 @@
     { "id": "Matanya sangat besar untuk melihat dalam gelap.", "en": "Its eyes are very big for seeing in the dark." },
     { "id": "Tarsius aktif di malam hari dan tidur saat siang.", "en": "Tarsiers are active at night and sleep during the day." },
     { "id": "Ia bisa memutar kepalanya jauh ke belakang.", "en": "It can turn its head far around to look behind." },
+    { "id": "Jari-jarinya panjang untuk berpegangan erat di dahan.", "en": "Its fingers are long for gripping branches tightly." },
     { "id": "Semua tarsius dari genus ini ditemukan di Pulau Sulawesi.", "en": "All tarsiers of this genus are found on the island of Sulawesi." }
   ],
-  "gallery": [
-    "app/assets/img/wiki/5cc5af4876e10978.jpg",
-    "app/assets/img/wiki/bf0952f593d2b213.jpg",
-    "app/assets/img/wiki/b236a82bf73fa6db.jpg",
-    "app/assets/img/wiki/9445c5b2e40f3505.png",
-    "app/assets/img/wiki/899e3a6d844737cd.png",
-    "app/assets/img/wiki/bfcbe53d56dabc6d.png"
+  "glossary": [
+    {
+      "term": "Primata",
+      "def_id": "Kelompok hewan yang mencakup monyet, kera, dan manusia.",
+      "def_en": "A group of animals that includes monkeys, apes, and humans."
+    },
+    {
+      "term": "Nokturnal",
+      "def_id": "Hewan yang aktif di malam hari dan tidur di siang hari.",
+      "def_en": "An animal that is active at night and sleeps during the day."
+    },
+    {
+      "term": "Genus",
+      "def_id": "Kelompok hewan atau tumbuhan yang berkerabat dekat.",
+      "def_en": "A group of animals or plants that are close relatives."
+    },
+    {
+      "term": "Serangga",
+      "def_id": "Hewan kecil berkaki enam seperti jangkrik dan belalang.",
+      "def_en": "Small six-legged animals like crickets and grasshoppers."
+    }
   ],
-  "credits": [
-    { "src": "app/assets/img/wiki/5cc5af4876e10978.jpg", "credit": "Lip Kee Yap", "license": "CC BY-SA 2.0" },
-    { "src": "app/assets/img/wiki/9445c5b2e40f3505.png", "credit": "Chermundy", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/bf0952f593d2b213.jpg", "credit": "Meldy Tamenge", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/899e3a6d844737cd.png", "credit": "Chermundy", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/b236a82bf73fa6db.jpg", "credit": "Illustratedjc", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/bfcbe53d56dabc6d.png", "credit": "Chermundy", "license": "CC BY-SA 3.0" }
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/5cc5af4876e10978.jpg",
+      "caption_id": "Tarsius berpegangan erat pada batang pohon dengan jari-jarinya yang panjang.",
+      "caption_en": "A tarsier clings tightly to a tree trunk with its long fingers.",
+      "credit": "Lip Kee Yap",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "src": "app/assets/img/wiki/bf0952f593d2b213.jpg",
+      "caption_id": "Mata besar dan telinga lebar tarsius membantunya berburu serangga di malam hari.",
+      "caption_en": "A tarsier's big eyes and wide ears help it hunt insects at night.",
+      "credit": "Meldy Tamenge",
+      "license": "CC BY-SA 4.0"
+    }
   ],
   "source": "https://id.wikipedia.org/wiki/Tarsius_%28genus%29"
 }

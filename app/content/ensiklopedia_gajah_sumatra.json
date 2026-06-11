@@ -4,20 +4,28 @@
   "title_en": "Sumatran Elephant",
   "subtitle_id": "Mamalia terbesar dan tercerdas di Indonesia!",
   "subtitle_en": "Indonesia's biggest and smartest mammal!",
+  "data_card": [
+    { "icon": "forest", "label_id": "Habitat", "label_en": "Habitat", "value_id": "Hutan rawa & dataran rendah", "value_en": "Swamp & lowland forests" },
+    { "icon": "height", "label_id": "Ukuran", "label_en": "Size", "value_id": "Setinggi 3,5 m, sampai 6 ton", "value_en": "Up to 3.5 m tall, 6 tons" },
+    { "icon": "restaurant", "label_id": "Makanan", "label_en": "Food", "value_id": "Herbivora: rumput, daun, kulit kayu", "value_en": "Herbivore: grass, leaves, bark" },
+    { "icon": "public", "label_id": "Daerah", "label_en": "Region", "value_id": "Hanya Pulau Sumatra", "value_en": "Only Sumatra Island" },
+    { "icon": "category", "label_id": "Kelompok", "label_en": "Group", "value_id": "Subspesies gajah Asia", "value_en": "Asian elephant subspecies" },
+    { "icon": "warning", "label_id": "Status", "label_en": "Status", "value_id": "Sangat terancam punah", "value_en": "Critically endangered" }
+  ],
   "sections": [
     {
       "icon": "pets",
       "h_id": "Apa Itu Gajah Sumatra?",
       "h_en": "What Is the Sumatran Elephant?",
-      "body_id": "Gajah sumatra (Elephas maximus sumatranus) adalah jenis gajah Asia yang hanya hidup di Pulau Sumatra. Ia adalah mamalia terbesar di Indonesia! Tubuhnya sedikit lebih kecil daripada gajah dari India.",
-      "body_en": "The Sumatran elephant (Elephas maximus sumatranus) is a kind of Asian elephant that lives only on the island of Sumatra. It is the biggest mammal in Indonesia! Its body is a little smaller than the elephant from India."
+      "body_id": "Gajah sumatra (Elephas maximus sumatranus) adalah jenis gajah Asia yang hanya hidup di Pulau Sumatra. Ia adalah mamalia terbesar di Indonesia! Tubuhnya sedikit lebih kecil daripada gajah dari India, dan biasanya hanya gajah jantan yang punya gading.",
+      "body_en": "The Sumatran elephant (Elephas maximus sumatranus) is a kind of Asian elephant that lives only on the island of Sumatra. It is the biggest mammal in Indonesia! Its body is a little smaller than the elephant from India, and usually only the males have tusks."
     },
     {
       "icon": "forest",
       "h_id": "Di Mana Hidupnya?",
       "h_en": "Where Does It Live?",
-      "body_id": "Gajah sumatra hidup di hutan-hutan luas, seperti hutan rawa, hutan gambut, dan hutan hujan dataran rendah. Mereka butuh wilayah jelajah yang sangat luas untuk berkeliling. Mereka juga suka tempat yang dekat dengan sumber air.",
-      "body_en": "The Sumatran elephant lives in wide forests, like swamp forests, peat forests, and lowland rainforests. They need a very large area to roam around. They also like places close to water."
+      "body_id": "Gajah sumatra hidup di hutan-hutan luas, seperti hutan rawa, hutan gambut, dan hutan hujan dataran rendah. Mereka butuh wilayah jelajah yang sangat luas untuk berkeliling, dan satu gajah saja bisa butuh ratusan hektar. Mereka juga suka tempat yang dekat dengan sumber air.",
+      "body_en": "The Sumatran elephant lives in wide forests, like swamp forests, peat forests, and lowland rainforests. They need a very large area to roam around, and a single elephant can need hundreds of hectares. They also like places close to water."
     },
     {
       "icon": "height",
@@ -30,8 +38,8 @@
       "icon": "restaurant",
       "h_id": "Makanan & Kebiasaan",
       "h_en": "Food & Habits",
-      "body_id": "Gajah sumatra adalah herbivora, jadi ia hanya makan tumbuhan! Ia suka rumput, semak muda, daun, dan kulit kayu yang lembut. Gajah sangat cerdas dan punya otak besar. Bayi gajah dikandung selama 22 bulan sebelum lahir.",
-      "body_en": "The Sumatran elephant is a herbivore, so it eats only plants! It likes grass, young shrubs, leaves, and soft bark. Elephants are very smart and have a big brain. A baby elephant grows for 22 months before it is born."
+      "body_id": "Gajah sumatra adalah herbivora, jadi ia hanya makan tumbuhan! Ia suka rumput, semak muda, daun, dan kulit kayu yang lembut, dan bisa makan sampai 200 kg sehari. Gajah sangat cerdas dan punya otak besar. Bayi gajah dikandung selama 22 bulan sebelum lahir.",
+      "body_en": "The Sumatran elephant is a herbivore, so it eats only plants! It likes grass, young shrubs, leaves, and soft bark, and can eat up to 200 kg a day. Elephants are very smart and have a big brain. A baby elephant grows for 22 months before it is born."
     },
     {
       "icon": "volunteer_activism",
@@ -49,17 +57,17 @@
     { "id": "Gajah membantu menanam hutan dengan menyebar biji.", "en": "Elephants help grow forests by spreading seeds." },
     { "id": "Belalai gajah dipakai seperti tangan untuk meraup makanan.", "en": "An elephant's trunk works like a hand to scoop up food." }
   ],
-  "gallery": [
-    "app/assets/img/wiki/990889d90c287246.jpg",
-    "app/assets/img/wiki/22f9acabeae4d8b6.jpg",
-    "app/assets/img/wiki/46667cb5f2bff657.jpg",
-    "app/assets/img/wiki/88199b85ba995c0c.jpg"
+  "glossary": [
+    { "term": "Subspesies", "def_id": "Kelompok khusus di dalam satu jenis hewan; gajah sumatra adalah subspesies gajah Asia.", "def_en": "A special group within one kind of animal; the Sumatran elephant is a subspecies of the Asian elephant." },
+    { "term": "Herbivora", "def_id": "Hewan yang hanya makan tumbuhan dan tidak makan daging.", "def_en": "An animal that eats only plants and no meat." },
+    { "term": "Belalai", "def_id": "Hidung panjang gajah yang dipakai seperti tangan untuk meraih makanan dan air.", "def_en": "An elephant's long nose, used like a hand to reach food and water." },
+    { "term": "Wilayah jelajah", "def_id": "Daerah luas tempat hewan berkeliling untuk mencari makan dan air.", "def_en": "The wide area an animal roams around to find food and water." }
   ],
-  "credits": [
-    { "src": "app/assets/img/wiki/990889d90c287246.jpg", "credit": "Léodras", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/22f9acabeae4d8b6.jpg", "credit": "Afrianto silalahi", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/46667cb5f2bff657.jpg", "credit": "Panyahatan Siregar", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/88199b85ba995c0c.jpg", "credit": "kusuma wijaya", "license": "CC BY-SA 4.0" }
+  "gallery": [
+    { "src": "app/assets/img/wiki/990889d90c287246.jpg", "caption_id": "Gajah sumatra jantan bergading berdiri di sungai, dengan hutan hijau di belakangnya.", "caption_en": "A tusked male Sumatran elephant stands in a river, with green forest behind it.", "credit": "Léodras", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/22f9acabeae4d8b6.jpg", "caption_id": "Induk gajah menjaga anaknya yang masih kecil di tepi hutan Taman Nasional Tesso Nilo.", "caption_en": "A mother elephant watches over her little calf at the edge of Tesso Nilo National Park.", "credit": "Afrianto silalahi", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/88199b85ba995c0c.jpg", "caption_id": "Gajah berenang di sungai hijau jernih, telinganya yang besar terkembang lebar.", "caption_en": "An elephant bathes in a clear green river, its big ears spread wide.", "credit": "kusuma wijaya", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/46667cb5f2bff657.jpg", "caption_id": "Manusia dan gajah bermain air bersama di sungai, contoh hidup damai berdampingan.", "caption_en": "People and elephants splash together in a river, a picture of peaceful coexistence.", "credit": "Panyahatan Siregar", "license": "CC BY-SA 4.0" }
   ],
   "source": "https://id.wikipedia.org/wiki/Gajah_sumatra"
 }

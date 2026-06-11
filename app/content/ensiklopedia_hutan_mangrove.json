@@ -4,27 +4,71 @@
   "title_en": "Mangrove Forest",
   "subtitle_id": "Hutan ajaib penjaga pantai dan rumah satwa",
   "subtitle_en": "Magical coastal forest, home to wildlife",
+  "data_card": [
+    {
+      "icon": "water_drop",
+      "label_id": "Lokasi",
+      "label_en": "Location",
+      "value_id": "Tepi laut berlumpur, teluk, dan muara sungai",
+      "value_en": "Muddy seashores, bays, and river mouths"
+    },
+    {
+      "icon": "eco",
+      "label_id": "Tumbuhan utama",
+      "label_en": "Main plants",
+      "value_id": "Pohon bakau, api-api, dan nipah",
+      "value_en": "Mangrove, api-api, and nipa trees"
+    },
+    {
+      "icon": "pets",
+      "label_id": "Hewan penghuni",
+      "label_en": "Animals",
+      "value_id": "Ikan, kepiting, udang, dan burung",
+      "value_en": "Fish, crabs, shrimp, and birds"
+    },
+    {
+      "icon": "shield",
+      "label_id": "Manfaat",
+      "label_en": "Benefit",
+      "value_id": "Menahan ombak dan melindungi pantai",
+      "value_en": "Holds back waves and protects the coast"
+    },
+    {
+      "icon": "public",
+      "label_id": "Daerah",
+      "label_en": "Range",
+      "value_id": "Sumatra, Kalimantan, dan Papua",
+      "value_en": "Sumatra, Kalimantan, and Papua"
+    },
+    {
+      "icon": "forest",
+      "label_id": "Status",
+      "label_en": "Status",
+      "value_id": "Terluas di dunia, sebagian perlu dijaga",
+      "value_en": "Largest in the world, some needs caring for"
+    }
+  ],
   "sections": [
     {
       "icon": "forest",
       "h_id": "Apa Itu Hutan Mangrove?",
       "h_en": "What Is a Mangrove Forest?",
-      "body_id": "Hutan mangrove, atau hutan bakau, adalah hutan istimewa yang tumbuh di tepi laut. Pohon-pohonnya berdiri di tanah berlumpur yang sering tergenang air pasang. Hanya tumbuhan khusus yang bisa hidup di sini karena airnya asin. Hutan ini sering tumbuh di teluk yang tenang dan di muara sungai.",
-      "body_en": "A mangrove forest is a special forest that grows along the seashore. Its trees stand in muddy soil that is often flooded by the tide. Only special plants can live here because the water is salty. These forests often grow in calm bays and at river mouths."
+      "body_id": "Hutan mangrove, atau hutan bakau, adalah hutan istimewa yang tumbuh di tepi laut. Pohon-pohonnya berdiri di tanah berlumpur yang sering tergenang air pasang. Hanya tumbuhan khusus yang bisa hidup di sini karena airnya asin. Hutan ini sering tumbuh di teluk yang tenang dan di muara sungai tempat lumpur mengendap.",
+      "body_en": "A mangrove forest is a special forest that grows along the seashore. Its trees stand in muddy soil that is often flooded by the tide. Only special plants can live here because the water is salty. These forests often grow in calm bays and at river mouths where mud settles."
     },
     {
       "icon": "public",
       "h_id": "Di Mana Tumbuhnya?",
       "h_en": "Where Does It Grow?",
-      "body_id": "Hutan mangrove tumbuh di tempat-tempat yang hangat di dekat garis khatulistiwa. Indonesia punya hutan mangrove terluas di seluruh dunia! Hutan ini banyak ditemukan di pantai timur Sumatra, Kalimantan, dan Papua. Seperempat hutan mangrove dunia ada di negara kita.",
-      "body_en": "Mangrove forests grow in warm places near the equator. Indonesia has the largest mangrove forests in the whole world! They are found along the east coast of Sumatra, in Kalimantan, and in Papua. A quarter of the world's mangroves are in our country."
+      "body_id": "Hutan mangrove tumbuh di tempat-tempat yang hangat di dekat garis khatulistiwa. Indonesia punya hutan mangrove terluas di seluruh dunia! Hutan ini banyak ditemukan di pantai timur Sumatra, Kalimantan, dan sekitar Teluk Bintuni di Papua. Sekitar seperempat hutan mangrove dunia ada di negara kita.",
+      "body_en": "Mangrove forests grow in warm places near the equator. Indonesia has the largest mangrove forests in the whole world! They are found along the east coast of Sumatra, in Kalimantan, and around Bintuni Bay in Papua. About a quarter of the world's mangroves are in our country."
     },
     {
       "icon": "eco",
       "h_id": "Pohon yang Hebat",
       "h_en": "Amazing Trees",
-      "body_id": "Pohon bakau punya akar khusus yang menjulur seperti kaki-kaki yang kokoh. Akar ini membantunya berdiri kuat di lumpur yang lembek. Ada banyak jenis pohon mangrove, dan sekitar 39 jenis tumbuh di Indonesia. Pohon-pohon ini tumbuh berlapis-lapis, dari tepi laut sampai ke daratan.",
-      "body_en": "Mangrove trees have special roots that stretch out like sturdy legs. These roots help them stand strong in the soft mud. There are many kinds of mangrove trees, and about 39 kinds grow in Indonesia. They grow in layers, from the seashore all the way inland."
+      "body_id": "Pohon bakau punya akar khusus yang menjulur seperti kaki-kaki yang kokoh. Sebagian akarnya bahkan menyembul ke atas lumpur untuk bernapas. Ada banyak jenis pohon mangrove, dan sekitar 39 jenis tumbuh di Indonesia. Pohon-pohon ini tumbuh berlapis-lapis, dari tepi laut sampai ke daratan.",
+      "body_en": "Mangrove trees have special roots that stretch out like sturdy legs. Some roots even poke up above the mud to breathe. There are many kinds of mangrove trees, and about 39 kinds grow in Indonesia. They grow in layers, from the seashore all the way inland."
     },
     {
       "icon": "pets",
@@ -37,8 +81,8 @@
       "icon": "shield",
       "h_id": "Pelindung Pantai",
       "h_en": "Guardian of the Coast",
-      "body_id": "Hutan mangrove adalah perisai alami yang melindungi pantai. Akar-akarnya yang rapat menahan ombak besar agar tidak merusak daratan. Hutan ini juga mencegah tanah pantai terkikis air laut. Yuk, kita jaga hutan mangrove agar pantai dan hewan-hewannya tetap aman!",
-      "body_en": "The mangrove forest is a natural shield that protects the coast. Its thick roots hold back big waves so they cannot harm the land. The forest also stops the shore from being washed away by the sea. Let's protect mangrove forests so our coasts and animals stay safe!"
+      "body_id": "Hutan mangrove adalah perisai alami yang melindungi pantai. Akar-akarnya yang rapat menahan ombak besar agar tidak merusak daratan. Hutan ini juga mencegah tanah pantai terkikis air laut. Yuk, kita jaga hutan mangrove agar pantai dan hewan-hewannya tetap aman dan sehat!",
+      "body_en": "The mangrove forest is a natural shield that protects the coast. Its thick roots hold back big waves so they cannot harm the land. The forest also stops the shore from being washed away by the sea. Let's protect mangrove forests so our coasts and animals stay safe and healthy!"
     }
   ],
   "facts": [
@@ -49,21 +93,62 @@
     { "id": "Ikan, kepiting, dan burung tinggal di antara akarnya.", "en": "Fish, crabs, and birds live among its roots." },
     { "id": "Pohon bakau bisa hidup di air laut yang asin.", "en": "Mangrove trees can live in salty seawater." }
   ],
-  "gallery": [
-    "app/assets/img/wiki/6ff699218b04654d.jpg",
-    "app/assets/img/wiki/c211ef295f34d967.jpg",
-    "app/assets/img/wiki/9e46ea2e529bcdeb.jpg",
-    "app/assets/img/wiki/b4e2647dc204423d.jpg",
-    "app/assets/img/wiki/d5e6a33f64a65b39.jpg",
-    "app/assets/img/wiki/570c9435a9932759.jpg"
+  "glossary": [
+    {
+      "term": "Air pasang",
+      "def_id": "Saat permukaan air laut naik dan menggenangi tepi pantai.",
+      "def_en": "When the sea level rises and floods the edge of the shore."
+    },
+    {
+      "term": "Muara sungai",
+      "def_id": "Tempat sungai bertemu laut, sering berlumpur dan tenang.",
+      "def_en": "The place where a river meets the sea, often muddy and calm."
+    },
+    {
+      "term": "Akar napas",
+      "def_id": "Akar bakau yang menyembul ke atas lumpur agar pohon bisa bernapas.",
+      "def_en": "Mangrove roots that poke up above the mud so the tree can breathe."
+    },
+    {
+      "term": "Salinitas",
+      "def_id": "Banyaknya kadar garam di dalam air, membuat air terasa asin.",
+      "def_en": "The amount of salt in the water, which makes it taste salty."
+    },
+    {
+      "term": "Ekosistem",
+      "def_id": "Tempat tumbuhan, hewan, dan alam hidup bersama dan saling membutuhkan.",
+      "def_en": "A place where plants, animals, and nature live together and need each other."
+    }
   ],
-  "credits": [
-    { "src": "app/assets/img/wiki/9e46ea2e529bcdeb.jpg", "credit": "Ron from Nieuwegein / South Moreton Oxfordshire, Netherlands / UK", "license": "CC BY-SA 2.0" },
-    { "src": "app/assets/img/wiki/570c9435a9932759.jpg", "credit": "Ulf Mehlig", "license": "CC BY-SA 2.5" },
-    { "src": "app/assets/img/wiki/b4e2647dc204423d.jpg", "credit": "Wikimedia Commons", "license": "Public domain" },
-    { "src": "app/assets/img/wiki/d5e6a33f64a65b39.jpg", "credit": "Wie146", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/6ff699218b04654d.jpg", "credit": "CEphoto, Uwe Aranas", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/c211ef295f34d967.jpg", "credit": "CEphoto, Uwe Aranas", "license": "CC BY-SA 3.0" }
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/6ff699218b04654d.jpg",
+      "caption_id": "Semak bakau hijau berdiri di atas akar tunjang yang kokoh di tepi pantai berpasir.",
+      "caption_en": "Green mangrove shrubs stand on sturdy prop roots along a sandy shore.",
+      "credit": "CEphoto, Uwe Aranas",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/9e46ea2e529bcdeb.jpg",
+      "caption_id": "Saat air surut, terlihat akar bakau yang melengkung dan akar napas kecil menyembul dari lumpur.",
+      "caption_en": "At low tide, arching mangrove roots and small breathing roots poke up from the mud.",
+      "credit": "Ron from Nieuwegein / South Moreton Oxfordshire, Netherlands / UK",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "src": "app/assets/img/wiki/b4e2647dc204423d.jpg",
+      "caption_id": "Pemandangan setengah di atas dan setengah di bawah air memperlihatkan akar bakau yang menjadi tempat berlindung ikan.",
+      "caption_en": "A half-above and half-below water view shows the mangrove roots that shelter fish.",
+      "credit": "Wikimedia Commons",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/c211ef295f34d967.jpg",
+      "caption_id": "Hutan mangrove yang lebat membentang di tepi pantai di bawah langit biru cerah.",
+      "caption_en": "A thick mangrove forest stretches along the coast under a bright blue sky.",
+      "credit": "CEphoto, Uwe Aranas",
+      "license": "CC BY-SA 3.0"
+    }
   ],
   "source": "https://id.wikipedia.org/wiki/Hutan_mangrove"
 }

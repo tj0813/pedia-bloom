@@ -4,66 +4,151 @@
   "title_en": "Whale Shark",
   "subtitle_id": "Ikan terbesar di dunia yang ramah",
   "subtitle_en": "The world's biggest, friendliest fish",
+  "data_card": [
+    {
+      "icon": "waves",
+      "label_id": "Habitat",
+      "label_en": "Habitat",
+      "value_id": "Lautan tropis yang hangat",
+      "value_en": "Warm tropical oceans"
+    },
+    {
+      "icon": "height",
+      "label_id": "Ukuran",
+      "label_en": "Size",
+      "value_id": "Rata-rata ~9,7 meter, berat sampai 9 ton",
+      "value_en": "About 9.7 meters long, up to 9 tons"
+    },
+    {
+      "icon": "restaurant",
+      "label_id": "Makanan",
+      "label_en": "Food",
+      "value_id": "Plankton dan makhluk laut kecil",
+      "value_en": "Plankton and tiny sea creatures"
+    },
+    {
+      "icon": "public",
+      "label_id": "Daerah",
+      "label_en": "Range",
+      "value_id": "Samudra tropis dunia, termasuk Indonesia",
+      "value_en": "Tropical seas worldwide, including Indonesia"
+    },
+    {
+      "icon": "shield",
+      "label_id": "Status",
+      "label_en": "Status",
+      "value_id": "Terancam, sering terjerat jaring nelayan",
+      "value_en": "Threatened, often caught in fishing nets"
+    },
+    {
+      "icon": "pets",
+      "label_id": "Kelompok",
+      "label_en": "Group",
+      "value_id": "Ikan hiu (Rhincodon typus)",
+      "value_en": "Shark fish (Rhincodon typus)"
+    }
+  ],
   "sections": [
     {
       "icon": "waves",
       "h_id": "Apa Itu Hiu Paus?",
       "h_en": "What Is the Whale Shark?",
-      "body_id": "Hiu paus adalah ikan terbesar di seluruh dunia! Walaupun namanya hiu, ia lembut dan tidak berbahaya bagi manusia. Ia disebut hiu paus karena tubuhnya besar dan cara makannya menyaring air laut seperti paus. Di Indonesia ia juga dipanggil hiu tutul karena punggungnya bertotol.",
-      "body_en": "The whale shark is the biggest fish in the whole world! Even though it is a shark, it is gentle and harmless to people. It is called a whale shark because of its huge body and the way it eats by filtering seawater, just like a whale. In Indonesia it is also called 'hiu tutul' because of the spots on its back."
+      "body_id": "Hiu paus adalah ikan terbesar di seluruh dunia! Walaupun namanya hiu, ia lembut dan tidak berbahaya bagi manusia. Ia disebut hiu paus karena tubuhnya besar dan cara makannya menyaring air laut seperti paus. Di Indonesia ia juga dipanggil hiu tutul atau geger lintang karena punggungnya bertotol seperti bintang.",
+      "body_en": "The whale shark is the biggest fish in the whole world! Even though it is a shark, it is gentle and harmless to people. It is called a whale shark because of its huge body and the way it eats by filtering seawater, just like a whale. In Indonesia it is also called 'hiu tutul' or 'geger lintang' because of the star-like spots on its back."
     },
     {
       "icon": "public",
       "h_id": "Di Mana Hidupnya?",
       "h_en": "Where Does It Live?",
-      "body_id": "Hiu paus berenang di lautan tropis yang hangat di seluruh dunia. Ia suka mengembara jauh dan termasuk ikan yang suka bermigrasi. Di Indonesia, hiu paus bisa ditemui di banyak tempat penyelaman. Ia bahkan bisa menyelam sangat dalam ke dasar laut.",
-      "body_en": "The whale shark swims in warm, tropical oceans all around the world. It loves to wander far and is a fish that migrates. In Indonesia, whale sharks can be spotted at many diving spots. It can even dive very deep down into the sea."
+      "body_id": "Hiu paus berenang di lautan tropis yang hangat di seluruh dunia. Ia suka mengembara jauh dan termasuk ikan yang suka bermigrasi. Di Indonesia, hiu paus bisa ditemui di banyak tempat penyelaman yang indah. Ia bahkan bisa menyelam sangat dalam, lebih dari 1.000 meter ke dasar laut!",
+      "body_en": "The whale shark swims in warm, tropical oceans all around the world. It loves to wander far and is a fish that migrates. In Indonesia, whale sharks can be spotted at many beautiful diving spots. It can even dive very deep, more than 1,000 meters down into the sea!"
     },
     {
       "icon": "visibility",
       "h_id": "Tubuh & Ciri Khas",
       "h_en": "Body & Features",
-      "body_id": "Tubuh hiu paus berwarna abu-abu dengan perut putih. Punggungnya penuh bintik dan garis putih kekuningan yang tampak seperti taburan bintang di langit. Pola bintik ini berbeda pada setiap hiu, seperti sidik jari. Mulutnya sangat lebar dan datar di ujung kepalanya.",
-      "body_en": "The whale shark's body is gray with a white belly. Its back is covered in yellowish-white spots and stripes that look like stars sprinkled across the sky. This spot pattern is different on every shark, like a fingerprint. Its mouth is very wide and flat at the front of its head."
+      "body_id": "Tubuh hiu paus berwarna abu-abu dengan perut putih. Punggungnya penuh bintik dan garis putih kekuningan yang tampak seperti taburan bintang di langit malam. Pola bintik ini berbeda pada setiap hiu, seperti sidik jari. Mulutnya sangat lebar dan datar di ujung kepalanya, dengan dua mata kecil di sisinya.",
+      "body_en": "The whale shark's body is gray with a white belly. Its back is covered in yellowish-white spots and stripes that look like stars sprinkled across the night sky. This spot pattern is different on every shark, like a fingerprint. Its mouth is very wide and flat at the front of its head, with two small eyes on the sides."
     },
     {
       "icon": "restaurant",
       "h_id": "Makanan & Kebiasaan",
       "h_en": "Food & Habits",
-      "body_id": "Hiu paus makan dengan cara menyaring air laut lewat mulutnya yang besar. Makanan kesukaannya adalah plankton, yaitu makhluk laut yang sangat kecil. Ia berenang pelan dengan mulut terbuka lebar, lalu air keluar lewat insang dan makanan tertinggal. Walau giginya banyak, ia tidak memakainya untuk mengunyah.",
-      "body_en": "The whale shark eats by filtering seawater through its big mouth. Its favorite food is plankton, which are tiny sea creatures. It swims slowly with its mouth wide open, then water flows out through its gills while the food stays behind. Even though it has many teeth, it does not use them to chew."
+      "body_id": "Hiu paus makan dengan cara menyaring air laut lewat mulutnya yang besar. Makanan kesukaannya adalah plankton, yaitu makhluk laut yang sangat kecil. Ia berenang pelan dengan mulut terbuka lebar, lalu air keluar lewat insang dan makanan tertinggal di dalam. Walau giginya banyak dan kecil-kecil, ia tidak memakainya untuk mengunyah.",
+      "body_en": "The whale shark eats by filtering seawater through its big mouth. Its favorite food is plankton, which are tiny sea creatures. It swims slowly with its mouth wide open, then water flows out through its gills while the food stays inside. Even though it has many tiny teeth, it does not use them to chew."
     },
     {
       "icon": "favorite",
       "h_id": "Kenapa Istimewa?",
       "h_en": "Why Is It Special?",
-      "body_id": "Hiu paus sangat ramah, kadang membiarkan penyelam berenang di dekatnya. Ia bisa hidup sampai 70 tahun dan dipercaya sudah ada sejak 60 juta tahun lalu. Sayangnya, ia bisa terancam karena tertangkap jaring nelayan. Yuk, kita jaga laut tetap bersih agar raksasa lembut ini terus berenang bahagia!",
-      "body_en": "The whale shark is very friendly and sometimes lets divers swim near it. It can live up to 70 years and is believed to have existed since 60 million years ago. Sadly, it can be in danger from getting caught in fishing nets. Let's keep our oceans clean so this gentle giant can keep swimming happily!"
+      "body_id": "Hiu paus sangat ramah, kadang membiarkan penyelam berenang pelan di dekatnya. Ia bisa hidup sampai 70 tahun dan dipercaya sudah ada sejak 60 juta tahun lalu. Sayangnya, ia bisa terancam karena tertangkap jaring nelayan tanpa sengaja. Yuk, kita jaga laut tetap bersih agar raksasa lembut ini terus berenang bahagia!",
+      "body_en": "The whale shark is very friendly and sometimes lets divers swim slowly near it. It can live up to 70 years and is believed to have existed since 60 million years ago. Sadly, it can be in danger from getting caught in fishing nets by accident. Let's keep our oceans clean so this gentle giant can keep swimming happily!"
     }
   ],
   "facts": [
     { "id": "Hiu paus adalah ikan terbesar di dunia!", "en": "The whale shark is the biggest fish in the world!" },
     { "id": "Ia bisa hidup sampai 70 tahun.", "en": "It can live up to 70 years." },
     { "id": "Pola bintik di punggungnya unik, seperti sidik jari.", "en": "The spots on its back are unique, like a fingerprint." },
-    { "id": "Mulutnya bisa selebar hingga 1,5 meter!", "en": "Its mouth can be very wide for filtering food!" },
+    { "id": "Hiu paus bisa menyelam lebih dari 1.000 meter ke dasar laut.", "en": "Whale sharks can dive more than 1,000 meters deep." },
     { "id": "Walau besar, hiu paus jinak dan tidak berbahaya.", "en": "Despite its size, the whale shark is tame and harmless." },
     { "id": "Hiu paus suka makan plankton yang sangat kecil.", "en": "Whale sharks love eating tiny plankton." }
   ],
-  "gallery": [
-    "app/assets/img/wiki/0db4e5bbcb6017eb.jpg",
-    "app/assets/img/wiki/ef8e657a0d08a540.jpg",
-    "app/assets/img/wiki/f1f1e725e5bec58e.jpg",
-    "app/assets/img/wiki/e82213409de96120.jpg",
-    "app/assets/img/wiki/ea8a69023305e034.jpg",
-    "app/assets/img/wiki/817902667e46f839.jpg"
+  "glossary": [
+    {
+      "term": "Plankton",
+      "def_id": "Makhluk laut yang sangat kecil dan mengapung, menjadi makanan banyak hewan laut.",
+      "def_en": "Very tiny sea creatures that float in the water and feed many ocean animals."
+    },
+    {
+      "term": "Menyaring (filter)",
+      "def_id": "Cara makan dengan mengambil makanan kecil dari air dan membuang airnya.",
+      "def_en": "A way of eating by taking tiny food from the water and letting the water out."
+    },
+    {
+      "term": "Insang",
+      "def_id": "Bagian tubuh ikan untuk bernapas dan tempat air keluar saat menyaring makanan.",
+      "def_en": "The body part a fish uses to breathe, and where water exits when it filters food."
+    },
+    {
+      "term": "Bermigrasi",
+      "def_id": "Berpindah jauh dari satu tempat ke tempat lain untuk mencari makan atau berbiak.",
+      "def_en": "Travelling a long way from one place to another to find food or to breed."
+    },
+    {
+      "term": "Tropis",
+      "def_id": "Daerah hangat di dekat garis khatulistiwa, seperti laut di sekitar Indonesia.",
+      "def_en": "Warm regions near the equator, such as the seas around Indonesia."
+    }
   ],
-  "credits": [
-    { "src": "app/assets/img/wiki/0db4e5bbcb6017eb.jpg", "credit": "User:Zac Wolf (original), en:User:Stefan (cropping)", "license": "CC BY-SA 2.5" },
-    { "src": "app/assets/img/wiki/ea8a69023305e034.jpg", "credit": "Jaontiveros", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/f1f1e725e5bec58e.jpg", "credit": "Aoates", "license": "CC BY 3.0" },
-    { "src": "app/assets/img/wiki/817902667e46f839.jpg", "credit": "Jaontiveros", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/ef8e657a0d08a540.jpg", "credit": "Zac Wolf", "license": "CC BY-SA 2.5" },
-    { "src": "app/assets/img/wiki/e82213409de96120.jpg", "credit": "Jordy Meow", "license": "CC BY-SA 3.0" }
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/0db4e5bbcb6017eb.jpg",
+      "caption_id": "Hiu paus berenang dengan anggun, memperlihatkan bintik-bintik putih di punggung abu-abunya yang lebar.",
+      "caption_en": "A whale shark glides gracefully, showing the white spots across its wide gray back.",
+      "credit": "User:Zac Wolf (original), en:User:Stefan (cropping)",
+      "license": "CC BY-SA 2.5"
+    },
+    {
+      "src": "app/assets/img/wiki/ea8a69023305e034.jpg",
+      "caption_id": "Seorang penyelam berenang di dekat mulut hiu paus yang sangat lebar dan datar untuk menyaring makanan.",
+      "caption_en": "A snorkeler swims near the whale shark's very wide, flat mouth used to filter its food.",
+      "credit": "Jaontiveros",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/e82213409de96120.jpg",
+      "caption_id": "Dua hiu paus raksasa berenang tenang di akuarium besar, menunjukkan betapa besar tubuhnya.",
+      "caption_en": "Two giant whale sharks swim calmly in a huge aquarium, showing just how big they are.",
+      "credit": "Jordy Meow",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/ef8e657a0d08a540.jpg",
+      "caption_id": "Pengunjung memandang takjub saat hiu paus melintas di balik kaca akuarium yang besar.",
+      "caption_en": "Visitors watch in wonder as a whale shark passes behind the large aquarium glass.",
+      "credit": "Zac Wolf",
+      "license": "CC BY-SA 2.5"
+    }
   ],
   "source": "https://id.wikipedia.org/wiki/Hiu_paus"
 }

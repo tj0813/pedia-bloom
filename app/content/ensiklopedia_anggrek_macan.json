@@ -4,6 +4,14 @@
   "title_en": "Giant Orchid",
   "subtitle_id": "Anggrek terbesar di dunia, berat dan tinggi!",
   "subtitle_en": "The biggest orchid in the whole world!",
+  "data_card": [
+    { "icon": "eco", "label_id": "Kelompok", "label_en": "Group", "value_id": "Tanaman anggrek", "value_en": "Orchid plant" },
+    { "icon": "forest", "label_id": "Habitat", "label_en": "Habitat", "value_id": "Hutan tropis Asia Tenggara", "value_en": "Southeast Asian rainforest" },
+    { "icon": "height", "label_id": "Tinggi", "label_en": "Size", "value_id": "Sampai 7,6 meter", "value_en": "Up to 7.6 meters tall" },
+    { "icon": "savings", "label_id": "Berat", "label_en": "Weight", "value_id": "Bisa lebih dari 1 ton", "value_en": "Can be over 1 ton" },
+    { "icon": "local_florist", "label_id": "Mekar", "label_en": "Blooms", "value_id": "Sekali tiap 2-4 tahun", "value_en": "Once every 2-4 years" },
+    { "icon": "public", "label_id": "Daerah", "label_en": "Region", "value_id": "Indonesia & Asia Tenggara", "value_en": "Indonesia & SE Asia" }
+  ],
   "sections": [
     {
       "icon": "eco",
@@ -23,8 +31,8 @@
       "icon": "height",
       "h_id": "Tubuh & Ciri Khas",
       "h_en": "Body & Special Features",
-      "body_id": "Anggrek ini bisa tumbuh setinggi rumah! Pernah ada yang mencapai lebih dari 7 meter. Batangnya yang tebal disebut pseudobulb dan bisa sepanjang 2,5 meter. Akarnya tumbuh seperti ikatan tebal yang menempel di pohon atau batu.",
-      "body_en": "This orchid can grow as tall as a house! One was even taller than 7 meters. Its thick stems are called pseudobulbs and can be 2.5 meters long. Its roots grow in thick bundles that cling to trees or rocks."
+      "body_id": "Anggrek ini bisa tumbuh setinggi rumah! Pernah ada yang mencapai lebih dari 7 meter. Batangnya yang tebal disebut pseudobulb dan bisa sepanjang 2,5 meter. Anggrek tebu adalah tanaman epifit, artinya ia tumbuh menempel di pohon lain. Akarnya tumbuh seperti ikatan tebal yang menempel di pohon atau batu.",
+      "body_en": "This orchid can grow as tall as a house! One was even taller than 7 meters. Its thick stems are called pseudobulbs and can be 2.5 meters long. The giant orchid is an epiphyte, which means it grows clinging onto other trees. Its roots grow in thick bundles that hold onto trees or rocks."
     },
     {
       "icon": "local_florist",
@@ -49,19 +57,16 @@
     { "id": "Anggrek ini hanya mekar sekali setiap 2 sampai 4 tahun.", "en": "This orchid blooms only once every 2 to 4 years." },
     { "id": "Ada satu yang ditanam tahun 1861 dan masih hidup hingga kini!", "en": "One planted in 1861 is still alive today!" }
   ],
-  "gallery": [
-    "app/assets/img/wiki/63ce9b63483762b3.jpg",
-    "app/assets/img/wiki/0660c966a101239b.jpg",
-    "app/assets/img/wiki/12eb3e4b61ec0623.jpg",
-    "app/assets/img/wiki/4b5c177f2c83e0c2.jpg",
-    "app/assets/img/wiki/17f94004bd703c64.jpg"
+  "glossary": [
+    { "term": "Anggrek", "def_id": "Jenis tanaman berbunga indah yang sering tumbuh menempel di pohon.", "def_en": "A kind of plant with beautiful flowers that often grows on trees." },
+    { "term": "Pseudobulb", "def_id": "Batang anggrek yang tebal dan menggembung untuk menyimpan air dan makanan.", "def_en": "The thick, swollen orchid stem that stores water and food." },
+    { "term": "Epifit", "def_id": "Tanaman yang tumbuh menempel di pohon lain, tapi tidak mencuri makanannya.", "def_en": "A plant that grows clinging onto another tree without stealing its food." },
+    { "term": "Mekar", "def_id": "Saat kuncup bunga terbuka dan menjadi bunga yang cantik.", "def_en": "When a flower bud opens up into a pretty flower." }
   ],
-  "credits": [
-    { "src": "app/assets/img/wiki/63ce9b63483762b3.jpg", "credit": "Meneerke bloem", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/0660c966a101239b.jpg", "credit": "Brutusaurus", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/12eb3e4b61ec0623.jpg", "credit": "Brutusaurus", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/4b5c177f2c83e0c2.jpg", "credit": "Wikimedia Commons", "license": "Public domain" },
-    { "src": "app/assets/img/wiki/17f94004bd703c64.jpg", "credit": "Die_Gartenlaube_(1897)_211.jpg: Ernst Keil's Nachfolger\nderivative work: Frédéri", "license": "Public domain" }
+  "gallery": [
+    { "src": "app/assets/img/wiki/63ce9b63483762b3.jpg", "caption_id": "Sekelompok bunga anggrek tebu kuning kecokelatan bermandi cahaya matahari.", "caption_en": "A cluster of golden-brown giant orchid flowers basking in sunlight.", "credit": "Meneerke bloem", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/0660c966a101239b.jpg", "caption_id": "Satu bunga anggrek tebu kuning dengan bintik-bintik merah tua, di antara daun hijau.", "caption_en": "A single yellow giant orchid flower with dark red spots among green leaves.", "credit": "Brutusaurus", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/12eb3e4b61ec0623.jpg", "caption_id": "Bunga anggrek tebu menghadap depan, memperlihatkan kelopak berbintik yang indah.", "caption_en": "A giant orchid flower facing front, showing off its beautiful spotted petals.", "credit": "Brutusaurus", "license": "CC BY-SA 4.0" }
   ],
   "source": "https://id.wikipedia.org/wiki/Anggrek_tebu"
 }

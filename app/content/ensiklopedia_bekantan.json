@@ -4,6 +4,14 @@
   "title_en": "Proboscis Monkey",
   "subtitle_id": "Monyet berhidung panjang khas Pulau Kalimantan.",
   "subtitle_en": "The long-nosed monkey of Borneo.",
+  "data_card": [
+    { "icon": "pets", "label_id": "Kelompok", "label_en": "Class", "value_id": "Mamalia (monyet)", "value_en": "Mammal (monkey)" },
+    { "icon": "forest", "label_id": "Habitat", "label_en": "Habitat", "value_id": "Hutan, rawa & hutan pantai", "value_en": "Forests, swamps & coast" },
+    { "icon": "public", "label_id": "Daerah", "label_en": "Region", "value_id": "Pulau Kalimantan", "value_en": "Borneo" },
+    { "icon": "restaurant", "label_id": "Makanan", "label_en": "Diet", "value_id": "Buah, biji & daun", "value_en": "Fruit, seeds & leaves" },
+    { "icon": "water_drop", "label_id": "Kemampuan", "label_en": "Talent", "value_id": "Perenang & penyelam hebat", "value_en": "Great swimmer & diver" },
+    { "icon": "shield", "label_id": "Status", "label_en": "Status", "value_id": "Terancam punah", "value_en": "Endangered" }
+  ],
   "sections": [
     {
       "icon": "pets",
@@ -49,21 +57,18 @@
     { "id": "Bekantan adalah hewan kebanggaan Kalimantan Selatan.", "en": "The proboscis monkey is the pride animal of South Kalimantan." },
     { "id": "Jumlahnya di Kalimantan Selatan naik menjadi sekitar 4.000 ekor!", "en": "Their number in South Kalimantan rose to about 4,000!" }
   ],
-  "gallery": [
-    "app/assets/img/wiki/e136b48c3214f29a.jpg",
-    "app/assets/img/wiki/49ea08d34756f739.jpg",
-    "app/assets/img/wiki/9361a077e9d3bc15.jpg",
-    "app/assets/img/wiki/91931c7b866f4c18.jpg",
-    "app/assets/img/wiki/574c0804ed7e522c.jpg",
-    "app/assets/img/wiki/585d5d0fc86c23e0.jpg"
+  "glossary": [
+    { "term": "Endemik", "def_id": "Hewan yang hidup hanya di satu tempat di dunia, seperti bekantan di Kalimantan.", "def_en": "An animal that lives in only one place in the world, like the proboscis monkey in Borneo." },
+    { "term": "Selaput", "def_id": "Kulit tipis di sela jari kaki yang membantu bekantan berenang.", "def_en": "Thin skin between the toes that helps the monkey swim." },
+    { "term": "Katup", "def_id": "Penutup kecil yang bisa membuka dan menutup, di sini menutup hidung saat menyelam.", "def_en": "A little flap that can open and close, here to shut the nose when diving." },
+    { "term": "Kelompok", "def_id": "Sekumpulan bekantan yang hidup dan mencari makan bersama-sama.", "def_en": "A group of proboscis monkeys that live and find food together." }
   ],
-  "credits": [
-    { "src": "app/assets/img/wiki/e136b48c3214f29a.jpg", "credit": "Agoes Suwondo", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/49ea08d34756f739.jpg", "credit": "Wikimedia Commons", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/9361a077e9d3bc15.jpg", "credit": "Agoes Suwondo", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/91931c7b866f4c18.jpg", "credit": "Agoes Suwondo", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/574c0804ed7e522c.jpg", "credit": "Ade Putri Amelia Az-Zahra", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/585d5d0fc86c23e0.jpg", "credit": "Agoes Suwondo", "license": "CC BY-SA 4.0" }
+  "gallery": [
+    { "src": "app/assets/img/wiki/e136b48c3214f29a.jpg", "caption_id": "Wajah bekantan jantan dari dekat, dengan hidung besar dan panjang yang khas.", "caption_en": "A close-up of a male proboscis monkey's face, with its big, long signature nose.", "credit": "Agoes Suwondo", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/91931c7b866f4c18.jpg", "caption_id": "Keluarga bekantan: jantan, betina, dan anak duduk bersama di tepi hutan.", "caption_en": "A proboscis monkey family: a male, a female, and a young one sitting together at the forest edge.", "credit": "Agoes Suwondo", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/9361a077e9d3bc15.jpg", "caption_id": "Bekantan jantan sedang makan, hidung panjangnya terlihat jelas dari samping.", "caption_en": "A male proboscis monkey eating, its long nose clearly seen from the side.", "credit": "Agoes Suwondo", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/585d5d0fc86c23e0.jpg", "caption_id": "Bekantan muda dengan hidung yang masih kecil, memegang makanan dengan tangannya.", "caption_en": "A young proboscis monkey with a still-small nose, holding food in its hand.", "credit": "Agoes Suwondo", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/574c0804ed7e522c.jpg", "caption_id": "Sekelompok bekantan bertengger di hutan bakau, rumah basah kesukaan mereka.", "caption_en": "A group of proboscis monkeys perched in a mangrove forest, their favorite watery home.", "credit": "Ade Putri Amelia Az-Zahra", "license": "CC BY-SA 4.0" }
   ],
   "source": "https://id.wikipedia.org/wiki/Bekantan"
 }

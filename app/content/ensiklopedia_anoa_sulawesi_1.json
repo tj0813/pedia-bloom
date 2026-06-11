@@ -4,6 +4,14 @@
   "title_en": "Anoa",
   "subtitle_id": "Kerbau kerdil istimewa khas Pulau Sulawesi.",
   "subtitle_en": "The special dwarf buffalo of Sulawesi.",
+  "data_card": [
+    { "icon": "pets", "label_id": "Kelompok", "label_en": "Class", "value_id": "Mamalia (keluarga kerbau)", "value_en": "Mammal (buffalo family)" },
+    { "icon": "forest", "label_id": "Habitat", "label_en": "Habitat", "value_id": "Hutan hujan lebat", "value_en": "Thick rainforest" },
+    { "icon": "public", "label_id": "Daerah", "label_en": "Region", "value_id": "Sulawesi & Pulau Buton", "value_en": "Sulawesi & Buton Island" },
+    { "icon": "height", "label_id": "Tinggi", "label_en": "Size", "value_id": "60-100 cm di pundak", "value_en": "60-100 cm at the shoulder" },
+    { "icon": "eco", "label_id": "Makanan", "label_en": "Diet", "value_id": "Daun & tumbuhan hutan", "value_en": "Leaves & forest plants" },
+    { "icon": "shield", "label_id": "Status", "label_en": "Status", "value_id": "Terancam punah", "value_en": "Endangered" }
+  ],
   "sections": [
     {
       "icon": "pets",
@@ -49,21 +57,17 @@
     { "id": "Tanduk anoa berbentuk segitiga di bagian dasarnya.", "en": "The anoa's horns have a triangle shape at their base." },
     { "id": "Anoa sudah dilindungi hukum Indonesia sejak tahun 1931.", "en": "The anoa has been protected by Indonesian law since 1931." }
   ],
-  "gallery": [
-    "app/assets/img/wiki/9aadc51ed284047d.jpg",
-    "app/assets/img/wiki/db38c2979418f98f.jpg",
-    "app/assets/img/wiki/cc575629ae3b55cf.jpg",
-    "app/assets/img/wiki/b769606dc03bc3bc.jpg",
-    "app/assets/img/wiki/344b440b71935f33.jpg",
-    "app/assets/img/wiki/659071a2263b3ae8.jpg"
+  "glossary": [
+    { "term": "Endemik", "def_id": "Hewan atau tumbuhan yang hidup hanya di satu tempat di dunia.", "def_en": "An animal or plant that lives in only one place in the world." },
+    { "term": "Berkubang", "def_id": "Berguling-guling di lumpur agar tubuh tetap sejuk dan bersih dari serangga.", "def_en": "Rolling around in mud to stay cool and clean of bugs." },
+    { "term": "Wallacea", "def_id": "Daerah istimewa di Indonesia, termasuk Sulawesi, yang penuh hewan unik.", "def_en": "A special region of Indonesia, including Sulawesi, full of unique animals." },
+    { "term": "Mamalia", "def_id": "Hewan yang menyusui anaknya dan biasanya berbulu, seperti anoa dan sapi.", "def_en": "An animal that feeds milk to its babies and usually has fur, like the anoa and cows." }
   ],
-  "credits": [
-    { "src": "app/assets/img/wiki/9aadc51ed284047d.jpg", "credit": "RianHS", "license": "CC BY 4.0" },
-    { "src": "app/assets/img/wiki/db38c2979418f98f.jpg", "credit": "Sakurai Midori", "license": "CC BY 3.0" },
-    { "src": "app/assets/img/wiki/cc575629ae3b55cf.jpg", "credit": "JERRYE AND ROY KLOTZ MD", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/b769606dc03bc3bc.jpg", "credit": "Bluemoose at English Wikipedia", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/344b440b71935f33.jpg", "credit": "PenaTulip", "license": "CC0" },
-    { "src": "app/assets/img/wiki/659071a2263b3ae8.jpg", "credit": "Farrel Nandito", "license": "CC BY-SA 4.0" }
+  "gallery": [
+    { "src": "app/assets/img/wiki/9aadc51ed284047d.jpg", "caption_id": "Anoa muda berdiri dan menatap kita, tubuhnya kecil seperti kerbau mini.", "caption_en": "A young anoa stands and looks at us, its body small like a mini buffalo.", "credit": "RianHS", "license": "CC BY 4.0" },
+    { "src": "app/assets/img/wiki/db38c2979418f98f.jpg", "caption_id": "Anoa menundukkan kepala, memperlihatkan tanduk runcing yang mengarah ke belakang.", "caption_en": "An anoa lowers its head, showing its sharp horns that point backward.", "credit": "Sakurai Midori", "license": "CC BY 3.0" },
+    { "src": "app/assets/img/wiki/cc575629ae3b55cf.jpg", "caption_id": "Anoa berwarna cokelat sedang beristirahat dengan tenang.", "caption_en": "A brown anoa resting calmly.", "credit": "JERRYE AND ROY KLOTZ MD", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/b769606dc03bc3bc.jpg", "caption_id": "Anoa dataran rendah berwarna hitam berdiri di antara rerumputan hijau.", "caption_en": "A black lowland anoa stands among green plants.", "credit": "Bluemoose at English Wikipedia", "license": "CC BY-SA 3.0" }
   ],
   "source": "https://id.wikipedia.org/wiki/Anoa"
 }

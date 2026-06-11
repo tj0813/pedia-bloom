@@ -1,105 +1,134 @@
 {
- "id": "ensiklopedia_komodo_2",
- "title_id": "Komodo",
- "title_en": "Komodo Dragon",
- "subtitle_id": "Kadal terbesar di dunia dari Indonesia!",
- "subtitle_en": "The world's biggest lizard, from Indonesia!",
- "sections": [
-  {
-   "icon": "pets",
-   "h_id": "Apa Itu Komodo?",
-   "h_en": "What Is the Komodo Dragon?",
-   "body_id": "Komodo adalah biawak raksasa dan kadal terbesar di dunia! Panjangnya bisa 2 sampai 3 meter, sepanjang sebuah mobil kecil. Orang asli pulau Komodo menyebutnya ora. Hewan ini hanya hidup di Indonesia, jadi kita patut bangga!",
-   "body_en": "The Komodo dragon is a giant monitor lizard and the biggest lizard in the world! It can be 2 to 3 meters long, about as long as a small car. The local people of Komodo Island call it ora. This animal lives only in Indonesia, so we can be proud!"
-  },
-  {
-   "icon": "public",
-   "h_id": "Di Mana Hidupnya?",
-   "h_en": "Where Does It Live?",
-   "body_id": "Komodo hanya hidup di beberapa pulau di Nusa Tenggara Timur, Indonesia. Pulau-pulaunya bernama Komodo, Rinca, Flores, Gili Motang, dan Gili Dasami. Mereka suka padang rumput terbuka dan hutan belukar. Tempat tinggalnya kini dilindungi sebagai Taman Nasional Komodo.",
-   "body_en": "The Komodo dragon lives only on a few islands in East Nusa Tenggara, Indonesia. The islands are called Komodo, Rinca, Flores, Gili Motang, and Gili Dasami. They like open grasslands and bushy forests. Their home is now protected as Komodo National Park."
-  },
-  {
-   "icon": "visibility",
-   "h_id": "Tubuh & Ciri Khas",
-   "h_en": "Body & Features",
-   "body_id": "Komodo punya kulit tebal berwarna abu-abu sampai cokelat dan ekor sepanjang tubuhnya. Lidahnya panjang dan bercabang, dipakai untuk mencium bau dari jauh. Komodo bahkan bisa mencium bangkai dari jarak beberapa kilometer! Cakarnya kuat untuk menggali lubang tempat berlindung.",
-   "body_en": "The Komodo dragon has thick gray-to-brown skin and a tail as long as its body. Its long, forked tongue is used to smell from far away. A Komodo can even smell food from several kilometers away! Its strong claws help dig burrows for shelter."
-  },
-  {
-   "icon": "restaurant",
-   "h_id": "Makanan & Kebiasaan",
-   "h_en": "Food & Habits",
-   "body_id": "Komodo adalah pemakan daging, dan sering memakan bangkai yang sudah mati. Ia suka menyendiri dan hanya berkumpul saat makan atau berkembang biak. Walau besar, komodo bisa berlari cepat, berenang, bahkan menyelam. Saat masih muda, ia juga pandai memanjat pohon dengan cakarnya.",
-   "body_en": "The Komodo dragon is a meat-eater and often feeds on animals that have already died. It likes to be alone and only gathers to eat or to breed. Even though it is big, it can run fast, swim, and even dive. When young, it is also good at climbing trees with its claws."
-  },
-  {
-   "icon": "shield",
-   "h_id": "Kenapa Istimewa & Ayo Lindungi!",
-   "h_en": "Why It's Special & Let's Protect It",
-   "body_id": "Komodo adalah hewan langka yang hanya ada di Indonesia, jadi sangat istimewa. Sayangnya rumahnya makin sempit karena ulah manusia. Pemerintah melindunginya dan membuat Taman Nasional Komodo. Dengan menjaga hutan dan pulaunya, komodo bisa hidup bahagia untuk waktu yang lama.",
-   "body_en": "The Komodo dragon is a rare animal found only in Indonesia, so it is very special. Sadly, its home is getting smaller because of people. The government protects it and created Komodo National Park. By caring for its forests and islands, the Komodo dragon can live happily for a long time."
-  }
- ],
- "facts": [
-  {
-   "id": "Komodo adalah kadal terbesar di dunia!",
-   "en": "The Komodo dragon is the biggest lizard in the world!"
-  },
-  {
-   "id": "Lidahnya yang bercabang bisa mencium bau dari berkilo-kilometer jauhnya.",
-   "en": "Its forked tongue can smell from kilometers away."
-  },
-  {
-   "id": "Komodo bisa berlari hingga 20 km per jam dalam jarak pendek.",
-   "en": "A Komodo can run up to 20 km per hour over short distances."
-  },
-  {
-   "id": "Ia pandai berenang dan bisa menyelam sedalam 4,5 meter.",
-   "en": "It is a good swimmer and can dive 4.5 meters deep."
-  },
-  {
-   "id": "Komodo punya sekitar 60 gigi tajam di mulutnya.",
-   "en": "A Komodo has about 60 sharp teeth in its mouth."
-  },
-  {
-   "id": "Komodo hanya hidup liar di Indonesia, tidak di tempat lain di dunia!",
-   "en": "Komodo dragons live in the wild only in Indonesia, nowhere else!"
-  }
- ],
- "gallery": [
-  "app/assets/img/wiki/7d2a3b45ec0eb402.jpg",
-  "app/assets/img/wiki/14ec90a093111f14.jpg",
-  "app/assets/img/wiki/d5599131a75bee94.jpg",
-  "app/assets/img/wiki/d9c808ccbd1c5e2b.jpg",
-  "app/assets/img/wiki/3fa168ccf872fe14.jpg"
- ],
- "credits": [
-  {
-   "src": "app/assets/img/wiki/7d2a3b45ec0eb402.jpg",
-   "credit": "Charles J. Sharp",
-   "license": "CC BY-SA 4.0"
-  },
-  {
-   "src": "app/assets/img/wiki/3fa168ccf872fe14.jpg",
-   "credit": "Phyzome",
-   "license": "CC BY-SA 3.0"
-  },
-  {
-   "src": "app/assets/img/wiki/14ec90a093111f14.jpg",
-   "credit": "Markofjohnson at English Wikipedia",
-   "license": "Public domain"
-  },
-  {
-   "src": "app/assets/img/wiki/d5599131a75bee94.jpg",
-   "credit": "Wikimedia Commons",
-   "license": "CC BY-SA 3.0"
-  },
-  {
-   "src": "app/assets/img/wiki/d9c808ccbd1c5e2b.jpg",
-   "credit": "Markofjohnson",
-   "license": "CC0"
-  }
- ],
- "source": "https://id.wikipedia.org/wiki/Komodo"
+  "id": "ensiklopedia_komodo_2",
+  "title_id": "Komodo",
+  "title_en": "Komodo Dragon",
+  "subtitle_id": "Kadal terbesar di dunia dari Indonesia!",
+  "subtitle_en": "The world's biggest lizard, from Indonesia!",
+  "data_card": [
+    {
+      "icon": "grass",
+      "label_id": "Habitat",
+      "label_en": "Habitat",
+      "value_id": "Padang rumput & hutan belukar",
+      "value_en": "Grasslands & scrub forest"
+    },
+    {
+      "icon": "straighten",
+      "label_id": "Ukuran",
+      "label_en": "Size",
+      "value_id": "2-3 m, hingga 100 kg",
+      "value_en": "2-3 m, up to 100 kg"
+    },
+    {
+      "icon": "restaurant",
+      "label_id": "Makanan",
+      "label_en": "Food",
+      "value_id": "Pemakan daging",
+      "value_en": "Meat-eater"
+    },
+    {
+      "icon": "public",
+      "label_id": "Daerah",
+      "label_en": "Region",
+      "value_id": "Nusa Tenggara Timur",
+      "value_en": "East Nusa Tenggara"
+    },
+    {
+      "icon": "shield",
+      "label_id": "Status",
+      "label_en": "Status",
+      "value_id": "Rentan, dilindungi",
+      "value_en": "Vulnerable, protected"
+    },
+    {
+      "icon": "groups",
+      "label_id": "Kelompok",
+      "label_en": "Group",
+      "value_id": "Biawak (Varanidae)",
+      "value_en": "Monitor lizards (Varanidae)"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "pets",
+      "h_id": "Apa Itu Komodo?",
+      "h_en": "What Is the Komodo Dragon?",
+      "body_id": "Komodo adalah biawak raksasa dan kadal terbesar di dunia! Panjangnya bisa 2 sampai 3 meter, sepanjang sebuah mobil kecil. Orang asli pulau Komodo menyebutnya ora. Hewan ini hanya hidup di Indonesia, jadi kita patut bangga!",
+      "body_en": "The Komodo dragon is a giant monitor lizard and the biggest lizard in the world! It can be 2 to 3 meters long, about as long as a small car. The local people of Komodo Island call it ora. This animal lives only in Indonesia, so we can be proud!"
+    },
+    {
+      "icon": "public",
+      "h_id": "Di Mana Hidupnya?",
+      "h_en": "Where Does It Live?",
+      "body_id": "Komodo hanya hidup di beberapa pulau di Nusa Tenggara Timur, Indonesia. Pulau-pulaunya bernama Komodo, Rinca, Flores, Gili Motang, dan Gili Dasami. Mereka suka padang rumput terbuka dan hutan belukar. Tempat tinggalnya kini dilindungi sebagai Taman Nasional Komodo.",
+      "body_en": "The Komodo dragon lives only on a few islands in East Nusa Tenggara, Indonesia. The islands are called Komodo, Rinca, Flores, Gili Motang, and Gili Dasami. They like open grasslands and bushy forests. Their home is now protected as Komodo National Park."
+    },
+    {
+      "icon": "visibility",
+      "h_id": "Tubuh & Ciri Khas",
+      "h_en": "Body & Features",
+      "body_id": "Komodo punya kulit tebal berwarna abu-abu sampai cokelat dan ekor sepanjang tubuhnya. Lidahnya panjang dan bercabang, dipakai untuk mencium bau dari jauh. Komodo bahkan bisa mencium makanan dari jarak beberapa kilometer! Cakarnya kuat untuk menggali lubang tempat berlindung.",
+      "body_en": "The Komodo dragon has thick gray-to-brown skin and a tail as long as its body. Its long, forked tongue is used to smell from far away. A Komodo can even smell food from several kilometers away! Its strong claws help dig burrows for shelter."
+    },
+    {
+      "icon": "restaurant",
+      "h_id": "Makanan & Kebiasaan",
+      "h_en": "Food & Habits",
+      "body_id": "Komodo adalah pemakan daging dan memburu hewan dengan cara mengendap-endap diam-diam. Ia suka menyendiri dan hanya berkumpul saat makan atau berkembang biak. Walau besar, komodo bisa berlari cepat, berenang, bahkan menyelam. Saat masih muda, ia juga pandai memanjat pohon dengan cakarnya.",
+      "body_en": "The Komodo dragon is a meat-eater and hunts by quietly sneaking up on animals. It likes to be alone and only gathers to eat or to breed. Even though it is big, it can run fast, swim, and even dive. When young, it is also good at climbing trees with its claws."
+    },
+    {
+      "icon": "shield",
+      "h_id": "Kenapa Istimewa & Ayo Lindungi!",
+      "h_en": "Why It's Special & Let's Protect It",
+      "body_id": "Komodo adalah hewan langka yang hanya ada di Indonesia, jadi sangat istimewa. Sayangnya rumahnya makin sempit karena ulah manusia. Pemerintah melindunginya dan membuat Taman Nasional Komodo. Dengan menjaga hutan dan pulaunya, komodo bisa hidup bahagia untuk waktu yang lama.",
+      "body_en": "The Komodo dragon is a rare animal found only in Indonesia, so it is very special. Sadly, its home is getting smaller because of people. The government protects it and created Komodo National Park. By caring for its forests and islands, the Komodo dragon can live happily for a long time."
+    }
+  ],
+  "facts": [
+    { "id": "Komodo adalah kadal terbesar di dunia!", "en": "The Komodo dragon is the biggest lizard in the world!" },
+    { "id": "Lidahnya yang bercabang bisa mencium bau dari berkilo-kilometer jauhnya.", "en": "Its forked tongue can smell from kilometers away." },
+    { "id": "Komodo bisa berlari hingga 20 km per jam dalam jarak pendek.", "en": "A Komodo can run up to 20 km per hour over short distances." },
+    { "id": "Ia pandai berenang dan bisa menyelam sedalam 4,5 meter.", "en": "It is a good swimmer and can dive 4.5 meters deep." },
+    { "id": "Komodo punya sekitar 60 gigi tajam di mulutnya.", "en": "A Komodo has about 60 sharp teeth in its mouth." },
+    { "id": "Komodo hanya hidup liar di Indonesia, tidak di tempat lain di dunia!", "en": "Komodo dragons live in the wild only in Indonesia, nowhere else!" }
+  ],
+  "glossary": [
+    { "term": "Biawak", "def_id": "Kadal besar berkaki empat dengan lidah bercabang; komodo termasuk biawak.", "def_en": "A large four-legged lizard with a forked tongue; the Komodo is a monitor lizard." },
+    { "term": "Lidah bercabang", "def_id": "Lidah yang terbelah dua di ujungnya, dipakai untuk mencium bau.", "def_en": "A tongue that splits in two at the tip, used to smell." },
+    { "term": "Sabana", "def_id": "Padang rumput luas yang terbuka, tempat komodo suka berjalan.", "def_en": "A wide, open grassland where the Komodo likes to roam." },
+    { "term": "Rentan", "def_id": "Hewan yang jumlahnya makin sedikit dan perlu kita lindungi.", "def_en": "An animal whose numbers are getting small and needs our protection." },
+    { "term": "Taman nasional", "def_id": "Daerah khusus yang dijaga agar hewan dan tumbuhannya tetap aman.", "def_en": "A special protected area where animals and plants are kept safe." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/7d2a3b45ec0eb402.jpg",
+      "caption_id": "Komodo besar berjalan di jalan setapak, lidahnya menjulur untuk mencium bau.",
+      "caption_en": "A big Komodo walks along a trail, its tongue flicking out to smell the air.",
+      "credit": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/d5599131a75bee94.jpg",
+      "caption_id": "Berjemur di atas batu di antara dedaunan hijau yang segar.",
+      "caption_en": "Basking on a rock among fresh green leaves.",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/d9c808ccbd1c5e2b.jpg",
+      "caption_id": "Dua komodo berjalan bersama di pulau Rinca yang berumput.",
+      "caption_en": "Two Komodo dragons walk together on grassy Rinca Island.",
+      "credit": "Markofjohnson",
+      "license": "CC0"
+    },
+    {
+      "src": "app/assets/img/wiki/14ec90a093111f14.jpg",
+      "caption_id": "Lihat dekat kaki dan cakarnya yang kuat untuk menggali dan berjalan.",
+      "caption_en": "A close look at its foot and strong claws, used for digging and walking.",
+      "credit": "Markofjohnson at English Wikipedia",
+      "license": "Public domain"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Komodo"
 }

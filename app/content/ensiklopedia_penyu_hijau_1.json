@@ -2,67 +2,160 @@
   "id": "ensiklopedia_penyu_hijau_1",
   "title_id": "Penyu Hijau",
   "title_en": "Green Sea Turtle",
-  "subtitle_id": "Penyu laut besar yang jelajahi samudra hangat",
-  "subtitle_en": "A big sea turtle roaming warm oceans",
+  "subtitle_id": "Penyu laut besar yang menjelajahi samudra hangat",
+  "subtitle_en": "A big sea turtle that roams warm oceans",
+  "data_card": [
+    {
+      "icon": "waves",
+      "label_id": "Habitat",
+      "label_en": "Habitat",
+      "value_id": "Laut tropis & subtropis yang hangat",
+      "value_en": "Warm tropical & subtropical seas"
+    },
+    {
+      "icon": "straighten",
+      "label_id": "Ukuran",
+      "label_en": "Size",
+      "value_id": "Cangkang sampai sekitar 1 meter",
+      "value_en": "Shell up to about 1 meter"
+    },
+    {
+      "icon": "restaurant",
+      "label_id": "Makanan",
+      "label_en": "Food",
+      "value_id": "Lamun & rumput laut (dewasa)",
+      "value_en": "Seagrass & seaweed (as adults)"
+    },
+    {
+      "icon": "public",
+      "label_id": "Daerah",
+      "label_en": "Range",
+      "value_id": "Samudra Atlantik & Pasifik; tangkar di Ujung Genteng",
+      "value_en": "Atlantic & Pacific Oceans; bred at Ujung Genteng"
+    },
+    {
+      "icon": "warning",
+      "label_id": "Status",
+      "label_en": "Status",
+      "value_id": "Terancam, jumlahnya makin sedikit",
+      "value_en": "Threatened, numbers are falling"
+    },
+    {
+      "icon": "category",
+      "label_id": "Kelompok",
+      "label_en": "Group",
+      "value_id": "Reptil laut, satu-satunya jenis Chelonia",
+      "value_en": "Sea reptile, the only Chelonia species"
+    }
+  ],
   "sections": [
     {
       "icon": "pets",
       "h_id": "Apa Itu Penyu Hijau?",
       "h_en": "What Is a Green Sea Turtle?",
-      "body_id": "Penyu hijau adalah penyu laut yang besar. Ia hidup di laut dan membawa rumahnya sendiri, yaitu cangkang yang kuat. Namanya 'hijau' karena ada lemak berwarna hijau di bawah cangkangnya, bukan karena cangkangnya hijau!",
-      "body_en": "The green sea turtle is a large sea turtle. It lives in the ocean and carries its own home, a strong shell. It is called 'green' because of the green fat under its shell, not because the shell is green!"
+      "body_id": "Penyu hijau (Chelonia mydas) adalah penyu laut yang besar dan termasuk reptil. Ia hidup di laut dan membawa rumahnya sendiri, yaitu cangkang yang kuat. Namanya 'hijau' bukan karena cangkangnya hijau, tetapi karena ada lemak berwarna hijau di bawah cangkangnya. Penyu hijau adalah satu-satunya jenis dalam golongan Chelonia.",
+      "body_en": "The green sea turtle (Chelonia mydas) is a large sea turtle and a reptile. It lives in the ocean and carries its own home, a strong shell. It is called 'green' not because the shell is green, but because of the green fat under its shell. The green sea turtle is the only species in the Chelonia group."
     },
     {
       "icon": "public",
       "h_id": "Di Mana Hidupnya?",
       "h_en": "Where Does It Live?",
-      "body_id": "Penyu hijau berenang di laut hangat di seluruh dunia, terutama di Samudra Atlantik dan Samudra Pasifik. Ia suka air tropis dan subtropis yang hangat. Di Indonesia, penyu ini dirawat dan ditangkarkan di Ujung Genteng, Sukabumi.",
-      "body_en": "Green sea turtles swim in warm oceans all around the world, especially the Atlantic and Pacific Oceans. They love warm tropical and subtropical waters. In Indonesia, they are cared for and bred at Ujung Genteng in Sukabumi."
+      "body_id": "Penyu hijau berenang di semua laut tropis dan subtropis yang hangat, terutama di Samudra Atlantik dan Samudra Pasifik. Ia suka air hangat yang jernih. Di Indonesia, penyu ini dirawat dan ditangkarkan di Ujung Genteng, Sukabumi, agar jumlahnya tetap terjaga.",
+      "body_en": "Green sea turtles swim in all warm tropical and subtropical seas, especially the Atlantic and Pacific Oceans. They love clear, warm water. In Indonesia, they are cared for and bred at Ujung Genteng in Sukabumi to help keep their numbers safe."
     },
     {
       "icon": "shield",
       "h_id": "Tubuh & Ciri Khas",
       "h_en": "Body & Features",
-      "body_id": "Penyu hijau punya cangkang keras di atas tubuhnya untuk melindungi diri. Kaki-kakinya berbentuk seperti dayung supaya bisa berenang cepat di air. Ia bernapas dengan paru-paru, jadi harus naik ke permukaan untuk menghirup udara.",
-      "body_en": "The green sea turtle has a hard shell on top of its body for protection. Its legs are shaped like paddles so it can swim quickly through the water. It breathes with lungs, so it must come up to the surface for air."
+      "body_id": "Penyu hijau punya cangkang keras di atas tubuhnya untuk melindungi diri. Cangkang ini terdiri dari bagian atas (karapaks) dan bagian bawah (plastron). Kaki-kakinya berbentuk seperti dayung supaya bisa berenang cepat di air. Ia bernapas dengan paru-paru, jadi harus naik ke permukaan untuk menghirup udara.",
+      "body_en": "The green sea turtle has a hard shell on top of its body for protection. The shell has an upper part (carapace) and a lower part (plastron). Its legs are shaped like paddles so it can swim quickly through the water. It breathes with lungs, so it must come up to the surface for air."
     },
     {
       "icon": "eco",
       "h_id": "Makanan & Kebiasaan",
       "h_en": "Food & Habits",
-      "body_id": "Penyu hijau dewasa suka makan tumbuhan laut, seperti rumput laut dan lamun. Itulah sebabnya ia sering disebut penyu pemakan tumbuhan. Induk penyu kembali ke pantai untuk bertelur di pasir, lalu bayi-bayi kecilnya menetas dan bergegas menuju laut.",
-      "body_en": "Adult green sea turtles love eating sea plants, such as seaweed and seagrass. That is why they are known as plant-eating turtles. Mother turtles return to the beach to lay eggs in the sand, then the tiny babies hatch and hurry to the sea."
+      "body_id": "Penyu hijau dewasa suka makan tumbuhan laut, seperti lamun dan rumput laut. Itulah sebabnya ia sering disebut penyu pemakan tumbuhan. Induk penyu kembali ke pantai untuk bertelur di pasir, lalu bayi-bayi kecilnya menetas dan bergegas menuju laut.",
+      "body_en": "Adult green sea turtles love eating sea plants, such as seagrass and seaweed. That is why they are known as plant-eating turtles. Mother turtles return to the beach to lay eggs in the sand, then the tiny babies hatch and hurry to the sea."
     },
     {
       "icon": "volunteer_activism",
       "h_id": "Ayo Lindungi!",
       "h_en": "Let's Protect It!",
-      "body_id": "Jumlah penyu hijau makin sedikit karena diburu untuk cangkang, telur, dan dagingnya. Kita bisa membantu dengan menjaga laut dan pantai tetap bersih. Jika kita semua peduli, penyu hijau bisa terus berenang bahagia di laut.",
-      "body_en": "Green sea turtles are becoming fewer because they are hunted for their shells, eggs, and meat. We can help by keeping the sea and beaches clean. If we all care, green sea turtles can keep swimming happily in the ocean."
+      "body_id": "Jumlah penyu hijau makin sedikit karena diburu untuk diambil cangkang, telur, dan dagingnya. Kita bisa membantu dengan menjaga laut dan pantai tetap bersih dari sampah. Jika kita semua peduli, penyu hijau bisa terus berenang bahagia di laut.",
+      "body_en": "Green sea turtles are becoming fewer because they are hunted for their shells, eggs, and meat. We can help by keeping the sea and beaches clean and free of trash. If we all care, green sea turtles can keep swimming happily in the ocean."
     }
   ],
   "facts": [
     { "id": "Namanya 'hijau' karena lemak hijau di bawah cangkangnya!", "en": "It is called 'green' because of the green fat under its shell!" },
     { "id": "Penyu hijau adalah satu-satunya spesies dalam golongan Chelonia.", "en": "The green sea turtle is the only species in the Chelonia group." },
     { "id": "Kakinya seperti dayung untuk berenang di laut.", "en": "Its legs are like paddles for swimming in the sea." },
+    { "id": "Ia bernapas dengan paru-paru dan harus naik untuk mengambil udara.", "en": "It breathes with lungs and must surface for air." },
     { "id": "Induk penyu kembali ke pantai untuk bertelur di pasir.", "en": "Mother turtles return to the beach to lay eggs in the sand." },
     { "id": "Penyu hijau dewasa suka makan rumput laut dan lamun.", "en": "Adult green sea turtles love to eat seaweed and seagrass." }
   ],
-  "gallery": [
-    "app/assets/img/wiki/a0443bdd8b758053.jpg",
-    "app/assets/img/wiki/8665f0e91260185d.jpg",
-    "app/assets/img/wiki/55b6d280e713b6d1.jpg",
-    "app/assets/img/wiki/e3dc74e7f0e3cb54.jpg",
-    "app/assets/img/wiki/3f165b798896b430.jpg",
-    "app/assets/img/wiki/68d165ddba524d71.jpg"
+  "glossary": [
+    {
+      "term": "Karapaks",
+      "def_id": "Bagian atas cangkang penyu yang keras dan melindungi punggungnya.",
+      "def_en": "The hard upper part of a turtle's shell that protects its back."
+    },
+    {
+      "term": "Plastron",
+      "def_id": "Bagian bawah cangkang penyu yang menutupi perutnya.",
+      "def_en": "The lower part of a turtle's shell that covers its belly."
+    },
+    {
+      "term": "Lamun",
+      "def_id": "Rumput laut yang tumbuh di dasar laut dan menjadi makanan penyu hijau.",
+      "def_en": "A grass that grows on the sea floor and is food for green sea turtles."
+    },
+    {
+      "term": "Subtropis",
+      "def_id": "Daerah laut yang hangat, dekat dengan daerah tropis.",
+      "def_en": "Warm sea areas that lie next to the tropical zone."
+    },
+    {
+      "term": "Menetas",
+      "def_id": "Saat bayi penyu keluar dari telurnya.",
+      "def_en": "When a baby turtle comes out of its egg."
+    }
   ],
-  "credits": [
-    { "src": "app/assets/img/wiki/a0443bdd8b758053.jpg", "credit": "Brocken Inaglory", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/68d165ddba524d71.jpg", "credit": "David Monniaux", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/55b6d280e713b6d1.jpg", "credit": "Brocken Inaglory", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/e3dc74e7f0e3cb54.jpg", "credit": "Tokugawapants at English Wikipedia + PiccoloNamek (Modifie version)", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/8665f0e91260185d.jpg", "credit": "E bailey", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/3f165b798896b430.jpg", "credit": "P.Lindgren", "license": "CC BY-SA 3.0" }
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/a0443bdd8b758053.jpg",
+      "caption_id": "Penyu hijau berenang di atas terumbu karang dengan kaki seperti dayung.",
+      "caption_en": "A green sea turtle glides over a coral reef with its paddle-like legs.",
+      "credit": "Brocken Inaglory",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/3f165b798896b430.jpg",
+      "caption_id": "Penyu hijau dewasa merumput di hamparan lamun di dasar laut.",
+      "caption_en": "An adult green sea turtle grazes on a bed of seagrass on the sea floor.",
+      "credit": "P.Lindgren",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/55b6d280e713b6d1.jpg",
+      "caption_id": "Penyu hijau berenang naik ke permukaan untuk menghirup udara.",
+      "caption_en": "A green sea turtle swims up toward the surface to take a breath of air.",
+      "credit": "Brocken Inaglory",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/8665f0e91260185d.jpg",
+      "caption_id": "Sekelompok penyu hijau beristirahat di pantai berpasir.",
+      "caption_en": "A group of green sea turtles resting on a sandy beach.",
+      "credit": "E bailey",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/e3dc74e7f0e3cb54.jpg",
+      "caption_id": "Penyu hijau berenang di air dangkal yang jernih dekat pantai.",
+      "caption_en": "A green sea turtle swims in clear, shallow water near the shore.",
+      "credit": "Tokugawapants at English Wikipedia + PiccoloNamek (Modifie version)",
+      "license": "CC BY-SA 3.0"
+    }
   ],
   "source": "https://id.wikipedia.org/wiki/Penyu_hijau"
 }

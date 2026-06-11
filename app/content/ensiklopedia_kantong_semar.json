@@ -4,6 +4,43 @@
   "title_en": "Pitcher Plant",
   "subtitle_id": "Tumbuhan ajaib pemakan serangga!",
   "subtitle_en": "A magical insect-eating plant!",
+  "data_card": [
+    {
+      "icon": "forest",
+      "label_id": "Habitat",
+      "label_en": "Habitat",
+      "value_id": "Rawa & hutan lembap",
+      "value_en": "Swamps & damp forests"
+    },
+    {
+      "icon": "height",
+      "label_id": "Tinggi",
+      "label_en": "Height",
+      "value_id": "Memanjat hingga 15-20 m",
+      "value_en": "Climbs up to 15-20 m"
+    },
+    {
+      "icon": "water_drop",
+      "label_id": "Cara makan",
+      "label_en": "How it eats",
+      "value_id": "Menjebak serangga di kantong",
+      "value_en": "Traps insects in its pouch"
+    },
+    {
+      "icon": "public",
+      "label_id": "Daerah",
+      "label_en": "Region",
+      "value_id": "Kalimantan & Sumatra",
+      "value_en": "Borneo & Sumatra"
+    },
+    {
+      "icon": "eco",
+      "label_id": "Kelompok",
+      "label_en": "Group",
+      "value_id": "Nepenthes (130+ jenis)",
+      "value_en": "Nepenthes (130+ kinds)"
+    }
+  ],
   "sections": [
     {
       "icon": "eco",
@@ -16,14 +53,14 @@
       "icon": "forest",
       "h_id": "Di Mana Hidupnya?",
       "h_en": "Where Does It Live?",
-      "body_id": "Kantong semar suka tempat lembap seperti rawa-rawa. Ia tumbuh di Indonesia, terutama di pulau Kalimantan dan Sumatra. Di Kalimantan Barat, orang menyebutnya entuyut. Ada yang hidup di pantai, ada pula yang tinggi di pegunungan.",
+      "body_id": "Kantong semar suka tempat lembap seperti rawa-rawa. Ia tumbuh di Indonesia, terutama di pulau Kalimantan dan Sumatra. Di Kalimantan Barat, orang menyebutnya entuyut. Ada yang hidup di tepi pantai, ada pula yang tinggi di pegunungan.",
       "body_en": "Pitcher plants love damp places like swamps. They grow in Indonesia, especially on the islands of Borneo and Sumatra. In West Kalimantan, people call it entuyut. Some live near the beach, and others live high in the mountains."
     },
     {
       "icon": "height",
       "h_id": "Tubuh & Ciri Khas",
       "h_en": "Body & Features",
-      "body_id": "Kantong semar memanjat tanaman lain dan bisa tumbuh sangat tinggi. Di ujung daunnya ada sulur yang berubah menjadi kantong perangkap. Ada kantong atas yang tinggi untuk menangkap nyamuk dan lalat. Ada juga kantong bawah dekat tanah untuk menjebak semut.",
+      "body_id": "Kantong semar memanjat tanaman lain dan bisa tumbuh sangat tinggi. Di ujung daunnya ada sulur yang berubah menjadi kantong perangkap. Ada kantong atas yang menggantung untuk menangkap nyamuk dan lalat. Ada juga kantong bawah dekat tanah untuk menjebak semut.",
       "body_en": "Pitcher plants climb other plants and can grow very tall. At the tip of each leaf is a tendril that turns into a trap-pouch. The upper pouch hangs high to catch mosquitoes and flies. The lower pouch sits near the ground to trap ants."
     },
     {
@@ -31,7 +68,7 @@
       "h_id": "Cara Lembut Menangkap Serangga",
       "h_en": "How It Gently Traps Insects",
       "body_id": "Bibir kantong licin dan harum, jadi serangga datang untuk mencicipi. Saat menginjak tepi yang licin, serangga tergelincir masuk ke dalam kantong. Di dalam ada cairan berenzim yang perlahan mengubah serangga menjadi makanan. Begitulah tumbuhan ini mendapat nutrisi tanpa harus berburu.",
-      "body_en": "The rim of the pouch is slippery and sweet-smelling, so insects come for a taste. When they step on the slick edge, they slide down into the pouch. Inside is a special liquid that slowly turns the insect into food. That is how the plant gets nutrients without hunting."
+      "body_en": "The rim of the pouch is slippery and sweet-smelling, so insects come for a taste. When they step on the slick edge, they slide down into the pouch. Inside is a special liquid with enzymes that slowly turns the insect into food. That is how the plant gets nutrients without hunting."
     },
     {
       "icon": "shield",
@@ -43,27 +80,48 @@
   ],
   "facts": [
     { "id": "Kantong semar memakan serangga, bukan dimakan serangga!", "en": "The pitcher plant eats insects instead of being eaten by them!" },
-    { "id": "Ada lebih dari 100 jenis kantong semar di dunia.", "en": "There are more than 100 kinds of pitcher plants in the world." },
+    { "id": "Ada lebih dari 130 jenis kantong semar di dunia.", "en": "There are more than 130 kinds of pitcher plants in the world." },
     { "id": "Kelelawar berbulu wol suka tidur aman di dalam kantongnya.", "en": "Woolly bats like to sleep safely inside the pouch." },
     { "id": "Cairan di dalam kantong bisa melarutkan serangga kecil.", "en": "The liquid inside the pouch can dissolve tiny insects." },
     { "id": "Di Kalimantan, kantongnya dipakai sebagai wadah membuat kue!", "en": "In Borneo, the pouch is used as a container for making cakes!" },
     { "id": "Ada kantong semar yang tumbuh tinggi di gunung, lebih dari 3.000 meter!", "en": "Some pitcher plants grow high on mountains, over 3,000 meters up!" }
   ],
-  "gallery": [
-    "app/assets/img/wiki/3c337722596ebff7.jpg",
-    "app/assets/img/wiki/e2749697e68a1792.jpg",
-    "app/assets/img/wiki/4ebbe0488c825f13.jpg",
-    "app/assets/img/wiki/0beaf77174ac2dc2.jpg",
-    "app/assets/img/wiki/d13d9119b96f364a.jpg",
-    "app/assets/img/wiki/9bdd040f0158e1fb.jpg"
+  "glossary": [
+    { "term": "Insektivora", "def_id": "Tumbuhan atau hewan yang memakan serangga sebagai makanan.", "def_en": "A plant or animal that eats insects for food." },
+    { "term": "Nepenthes", "def_id": "Nama ilmiah untuk kelompok tumbuhan kantong semar.", "def_en": "The scientific name for the group of pitcher plants." },
+    { "term": "Sulur", "def_id": "Bagian tipis dan panjang di ujung daun yang berubah menjadi kantong.", "def_en": "A thin, long part at the tip of a leaf that turns into the pouch." },
+    { "term": "Enzim", "def_id": "Cairan khusus yang membantu melarutkan serangga menjadi makanan.", "def_en": "A special liquid that helps dissolve insects into food." },
+    { "term": "Nutrisi", "def_id": "Zat makanan yang dibutuhkan agar tumbuhan bisa hidup dan tumbuh.", "def_en": "The food substances a plant needs to live and grow." }
   ],
-  "credits": [
-    { "src": "app/assets/img/wiki/3c337722596ebff7.jpg", "credit": "Kleo Marlo Sialongo", "license": "CC BY 2.0" },
-    { "src": "app/assets/img/wiki/e2749697e68a1792.jpg", "credit": "en:User:Rbrtjong", "license": "Public domain" },
-    { "src": "app/assets/img/wiki/d13d9119b96f364a.jpg", "credit": "Ariefrahman", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/9bdd040f0158e1fb.jpg", "credit": "Ariefrahman", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/4ebbe0488c825f13.jpg", "credit": "Pavel Kirillov from St.Petersburg, Russia", "license": "CC BY-SA 2.0" },
-    { "src": "app/assets/img/wiki/0beaf77174ac2dc2.jpg", "credit": "NoverKelana", "license": "CC BY-SA 4.0" }
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/3c337722596ebff7.jpg",
+      "caption_id": "Kantong bawah dengan bibir merah cerah, siap menjebak semut yang lewat.",
+      "caption_en": "A lower pouch with a bright red rim, ready to trap passing ants.",
+      "credit": "Kleo Marlo Sialongo",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "app/assets/img/wiki/e2749697e68a1792.jpg",
+      "caption_id": "Sekelompok kantong hijau tumbuh rapat di tepi air yang lembap.",
+      "caption_en": "A cluster of green pouches grows close together by the damp water's edge.",
+      "credit": "en:User:Rbrtjong",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/4ebbe0488c825f13.jpg",
+      "caption_id": "Kantong atas menggantung di antara dahan untuk menangkap serangga terbang.",
+      "caption_en": "An upper pouch hangs among the branches to catch flying insects.",
+      "credit": "Pavel Kirillov from St.Petersburg, Russia",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "src": "app/assets/img/wiki/0beaf77174ac2dc2.jpg",
+      "caption_id": "Sebuah tangan menunjukkan betapa besar kantong semar ini bisa tumbuh.",
+      "caption_en": "A hand shows just how big this pitcher plant pouch can grow.",
+      "credit": "NoverKelana",
+      "license": "CC BY-SA 4.0"
+    }
   ],
   "source": "https://id.wikipedia.org/wiki/Kantong_semar"
 }

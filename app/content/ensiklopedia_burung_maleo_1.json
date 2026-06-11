@@ -4,6 +4,14 @@
   "title_en": "Maleo Bird",
   "subtitle_id": "Burung unik yang menetaskan telur dari panas bumi!",
   "subtitle_en": "A unique bird that hatches eggs with earth's heat!",
+  "data_card": [
+    { "icon": "forest", "label_id": "Habitat", "label_en": "Habitat", "value_id": "Hutan tropis & pantai Sulawesi", "value_en": "Sulawesi forests & beaches" },
+    { "icon": "straighten", "label_id": "Ukuran", "label_en": "Size", "value_id": "Sebesar ayam, sekitar 55 cm", "value_en": "Chicken-sized, about 55 cm" },
+    { "icon": "restaurant", "label_id": "Makanan", "label_en": "Food", "value_id": "Buah, biji & serangga kecil", "value_en": "Fruits, seeds & small insects" },
+    { "icon": "public", "label_id": "Daerah", "label_en": "Region", "value_id": "Hanya Pulau Sulawesi", "value_en": "Only Sulawesi Island" },
+    { "icon": "category", "label_id": "Kelompok", "label_en": "Group", "value_id": "Burung megapoda", "value_en": "Megapode birds" },
+    { "icon": "shield", "label_id": "Status", "label_en": "Status", "value_id": "Terancam & dilindungi", "value_en": "Threatened & protected" }
+  ],
   "sections": [
     {
       "icon": "pets",
@@ -48,21 +56,17 @@
     { "id": "Anak maleo bisa langsung terbang dan mencari makan sendiri.", "en": "Baby maleos can fly and find food on their own right away." },
     { "id": "Maleo punya benjolan keras seperti topi di kepalanya.", "en": "The maleo has a hard, hat-like bump on its head." }
   ],
-  "gallery": [
-    "app/assets/img/wiki/fddc7ccf6df38c39.jpg",
-    "app/assets/img/wiki/1c5a3301bc8d33af.jpg",
-    "app/assets/img/wiki/9896525663b797d0.jpg",
-    "app/assets/img/wiki/abe550888eb52d60.jpg",
-    "app/assets/img/wiki/9d7670cdac1a56df.jpg",
-    "app/assets/img/wiki/f1e18ca111aca999.jpg"
+  "glossary": [
+    { "term": "Megapoda", "def_id": "Kelompok burung berkaki besar yang mengubur telurnya agar menetas oleh panas alam.", "def_en": "A group of big-footed birds that bury their eggs so nature's heat can hatch them." },
+    { "term": "Mengerami", "def_id": "Mendekap telur dengan tubuh agar tetap hangat sampai menetas; maleo justru tidak melakukannya.", "def_en": "Sitting on eggs with the body to keep them warm until they hatch; the maleo does not do this." },
+    { "term": "Endemik", "def_id": "Hewan yang hanya hidup di satu daerah saja, seperti maleo di Sulawesi.", "def_en": "An animal that lives in only one area, like the maleo in Sulawesi." },
+    { "term": "Panas bumi", "def_id": "Panas alami yang keluar dari dalam tanah, misalnya dekat gunung berapi.", "def_en": "Natural heat that comes out of the ground, such as near a volcano." }
   ],
-  "credits": [
-    { "src": "app/assets/img/wiki/9d7670cdac1a56df.jpg", "credit": "Bernard DUPONT from FRANCE", "license": "CC BY-SA 2.0" },
-    { "src": "app/assets/img/wiki/f1e18ca111aca999.jpg", "credit": "JJ Harrison (https://www.jjharrison.com.au/)", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/fddc7ccf6df38c39.jpg", "credit": "Jean-Paul Boerekamps", "license": "CC0" },
-    { "src": "app/assets/img/wiki/1c5a3301bc8d33af.jpg", "credit": "Ariefrahman", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/9896525663b797d0.jpg", "credit": "Ariefrahman", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/abe550888eb52d60.jpg", "credit": "Ariefrahman", "license": "CC BY-SA 4.0" }
+  "gallery": [
+    { "src": "app/assets/img/wiki/fddc7ccf6df38c39.jpg", "caption_id": "Maleo berjalan di tanah berpasir, memperlihatkan tubuh hitam, perut merah jambu, dan benjolan keras di kepalanya.", "caption_en": "A maleo walks on sandy ground, showing its black body, pinkish belly, and the hard bump on its head.", "credit": "Jean-Paul Boerekamps", "license": "CC0" },
+    { "src": "app/assets/img/wiki/9896525663b797d0.jpg", "caption_id": "Berdiri tegak di rerumputan, maleo menunjukkan kaki kuat dan wajah kuning oranye khasnya.", "caption_en": "Standing tall in the grass, the maleo shows its strong legs and trademark orange-yellow face.", "credit": "Ariefrahman", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/abe550888eb52d60.jpg", "caption_id": "Dari samping terlihat jelas benjolan hitam di kepala dan dada merah jambu burung maleo.", "caption_en": "From the side you can clearly see the maleo's black head bump and pinkish chest.", "credit": "Ariefrahman", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/1c5a3301bc8d33af.jpg", "caption_id": "Maleo mencari makan di antara rumput hijau yang basah oleh embun pagi.", "caption_en": "A maleo forages among green grass still wet with morning dew.", "credit": "Ariefrahman", "license": "CC BY-SA 4.0" }
   ],
   "source": "https://id.wikipedia.org/wiki/Maleo"
 }

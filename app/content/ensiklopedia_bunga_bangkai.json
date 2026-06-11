@@ -4,34 +4,41 @@
   "title_en": "Giant Corpse Flower",
   "subtitle_id": "Bunga raksasa berbau busuk dari hutan Sumatra!",
   "subtitle_en": "A giant smelly flower from Sumatra's forests!",
+  "data_card": [
+    { "icon": "forest", "label_id": "Habitat", "label_en": "Habitat", "value_id": "Hutan hujan tropis Sumatra", "value_en": "Sumatran tropical rainforest" },
+    { "icon": "height", "label_id": "Tinggi", "label_en": "Height", "value_id": "Bisa lebih dari 3 meter", "value_en": "Can be over 3 meters" },
+    { "icon": "schedule", "label_id": "Mekar", "label_en": "Bloom", "value_id": "Hanya sekitar 7 hari", "value_en": "Only about 7 days" },
+    { "icon": "public", "label_id": "Daerah", "label_en": "Region", "value_id": "Kerinci & Lampung, Sumatra", "value_en": "Kerinci & Lampung, Sumatra" },
+    { "icon": "warning", "label_id": "Status", "label_en": "Status", "value_id": "Terancam (IUCN Red List)", "value_en": "Threatened (IUCN Red List)" }
+  ],
   "sections": [
     {
       "icon": "eco",
       "h_id": "Apa Itu Bunga Bangkai?",
       "h_en": "What Is the Corpse Flower?",
-      "body_id": "Bunga bangkai raksasa (Amorphophallus titanum) adalah tumbuhan dengan bunga majemuk terbesar di dunia. Bunga ini berasal dari Pulau Sumatra, Indonesia. Namanya 'bunga bangkai' karena baunya seperti bangkai yang busuk!",
-      "body_en": "The giant corpse flower (Amorphophallus titanum) is the plant with the largest cluster of flowers in the world. It comes from the island of Sumatra in Indonesia. It is called the 'corpse flower' because it smells like rotting meat!"
+      "body_id": "Bunga bangkai raksasa (Amorphophallus titanum) adalah tumbuhan dengan bunga majemuk terbesar di dunia. Bunga ini berasal dari Pulau Sumatra, Indonesia. Namanya 'bunga bangkai' karena baunya seperti bangkai yang busuk! Banyak orang mengira ia sama dengan Rafflesia, padahal keduanya tumbuhan yang berbeda.",
+      "body_en": "The giant corpse flower (Amorphophallus titanum) is the plant with the largest cluster of flowers in the world. It comes from the island of Sumatra in Indonesia. It is called the 'corpse flower' because it smells like rotting meat! Many people mix it up with the Rafflesia, but they are two different plants."
     },
     {
       "icon": "forest",
       "h_id": "Di Mana Hidupnya?",
       "h_en": "Where Does It Live?",
-      "body_id": "Bunga ini tumbuh di hutan hujan tropis Sumatra, seperti di Kerinci dan Lampung. Ia suka tanah berkapur dan tempat yang lembap di bawah pepohonan besar. Kamu juga bisa melihatnya mekar di Kebun Raya Bogor dan Cibodas.",
-      "body_en": "This flower grows in the tropical rainforests of Sumatra, like in Kerinci and Lampung. It likes limestone soil and damp, shady spots under tall trees. You can also see it bloom at the Bogor and Cibodas Botanical Gardens."
+      "body_id": "Bunga ini tumbuh di hutan hujan tropis Sumatra, seperti di Kerinci dan Lampung. Ia suka tanah berkapur dan tempat yang lembap di bawah pepohonan besar. Kamu juga bisa melihatnya mekar di Kebun Raya Bogor, Cibodas, dan Purwodadi.",
+      "body_en": "This flower grows in the tropical rainforests of Sumatra, like in Kerinci and Lampung. It likes limestone soil and damp, shady spots under tall trees. You can also see it bloom at the Bogor, Cibodas, and Purwodadi Botanical Gardens."
     },
     {
       "icon": "height",
       "h_id": "Tubuh & Ciri Khas",
       "h_en": "Body & Features",
-      "body_id": "Bunga bangkai bisa tumbuh sangat tinggi, bahkan lebih tinggi dari orang dewasa! Bagian tengahnya yang menjulang disebut spadix, dikelilingi kelopak besar berwarna merah hati dan hijau. Di bawah tanah ada umbi raksasa yang menyimpan makanannya.",
-      "body_en": "The corpse flower can grow very tall, even taller than a grown-up! Its tall middle part is called the spadix, surrounded by a big petal that is dark red and green. Underground there is a giant tuber that stores its food."
+      "body_id": "Bunga bangkai bisa tumbuh sangat tinggi, bahkan lebih tinggi dari orang dewasa! Bagian tengahnya yang menjulang disebut spadix, dikelilingi seludang besar berwarna merah hati dan hijau. Di bawah tanah ada umbi raksasa yang menyimpan makanannya, dan bijinya berwarna merah.",
+      "body_en": "The corpse flower can grow very tall, even taller than a grown-up! Its tall middle part is called the spadix, surrounded by a big leafy spathe that is dark red and green. Underground there is a giant tuber that stores its food, and its seeds are red."
     },
     {
       "icon": "schedule",
       "h_id": "Kapan Mekar & Baunya",
       "h_en": "When It Blooms & Its Smell",
-      "body_id": "Bunga ini sangat sabar! Ia menyimpan makanan di umbinya selama bertahun-tahun, lalu mekar hanya sekitar 7 hari saja. Saat mekar, baunya yang busuk mengundang kumbang dan lalat untuk membantu menyerbukinya.",
-      "body_en": "This flower is very patient! It stores food in its tuber for years, then blooms for only about 7 days. When it blooms, its stinky smell invites beetles and flies to help pollinate it."
+      "body_id": "Bunga ini sangat sabar! Ia menyimpan makanan di umbinya selama bertahun-tahun, lalu mekar hanya sekitar 7 hari saja. Saat mekar, bunga betinanya siap lebih dulu, baru bunga jantannya, agar tidak menyerbuki diri sendiri. Bau busuknya mengundang kumbang dan lalat untuk membantu menyerbukinya.",
+      "body_en": "This flower is very patient! It stores food in its tuber for years, then blooms for only about 7 days. When it blooms, its female flowers are ready first and the male flowers later, so it does not pollinate itself. Its stinky smell invites beetles and flies to help pollinate it."
     },
     {
       "icon": "volunteer_activism",
@@ -49,21 +56,18 @@
     { "id": "Bunga ini bisa tunggu bertahun-tahun sebelum mekar.", "en": "This flower can wait for years before it blooms." },
     { "id": "Tumbuhan ini hanya ada di Indonesia.", "en": "This plant is found only in Indonesia." }
   ],
-  "gallery": [
-    "app/assets/img/wiki/f726ea8c7f07ce2d.jpg",
-    "app/assets/img/wiki/e00355769094147e.jpg",
-    "app/assets/img/wiki/a62a3929167cadac.jpg",
-    "app/assets/img/wiki/c4896d72d51fd585.jpg",
-    "app/assets/img/wiki/3048cd57126f2150.jpg",
-    "app/assets/img/wiki/f328495018035d73.jpg"
+  "glossary": [
+    { "term": "Spadix", "def_id": "Bagian tengah bunga yang menjulang tinggi seperti tongkol.", "def_en": "The tall central part of the flower that rises up like a spike." },
+    { "term": "Seludang", "def_id": "Kelopak besar yang membungkus dan melindungi bunga saat mekar.", "def_en": "The big leafy hood that wraps around and protects the flower as it opens." },
+    { "term": "Umbi", "def_id": "Bagian gemuk di bawah tanah tempat tumbuhan menyimpan makanan.", "def_en": "The thick underground part where the plant stores its food." },
+    { "term": "Penyerbukan", "def_id": "Cara bunga membuat biji dengan bantuan serangga yang memindahkan serbuk sari.", "def_en": "How a flower makes seeds with the help of insects that move pollen." }
   ],
-  "credits": [
-    { "src": "app/assets/img/wiki/f726ea8c7f07ce2d.jpg", "credit": "Credits: US Botanic Garden.", "license": "Public domain" },
-    { "src": "app/assets/img/wiki/e00355769094147e.jpg", "credit": "Shubert Ciencia from Nueva Ecija, Philippines", "license": "CC BY 2.0" },
-    { "src": "app/assets/img/wiki/a62a3929167cadac.jpg", "credit": "Steve Fitzgerald", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/c4896d72d51fd585.jpg", "credit": "Björn S...", "license": "CC BY-SA 2.0" },
-    { "src": "app/assets/img/wiki/3048cd57126f2150.jpg", "credit": "Foto © W. Barthlott", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/f328495018035d73.jpg", "credit": "Jari Poutanen", "license": "CC BY-SA 4.0" }
+  "gallery": [
+    { "src": "app/assets/img/wiki/f726ea8c7f07ce2d.jpg", "caption_id": "Bunga bangkai mekar penuh, seludang merah hatinya terbuka lebar mengelilingi spadix yang menjulang.", "caption_en": "A corpse flower in full bloom, its dark-red spathe wide open around the towering spadix.", "credit": "Credits: US Botanic Garden.", "license": "Public domain" },
+    { "src": "app/assets/img/wiki/e00355769094147e.jpg", "caption_id": "Bunga raksasa ini berdiri lebih tinggi dari seorang penjaga di sebelahnya, menunjukkan betapa besarnya.", "caption_en": "This giant flower stands taller than a guard beside it, showing just how huge it is.", "credit": "Shubert Ciencia from Nueva Ecija, Philippines", "license": "CC BY 2.0" },
+    { "src": "app/assets/img/wiki/a62a3929167cadac.jpg", "caption_id": "Pada fase daun, tumbuhan ini tumbuh seperti pohon kecil berbatang tunggal sebelum kelak berbunga.", "caption_en": "In its leaf phase, the plant grows like a small single-stemmed tree before it later flowers.", "credit": "Steve Fitzgerald", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/c4896d72d51fd585.jpg", "caption_id": "Dekat dari pangkalnya, terlihat kuncup-kuncup bunga kecil menempel di dasar spadix yang kuning.", "caption_en": "Up close at the base, tiny flower buds cluster around the bottom of the yellow spadix.", "credit": "Björn S...", "license": "CC BY-SA 2.0" },
+    { "src": "app/assets/img/wiki/3048cd57126f2150.jpg", "caption_id": "Tiga orang dengan susah payah mengangkat umbi raksasa bunga ini yang beratnya lebih dari 100 kg.", "caption_en": "Three people carefully lift the flower's giant tuber, which weighs more than 100 kg.", "credit": "Foto © W. Barthlott", "license": "CC BY-SA 4.0" }
   ],
   "source": "https://id.wikipedia.org/wiki/Bunga_bangkai_raksasa"
 }

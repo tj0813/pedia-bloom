@@ -124,7 +124,8 @@
     var name = rich ? rich.title_id : d.name;
     var en = rich ? rich.title_en : d.en;
     var sub = rich ? rich.subtitle_id : d.sub;
-    var thumb = (rich && rich.gallery && rich.gallery[0]) ? rich.gallery[0] : s.thumb;
+    var g0 = rich && rich.gallery && rich.gallery[0];
+    var thumb = g0 ? (typeof g0 === "string" ? g0 : g0.src) : s.thumb;
     var variantLabel = (!rich && d.variant) ? d.variant + (d.variantEn ? " · " + d.variantEn : "") : "";
     var badge = rich ? '<span class="absolute top-2 right-2 bg-primary text-on-primary text-[10px] font-label-md font-bold px-2 py-0.5 rounded-md shadow flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px]">menu_book</span>Lengkap</span>' :
       (variantLabel ? '<span class="absolute top-2 right-2 bg-tertiary-container text-on-tertiary-container text-[11px] font-label-md font-bold px-2 py-0.5 rounded-md shadow">' + esc(variantLabel) + "</span>" : "");
@@ -433,73 +434,107 @@
     return '<section class="space-y-3 pt-2"><h3 class="font-headline-lg-mobile text-[20px] font-bold text-primary flex items-center gap-2"><span class="material-symbols-outlined">recommend</span><span>Topik Terkait<span class="bi-en">Related Topics</span></span></h3><div class="grid grid-cols-2 gap-3">' + rel.map(card).join("") + "</div></section>";
   }
 
-  /* Rich encyclopedia page — bilingual sections, photo gallery, facts, credits.
-   * Rendered for any topic that has a curated entry in window.PEDIA_CONTENT. */
+  /* Rich "illustrated encyclopedia" page (v2) — fact-file infobox, captioned photo
+   * gallery, colorful sections, fun facts, glossary, credits. Single-language by
+   * default (Indonesian) with an EN toggle, plus offline read-aloud. */
+  var richLang = "id", currentRichId = null;
+  function tL(idText, enText) { return esc(richLang === "en" ? (enText || idText || "") : (idText || enText || "")); }
+  function tOther(idText, enText) { return esc(richLang === "en" ? (idText || "") : (enText || "")); }
+  function gSrc(g) { return typeof g === "string" ? g : (g && g.src) || ""; }
+  function gCap(g) { return typeof g === "string" ? "" : (richLang === "en" ? (g.caption_en || g.caption_id || "") : (g.caption_id || g.caption_en || "")); }
+
   function viewRichScreen(id) {
     var c = CONTENT[id];
-    var d = deriveTitle(id);
+    currentRichId = id;
     store.visit(id, (SCREENS[id] || {}).category || "Alam & Hewan Indonesia");
-    topbar(c.title_id, true);
+    topbar(richLang === "en" ? c.title_en : c.title_id, true);
     setActiveNav("explore");
 
     var gallery = (c.gallery || []).filter(Boolean);
-    var hero = gallery[0] || "app/assets/placeholder.svg";
+    var hero = gallery.length ? gSrc(gallery[0]) : "app/assets/placeholder.svg";
 
-    var strip = gallery.map(function (src, i) {
-      return '<button type="button" data-zoom="' + esc(src) + '" aria-label="Perbesar foto ' + (i + 1) + '" class="snap-start shrink-0 rounded-xl overflow-hidden border-2 border-surface-variant">' +
-        '<img src="' + esc(src) + '" alt="' + esc(c.title_id) + " " + (i + 1) + '" loading="lazy" class="w-[240px] h-[160px] object-cover" /></button>';
+    var topbarRow =
+      '<div class="flex items-center justify-between gap-2">' +
+        '<button id="read-aloud" class="flex items-center gap-1.5 bg-surface-container text-primary rounded-full px-3 py-1.5 text-[12px] font-bold"><span class="material-symbols-outlined text-[18px]">volume_up</span>' + (richLang === "en" ? "Listen" : "Dengarkan") + "</button>" +
+        '<div class="flex items-center gap-1 bg-surface-container rounded-full p-1 text-[12px] font-bold shrink-0">' +
+          '<button data-lang="id" class="px-3 py-1 rounded-full ' + (richLang === "id" ? "bg-primary text-on-primary" : "text-on-surface-variant") + '">ID</button>' +
+          '<button data-lang="en" class="px-3 py-1 rounded-full ' + (richLang === "en" ? "bg-primary text-on-primary" : "text-on-surface-variant") + '">EN</button>' +
+        "</div></div>";
+
+    var dataCard = (c.data_card && c.data_card.length) ?
+      '<section class="story-card p-4"><div class="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-3">' +
+      c.data_card.map(function (t) {
+        return '<div class="flex items-start gap-2">' +
+          '<span class="material-symbols-outlined text-primary text-[22px] shrink-0">' + esc(t.icon || "info") + "</span>" +
+          '<div class="min-w-0"><p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wide leading-none">' + tL(t.label_id, t.label_en) + "</p>" +
+          '<p class="font-label-md text-[14px] font-bold text-on-surface leading-tight mt-0.5">' + tL(t.value_id, t.value_en) + "</p></div></div>";
+      }).join("") + "</div></section>" : "";
+
+    var strip = gallery.map(function (g, i) {
+      var src = gSrc(g), cap = gCap(g);
+      return '<figure data-zoom="' + esc(src) + '" role="button" tabindex="0" aria-label="Perbesar foto ' + (i + 1) + '" class="snap-start shrink-0 w-[240px] rounded-xl overflow-hidden border-2 border-surface-variant bg-surface-container-lowest cursor-zoom-in">' +
+        '<img src="' + esc(src) + '" alt="' + tL(c.title_id, c.title_en) + " " + (i + 1) + '" loading="lazy" class="w-full h-[150px] object-cover" />' +
+        (cap ? '<figcaption class="text-[11px] text-on-surface-variant p-2 leading-snug">' + cap + "</figcaption>" : "") + "</figure>";
     }).join("");
 
     var sections = (c.sections || []).map(function (s) {
       return '<section class="story-card p-5 space-y-2">' +
-        '<h3 class="font-headline-lg-mobile text-[18px] font-bold text-primary flex items-center gap-2"><span class="material-symbols-outlined">' + esc(s.icon || "info") + '</span><span>' + esc(s.h_id) + '<span class="bi-en">' + esc(s.h_en) + "</span></span></h3>" +
-        '<p class="font-body-md text-[15px] text-on-surface leading-relaxed">' + esc(s.body_id) + "</p>" +
-        '<p class="font-body-md text-[14px] text-fresh-teal leading-relaxed">' + esc(s.body_en) + "</p>" +
-      "</section>";
+        '<h3 class="font-headline-lg-mobile text-[18px] font-bold text-primary flex items-center gap-2"><span class="material-symbols-outlined">' + esc(s.icon || "info") + "</span><span>" + tL(s.h_id, s.h_en) + '<span class="bi-en">' + tOther(s.h_id, s.h_en) + "</span></span></h3>" +
+        '<p class="font-body-md text-[15px] text-on-surface leading-relaxed">' + tL(s.body_id, s.body_en) + "</p></section>";
     }).join("");
 
     var facts = (c.facts || []).map(function (f) {
       return '<div class="bg-secondary-fixed rounded-xl p-3 flex gap-2">' +
         '<span class="material-symbols-outlined text-secondary text-[20px] shrink-0" style="font-variation-settings:\'FILL\' 1;">lightbulb</span>' +
-        '<p class="text-[13px] text-on-secondary-fixed leading-snug font-medium">' + esc(f.id) + '<span class="block text-on-secondary-fixed-variant font-normal mt-0.5">' + esc(f.en) + "</span></p></div>";
+        '<p class="text-[13px] text-on-secondary-fixed leading-snug font-medium">' + tL(f.id, f.en) + "</p></div>";
     }).join("");
 
+    var glossary = (c.glossary && c.glossary.length) ?
+      '<section class="space-y-3"><h3 class="font-headline-lg-mobile text-[18px] font-bold text-tertiary flex items-center gap-2"><span class="material-symbols-outlined">menu_book</span><span>Kata Baru<span class="bi-en">New Words</span></span></h3><div class="space-y-2">' +
+      c.glossary.map(function (gl) {
+        return '<div class="story-card p-3"><p class="font-label-md text-[14px] font-bold text-tertiary">' + esc(gl.term) + "</p>" +
+          '<p class="text-[13px] text-on-surface leading-snug mt-0.5">' + tL(gl.def_id, gl.def_en) + "</p></div>";
+      }).join("") + "</div></section>" : "";
+
     var names = {};
-    (c.credits || []).forEach(function (cr) { if (cr && cr.credit) names[cr.credit + (cr.license ? " (" + cr.license + ")" : "")] = 1; });
+    gallery.forEach(function (g) { if (g && g.credit) names[g.credit + (g.license ? " (" + g.license + ")" : "")] = 1; });
     var credit = '<div class="text-[11px] text-on-surface-variant pt-3 border-t border-surface-variant leading-relaxed">' +
-      'Sumber teks · Text source: <a href="' + esc(c.source || "#") + '" target="_blank" rel="noopener" class="text-secondary underline">Wikipedia</a>. Foto · Photos: Wikimedia Commons.' +
-      (Object.keys(names).length ? '<span class="block mt-0.5">Kredit foto: ' + esc(Object.keys(names).slice(0, 8).join(" · ")) + "</span>" : "") +
-      "</div>";
+      "Sumber · Source: Wikipedia (Bahasa Indonesia) · Foto · Photos: Wikimedia Commons." +
+      (Object.keys(names).length ? '<span class="block mt-0.5">Kredit foto: ' + esc(Object.keys(names).slice(0, 10).join(" · ")) + "</span>" : "") + "</div>";
 
     view.innerHTML =
       '<div class="px-margin-mobile max-w-container-max mx-auto pt-2 pb-16 pop-in space-y-6">' +
+        topbarRow +
         '<div class="relative rounded-2xl overflow-hidden shadow-storybook-lg">' +
-          '<img src="' + esc(hero) + '" alt="' + esc(c.title_id) + '" class="w-full h-60 object-cover" />' +
-          '<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent p-4 pt-12">' +
-            '<h1 class="font-headline-lg text-[26px] font-bold text-white leading-tight">' + esc(c.title_id) + '<span class="block font-display-en text-[15px] font-medium text-white/85 mt-0.5">' + esc(c.title_en) + "</span></h1>" +
-            (c.subtitle_id ? '<p class="text-white/90 text-[13px] mt-1">' + esc(c.subtitle_id) + (c.subtitle_en ? ' <span class="text-white/65">· ' + esc(c.subtitle_en) + "</span>" : "") + "</p>" : "") +
-          "</div>" +
-        "</div>" +
-        (gallery.length > 1 ?
-          '<section class="space-y-2">' +
-            '<h3 class="font-headline-lg-mobile text-[16px] font-bold text-on-background flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">photo_library</span><span>Galeri Foto<span class="bi-en">Photo Gallery</span></span></h3>' +
+          '<img src="' + esc(hero) + '" alt="' + tL(c.title_id, c.title_en) + '" class="w-full h-60 object-cover" />' +
+          '<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/55 to-transparent p-4 pt-16">' +
+            '<h1 class="font-headline-lg text-[26px] font-bold text-white leading-tight" style="text-shadow:0 1px 6px rgba(0,0,0,0.5)">' + tL(c.title_id, c.title_en) + '<span class="block font-display-en text-[15px] font-medium text-white/85 mt-0.5">' + tOther(c.title_id, c.title_en) + "</span></h1>" +
+            (c.subtitle_id ? '<p class="text-white/90 text-[13px] mt-1">' + tL(c.subtitle_id, c.subtitle_en) + "</p>" : "") +
+          "</div></div>" +
+        dataCard +
+        (gallery.length ?
+          '<section class="space-y-2"><h3 class="font-headline-lg-mobile text-[16px] font-bold text-on-background flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">photo_library</span><span>Galeri Foto<span class="bi-en">Photo Gallery</span></span></h3>' +
             '<div class="flex gap-3 overflow-x-auto no-scrollbar snap-x pb-1 -mx-1 px-1">' + strip + "</div>" +
-            '<p class="text-[11px] text-on-surface-variant">Ketuk foto untuk memperbesar · Tap a photo to zoom</p>' +
-          "</section>" : "") +
+            '<p class="text-[11px] text-on-surface-variant">' + (richLang === "en" ? "Tap a photo to zoom" : "Ketuk foto untuk memperbesar") + "</p></section>" : "") +
         '<div class="space-y-4">' + sections + "</div>" +
         (c.facts && c.facts.length ?
-          '<section class="space-y-3">' +
-            '<h3 class="font-headline-lg-mobile text-[18px] font-bold text-secondary flex items-center gap-2"><span class="material-symbols-outlined">auto_awesome</span><span>Tahukah Kamu?<span class="bi-en">Did You Know?</span></span></h3>' +
-            '<div class="grid grid-cols-1 sm:grid-cols-2 gap-2">' + facts + "</div>" +
-          "</section>" : "") +
+          '<section class="space-y-3"><h3 class="font-headline-lg-mobile text-[18px] font-bold text-secondary flex items-center gap-2"><span class="material-symbols-outlined">auto_awesome</span><span>Tahukah Kamu?<span class="bi-en">Did You Know?</span></span></h3>' +
+            '<div class="grid grid-cols-1 sm:grid-cols-2 gap-2">' + facts + "</div></section>" : "") +
+        glossary +
         credit +
         relatedHtml(id) +
       "</div>" +
-      floatingAi(c.title_id);
+      floatingAi(richLang === "en" ? c.title_en : c.title_id);
 
-    view.querySelectorAll("[data-zoom]").forEach(function (btn) {
-      btn.addEventListener("click", function () { openLightbox(btn.getAttribute("data-zoom")); });
+    view.querySelectorAll("[data-zoom]").forEach(function (el) {
+      el.addEventListener("click", function () { openLightbox(el.getAttribute("data-zoom")); });
+      el.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openLightbox(el.getAttribute("data-zoom")); } });
     });
+    view.querySelectorAll("[data-lang]").forEach(function (btn) {
+      btn.addEventListener("click", function () { stopReadAloud(); richLang = btn.getAttribute("data-lang"); viewRichScreen(currentRichId); });
+    });
+    var ra = document.getElementById("read-aloud");
+    if (ra) ra.addEventListener("click", function () { toggleReadAloud(c); });
     updateProfileChip();
     view.scrollTop = 0; window.scrollTo(0, 0);
   }
@@ -507,10 +542,31 @@
   function openLightbox(src) {
     var ov = document.createElement("div");
     ov.className = "fixed inset-0 z-[60] bg-black/85 flex items-center justify-center p-4";
+    ov.setAttribute("role", "dialog");
     ov.innerHTML = '<img src="' + esc(src) + '" alt="" class="max-w-full max-h-full rounded-xl shadow-2xl" />' +
-      '<button aria-label="Tutup" class="absolute top-4 right-4 w-11 h-11 rounded-full bg-white/90 text-on-surface grid place-items-center shadow"><span class="material-symbols-outlined">close</span></button>';
-    ov.addEventListener("click", function () { ov.remove(); });
+      '<button id="lb-close" aria-label="Tutup" class="absolute top-4 right-4 w-11 h-11 rounded-full bg-white/90 text-on-surface grid place-items-center shadow"><span class="material-symbols-outlined">close</span></button>';
+    function close() { ov.remove(); document.removeEventListener("keydown", onKey); }
+    function onKey(e) { if (e.key === "Escape") close(); }
+    ov.addEventListener("click", close);
+    document.addEventListener("keydown", onKey);
     document.body.appendChild(ov);
+    var cl = document.getElementById("lb-close"); if (cl) cl.focus();
+  }
+
+  /* Offline read-aloud (Web Speech API) — reads the page in the current language. */
+  var raSpeaking = false;
+  function stopReadAloud() { try { if (window.speechSynthesis) window.speechSynthesis.cancel(); } catch (e) {} raSpeaking = false; }
+  function toggleReadAloud(c) {
+    if (!window.speechSynthesis) return;
+    if (raSpeaking) { stopReadAloud(); return; }
+    var parts = [richLang === "en" ? c.title_en : c.title_id];
+    (c.sections || []).forEach(function (s) { parts.push(richLang === "en" ? s.body_en : s.body_id); });
+    var u = new SpeechSynthesisUtterance(parts.join(". "));
+    u.lang = richLang === "en" ? "en-US" : "id-ID";
+    u.rate = 0.95;
+    u.onend = function () { raSpeaking = false; };
+    raSpeaking = true;
+    window.speechSynthesis.speak(u);
   }
 
   /* Games */
@@ -902,6 +958,7 @@
     var base = parts[0] || "home";
     document.documentElement.classList.toggle("home-storybook", base === "home");
     window.scrollTo(0, 0);
+    stopReadAloud();
     updateProfileChip();
     // Error boundary: a broken screen shows a friendly message, never a blank page.
     try {

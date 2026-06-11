@@ -4,6 +4,14 @@
   "title_en": "Bali Myna",
   "subtitle_id": "Burung putih cantik kebanggaan Pulau Bali",
   "subtitle_en": "Bali's beautiful white pride bird",
+  "data_card": [
+    { "icon": "forest", "label_id": "Habitat", "label_en": "Habitat", "value_id": "Hutan & savana", "value_en": "Forest & savanna" },
+    { "icon": "height", "label_id": "Ukuran", "label_en": "Size", "value_id": "Sekitar 25 cm", "value_en": "About 25 cm" },
+    { "icon": "restaurant", "label_id": "Makanan", "label_en": "Diet", "value_id": "Serangga & buah", "value_en": "Insects & fruit" },
+    { "icon": "public", "label_id": "Daerah", "label_en": "Region", "value_id": "Bali Barat", "value_en": "West Bali" },
+    { "icon": "pets", "label_id": "Kelompok", "label_en": "Group", "value_id": "Burung pengicau", "value_en": "Songbird" },
+    { "icon": "shield", "label_id": "Status", "label_en": "Status", "value_id": "Sangat langka", "value_en": "Critically rare" }
+  ],
   "sections": [
     {
       "icon": "pets",
@@ -49,19 +57,17 @@
     { "id": "Ia membuat sarang di dalam lubang pohon.", "en": "It builds its nest inside tree holes." },
     { "id": "Burung ini sangat suka mandi dan menjaga kebersihan.", "en": "This bird loves bathing and staying clean." }
   ],
-  "gallery": [
-    "app/assets/img/wiki/a6fa2ef43c702575.jpg",
-    "app/assets/img/wiki/000c823cf42ebd18.jpg",
-    "app/assets/img/wiki/8e23caa6af095eb7.jpg",
-    "app/assets/img/wiki/1e55d1be9f083cac.jpg",
-    "app/assets/img/wiki/a1f732fe3d3dd789.jpg"
+  "glossary": [
+    { "term": "Endemik", "def_id": "Hewan atau tumbuhan yang hanya hidup di satu tempat di dunia.", "def_en": "An animal or plant that lives in only one place in the world." },
+    { "term": "Pengicau", "def_id": "Burung yang pandai bernyanyi dan berkicau.", "def_en": "A bird that is good at singing and chirping." },
+    { "term": "Jambul", "def_id": "Bulu yang berdiri di atas kepala burung.", "def_en": "Feathers that stand up on top of a bird's head." },
+    { "term": "Penangkaran", "def_id": "Tempat hewan dijaga dan dikembangbiakkan agar tidak punah.", "def_en": "A place where animals are kept and bred so they don't go extinct." }
   ],
-  "credits": [
-    { "src": "app/assets/img/wiki/a6fa2ef43c702575.jpg", "credit": "JJ Harrison", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/000c823cf42ebd18.jpg", "credit": "No machine-readable author provided. Stavenn assumed (based on copyright claims)", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/1e55d1be9f083cac.jpg", "credit": "en:User:Cburnett", "license": "CC BY-SA 3.0" },
-    { "src": "app/assets/img/wiki/8e23caa6af095eb7.jpg", "credit": "Ady Kristanto", "license": "CC BY-SA 4.0" },
-    { "src": "app/assets/img/wiki/a1f732fe3d3dd789.jpg", "credit": "en:User:Cburnett", "license": "CC BY-SA 3.0" }
+  "gallery": [
+    { "src": "app/assets/img/wiki/a6fa2ef43c702575.jpg", "caption_id": "Jalak bali bertengger, memamerkan bulu putih dan pelupuk biru khasnya.", "caption_en": "A Bali myna perched, showing its white feathers and signature blue eye-patch.", "credit": "JJ Harrison", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/8e23caa6af095eb7.jpg", "caption_id": "Jalak bali di antara dahan dan buah-buahan hutan.", "caption_en": "A Bali myna among branches and forest fruits.", "credit": "Ady Kristanto", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/000c823cf42ebd18.jpg", "caption_id": "Tampak depan jalak bali dengan dada putih bersih.", "caption_en": "Front view of a Bali myna with a clean white chest.", "credit": "Stavenn", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/1e55d1be9f083cac.jpg", "caption_id": "Jalak bali bertengger tenang di sebuah ranting.", "caption_en": "A Bali myna perched calmly on a twig.", "credit": "User:Cburnett", "license": "CC BY-SA 3.0" }
   ],
   "source": "https://id.wikipedia.org/wiki/Jalak_bali"
 }
