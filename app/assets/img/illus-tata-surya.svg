@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <radialGradient id="ts-space" cx="78%" cy="42%" r="95%">
+      <stop offset="0%" stop-color="#33417a"/>
+      <stop offset="45%" stop-color="#1c2a5e"/>
+      <stop offset="100%" stop-color="#0f1638"/>
+    </radialGradient>
+    <radialGradient id="ts-sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd54a" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#ffd54a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffd54a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ts-sun" cx="38%" cy="34%" r="72%">
+      <stop offset="0%" stop-color="#ffe9a8"/>
+      <stop offset="45%" stop-color="#ffd54a"/>
+      <stop offset="100%" stop-color="#e18500"/>
+    </radialGradient>
+    <radialGradient id="ts-earth" cx="36%" cy="32%" r="78%">
+      <stop offset="0%" stop-color="#7fc0ff"/>
+      <stop offset="55%" stop-color="#33a0fd"/>
+      <stop offset="100%" stop-color="#0061a4"/>
+    </radialGradient>
+    <radialGradient id="ts-saturn" cx="36%" cy="32%" r="78%">
+      <stop offset="0%" stop-color="#ffe9c2"/>
+      <stop offset="55%" stop-color="#ffdcbe"/>
+      <stop offset="100%" stop-color="#e18500"/>
+    </radialGradient>
+    <radialGradient id="ts-red" cx="36%" cy="32%" r="78%">
+      <stop offset="0%" stop-color="#ff8d6b"/>
+      <stop offset="60%" stop-color="#ba1a1a"/>
+      <stop offset="100%" stop-color="#7a0f0f"/>
+    </radialGradient>
+    <radialGradient id="ts-teal" cx="36%" cy="32%" r="78%">
+      <stop offset="0%" stop-color="#7fece2"/>
+      <stop offset="60%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#075e57"/>
+    </radialGradient>
+    <radialGradient id="ts-green" cx="36%" cy="32%" r="78%">
+      <stop offset="0%" stop-color="#94f990"/>
+      <stop offset="60%" stop-color="#4caf50"/>
+      <stop offset="100%" stop-color="#006e1c"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Space background fills full viewBox -->
+  <rect x="0" y="0" width="400" height="300" fill="url(#ts-space)"/>
+
+  <!-- Stars scattered -->
+  <g fill="#f5fbef">
+    <circle cx="40" cy="36" r="2.6"/>
+    <circle cx="96" cy="20" r="1.8"/>
+    <circle cx="150" cy="48" r="2.2"/>
+    <circle cx="30" cy="120" r="2"/>
+    <circle cx="64" cy="200" r="2.4"/>
+    <circle cx="120" cy="250" r="1.8"/>
+    <circle cx="210" cy="266" r="2.2"/>
+    <circle cx="300" cy="252" r="1.8"/>
+    <circle cx="372" cy="210" r="2.4"/>
+    <circle cx="356" cy="92" r="2"/>
+    <circle cx="246" cy="30" r="1.8"/>
+    <circle cx="180" cy="14" r="2"/>
+  </g>
+  <!-- Sparkle stars (4-point) -->
+  <g fill="#ffd54a">
+    <path d="M112 90 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z"/>
+    <path d="M278 188 l2.4 5.6 5.6 2.4 -5.6 2.4 -2.4 5.6 -2.4 -5.6 -5.6 -2.4 5.6 -2.4 z"/>
+    <path d="M70 268 l2 4.6 4.6 2 -4.6 2 -2 4.6 -2 -4.6 -4.6 -2 4.6 -2 z"/>
+  </g>
+
+  <!-- Orbit lines (dashed, curved around the sun) -->
+  <g fill="none" stroke="#d1e4ff" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 9">
+    <ellipse cx="318" cy="150" rx="120" ry="92" transform="rotate(-14 318 150)"/>
+    <ellipse cx="318" cy="150" rx="190" ry="138" transform="rotate(-14 318 150)"/>
+    <ellipse cx="318" cy="150" rx="262" ry="186" transform="rotate(-14 318 150)"/>
+  </g>
+
+  <!-- Sun -->
+  <circle cx="346" cy="120" r="112" fill="url(#ts-sunGlow)"/>
+  <circle cx="346" cy="120" r="56" fill="url(#ts-sun)" stroke="#8b5000" stroke-width="3"/>
+  <g stroke="#ffd54a" stroke-width="4" stroke-linecap="round">
+    <line x1="346" y1="44" x2="346" y2="28"/>
+    <line x1="400" y1="120" x2="416" y2="120"/>
+    <line x1="392" y1="66" x2="404" y2="54"/>
+    <line x1="392" y1="174" x2="404" y2="186"/>
+    <line x1="300" y1="66" x2="288" y2="54"/>
+    <line x1="300" y1="174" x2="288" y2="186"/>
+  </g>
+
+  <!-- Planet: small teal (inner orbit) -->
+  <g>
+    <circle cx="232" cy="206" r="14" fill="#0f1638" fill-opacity="0.35"/>
+    <circle cx="230" cy="204" r="14" fill="url(#ts-teal)" stroke="#075e57" stroke-width="3"/>
+  </g>
+
+  <!-- Planet: red (inner-mid orbit) -->
+  <g>
+    <circle cx="206" cy="92" r="18" fill="#0f1638" fill-opacity="0.35"/>
+    <circle cx="204" cy="90" r="18" fill="url(#ts-red)" stroke="#7a0f0f" stroke-width="3"/>
+    <circle cx="198" cy="84" r="4" fill="#ff8d6b" fill-opacity="0.7"/>
+  </g>
+
+  <!-- Planet: green (mid orbit) -->
+  <g>
+    <circle cx="118" cy="208" r="22" fill="#0f1638" fill-opacity="0.35"/>
+    <circle cx="116" cy="206" r="22" fill="url(#ts-green)" stroke="#006e1c" stroke-width="3"/>
+    <ellipse cx="110" cy="200" rx="7" ry="4" fill="#94f990" fill-opacity="0.7"/>
+  </g>
+
+  <!-- Planet: Earth-like blue (outer-mid orbit) -->
+  <g>
+    <circle cx="122" cy="92" r="30" fill="#0f1638" fill-opacity="0.4"/>
+    <circle cx="120" cy="90" r="30" fill="url(#ts-earth)" stroke="#0061a4" stroke-width="3.5"/>
+    <path d="M104 78 q10 -4 16 2 q8 6 2 12 q-8 4 -14 -2 q-6 -6 -4 -12 z" fill="#4caf50" stroke="#006e1c" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M126 104 q8 0 12 6 q-6 5 -12 3 q-4 -5 0 -9 z" fill="#4caf50" stroke="#006e1c" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Planet: ringed Saturn-like (outer orbit, lower-left) -->
+  <g transform="rotate(-18 78 162)">
+    <ellipse cx="78" cy="162" rx="50" ry="15" fill="none" stroke="#e18500" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="78" cy="162" r="26" fill="url(#ts-saturn)" stroke="#8b5000" stroke-width="3.5"/>
+    <ellipse cx="78" cy="162" rx="50" ry="15" fill="none" stroke="#ffd54a" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 28 50 0"/>
+    <line x1="62" y1="156" x2="94" y2="156" stroke="#e18500" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+    <line x1="60" y1="166" x2="96" y2="166" stroke="#e18500" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+  </g>
+</svg>

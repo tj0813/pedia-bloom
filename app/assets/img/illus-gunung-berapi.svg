@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="vbSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33a0fd"/>
+      <stop offset="0.6" stop-color="#d1e4ff"/>
+      <stop offset="1" stop-color="#f5fbef"/>
+    </linearGradient>
+    <linearGradient id="vbCone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8b5000"/>
+      <stop offset="0.55" stop-color="#e18500"/>
+      <stop offset="1" stop-color="#8b5000"/>
+    </linearGradient>
+    <linearGradient id="vbLava" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd54a"/>
+      <stop offset="0.45" stop-color="#e18500"/>
+      <stop offset="1" stop-color="#ba1a1a"/>
+    </linearGradient>
+    <linearGradient id="vbGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#94f990"/>
+      <stop offset="1" stop-color="#4caf50"/>
+    </linearGradient>
+    <radialGradient id="vbGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd54a" stop-opacity="0.85"/>
+      <stop offset="0.6" stop-color="#e18500" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#e18500" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vbShadow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#171d16" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#171d16" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="400" height="300" fill="url(#vbSky)"/>
+
+  <!-- distant rolling hills -->
+  <path d="M0 246 q70 -34 150 -10 q90 28 250 -8 v72 H0 z" fill="#94f990" opacity="0.7"/>
+
+  <!-- soft puffy cloud -->
+  <g fill="#f5fbef">
+    <circle cx="66" cy="74" r="18"/>
+    <circle cx="90" cy="66" r="22"/>
+    <circle cx="116" cy="76" r="17"/>
+    <rect x="66" y="74" width="50" height="18" rx="9"/>
+  </g>
+
+  <!-- warm glow halo behind the eruption -->
+  <ellipse cx="200" cy="118" rx="92" ry="78" fill="url(#vbGlow)"/>
+
+  <!-- grey ash / smoke cloud above the crater -->
+  <g fill="#d1e4ff">
+    <circle cx="200" cy="58" r="24"/>
+    <circle cx="172" cy="70" r="19"/>
+    <circle cx="228" cy="70" r="20"/>
+    <circle cx="186" cy="44" r="16"/>
+    <circle cx="216" cy="46" r="15"/>
+  </g>
+  <g fill="#94f990" opacity="0.0"/>
+  <g fill="#0061a4" opacity="0.12">
+    <circle cx="190" cy="64" r="13"/>
+    <circle cx="214" cy="62" r="11"/>
+  </g>
+
+  <!-- ground / green land base -->
+  <path d="M0 244 q60 -20 130 -10 q120 16 270 -6 v72 H0 z" fill="url(#vbGround)"/>
+
+  <!-- soft shadow under the volcano -->
+  <ellipse cx="200" cy="262" rx="118" ry="16" fill="url(#vbShadow)"/>
+
+  <!-- volcano cone -->
+  <g stroke="#171d16" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M118 252
+             q14 -78 58 -120
+             q14 -14 24 -14
+             q10 0 24 14
+             q44 42 58 120
+             z"
+          fill="url(#vbCone)"/>
+    <!-- crater rim opening -->
+    <path d="M170 118 q30 -16 60 0 q-12 14 -30 14 q-18 0 -30 -14 z"
+          fill="#8b5000"/>
+  </g>
+
+  <!-- glowing lava pooled in the crater -->
+  <path d="M174 116 q26 -12 52 0 q-10 11 -26 11 q-16 0 -26 -11 z" fill="url(#vbLava)"/>
+
+  <!-- lava splashes shooting up -->
+  <g fill="url(#vbLava)" stroke="none">
+    <path d="M200 110 q-7 -34 0 -56 q7 22 0 56 z"/>
+    <path d="M180 112 q-12 -22 -10 -40 q11 16 10 40 z"/>
+    <path d="M220 112 q12 -22 10 -40 q-11 16 -10 40 z"/>
+  </g>
+  <!-- glowing lava droplets in the air -->
+  <g fill="#ffd54a" stroke="none">
+    <circle cx="200" cy="48" r="5"/>
+    <circle cx="168" cy="66" r="4"/>
+    <circle cx="234" cy="64" r="4"/>
+    <circle cx="184" cy="40" r="3"/>
+  </g>
+  <g fill="#ba1a1a" stroke="none">
+    <circle cx="200" cy="48" r="2"/>
+    <circle cx="234" cy="64" r="1.8"/>
+  </g>
+
+  <!-- lava flowing down the cone -->
+  <g stroke="#ba1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M196 128 q-8 36 -22 70 q-6 26 -2 52" fill="none" stroke="url(#vbLava)" stroke-width="11"/>
+    <path d="M210 130 q10 30 22 66 q6 24 2 52" fill="none" stroke="url(#vbLava)" stroke-width="9"/>
+  </g>
+  <!-- bright lava highlight streak -->
+  <path d="M198 132 q-7 34 -20 66 q-5 24 -2 48" fill="none" stroke="#ffd54a" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- little friendly bushes at the base -->
+  <g stroke="#006e1c" stroke-width="3" stroke-linejoin="round">
+    <circle cx="74" cy="256" r="13" fill="#4caf50"/>
+    <circle cx="330" cy="258" r="14" fill="#4caf50"/>
+  </g>
+</svg>

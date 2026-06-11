@@ -1,0 +1,73 @@
+{
+  "id": "sains_rahasia_kekuatan_magnet",
+  "title_id": "Magnet",
+  "title_en": "Magnets",
+  "subtitle_id": "Benda ajaib yang bisa menarik besi tanpa menyentuhnya",
+  "subtitle_en": "The amazing object that can pull iron without touching it",
+  "data_card": [
+    { "icon": "north", "label_id": "Kutub", "label_en": "Poles", "value_id": "Utara & Selatan", "value_en": "North & South" },
+    { "icon": "filter_tilt_shift", "label_id": "Menarik", "label_en": "Attracts", "value_id": "Besi & baja", "value_en": "Iron & steel" },
+    { "icon": "settings_input_component", "label_id": "Memiliki", "label_en": "Has", "value_id": "Medan magnet", "value_en": "A magnetic field" },
+    { "icon": "explore", "label_id": "Digunakan untuk", "label_en": "Used in", "value_id": "Kompas, motor, kulkas", "value_en": "Compass, motor, fridge" },
+    { "icon": "swap_horiz", "label_id": "Aturan kutub", "label_en": "Pole rule", "value_id": "Sejenis menolak", "value_en": "Same poles repel" }
+  ],
+  "sections": [
+    {
+      "icon": "filter_tilt_shift",
+      "h_id": "Apa Itu Magnet?",
+      "h_en": "What Is a Magnet?",
+      "body_id": "Magnet adalah benda yang bisa menarik benda lain dari logam, terutama besi dan baja. Tarikan ini disebut gaya magnet, dan hebatnya gaya ini bekerja tanpa harus menyentuh. Kamu pasti pernah melihat magnet menempel di pintu kulkas. Tetapi magnet tidak menarik semua benda; kertas, kayu, plastik, dan karet tidak akan tertarik oleh magnet.",
+      "body_en": "A magnet is an object that can pull other metal objects toward it, especially iron and steel. This pull is called magnetic force, and the amazing thing is that it works without even touching. You have surely seen a magnet stick to a fridge door. But a magnet does not attract everything; paper, wood, plastic, and rubber are not pulled by a magnet."
+    },
+    {
+      "icon": "swap_horiz",
+      "h_id": "Dua Kutub Magnet",
+      "h_en": "The Two Poles",
+      "body_id": "Setiap magnet punya dua ujung istimewa yang disebut kutub: kutub utara dan kutub selatan. Di kedua kutub inilah gaya magnet paling kuat. Ada aturan yang menarik: kutub yang berbeda saling tarik-menarik, sedangkan kutub yang sejenis saling tolak-menolak. Uniknya, kalau sebuah magnet dipotong menjadi dua, setiap potongan tetap punya kutub utara dan kutub selatan sendiri.",
+      "body_en": "Every magnet has two special ends called poles: a north pole and a south pole. The magnetic force is strongest at these two poles. There is an interesting rule: opposite poles pull toward each other, while same poles push each other away. The strange part is that if you cut a magnet in two, each piece still has its own north pole and south pole."
+    },
+    {
+      "icon": "blur_on",
+      "h_id": "Medan Magnet yang Tak Terlihat",
+      "h_en": "The Invisible Magnetic Field",
+      "body_id": "Di sekeliling setiap magnet ada wilayah tak terlihat tempat gaya magnet bekerja. Wilayah ini disebut medan magnet. Kita memang tidak bisa melihatnya, tetapi kita bisa membuktikannya. Taburkan serbuk besi halus di sekitar magnet, lalu serbuk itu akan tersusun mengikuti garis-garis melengkung dari kutub yang satu ke kutub yang lain. Garis-garis itu menunjukkan bentuk medan magnet.",
+      "body_en": "All around every magnet there is an invisible area where the magnetic force works. This area is called a magnetic field. We cannot see it, but we can prove it is there. Sprinkle fine iron filings around a magnet, and they will line up along curved lines running from one pole to the other. Those lines show us the shape of the magnetic field."
+    },
+    {
+      "icon": "explore",
+      "h_id": "Magnet di Sekitar Kita",
+      "h_en": "Magnets All Around Us",
+      "body_id": "Magnet sangat berguna dalam kehidupan sehari-hari. Jarum kompas adalah magnet kecil yang selalu menunjuk ke utara, sehingga membantu orang menemukan arah. Magnet ada di dalam motor listrik, pengeras suara, dan dinamo. Magnet juga menempelkan catatan di pintu kulkas. Bumi sendiri sebenarnya bagaikan magnet raksasa, dan itulah sebabnya jarum kompas bisa bekerja.",
+      "body_en": "Magnets are very useful in everyday life. A compass needle is a tiny magnet that always points north, so it helps people find their way. Magnets are inside electric motors, loudspeakers, and dynamos. Magnets also hold notes onto the fridge door. The Earth itself is really like a giant magnet, and that is why a compass needle works."
+    },
+    {
+      "icon": "bolt",
+      "h_id": "Magnet dari Listrik",
+      "h_en": "Magnets from Electricity",
+      "body_id": "Tahukah kamu bahwa listrik bisa membuat magnet? Jika kawat dililitkan pada sebuah paku lalu dialiri arus listrik, paku itu berubah menjadi magnet dan bisa menarik benda logam. Magnet seperti ini disebut elektromagnet. Hebatnya, ketika listrik dimatikan, sifat magnetnya langsung hilang. Elektromagnet yang sangat besar dipakai untuk mengangkat mobil dan besi tua di tempat rongsokan.",
+      "body_en": "Did you know that electricity can make a magnet? If a wire is coiled around a nail and an electric current flows through it, the nail turns into a magnet and can pull metal objects. A magnet like this is called an electromagnet. The clever part is that when the electricity is switched off, the magnetism disappears at once. Very large electromagnets are used to lift cars and scrap iron in junkyards."
+    }
+  ],
+  "facts": [
+    { "id": "Magnet hanya menarik logam tertentu seperti besi dan baja.", "en": "Magnets only attract certain metals like iron and steel." },
+    { "id": "Setiap magnet selalu punya kutub utara dan kutub selatan.", "en": "Every magnet always has a north pole and a south pole." },
+    { "id": "Kutub yang sejenis saling menolak, kutub yang berbeda saling menarik.", "en": "Same poles push apart, opposite poles pull together." },
+    { "id": "Jika magnet dipotong, setiap potongan tetap punya dua kutub.", "en": "If a magnet is cut, each piece still has two poles." },
+    { "id": "Kata magnet berasal dari Magnesia, sebuah daerah penghasil batu magnet.", "en": "The word magnet comes from Magnesia, a place rich in magnetic stone." },
+    { "id": "Listrik bisa membuat magnet, yang disebut elektromagnet.", "en": "Electricity can make a magnet, called an electromagnet." }
+  ],
+  "glossary": [
+    { "term": "Magnet", "def_id": "Benda yang dapat menarik logam seperti besi dan baja.", "def_en": "An object that can attract metals such as iron and steel." },
+    { "term": "Kutub", "def_id": "Ujung magnet tempat gaya magnet paling kuat: kutub utara dan selatan.", "def_en": "The end of a magnet where the magnetic force is strongest: north and south." },
+    { "term": "Medan magnet", "def_id": "Wilayah tak terlihat di sekitar magnet tempat gaya magnet bekerja.", "def_en": "The invisible area around a magnet where the magnetic force works." },
+    { "term": "Serbuk besi", "def_id": "Butiran besi halus yang dipakai untuk memperlihatkan garis medan magnet.", "def_en": "Tiny grains of iron used to show the lines of a magnetic field." },
+    { "term": "Kompas", "def_id": "Alat penunjuk arah yang jarumnya berupa magnet kecil dan menunjuk utara.", "def_en": "A direction tool whose needle is a tiny magnet that points north." },
+    { "term": "Elektromagnet", "def_id": "Magnet yang dibuat dengan mengalirkan listrik melalui kawat yang dililitkan.", "def_en": "A magnet made by running electricity through a coiled wire." }
+  ],
+  "gallery": [
+    { "src": "app/assets/img/wiki/e36b27b40ac9a055.jpg", "caption_id": "Magnet ladam dengan serbuk besi menempel di kutub Utara (N) dan Selatan (S).", "caption_en": "A horseshoe magnet with iron filings clinging to its North (N) and South (S) poles.", "credit": "Oguraclutch", "license": "CC BY-SA 3.0" },
+    { "src": "app/assets/img/wiki/45a3db1e948ef024.jpg", "caption_id": "Magnet ladam berbentuk seperti tapal kuda, salah satu bentuk magnet buatan.", "caption_en": "A horseshoe magnet shaped like a horse's shoe, one common kind of magnet.", "credit": "Eurico Zimbres FGEL/UERJ", "license": "CC BY-SA 2.0 br" },
+    { "src": "app/assets/img/wiki/bbb5aaa0109b1e3c.jpg", "caption_id": "Serbuk besi tersusun mengikuti garis medan magnet di sekitar magnet ladam.", "caption_en": "Iron filings line up along the magnetic field lines around a horseshoe magnet.", "credit": "Noguarde", "license": "CC BY-SA 4.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Magnet"
+}

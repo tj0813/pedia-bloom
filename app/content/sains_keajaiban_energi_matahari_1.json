@@ -1,0 +1,121 @@
+{
+  "id": "sains_keajaiban_energi_matahari_1",
+  "title_id": "Keajaiban Energi Matahari",
+  "title_en": "The Wonder of Solar Energy",
+  "subtitle_id": "Mengubah sinar matahari menjadi listrik yang bersih!",
+  "subtitle_en": "Turning sunlight into clean electricity!",
+  "data_card": [
+    {
+      "icon": "wb_sunny",
+      "label_id": "Sumber",
+      "label_en": "Source",
+      "value_id": "Matahari",
+      "value_en": "The Sun"
+    },
+    {
+      "icon": "solar_power",
+      "label_id": "Alat",
+      "label_en": "Device",
+      "value_id": "Panel surya (sel surya)",
+      "value_en": "Solar panels (solar cells)"
+    },
+    {
+      "icon": "recycling",
+      "label_id": "Jenis",
+      "label_en": "Type",
+      "value_id": "Energi terbarukan",
+      "value_en": "Renewable energy"
+    },
+    {
+      "icon": "bolt",
+      "label_id": "Hasil",
+      "label_en": "Output",
+      "value_id": "Listrik & panas",
+      "value_en": "Electricity & heat"
+    },
+    {
+      "icon": "eco",
+      "label_id": "Kelebihan",
+      "label_en": "Pros",
+      "value_id": "Bersih & tidak habis",
+      "value_en": "Clean & never runs out"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "wb_sunny",
+      "h_id": "Apa Itu Energi Matahari?",
+      "h_en": "What Is Solar Energy?",
+      "body_id": "Energi matahari, atau energi surya, adalah energi berupa cahaya dan panas yang datang dari matahari. Setiap hari matahari mengirimkan sinar yang sangat banyak ke bumi. Sinar ini bisa kita tangkap dan ubah menjadi listrik untuk menyalakan lampu, televisi, dan banyak alat lain. Hebatnya, energi ini gratis dan tidak akan pernah habis selama matahari masih bersinar!",
+      "body_en": "Solar energy is energy in the form of light and heat that comes from the Sun. Every day the Sun sends a huge amount of light to Earth. We can catch this light and turn it into electricity to power lamps, televisions, and many other devices. The best part is that this energy is free and will never run out as long as the Sun keeps shining!"
+    },
+    {
+      "icon": "solar_power",
+      "h_id": "Bagaimana Panel Surya Bekerja?",
+      "h_en": "How Do Solar Panels Work?",
+      "body_id": "Untuk menangkap sinar matahari, kita memakai panel surya. Panel ini berbentuk papan datar berwarna gelap yang berisi banyak sel surya kecil, atau fotovoltaik. Saat sinar matahari mengenai sel-sel itu, sel surya langsung mengubahnya menjadi listrik. Panel surya biasanya dipasang di atap rumah atau di lapangan luas, lalu diarahkan menghadap matahari agar dapat sinar sebanyak mungkin.",
+      "body_en": "To catch sunlight, we use solar panels. A panel is a flat, dark board filled with many tiny solar cells, also called photovoltaics. When sunlight hits those cells, the solar cells turn it straight into electricity. Solar panels are usually placed on rooftops or in big open fields, facing the Sun so they catch as much light as possible."
+    },
+    {
+      "icon": "thermostat",
+      "h_id": "Cahaya dan Panas dari Matahari",
+      "h_en": "Light and Heat from the Sun",
+      "body_id": "Energi matahari bisa dipakai dengan dua cara. Cara pertama mengubah cahaya menjadi listrik memakai panel surya. Cara kedua memanfaatkan panasnya, misalnya untuk menghangatkan air atau membuat rumah terasa nyaman. Bangunan pintar dibuat menghadap matahari agar bagian dalamnya terang dan hangat tanpa boros listrik. Matahari juga menghangatkan laut dan udara, sehingga lahir angin, awan, dan hujan.",
+      "body_en": "Solar energy can be used in two ways. The first way turns light into electricity using solar panels. The second way uses its heat, for example to warm water or to make a house feel comfortable. Smart buildings are made to face the Sun so the inside stays bright and warm without wasting electricity. The Sun also warms the sea and air, which creates wind, clouds, and rain."
+    },
+    {
+      "icon": "recycling",
+      "h_id": "Energi yang Bersih dan Ramah",
+      "h_en": "Clean and Friendly Energy",
+      "body_id": "Energi matahari termasuk energi terbarukan, artinya tidak akan habis dan bisa dipakai terus-menerus. Berbeda dengan batu bara atau minyak bumi, energi matahari tidak menghasilkan asap kotor yang mengotori udara. Karena itu energi surya disebut energi bersih. Memakai energi matahari membantu menjaga udara tetap segar dan bumi tetap sehat untuk kita semua.",
+      "body_en": "Solar energy is a renewable energy, which means it will not run out and can be used again and again. Unlike coal or oil, solar energy does not make dirty smoke that pollutes the air. That is why solar energy is called clean energy. Using solar energy helps keep the air fresh and the Earth healthy for all of us."
+    },
+    {
+      "icon": "rocket_launch",
+      "h_id": "Energi Matahari di Mana-Mana",
+      "h_en": "Solar Energy Everywhere",
+      "body_id": "Energi matahari bisa menggerakkan banyak hal yang seru! Ada mobil bertenaga surya yang seluruh badannya ditutupi panel surya dan ikut lomba balapan. Ada pula pesawat surya yang terbang tinggi tanpa bahan bakar, hanya menggunakan sinar matahari. Kalkulator, lampu taman, dan satelit di luar angkasa juga banyak yang memakai energi matahari. Keren sekali, bukan?",
+      "body_en": "Solar energy can power many exciting things! There are solar cars whose whole bodies are covered in solar panels and that join races. There are also solar planes that fly high with no fuel, using only sunlight. Calculators, garden lamps, and satellites in space also use solar energy. How cool is that?"
+    }
+  ],
+  "facts": [
+    { "id": "Dalam satu jam, matahari mengirim energi ke bumi lebih banyak dari yang dipakai dunia selama satu tahun!", "en": "In just one hour, the Sun sends Earth more energy than the whole world uses in a year!" },
+    { "id": "Panel surya bekerja tanpa suara dan tanpa bagian yang berputar.", "en": "Solar panels work with no noise and no moving parts." },
+    { "id": "Energi matahari tidak akan habis selama matahari masih bersinar.", "en": "Solar energy will never run out as long as the Sun keeps shining." },
+    { "id": "Tumbuhan juga memakai energi matahari untuk membuat makanan lewat fotosintesis.", "en": "Plants also use solar energy to make food through photosynthesis." },
+    { "id": "Ada pesawat dan mobil yang berjalan hanya dengan tenaga matahari.", "en": "There are planes and cars that run on solar power alone." },
+    { "id": "Negara dekat khatulistiwa seperti Indonesia mendapat banyak sinar matahari sepanjang tahun.", "en": "Countries near the equator, like Indonesia, get plenty of sunlight all year round." }
+  ],
+  "glossary": [
+    { "term": "Energi surya", "def_id": "Energi berupa cahaya dan panas yang berasal dari matahari.", "def_en": "Energy in the form of light and heat that comes from the Sun." },
+    { "term": "Panel surya", "def_id": "Papan datar berisi sel surya yang menangkap sinar matahari.", "def_en": "A flat board with solar cells that catches sunlight." },
+    { "term": "Fotovoltaik", "def_id": "Sel surya kecil yang mengubah cahaya matahari menjadi listrik.", "def_en": "A tiny solar cell that changes sunlight into electricity." },
+    { "term": "Terbarukan", "def_id": "Energi yang tidak akan habis dan bisa dipakai terus-menerus.", "def_en": "Energy that will not run out and can be used again and again." },
+    { "term": "Energi bersih", "def_id": "Energi yang tidak menghasilkan asap atau kotoran yang mencemari udara.", "def_en": "Energy that does not make smoke or dirt that pollutes the air." },
+    { "term": "Fotosintesis", "def_id": "Cara tumbuhan membuat makanan dengan bantuan sinar matahari.", "def_en": "The way plants make food with the help of sunlight." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/2b351ed86f22e032.jpg",
+      "caption_id": "Mobil bertenaga surya yang seluruh badannya ditutupi panel surya bersama timnya.",
+      "caption_en": "A solar-powered car covered entirely in solar panels, with its team.",
+      "credit": "Wikimedia Commons",
+      "license": "CC BY-SA 2.5"
+    },
+    {
+      "src": "app/assets/img/wiki/29db9b776965328f.jpg",
+      "caption_id": "Pesawat surya milik NASA terbang di atas laut, sayapnya penuh sel surya.",
+      "caption_en": "NASA's solar plane flies above the sea, its wings packed with solar cells.",
+      "credit": "NASA",
+      "license": "Public domain"
+    },
+    {
+      "src": "app/assets/img/wiki/e3882587c2481e21.jpg",
+      "caption_id": "Rumah hemat energi yang dirancang menghadap matahari agar terang dan hangat.",
+      "caption_en": "An energy-saving house designed to face the Sun so it stays bright and warm.",
+      "credit": "Jeff Kubina from the milky way galaxy",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Energi_surya"
+}

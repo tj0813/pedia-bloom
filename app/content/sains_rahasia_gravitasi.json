@@ -1,0 +1,72 @@
+{
+  "id": "sains_rahasia_gravitasi",
+  "title_id": "Gravitasi",
+  "title_en": "Gravity",
+  "subtitle_id": "Gaya tak terlihat yang menarik segala benda ke bawah",
+  "subtitle_en": "The invisible force that pulls everything down",
+  "data_card": [
+    { "icon": "arrow_downward", "label_id": "Apa itu", "label_en": "What it is", "value_id": "Gaya tarik-menarik", "value_en": "A pulling force" },
+    { "icon": "person", "label_id": "Dijelaskan oleh", "label_en": "Explained by", "value_id": "Isaac Newton", "value_en": "Isaac Newton" },
+    { "icon": "public", "label_id": "Di mana", "label_en": "Where", "value_id": "Semua benda bermassa", "value_en": "Every object with mass" },
+    { "icon": "fitness_center", "label_id": "Efek di Bumi", "label_en": "Effect on Earth", "value_id": "Benda jatuh & punya berat", "value_en": "Things fall & have weight" },
+    { "icon": "orbit", "label_id": "Efek di langit", "label_en": "Effect in space", "value_id": "Planet tetap mengorbit", "value_en": "Planets stay in orbit" }
+  ],
+  "sections": [
+    {
+      "icon": "arrow_downward",
+      "h_id": "Apa Itu Gravitasi?",
+      "h_en": "What Is Gravity?",
+      "body_id": "Gravitasi adalah gaya tarik yang tidak bisa kita lihat, tetapi selalu bekerja di sekitar kita. Gravitasi membuat semua benda saling tarik-menarik. Kalau kamu melompat, gravitasi menarikmu kembali ke tanah. Kalau bola dilempar ke atas, gravitasi membuatnya jatuh lagi. Karena gravitasi pula, air mengalir ke bawah dan kita bisa berdiri di Bumi tanpa melayang ke langit.",
+      "body_en": "Gravity is a pulling force that we cannot see, but it is always working around us. Gravity makes every object pull toward every other object. When you jump, gravity pulls you back down to the ground. When a ball is thrown up, gravity makes it fall again. Because of gravity, water flows downward and we can stand on Earth without floating off into the sky."
+    },
+    {
+      "icon": "scale",
+      "h_id": "Massa, Berat, dan Tarikan",
+      "h_en": "Mass, Weight, and Pull",
+      "body_id": "Semakin besar massa sebuah benda, semakin kuat tarikan gravitasinya. Bumi sangat besar, jadi tarikannya kuat dan membuat kita punya berat. Berat adalah gaya gravitasi yang menarik tubuh kita ke bawah. Gravitasi juga melemah jika benda saling menjauh. Itulah sebabnya tarikan gravitasi terasa paling kuat ketika kita berada di permukaan Bumi.",
+      "body_en": "The bigger an object's mass, the stronger its gravity pulls. Earth is very large, so its pull is strong and gives us weight. Weight is the force of gravity pulling our body downward. Gravity also grows weaker when objects move farther apart. That is why gravity's pull feels strongest when we are right on the surface of the Earth."
+    },
+    {
+      "icon": "person",
+      "h_id": "Newton dan Galileo",
+      "h_en": "Newton and Galileo",
+      "body_id": "Ratusan tahun lalu, ilmuwan bernama Galileo menjatuhkan bola dari menara tinggi dan menemukan bahwa benda berat dan benda ringan jatuh dengan kecepatan yang sama. Kemudian Isaac Newton menjelaskan gravitasi sebagai gaya yang menarik dua benda. Konon, ide itu muncul saat ia melihat apel jatuh dari pohon. Ide Newton membantu kita memahami mengapa benda jatuh dan mengapa planet mengorbit.",
+      "body_en": "Hundreds of years ago, a scientist named Galileo dropped balls from a tall tower and found that heavy and light objects fall at the same speed. Later, Isaac Newton explained gravity as a force that pulls two objects together. The story says the idea came to him when he saw an apple fall from a tree. Newton's idea helps us understand why things fall and why planets orbit."
+    },
+    {
+      "icon": "orbit",
+      "h_id": "Gravitasi di Luar Angkasa",
+      "h_en": "Gravity in Space",
+      "body_id": "Gravitasi bekerja jauh sampai ke luar angkasa. Tarikan gravitasi Matahari yang sangat kuat membuat Bumi dan planet-planet lain terus bergerak mengelilinginya, dan tidak terlempar jauh. Gravitasi Bulan menarik air laut sehingga terjadi pasang dan surut. Bahkan bintang-bintang bisa berkumpul membentuk galaksi karena gravitasi. Tanpa gravitasi, seluruh alam semesta akan berantakan.",
+      "body_en": "Gravity works far out into space. The Sun's very strong gravity keeps Earth and the other planets moving around it instead of flying away. The Moon's gravity pulls the ocean water, making the tides rise and fall. Even the stars can gather together into galaxies because of gravity. Without gravity, the whole universe would fall apart."
+    },
+    {
+      "icon": "rocket_launch",
+      "h_id": "Melayang di Antariksa",
+      "h_en": "Floating in Space",
+      "body_id": "Di stasiun luar angkasa, astronaut terlihat melayang seolah tanpa gravitasi. Sebenarnya gravitasi tetap ada, tetapi astronaut dan pesawatnya jatuh bersama-sama mengelilingi Bumi, sehingga semuanya terasa ringan dan mengambang. Keadaan ini disebut tanpa bobot. Para ilmuwan kadang melatih keadaan ini di pesawat khusus agar bisa merasakan melayang seperti di antariksa.",
+      "body_en": "On a space station, astronauts seem to float as if there is no gravity. Gravity is really still there, but the astronauts and their spacecraft are falling together around the Earth, so everything feels light and floaty. This condition is called weightlessness. Scientists sometimes practice this in a special airplane so they can feel what floating in space is like."
+    }
+  ],
+  "facts": [
+    { "id": "Gravitasi membuat semua benda jatuh ke bawah, bukan ke atas.", "en": "Gravity makes all objects fall down, not up." },
+    { "id": "Benda berat dan benda ringan jatuh dengan kecepatan yang sama.", "en": "Heavy and light objects fall at the same speed." },
+    { "id": "Berat badanmu adalah gaya gravitasi yang menarikmu ke Bumi.", "en": "Your weight is the force of gravity pulling you to the Earth." },
+    { "id": "Gravitasi Matahari menjaga Bumi tetap pada orbitnya.", "en": "The Sun's gravity keeps the Earth in its orbit." },
+    { "id": "Pasang surut air laut terjadi karena gravitasi Bulan.", "en": "Ocean tides happen because of the Moon's gravity." },
+    { "id": "Di Bulan gravitasi lebih lemah, jadi kamu bisa melompat lebih tinggi.", "en": "On the Moon gravity is weaker, so you could jump much higher." }
+  ],
+  "glossary": [
+    { "term": "Gravitasi", "def_id": "Gaya tak terlihat yang membuat semua benda saling tarik-menarik.", "def_en": "The invisible force that makes all objects pull toward each other." },
+    { "term": "Gaya", "def_id": "Dorongan atau tarikan yang bisa menggerakkan atau menghentikan benda.", "def_en": "A push or a pull that can move or stop an object." },
+    { "term": "Massa", "def_id": "Banyaknya materi di dalam sebuah benda; makin besar massa, makin kuat gravitasinya.", "def_en": "How much matter is inside an object; more mass means stronger gravity." },
+    { "term": "Berat", "def_id": "Gaya gravitasi yang menarik sebuah benda ke bawah.", "def_en": "The force of gravity pulling an object downward." },
+    { "term": "Orbit", "def_id": "Jalur melingkar yang ditempuh sebuah benda saat mengelilingi benda lain.", "def_en": "The curved path an object takes as it travels around another object." },
+    { "term": "Tanpa bobot", "def_id": "Keadaan saat benda terasa ringan dan melayang karena jatuh bersama-sama.", "def_en": "The condition when things feel light and float because they fall together." }
+  ],
+  "gallery": [
+    { "src": "app/assets/img/wiki/eba093f5752f8877.jpg", "caption_id": "Ilmuwan Stephen Hawking melayang tanpa bobot di dalam pesawat khusus.", "caption_en": "Scientist Stephen Hawking floats weightless inside a special airplane.", "credit": "Jim Campbell/Aero-News Network", "license": "CC BY 3.0" },
+    { "src": "app/assets/img/wiki/a098d5a55e793301.jpg", "caption_id": "Gravitasi Matahari menahan semua planet agar tetap mengorbit di tata surya.", "caption_en": "The Sun's gravity holds all the planets in orbit across the solar system.", "credit": "Harman Smith and Laura Generosa, NASA", "license": "Public domain" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Gravitasi"
+}

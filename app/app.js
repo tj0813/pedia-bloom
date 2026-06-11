@@ -15,7 +15,9 @@
     "ensiklopedia_gajah_sumatra_beranimasi": 1, "ensiklopedia_harimau_sumatra_2": 1,
     "ensiklopedia_jalak_bali_2": 1, "ensiklopedia_penyu_hijau_2": 1,
     "ensiklopedia_burung_cendrawasih": 1, "ensiklopedia_candi_borobudur_1": 1,
-    "budaya_alat_musik_angklung_2": 1, "budaya_tari_kecak_bali_beranimasi": 1
+    "budaya_alat_musik_angklung_2": 1, "budaya_tari_kecak_bali_beranimasi": 1,
+    "sains_gunung_berapi_ring_of_fire_2": 1, "sains_gunung_berapi_ring_of_fire_3": 1,
+    "sains_keajaiban_energi_matahari_2": 1
   };
   var geval = eval; // indirect eval -> runs screen scripts in global scope
 

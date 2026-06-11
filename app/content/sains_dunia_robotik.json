@@ -1,0 +1,73 @@
+{
+  "id": "sains_dunia_robotik",
+  "title_id": "Robot",
+  "title_en": "Robots",
+  "subtitle_id": "Mesin pintar yang bisa bekerja membantu manusia",
+  "subtitle_en": "Smart machines that can work to help people",
+  "data_card": [
+    { "icon": "smart_toy", "label_id": "Apa itu", "label_en": "What it is", "value_id": "Mesin pintar", "value_en": "A smart machine" },
+    { "icon": "sensors", "label_id": "Bagian", "label_en": "Parts", "value_id": "Sensor, motor, program", "value_en": "Sensors, motors, program" },
+    { "icon": "code", "label_id": "Dikendalikan oleh", "label_en": "Controlled by", "value_id": "Program komputer", "value_en": "A computer program" },
+    { "icon": "precision_manufacturing", "label_id": "Kegunaan", "label_en": "Used for", "value_id": "Pabrik, medis, rumah", "value_en": "Factory, medical, home" },
+    { "icon": "history_edu", "label_id": "Asal kata", "label_en": "Word from", "value_id": "Robota (Ceko)", "value_en": "Robota (Czech)" }
+  ],
+  "sections": [
+    {
+      "icon": "smart_toy",
+      "h_id": "Apa Itu Robot?",
+      "h_en": "What Is a Robot?",
+      "body_id": "Robot adalah mesin pintar yang bisa melakukan pekerjaan, baik diatur oleh manusia maupun mengikuti program yang sudah dibuat. Robot sering dipakai untuk pekerjaan yang berat, berbahaya, kotor, atau yang harus diulang terus-menerus. Banyak orang mengira robot pasti berbentuk seperti manusia. Padahal robot yang mirip manusia, yang disebut humanoid, hanyalah salah satu jenis dari banyak bentuk robot.",
+      "body_en": "A robot is a smart machine that can do work, either guided by a person or by following a program that has been made for it. Robots are often used for jobs that are heavy, dangerous, dirty, or have to be repeated over and over. Many people think a robot must be shaped like a human. But a human-shaped robot, called a humanoid, is only one type among many kinds of robots."
+    },
+    {
+      "icon": "sensors",
+      "h_id": "Bagian-Bagian Robot",
+      "h_en": "The Parts of a Robot",
+      "body_id": "Sebuah robot biasanya memiliki tiga bagian penting. Yang pertama adalah sensor, yaitu indra robot yang dipakai untuk merasakan lingkungan, seperti melihat, mendengar, atau merasakan sentuhan. Yang kedua adalah motor dan sendi, yang membuat robot bisa bergerak. Yang ketiga adalah program komputer, yaitu otak robot yang memberi tahu apa yang harus dilakukan. Ketiga bagian ini bekerja sama agar robot bisa bertindak.",
+      "body_en": "A robot usually has three important parts. The first is the sensor, the robot's senses used to feel its surroundings, like seeing, hearing, or feeling touch. The second is the motors and joints, which let the robot move. The third is the computer program, the robot's brain that tells it what to do. These three parts work together so the robot can act."
+    },
+    {
+      "icon": "code",
+      "h_id": "Bagaimana Robot Bekerja",
+      "h_en": "How Robots Work",
+      "body_id": "Robot bekerja dengan mengikuti perintah dari program komputer di dalamnya. Mula-mula, sensor mengumpulkan informasi dari sekitarnya. Lalu otak robot mengolah informasi itu dan memutuskan apa yang harus dilakukan. Setelah itu, motor menggerakkan bagian tubuh robot sesuai keputusan tadi. Robot mampu mengulang tugas yang sama berkali-kali tanpa pernah merasa lelah atau bosan.",
+      "body_en": "A robot works by following orders from the computer program inside it. First, the sensors gather information from around it. Then the robot's brain works out that information and decides what to do. After that, the motors move the robot's body to carry out the decision. A robot can repeat the same task many times without ever feeling tired or bored."
+    },
+    {
+      "icon": "precision_manufacturing",
+      "h_id": "Robot yang Membantu Manusia",
+      "h_en": "Robots That Help People",
+      "body_id": "Robot membantu manusia di banyak tempat. Di pabrik, lengan robot merakit mobil dan mengangkat barang berat. Di rumah sakit, robot membantu dokter melakukan operasi yang sangat teliti. Di rumah, ada robot kecil yang menyedot debu dan memotong rumput. Robot bahkan dikirim ke tempat yang berbahaya bagi manusia, seperti dasar laut, gunung berapi, dan jauh di luar angkasa.",
+      "body_en": "Robots help people in many places. In factories, robot arms put cars together and lift heavy loads. In hospitals, robots help doctors do very careful operations. At home, there are little robots that vacuum the floor and mow the lawn. Robots are even sent to places that are dangerous for people, like the bottom of the sea, volcanoes, and far out in space."
+    },
+    {
+      "icon": "history_edu",
+      "h_id": "Cerita di Balik Kata Robot",
+      "h_en": "The Story Behind the Word Robot",
+      "body_id": "Kata robot berasal dari bahasa Ceko, robota, yang berarti pekerjaan berat. Kata ini pertama kali dipakai oleh penulis Karel Capek pada tahun 1920 dalam sebuah cerita panggung. Kemudian penulis Isaac Asimov memperkenalkan kata robotika dan membuat tiga aturan terkenal tentang robot agar selalu aman dan menolong manusia. Sejak itu, robot menjadi tokoh yang sering muncul dalam buku dan film.",
+      "body_en": "The word robot comes from the Czech word robota, which means heavy work. It was first used by the writer Karel Capek in 1920 in a stage story. Later, the writer Isaac Asimov introduced the word robotics and made three famous rules for robots so they would always be safe and help people. Since then, robots have become characters that often appear in books and films."
+    }
+  ],
+  "facts": [
+    { "id": "Kata robot berasal dari bahasa Ceko robota yang berarti kerja berat.", "en": "The word robot comes from the Czech word robota, meaning heavy work." },
+    { "id": "Robot yang berbentuk seperti manusia disebut humanoid.", "en": "A robot shaped like a human is called a humanoid." },
+    { "id": "Sensor adalah indra robot untuk merasakan lingkungannya.", "en": "Sensors are a robot's senses for feeling its surroundings." },
+    { "id": "Robot bisa mengulang tugas yang sama tanpa pernah lelah.", "en": "Robots can repeat the same task without ever getting tired." },
+    { "id": "Lengan robot di pabrik membantu merakit mobil.", "en": "Robot arms in factories help put cars together." },
+    { "id": "Robot dikirim ke tempat berbahaya seperti luar angkasa dan dasar laut.", "en": "Robots are sent to dangerous places like outer space and the deep sea." }
+  ],
+  "glossary": [
+    { "term": "Robot", "def_id": "Mesin pintar yang bisa melakukan tugas sendiri atau dengan kendali manusia.", "def_en": "A smart machine that can do tasks by itself or under human control." },
+    { "term": "Humanoid", "def_id": "Robot yang bentuknya menyerupai tubuh manusia.", "def_en": "A robot whose shape looks like a human body." },
+    { "term": "Sensor", "def_id": "Bagian robot yang dipakai untuk merasakan cahaya, suara, atau sentuhan.", "def_en": "The part of a robot used to sense light, sound, or touch." },
+    { "term": "Program", "def_id": "Kumpulan perintah yang memberi tahu robot apa yang harus dilakukan.", "def_en": "A set of instructions that tells a robot what to do." },
+    { "term": "Robotika", "def_id": "Ilmu tentang cara merancang, membuat, dan menggunakan robot.", "def_en": "The study of how to design, build, and use robots." }
+  ],
+  "gallery": [
+    { "src": "app/assets/img/wiki/a8de439b94025340.jpg", "caption_id": "Sophia, robot humanoid yang wajahnya dibuat mirip manusia dan bisa berbicara.", "caption_en": "Sophia, a humanoid robot with a human-like face that can talk.", "credit": "UNCTAD", "license": "CC BY-SA 2.0" },
+    { "src": "app/assets/img/wiki/0c72ccf3ea681c53.jpg", "caption_id": "Seorang insinyur berdiri di samping robot pembantu yang berwajah ramah.", "caption_en": "An engineer stands beside a friendly-faced helper robot.", "credit": "Nicholas-halodi", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/6a48449bc8f10e59.jpg", "caption_id": "Dua robot humanoid sedang bermain sepak bola dalam lomba robot.", "caption_en": "Two humanoid robots play football in a robot competition.", "credit": "Sven Behnke", "license": "CC BY-SA 4.0" },
+    { "src": "app/assets/img/wiki/04a2437fdeba97d2.jpg", "caption_id": "Robot buatan Toyota ini bahkan bisa meniup terompet seperti pemusik.", "caption_en": "This Toyota robot can even play a trumpet like a musician.", "credit": "Wikimedia Commons", "license": "CC BY-SA 3.0" }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Robot"
+}

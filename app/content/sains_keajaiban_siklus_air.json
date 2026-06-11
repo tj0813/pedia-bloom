@@ -1,0 +1,170 @@
+{
+  "id": "sains_keajaiban_siklus_air",
+  "title_id": "Keajaiban Siklus Air",
+  "title_en": "The Wonder of the Water Cycle",
+  "subtitle_id": "Perjalanan air yang tidak pernah berhenti, dari laut ke langit dan kembali lagi",
+  "subtitle_en": "Water's never-ending journey, from the sea to the sky and back again",
+  "data_card": [
+    {
+      "icon": "wb_sunny",
+      "label_id": "Digerakkan oleh",
+      "label_en": "Driven by",
+      "value_id": "Panas Matahari",
+      "value_en": "Heat from the Sun"
+    },
+    {
+      "icon": "water_drop",
+      "label_id": "Tahap utama",
+      "label_en": "Main steps",
+      "value_id": "Penguapan, pengembunan, hujan",
+      "value_en": "Evaporation, condensation, rain"
+    },
+    {
+      "icon": "waves",
+      "label_id": "Terjadi di",
+      "label_en": "Where it happens",
+      "value_id": "Laut, langit, dan darat",
+      "value_en": "Sea, sky, and land"
+    },
+    {
+      "icon": "recycling",
+      "label_id": "Air yang sama",
+      "label_en": "The same water",
+      "value_id": "Dipakai ulang selama miliaran tahun",
+      "value_en": "Reused for billions of years"
+    },
+    {
+      "icon": "rainy",
+      "label_id": "Mengapa penting",
+      "label_en": "Why it matters",
+      "value_id": "Memberi air bersih untuk semua makhluk hidup",
+      "value_en": "Provides fresh water for all living things"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "cycle",
+      "h_id": "Apa itu siklus air?",
+      "h_en": "What is the water cycle?",
+      "body_id": "Siklus air, atau daur hidrologi, adalah perjalanan air yang tidak pernah berhenti. Air bergerak dari laut dan permukaan Bumi naik ke langit, lalu jatuh lagi sebagai hujan atau salju, dan akhirnya kembali ke laut. Lingkaran ini berputar terus-menerus, siang dan malam, di seluruh dunia. Yang menakjubkan, air di Bumi sekarang adalah air yang sama yang sudah ada sejak miliaran tahun lalu. Tetesan hujan yang kamu lihat hari ini mungkin pernah menjadi bagian dari laut purba atau bahkan diminum oleh dinosaurus!",
+      "body_en": "The water cycle, or hydrological cycle, is water's never-ending journey. Water moves up from the sea and the Earth's surface into the sky, then falls again as rain or snow, and finally returns to the sea. This loop turns around and around, day and night, all over the world. The amazing part is that the water on Earth today is the very same water that has existed for billions of years. The raindrop you see today may once have been part of an ancient ocean, or even sipped by a dinosaur!"
+    },
+    {
+      "icon": "wb_sunny",
+      "h_id": "Matahari sang penggerak",
+      "h_en": "The Sun is the engine",
+      "body_id": "Matahari adalah mesin yang menjalankan seluruh siklus air. Sinar Matahari menghangatkan permukaan laut, sungai, dan danau. Panas ini mengubah air dari cair menjadi uap air, sebuah gas yang tidak terlihat, dalam proses yang disebut penguapan atau evaporasi. Hampir 90% uap di langit berasal dari laut. Sisanya datang dari tumbuhan, yang melepaskan uap air lewat daunnya dalam proses bernama transpirasi. Tanpa panas Matahari, air akan diam di tempat dan siklus tidak akan pernah dimulai.",
+      "body_en": "The Sun is the engine that runs the whole water cycle. Sunlight warms the surface of seas, rivers, and lakes. This heat turns water from a liquid into water vapour, an invisible gas, in a process called evaporation. Almost 90% of the vapour in the sky comes from the ocean. The rest comes from plants, which release water vapour through their leaves in a process called transpiration. Without the Sun's heat, water would stay still and the cycle would never begin."
+    },
+    {
+      "icon": "cloud",
+      "h_id": "Awan dan hujan terbentuk",
+      "h_en": "Clouds and rain form",
+      "body_id": "Saat uap air naik tinggi ke langit, udara di atas menjadi semakin dingin. Udara dingin membuat uap air berubah kembali menjadi tetesan air kecil. Proses ini disebut pengembunan atau kondensasi. Jutaan tetesan kecil ini berkumpul dan membentuk awan. Ketika tetesan di dalam awan menjadi terlalu banyak dan terlalu berat untuk melayang, mereka jatuh ke Bumi sebagai presipitasi, bisa berupa hujan, salju, atau hujan es. Itulah mengapa langit yang cerah bisa berubah mendung dan menurunkan hujan.",
+      "body_en": "As water vapour rises high into the sky, the air up there gets colder and colder. Cold air makes the vapour turn back into tiny water droplets. This process is called condensation. Millions of these tiny droplets gather together to form clouds. When the droplets inside a cloud become too many and too heavy to float, they fall to Earth as precipitation, which can be rain, snow, or hail. That is why a clear sky can turn cloudy and bring rain."
+    },
+    {
+      "icon": "water",
+      "h_id": "Kembali ke laut",
+      "h_en": "Back to the sea",
+      "body_id": "Setelah hujan jatuh ke tanah, air memulai perjalanan pulang. Sebagian air meresap ke dalam tanah dan menjadi air tanah yang tersimpan di bawah kaki kita. Sebagian lagi mengalir di permukaan, mengisi sungai dan danau. Sungai-sungai ini perlahan membawa air kembali ke laut yang luas. Begitu air sampai di laut, Matahari kembali memanaskannya, dan seluruh siklus dimulai lagi dari awal. Lingkaran ajaib ini sudah berputar tanpa henti sejak Bumi masih sangat muda.",
+      "body_en": "After rain falls on the ground, the water begins its journey home. Some of it soaks into the soil and becomes groundwater, stored beneath our feet. Some flows across the surface, filling rivers and lakes. These rivers slowly carry the water back to the vast ocean. Once the water reaches the sea, the Sun heats it up again, and the whole cycle starts over from the beginning. This magical loop has been turning without stopping since the Earth was very young."
+    },
+    {
+      "icon": "favorite",
+      "h_id": "Mengapa siklus air penting",
+      "h_en": "Why the water cycle matters",
+      "body_id": "Siklus air adalah salah satu keajaiban terpenting di Bumi. Ia membersihkan dan mendaur ulang air, sehingga kita selalu punya air tawar yang segar untuk minum, mandi, dan menyiram tanaman. Hujan menyuburkan ladang dan hutan, mengisi sungai tempat ikan hidup, dan memberi minum semua hewan. Tanpa siklus air, tidak akan ada air tawar di darat, dan kehidupan seperti yang kita kenal tidak mungkin ada. Menjaga air tetap bersih berarti menjaga keajaiban ini tetap bekerja untuk semua makhluk hidup.",
+      "body_en": "The water cycle is one of Earth's most important wonders. It cleans and recycles water, so we always have fresh water to drink, wash with, and water our plants. Rain feeds fields and forests, fills the rivers where fish live, and gives every animal a drink. Without the water cycle, there would be no fresh water on land, and life as we know it could not exist. Keeping water clean means keeping this wonder working for all living things."
+    }
+  ],
+  "facts": [
+    {
+      "id": "Air di Bumi sekarang adalah air yang sama sejak siklus air dimulai sekitar 3,8 miliar tahun lalu, hanya didaur ulang berulang kali.",
+      "en": "The water on Earth today is the same water from when the cycle began about 3.8 billion years ago, just recycled over and over."
+    },
+    {
+      "id": "Sekitar 97% air di Bumi adalah air asin di lautan, dan hanya sebagian kecil yang berupa air tawar yang bisa kita minum.",
+      "en": "About 97% of Earth's water is salty ocean water, and only a tiny part is fresh water that we can drink."
+    },
+    {
+      "id": "Hampir 90% uap air di udara berasal dari penguapan air laut; sisanya dilepaskan oleh tumbuhan.",
+      "en": "Almost 90% of the water vapour in the air comes from evaporating sea water; the rest is released by plants."
+    },
+    {
+      "id": "Sebuah awan bisa menyimpan jutaan tetesan air kecil sebelum tetesan itu cukup berat untuk jatuh sebagai hujan.",
+      "en": "A single cloud can hold millions of tiny water droplets before they grow heavy enough to fall as rain."
+    },
+    {
+      "id": "Air bisa berpindah wujud antara cair (air), gas (uap air), dan padat (es atau salju) selama perjalanannya dalam siklus.",
+      "en": "Water can change between liquid (water), gas (vapour), and solid (ice or snow) during its journey through the cycle."
+    },
+    {
+      "id": "Sebagian besar air tawar di Bumi tidak berada di sungai, melainkan membeku sebagai es di kutub atau tersimpan di bawah tanah.",
+      "en": "Most of Earth's fresh water is not in rivers, but frozen as ice at the poles or stored underground."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Penguapan (Evaporasi)",
+      "def_id": "Proses ketika air berubah dari cair menjadi uap air karena dipanaskan oleh Matahari.",
+      "def_en": "The process when water changes from a liquid into water vapour because it is heated by the Sun."
+    },
+    {
+      "term": "Pengembunan (Kondensasi)",
+      "def_id": "Proses ketika uap air di langit mendingin dan berubah kembali menjadi tetesan air kecil yang membentuk awan.",
+      "def_en": "The process when water vapour in the sky cools and turns back into tiny droplets that form clouds."
+    },
+    {
+      "term": "Presipitasi",
+      "def_id": "Air yang jatuh dari awan ke Bumi, berupa hujan, salju, atau hujan es.",
+      "def_en": "Water that falls from clouds to Earth, such as rain, snow, or hail."
+    },
+    {
+      "term": "Transpirasi",
+      "def_id": "Pelepasan uap air ke udara melalui daun tumbuhan.",
+      "def_en": "The release of water vapour into the air through the leaves of plants."
+    },
+    {
+      "term": "Air tanah",
+      "def_id": "Air yang meresap ke dalam tanah dan tersimpan di antara batuan di bawah permukaan Bumi.",
+      "def_en": "Water that soaks into the ground and is stored between rocks beneath the Earth's surface."
+    },
+    {
+      "term": "Limpasan",
+      "def_id": "Air hujan yang mengalir di atas permukaan tanah menuju sungai, danau, dan laut.",
+      "def_en": "Rainwater that flows across the surface of the land towards rivers, lakes, and the sea."
+    }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/06097c0e9ca007f5.jpg",
+      "caption_id": "Awan tebal di langit terpantul di genangan air hujan, menunjukkan hubungan antara air di langit dan air di Bumi.",
+      "caption_en": "Big clouds in the sky reflected in a rain puddle, showing the link between water in the sky and water on Earth.",
+      "credit": "John Robert McPherson",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/d1240b21cc5bea1a.jpg",
+      "caption_id": "Setelah hujan, awan putih dan langit biru tampak memantul di air yang tergenang di jalan setapak taman.",
+      "caption_en": "After the rain, white clouds and blue sky are mirrored in water pooled on a park path.",
+      "credit": "John Robert McPherson",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/2043f0b8373c205c.jpg",
+      "caption_id": "Genangan hujan memantulkan awan seperti cermin, bukti bahwa air baru saja jatuh dari langit.",
+      "caption_en": "A rain puddle mirrors the clouds above, proof that water has just fallen from the sky.",
+      "credit": "John Robert McPherson",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/2549ddf0b4ec0136.jpg",
+      "caption_id": "Pantulan awan yang sangat jelas di genangan air, memperlihatkan tetesan air yang sama yang bisa menguap kembali ke langit.",
+      "caption_en": "A clear reflection of clouds in a puddle, showing the same water that can evaporate back into the sky.",
+      "credit": "John Robert McPherson",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Siklus_air"
+}

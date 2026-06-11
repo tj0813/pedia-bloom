@@ -1,0 +1,156 @@
+{
+  "id": "sains_menjelajah_luar_angkasa",
+  "title_id": "Tata Surya",
+  "title_en": "The Solar System",
+  "subtitle_id": "Matahari, delapan planet, dan keluarga benda langit yang mengelilinginya",
+  "subtitle_en": "The Sun, eight planets, and the family of space objects that orbit it",
+  "data_card": [
+    {
+      "icon": "wb_sunny",
+      "label_id": "Pusat",
+      "label_en": "Center",
+      "value_id": "Matahari, sebuah bintang",
+      "value_en": "The Sun, a star"
+    },
+    {
+      "icon": "public",
+      "label_id": "Jumlah planet",
+      "label_en": "Number of planets",
+      "value_id": "8 planet",
+      "value_en": "8 planets"
+    },
+    {
+      "icon": "home",
+      "label_id": "Planet kita",
+      "label_en": "Our planet",
+      "value_id": "Bumi, planet ketiga",
+      "value_en": "Earth, the third planet"
+    },
+    {
+      "icon": "brightness_7",
+      "label_id": "Planet terbesar",
+      "label_en": "Largest planet",
+      "value_id": "Jupiter",
+      "value_en": "Jupiter"
+    },
+    {
+      "icon": "orbit",
+      "label_id": "Gerakan planet",
+      "label_en": "How planets move",
+      "value_id": "Mengelilingi Matahari (mengorbit)",
+      "value_en": "They circle the Sun (orbit)"
+    },
+    {
+      "icon": "dark_mode",
+      "label_id": "Satelit alami",
+      "label_en": "Natural moons",
+      "value_id": "Ratusan, termasuk Bulan kita",
+      "value_en": "Hundreds, including our Moon"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "auto_awesome",
+      "h_id": "Apa itu Tata Surya?",
+      "h_en": "What is the Solar System?",
+      "body_id": "Tata Surya adalah keluarga besar benda langit di luar angkasa. Di tengahnya ada sebuah bintang bersinar yang kita sebut Matahari. Semua benda lain, termasuk planet, bulan, asteroid, dan komet, terikat oleh gaya gravitasi Matahari dan bergerak mengelilinginya. Selain Matahari, Tata Surya memiliki delapan planet, lima planet kerdil, ratusan satelit alami (bulan), dan jutaan benda kecil lainnya. Semuanya bergerak dalam jalur yang teratur, menjadikan Tata Surya seperti sebuah orkestra raksasa di luar angkasa.",
+      "body_en": "The Solar System is a big family of objects in space. At its center is a shining star we call the Sun. Everything else, including planets, moons, asteroids, and comets, is held by the Sun's gravity and moves around it. Besides the Sun, the Solar System has eight planets, five dwarf planets, hundreds of natural moons, and millions of smaller objects. They all move along orderly paths, making the Solar System like a giant orchestra in space."
+    },
+    {
+      "icon": "wb_sunny",
+      "h_id": "Matahari, sang bintang",
+      "h_en": "The Sun, our star",
+      "body_id": "Matahari adalah bintang, yaitu bola gas raksasa yang sangat panas dan bercahaya. Matahari jauh lebih besar daripada semua planet jika digabungkan, dan gravitasinya yang sangat kuat menahan seluruh Tata Surya agar tetap bersama. Cahaya dan panas Matahari membuat Bumi cukup hangat untuk ditinggali makhluk hidup. Tanpa Matahari, langit akan gelap gulita, tidak ada siang dan malam, dan planet-planet akan melayang sendirian tanpa arah. Matahari adalah sumber energi utama bagi hampir semua kehidupan di Bumi.",
+      "body_en": "The Sun is a star, a giant ball of very hot, glowing gas. The Sun is far bigger than all the planets put together, and its powerful gravity holds the whole Solar System together. The Sun's light and heat keep Earth warm enough for living things. Without the Sun, the sky would be pitch black, there would be no day and night, and the planets would drift alone with no direction. The Sun is the main source of energy for almost all life on Earth."
+    },
+    {
+      "icon": "public",
+      "h_id": "Delapan planet",
+      "h_en": "The eight planets",
+      "body_id": "Berdasarkan jaraknya dari Matahari, kedelapan planet adalah Merkurius, Venus, Bumi, Mars, Jupiter, Saturnus, Uranus, dan Neptunus. Empat planet terdekat, yaitu Merkurius, Venus, Bumi, dan Mars, disebut planet kebumian karena terbuat dari batuan dan logam. Empat planet terjauh jauh lebih besar: Jupiter dan Saturnus adalah raksasa gas yang sebagian besar terdiri dari hidrogen dan helium, sedangkan Uranus dan Neptunus adalah raksasa es. Setiap planet luar dikelilingi oleh cincin tipis dari debu dan partikel, dengan cincin Saturnus yang paling indah.",
+      "body_en": "Ordered by their distance from the Sun, the eight planets are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. The four nearest planets, Mercury, Venus, Earth, and Mars, are called terrestrial planets because they are made of rock and metal. The four farthest planets are much bigger: Jupiter and Saturn are gas giants made mostly of hydrogen and helium, while Uranus and Neptune are ice giants. Each outer planet is circled by thin rings of dust and particles, with Saturn's rings being the most beautiful."
+    },
+    {
+      "icon": "orbit",
+      "h_id": "Bergerak mengelilingi Matahari",
+      "h_en": "Moving around the Sun",
+      "body_id": "Setiap planet bergerak dalam jalur berbentuk lonjong yang disebut orbit, mengelilingi Matahari tanpa pernah bertabrakan. Planet yang lebih dekat ke Matahari bergerak lebih cepat dan menyelesaikan satu putaran lebih singkat. Bumi membutuhkan waktu satu tahun untuk mengelilingi Matahari satu kali. Di antara Mars dan Jupiter terdapat sabuk asteroid, sebuah daerah berisi jutaan batuan luar angkasa. Jauh di luar Neptunus ada Sabuk Kuiper, tempat planet kerdil seperti Pluto berada, dan lebih jauh lagi terbentang Awan Oort yang menjadi rumah bagi komet.",
+      "body_en": "Each planet moves along an oval-shaped path called an orbit, circling the Sun without ever crashing into each other. Planets closer to the Sun move faster and finish one lap more quickly. Earth takes one year to travel around the Sun once. Between Mars and Jupiter lies the asteroid belt, a region full of millions of space rocks. Far beyond Neptune is the Kuiper Belt, home to dwarf planets like Pluto, and even farther out stretches the Oort Cloud, the home of comets."
+    },
+    {
+      "icon": "rocket_launch",
+      "h_id": "Menjelajah luar angkasa",
+      "h_en": "Exploring outer space",
+      "body_id": "Tata Surya begitu luas sehingga jika kamu naik mobil tercepat, butuh ribuan tahun untuk mencapai planet terjauh. Para ilmuwan mengirim teleskop, satelit, dan wahana antariksa untuk mempelajarinya. Berkat penjelajahan ini, kita tahu Mars berwarna kemerahan, Jupiter memiliki badai raksasa, dan Saturnus dikelilingi cincin yang menakjubkan. Mempelajari Tata Surya membantu kita memahami dari mana Bumi berasal dan apakah ada tempat lain di luar angkasa yang bisa mendukung kehidupan. Langit malam yang penuh bintang adalah undangan untuk terus bertanya dan menjelajah.",
+      "body_en": "The Solar System is so vast that even in the fastest car, it would take thousands of years to reach the farthest planet. Scientists send telescopes, satellites, and space probes to study it. Thanks to this exploration, we know that Mars is reddish, Jupiter has a giant storm, and Saturn is wrapped in stunning rings. Studying the Solar System helps us understand where Earth came from and whether anywhere else in space could support life. The night sky full of stars is an invitation to keep asking questions and exploring."
+    }
+  ],
+  "facts": [
+    {
+      "id": "Tata Surya memiliki delapan planet, dan Bumi adalah planet ketiga yang terdekat dari Matahari.",
+      "en": "The Solar System has eight planets, and Earth is the third closest planet to the Sun."
+    },
+    {
+      "id": "Jupiter adalah planet terbesar di Tata Surya, jauh lebih besar daripada Bumi.",
+      "en": "Jupiter is the largest planet in the Solar System, far bigger than Earth."
+    },
+    {
+      "id": "Empat planet terdekat dengan Matahari terbuat dari batuan, sedangkan empat planet terjauh adalah raksasa gas dan es.",
+      "en": "The four planets nearest the Sun are made of rock, while the four farthest are gas and ice giants."
+    },
+    {
+      "id": "Di antara Mars dan Jupiter terdapat sabuk asteroid yang berisi jutaan batuan luar angkasa.",
+      "en": "Between Mars and Jupiter lies the asteroid belt, which contains millions of space rocks."
+    },
+    {
+      "id": "Setiap planet bagian luar dikelilingi cincin, tetapi cincin Saturnus adalah yang paling terkenal dan indah.",
+      "en": "Every outer planet is surrounded by rings, but Saturn's rings are the most famous and beautiful."
+    },
+    {
+      "id": "Para ilmuwan memperkirakan ada lebih dari 290 satelit alami (bulan) yang mengelilingi planet-planet di Tata Surya.",
+      "en": "Scientists have identified more than 290 natural moons orbiting the planets of the Solar System."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Planet",
+      "def_id": "Benda langit besar yang berbentuk hampir bulat dan bergerak mengelilingi Matahari.",
+      "def_en": "A large, nearly round space object that moves around the Sun."
+    },
+    {
+      "term": "Orbit",
+      "def_id": "Jalur berbentuk lonjong yang dilalui sebuah planet atau benda langit saat mengelilingi Matahari.",
+      "def_en": "The oval-shaped path a planet or space object follows as it travels around the Sun."
+    },
+    {
+      "term": "Bintang",
+      "def_id": "Bola gas raksasa yang sangat panas dan memancarkan cahayanya sendiri, seperti Matahari.",
+      "def_en": "A giant ball of very hot gas that gives off its own light, like the Sun."
+    },
+    {
+      "term": "Asteroid",
+      "def_id": "Batuan luar angkasa berukuran kecil yang mengelilingi Matahari, sebagian besar berada di sabuk asteroid.",
+      "def_en": "A small space rock that orbits the Sun, mostly found in the asteroid belt."
+    },
+    {
+      "term": "Komet",
+      "def_id": "Benda langit dari es dan debu yang membentuk ekor bercahaya ketika mendekati Matahari.",
+      "def_en": "A space object made of ice and dust that forms a glowing tail when it nears the Sun."
+    },
+    {
+      "term": "Satelit alami",
+      "def_id": "Benda langit yang mengelilingi sebuah planet, seperti Bulan yang mengelilingi Bumi.",
+      "def_en": "A space object that circles a planet, like the Moon orbiting Earth."
+    }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/9f928d998deb3b6e.png",
+      "caption_id": "Empat planet kebumian dengan ukuran sebenarnya: Merkurius, Venus, Bumi, dan Mars. Hanya Bumi yang tampak biru karena memiliki lautan.",
+      "caption_en": "The four terrestrial planets shown at their true sizes: Mercury, Venus, Earth, and Mars. Only Earth looks blue because it has oceans.",
+      "credit": "Scooter20 / NASA",
+      "license": "Public domain"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Tata_Surya"
+}

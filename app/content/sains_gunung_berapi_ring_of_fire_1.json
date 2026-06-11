@@ -1,0 +1,142 @@
+{
+  "id": "sains_gunung_berapi_ring_of_fire_1",
+  "title_id": "Gunung Berapi & Cincin Api Pasifik",
+  "title_en": "Volcanoes & the Pacific Ring of Fire",
+  "subtitle_id": "Gunung ajaib yang bisa memuntahkan lava panas!",
+  "subtitle_en": "Amazing mountains that can spout hot lava!",
+  "data_card": [
+    {
+      "icon": "volcano",
+      "label_id": "Jenis",
+      "label_en": "Type",
+      "value_id": "Gunung api",
+      "value_en": "Fire mountain"
+    },
+    {
+      "icon": "public",
+      "label_id": "Lokasi",
+      "label_en": "Where",
+      "value_id": "Cincin Api Pasifik",
+      "value_en": "Pacific Ring of Fire"
+    },
+    {
+      "icon": "local_fire_department",
+      "label_id": "Yang keluar",
+      "label_en": "Erupts",
+      "value_id": "Lava, abu, & gas",
+      "value_en": "Lava, ash, & gas"
+    },
+    {
+      "icon": "terrain",
+      "label_id": "Asalnya",
+      "label_en": "Comes from",
+      "value_id": "Magma dari dalam bumi",
+      "value_en": "Magma deep in the Earth"
+    },
+    {
+      "icon": "eco",
+      "label_id": "Manfaat",
+      "label_en": "Benefit",
+      "value_id": "Tanah jadi subur",
+      "value_en": "Makes soil fertile"
+    },
+    {
+      "icon": "place",
+      "label_id": "Contoh",
+      "label_en": "Example",
+      "value_id": "Merapi, Bromo, Semeru, Rinjani",
+      "value_en": "Merapi, Bromo, Semeru, Rinjani"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "volcano",
+      "h_id": "Apa Itu Gunung Berapi?",
+      "h_en": "What Is a Volcano?",
+      "body_id": "Gunung berapi, atau gunung api, adalah gunung istimewa yang punya saluran sampai jauh ke dalam bumi. Di kedalaman sekitar 10 kilometer di bawah kaki kita, ada batuan yang sangat panas sampai meleleh menjadi cairan. Batuan cair ini bisa naik ke atas lewat gunung. Saat keluar ke permukaan, kita menyebutnya lava!",
+      "body_en": "A volcano, or 'fire mountain', is a special mountain with a tube reaching deep into the Earth. About 10 kilometers below our feet, there is rock so hot that it melts into a liquid. This liquid rock can rise up through the mountain. When it comes out at the surface, we call it lava!"
+    },
+    {
+      "icon": "local_fire_department",
+      "h_id": "Bagaimana Gunung Meletus?",
+      "h_en": "How Does a Volcano Erupt?",
+      "body_id": "Jauh di bawah gunung ada kamar magma, seperti kantong berisi batuan cair panas yang disebut magma. Saat magma naik melewati kerak bumi dan muncul ke permukaan, terjadilah letusan! Magma yang keluar menjadi lava, lalu ada juga abu vulkanik dan gas yang menyembur ke udara. Kadang lava mengalir pelan, kadang menyembur tinggi seperti air mancur raksasa.",
+      "body_en": "Deep below the mountain is a magma chamber, like a pocket full of hot liquid rock called magma. When the magma rises through the Earth's crust and reaches the surface, an eruption happens! The magma that comes out becomes lava, and there is also volcanic ash and gas that shoot into the air. Sometimes lava flows slowly, and sometimes it sprays up high like a giant fountain."
+    },
+    {
+      "icon": "public",
+      "h_id": "Cincin Api Pasifik",
+      "h_en": "The Pacific Ring of Fire",
+      "body_id": "Kulit bumi pecah menjadi potongan-potongan besar yang disebut lempeng tektonik. Saat lempeng-lempeng ini bertemu dan saling menekan, sering muncul gunung berapi. Di sekeliling Samudra Pasifik ada barisan gunung berapi yang sangat panjang, namanya Cincin Api Pasifik. Indonesia berada tepat di cincin ini, jadi negara kita punya banyak sekali gunung berapi!",
+      "body_en": "The Earth's skin is cracked into big pieces called tectonic plates. When these plates meet and push against each other, volcanoes often appear. Around the Pacific Ocean there is a very long line of volcanoes called the Pacific Ring of Fire. Indonesia sits right on this ring, so our country has very many volcanoes!"
+    },
+    {
+      "icon": "eco",
+      "h_id": "Gunung Berapi Itu Bermanfaat",
+      "h_en": "Volcanoes Are Useful",
+      "body_id": "Gunung berapi tidak hanya seru dilihat, tetapi juga bermanfaat. Abu vulkanik membuat tanah di sekitarnya menjadi sangat subur, sehingga petani bisa menanam padi, sayur, dan buah dengan baik. Gunung berapi juga membentuk pemandangan yang indah dan menyimpan panas bumi yang bisa dijadikan listrik. Itulah mengapa banyak orang tinggal dekat gunung berapi.",
+      "body_en": "Volcanoes are not only exciting to look at, they are also useful. Volcanic ash makes the soil around them very fertile, so farmers can grow rice, vegetables, and fruit well. Volcanoes also create beautiful scenery and store underground heat that can be turned into electricity. That is why many people live near volcanoes."
+    },
+    {
+      "icon": "shield",
+      "h_id": "Bagaimana Orang Tetap Aman?",
+      "h_en": "How Do People Stay Safe?",
+      "body_id": "Ada ilmuwan khusus yang mempelajari gunung berapi, namanya ahli vulkanologi. Mereka mengamati gunung setiap hari untuk memperkirakan kapan gunung akan meletus. Jika sebuah gunung mulai aktif, warga di sekitarnya diberi tahu lebih awal agar bisa pindah ke tempat aman. Dengan begitu, kita tetap bisa mengagumi gunung berapi tanpa perlu takut.",
+      "body_en": "There are special scientists who study volcanoes, called volcanologists. They watch the mountains every day to predict when one might erupt. If a volcano starts to become active, the people nearby are warned early so they can move to a safe place. That way, we can still admire volcanoes without being afraid."
+    }
+  ],
+  "facts": [
+    { "id": "Batuan cair panas disebut magma saat di dalam bumi, dan lava saat sudah keluar.", "en": "Hot liquid rock is called magma inside the Earth, and lava once it comes out." },
+    { "id": "Indonesia punya lebih dari 100 gunung berapi, paling banyak di dunia!", "en": "Indonesia has more than 100 volcanoes, the most of any country in the world!" },
+    { "id": "Cincin Api Pasifik adalah barisan gunung berapi yang mengelilingi Samudra Pasifik.", "en": "The Pacific Ring of Fire is a line of volcanoes circling the Pacific Ocean." },
+    { "id": "Abu vulkanik membuat tanah menjadi subur untuk bercocok tanam.", "en": "Volcanic ash makes soil fertile and great for growing plants." },
+    { "id": "Lubang di puncak gunung berapi tempat keluarnya lava disebut kawah.", "en": "The opening at a volcano's top where lava comes out is called a crater." },
+    { "id": "Kadang petir muncul di awan abu saat gunung berapi meletus di malam hari.", "en": "Sometimes lightning appears in the ash cloud when a volcano erupts at night." }
+  ],
+  "glossary": [
+    { "term": "Magma", "def_id": "Batuan yang sangat panas dan meleleh menjadi cairan di dalam bumi.", "def_en": "Rock that is very hot and melted into liquid inside the Earth." },
+    { "term": "Lava", "def_id": "Magma yang sudah keluar dan mengalir di permukaan bumi.", "def_en": "Magma that has come out and flows on the Earth's surface." },
+    { "term": "Erupsi", "def_id": "Saat gunung berapi meletus dan mengeluarkan lava, abu, serta gas.", "def_en": "When a volcano erupts and releases lava, ash, and gas." },
+    { "term": "Kawah", "def_id": "Lubang berbentuk mangkuk di puncak gunung berapi.", "def_en": "A bowl-shaped opening at the top of a volcano." },
+    { "term": "Abu vulkanik", "def_id": "Butiran halus seperti debu yang disemburkan gunung berapi ke udara.", "def_en": "Fine dust-like grains that a volcano throws into the air." },
+    { "term": "Lempeng tektonik", "def_id": "Potongan besar kulit bumi yang bisa bergerak perlahan.", "def_en": "Large pieces of the Earth's crust that can move slowly." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/c5322b4815235aa8.jpg",
+      "caption_id": "Gunung Semeru di Jawa menyemburkan asap dan abu tinggi ke langit senja.",
+      "caption_en": "Mount Semeru in Java puffs a tall plume of smoke and ash into the evening sky.",
+      "credit": "Jan-Pieter Nap",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "app/assets/img/wiki/958052f17c0e875d.jpg",
+      "caption_id": "Gunung Rinjani meletus di malam hari, lava pijar dan petir bersinar terang.",
+      "caption_en": "Mount Rinjani erupts at night, with glowing lava and bright lightning.",
+      "credit": "Oliver Spalt (talk · contribs), http://www.artweise.de",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "app/assets/img/wiki/b392586cefa1d02f.jpg",
+      "caption_id": "Gunung Bromo dan Semeru di Jawa Timur, salah satu pemandangan paling indah.",
+      "caption_en": "Mount Bromo and Mount Semeru in East Java, one of the most beautiful views.",
+      "credit": "Jakub Hałun",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/9e111f66632d0d9d.jpg",
+      "caption_id": "Pendaki berjalan menuju Gunung Merapi, gunung berapi yang masih sangat aktif.",
+      "caption_en": "Hikers walk toward Mount Merapi, a volcano that is still very active.",
+      "credit": "Hildaniar Novitasari",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/b63d0bd249c6b6a5.jpg",
+      "caption_id": "Asap putih (fumarol) mengepul dari celah gunung berapi yang tertutup salju.",
+      "caption_en": "White steam (fumaroles) rises from cracks in a snow-covered volcano.",
+      "credit": "Cyrus Read, USGS",
+      "license": "Public domain"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Gunung_berapi"
+}

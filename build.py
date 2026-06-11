@@ -158,6 +158,11 @@ THUMB_OVERRIDE = {
     "pahlawan_ki_hajar_dewantara_1":   "app/assets/img/wiki/22d3507f2d88dc56.jpg",  # real public-domain portrait
     "sains_dunia_robotik":             "app/assets/img/illus-robotik.svg",
     "sains_rahasia_kekuatan_magnet":   "app/assets/img/illus-magnet.svg",
+    "sains_gunung_berapi_ring_of_fire_1": "app/assets/img/illus-gunung-berapi.svg",
+    "sains_keajaiban_energi_matahari_1":  "app/assets/img/illus-energi-surya.svg",
+    "sains_keajaiban_siklus_air":         "app/assets/img/illus-siklus-air.svg",
+    "sains_menjelajah_luar_angkasa":      "app/assets/img/illus-tata-surya.svg",
+    "sains_rahasia_gravitasi":            "app/assets/img/illus-gravitasi.svg",
     "hub_luar_angkasa":                "app/assets/img/illus-luar-angkasa.svg",
     "misi_netiket_pahlawan_digital":   "app/assets/img/illus-netiket.svg",
     "pusat_budaya_tradisi":            "app/assets/img/illus-budaya.svg",

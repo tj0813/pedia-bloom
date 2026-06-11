@@ -66,6 +66,15 @@ TOPICS = {
     "kuliner_sate":                   {"wiki": "Sate", "search": "Satay Indonesia"},
     "kuliner_gado_gado":              {"wiki": "Gado-gado", "search": "Gado-gado"},
     "kuliner_soto_nusantara":         {"wiki": "Soto", "search": "Soto Indonesia"},
+
+    # --- Sains Seru (science concepts) ---
+    "sains_gunung_berapi_ring_of_fire_1": {"wiki": "Gunung berapi", "search": "Volcano eruption Indonesia"},
+    "sains_keajaiban_energi_matahari_1":  {"wiki": "Energi surya", "search": "Solar panel solar energy"},
+    "sains_keajaiban_siklus_air":         {"wiki": "Siklus air", "search": "Water cycle rain clouds"},
+    "sains_menjelajah_luar_angkasa":      {"wiki": "Tata Surya", "search": "Solar System planets NASA"},
+    "sains_rahasia_gravitasi":            {"wiki": "Gravitasi", "search": "Gravity planet Earth space"},
+    "sains_rahasia_kekuatan_magnet":      {"wiki": "Magnet", "search": "Magnet horseshoe iron filings"},
+    "sains_dunia_robotik":                {"wiki": "Robot", "search": "Robot technology humanoid"},
 }
 
 FREE_LICENSE = re.compile(r"public domain|^pd|cc0|cc[\s-]?by", re.I)

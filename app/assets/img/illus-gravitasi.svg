@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="gv-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#33a0fd"/>
+      <stop offset="60%" stop-color="#9fccfb"/>
+      <stop offset="100%" stop-color="#d1e4ff"/>
+    </linearGradient>
+    <linearGradient id="gv-grass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#94f990"/>
+      <stop offset="100%" stop-color="#4caf50"/>
+    </linearGradient>
+    <linearGradient id="gv-trunk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e18500"/>
+      <stop offset="55%" stop-color="#8b5000"/>
+      <stop offset="100%" stop-color="#6d3f00"/>
+    </linearGradient>
+    <radialGradient id="gv-leaf" cx="38%" cy="32%" r="78%">
+      <stop offset="0%" stop-color="#94f990"/>
+      <stop offset="55%" stop-color="#4caf50"/>
+      <stop offset="100%" stop-color="#006e1c"/>
+    </radialGradient>
+    <radialGradient id="gv-apple" cx="36%" cy="30%" r="78%">
+      <stop offset="0%" stop-color="#ff8d6b"/>
+      <stop offset="58%" stop-color="#ba1a1a"/>
+      <stop offset="100%" stop-color="#7a0f0f"/>
+    </radialGradient>
+    <radialGradient id="gv-sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe9a8"/>
+      <stop offset="60%" stop-color="#ffd54a"/>
+      <stop offset="100%" stop-color="#e18500"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky fills full viewBox -->
+  <rect x="0" y="0" width="400" height="300" fill="url(#gv-sky)"/>
+
+  <!-- Sun, top-left -->
+  <g>
+    <circle cx="58" cy="52" r="30" fill="url(#gv-sun)" stroke="#8b5000" stroke-width="3"/>
+    <g stroke="#ffd54a" stroke-width="4" stroke-linecap="round">
+      <line x1="58" y1="8" x2="58" y2="-2"/>
+      <line x1="58" y1="96" x2="58" y2="106"/>
+      <line x1="14" y1="52" x2="4" y2="52"/>
+      <line x1="102" y1="52" x2="112" y2="52"/>
+      <line x1="27" y1="21" x2="20" y2="14"/>
+      <line x1="89" y1="83" x2="96" y2="90"/>
+      <line x1="89" y1="21" x2="96" y2="14"/>
+      <line x1="27" y1="83" x2="20" y2="90"/>
+    </g>
+  </g>
+
+  <!-- Fluffy clouds -->
+  <g fill="#f5fbef">
+    <g transform="translate(300 56)">
+      <circle cx="0" cy="0" r="16"/>
+      <circle cx="20" cy="-4" r="20"/>
+      <circle cx="42" cy="2" r="15"/>
+      <rect x="-2" y="2" width="46" height="16" rx="8"/>
+    </g>
+    <g transform="translate(196 30) scale(0.8)">
+      <circle cx="0" cy="0" r="14"/>
+      <circle cx="18" cy="-3" r="17"/>
+      <circle cx="36" cy="2" r="13"/>
+      <rect x="-2" y="0" width="40" height="14" rx="7"/>
+    </g>
+  </g>
+
+  <!-- Grassy ground -->
+  <path d="M0 248 q70 -22 130 -8 q90 22 150 4 q70 -18 120 4 V300 H0 Z" fill="url(#gv-grass)" stroke="#006e1c" stroke-width="3" stroke-linejoin="round"/>
+  <!-- grass blades -->
+  <g stroke="#006e1c" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M44 256 q-3 -10 2 -16"/>
+    <path d="M52 257 q3 -9 0 -16"/>
+    <path d="M340 254 q-3 -10 2 -16"/>
+    <path d="M348 255 q3 -9 0 -16"/>
+  </g>
+
+  <!-- Tree on the right -->
+  <!-- trunk -->
+  <path d="M286 250 q-6 -40 0 -70 q3 -16 14 -16 q11 0 14 16 q6 30 0 70 Z" fill="url(#gv-trunk)" stroke="#6d3f00" stroke-width="3.5" stroke-linejoin="round"/>
+  <!-- root flare -->
+  <path d="M276 250 q8 -10 24 -10 q16 0 24 10" fill="none" stroke="#6d3f00" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- foliage clusters -->
+  <g stroke="#006e1c" stroke-width="3.5">
+    <circle cx="300" cy="110" r="48" fill="url(#gv-leaf)"/>
+    <circle cx="256" cy="132" r="32" fill="url(#gv-leaf)"/>
+    <circle cx="344" cy="132" r="32" fill="url(#gv-leaf)"/>
+    <circle cx="300" cy="86" r="30" fill="url(#gv-leaf)"/>
+  </g>
+  <!-- highlight on canopy -->
+  <ellipse cx="284" cy="92" rx="14" ry="9" fill="#94f990" fill-opacity="0.7"/>
+  <!-- apples still on the tree -->
+  <g stroke="#7a0f0f" stroke-width="2.5">
+    <circle cx="272" cy="116" r="9" fill="url(#gv-apple)"/>
+    <circle cx="330" cy="118" r="9" fill="url(#gv-apple)"/>
+    <circle cx="312" cy="150" r="9" fill="url(#gv-apple)"/>
+  </g>
+
+  <!-- Downward motion arrow (gravity pulling the apple) -->
+  <path d="M214 96 q-16 60 -2 116" fill="none" stroke="#171d16" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 11"/>
+  <path d="M198 196 l14 24 14 -24" fill="none" stroke="#171d16" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Falling apple with motion lines -->
+  <g>
+    <!-- motion lines above apple -->
+    <g stroke="#ba1a1a" stroke-width="3.5" stroke-linecap="round" stroke-opacity="0.6">
+      <line x1="200" y1="150" x2="200" y2="166"/>
+      <line x1="226" y1="150" x2="226" y2="166"/>
+    </g>
+    <circle cx="213" cy="200" r="22" fill="#171d16" fill-opacity="0.12"/>
+    <circle cx="213" cy="194" r="20" fill="url(#gv-apple)" stroke="#7a0f0f" stroke-width="3.5"/>
+    <!-- dimple + shine -->
+    <path d="M213 178 q0 6 0 8" stroke="#7a0f0f" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M213 176 q5 -8 13 -7" stroke="#6d3f00" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M214 176 q4 -2 8 0 q-1 5 -7 5 q-3 -3 -1 -5 z" fill="#4caf50" stroke="#006e1c" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="205" cy="186" rx="5" ry="7" fill="#ff8d6b" fill-opacity="0.7"/>
+  </g>
+
+  <!-- Shadow on grass where apple will land -->
+  <ellipse cx="213" cy="252" rx="20" ry="6" fill="#006e1c" fill-opacity="0.35"/>
+
+  <!-- Small kid figure looking up, left of the falling apple -->
+  <g>
+    <!-- shadow -->
+    <ellipse cx="120" cy="266" rx="22" ry="6" fill="#006e1c" fill-opacity="0.3"/>
+    <!-- legs -->
+    <path d="M112 256 v-18 M128 256 v-18" stroke="#0061a4" stroke-width="9" stroke-linecap="round" fill="none"/>
+    <!-- body -->
+    <path d="M104 238 q0 -28 16 -28 q16 0 16 28 Z" fill="#0d9488" stroke="#075e57" stroke-width="3" stroke-linejoin="round"/>
+    <!-- arms raised slightly -->
+    <path d="M106 222 q-12 0 -16 -10" stroke="#0d9488" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M134 222 q12 0 16 -10" stroke="#0d9488" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <!-- head, tilted up -->
+    <circle cx="120" cy="194" r="15" fill="#ffdcbe" stroke="#8b5000" stroke-width="3"/>
+    <!-- hair -->
+    <path d="M106 190 q4 -16 14 -16 q10 0 14 16 q-14 -7 -28 0 z" fill="#171d16"/>
+    <!-- face: eyes looking up + smile -->
+    <circle cx="115" cy="192" r="2" fill="#171d16"/>
+    <circle cx="124" cy="192" r="2" fill="#171d16"/>
+    <path d="M114 199 q6 5 12 0" stroke="#171d16" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>
