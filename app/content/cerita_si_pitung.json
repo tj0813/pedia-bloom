@@ -1,0 +1,130 @@
+{
+  "id": "cerita_si_pitung",
+  "title_id": "Si Pitung",
+  "title_en": "Si Pitung",
+  "subtitle_id": "Pendekar Betawi yang membela rakyat kecil!",
+  "subtitle_en": "The Betawi hero who stood up for the poor!",
+  "data_card": [
+    {
+      "icon": "public",
+      "label_id": "Asal",
+      "label_en": "Origin",
+      "value_id": "Betawi, Batavia (Jakarta)",
+      "value_en": "Betawi, Batavia (Jakarta)"
+    },
+    {
+      "icon": "auto_stories",
+      "label_id": "Jenis",
+      "label_en": "Type",
+      "value_id": "Cerita rakyat / legenda",
+      "value_en": "Folk tale / legend"
+    },
+    {
+      "icon": "groups",
+      "label_id": "Tokoh utama",
+      "label_en": "Main characters",
+      "value_id": "Si Pitung, Haji Naipin, rakyat kecil",
+      "value_en": "Si Pitung, Haji Naipin, the common folk"
+    },
+    {
+      "icon": "sports_martial_arts",
+      "label_id": "Keahlian",
+      "label_en": "Skill",
+      "value_id": "Pencak silat & mengaji",
+      "value_en": "Pencak silat & reciting the Quran"
+    },
+    {
+      "icon": "shield",
+      "label_id": "Pelajaran",
+      "label_en": "Lesson",
+      "value_id": "Berani membela yang lemah",
+      "value_en": "Be brave and help the weak"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "cottage",
+      "h_id": "Anak Kampung dari Rawa Belong",
+      "h_en": "A Village Boy from Rawa Belong",
+      "body_id": "Dahulu kala, di sebuah kampung bernama Rawa Belong di Batavia (sekarang Jakarta), lahirlah seorang anak laki-laki. Banyak orang memanggilnya Si Pitung. Ia tumbuh di keluarga sederhana dan dikenal sebagai anak yang baik hati dan suka menolong. Walaupun hidupnya tidak kaya, hatinya selalu penuh keberanian.",
+      "body_en": "Long ago, in a village called Rawa Belong in Batavia (now Jakarta), a little boy was born. Many people called him Si Pitung. He grew up in a simple family and was known as a kind, helpful child. Even though his life was not rich, his heart was always full of courage."
+    },
+    {
+      "icon": "sports_martial_arts",
+      "h_id": "Belajar Silat dan Mengaji",
+      "h_en": "Learning Silat and the Quran",
+      "body_id": "Sejak kecil, Si Pitung rajin pergi mengaji kepada seorang guru bijak bernama Haji Naipin. Di sana ia belajar membaca Al-Qur'an dan berlatih pencak silat, yaitu seni bela diri khas Indonesia. Si Pitung berlatih dengan tekun setiap hari. Lama-kelamaan, ia menjadi pemuda yang gagah, cekatan, dan sangat pandai bersilat.",
+      "body_en": "From a young age, Si Pitung diligently went to study with a wise teacher named Haji Naipin. There he learned to read the Quran and trained in pencak silat, Indonesia's own martial art. Si Pitung practiced hard every single day. Over time, he became a strong, nimble young man who was very skilled at silat."
+    },
+    {
+      "icon": "volunteer_activism",
+      "h_id": "Membela Rakyat Kecil",
+      "h_en": "Standing Up for the Poor",
+      "body_id": "Pada masa itu, banyak orang kaya yang jahat dan para penjajah memperlakukan rakyat kecil dengan kejam. Para petani sering dipaksa menyerahkan hasil panennya. Melihat itu, hati Si Pitung sedih dan marah. Dengan berani, ia berdiri membela orang-orang yang lemah dan tertindas. Karena keberaniannya, rakyat kecil mencintai dan mengaguminya seperti pahlawan.",
+      "body_en": "In those days, many cruel rich people and the colonizers treated the poor harshly. Farmers were often forced to hand over their harvest. Seeing this, Si Pitung felt sad and angry. Bravely, he stood up to defend the weak and the oppressed. Because of his courage, the common folk loved and admired him like a hero."
+    },
+    {
+      "icon": "auto_awesome",
+      "h_id": "Legenda Robin Hood Betawi",
+      "h_en": "The Robin Hood of Betawi",
+      "body_id": "Cerita tentang keberanian Si Pitung menyebar ke seluruh Batavia. Banyak orang menyebutnya 'Robin Hood dari Betawi', karena ia berani melawan yang kuat demi menolong yang lemah. Hingga kini, kisahnya diceritakan dalam lenong, syair, dan dongeng. Rumah panggung khas Betawi di Marunda pun dijaga sebagai kenangan akan sang pendekar. Si Pitung menjadi pahlawan kebanggaan masyarakat Betawi.",
+      "body_en": "Stories of Si Pitung's bravery spread across all of Batavia. Many people called him 'the Robin Hood of Betawi', because he dared to fight the powerful to help the weak. To this day, his tale is told in lenong theater, poems, and stories. A traditional Betawi stilt house in Marunda is even kept as a memory of the hero. Si Pitung became a hero the Betawi people are proud of."
+    }
+  ],
+  "moral_id": "Jadilah pemberani dan baik hati. Seperti Si Pitung, kita harus berani membela teman yang lemah dan selalu menolong orang yang diperlakukan tidak adil.",
+  "moral_en": "Be brave and kind. Like Si Pitung, we should have the courage to stand up for those who are weak and always help people who are treated unfairly.",
+  "facts": [
+    { "id": "Si Pitung lahir di kampung Rawa Belong, dekat Stasiun Palmerah, Jakarta.", "en": "Si Pitung was born in Rawa Belong village, near today's Palmerah Station in Jakarta." },
+    { "id": "Nama 'Pitung' diduga berasal dari kata Jawa 'pituan pitulung', artinya 'tujuh sekawan tolong-menolong'.", "en": "The name 'Pitung' is thought to come from the Javanese 'pituan pitulung', meaning 'seven friends who help each other'." },
+    { "id": "Si Pitung belajar silat dan mengaji dari gurunya, Haji Naipin.", "en": "Si Pitung learned silat and the Quran from his teacher, Haji Naipin." },
+    { "id": "Banyak orang menjuluki Si Pitung 'Robin Hood dari Betawi'.", "en": "Many people nicknamed Si Pitung 'the Robin Hood of Betawi'." },
+    { "id": "Kisah Si Pitung sering dipentaskan dalam lenong, yaitu teater rakyat Betawi.", "en": "Si Pitung's story is often performed in lenong, the Betawi folk theater." },
+    { "id": "Sebuah rumah panggung Betawi di Marunda dikenang sebagai 'Rumah Si Pitung'.", "en": "A Betawi stilt house in Marunda is remembered as the 'House of Si Pitung'." }
+  ],
+  "glossary": [
+    { "term": "Betawi", "def_id": "Suku dan budaya asli kota Jakarta.", "def_en": "The native ethnic group and culture of the city of Jakarta." },
+    { "term": "Pencak silat", "def_id": "Seni bela diri tradisional asli Indonesia.", "def_en": "A traditional martial art that comes from Indonesia." },
+    { "term": "Pendekar", "def_id": "Orang yang ahli bela diri dan berani membela kebenaran.", "def_en": "A person skilled in martial arts who bravely defends what is right." },
+    { "term": "Mengaji", "def_id": "Belajar membaca kitab suci Al-Qur'an.", "def_en": "Learning to read the holy book, the Quran." },
+    { "term": "Lenong", "def_id": "Pertunjukan teater rakyat khas Betawi yang lucu dan menghibur.", "def_en": "A funny and entertaining Betawi folk theater performance." },
+    { "term": "Rumah panggung", "def_id": "Rumah yang dibangun di atas tiang-tiang tinggi agar aman dari banjir.", "def_en": "A house built on tall stilts to stay safe from floods." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/375a8ceebb7ad54b.jpg",
+      "caption_id": "Rumah Si Pitung di Marunda, sebuah rumah panggung khas Betawi yang berwarna merah dengan bendera Indonesia.",
+      "caption_en": "The House of Si Pitung in Marunda, a red traditional Betawi stilt house flying the Indonesian flag.",
+      "credit": "Marwan Mohamad",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/d83296a8e23b77de.jpg",
+      "caption_id": "Gerbang bertuliskan 'Rumah Si Pitung' menyambut pengunjung yang ingin mengenang sang pendekar Betawi.",
+      "caption_en": "A gate reading 'Rumah Si Pitung' welcomes visitors who come to remember the Betawi hero.",
+      "credit": "Olobaho",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/d0fb4f9626157996.jpg",
+      "caption_id": "Tangga kayu berukir indah menuju lantai atas rumah panggung Si Pitung.",
+      "caption_en": "A beautifully carved wooden staircase leads up to the upper floor of Si Pitung's stilt house.",
+      "credit": "Olobaho",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/bcc70fea86e13c5a.jpg",
+      "caption_id": "Bagian atas rumah dari kayu tua dengan jendela mungil berbentuk lengkung, khas bangunan Betawi.",
+      "caption_en": "The old wooden upper part of the house with a small arched window, typical of Betawi buildings.",
+      "credit": "Olobaho",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/320cc4ae13d7726f.jpg",
+      "caption_id": "Pemandangan dari balkon rumah Si Pitung yang berdiri berdekatan dengan sungai.",
+      "caption_en": "The view from the balcony of Si Pitung's house, which stands right beside a river.",
+      "credit": "Olobaho",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Si_Pitung"
+}

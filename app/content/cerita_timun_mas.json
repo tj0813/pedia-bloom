@@ -1,0 +1,116 @@
+{
+  "id": "cerita_timun_mas",
+  "title_id": "Timun Mas",
+  "title_en": "The Golden Cucumber",
+  "subtitle_id": "Gadis pemberani yang mengalahkan raksasa dengan biji ajaib!",
+  "subtitle_en": "The brave girl who outwits a giant with magic seeds!",
+  "data_card": [
+    {
+      "icon": "public",
+      "label_id": "Asal",
+      "label_en": "Origin",
+      "value_id": "Jawa Tengah, Indonesia",
+      "value_en": "Central Java, Indonesia"
+    },
+    {
+      "icon": "auto_stories",
+      "label_id": "Jenis",
+      "label_en": "Type",
+      "value_id": "Cerita rakyat / dongeng",
+      "value_en": "Folk tale / fairy tale"
+    },
+    {
+      "icon": "groups",
+      "label_id": "Tokoh utama",
+      "label_en": "Main characters",
+      "value_id": "Timun Mas, Mbok Srini, raksasa",
+      "value_en": "Timun Mas, Mbok Srini, the giant"
+    },
+    {
+      "icon": "spa",
+      "label_id": "Benda ajaib",
+      "label_en": "Magic items",
+      "value_id": "Biji timun, jarum, garam, terasi",
+      "value_en": "Cucumber seeds, needles, salt, shrimp paste"
+    },
+    {
+      "icon": "shield",
+      "label_id": "Pelajaran",
+      "label_en": "Lesson",
+      "value_id": "Berani, cerdik, dan tidak mudah menyerah",
+      "value_en": "Be brave, clever, and never give up"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "favorite",
+      "h_id": "Seorang Ibu yang Merindukan Anak",
+      "h_en": "A Mother Who Longed for a Child",
+      "body_id": "Dahulu kala, di sebuah desa di Jawa Tengah, hiduplah seorang janda tua bernama Mbok Srini. Ia sangat ingin mempunyai anak, tetapi ia hidup sendirian. Suatu hari, seorang raksasa besar memberinya sebutir biji mentimun ajaib. Raksasa itu berkata bahwa dari biji itu akan lahir seorang anak. Dengan gembira, Mbok Srini menanam biji itu dan merawatnya setiap hari.",
+      "body_en": "Long ago, in a village in Central Java, there lived an old widow named Mbok Srini. She wished very much to have a child, but she lived all alone. One day, a big giant gave her a single magic cucumber seed. The giant said that a child would be born from that seed. Happily, Mbok Srini planted the seed and cared for it every day."
+    },
+    {
+      "icon": "child_care",
+      "h_id": "Bayi dari Timun Emas",
+      "h_en": "A Baby from a Golden Cucumber",
+      "body_id": "Tidak lama kemudian, tumbuhlah sebuah mentimun yang sangat besar dan berkilau seperti emas. Ketika Mbok Srini membukanya dengan hati-hati, ia terkejut dan senang sekali. Di dalamnya ada seorang bayi perempuan yang cantik! Mbok Srini menamainya Timun Mas. Ia membesarkan Timun Mas dengan penuh kasih sayang, dan gadis kecil itu tumbuh menjadi anak yang ceria, baik, dan pemberani.",
+      "body_en": "Before long, a huge cucumber grew, shining like gold. When Mbok Srini opened it carefully, she was surprised and overjoyed. Inside was a beautiful baby girl! Mbok Srini named her Timun Mas, the Golden Cucumber. She raised Timun Mas with great love, and the little girl grew into a cheerful, kind, and brave child."
+    },
+    {
+      "icon": "directions_run",
+      "h_id": "Empat Bungkusan Ajaib",
+      "h_en": "Four Magic Bundles",
+      "body_id": "Suatu hari, raksasa itu datang kembali. Ia ingin membawa Timun Mas pergi. Mbok Srini takut kehilangan anaknya, tetapi ia punya rencana. Ia memberi Timun Mas empat bungkusan kecil berisi biji timun, jarum, garam, dan terasi. 'Larilah, Nak, dan gunakan ini bila raksasa mengejarmu,' bisik Mbok Srini. Timun Mas pun berlari secepat kakinya melangkah, sementara raksasa mengejar di belakangnya.",
+      "body_en": "One day, the giant came back. He wanted to take Timun Mas away. Mbok Srini was afraid of losing her child, but she had a plan. She gave Timun Mas four little bundles holding cucumber seeds, needles, salt, and shrimp paste. 'Run, my child, and use these if the giant chases you,' Mbok Srini whispered. So Timun Mas ran as fast as her feet could carry her, while the giant chased behind."
+    },
+    {
+      "icon": "auto_awesome",
+      "h_id": "Kecerdikan Timun Mas",
+      "h_en": "The Cleverness of Timun Mas",
+      "body_id": "Ketika raksasa hampir menangkapnya, Timun Mas melempar biji timun. Wuus! Tumbuhlah ladang mentimun yang lebat. Lalu ia melempar jarum, dan muncullah hutan bambu yang rapat. Ia menabur garam, dan terbentanglah lautan luas. Akhirnya ia melempar terasi, yang berubah menjadi lautan lumpur. Raksasa pun terjebak di dalamnya dan menghilang selamanya. Timun Mas berlari pulang dan memeluk Mbok Srini. Sejak itu, mereka hidup bahagia dan damai.",
+      "body_en": "When the giant nearly caught her, Timun Mas threw the cucumber seeds. Whoosh! A thick cucumber field sprang up. Then she threw the needles, and a dense bamboo forest appeared. She scattered the salt, and a wide sea spread out. At last she threw the shrimp paste, which turned into a sea of mud. The giant got stuck inside it and disappeared for good. Timun Mas ran home and hugged Mbok Srini. From then on, they lived happily and peacefully."
+    }
+  ],
+  "moral_id": "Keberanian dan kecerdikan bisa mengalahkan masalah sebesar apa pun. Seperti Timun Mas, jangan mudah menyerah, gunakan akalmu, dan percayalah pada dirimu sendiri.",
+  "moral_en": "Bravery and cleverness can overcome even the biggest problems. Like Timun Mas, never give up easily, use your wits, and believe in yourself.",
+  "facts": [
+    { "id": "Timun Mas adalah cerita rakyat dari Jawa Tengah.", "en": "Timun Mas is a folk tale from Central Java." },
+    { "id": "Nama 'Timun Mas' berarti 'mentimun emas', karena ia lahir dari mentimun ajaib.", "en": "The name 'Timun Mas' means 'golden cucumber', because she was born from a magic cucumber." },
+    { "id": "Timun Mas membawa empat benda ajaib: biji timun, jarum, garam, dan terasi.", "en": "Timun Mas carried four magic items: cucumber seeds, needles, salt, and shrimp paste." },
+    { "id": "Garam yang ditabur Timun Mas berubah menjadi lautan yang luas.", "en": "The salt that Timun Mas scattered turned into a wide sea." },
+    { "id": "Tidak seperti banyak dongeng, Timun Mas menyelamatkan dirinya sendiri tanpa menunggu pangeran.", "en": "Unlike many fairy tales, Timun Mas saves herself without waiting for a prince." },
+    { "id": "Raksasa dalam cerita ini sering disebut Buto Ijo, artinya 'raksasa hijau'.", "en": "The giant in this story is often called Buto Ijo, meaning 'the green giant'." }
+  ],
+  "glossary": [
+    { "term": "Cerita rakyat", "def_id": "Kisah turun-temurun yang diceritakan dari mulut ke mulut oleh masyarakat.", "def_en": "A traditional story passed down by word of mouth among the people." },
+    { "term": "Raksasa", "def_id": "Makhluk bertubuh sangat besar di dalam dongeng.", "def_en": "A creature with a very large body found in fairy tales." },
+    { "term": "Mbok", "def_id": "Sebutan untuk ibu atau perempuan tua dalam bahasa Jawa.", "def_en": "A Javanese word used to address a mother or an older woman." },
+    { "term": "Terasi", "def_id": "Bumbu masakan dari udang yang dihaluskan, beraroma kuat.", "def_en": "A strong-smelling cooking paste made from ground shrimp." },
+    { "term": "Kecerdikan", "def_id": "Kepandaian menemukan cara cerdas untuk menyelesaikan masalah.", "def_en": "The cleverness to find smart ways to solve a problem." },
+    { "term": "Buto Ijo", "def_id": "Nama raksasa hijau dalam cerita rakyat Jawa.", "def_en": "The name of the green giant in Javanese folk tales." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/77cb8a88c71a47ea.jpg",
+      "caption_id": "Timun Mas berhadapan dengan sosok dalam pementasan teater cerita rakyat Timun Mas.",
+      "caption_en": "Timun Mas faces a character in a stage play of the Timun Mas folk tale.",
+      "credit": "Ebi Wijaya Archive",
+      "license": "CC BY 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/c9c3562b41ab0fe3.jpg",
+      "caption_id": "Dalam pementasan, raksasa hijau (Buto Ijo) mengejar Timun Mas yang berusaha meloloskan diri.",
+      "caption_en": "In the play, the green giant (Buto Ijo) chases Timun Mas as she tries to escape.",
+      "credit": "Ebi Wijaya Archive",
+      "license": "CC BY 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/0a176f60e65b90c6.jpg",
+      "caption_id": "Adegan teater memperlihatkan dua tokoh saling berbincang di tengah hutan cerita.",
+      "caption_en": "A stage scene shows two characters talking in the story's forest.",
+      "credit": "Ebi Wijaya Archive",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Timun_Mas"
+}

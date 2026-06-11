@@ -1,0 +1,130 @@
+{
+  "id": "cerita_malin_kundang",
+  "title_id": "Malin Kundang",
+  "title_en": "Malin Kundang",
+  "subtitle_id": "Anak yang lupa pada ibunya",
+  "subtitle_en": "The boy who forgot his mother",
+  "data_card": [
+    {
+      "icon": "public",
+      "label_id": "Asal",
+      "label_en": "Origin",
+      "value_id": "Sumatra Barat (Minangkabau)",
+      "value_en": "West Sumatra (Minangkabau)"
+    },
+    {
+      "icon": "auto_stories",
+      "label_id": "Jenis",
+      "label_en": "Type",
+      "value_id": "Cerita rakyat / legenda",
+      "value_en": "Folk tale / legend"
+    },
+    {
+      "icon": "groups",
+      "label_id": "Tokoh Utama",
+      "label_en": "Main Characters",
+      "value_id": "Malin Kundang & ibunya",
+      "value_en": "Malin Kundang & his mother"
+    },
+    {
+      "icon": "place",
+      "label_id": "Berkaitan Dengan",
+      "label_en": "Linked To",
+      "value_id": "Batu Malin Kundang, Pantai Air Manis",
+      "value_en": "The Malin Kundang Stone, Air Manis Beach"
+    },
+    {
+      "icon": "favorite",
+      "label_id": "Pesan",
+      "label_en": "Lesson",
+      "value_id": "Sayangi dan hormati orang tua",
+      "value_en": "Love and respect your parents"
+    }
+  ],
+  "sections": [
+    {
+      "icon": "sailing",
+      "h_id": "Awal Cerita",
+      "h_en": "The Beginning",
+      "body_id": "Dahulu kala di sebuah desa nelayan di Sumatra Barat, hiduplah seorang anak laki-laki bernama Malin Kundang. Ia tinggal bersama ibunya yang sangat menyayanginya. Mereka hidup sederhana, tetapi penuh kasih. Ketika Malin tumbuh besar, ia ingin pergi merantau ke negeri seberang untuk mengubah nasib. Dengan berat hati, sang ibu melepas anaknya pergi naik kapal saudagar.",
+      "body_en": "Long ago, in a fishing village in West Sumatra, there lived a boy named Malin Kundang. He lived with his mother, who loved him very much. They lived simply, but with lots of love. When Malin grew up, he wanted to sail far away to seek a better life. With a heavy heart, his mother let him leave on a merchant's ship."
+    },
+    {
+      "icon": "directions_boat",
+      "h_id": "Malin Menjadi Kaya",
+      "h_en": "Malin Becomes Rich",
+      "body_id": "Di perantauan, Malin bekerja keras dan tidak pernah menyerah. Lama-kelamaan ia menjadi seorang saudagar kaya yang memiliki banyak kapal dagang. Ia pun menikah dengan seorang istri yang cantik. Tahun demi tahun berlalu, dan Malin lupa pada kampung halamannya. Sementara itu, di desa, ibunya setiap hari menanti anaknya pulang.",
+      "body_en": "Far away, Malin worked hard and never gave up. Over time he became a rich merchant who owned many trading ships. He even married a beautiful wife. Year after year passed, and Malin forgot about his home village. Meanwhile, back home, his mother waited every single day for her son to return."
+    },
+    {
+      "icon": "sentiment_dissatisfied",
+      "h_id": "Pertemuan yang Menyedihkan",
+      "h_en": "A Sad Reunion",
+      "body_id": "Suatu hari, kapal megah Malin berlabuh di pantai kampung halamannya. Ibunya yang sudah tua segera berlari menyambut, karena ia mengenali wajah anaknya. Tetapi Malin malu mengakui ibunya yang berpakaian lusuh di depan istrinya. Ia berpura-pura tidak mengenal wanita tua itu dan menyuruhnya pergi. Hati sang ibu pun hancur dan sangat sedih.",
+      "body_en": "One day, Malin's grand ship anchored at the beach of his home village. His old mother quickly ran to greet him, because she recognized her son's face. But Malin was ashamed to admit that this shabby old woman was his mother in front of his wife. He pretended not to know her and told her to go away. His mother's heart was broken and full of sorrow."
+    },
+    {
+      "icon": "landscape",
+      "h_id": "Akhir Cerita",
+      "h_en": "The Ending",
+      "body_id": "Dengan air mata, sang ibu berdoa, \"Jika ia benar anakku, semoga ia diberi pelajaran.\" Saat kapal Malin kembali berlayar, datanglah badai besar. Menurut legenda, Malin berubah menjadi sebuah batu di tepi pantai. Sampai sekarang, ada batu berbentuk orang yang sedang bersujud di Pantai Air Manis. Orang Minangkabau menyebutnya Batu Malin Kundang.",
+      "body_en": "With tears, his mother prayed, \"If he truly is my son, may he learn his lesson.\" As Malin's ship sailed away, a great storm came. According to the legend, Malin turned into a stone at the edge of the beach. To this day, there is a rock shaped like a kneeling person at Air Manis Beach. The Minangkabau people call it the Malin Kundang Stone."
+    }
+  ],
+  "moral_id": "Selalu sayangi dan hormati orang tua kita, terutama ibu. Sebanyak apa pun harta yang kita punya, kita tidak boleh malu atau melupakan keluarga yang telah membesarkan kita dengan penuh kasih.",
+  "moral_en": "Always love and respect your parents, especially your mother. No matter how much wealth we have, we should never be ashamed of or forget the family who raised us with love.",
+  "facts": [
+    { "id": "Batu Malin Kundang sungguh ada dan bisa kamu kunjungi di Pantai Air Manis, Kota Padang, Sumatra Barat!", "en": "The Malin Kundang Stone is real and you can visit it at Air Manis Beach in Padang City, West Sumatra!" },
+    { "id": "Patung batu di pantai itu dibuat oleh seniman bernama Ibenzani Usman pada tahun 1980-an.", "en": "The stone sculpture on the beach was made by an artist named Ibenzani Usman in the 1980s." },
+    { "id": "Cerita Malin Kundang berasal dari budaya Minangkabau, tempat anak laki-laki sering merantau jauh.", "en": "The Malin Kundang story comes from Minangkabau culture, where young men often travel far from home." },
+    { "id": "Cerita yang mirip juga ada di Malaysia, dengan tokoh bernama Si Tenggang.", "en": "A similar story also exists in Malaysia, with a character named Si Tenggang." },
+    { "id": "Kisah ini sudah dibuat menjadi banyak drama dan sinetron di televisi Indonesia.", "en": "This tale has been turned into many dramas and TV series in Indonesia." },
+    { "id": "Pantai Air Manis menjadi tempat wisata terkenal karena legenda Malin Kundang.", "en": "Air Manis Beach became a famous tourist spot because of the Malin Kundang legend." }
+  ],
+  "glossary": [
+    { "term": "Merantau", "def_id": "Pergi jauh meninggalkan kampung halaman untuk bekerja atau mencari pengalaman.", "def_en": "To travel far away from your home village to work or seek experience." },
+    { "term": "Saudagar", "def_id": "Pedagang besar yang kaya dan biasanya memiliki banyak barang dagangan.", "def_en": "A wealthy merchant who usually owns lots of goods to trade." },
+    { "term": "Durhaka", "def_id": "Sikap anak yang tidak hormat dan menyakiti hati orang tuanya.", "def_en": "When a child is disrespectful and hurts their parents' feelings." },
+    { "term": "Minangkabau", "def_id": "Suku bangsa dari Sumatra Barat yang terkenal dengan tradisi merantau.", "def_en": "An ethnic group from West Sumatra famous for its tradition of traveling far to seek a living." },
+    { "term": "Legenda", "def_id": "Cerita zaman dulu yang dipercaya berhubungan dengan tempat atau benda nyata.", "def_en": "An old story believed to be connected to a real place or object." },
+    { "term": "Bersujud", "def_id": "Posisi tubuh menunduk sampai ke tanah, seperti sedang meminta maaf.", "def_en": "A position of bowing down to the ground, as if asking for forgiveness." }
+  ],
+  "gallery": [
+    {
+      "src": "app/assets/img/wiki/02ae3435e4d8cc65.jpg",
+      "caption_id": "Inilah Batu Malin Kundang yang sungguhan! Bentuknya seperti orang yang sedang bersujud di Pantai Air Manis, Padang.",
+      "caption_en": "This is the real Malin Kundang Stone! It is shaped like a person kneeling down at Air Manis Beach in Padang.",
+      "credit": "Crisco 1492",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/c4ec71a088516d2d.jpg",
+      "caption_id": "Bongkahan batu di pantai ini dipercaya sebagai tubuh Malin Kundang yang berubah menjadi batu karang.",
+      "caption_en": "These rocks on the beach are believed to be Malin Kundang's body, which turned into stone.",
+      "credit": "Crisco 1492",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/34e45866389008aa.jpg",
+      "caption_id": "Setiap hari banyak orang datang melihat Batu Malin Kundang dan teringat pesan ceritanya.",
+      "caption_en": "Every day many people come to see the Malin Kundang Stone and remember the story's message.",
+      "credit": "Yasin Habibillah Pratama",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "app/assets/img/wiki/ff1aec0a318714e9.jpg",
+      "caption_id": "Pantai Air Manis di Sumatra Barat, tempat cerita Malin Kundang berlangsung.",
+      "caption_en": "Air Manis Beach in West Sumatra, the place where the Malin Kundang story takes place.",
+      "credit": "Makka Kesuma",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "app/assets/img/wiki/2b0fab554962cc25.jpg",
+      "caption_id": "Cerita Malin Kundang pernah dibuat menjadi gambar pada perangko Indonesia tahun 1998.",
+      "caption_en": "The Malin Kundang story was once featured on an Indonesian postage stamp in 1998.",
+      "credit": "Government of Indonesia",
+      "license": "Public domain"
+    }
+  ],
+  "source": "https://id.wikipedia.org/wiki/Malin_Kundang"
+}

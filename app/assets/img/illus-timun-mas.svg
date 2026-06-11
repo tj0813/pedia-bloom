@@ -1,0 +1,283 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="tmSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33a0fd"/>
+      <stop offset="0.65" stop-color="#a9d7fb"/>
+      <stop offset="1" stop-color="#ffdcbe"/>
+    </linearGradient>
+    <linearGradient id="tmGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#94f990"/>
+      <stop offset="1" stop-color="#4caf50"/>
+    </linearGradient>
+    <linearGradient id="tmSkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffdcbe"/>
+      <stop offset="1" stop-color="#e8b88a"/>
+    </linearGradient>
+    <linearGradient id="tmDress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e18500"/>
+      <stop offset="1" stop-color="#8b5000"/>
+    </linearGradient>
+    <linearGradient id="tmBamboo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#94f990"/>
+      <stop offset="1" stop-color="#006e1c"/>
+    </linearGradient>
+    <linearGradient id="tmGiant" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4caf50"/>
+      <stop offset="1" stop-color="#006e1c"/>
+    </linearGradient>
+    <radialGradient id="tmSeed" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff6d6"/>
+      <stop offset="1" stop-color="#ffd54a"/>
+    </radialGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="400" height="300" fill="url(#tmSky)"/>
+
+  <!-- warm sun -->
+  <circle cx="64" cy="56" r="36" fill="#ffd54a" opacity="0.55"/>
+  <circle cx="64" cy="56" r="23" fill="#ffd54a" opacity="0.9"/>
+
+  <!-- clouds -->
+  <g fill="#f5fbef" opacity="0.9">
+    <ellipse cx="150" cy="44" rx="30" ry="13"/>
+    <ellipse cx="172" cy="49" rx="22" ry="10"/>
+    <ellipse cx="300" cy="38" rx="28" ry="12"/>
+  </g>
+
+  <!-- rolling hills -->
+  <ellipse cx="110" cy="200" rx="180" ry="56" fill="#4caf50" opacity="0.5"/>
+  <ellipse cx="330" cy="206" rx="170" ry="52" fill="#4caf50" opacity="0.55"/>
+
+  <!-- ===== CLUMSY GIANT chasing, far background (right) ===== -->
+  <g opacity="0.95">
+    <!-- shadow -->
+    <ellipse cx="332" cy="214" rx="46" ry="9" fill="#171d16" opacity="0.16"/>
+    <!-- back leg striding -->
+    <path d="M322 168 L308 208 Q306 214 314 214 L324 212 Q330 188 332 170 Z"
+          fill="url(#tmGiant)" stroke="#004d14" stroke-width="3" stroke-linejoin="round"/>
+    <!-- front leg striding forward -->
+    <path d="M340 168 L356 206 Q358 212 350 212 L340 212 Q336 188 334 170 Z"
+          fill="url(#tmGiant)" stroke="#004d14" stroke-width="3" stroke-linejoin="round"/>
+    <!-- big feet -->
+    <g fill="#8b5000" stroke="#3a2410" stroke-width="2.5" stroke-linejoin="round">
+      <path d="M302 210 L326 210 L326 216 Q312 219 300 216 Z"/>
+      <path d="M338 208 L362 208 L364 214 Q350 218 338 215 Z"/>
+    </g>
+    <!-- round belly body -->
+    <ellipse cx="332" cy="148" rx="34" ry="32" fill="url(#tmGiant)" stroke="#004d14" stroke-width="3.5"/>
+    <!-- tummy belt -->
+    <path d="M300 150 Q332 162 364 150" fill="none" stroke="#8b5000" stroke-width="6" stroke-linecap="round"/>
+    <!-- arms reaching out (comic, clumsy) -->
+    <path d="M302 134 Q278 124 262 132" fill="none" stroke="url(#tmGiant)" stroke-width="13" stroke-linecap="round"/>
+    <path d="M362 132 Q380 124 388 136" fill="none" stroke="url(#tmGiant)" stroke-width="13" stroke-linecap="round"/>
+    <!-- grabby hands -->
+    <circle cx="258" cy="133" r="8" fill="#4caf50" stroke="#004d14" stroke-width="2.5"/>
+    <g stroke="#004d14" stroke-width="2" stroke-linecap="round" fill="none">
+      <path d="M252 128 L250 124"/>
+      <path d="M257 126 L257 121"/>
+      <path d="M262 127 L264 122"/>
+    </g>
+    <circle cx="388" cy="138" r="8" fill="#4caf50" stroke="#004d14" stroke-width="2.5"/>
+    <!-- silly head -->
+    <ellipse cx="332" cy="106" rx="24" ry="22" fill="url(#tmGiant)" stroke="#004d14" stroke-width="3.5"/>
+    <!-- messy hair tufts -->
+    <g fill="#3a2410" stroke="#171d16" stroke-width="2" stroke-linejoin="round">
+      <path d="M316 88 Q314 76 322 80 Q322 86 326 88 Z"/>
+      <path d="M332 84 Q332 72 340 78 Q338 84 340 88 Z"/>
+      <path d="M346 88 Q350 78 352 86 Q348 88 348 92 Z"/>
+    </g>
+    <!-- wide goofy eyes (cross-eyed, friendly) -->
+    <circle cx="324" cy="104" r="7" fill="#f5fbef" stroke="#004d14" stroke-width="1.6"/>
+    <circle cx="340" cy="104" r="7" fill="#f5fbef" stroke="#004d14" stroke-width="1.6"/>
+    <circle cx="327" cy="106" r="3" fill="#171d16"/>
+    <circle cx="337" cy="106" r="3" fill="#171d16"/>
+    <!-- chubby cheeks -->
+    <g fill="#ff8a5c" opacity="0.5">
+      <circle cx="318" cy="114" r="4.5"/>
+      <circle cx="346" cy="114" r="4.5"/>
+    </g>
+    <!-- silly open round mouth + one tooth -->
+    <ellipse cx="332" cy="120" rx="8" ry="6" fill="#7a0f0f" stroke="#004d14" stroke-width="2"/>
+    <rect x="328" y="115" width="5" height="5" rx="1.5" fill="#f5fbef"/>
+    <!-- raised confused eyebrows -->
+    <path d="M318 96 Q324 92 330 95" fill="none" stroke="#3a2410" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M334 95 Q340 92 346 96" fill="none" stroke="#3a2410" stroke-width="2.6" stroke-linecap="round"/>
+    <!-- motion puff behind giant -->
+    <g fill="#f5fbef" opacity="0.55">
+      <circle cx="372" cy="198" r="7"/>
+      <circle cx="382" cy="204" r="5"/>
+    </g>
+  </g>
+
+  <!-- ===== BAMBOO sprouting behind the girl (mid-left) ===== -->
+  <g stroke="#004d14" stroke-width="2.6" stroke-linejoin="round">
+    <!-- tall stalk 1 -->
+    <rect x="92" y="92" width="13" height="116" rx="6" fill="url(#tmBamboo)"/>
+    <line x1="92" y1="122" x2="105" y2="122" stroke="#004d14" stroke-width="2.6"/>
+    <line x1="92" y1="152" x2="105" y2="152" stroke="#004d14" stroke-width="2.6"/>
+    <line x1="92" y1="182" x2="105" y2="182" stroke="#004d14" stroke-width="2.6"/>
+    <!-- tall stalk 2 -->
+    <rect x="116" y="116" width="12" height="92" rx="6" fill="url(#tmBamboo)"/>
+    <line x1="116" y1="144" x2="128" y2="144" stroke="#004d14" stroke-width="2.4"/>
+    <line x1="116" y1="172" x2="128" y2="172" stroke="#004d14" stroke-width="2.4"/>
+    <!-- short fresh sprout 3 -->
+    <rect x="70" y="150" width="11" height="58" rx="5" fill="url(#tmBamboo)"/>
+    <line x1="70" y1="178" x2="81" y2="178" stroke="#004d14" stroke-width="2.2"/>
+  </g>
+  <!-- bamboo leaves -->
+  <g fill="#4caf50" stroke="#004d14" stroke-width="2" stroke-linejoin="round">
+    <path d="M98 90 Q80 76 70 82 Q86 84 98 96 Z"/>
+    <path d="M99 90 Q118 74 128 82 Q112 82 99 96 Z"/>
+    <path d="M122 114 Q140 102 148 110 Q132 110 122 122 Z"/>
+    <path d="M75 148 Q60 138 52 144 Q66 146 75 156 Z"/>
+  </g>
+
+  <!-- ground -->
+  <rect x="0" y="200" width="400" height="100" fill="url(#tmGround)"/>
+  <ellipse cx="200" cy="204" rx="240" ry="20" fill="#94f990" opacity="0.6"/>
+
+  <!-- scattered flowers on field -->
+  <g>
+    <g transform="translate(60 250)">
+      <circle cx="0" cy="0" r="3.4" fill="#ffd54a"/>
+      <g fill="#ffffff"><circle cx="0" cy="-6" r="3"/><circle cx="6" cy="0" r="3"/><circle cx="0" cy="6" r="3"/><circle cx="-6" cy="0" r="3"/></g>
+      <circle cx="0" cy="0" r="2.4" fill="#e18500"/>
+    </g>
+    <g transform="translate(300 262)">
+      <g fill="#ffffff"><circle cx="0" cy="-5" r="2.6"/><circle cx="5" cy="0" r="2.6"/><circle cx="0" cy="5" r="2.6"/><circle cx="-5" cy="0" r="2.6"/></g>
+      <circle cx="0" cy="0" r="2.2" fill="#ffd54a"/>
+    </g>
+  </g>
+
+  <!-- girl soft shadow -->
+  <ellipse cx="188" cy="286" rx="62" ry="12" fill="#171d16" opacity="0.18"/>
+
+  <!-- ===== TIMUN MAS (brave girl, running) ===== -->
+
+  <!-- back leg (pushing off) -->
+  <path d="M186 234 L162 276 Q160 284 170 282 L184 274 Q188 252 190 234 Z"
+        fill="url(#tmDress)" stroke="#5a3208" stroke-width="3.4" stroke-linejoin="round"/>
+  <!-- front leg (forward, bent) -->
+  <path d="M200 232 L222 256 L218 280 Q214 286 208 282 L204 256 Q198 244 198 232 Z"
+        fill="url(#tmDress)" stroke="#5a3208" stroke-width="3.4" stroke-linejoin="round"/>
+  <!-- legs skin (lower) -->
+  <path d="M168 270 L184 268 L182 282 Q174 286 166 282 Z" fill="url(#tmSkin)" stroke="#c98b5e" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M208 268 L220 274 L218 282 Q212 286 206 282 Z" fill="url(#tmSkin)" stroke="#c98b5e" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- little shoes -->
+  <g fill="#ba1a1a" stroke="#7a0f0f" stroke-width="2.4" stroke-linejoin="round">
+    <path d="M158 280 L186 280 L186 286 Q172 290 156 286 Z"/>
+    <path d="M204 280 L228 280 L230 286 Q216 290 204 286 Z"/>
+  </g>
+
+  <!-- dress / kebaya tunic (orange) -->
+  <path d="M168 158
+           Q166 144 182 138
+           Q190 142 198 138
+           Q214 144 212 158
+           L218 236
+           Q190 246 168 236 Z"
+        fill="url(#tmDress)" stroke="#5a3208" stroke-width="3.4" stroke-linejoin="round"/>
+  <!-- dress trim + little floral dots -->
+  <path d="M170 230 Q190 240 216 230" fill="none" stroke="#ffd54a" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#fff6d6">
+    <circle cx="184" cy="176" r="2.4"/>
+    <circle cx="200" cy="190" r="2.4"/>
+    <circle cx="182" cy="206" r="2.4"/>
+    <circle cx="202" cy="166" r="2.2"/>
+  </g>
+  <!-- sash -->
+  <path d="M168 196 Q190 204 214 196 L213 208 Q190 216 169 208 Z" fill="#ba1a1a" stroke="#7a0f0f" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- back arm (his right) swinging back -->
+  <path d="M174 168 Q150 176 140 192" fill="none" stroke="url(#tmDress)" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="136" cy="196" r="8" fill="url(#tmSkin)" stroke="#c98b5e" stroke-width="2.6"/>
+
+  <!-- FRONT arm tossing seeds, raised forward -->
+  <path d="M206 162 Q236 152 256 134" fill="none" stroke="url(#tmDress)" stroke-width="13" stroke-linecap="round"/>
+  <!-- open tossing hand -->
+  <path d="M252 132 Q244 120 250 112 Q258 110 262 118 Q268 112 272 120 Q276 118 276 126 Q274 138 262 142 Z"
+        fill="url(#tmSkin)" stroke="#c98b5e" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- ===== MAGIC SEEDS flying with sparkle trail ===== -->
+  <g>
+    <!-- seeds arcing toward the bamboo -->
+    <ellipse cx="276" cy="118" rx="5" ry="6.5" fill="url(#tmSeed)" stroke="#e18500" stroke-width="1.6" transform="rotate(20 276 118)"/>
+    <ellipse cx="262" cy="100" rx="4.5" ry="6" fill="url(#tmSeed)" stroke="#e18500" stroke-width="1.6" transform="rotate(35 262 100)"/>
+    <ellipse cx="240" cy="92" rx="4" ry="5.5" fill="url(#tmSeed)" stroke="#e18500" stroke-width="1.4" transform="rotate(50 240 92)"/>
+    <ellipse cx="212" cy="96" rx="3.6" ry="5" fill="url(#tmSeed)" stroke="#e18500" stroke-width="1.4" transform="rotate(70 212 96)"/>
+    <ellipse cx="178" cy="104" rx="3.2" ry="4.4" fill="url(#tmSeed)" stroke="#e18500" stroke-width="1.4" transform="rotate(90 178 104)"/>
+    <ellipse cx="146" cy="116" rx="3" ry="4" fill="url(#tmSeed)" stroke="#e18500" stroke-width="1.2" transform="rotate(110 146 116)"/>
+  </g>
+  <!-- sparkle stars along the seed arc -->
+  <g fill="#fff6d6" stroke="#ffd54a" stroke-width="1">
+    <path d="M288 108 l2 4 4 2 -4 2 -2 4 -2 -4 -4 -2 4 -2 Z"/>
+    <path d="M252 84 l1.6 3.2 3.2 1.6 -3.2 1.6 -1.6 3.2 -1.6 -3.2 -3.2 -1.6 3.2 -1.6 Z"/>
+    <path d="M196 84 l1.6 3.2 3.2 1.6 -3.2 1.6 -1.6 3.2 -1.6 -3.2 -3.2 -1.6 3.2 -1.6 Z"/>
+    <path d="M158 100 l1.4 2.8 2.8 1.4 -2.8 1.4 -1.4 2.8 -1.4 -2.8 -2.8 -1.4 2.8 -1.4 Z"/>
+    <path d="M124 124 l1.4 2.8 2.8 1.4 -2.8 1.4 -1.4 2.8 -1.4 -2.8 -2.8 -1.4 2.8 -1.4 Z"/>
+  </g>
+
+  <!-- neck -->
+  <path d="M180 124 L180 140 Q190 148 198 140 L198 124 Z" fill="url(#tmSkin)" stroke="#c98b5e" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- hair back mass -->
+  <path d="M158 84 Q156 50 190 48 Q224 50 222 84 Q222 110 210 122 L208 100 Q200 92 190 92 Q180 92 172 100 L170 122 Q158 110 158 84 Z"
+        fill="#171d16" stroke="#0a0d09" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- face -->
+  <path d="M166 86
+           Q166 62 190 60
+           Q214 62 214 86
+           Q214 120 190 130
+           Q166 120 166 86 Z"
+        fill="url(#tmSkin)" stroke="#c98b5e" stroke-width="3.2" stroke-linejoin="round"/>
+
+  <!-- hair fringe + side pigtail bun -->
+  <path d="M166 80 Q170 56 190 56 Q210 56 214 80 Q204 70 190 72 Q176 70 166 80 Z"
+        fill="#171d16" stroke="#0a0d09" stroke-width="3" stroke-linejoin="round"/>
+  <!-- bouncing side bun with golden tie (timun MAS = golden) -->
+  <circle cx="222" cy="78" r="13" fill="#171d16" stroke="#0a0d09" stroke-width="3"/>
+  <circle cx="222" cy="78" r="5" fill="#ffd54a" stroke="#e18500" stroke-width="2"/>
+
+  <!-- eyebrows (determined, cheerful) -->
+  <path d="M172 84 Q179 80 186 83" fill="none" stroke="#171d16" stroke-width="3" stroke-linecap="round"/>
+  <path d="M194 83 Q201 80 208 84" fill="none" stroke="#171d16" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- big bright eyes -->
+  <g>
+    <ellipse cx="180" cy="93" rx="5.4" ry="6" fill="#f5fbef"/>
+    <ellipse cx="200" cy="93" rx="5.4" ry="6" fill="#f5fbef"/>
+    <circle cx="181" cy="94" r="3.2" fill="#171d16"/>
+    <circle cx="201" cy="94" r="3.2" fill="#171d16"/>
+    <circle cx="182.4" cy="92.4" r="1.2" fill="#f5fbef"/>
+    <circle cx="202.4" cy="92.4" r="1.2" fill="#f5fbef"/>
+  </g>
+
+  <!-- little nose -->
+  <path d="M190 96 L187 107 Q190 109 193 107 Z" fill="#e8b88a" stroke="#c98b5e" stroke-width="1.6" stroke-linejoin="round"/>
+
+  <!-- happy open smile -->
+  <path d="M180 114 Q190 124 200 114 Q190 119 180 114 Z" fill="#7a0f0f" stroke="#b07a4a" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M182 114 Q190 117 198 114" fill="#f5fbef"/>
+  <!-- rosy cheeks -->
+  <g fill="#ff8a5c" opacity="0.5">
+    <circle cx="174" cy="106" r="5"/>
+    <circle cx="206" cy="106" r="5"/>
+  </g>
+
+  <!-- speed lines behind girl (running motion) -->
+  <g stroke="#f5fbef" stroke-width="3" stroke-linecap="round" opacity="0.7">
+    <path d="M138 168 L116 166"/>
+    <path d="M140 200 L116 200"/>
+    <path d="M148 232 L126 234"/>
+  </g>
+
+  <!-- grass tufts -->
+  <g stroke="#006e1c" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M44 286 Q42 274 48 266"/>
+    <path d="M54 288 Q56 276 50 268"/>
+    <path d="M256 290 Q254 278 260 270"/>
+    <path d="M340 288 Q342 276 336 268"/>
+  </g>
+</svg>

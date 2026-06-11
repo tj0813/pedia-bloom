@@ -171,6 +171,12 @@ THUMB_OVERRIDE = {
     "pahlawan_jenderal_sudirman":         "app/assets/img/wiki/9f71f5a427d3deff.jpg",
     "pahlawan_bung_tomo":                 "app/assets/img/wiki/dbf0432c3c7bb06b.jpg",
     "pahlawan_pangeran_diponegoro_1":     "app/assets/img/wiki/2bad97a1315842df.jpg",
+    # Folk tales — new storybook hero illustrations (real landmark photos live in the gallery).
+    "cerita_malin_kundang":               "app/assets/img/illus-malin-kundang.svg",
+    "cerita_roro_jonggrang":              "app/assets/img/illus-roro-jonggrang.svg",
+    "cerita_sangkuriang":                 "app/assets/img/illus-sangkuriang.svg",
+    "cerita_si_pitung":                   "app/assets/img/illus-si-pitung.svg",
+    "cerita_timun_mas":                   "app/assets/img/illus-timun-mas.svg",
     "hub_luar_angkasa":                "app/assets/img/illus-luar-angkasa.svg",
     "misi_netiket_pahlawan_digital":   "app/assets/img/illus-netiket.svg",
     "pusat_budaya_tradisi":            "app/assets/img/illus-budaya.svg",

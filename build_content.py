@@ -101,6 +101,13 @@ TOPICS = {
     "sejarah_sumpah_pemuda":          {"wiki": "Sumpah Pemuda", "search": "Sumpah Pemuda 1928 youth"},
     "kewarganegaraan_pancasila":      {"wiki": "Pancasila", "search": "Pancasila Garuda emblem Indonesia"},
     "kewarganegaraan_hak_anak":       {"wiki": "Hak-hak anak", "search": "children rights"},
+
+    # --- Cerita Rakyat (Indonesian folk tales — story format) ---
+    "cerita_malin_kundang":  {"wiki": "Malin Kundang", "search": "Malin Kundang stone Padang"},
+    "cerita_roro_jonggrang": {"wiki": "Roro Jonggrang", "search": "Roro Jonggrang Durga statue Prambanan"},
+    "cerita_sangkuriang":    {"wiki": "Sangkuriang", "search": "Tangkuban Perahu mountain"},
+    "cerita_si_pitung":      {"wiki": "Si Pitung", "search": "Si Pitung Betawi"},
+    "cerita_timun_mas":      {"wiki": "Timun Mas", "search": "Timun Mas folklore Indonesia"},
 }
 
 FREE_LICENSE = re.compile(r"public domain|^pd|cc0|cc[\s-]?by", re.I)

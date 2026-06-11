@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="rjSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#171d16"/>
+      <stop offset="0.5" stop-color="#1c2a5e"/>
+      <stop offset="1" stop-color="#0061a4"/>
+    </linearGradient>
+    <linearGradient id="rjGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c2a5e"/>
+      <stop offset="1" stop-color="#171d16"/>
+    </linearGradient>
+    <linearGradient id="rjTemple" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33a0fd"/>
+      <stop offset="1" stop-color="#1c2a5e"/>
+    </linearGradient>
+    <linearGradient id="rjDress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e18500"/>
+      <stop offset="1" stop-color="#8b5000"/>
+    </linearGradient>
+    <linearGradient id="rjSelendang" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d9488"/>
+      <stop offset="1" stop-color="#006e1c"/>
+    </linearGradient>
+    <radialGradient id="rjMoon" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd54a"/>
+      <stop offset="0.55" stop-color="#fff6d6"/>
+      <stop offset="0.8" stop-color="#ffd54a" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#ffd54a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- night sky -->
+  <rect x="0" y="0" width="400" height="300" fill="url(#rjSky)"/>
+
+  <!-- big magical moon -->
+  <circle cx="312" cy="84" r="72" fill="url(#rjMoon)"/>
+  <circle cx="312" cy="84" r="40" fill="#fff6d6"/>
+  <g fill="#ffd54a" opacity="0.45">
+    <circle cx="300" cy="74" r="7"/>
+    <circle cx="324" cy="92" r="5"/>
+    <circle cx="318" cy="70" r="4"/>
+  </g>
+
+  <!-- scattered stars -->
+  <g fill="#fff6d6">
+    <circle cx="40" cy="40" r="2.5"/>
+    <circle cx="90" cy="70" r="1.8"/>
+    <circle cx="150" cy="36" r="2.2"/>
+    <circle cx="210" cy="58" r="1.6"/>
+    <circle cx="60" cy="110" r="1.8"/>
+    <circle cx="130" cy="96" r="1.5"/>
+    <circle cx="386" cy="150" r="2"/>
+    <circle cx="24" cy="160" r="1.8"/>
+    <circle cx="250" cy="30" r="1.8"/>
+    <circle cx="186" cy="110" r="1.6"/>
+  </g>
+  <!-- twinkling 4-point stars -->
+  <g fill="#ffd54a">
+    <path d="M70 28 l2 8 8 2 -8 2 -2 8 -2 -8 -8 -2 8 -2 z"/>
+    <path d="M236 86 l1.6 6.4 6.4 1.6 -6.4 1.6 -1.6 6.4 -1.6 -6.4 -6.4 -1.6 6.4 -1.6 z"/>
+    <path d="M44 86 l1.4 5.6 5.6 1.4 -5.6 1.4 -1.4 5.6 -1.4 -5.6 -5.6 -1.4 5.6 -1.4 z"/>
+  </g>
+
+  <!-- a thousand temple spires (Prambanan-style) silhouetted -->
+  <g fill="url(#rjTemple)" stroke="#171d16" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <!-- far row (smaller, dimmer) -->
+    <g opacity="0.55">
+      <path d="M28 196 l6 -26 q4 -16 8 -28 q4 12 8 28 l6 26 z"/>
+      <path d="M72 196 l5 -22 q4 -14 7 -24 q3 10 7 24 l5 22 z"/>
+      <path d="M358 196 l6 -26 q4 -16 8 -28 q4 12 8 28 l6 26 z"/>
+      <path d="M318 196 l5 -22 q4 -14 7 -24 q3 10 7 24 l5 22 z"/>
+    </g>
+    <!-- main row of tall slender spires -->
+    <path d="M96 206 l10 -54 q6 -34 14 -56 q8 22 14 56 l10 54 z"/>
+    <path d="M150 206 l8 -44 q6 -28 12 -48 q6 20 12 48 l8 44 z"/>
+    <path d="M232 206 l8 -46 q6 -30 12 -50 q6 20 12 50 l8 46 z"/>
+    <path d="M288 206 l10 -52 q6 -32 14 -54 q8 22 14 54 l10 52 z"/>
+  </g>
+
+  <!-- temple body tiers + finials on the main spires -->
+  <g fill="#33a0fd" stroke="#171d16" stroke-width="2.5" stroke-linejoin="round" opacity="0.95">
+    <rect x="110" y="150" width="20" height="14" rx="2"/>
+    <rect x="160" y="158" width="16" height="12" rx="2"/>
+    <rect x="240" y="156" width="16" height="12" rx="2"/>
+    <rect x="302" y="148" width="20" height="14" rx="2"/>
+  </g>
+  <!-- glowing finial tips catching moonlight -->
+  <g fill="#ffd54a">
+    <circle cx="120" cy="98" r="3.5"/>
+    <circle cx="168" cy="112" r="3"/>
+    <circle cx="248" cy="110" r="3"/>
+    <circle cx="312" cy="96" r="3.5"/>
+  </g>
+  <!-- subtle highlight edge on main spires (moonlit side) -->
+  <g fill="none" stroke="#d1e4ff" stroke-width="2" stroke-linecap="round" opacity="0.5">
+    <path d="M120 100 q-6 30 -10 96"/>
+    <path d="M312 98 q-6 30 -10 96"/>
+  </g>
+
+  <!-- ground -->
+  <rect x="0" y="196" width="400" height="104" fill="url(#rjGround)"/>
+  <ellipse cx="200" cy="200" rx="240" ry="16" fill="#1c2a5e" opacity="0.7"/>
+
+  <!-- the Javanese princess (Roro Jonggrang) in the foreground -->
+  <g>
+    <!-- soft shadow -->
+    <ellipse cx="170" cy="288" rx="58" ry="10" fill="#171d16" opacity="0.35"/>
+
+    <!-- batik skirt (kain) -->
+    <path d="M148 288 q-12 -56 4 -86 q9 -16 18 -16 q9 0 18 16 q16 30 4 86 z"
+          fill="url(#rjDress)" stroke="#3a2410" stroke-width="3.5" stroke-linejoin="round"/>
+    <!-- batik pattern dots -->
+    <g fill="#ffd54a" opacity="0.7">
+      <circle cx="160" cy="250" r="2.4"/>
+      <circle cx="180" cy="250" r="2.4"/>
+      <circle cx="170" cy="266" r="2.4"/>
+      <circle cx="155" cy="276" r="2.4"/>
+      <circle cx="185" cy="276" r="2.4"/>
+    </g>
+
+    <!-- kebaya top -->
+    <path d="M153 206 q17 -10 34 0 l-4 40 q-13 6 -26 0 z"
+          fill="#ba1a1a" stroke="#3a2410" stroke-width="3.5" stroke-linejoin="round"/>
+    <!-- teal selendang (shawl) draped over shoulders -->
+    <path d="M150 210 q20 -16 40 0 q-6 6 -14 4 q-6 18 -2 40 q-8 4 -10 0 q-2 -26 -4 -38 q-8 2 -14 -2 q1 -4 4 -4 z"
+          fill="url(#rjSelendang)" stroke="#0d9488" stroke-width="2.5" stroke-linejoin="round" opacity="0.95"/>
+    <!-- gold belt -->
+    <rect x="156" y="244" width="28" height="6" rx="3" fill="#ffd54a" stroke="#8b5000" stroke-width="1.5"/>
+
+    <!-- arms gracefully clasped -->
+    <g fill="#e8b88a" stroke="#c98b5e" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M156 216 q-10 14 -4 30 q4 8 12 8"/>
+      <path d="M184 216 q10 14 4 30 q-4 8 -12 8"/>
+    </g>
+    <circle cx="170" cy="254" r="6" fill="#e8b88a" stroke="#c98b5e" stroke-width="2.5"/>
+
+    <!-- neck + head -->
+    <rect x="166" y="194" width="8" height="10" rx="3" fill="#e8b88a"/>
+    <circle cx="170" cy="184" r="15" fill="#e8b88a" stroke="#c98b5e" stroke-width="3"/>
+    <!-- hair in a sanggul (bun) -->
+    <path d="M156 182 q-2 -20 14 -22 q16 2 14 22 q-6 -8 -14 -8 q-8 0 -14 8 z"
+          fill="#171d16" stroke="#171d16" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="170" cy="166" r="6" fill="#171d16"/>
+    <!-- gold hair ornament / crown -->
+    <path d="M162 168 q8 -8 16 0" fill="none" stroke="#ffd54a" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="170" cy="164" r="2.5" fill="#ffd54a"/>
+    <!-- gentle face -->
+    <g fill="#171d16">
+      <circle cx="165" cy="184" r="1.8"/>
+      <circle cx="175" cy="184" r="1.8"/>
+    </g>
+    <path d="M166 190 q4 3 8 0" fill="none" stroke="#ba1a1a" stroke-width="2" stroke-linecap="round"/>
+    <g fill="#ba1a1a" opacity="0.4">
+      <circle cx="161" cy="188" r="2.4"/>
+      <circle cx="179" cy="188" r="2.4"/>
+    </g>
+  </g>
+
+  <!-- magical sparkles drifting around the scene -->
+  <g fill="#fff6d6">
+    <path d="M236 200 l1.2 4.8 4.8 1.2 -4.8 1.2 -1.2 4.8 -1.2 -4.8 -4.8 -1.2 4.8 -1.2 z"/>
+    <path d="M110 230 l1 4 4 1 -4 1 -1 4 -1 -4 -4 -1 4 -1 z"/>
+    <path d="M260 240 l1 4 4 1 -4 1 -1 4 -1 -4 -4 -1 4 -1 z"/>
+  </g>
+</svg>

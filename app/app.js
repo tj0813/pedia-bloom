@@ -502,6 +502,12 @@
           '<p class="text-[13px] text-on-surface leading-snug mt-0.5">' + tL(gl.def_id, gl.def_en) + "</p></div>";
       }).join("") + "</div></section>" : "";
 
+    // Folk-tale "moral of the story" — a warm, prominent card (only when content provides one).
+    var moral = (c.moral_id || c.moral_en) ?
+      '<section class="rounded-2xl p-5 bg-tertiary-container shadow-storybook">' +
+        '<h3 class="font-headline-lg-mobile text-[18px] font-bold text-on-tertiary-container flex items-center gap-2"><span class="material-symbols-outlined" style="font-variation-settings:\'FILL\' 1;">favorite</span><span>Pesan Moral<span class="bi-en">Moral of the Story</span></span></h3>' +
+        '<p class="font-body-md text-[15px] text-on-tertiary-container leading-relaxed mt-1">' + tL(c.moral_id, c.moral_en) + "</p></section>" : "";
+
     var names = {};
     gallery.forEach(function (g) { if (g && g.credit) names[g.credit + (g.license ? " (" + g.license + ")" : "")] = 1; });
     var credit = '<div class="text-[11px] text-on-surface-variant pt-3 border-t border-surface-variant leading-relaxed">' +
@@ -523,6 +529,7 @@
             '<div class="flex gap-3 overflow-x-auto no-scrollbar snap-x pb-1 -mx-1 px-1">' + strip + "</div>" +
             '<p class="text-[11px] text-on-surface-variant">' + (richLang === "en" ? "Tap a photo to zoom" : "Ketuk foto untuk memperbesar") + "</p></section>" : "") +
         '<div class="space-y-4">' + sections + "</div>" +
+        moral +
         (c.facts && c.facts.length ?
           '<section class="space-y-3"><h3 class="font-headline-lg-mobile text-[18px] font-bold text-secondary flex items-center gap-2"><span class="material-symbols-outlined">auto_awesome</span><span>Tahukah Kamu?<span class="bi-en">Did You Know?</span></span></h3>' +
             '<div class="grid grid-cols-1 sm:grid-cols-2 gap-2">' + facts + "</div></section>" : "") +
